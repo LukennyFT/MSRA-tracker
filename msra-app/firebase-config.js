@@ -1,24 +1,18 @@
-// Firebase configuration for cross-device sync (OPTIONAL).
+// Firebase configuration for cross-device sync.
 //
-// The app works fully offline using this browser's localStorage. Cross-device
-// sync is an optional extra. To enable it:
+// Safe to commit publicly: security is enforced by Firestore rules + the
+// unguessable 16-character sync code, not by hiding these keys. The app reads
+// window.FIREBASE_CONFIG and initialises Firebase itself, so no import/
+// initializeApp lines are needed here.
 //
-//   1. Create a free Firebase project at https://console.firebase.google.com
-//   2. Enable Cloud Firestore (in production mode).
-//   3. Copy this project's web-app config object into FIREBASE_CONFIG below
-//      and uncomment the assignment.
-//   4. Set Firestore security rules so a document is readable/writable only by
-//      someone who knows its 16-character sync code (see docs/deployment-and-sync.md).
-//
-// Until a real config is provided, window.FIREBASE_CONFIG stays undefined, the
-// app detects that Firebase is unavailable, and the Sync button shows a neutral
-// "saved locally" state — nothing breaks.
+// To enable sync you must also publish the Firestore security rules — see
+// docs/deployment-and-sync.md (Firestore → Rules tab).
 
-// window.FIREBASE_CONFIG = {
-//   apiKey: "...",
-//   authDomain: "your-project.firebaseapp.com",
-//   projectId: "your-project",
-//   storageBucket: "your-project.appspot.com",
-//   messagingSenderId: "...",
-//   appId: "...",
-// };
+window.FIREBASE_CONFIG = {
+  apiKey: "AIzaSyC36XZY7atzDy7TuDFmlbeyHMWo2wSO1eQ",
+  authDomain: "msra-revision-app.firebaseapp.com",
+  projectId: "msra-revision-app",
+  storageBucket: "msra-revision-app.firebasestorage.app",
+  messagingSenderId: "162171784579",
+  appId: "1:162171784579:web:a2fb1575e2582f06b43ab6"
+};
