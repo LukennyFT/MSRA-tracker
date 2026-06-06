@@ -145,7 +145,7 @@ Antibiotic choice follows severity and local guidelines: amoxicillin for low-sev
       ],
     },
     {
-      id: "endocrinology", name: "Endocrinology & Metabolic", icon: "🧬",
+      id: "endocrinology", name: "Endocrinology & Metabolic", icon: "🦋",
       topics: [
         {
           id: "diabetes_overview",
@@ -390,9 +390,119 @@ To add it, replace this placeholder topic in notebook-data.js with real topics f
       ],
     },
     {
-      id: "haematology", name: "Haematology & Immunology", icon: "🩸",
+      id: "haematology", name: "Haematology", icon: "🩸",
       topics: [
-        { id: "_pending_haematology", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for Haematology & Immunology has not been written yet.` },
+        { id: "_pending_haematology", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for Haematology has not been written yet.` },
+      ],
+    },
+    {
+      id: "immunology", name: "Immunology & Allergy", icon: "🛡️",
+      topics: [
+        {
+          id: "anaphylaxis_allergy",
+          name: "Anaphylaxis & allergy",
+          content: `## Anaphylaxis and allergy
+
+Anaphylaxis is a severe, life-threatening, generalised hypersensitivity reaction. It sits at the extreme end of the allergic spectrum and is a medical emergency.
+
+## Recognising anaphylaxis
+
+Suspect anaphylaxis when there is a sudden-onset illness with **airway, breathing or circulation** problems, usually together with skin or mucosal changes such as widespread hives (urticaria), flushing or swelling (angioedema), after exposure to a likely trigger such as a food, drug or insect sting.
+
+## Immediate management
+
+The single most important treatment is **intramuscular (IM) adrenaline** into the anterolateral thigh, repeated after 5 minutes if there is no improvement.
+
+- Remove the trigger if possible and call for help early.
+- Lie the patient flat (or let them sit up if breathing is difficult) and raise the legs if they are hypotensive.
+- Give high-flow oxygen and a large intravenous fluid bolus for circulatory compromise.
+- Antihistamines and corticosteroids are **second line** and must never delay adrenaline.
+
+A raised serum **mast cell tryptase**, ideally taken soon after the reaction and again later, helps confirm the diagnosis. Because a **biphasic reaction** can occur several hours later, patients are observed before discharge.
+
+## After the acute episode
+
+Every patient should be referred to an allergy clinic, supplied with an adrenaline auto-injector and trained to use it, and advised on how to avoid the identified trigger.
+
+## The wider allergic spectrum
+
+Allergy is an immunoglobulin E (IgE) mediated, type I hypersensitivity reaction. Milder presentations include allergic rhinitis, urticaria and mild food reactions. Diagnosis uses **skin prick testing** or **specific IgE** blood tests, and management is allergen avoidance, antihistamines and, for selected severe cases, allergen immunotherapy (desensitisation).`,
+        },
+      ],
+    },
+    {
+      id: "genetics", name: "Genetics", icon: "🧬",
+      topics: [
+        {
+          id: "inheritance_patterns",
+          name: "Patterns of inheritance",
+          content: `## Patterns of inheritance
+
+Recognising the mode of inheritance from a family tree (pedigree) lets you estimate the risk to relatives and counsel appropriately. Four patterns cover most of what the assessment tests.
+
+## The four classic patterns
+
+| Pattern | Clues in the pedigree | Offspring risk | Examples |
+|---|---|---|---|
+| Autosomal dominant | Affected in every generation, both sexes, an affected parent | 50% (1 in 2) | Huntington's disease, Marfan syndrome, neurofibromatosis |
+| Autosomal recessive | Often skips generations, unaffected carrier parents, commoner with consanguinity | 25% (1 in 4) if both parents are carriers | Cystic fibrosis, sickle cell disease, haemochromatosis |
+| X-linked recessive | Mainly males affected, no male-to-male transmission, passed through carrier mothers | A carrier mother: half of sons affected, half of daughters carriers | Duchenne muscular dystrophy, haemophilia A |
+| Mitochondrial | Passed only from the mother to all of her children | All children of an affected woman | Leber hereditary optic neuropathy |
+
+## Concepts worth knowing
+
+- **Penetrance** is the proportion of people carrying a disease gene who actually show the condition. Reduced penetrance can make an autosomal dominant condition appear to skip a generation.
+- **Anticipation** is a condition becoming more severe or appearing earlier in successive generations. It is characteristic of trinucleotide repeat disorders such as Huntington's disease and myotonic dystrophy, in which the repeat lengthens as it is passed on.
+- **Consanguinity** (parents who are blood relatives) raises the chance that both partners carry the same recessive gene, increasing autosomal recessive disease risk.
+
+> A quick first step with any pedigree is to ask two questions: are both sexes affected equally, and does the trait appear in every generation? "Every generation, both sexes" points to autosomal dominant; "skips generations, carriers" points to autosomal recessive; "mostly males, through unaffected mothers" points to X-linked recessive.`,
+        },
+        {
+          id: "chromosomal_disorders",
+          name: "Chromosomal disorders",
+          content: `## Chromosomal disorders
+
+These arise from a missing, extra or rearranged chromosome rather than a single faulty gene. They are usually diagnosed with a karyotype (a picture of the full chromosome set) or with newer molecular tests.
+
+## The common aneuploidies
+
+| Condition | Karyotype | Key features |
+|---|---|---|
+| Down syndrome | Trisomy 21 | Hypotonia, flat facial profile, single palmar crease, learning disability, congenital heart disease |
+| Edwards syndrome | Trisomy 18 | Low birthweight, clenched hands with overlapping fingers, rocker-bottom feet; high mortality |
+| Patau syndrome | Trisomy 13 | Cleft lip and palate, polydactyly, holoprosencephaly; high mortality |
+| Turner syndrome | 45,X | Short stature, webbed neck, primary amenorrhoea, coarctation of the aorta; intelligence usually normal |
+| Klinefelter syndrome | 47,XXY | Tall stature, small firm testes, gynaecomastia, infertility |
+
+## Antenatal screening for Down syndrome
+
+Screening estimates risk; it does not diagnose. The **combined test** (11 to 14 weeks) uses the nuchal translucency on ultrasound together with two blood markers, beta human chorionic gonadotrophin (beta-hCG) and pregnancy-associated plasma protein A (PAPP-A). After 14 weeks the **quadruple test** uses four blood markers instead.
+
+A higher-chance screening result is followed either by **non-invasive prenatal testing (NIPT)**, which analyses cell-free fetal deoxyribonucleic acid (DNA) in the mother's blood, or by a **diagnostic** test — chorionic villus sampling or amniocentesis — which gives a definitive karyotype but carries a small miscarriage risk.
+
+> The quadruple-test pattern for Down syndrome is low alpha-fetoprotein (AFP), low oestriol, high beta-hCG and high inhibin A.`,
+        },
+        {
+          id: "genetic_counselling",
+          name: "Genetic counselling & testing",
+          content: `## Genetic counselling and testing
+
+Genetic counselling helps a person understand and adapt to the medical and psychological implications of an inherited condition. A central principle is that it is **non-directive**: the clinician provides information and support but does not tell the person what to decide.
+
+## Types of genetic test
+
+- **Diagnostic testing** confirms or excludes a condition in someone who already has symptoms.
+- **Predictive (presymptomatic) testing** is offered to a healthy person with a relevant family history, for example testing for the Huntington's disease gene. Because the result can be life-changing and there may be no preventive treatment, it is done only with careful counselling before and after the test.
+- **Carrier testing** identifies healthy people who carry one copy of a recessive gene and could pass it on, which matters when planning a family.
+
+## Reproductive options
+
+For a couple at risk of passing on a serious condition, options include prenatal diagnosis (chorionic villus sampling or amniocentesis) and **preimplantation genetic testing**, in which embryos created by in vitro fertilisation (IVF) are tested before one is transferred to the womb.
+
+## Consent and confidentiality
+
+Testing a child for an adult-onset condition is generally deferred until the child is old enough to decide for themselves. A genetic result also has implications for relatives, which can create tension between the individual's confidentiality and a family member's interest in knowing their own risk. These situations are handled sensitively and, where needed, with specialist genetics input.`,
+        },
       ],
     },
     {
