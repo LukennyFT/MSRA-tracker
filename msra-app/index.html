@@ -1840,7 +1840,13 @@
 
       const filtered = currentSpecialty.conditions.filter(c => {
         const haystack = (
+          (c.keyFacts || "") + " " +
+          (c.epidemiology || "") + " " +
+          (c.aetiology || "") + " " +
+          (c.pathophysiology || "") + " " +
           (c.presentation || "") + " " +
+          (c.investigations || "") + " " +
+          (c.treatment || "") + " " +
           (c.fields ? c.fields.map(f => f.value).join(" ") : "")
         ).toLowerCase();
         const matchSearch = !search ||
@@ -2112,20 +2118,25 @@
                               <span style={{ opacity: 0.6 }}>· since {fmtSinceDate(statusChangedAt[condition.id])}</span>
                             </div>
                           )}
-                          {(condition.fields
-                            ? condition.fields
-                            : condFieldLabels
-                            ? [
-                                { label: condFieldLabels[0], value: condition.presentation },
-                                { label: condFieldLabels[1], value: condition.investigations },
-                                { label: condFieldLabels[2], value: condition.treatment },
-                              ]
-                            : [
-                                { label: "🩺 Presentation",   value: condition.presentation },
-                                { label: "🔬 Investigations", value: condition.investigations },
-                                { label: "💊 Treatment",       value: condition.treatment },
-                              ]
-                          ).map(row => row.value && (
+                          {[
+                            { label: "💡 Key facts",       value: condition.keyFacts },
+                            { label: "📊 Epidemiology",    value: condition.epidemiology },
+                            { label: "🧬 Aetiology",       value: condition.aetiology },
+                            { label: "⚙️ Pathophysiology", value: condition.pathophysiology },
+                            ...(condition.fields
+                              ? condition.fields
+                              : condFieldLabels
+                              ? [
+                                  { label: condFieldLabels[0], value: condition.presentation },
+                                  { label: condFieldLabels[1], value: condition.investigations },
+                                  { label: condFieldLabels[2], value: condition.treatment },
+                                ]
+                              : [
+                                  { label: "🩺 Presentation",   value: condition.presentation },
+                                  { label: "🔬 Investigations", value: condition.investigations },
+                                  { label: "💊 Treatment",       value: condition.treatment },
+                                ]),
+                          ].map(row => row.value && (
                             <div key={row.label} style={{ marginBottom: "0.65rem" }}>
                               <div style={{
                                 fontSize: "0.66rem", fontWeight: 700, color: "#888",
