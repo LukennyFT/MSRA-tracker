@@ -32,7 +32,24 @@ Six views in total, switched from the top tab strip:
 
 - **Working directory**: `/Users/lukennytinta/Documents/Studying for MSRA/msra-app/`
 - **Run locally**: `python3 server.py` then open `http://localhost:8077` (or any static server / open `index.html` directly).
-- **Firebase / hosting**: not yet set up. Sync is disabled until a real config is added (see `docs/deployment-and-sync.md`).
+- **Live**: GitHub Pages at `https://lukennyft.github.io/MSRA-tracker/msra-app/` (repo `MSRA-tracker` — note: NO trailing hyphen, unlike the MRCP repo). Firebase project `msra-revision-app` powers sync via `firebase-config.js`.
+
+## Deployment — STANDING RULE (the user asked for this)
+
+The user deploys by **browser upload**: GitHub → the `msra-app/` folder → Add file → Upload files → drag the changed file(s) → Commit. There is no git/gh workflow.
+
+**After ANY change to the app, end your response by stating exactly which file(s) to re-upload to GitHub (into `msra-app/`) to go live.** File → what it deploys:
+
+| File | Covers |
+| --- | --- |
+| `data.js` | Tracker conditions, the Plan, tips |
+| `notebook-data.js` | Notebook sections / topics |
+| `question-bank-data.js` | CPS questions |
+| `dilemmas-data.js` | Professional Dilemmas scenarios |
+| `index.html` | Engine / UI / rendering changes |
+| `firebase-config.js` | Sync config |
+
+Re-uploads are additive — localStorage and synced state are keyed by stable IDs, so existing ratings, notes and progress survive.
 
 ## Critical conventions
 

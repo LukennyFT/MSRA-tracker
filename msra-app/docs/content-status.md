@@ -2,27 +2,29 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
-_Last updated: initial build._
+_Last updated: wrote the first **Infectious Diseases notebook topic — Animals as a vector of disease** (zoonoses), replacing the `_pending_infectious` placeholder; sourced from the MedEd Path Guide PDF pp. 78–80 and organised by vector — arthropod vectors (Ixodes tick/Lyme, Anopheles/malaria, rat flea/plague, sandfly/leishmaniasis, tsetse/sleeping sickness, reduviid/Chagas) and direct animal contact (rabies, Bartonella/cat scratch, toxoplasmosis, brucellosis, Q fever, leptospirosis, anthrax), with a doxycycline-is-the-workhorse treatment note. Notebook now 10 sections written / 25 topics. Earlier: added a Notebook topic **Encephalitis** to the Neurology section (sourced from the MedEd Path Guide PDF p.57 — definition vs meningitis, causes led by HSV-1/temporal lobes, MRI + CSF viral PCR, and empirical IV aciclovir before confirmation; plus an **autoimmune/paraneoplastic** section on anti-NMDA receptor encephalitis in young women with an ovarian teratoma, added from knowledge per the user's request). Corrected the guide's HSV-2 slip to HSV-1 for sporadic encephalitis. Notebook now 9 sections / 24 topics. Earlier: added a Notebook topic **Dizziness & vertigo** to the Neurology section (written from clinical knowledge — categorising dizziness vs presyncope vs disequilibrium, the peripheral-vs-central vertigo table, the common peripheral causes (BPPV/Dix-Hallpike/Epley, vestibular neuronitis, labyrinthitis, Meniere's), the HINTS exam and posterior-circulation-stroke red flags, and management). Notebook now 9 sections / 23 topics. Earlier: added a Notebook topic **CNS tumours** to the Neurology section (sourced from the MedEd Path Guide PDF, pp. 247–249 — primary vs secondary/metastatic, presentation by site and raised ICP, WHO grading by cell of origin, the common primary tumours table (pilocytic astrocytoma, diffuse glioma, glioblastoma multiforme, meningioma, medulloblastoma), inherited syndromes (NF1/NF2, tuberous sclerosis, von Hippel-Lindau), and management). Notebook now 9 sections / 22 topics. Earlier: **regrouped Neurology (Tracker) into clinical clusters** — headache & facial pain → cerebrovascular & intracranial bleeds → seizures & syncope → movement disorders & neurodegeneration → dementias → demyelinating & neuromuscular → cranial & peripheral nerve → other; a pure reorder of the 31-condition array (no ids changed). Earlier: major **Neurology (Tracker) expansion, 12 → 31 conditions**. Split **Stroke & TIA** into Stroke (kept id `neuro_stroke`) and TIA (`neuro_tia`, with NICE's current guidance: aspirin 300mg immediately, specialist review within 24h, ABCD2 no longer used to triage, MRI preferred over CT). Split **Dementia** into Alzheimer's disease (kept id `neuro_dementia`), Vascular dementia, Frontotemporal dementia and Dementia with Lewy bodies. Added Horner syndrome, Wernicke's encephalopathy, Myasthenia gravis, Cerebral palsy, CNS tumours, Encephalitis, Friedreich's ataxia, Guillain-Barré syndrome, Idiopathic intracranial hypertension, Motor neurone disease, Progressive supranuclear palsy, Multiple system atrophy, Subdural haematoma, Trigeminal neuralgia, Vasovagal syncope. The two splits reused the old combined ids for the first-named entry (Stroke, Alzheimer's), so existing RAG status carries to those; the split-off siblings are new ids. Earlier: **enriched the Prolactinoma tracker condition** (`endo_prolactinoma`, investigations + treatment) from the MedEd Path Guide PDF p.105 — the prolactin-magnitude discriminator (>6000 mU/L points to a prolactinoma vs a 1000-5000 stalk-effect rise from a non-functioning adenoma), checking the other anterior pituitary axes, replacing deficient pituitary hormones, and trans-sphenoidal surgery reserved for visual/pressure symptoms failing medical therapy. Earlier: added a Notebook topic **Calcium, vitamin D & hypercalcaemia** to the Endocrinology & Metabolic section (sourced from the MedEd Path Guide PDF, pp. 112–116 — calcium forms and corrected calcium, PTH vs active vitamin D actions, the two-step vitamin D activation, the Ca/phosphate/PTH/ALP biochemistry table, and hypercalcaemia: causes, the bones/stones/groans/moans picture, the PTH-led workup and management). Notebook now 9 sections / 21 topics. Earlier: **regrouped Endocrinology & Metabolic (Tracker) into clinical clusters** by gland/axis — diabetes & glucose → pituitary & water balance (ADH) → thyroid → adrenal → parathyroid, bone & calcium → MEN syndromes → fluid & electrolytes → metabolic & general; a pure reorder of the 32-condition array (no ids changed). Earlier: added **20 conditions to Endocrinology & Metabolic** (Tracker, ids `endo_*`, all seven-field) — Acromegaly, Prolactinoma, Diabetes insipidus, SIADH, Thyrotoxicosis, Thyroid eye disease, Adrenal insufficiency, Addisonian crisis, Congenital adrenal hyperplasia (CAH), Conn syndrome, Hyperaldosteronism, Phaeochromocytoma, Hypoparathyroidism, Vitamin D deficiency (osteomalacia & rickets), Paget's disease of bone, MEN1, MEN2A, MEN2B, Amenorrhoea, Chronic fatigue syndrome — appended in clinical groups (pituitary → thyroid → adrenal → parathyroid/bone → MEN → other); endocrinology now 32. Deliberate umbrella+specific pairs kept per the user's request: Adrenal insufficiency alongside existing Addison's (`endo_addisons`), Hyperaldosteronism alongside new Conn's, and Thyrotoxicosis alongside existing Hyperthyroidism (`endo_hyperthyroid`, framed around cause differentiation + thyroid storm). Earlier: **regrouped Gastroenterology & Nutrition (Tracker) into clinical clusters** — oesophagus → stomach & duodenum → small bowel & malabsorption → inflammatory & functional bowel → colorectal & lower GI → anorectal → liver → biliary tract → pancreas → nutrition & metabolic; a pure reorder of the 36-condition array (no ids changed, so statuses/notes/timestamps are preserved). Earlier: wrote the first **Gastroenterology & Nutrition notebook topic — Jaundice** (replaced the `_pending_gastro` placeholder; sourced from the MedEd Path Guide PDF, pp. 100–101 — bilirubin metabolism, the pre-/hepatic/post-hepatic framework with the discriminating bilirubin/urine/stool/enzyme table, plus pearls: acholuric jaundice, Courvoisier's law, Gilbert syndrome). Notebook now 9 sections written. Earlier: added **23 conditions to Gastroenterology & Nutrition** (Tracker, ids `gi_*`, all with the seven-field layout) — Pharyngeal pouch, H. pylori infection, Gastric cancer, Dumping syndrome, Mallory-Weiss tear, Boerhaave syndrome, Appendicitis, Haemorrhoids, Anal fissure, Anal fistula, Peutz-Jeghers syndrome, Alcoholic liver disease, Autoimmune hepatitis, Budd-Chiari syndrome, Liver abscess, HCC, Primary biliary cholangitis, Primary sclerosing cholangitis, Cholangiocarcinoma, Gallbladder carcinoma, Chronic pancreatitis, Pancreatic cancer, Hyperlipidaemia — ordered oesophago-gastric → acute abdomen/anorectal → liver → biliary → pancreas → nutrition; gastro now 36. (The user asked for "hepatitis"; a Viral hepatitis entry `gi_hepatitis` already existed, so I added **Autoimmune hepatitis** as the non-duplicative third autoimmune liver disease alongside PBC/PSC.) Earlier: added a written Notebook topic **Restrictive lung disorders** to the Respiratory section (sourced from the MedEd Path Guide PDF in the project root, pp. 196–198 — interstitial lung disease overview, IPF, extrinsic allergic alveolitis, pneumoconioses, sarcoidosis, plus the intrinsic-vs-extrinsic restrictive framework); placed between Pneumonia and Asbestos-related lung disease. Earlier: added a written Notebook topic **Pulmonary function tests** to the Respiratory section. Earlier: added **Asbestos-related lung disease** (sourced from the MedEd Path Guide PDF in the project root). Earlier: regrouped **Respiratory** into clinical clusters (obstructive airways → infection → interstitial/granulomatous → cancer & pleural → sleep → acute). Earlier: added **7 conditions to Respiratory** (occupational asthma, alpha-1 antitrypsin deficiency, idiopathic pulmonary fibrosis, drug-induced pulmonary fibrosis, sarcoidosis, mesothelioma, ARDS) — Respiratory now 17. Earlier: added **monomorphic ventricular tachycardia** (`cvs_vt`) to the Cardiovascular arrhythmia cluster — Cardiovascular now 34. Earlier: added the 5 **cardiomyopathies** (dilated, hypertrophic, restrictive, ARVC, Takotsubo) grouped after Heart failure. Earlier: regrouped Cardiovascular into clinical clusters; added **14 conditions to Cardiovascular** (acute limb ischaemia, aortic regurgitation, aortic sclerosis, atrial flutter, cholesterol embolism, ischaemic heart disease, patent ductus arteriosus, pericardial effusion, subclavian steal syndrome, tetralogy of Fallot, transposition of the great arteries, varicose veins, ventricular septal defect, Wolff-Parkinson-White), each with the seven-field layout — Cardiovascular now has 28. Earlier: added Myocardial infarction, and the four extended fields — **Key facts, Epidemiology, Aetiology, Pathophysiology** — to every genuine condition (now 194 of 230 entries). `TrackerView` renders them above Presentation/Investigations/Treatment, only when present, so the 36 "topic" entries (all Pharmacology & Public Health, plus process/concept entries) are intentionally untouched. Search now indexes the new fields too._
 
 ## Tracker (`data.js`) — complete
 
-All 17 specialties populated, **193 conditions** total. Each condition has `presentation` / `investigations` / `treatment` (Pharmacology uses relabelled fields; `pharm_paracetamol_od` uses a 3-section `fields` array).
+All 19 specialties populated, **305 conditions** total. **269** genuine conditions carry the seven-field layout (Key facts → Epidemiology → Aetiology → Pathophysiology → Presentation → Investigations → Treatment); the other 36 are topic-style entries with their own field structure. Each condition has `presentation` / `investigations` / `treatment` (Pharmacology uses relabelled fields; `pharm_paracetamol_od` uses a 3-section `fields` array).
 
 | Specialty | id | Conditions |
 | --- | --- | ---: |
-| Cardiovascular | `cardiology` | 13 |
-| Respiratory | `respiratory` | 10 |
-| Gastroenterology & Nutrition | `gastro` | 13 |
-| Endocrinology & Metabolic | `endocrinology` | 12 |
+| Cardiovascular | `cardiology` | 34 |
+| Respiratory | `respiratory` | 17 |
+| Gastroenterology & Nutrition | `gastro` | 36 |
+| Endocrinology & Metabolic | `endocrinology` | 32 |
 | Renal & Urology | `renal` | 11 |
-| Neurology | `neurology` | 12 |
+| Neurology | `neurology` | 31 |
 | Psychiatry & Mental Health | `psychiatry` | 12 |
 | MSK & Rheumatology | `rheumatology` | 11 |
 | Dermatology | `dermatology` | 12 |
 | ENT | `ent` | 10 |
 | Ophthalmology | `ophthalmology` | 10 |
 | Infectious Diseases | `infectious` | 10 |
-| Haematology & Immunology | `haematology` | 11 |
+| Haematology | `haematology` | 10 |
+| Immunology & Allergy | `immunology` | 9 |
+| Genetics | `genetics` | 14 |
 | Reproductive & Sexual Health | `reproductive` | 13 |
 | Paediatrics & Child Health | `paediatrics` | 12 |
 | Pharmacology & Prescribing | `pharmacology` | 11 |
@@ -30,24 +32,28 @@ All 17 specialties populated, **193 conditions** total. Each condition has `pres
 
 ## Notebook (`notebook-data.js`) — partially written
 
-17 sections (ids mirror the Tracker specialties). **6 sections written (12 topics); 11 sections are scaffolding** holding a single `_pending_*` placeholder each.
+19 sections (ids mirror the Tracker specialties). **10 sections written (25 topics); 9 sections are scaffolding** holding a single `_pending_*` placeholder each.
 
 **Written:**
 
 - `cardiology` — Acute coronary syndrome, Atrial fibrillation, Heart failure
-- `respiratory` — Asthma vs COPD, Pneumonia & CURB-65
-- `endocrinology` — Diabetes mellitus, Thyroid disease
-- `neurology` — Headache red flags, Stroke & TIA
+- `respiratory` — Asthma vs COPD, Pneumonia & CURB-65, Restrictive lung disorders, Asbestos-related lung disease, Pulmonary function tests
+- `gastro` — Jaundice
+- `endocrinology` — Diabetes mellitus, Thyroid disease, Calcium, vitamin D & hypercalcaemia
+- `neurology` — Headache red flags, Stroke & TIA, CNS tumours, Dizziness & vertigo, Encephalitis
+- `immunology` — Anaphylaxis & allergy
+- `genetics` — Patterns of inheritance, Chromosomal disorders, Genetic counselling & testing
 - `public_health` — Capacity & consent, Confidentiality & disclosure
 - `pharmacology` — Safe prescribing principles
+- `infectious` — Animals as a vector of disease
 
-**Scaffolding (replace the `_pending_*` topic when you write these):** `gastro`, `renal`, `psychiatry`, `rheumatology`, `dermatology`, `ent`, `ophthalmology`, `infectious`, `haematology`, `reproductive`, `paediatrics`.
+**Scaffolding (replace the `_pending_*` topic when you write these):** `renal`, `psychiatry`, `rheumatology`, `dermatology`, `ent`, `ophthalmology`, `haematology`, `reproductive`, `paediatrics`.
 
 Style templates to copy: the three `cardiology` topics and the two `public_health` topics (full sentences, abbreviations spelled out, tables for comparisons).
 
 ## CPS question bank (`question-bank-data.js`) — seed set
 
-**34 single-best-answer questions** across all 17 sections (1–3 each). Comfortable seed for practice; expand any section by appending to `QBANK.questions` with a unique `id` and the matching `section` tag.
+**43 single-best-answer questions** across all 19 sections (Genetics 6, Immunology & Allergy 3; others 1–3 each). Comfortable seed for practice; expand any section by appending to `QBANK.questions` with a unique `id` and the matching `section` tag.
 
 ## Professional Dilemmas (`dilemmas-data.js`) — seed set
 

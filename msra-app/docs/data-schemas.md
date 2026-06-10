@@ -16,9 +16,15 @@ Five globals set across the `*-data.js` files. The `id` fields marked ⚠ must n
     {
       id: "cvs_af",          // ⚠ NEVER CHANGE — keys statuses/notes/timestamps
       name: "Atrial fibrillation",
-      presentation: "...",   // concise clinical phrase
-      investigations: "...",
-      treatment: "...",
+      // OPTIONAL extended fields — present on genuine CONDITIONS, omitted on
+      // "topic" entries. Rendered (when present) ABOVE presentation, in this order:
+      keyFacts: "...",        // 💡 the must-know headline
+      epidemiology: "...",    // 📊 who gets it
+      aetiology: "...",       // 🧬 causes / risk factors
+      pathophysiology: "...", // ⚙️ mechanism
+      presentation: "...",    // 🩺 concise clinical phrase
+      investigations: "...",  // 🔬
+      treatment: "...",       // 💊
       // OPTIONAL: fieldLabels (3 strings) overrides the labels for this entry only.
       // OPTIONAL: fields [{label, value}, ...] fully replaces the 3 fixed fields with
       //   any number of sections (used by pharm_paracetamol_od).
@@ -27,7 +33,7 @@ Five globals set across the `*-data.js` files. The `id` fields marked ⚠ must n
 }
 ```
 
-The four condition fields are plain strings shown in the expand panel. 17 specialties; array order = sidebar order. `fieldLabels` / `fields` are display-only — the underlying keys stay `presentation`/`investigations`/`treatment`, so ids and statuses are never affected.
+All condition fields are plain strings shown in the expand panel; array order = sidebar order. `TrackerView` renders the four extended fields only when present, so adding them to non-conditions ("topics") is optional — currently **179 of 215 entries** carry them, and the 36 that do not are the topic-style entries (all of Pharmacology and Public Health, plus process/concept entries such as `genetics_inheritance`, `immuno_allergy_testing`, `id_abx_choice`, `repro_contraception`, `paeds_milestones`, `haem_anticoag`). `fieldLabels` / `fields` are display-only — the underlying keys stay `presentation`/`investigations`/`treatment`, so ids and statuses are never affected.
 
 ## `window.PHASES` (in `data.js`) — the Plan
 
