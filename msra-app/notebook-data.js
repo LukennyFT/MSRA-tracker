@@ -735,7 +735,79 @@ Two enzyme patterns are worth memorising. A **hepatocellular** picture raises th
     {
       id: "renal", name: "Renal & Urology", icon: "🫘",
       topics: [
-        { id: "_pending_renal", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for Renal & Urology has not been written yet. The tracker and question bank for this section are populated — replace this placeholder when you write the topics.` },
+        {
+          id: "glomerulonephritis",
+          name: "Glomerulonephritis",
+          content: `## Glomerulonephritis
+
+Glomerulonephritis is a group of immune-mediated diseases of the glomerulus. The crucial first step is to decide whether the picture is **nephrotic** or **nephritic**, because this narrows the cause and guides investigation.
+
+## Nephrotic versus nephritic
+
+| Feature | Nephrotic syndrome | Nephritic syndrome |
+|---|---|---|
+| Proteinuria | Heavy (over 3 g/day) | Mild to moderate |
+| Haematuria | Absent or minimal | Present (red-cell casts, "coke-coloured" urine) |
+| Blood pressure | Often normal | Hypertension |
+| Hallmark | Hypoalbuminaemia and oedema, hyperlipidaemia, thrombosis risk | Oliguria and a rising urea and creatinine |
+
+The **nephrotic triad** is heavy proteinuria, hypoalbuminaemia and oedema. The **nephritic features** can be remembered as PHAROH: Proteinuria, Haematuria, Azotaemia (raised urea and creatinine), Red-cell casts, Oliguria and Hypertension.
+
+## Causes of nephrotic syndrome
+
+| Cause | Key features |
+|---|---|
+| Minimal change disease | The commonest cause in children; normal light microscopy with podocyte foot-process effacement on electron microscopy; about 90% are steroid-responsive; linked to allergy and Hodgkin lymphoma |
+| Membranous nephropathy | A common primary cause in adults; diffuse basement-membrane thickening with subepithelial "spikes"; anti-phospholipase A2 receptor antibodies in about 75%; secondary to malignancy, hepatitis B, lupus or drugs |
+| Focal segmental glomerulosclerosis | Commoner in people of African descent; focal scarring; about half respond to steroids; primary or secondary to obesity, HIV or heroin |
+| Secondary causes | Diabetes (Kimmelstiel-Wilson nodules), amyloidosis (Congo-red apple-green birefringence), lupus |
+
+## Causes of nephritic syndrome
+
+- **Post-streptococcal (post-infectious) glomerulonephritis** — **1 to 3 weeks** after a streptococcal throat infection or impetigo; a **low C3** with a raised anti-streptolysin O titre; subepithelial "humps" with granular IgG and C3; treatment is supportive, with a good prognosis especially in children.
+- **IgA nephropathy (Berger's disease)** — the commonest glomerulonephritis worldwide; **visible haematuria 1 to 2 days after an upper respiratory infection** (sooner than post-streptococcal disease); mesangial IgA deposits.
+- **Rapidly progressive (crescentic) glomerulonephritis** — the most aggressive form, causing renal failure within weeks, with **crescents** on biopsy. Three types: anti-GBM disease (Goodpasture's, linear IgG, with lung haemorrhage), immune-complex (lupus, IgA, post-infectious), and pauci-immune or ANCA-associated (granulomatosis with polyangiitis with c-ANCA; microscopic polyangiitis with p-ANCA).
+- **Alport syndrome** — an X-linked type IV collagen defect causing nephritis with sensorineural deafness and eye signs.
+
+## Investigation and management
+
+Investigate with urinalysis (protein, blood, red-cell casts), urine albumin-to-creatinine or protein-to-creatinine ratio, U&E, albumin, **complement (C3 and C4)**, and a glomerulonephritis autoantibody screen (ANA and anti-dsDNA, ANCA, anti-GBM, anti-phospholipase A2 receptor) with an anti-streptolysin O titre and immunoglobulins; a **renal biopsy is often the definitive test**. General management controls blood pressure with an **ACE inhibitor or angiotensin receptor blocker** (which also reduce proteinuria) and addresses oedema, lipids and thrombosis risk; specific disease may need **immunosuppression** (corticosteroids and others), and crescentic disease is an emergency needing urgent immunosuppression with or without plasma exchange.
+
+> High-yield: nephrotic = heavy proteinuria + hypoalbuminaemia + oedema; nephritic = haematuria + hypertension + red-cell casts. Minimal change disease in a child is steroid-responsive; membranous nephropathy is anti-PLA2R-positive; post-streptococcal disease follows a sore throat by 1–3 weeks with a low C3, whereas IgA nephropathy follows a respiratory infection by 1–2 days; and crescentic (rapidly progressive) glomerulonephritis — anti-GBM, immune-complex or ANCA — is a nephrological emergency.`,
+        },
+        {
+          id: "diabetic_nephropathy",
+          name: "Diabetic nephropathy",
+          content: `## Diabetic nephropathy
+
+Diabetic nephropathy is the kidney disease of long-standing diabetes and is the **commonest cause of chronic kidney disease and end-stage renal failure** in the developed world. It is a microvascular complication, alongside retinopathy and neuropathy.
+
+## Pathophysiology
+
+Chronic hyperglycaemia first causes **glomerular hyperfiltration**, then thickening of the glomerular basement membrane and expansion of the mesangium. The classic histological hallmark is **nodular glomerulosclerosis — the Kimmelstiel-Wilson nodules** — on a background of diffuse basement-membrane thickening. The result is progressive proteinuria and a falling filtration rate.
+
+## Natural history and screening
+
+The disease moves through recognisable stages, and catching it early matters:
+
+- **Glomerular hyperfiltration** (a raised filtration rate, no protein yet).
+- **Microalbuminuria** — the **first clinical sign**, detected by a urine albumin-to-creatinine ratio.
+- **Overt (dipstick-positive) proteinuria**, which can reach the nephrotic range.
+- **Progressive decline** in the glomerular filtration rate towards end-stage renal failure.
+
+Everyone with diabetes therefore has an **annual urine albumin-to-creatinine ratio and eGFR** check; the diagnosis is clinical and biopsy is rarely needed.
+
+## Management
+
+Management is about slowing progression (renoprotection):
+
+- **Tight glycaemic control** and cardiovascular risk reduction.
+- **An ACE inhibitor or angiotensin receptor blocker** to control blood pressure and reduce proteinuria (renoprotective even when blood pressure is normal).
+- **An SGLT2 inhibitor**, now central for its renoprotective benefit.
+- A statin and lifestyle measures, with dialysis or transplantation for end-stage disease.
+
+> High-yield: Kimmelstiel-Wilson nodules are the classic histology; microalbuminuria is the earliest marker; and ACE inhibitors or ARBs plus SGLT2 inhibitors are the renoprotective mainstays.`,
+        },
       ],
     },
     {
@@ -1160,6 +1232,118 @@ Every patient should be referred to an allergy clinic, supplied with an adrenali
 ## The wider allergic spectrum
 
 Allergy is an immunoglobulin E (IgE) mediated, type I hypersensitivity reaction. Milder presentations include allergic rhinitis, urticaria and mild food reactions. Diagnosis uses **skin prick testing** or **specific IgE** blood tests, and management is allergen avoidance, antihistamines and, for selected severe cases, allergen immunotherapy (desensitisation).`,
+        },
+        {
+          id: "autoantibodies",
+          name: "Autoantibodies",
+          content: `## Autoantibodies
+
+Autoantibodies are antibodies directed against the body's own antigens. They are central to diagnosing autoimmune disease: some are sensitive screening tests, others are highly specific markers, and a few track disease activity. Broadly they split into **non-organ-specific** (systemic) and **organ-specific** patterns.
+
+## A map of antibodies to diseases
+
+| Autoantibody | Associated disease |
+|---|---|
+| Antinuclear antibody (ANA) | Systemic lupus erythematosus and other connective tissue disease (a sensitive screen) |
+| Anti-double-stranded DNA | Systemic lupus erythematosus (specific; tracks activity) |
+| Anti-Ro and anti-La | Sjögren's syndrome (and lupus) |
+| Rheumatoid factor | Rheumatoid arthritis (sensitive, not specific) |
+| Anti-cyclic citrullinated peptide (anti-CCP) | Rheumatoid arthritis (specific; linked to HLA-DR4 and smoking) |
+| Anti-Jo-1 | Dermatomyositis and polymyositis |
+| Anti-Scl-70 or anticentromere | Diffuse or limited systemic sclerosis |
+| Cytoplasmic ANCA (anti-proteinase-3) | Granulomatosis with polyangiitis |
+| Perinuclear ANCA (anti-myeloperoxidase) | Microscopic polyangiitis and eosinophilic granulomatosis with polyangiitis |
+| Anti-thyroid-stimulating-hormone receptor | Graves' disease |
+| Anti-thyroid peroxidase | Hashimoto's thyroiditis |
+| Anti-acetylcholine receptor | Myasthenia gravis |
+| Anti-glomerular basement membrane | Goodpasture's syndrome |
+| Anti-desmoglein (epidermal cadherin) | Pemphigus vulgaris |
+| Anti-intrinsic factor and anti-parietal cell | Pernicious anaemia |
+| Anti-tissue transglutaminase | Coeliac disease |
+| Anti-mitochondrial antibody | Primary biliary cholangitis |
+| Anti-smooth muscle | Autoimmune hepatitis |
+
+## How they are used
+
+- **Screening versus specificity:** ANA and rheumatoid factor are sensitive but not specific, so they screen; anti-dsDNA and anti-CCP are specific and confirm. A weakly positive ANA is common in healthy people.
+- **Monitoring activity:** in lupus the **anti-dsDNA titre rises and complement (C3 and C4) falls** during a flare, because immune complexes consume complement.
+- **The ANCA split** separates the small-vessel vasculitides: cytoplasmic ANCA (anti-proteinase-3) with granulomatosis with polyangiitis, and perinuclear ANCA (anti-myeloperoxidase) with microscopic polyangiitis and eosinophilic granulomatosis with polyangiitis.
+
+> High-yield pairs: anti-dsDNA → lupus; anti-CCP → rheumatoid arthritis; anti-Ro/La → Sjögren's; c-ANCA → granulomatosis with polyangiitis; anti-GBM → Goodpasture's; anti-TSH receptor → Graves'; anti-mitochondrial → primary biliary cholangitis.`,
+        },
+        {
+          id: "immunity_vaccination",
+          name: "Immunity & vaccination",
+          content: `## Immunity and vaccination
+
+Immunity to an infection is either **active** (the person mounts their own response and develops memory) or **passive** (pre-formed antibody is transferred, giving immediate but temporary protection). Each can be acquired naturally or artificially.
+
+| | Active (own response, lasting) | Passive (transferred antibody, short-lived) |
+|---|---|---|
+| Natural | Recovering from the infection | Maternal antibody across the placenta and in breast milk |
+| Artificial | Vaccination | Immunoglobulin injection (e.g. post-exposure for rabies, hepatitis B, tetanus, varicella) |
+
+## Types of vaccine
+
+| Type | What it contains | Examples | Key point |
+|---|---|---|---|
+| Live attenuated | A weakened live organism | MMR, varicella-zoster, BCG, oral polio and typhoid, yellow fever, intranasal flu | Strong, often lifelong immunity, but contraindicated in immunosuppression and pregnancy |
+| Inactivated or subunit | Killed organism or isolated antigen | Hepatitis B (surface antigen), human papillomavirus, injected polio and flu | Safe in immunodeficiency but need boosters |
+| Toxoid | An inactivated toxin | Tetanus, diphtheria | |
+| Conjugate | Polysaccharide linked to a protein carrier | Meningococcus, Haemophilus influenzae type b, pneumococcus | Protects against encapsulated bacteria and works in young children |
+| Messenger RNA or viral vector | Genetic code for an antigen | COVID-19 vaccines | Newer technology |
+
+**Adjuvants** (such as aluminium salts) are added to boost the response without changing its target.
+
+## The UK schedule in outline
+
+- **Infants:** the 6-in-1 (diphtheria, tetanus, pertussis, polio, Haemophilus influenzae type b, hepatitis B) at 8, 12 and 16 weeks, with meningococcal B, pneumococcal and rotavirus vaccines.
+- **One year:** Haemophilus influenzae type b/meningococcal C, measles-mumps-rubella (MMR), and pneumococcal and meningococcal B boosters.
+- **Pre-school:** MMR and a 4-in-1 booster. **Teenagers:** human papillomavirus, then a 3-in-1 and meningococcal ACWY booster.
+- **Adults:** annual flu and (from 65) pneumococcal; shingles from 70; and in **pregnancy**, flu and pertussis to protect the newborn.
+
+## Key safety rule
+
+**Live vaccines are contraindicated in significant immunosuppression and in pregnancy.** People living with HIV may receive MMR but not BCG or yellow fever.`,
+        },
+        {
+          id: "immunodeficiency",
+          name: "Immunodeficiency",
+          content: `## Immunodeficiency
+
+Immunodeficiency is a failure of one or more parts of the immune system that leaves the person prone to infection. It is **primary** (an inherited defect, individually rare) or, far more often, **secondary** (acquired). Suspect it when infection is **serious, persistent, unusual or recurrent** (the SPUR pattern), especially with failure to thrive in a child or a family history of early infant death.
+
+A powerful shortcut is that **the type of infection points to the arm of the immune system at fault:**
+
+| Defective component | Characteristic infections |
+|---|---|
+| Antibody (B-cell) | Recurrent encapsulated bacteria (pneumococcus, Haemophilus, meningococcus) and gut infections |
+| T-cell (and combined) | Viruses (cytomegalovirus), fungi (Pneumocystis, Candida) and intracellular organisms |
+| Phagocyte (neutrophil) | Deep bacterial abscesses and fungi (Staphylococcus, Aspergillus) |
+| Complement | Encapsulated bacteria; terminal-pathway defects give recurrent Neisseria (meningococcal) infection |
+
+## Primary (inherited) immunodeficiency
+
+- **Antibody deficiencies** are the commonest. **Selective IgA deficiency** is the most frequent and often asymptomatic; **common variable immunodeficiency** gives low immunoglobulins, a poor vaccine response, recurrent sinopulmonary infection with bronchiectasis, and a risk of autoimmunity and lymphoma; **Bruton's X-linked agammaglobulinaemia** has no B cells and no antibody. Treatment is **immunoglobulin replacement**.
+- **T-cell and combined defects:** **severe combined immunodeficiency (SCID)** presents in the first months of life with infections of every type, failure to thrive and diarrhoea, and is fatal without **haematopoietic stem cell transplantation**; DiGeorge syndrome causes thymic aplasia.
+- **Phagocyte defects:** **chronic granulomatous disease** is a failure of the neutrophil respiratory burst (an abnormal nitroblue tetrazolium or dihydrorhodamine test), causing deep bacterial and fungal infection.
+- **Complement defects:** early classical-pathway deficiency (C1, C2, C4) predisposes to **lupus** (failure to clear immune complexes); C3 deficiency to severe bacterial infection; and **terminal-pathway deficiency (C5–9) to recurrent meningococcal disease**. Screen with the CH50 and AP50 assays.
+
+## Secondary (acquired) immunodeficiency
+
+Far more common than primary disease, and the cause is usually evident:
+
+- **Infection:** HIV (progressive loss of CD4 T-cells).
+- **Malignancy:** chronic lymphocytic leukaemia, myeloma and lymphoma (antibody deficiency).
+- **Drugs:** chemotherapy, corticosteroids, other immunosuppressants and biologics.
+- **Protein loss or poor production:** nephrotic syndrome, protein-losing enteropathy, malnutrition, liver disease.
+- **Other:** asplenia (encapsulated organisms), diabetes, and the extremes of age.
+
+## Investigation and management
+
+Investigate with a full blood count, immunoglobulin levels and specific antibody (vaccine) responses, lymphocyte subsets, complement (CH50/AP50) and an HIV test, escalating to genetic testing. Manage by **treating infections promptly with prophylaxis, replacing what is missing** (immunoglobulin for antibody deficiency), **avoiding live vaccines** in significant deficiency, and considering stem cell transplantation for severe combined or phagocyte disease.
+
+> High-yield: encapsulated-bacterial infections point to an antibody, complement or splenic problem; recurrent Neisseria means terminal complement deficiency; viral and Pneumocystis infections point to a T-cell defect (and to HIV); and deep abscesses with fungi point to a phagocyte (chronic granulomatous) defect. Secondary causes are far commoner than primary ones.`,
         },
       ],
     },
