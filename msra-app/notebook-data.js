@@ -813,7 +813,269 @@ Management is about slowing progression (renoprotection):
     {
       id: "psychiatry", name: "Psychiatry & Mental Health", icon: "🧩",
       topics: [
-        { id: "_pending_psychiatry", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for Psychiatry has not been written yet. Replace this placeholder with real topics when ready.` },
+        {
+          id: "alcohol_misuse_dependence",
+          name: "Alcohol misuse & dependence",
+          content: `## Alcohol misuse and dependence
+
+Alcohol use exists on a spectrum from low-risk drinking, through hazardous and harmful use, to dependence. The United Kingdom low-risk guideline is no more than 14 units per week for both men and women, spread over three or more days. One unit is 10 millilitres (8 grams) of pure alcohol.
+
+## The ICD-10 framework
+
+The International Classification of Diseases, 10th revision (ICD-10), grades alcohol use disorders as follows.
+
+- **Hazardous use** is a pattern of drinking that increases the risk of harm but has not yet caused it (a level of risk rather than a formal ICD-10 diagnosis).
+- **Harmful use (F10.1)** is drinking that is already causing actual damage to physical or mental health.
+- **Dependence syndrome (F10.2)** is the central diagnosis (see below).
+- **Withdrawal state (F10.3)**, and **withdrawal with delirium, i.e. delirium tremens (F10.4)**, describe the consequences of stopping.
+
+## ICD-10 dependence syndrome
+
+A definite diagnosis of dependence requires **three or more** of the following to have been present together at some time during the previous year:
+
+- A strong desire or compulsion to drink (craving).
+- Difficulty controlling the onset, termination or level of drinking.
+- A physiological withdrawal state on stopping or cutting down, or drinking to relieve or avoid withdrawal.
+- Tolerance, so that increasing amounts are needed for the same effect.
+- Progressive neglect of other pleasures and interests, with more time spent obtaining alcohol, drinking, or recovering.
+- Persisting with alcohol despite clear evidence of harmful consequences.
+
+## Screening and assessment
+
+- **AUDIT** (the Alcohol Use Disorders Identification Test) is the recommended screen; a score above 8 suggests hazardous drinking and 15 or more warrants a comprehensive assessment.
+- **CAGE** is a brief four-question screen (Cut down, Annoyed, Guilty, Eye-opener).
+- **SADQ** (the Severity of Alcohol Dependence Questionnaire) grades dependence, and **CIWA-Ar** (the Clinical Institute Withdrawal Assessment for Alcohol) grades withdrawal and can guide symptom-triggered treatment.
+- Investigations include a full blood count (a raised mean cell volume is suggestive), liver function tests with gamma-glutamyl transferase, urea and electrolytes, glucose, clotting, and vitamin B12 and folate.
+
+## Acute withdrawal
+
+Symptoms begin 6 to 12 hours after the last drink, are worst within the first 48 hours, and usually resolve over 3 to 7 days.
+
+| Time after last drink | Features |
+|---|---|
+| 6–12 hours | Tremor, sweating, anxiety, nausea |
+| 12–24 hours | Alcoholic hallucinosis (often visual) |
+| 24–48 hours | Withdrawal seizures (generalised tonic-clonic) |
+| 48–72 hours | Delirium tremens |
+
+**Delirium tremens** is a medical emergency with coarse tremor, agitation, confusion, vivid hallucinations, fever and autonomic instability. First-line treatment is oral lorazepam; if symptoms persist, give intravenous lorazepam or haloperidol, alongside intravenous thiamine.
+
+**Wernicke's encephalopathy** results from thiamine (vitamin B1) deficiency and presents with the triad of confusion, ophthalmoplegia or nystagmus, and ataxia. It is treated with urgent intravenous thiamine (Pabrinex); untreated, it can progress to the irreversible **Korsakoff syndrome** (profound anterograde amnesia with confabulation).
+
+## Management
+
+- **Assisted withdrawal (detoxification)**: a benzodiazepine, usually chlordiazepoxide (or diazepam), given as a fixed-dose or symptom-triggered regimen and reduced gradually over 7 to 10 days. Lorazepam is preferred in significant liver impairment because it has limited hepatic metabolism.
+- Give **Pabrinex** (intravenous B vitamins including thiamine) to anyone at risk of Wernicke's encephalopathy.
+- **Consider inpatient withdrawal** if the patient drinks 30 or more units per day, scores 30 or more on the SADQ, has a history of withdrawal seizures or delirium tremens, needs concurrent benzodiazepine withdrawal, or is vulnerable (for example homeless or older).
+- **Relapse prevention**: acamprosate (reduces craving) or naltrexone (an opioid antagonist that reduces the reward of drinking) are first-line; disulfiram, which produces an unpleasant flushing reaction with alcohol, is an aversive option for motivated patients.
+- **Psychosocial**: motivational interviewing, cognitive behavioural therapy (CBT), behavioural couples therapy, and support through Alcoholics Anonymous, SMART Recovery and Change Grow Live.
+
+> Never stop a dependent drinker's alcohol abruptly without cover, and always give thiamine before any carbohydrate load, because glucose can precipitate Wernicke's encephalopathy in a thiamine-deficient patient.
+
+## Complications
+
+Chronic misuse harms nearly every system: liver (fatty liver, alcoholic hepatitis, cirrhosis), gastrointestinal (gastritis, pancreatitis, varices, Mallory-Weiss tears), cardiac (dilated cardiomyopathy, hypertension, arrhythmias), and neurological (peripheral neuropathy, cerebellar degeneration, Wernicke-Korsakoff), alongside an increased cancer risk and major social and psychological harms.`,
+        },
+        {
+          id: "personality_disorders",
+          name: "Personality disorders",
+          content: `## Personality disorders
+
+A personality disorder is an enduring, pervasive and inflexible pattern of inner experience and behaviour that deviates markedly from cultural expectations. It is evident by adolescence or early adulthood, is stable over time, and leads to distress or impairment in functioning. Around 1 in 10 people may meet criteria for a personality disorder, and roughly 2% for the emotionally unstable type.
+
+## Classification (the three clusters)
+
+The traditional ICD-10 and DSM (Diagnostic and Statistical Manual) approach groups the disorders into three clusters.
+
+| Cluster | Theme | Examples |
+|---|---|---|
+| A | Odd or eccentric | Paranoid, schizoid, schizotypal |
+| B | Dramatic, emotional or erratic | Antisocial (dissocial), emotionally unstable (borderline), histrionic, narcissistic |
+| C | Anxious or fearful | Avoidant (anxious), dependent, anankastic (obsessive-compulsive) |
+
+> Note: the newer ICD-11 has moved away from these subtypes and instead classifies personality disorder by **severity** (mild, moderate or severe) together with prominent trait domains. The cluster system remains widely used in teaching and for guiding management.
+
+## Emotionally unstable personality disorder
+
+Emotionally unstable personality disorder (EUPD), also called borderline personality disorder, is the most frequently examined. Core features include:
+
+- Marked impulsivity and difficulty controlling anger.
+- Intense and unstable relationships, with frantic efforts to avoid abandonment.
+- An unstable self-image and chronic feelings of emptiness.
+- Recurrent self-harm and suicidal behaviour.
+- Affective instability and transient, stress-related paranoid ideas or dissociation.
+
+## Management
+
+Personality disorders are treatable. The emphasis is on psychological therapy, clear and consistent boundaries, and encouraging the person to take responsibility for their actions.
+
+- **Psychological therapy is the mainstay.** Dialectical behaviour therapy (DBT) is first-line for EUPD; it teaches validation and dialectics to help manage intense emotions. Other options include mentalisation-based therapy, cognitive analytic therapy (CAT), CBT, therapeutic communities and psychodynamic psychotherapy.
+- **Medication treats no personality disorder in itself but may target symptoms or comorbidity.** Selective serotonin reuptake inhibitors (SSRIs) may reduce impulsivity and treat comorbid anxiety or depression; antipsychotics such as risperidone may briefly reduce impulsivity and aggression; mood stabilisers are sometimes tried for affective lability, though the evidence is weak.
+- During a **crisis**, provide crisis-team contact numbers, and a sedating antihistamine such as promethazine may be used short-term. **Do not** use antipsychotics for the medium- or long-term management of EUPD.
+- Always treat comorbid substance misuse, mood and anxiety disorders, which strongly affect prognosis.`,
+        },
+        {
+          id: "somatoform_disorders",
+          name: "Somatoform disorders",
+          content: `## Somatoform disorders
+
+Somatoform disorders involve physical symptoms that suggest a medical condition but cannot be fully explained by one, by a substance, or by another mental disorder, and that cause significant distress or impairment. Crucially, the symptoms are **not intentionally produced** — this distinguishes them from factitious disorder and malingering.
+
+## The ICD-10 somatoform disorders (F45)
+
+- **Somatisation disorder** (Briquet syndrome): multiple, recurrent and frequently changing physical symptoms over at least two years, across many organ systems, with repeated investigations and a refusal to accept reassurance.
+- **Hypochondriacal disorder** (health anxiety): a persistent preoccupation with the fear of having a serious disease, which persists despite negative investigations and reassurance.
+- **Persistent somatoform pain disorder**: persistent, severe and distressing pain not explained by a physical disorder.
+- **Somatoform autonomic dysfunction**: symptoms of autonomic arousal attributed to a specific organ system (for example a cardiac neurosis).
+
+> DSM-5 has reframed this group as **somatic symptom disorder** and **illness anxiety disorder**, shifting the emphasis away from whether symptoms are medically unexplained and onto the presence of excessive thoughts, feelings and behaviours about the symptoms.
+
+## Distinguishing the look-alikes
+
+| Condition | Symptoms produced intentionally? | Motivation |
+|---|---|---|
+| Somatoform disorder | No | None — symptoms are genuinely experienced |
+| Factitious disorder (Munchausen) | Yes | To adopt the sick role (internal psychological gain) |
+| Malingering | Yes | External gain (money, time off, avoiding prosecution) |
+
+Malingering is not a psychiatric diagnosis.
+
+## Management
+
+The principle is to contain symptoms and avoid iatrogenic harm rather than to chase a physical cause.
+
+- Offer continuity through a **single named clinician** (usually the general practitioner, the GP) with **regularly scheduled appointments** rather than symptom-driven ones.
+- **Acknowledge that the symptoms are real**, while gently explaining that the body can generate symptoms in the absence of disease and that stress can play a part.
+- **Limit investigations and specialist referrals**, which reinforce illness beliefs and increase anxiety, while ensuring reasonable assessment so that genuine disease is not missed.
+- **Reassure** the patient that serious disease has been excluded, and **stop unnecessary medications**.
+- **Treat comorbid anxiety and depression**; antidepressants can help even in the absence of depression (as in tension headache or irritable bowel syndrome, IBS), and CBT is effective.`,
+        },
+        {
+          id: "dissociative_disorders",
+          name: "Dissociative disorders",
+          content: `## Dissociative disorders
+
+Dissociation is a partial or complete loss of the normal integration between memories, awareness of identity, immediate sensations and control of body movements. In ICD-10 the conversion disorders are grouped here as **dissociative (conversion) disorders (F44)** — the conditions historically labelled hysteria. Onset is typically linked to a recent traumatic event, an insoluble problem or a disturbed relationship.
+
+## The main forms
+
+- **Dissociative amnesia**: loss of memory, usually for recent or traumatic events, too extensive to be ordinary forgetfulness and not due to an organic cause.
+- **Dissociative fugue**: dissociative amnesia plus an apparently purposeful journey away from home, during which self-care is maintained.
+- **Dissociative stupor**: a profound reduction in or absence of voluntary movement and normal responsiveness, with no physical cause.
+- **Dissociative motor and sensory disorders (conversion)**: loss of motor function (limb weakness, paralysis, gait disturbance) or sensory function (functional blindness, deafness or anaesthesia) that does not follow anatomical or physiological rules.
+- **Dissociative (non-epileptic) convulsions**: episodes resembling epileptic seizures but without an electrical discharge; tongue-biting, serious injury and incontinence are uncommon and the eyes are often held closed.
+- **Depersonalisation–derealisation**: a feeling of being detached from oneself (depersonalisation) or that the surroundings are unreal (derealisation).
+
+> DSM-5 separates the **dissociative disorders** (dissociative amnesia, depersonalisation–derealisation disorder and dissociative identity disorder) from **conversion (functional neurological symptom) disorder**, whereas ICD-10 keeps them together.
+
+## Clinical features
+
+Symptoms do not conform to known anatomical pathways and often vary with attention. A classically described but unreliable sign is "la belle indifférence", a relative lack of concern about an apparently disabling deficit. The symptoms are not intentionally produced, which distinguishes dissociative disorders from factitious disorder and malingering.
+
+## Management
+
+- **Exclude organic disease** with appropriate assessment — a proportion of patients later prove to have a neurological diagnosis — but avoid over-investigation once it is reasonably excluded.
+- **Explain the diagnosis positively**, framing it as a genuine and potentially reversible disturbance of function rather than a feigned or untreatable one.
+- **Psychological therapy** (CBT and psychotherapy) is the mainstay, and any comorbid depression or anxiety should be treated.
+- **Physiotherapy** helps functional motor and gait disorders, and non-epileptic attacks are best managed with specialist neuropsychiatry input.
+- The prognosis is good when onset is acute, there is a clear stressor and treatment is early.`,
+        },
+        {
+          id: "psychiatric_prescribing",
+          name: "Psychiatric prescribing",
+          content: `## Psychiatric prescribing
+
+This topic brings together the major drug classes used in psychiatry, their key adverse effects and the monitoring they require.
+
+## Antidepressants
+
+- **Selective serotonin reuptake inhibitors (SSRIs)** — sertraline, citalopram, fluoxetine — are first-line. They take 2 to 4 weeks to work, so review at 1 to 2 weeks (within 1 week if the patient is under 25 or at higher suicide risk).
+- SSRI adverse effects include gastrointestinal upset, an early increase in anxiety and agitation in the first two weeks, hyponatraemia (especially in the elderly), sexual dysfunction, and gastrointestinal bleeding (co-prescribe a proton pump inhibitor if a non-steroidal anti-inflammatory drug is also used).
+- Citalopram and escitalopram cause dose-dependent QT-interval prolongation (maximum citalopram 40 milligrams, or 20 milligrams if over 65 or hepatically impaired). Sertraline is preferred after a myocardial infarction and in breastfeeding; fluoxetine is the agent of choice in children; paroxetine has the most marked discontinuation symptoms, so taper it slowly.
+- **Serotonin-noradrenaline reuptake inhibitors (SNRIs)** — venlafaxine, duloxetine — need blood-pressure monitoring and are more dangerous in overdose.
+- **Tricyclic antidepressants (TCAs)** are effective but dangerous in overdose (arrhythmia) and cause anticholinergic effects; lofepramine is the safest in overdose.
+- **Mirtazapine** (a noradrenergic and specific serotonergic antidepressant) is sedating and increases appetite, useful when insomnia or poor appetite is prominent, and has few interactions (preferred over an SSRI alongside warfarin).
+- **Switching**: cross-taper most agents; fluoxetine needs a 4 to 7 day gap before a new SSRI because of its long half-life, and a monoamine oxidase inhibitor (MAOI) needs a two-week washout.
+- **Serotonin syndrome** follows excess serotonergic activity (for example an SSRI with an MAOI or a triptan): agitation, autonomic instability, hyperthermia and neuromuscular features such as clonus and hyperreflexia.
+- In **pregnancy**, sertraline, citalopram and fluoxetine are generally considered safer; paroxetine carries a higher risk of congenital cardiac defects in the first trimester, and any SSRI in the third trimester can cause persistent pulmonary hypertension of the newborn.
+
+## Mood stabilisers
+
+- **Lithium** has a narrow therapeutic range of 0.6 to 1.0 mmol/L; it is toxic above 1.5 and severely toxic above 2.0 mmol/L.
+- Before starting lithium, check renal function, thyroid function, full blood count and a pregnancy test. Measure the level 12 hours post-dose, weekly until stable then every 3 months, with urea, electrolytes and thyroid function every 6 months (lithium is nephrotoxic and causes hypothyroidism).
+- Lithium toxicity causes gastrointestinal upset, a coarse tremor, ataxia, slurred speech, drowsiness and seizures, and is precipitated by dehydration, vomiting and diarrhoea, diuretics, non-steroidal anti-inflammatory drugs and angiotensin-converting enzyme inhibitors. Do not stop it abruptly (relapse risk). In pregnancy it is linked to Ebstein's anomaly, a cardiac defect.
+- **Sodium valproate** is highly teratogenic (neural tube defects) and must not be used in women of childbearing potential outside a pregnancy prevention programme. **Carbamazepine** is a hepatic enzyme inducer. **Lamotrigine** is useful for bipolar depression but is titrated slowly because of the risk of Stevens-Johnson syndrome.
+
+## Antipsychotics
+
+Antipsychotics block dopamine D2 receptors; the newer atypical agents also block serotonin 5-HT2 receptors.
+
+| Property | Typical (first generation) | Atypical (second generation) |
+|---|---|---|
+| Examples | Haloperidol, chlorpromazine, flupentixol | Olanzapine, risperidone, quetiapine, aripiprazole, clozapine |
+| Main drawback | More extrapyramidal side effects | More metabolic side effects |
+
+- **Extrapyramidal side effects (EPSEs)**: acute dystonia including oculogyric crisis (treated with procyclidine), akathisia, parkinsonism, and tardive dyskinesia (treated with tetrabenazine).
+- Other effects: hyperprolactinaemia (galactorrhoea, amenorrhoea, sexual dysfunction, osteoporosis), metabolic syndrome and weight gain (especially olanzapine and clozapine), QT prolongation, sedation, a lowered seizure threshold, and neuroleptic malignant syndrome.
+- **Avoid antipsychotics in Lewy body dementia** (severe sensitivity can be fatal), and note the increased risk of stroke and venous thromboembolism in elderly people with dementia.
+- **Baseline monitoring** before starting: weight and waist circumference, pulse and blood pressure, fasting glucose or HbA1c, lipid profile, prolactin, and an electrocardiogram (ECG) if there are cardiovascular risk factors. Monitor weight weekly for 6 weeks, then at 12 weeks, at 1 year and annually.
+
+## Clozapine
+
+- Reserved for **treatment-resistant schizophrenia** (failure of two or more antipsychotics, at least one atypical, each at a therapeutic dose for at least 6 weeks).
+- It carries a small but serious risk of **agranulocytosis** (around 0.7%), so the patient must be registered with a monitoring service and have regular full blood counts — weekly for 18 weeks, fortnightly until 1 year, then monthly.
+- Other serious effects: myocarditis (baseline ECG), a lowered seizure threshold, constipation (which can progress to a fatal ileus) and hypersalivation. Stopping smoking raises clozapine levels, and if doses are missed for more than 48 hours the drug must be re-titrated from a low dose.
+
+## Two emergencies to recognise
+
+- **Neuroleptic malignant syndrome**: fever, lead-pipe muscle rigidity, autonomic instability, altered consciousness and a raised creatine kinase. Stop the antipsychotic and give supportive care, with dantrolene or bromocriptine in severe cases.
+- **Serotonin syndrome** (above) has a faster onset and is marked by neuromuscular hyperactivity (clonus, hyperreflexia).
+
+## Benzodiazepines and ECT
+
+- **Benzodiazepines** enhance the action of gamma-aminobutyric acid (GABA). They are used short-term (no more than 2 to 4 weeks) for acute anxiety, agitation, alcohol withdrawal and as hypnotics, because of dependence and a withdrawal syndrome that can include seizures.
+- **Electroconvulsive therapy (ECT)** is reserved for severe, life-threatening depression (for example a person not eating or drinking or at high suicidal risk), catatonia, or severe prolonged mania; its main side effect is short-term memory impairment.`,
+        },
+        {
+          id: "mha_sectioning",
+          name: "Mental Health Act & sectioning",
+          content: `## The Mental Health Act and sectioning
+
+The Mental Health Act 1983 (amended in 2007) governs the compulsory admission and treatment of people with a mental disorder in England and Wales; Scotland and Northern Ireland have separate legislation. It can be used, regardless of capacity, only for the assessment or treatment of a mental disorder, when the person poses a risk to their own health or safety or to others.
+
+> Sectioning is a last resort. Informal (voluntary) admission should always be attempted first; a section follows only if the person does not agree and poses a risk.
+
+## The main civil sections
+
+| Section | Purpose | Duration | Who applies |
+|---|---|---|---|
+| 2 | Admission for assessment | 28 days, not renewable | 2 doctors (one section-12 approved) plus an AMHP |
+| 3 | Admission for treatment | 6 months, renewable | 2 doctors (one section-12 approved) plus an AMHP |
+| 4 | Emergency admission | 72 hours | 1 doctor plus an AMHP |
+| 5(2) | Doctor's holding power (inpatient) | 72 hours | 1 doctor |
+| 5(4) | Nurse's holding power (inpatient) | 6 hours | 1 mental health nurse |
+| 135 | Police remove from private premises to a place of safety | 24 hours (to 36) | Police, with warrant, AMHP and doctor |
+| 136 | Police remove from a public place to a place of safety | 24 hours (to 36) | Police |
+
+- **Section 2** is typically used for a first presentation or where the diagnosis is unclear, because it allows assessment. **Section 3** requires the disorder to be known and is for treatment; it is renewable (first for 6 months, then yearly).
+- Under **Section 3**, consent-to-treatment safeguards apply after 3 months: if the patient is not consenting, a Second Opinion Appointed Doctor (SOAD) must agree the treatment.
+- **Section 4** is used when waiting for a second doctor would cause an unacceptable delay, and is usually converted to a Section 2 at hospital.
+- **Section 5** holding powers buy time to arrange a formal assessment and cannot be used to treat against a patient's will; the nurse's 6-hour power (5(4)) lapses once a doctor attends.
+- **Section 17** allows the responsible clinician to grant leave of absence, and the forensic sections (35, 37, 41, 47 and 48) cover people involved in criminal proceedings.
+
+An **AMHP** is an Approved Mental Health Professional (usually a social worker) who coordinates the assessment and makes the application. A **section-12 approved** doctor has specific mental-health training; the **responsible clinician** is the consultant in charge of care.
+
+## After detention
+
+- A **Community Treatment Order (CTO)** lets a patient previously detained for treatment live in the community subject to conditions, and be recalled to hospital if these are breached.
+- Patients can appeal to the **Mental Health Review Tribunal**, and an **Independent Mental Health Advocate (IMHA)** can support them.
+
+## The Mental Health Act versus the Mental Capacity Act
+
+The Mental Capacity Act 2005 (MCA) is a separate framework for making decisions on behalf of people aged 16 and over who **lack capacity**, for either physical or mental health decisions. Its five principles include a presumption of capacity, support to make one's own decision, the right to make an unwise decision, and acting in the person's best interests by the least restrictive means. Where care in a hospital or care home amounts to a deprivation of liberty, the **Deprivation of Liberty Safeguards (DoLS)** apply.
+
+> In short: use the **Mental Capacity Act** when someone lacks capacity and you are acting in their best interests; use the **Mental Health Act** to assess or treat a mental disorder, with or without capacity, when there is risk and the person will not agree.`,
+        },
       ],
     },
     {
