@@ -1081,13 +1081,157 @@ The Mental Capacity Act 2005 (MCA) is a separate framework for making decisions 
     {
       id: "rheumatology", name: "MSK & Rheumatology", icon: "🦴",
       topics: [
-        { id: "_pending_rheumatology", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for MSK & Rheumatology has not been written yet.` },
+        {
+          id: "fracture_complications",
+          name: "Complications of fractures",
+          content: `## Complications of fractures
+
+Fracture complications are conveniently divided by timing into immediate, early and late, and by site into local (at the fracture) and systemic. Several are limb- or life-threatening and must be actively sought rather than waited for.
+
+## Immediate
+
+- **Haemorrhage and hypovolaemic shock** — long-bone and pelvic fractures can lose large volumes of blood (a closed femoral shaft fracture may lose 1 to 1.5 litres; pelvic fractures considerably more).
+- **Neurovascular injury** — nerves and arteries may be damaged by the fracture or during manipulation. Classic associations: humeral shaft fracture and the **radial nerve**; surgical neck of humerus and the **axillary nerve**; supracondylar humeral fracture and the **brachial artery and median nerve**; knee dislocation and the **popliteal artery**.
+- **Visceral injury** — for example rib fractures causing a pneumothorax, or pelvic fractures injuring the bladder or urethra.
+
+## Early (local)
+
+- **Compartment syndrome** — a surgical emergency (see below).
+- **Infection** — particularly after open fractures or internal fixation, and may progress to **osteomyelitis**.
+
+## Early (systemic)
+
+- **Fat embolism syndrome** — see below.
+- **Venous thromboembolism** — deep vein thrombosis and pulmonary embolism, especially after pelvic and lower-limb fractures and prolonged immobility; give thromboprophylaxis.
+- **Rhabdomyolysis** from crush injury, and the general hazards of immobility (pressure sores, chest infection).
+
+## Late
+
+- **Delayed union, non-union and malunion** — healing that is slow, fails altogether (a non-union may form a false joint, or pseudarthrosis), or unites in a poor position. Risks include a poor blood supply, infection, excessive movement and the fracture pattern.
+- **Avascular necrosis** — death of bone where the blood supply is precarious: the **scaphoid** (proximal pole), the **femoral head** (after an intracapsular neck-of-femur fracture) and the **talus**.
+- **Post-traumatic osteoarthritis** — especially after intra-articular fractures.
+- **Volkmann's ischaemic contracture** — the late result of an untreated forearm compartment syndrome (classically after a supracondylar fracture), with fibrosis and fixed clawing of the hand.
+- **Complex regional pain syndrome**, **heterotopic ossification**, and, in children, **growth disturbance** if the fracture involves a growth plate (physis).
+
+## Compartment syndrome — do not miss
+
+Raised pressure within a fascial compartment compromises perfusion and causes irreversible muscle and nerve ischaemia within hours.
+
+- **The cardinal sign is pain out of proportion to the injury, with pain on passive stretch of the muscles in the compartment.** Paraesthesia follows. The "6 Ps" (pain, paraesthesia, pallor, paralysis, pulselessness, perishingly cold) are late, and **a present pulse does not exclude it**.
+- It commonly follows tibial and forearm fractures, crush injuries or a tight cast.
+- **Management**: remove casts and constricting dressings, keep the limb at heart level, give oxygen and analgesia; measure compartment pressures if the diagnosis is in doubt; perform urgent **fasciotomy**.
+
+## Fat embolism syndrome
+
+- Occurs **24 to 72 hours** after a long-bone or pelvic fracture, as marrow fat enters the circulation.
+- The classic triad is **respiratory distress** (hypoxia), **neurological signs** (confusion, agitation) and a **petechial rash** (over the trunk, axillae and conjunctivae).
+- It is a clinical diagnosis (Gurd's criteria); management is supportive (oxygen, ventilation), and early fracture fixation is the best prevention.
+
+> Two complications to flag at every significant fracture: compartment syndrome (pain out of proportion, pain on passive stretch) and, after long-bone fractures, fat embolism and venous thromboembolism.`,
+        },
+        {
+          id: "vasculitides",
+          name: "Vasculitides",
+          content: `## Vasculitides
+
+The vasculitides are a group of conditions characterised by inflammation of blood vessel walls, leading to ischaemia and tissue damage. They are most usefully classified by the **size of the vessel** predominantly affected. Because many cause non-specific systemic features (fever, weight loss, fatigue, raised inflammatory markers), vasculitis should be considered in any unexplained multisystem illness.
+
+## Classification by vessel size
+
+| Vessel size | Conditions |
+|---|---|
+| Large | Giant cell arteritis, Takayasu arteritis |
+| Medium | Polyarteritis nodosa, Kawasaki disease, Buerger's disease |
+| Small | Granulomatosis with polyangiitis, Eosinophilic granulomatosis with polyangiitis, Microscopic polyangiitis, Henoch-Schönlein purpura |
+
+## Large-vessel vasculitis
+
+- **Giant cell arteritis (temporal arteritis)** affects the over-50s with temporal headache, scalp tenderness, jaw claudication and visual loss, and a markedly raised erythrocyte sedimentation rate (ESR). It overlaps with polymyalgia rheumatica. Temporal artery biopsy shows granulomatous transmural inflammation with giant cells and skip lesions. **Give high-dose oral prednisolone immediately to protect sight** — do not wait for the biopsy.
+- **Takayasu arteritis** affects the aorta and the branches of the aortic arch, classically in young East Asian women. An inflammatory phase (fever, weight loss) is followed by a "pulseless" phase with limb claudication, absent pulses and a blood-pressure difference between the arms.
+
+## Medium-vessel vasculitis
+
+- **Polyarteritis nodosa** is a necrotising arteritis with prominent renal involvement that characteristically **spares the lungs**; around 30% of cases are associated with **hepatitis B**. Angiography shows microaneurysms (a "string of beads" or rosary appearance) and histology shows fibrinoid necrosis.
+- **Kawasaki disease** is a vasculitis of young children: prolonged fever with conjunctivitis, mucositis (cracked lips, strawberry tongue), rash and peeling of the hands and feet. Its key danger is **coronary artery aneurysms**, so it is treated with intravenous immunoglobulin and aspirin.
+- **Buerger's disease (thromboangiitis obliterans)** occurs in young, heavy smokers: inflammation and thrombosis of the arteries of the extremities causes painful digital ischaemia and ulceration, with a "corkscrew" appearance on angiography.
+
+## Small-vessel vasculitis and ANCA
+
+The small-vessel vasculitides divide into those associated with antineutrophil cytoplasmic antibodies (ANCA) and immune-complex types.
+
+| ANCA pattern | Target antigen | Associated disease |
+|---|---|---|
+| c-ANCA | Proteinase 3 (PR3) | Granulomatosis with polyangiitis (GPA) |
+| p-ANCA | Myeloperoxidase (MPO) | Eosinophilic granulomatosis with polyangiitis (EGPA), microscopic polyangiitis (MPA) |
+
+- **Granulomatosis with polyangiitis (GPA, formerly Wegener's)** gives a triad of **upper respiratory tract** disease (sinusitis, epistaxis, saddle-nose deformity), **lower respiratory tract** disease (pulmonary nodules, cavitation, haemorrhage) and **kidney** disease (crescentic glomerulonephritis). It is c-ANCA / anti-PR3 positive.
+- **Eosinophilic granulomatosis with polyangiitis (EGPA, formerly Churg-Strauss)** features late-onset **asthma** and allergic rhinitis with marked **eosinophilia**, progressing to a systemic vasculitis. It is p-ANCA / anti-MPO positive.
+- **Microscopic polyangiitis (MPA)** is a pauci-immune small-vessel vasculitis causing a **pulmonary-renal syndrome** (pulmonary haemorrhage with rapidly progressive glomerulonephritis). It is p-ANCA / anti-MPO positive.
+- **Henoch-Schönlein purpura (IgA vasculitis)** is an IgA-mediated vasculitis of **children**, often following an upper respiratory infection, with the tetrad of a **palpable purpuric rash** (buttocks and extensor surfaces of the legs), **arthritis**, **abdominal pain** and **glomerulonephritis**. It is usually self-limiting with supportive care.
+
+## Investigation and management
+
+- **Investigations**: inflammatory markers (ESR, C-reactive protein), ANCA, urinalysis and renal function (for glomerulonephritis), complement, hepatitis serology (for polyarteritis nodosa), angiography, and biopsy of an affected organ for the definitive diagnosis.
+- **Management**: high-dose corticosteroids to induce remission, with **cyclophosphamide or rituximab** for severe ANCA-associated disease, followed by maintenance with azathioprine or methotrexate. **Plasma exchange** is used for severe pulmonary-renal disease. GPA additionally receives **co-trimoxazole** (for nasal Staphylococcus aureus carriage and Pneumocystis prophylaxis).
+
+> ANCA shortcut: **c**-ANCA targets PR3 and points to GPA, while **p**-ANCA targets MPO and points to EGPA and MPA. Giant cell arteritis is the large-vessel one that threatens sight — treat with steroids before the biopsy.`,
+        },
       ],
     },
     {
       id: "dermatology", name: "Dermatology", icon: "🧴",
       topics: [
-        { id: "_pending_dermatology", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for Dermatology has not been written yet.` },
+        {
+          id: "skin_cancer",
+          name: "Malignant & pre-malignant skin lesions",
+          content: `## Malignant and pre-malignant skin lesions
+
+Skin cancers are the commonest cancers, and most are driven by ultraviolet (UV) light. The "big three" are basal cell carcinoma, squamous cell carcinoma and melanoma. Several pre-malignant lesions can progress to invasive cancer, so recognising and treating them early matters.
+
+## Risk factors
+
+- **Ultraviolet exposure** — cumulative lifetime exposure for basal and squamous cell carcinoma; intermittent intense burning (especially in childhood) for melanoma.
+- **Fair skin** (Fitzpatrick types I-II), older age, and outdoor work or sunbed use.
+- **Immunosuppression** — organ-transplant recipients have a greatly increased squamous cell carcinoma risk.
+- **Genetic and other** — xeroderma pigmentosum, albinism, previous radiotherapy, and chronic wounds or scars (a squamous cell carcinoma arising in one is a **Marjolin's ulcer**).
+- For melanoma specifically — **many or atypical moles** and a personal or family history of melanoma.
+
+## Pre-malignant lesions
+
+| Lesion | Features | Note |
+|---|---|---|
+| Actinic (solar) keratosis | Rough, scaly, sandpaper-like patches on sun-exposed skin; often better felt than seen | Small risk of progression to squamous cell carcinoma |
+| Bowen's disease | Well-demarcated red scaly plaque, often on the lower legs of older women | Squamous cell carcinoma **in situ** (the basement membrane is intact) |
+| Lentigo maligna | Slowly growing flat pigmented macule on the sun-damaged face of the elderly | Melanoma **in situ**; can progress to lentigo maligna melanoma |
+
+- A **keratoacanthoma** is a rapidly growing dome-shaped nodule with a central keratin plug that may regress spontaneously, but it is histologically hard to distinguish from squamous cell carcinoma and is treated as such.
+- Treatment of actinic keratosis and Bowen's disease: sun protection plus cryotherapy, topical 5-fluorouracil or imiquimod, photodynamic therapy, or excision, with monitoring.
+
+## Basal cell carcinoma
+
+The commonest skin cancer; slow-growing and locally destructive but it **rarely metastasises** (the "rodent ulcer").
+
+- **Appearance**: a pearly nodule with surface telangiectasia and a rolled border, often with central ulceration, on sun-exposed skin (especially the face). Subtypes include nodular, superficial and morphoeic (infiltrative). Histology shows islands of basal cells with peripheral palisading.
+- **Management**: surgical excision; Mohs micrographic surgery for high-risk or facial lesions; curettage, cryotherapy or topical agents for low-risk superficial lesions; radiotherapy when surgery is unsuitable. Referral is usually routine.
+
+## Squamous cell carcinoma
+
+A keratinocyte malignancy that **can metastasise** (higher risk on the lip and ear, and in the immunosuppressed).
+
+- **Appearance**: a rapidly growing keratotic or ulcerated nodule on sun-damaged skin; it may arise from an actinic keratosis, from Bowen's disease, or in a chronic wound (a Marjolin's ulcer).
+- **Management**: surgical excision with a margin, with assessment of the regional lymph nodes; radiotherapy in selected cases; refer on the two-week-wait suspected-cancer pathway.
+
+## Melanoma
+
+A malignancy of melanocytes — less common than the keratinocyte cancers but responsible for most skin-cancer deaths.
+
+- **Recognition (the ABCDE rule)**: **A**symmetry, **B**order irregularity, **C**olour variation, **D**iameter over 6 mm, and **E**volution (change over time). The UK 7-point checklist weights a change in size, shape or colour most heavily.
+- **Growth and prognosis**: melanoma first grows horizontally (the radial phase), then invades vertically into the dermis (the vertical phase, with Pagetoid "buckshot" spread on histology). **Breslow thickness — the depth of invasion — is the single most important prognostic factor**; ulceration and mitotic rate also matter.
+- **Subtypes**: superficial spreading (commonest), nodular (aggressive, with early vertical growth), lentigo maligna melanoma (sun-damaged elderly), and acral lentiginous (palms, soles and nail beds; the commonest type in darker skin).
+- **Management**: urgent two-week-wait referral; an **excisional biopsy** to determine Breslow thickness, then **wide local excision** with a margin guided by depth; sentinel lymph node biopsy and staging for thicker lesions; for advanced disease, immunotherapy (checkpoint inhibitors) and targeted therapy (BRAF inhibitors).
+
+> Refer any new, changing or non-healing pigmented or scaly lesion. Melanoma and squamous cell carcinoma go on the two-week-wait suspected-cancer pathway, while basal cell carcinoma is usually a routine referral. Breslow thickness is the key melanoma prognostic factor.`,
+        },
       ],
     },
     {
