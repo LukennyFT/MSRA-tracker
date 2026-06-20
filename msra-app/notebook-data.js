@@ -1831,13 +1831,258 @@ Testing a child for an adult-onset condition is generally deferred until the chi
     {
       id: "reproductive", name: "Reproductive & Sexual Health", icon: "⚕️",
       topics: [
-        { id: "_pending_reproductive", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for Reproductive & Sexual Health has not been written yet.` },
+        {
+          id: "cervical_screening",
+          name: "Cervical screening & colposcopy",
+          content: `## Cervical screening and colposcopy
+
+Cervical screening detects pre-cancerous change of the cervix before it becomes invasive cancer. Almost all cervical cancer is caused by persistent infection with high-risk human papillomavirus (HPV), particularly types 16 and 18, so the programme now tests for HPV first.
+
+## The transformation zone
+
+The outer cervix is covered by squamous epithelium and the endocervical canal by columnar (glandular) epithelium; the two meet at the squamocolumnar junction. The transformation zone, where columnar epithelium undergoes squamous metaplasia, has a high rate of cell turnover and is where dysplasia (cervical intraepithelial neoplasia) and most cervical cancers arise.
+
+## The NHS screening programme
+
+- **Who**: women (and anyone with a cervix) aged **25 to 64**.
+- **How often**: every **3 years** from 25 to 49, then every **5 years** from 50 to 64.
+- **The test is HPV primary screening** — the sample is tested for high-risk HPV first.
+- If **HPV negative**, the person returns to routine recall.
+- If **HPV positive**, cytology (a "smear") is done on the same sample: if cytology is abnormal, refer for **colposcopy**; if normal, repeat in 12 months.
+- It is a screening (not diagnostic) test, and HPV vaccination of schoolchildren reduces but does not remove the need for it.
+
+## CIN — what the results mean
+
+Cytology grades change as mild, moderate or severe **dyskaryosis**; histology from a biopsy grades it as **cervical intraepithelial neoplasia (CIN)**:
+
+| Grade | Extent of dysplasia |
+|---|---|
+| CIN 1 | Lowest third of the epithelium (most regress spontaneously) |
+| CIN 2 | Lower two-thirds |
+| CIN 3 | Full thickness, but the basement membrane is intact (carcinoma in situ) |
+
+Most CIN 1 reverts to normal, whereas a substantial minority of untreated CIN 3 progresses to invasive cancer over roughly 10 years — invasion through the basement membrane marks the change from CIN 3 to carcinoma.
+
+## Colposcopy and treatment
+
+- **Colposcopy** is magnified examination of the cervix; applying acetic acid turns abnormal areas white (acetowhite), and a biopsy can be taken.
+- High-grade CIN is usually treated by a **large loop excision of the transformation zone (LLETZ)** under local anaesthetic, or a cone biopsy for larger lesions.
+- Excision carries a small risk of **mid-trimester miscarriage and preterm birth** in later pregnancies (from cervical weakness).
+- A **test of cure** (repeat HPV and cytology) is performed at **6 months**.
+
+> Cervical cancer is most often a squamous cell carcinoma (with adenocarcinoma the main other type) and presents with post-coital, intermenstrual or postmenopausal bleeding. HPV's E6 and E7 proteins inactivate the p53 and retinoblastoma (Rb) tumour-suppressor genes, driving malignant change.`,
+        },
+        {
+          id: "dyspareunia",
+          name: "Dyspareunia",
+          content: `## Dyspareunia
+
+Dyspareunia is pain during or after sexual intercourse. It is classified by site into **superficial** (felt at the vaginal entrance) and **deep** (felt in the pelvis on deeper penetration), and this distinction guides the differential.
+
+## Superficial dyspareunia
+
+Pain at the introitus, usually from a local or vulvovaginal cause:
+
+- **Vaginal dryness and atrophy** — the commonest cause, especially with the menopause (low oestrogen), and during breastfeeding.
+- **Infection** — candidiasis, bacterial vaginosis, trichomoniasis or herpes.
+- **Vulval skin disease** — lichen sclerosus, eczema or dermatitis.
+- **Vaginismus** — involuntary spasm of the pelvic floor muscles, often with a psychological component.
+- **Vulvodynia**, a Bartholin's cyst or abscess, or simply inadequate arousal and lubrication.
+
+## Deep dyspareunia
+
+Pain felt deep in the pelvis, pointing to pelvic pathology:
+
+- **Endometriosis** and **adenomyosis**.
+- **Pelvic inflammatory disease** and pelvic adhesions.
+- **Ovarian pathology** (cysts) or **fibroids**.
+
+## Assessment and management
+
+- **History**: superficial versus deep, primary (always present) versus secondary (new onset), the relationship to the menstrual cycle, and associated symptoms (discharge, dryness, subfertility); explore psychological and relationship factors sensitively.
+- **Examination and investigations**: speculum and bimanual examination, vaginal and sexually-transmitted-infection swabs, and a pelvic ultrasound; laparoscopy if endometriosis is suspected.
+- **Management is directed at the cause**: lubricants and topical oestrogen for atrophy, treating any infection, managing vulval skin disease, treating endometriosis or pelvic inflammatory disease, and psychosexual therapy (including for vaginismus).`,
+        },
+        {
+          id: "post_coital_bleeding",
+          name: "Post-coital bleeding",
+          content: `## Post-coital bleeding
+
+Post-coital bleeding is vaginal bleeding after sexual intercourse. Although most causes are benign, the priority is to exclude **cervical cancer**, so it should never be ignored.
+
+## Causes
+
+- **Cervical ectropion** — the commonest cause, where columnar epithelium is exposed on the outer cervix; common in younger women, on the combined oral contraceptive pill, and in pregnancy.
+- **Cervical or endometrial polyps**.
+- **Infection** — cervicitis, often from a sexually transmitted infection such as chlamydia.
+- **Atrophic vaginitis** in postmenopausal women.
+- **Cervical cancer** — the key diagnosis not to miss.
+
+## Assessment
+
+- **History**: the bleeding pattern, sexual and contraceptive history, and cervical screening status; also ask about intermenstrual and postmenopausal bleeding.
+- **Examination**: speculum examination to visualise the cervix (ectropion, polyp or a suspicious lesion) and a bimanual examination.
+- **Investigations**: take **STI swabs** (including chlamydia), check the **cervical screening** history, and arrange **colposcopy** for an abnormal-looking cervix or persistent unexplained bleeding.
+
+## Management
+
+- Treat the underlying cause: an ectropion can be left if asymptomatic or treated (for example with cryotherapy, or by switching from an oestrogen-containing pill); remove polyps; treat infection; topical oestrogen for atrophy.
+- **Refer urgently on the two-week-wait pathway if cervical cancer is suspected** on examination.
+
+> Post-coital bleeding with a visibly abnormal cervix is cervical cancer until proven otherwise — examine the cervix and refer, even if a recent smear was normal, because screening can miss an established cancer.`,
+        },
+        {
+          id: "fibroadenoma",
+          name: "Fibroadenoma",
+          content: `## Fibroadenoma
+
+A fibroadenoma is a **benign** breast tumour arising from a breast lobule, made of fibrous (stromal) and glandular (epithelial) tissue. It is the **commonest breast lump in women aged 20 to 40** and is oestrogen-sensitive, so it can enlarge in pregnancy and tends to regress after the menopause.
+
+## How it presents
+
+- A **smooth, firm, well-defined, rubbery and highly mobile** lump — its mobility earns it the nickname "breast mouse".
+- Usually **single, unilateral and 1 to 5 cm**, and characteristically **painless**.
+
+## Assessment
+
+Like any discrete breast lump, it is evaluated by **triple assessment**:
+
+- **Clinical examination**.
+- **Imaging** — ultrasound in younger women (denser breast tissue), mammography in older women (generally over about 35).
+- **Tissue sampling** — core biopsy (histology) or fine-needle aspiration (cytology), which shows a characteristic benign pattern.
+
+## Management
+
+- Once confirmed and small, a fibroadenoma can be safely **left and monitored** — most do not raise breast-cancer risk and a proportion regress.
+- **Excision** is offered if it is large (over about 3 cm), growing, symptomatic, or by patient preference.
+
+> The main differential in an older woman is a **phyllodes tumour**, which can arise within a fibroadenoma, tends to present over 50, and is excised with a wide margin because it can behave aggressively. Always confirm a clinical "fibroadenoma" with triple assessment rather than by examination alone.`,
+        },
       ],
     },
     {
       id: "paediatrics", name: "Paediatrics & Child Health", icon: "🧒",
       topics: [
-        { id: "_pending_paediatrics", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for Paediatrics has not been written yet.` },
+        {
+          id: "developmental_milestones",
+          name: "Developmental milestones",
+          content: `## Developmental milestones
+
+Child development is assessed across **four domains**: gross motor, fine motor and vision, hearing/speech/language, and social/emotional/behavioural. Knowing the median ages and, more importantly, the **limit ages** (the age by which a skill should have appeared) lets you tell normal variation from genuine delay.
+
+## Gross motor
+
+| Age | Milestone |
+|---|---|
+| 3 months | Good head control; lifts head when prone |
+| 6 months | Sits without support (limit age 9 months) |
+| 9 months | Crawls; pulls to stand |
+| 12 months | Stands independently; cruises |
+| 15–18 months | Walks independently (limit age 18 months) |
+| 2 years | Runs; walks up stairs |
+| 3 years | Rides a tricycle; stairs one foot per step |
+
+## Fine motor and vision
+
+| Age | Milestone |
+|---|---|
+| 6 weeks | Fixes and follows a face |
+| 4 months | Reaches for objects |
+| 6 months | Palmar grasp; transfers hand to hand |
+| 10 months | Immature pincer grip |
+| 12 months | Mature pincer grip; points |
+| 18 months | Tower of 3–4 bricks; scribbles |
+| 2 years | Tower of 6 bricks; copies a vertical line |
+| 3 years | Tower of 9 bricks; copies a circle |
+
+## Hearing, speech and language
+
+| Age | Milestone |
+|---|---|
+| Newborn | Startles to loud noise |
+| 3–4 months | Vocalises, coos and laughs |
+| 6–9 months | Babbles |
+| 12 months | Says 2–3 words with meaning |
+| 18 months | 6–10 words; points to body parts |
+| 2 years | Joins two words together |
+| 3 years | Speaks in short sentences |
+
+## Social, emotional and behavioural
+
+| Age | Milestone |
+|---|---|
+| 6 weeks | Smiles responsively (limit age 8 weeks) |
+| 6–9 months | Stranger anxiety |
+| 12 months | Waves bye-bye; drinks from a cup |
+| 18 months | Uses a spoon |
+| 2 years | Symbolic (pretend) play; dry by day |
+| 3 years | Plays with other children; toilet trained |
+
+## Red flags and limit ages
+
+Refer for assessment if a limit age passes without the skill, or if development regresses:
+
+- **Not smiling by 8 weeks.**
+- **Not sitting unsupported by 9 months.**
+- **Not walking by 18 months.**
+- **Hand preference before 12 months** (may indicate a hemiplegia).
+- **No words by 18 months**, or no two-word phrases by 2 years.
+- **Loss of previously acquired skills (regression)** — always significant.
+
+> Always correct for prematurity (up to 2 years), assess all four domains together, and take parental concern seriously. Global delay (all domains) points to a different cause from an isolated single-domain delay, and regression of skills is a red flag warranting urgent investigation.`,
+        },
+        {
+          id: "paediatric_hip_conditions",
+          name: "Paediatric hip conditions",
+          content: `## Paediatric hip conditions
+
+A limp or hip pain in a child has a differential best narrowed by **age**, and the priority is always to exclude **septic arthritis**.
+
+## The limping child by age
+
+| Age | Most likely causes |
+|---|---|
+| 0–4 years | Developmental dysplasia of the hip, septic arthritis, toddler's fracture |
+| 4–10 years | Transient synovitis (commonest), Perthes disease, septic arthritis |
+| 10–16 years | Slipped capital femoral epiphysis, septic arthritis |
+
+Septic arthritis must be considered at any age.
+
+## Developmental dysplasia of the hip (DDH)
+
+- Abnormal development of the hip joint, from instability to frank dislocation; commoner in **girls, breech babies and with a family history**, and on the left.
+- Screened at the newborn and 6-week checks with the **Barlow** (dislocates an unstable hip) and **Ortolani** (relocates a dislocated hip) manoeuvres; later signs are asymmetric skin creases and limited hip abduction.
+- **Ultrasound** is used under 6 months (requested at 6 weeks for a breech presentation or delivery, or a family history); **X-ray** is better from 6 months.
+- Most unstable hips resolve spontaneously; otherwise a **Pavlik harness** (holding the hip flexed and abducted) under about 4–5 months, with surgery (reduction and spica cast) if that fails or for late presentation.
+
+## Transient synovitis (irritable hip)
+
+- The **commonest cause of acute hip pain and limp** in young children (about 3–8 years), typically **after a viral upper respiratory infection**.
+- The child is **systemically well**, with a limp and reduced hip movement and little or no fever.
+- It is a diagnosis of exclusion — the key step is to **rule out septic arthritis**. Management is rest and analgesia (NSAIDs); it settles within a few days.
+
+## Perthes disease
+
+- **Idiopathic avascular necrosis of the femoral head**, in children about **4–8 years old** and **commoner in boys**.
+- Presents with an insidious limp and hip or knee pain, with reduced abduction and internal rotation.
+- Diagnosed on X-ray (early flattening and later fragmentation of the femoral head); management aims to **keep the femoral head contained** in the acetabulum — observation and physiotherapy in younger children, surgery if older or severe.
+
+## Slipped capital femoral epiphysis (SUFE)
+
+- The femoral head epiphysis slips through the growth plate, typically in an **overweight adolescent boy** (about 10–16 years), sometimes after minor trauma.
+- Presents with hip, groin or **referred knee pain** and an externally rotated, shortened leg with limited internal rotation.
+- X-ray shows the slip — **Trethowan's sign**: Klein's line drawn along the superior femoral neck fails to intersect the epiphysis.
+- It is an orthopaedic emergency: keep the child **non-weight-bearing** and refer for **in-situ screw fixation**.
+
+## Septic arthritis — never miss it
+
+- Bacterial infection of the joint (usually Staphylococcus aureus) that can destroy it within hours.
+- An **unwell, febrile child** who refuses to weight-bear, with a hot, painful joint held still.
+- The **Kocher criteria** help distinguish it from transient synovitis: non-weight-bearing, fever over 38.5 degrees, ESR over 40, and white cell count over 12. Confirm with **urgent joint aspiration** and blood cultures.
+- Treatment is **joint washout and prolonged antibiotics** — a surgical emergency.
+
+> The two diagnoses not to miss are septic arthritis (an unwell, febrile child who will not weight-bear — aspirate the joint) and SUFE (an adolescent with knee pain — examine and X-ray the hip). Hip pathology classically refers pain to the knee, so always examine the hip in a child presenting with knee pain.`,
+        },
       ],
     },
   ],
