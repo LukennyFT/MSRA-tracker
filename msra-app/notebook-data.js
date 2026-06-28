@@ -1243,7 +1243,116 @@ A malignancy of melanocytes — less common than the keratinocyte cancers but re
     {
       id: "ophthalmology", name: "Ophthalmology", icon: "👁️",
       topics: [
-        { id: "_pending_ophthalmology", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for Ophthalmology has not been written yet.` },
+        {
+          id: "corneal_arcus",
+          name: "Corneal arcus",
+          content: `## Corneal arcus
+
+Corneal arcus (called arcus senilis when age-related) is a grey-white ring of lipid deposited in the peripheral cornea. It is one of the commonest peripheral corneal findings and is usually benign.
+
+## Features
+
+- A **white, grey or bluish ring** at the periphery of the cornea, separated from the limbus by a clear zone (the lucid interval of Vogt).
+- It typically begins at the top and bottom of the cornea and then becomes a complete ring.
+- It is **bilateral, painless and does not affect vision**.
+
+## Why it matters
+
+- It is due to lipid (cholesterol) deposited in the corneal stroma.
+- In people **over about 50 it is a normal age-related change** (arcus senilis) and needs no action.
+- In people **under about 45 (arcus juvenilis) it suggests an underlying lipid disorder** — check a fasting lipid profile and cardiovascular risk, as it can be a sign of familial hypercholesterolaemia.
+- A **unilateral** arcus is unusual and can reflect reduced blood flow on the opposite side (for example carotid disease).
+
+## Management
+
+- No treatment is needed for the eye itself.
+- In a younger patient, investigate and manage hyperlipidaemia and overall cardiovascular risk.
+
+> Corneal arcus in anyone under about 45 should prompt a lipid profile — it may be the first clue to familial hypercholesterolaemia. Do not confuse it with a Kayser-Fleischer ring, which is copper, sits right at the limbus, and points to Wilson's disease.`,
+        },
+        {
+          id: "hypertensive_retinopathy",
+          name: "Hypertensive retinopathy",
+          content: `## Hypertensive retinopathy
+
+Hypertensive retinopathy is the spectrum of retinal changes caused by chronic (and acute severe) high blood pressure. It is a marker of end-organ damage, so finding it should prompt cardiovascular assessment.
+
+## Pathophysiology
+
+Chronically raised blood pressure thickens the retinal arteriolar walls (arteriosclerosis) and, when severe, breaks down the blood-retinal barrier. This causes leakage (haemorrhages and exudates), ischaemia (cotton-wool spots) and, at the extreme, optic disc swelling.
+
+## The Keith-Wagener-Barker grades
+
+| Grade | Retinal findings |
+|---|---|
+| 1 | Generalised arteriolar narrowing; silver or copper wiring |
+| 2 | Arteriovenous nipping (arterioles compressing venules at crossings) |
+| 3 | Flame haemorrhages, cotton-wool spots and hard exudates |
+| 4 | The above plus papilloedema (optic disc swelling) — malignant hypertension |
+
+Severe disease can also show a **macular star** (hard exudates radiating from the fovea).
+
+## Assessment and management
+
+- **Examination**: fundoscopy for the grade of changes, and measure the blood pressure (in both arms).
+- **Investigations**: look for end-organ damage (urinalysis and renal function, electrocardiogram) and other cardiovascular risk factors; seek a secondary cause of hypertension if the patient is young or resistant to treatment.
+- **Management is to control the blood pressure**, after which mild changes can regress. **Grade 4 (papilloedema) is malignant hypertension** — a medical emergency needing prompt but controlled blood-pressure lowering.
+
+> Grade 3 to 4 changes (haemorrhages, exudates, cotton-wool spots and especially papilloedema) signal malignant hypertension: check for end-organ damage and lower the blood pressure urgently but in a controlled way.`,
+        },
+        {
+          id: "retinitis_pigmentosa",
+          name: "Retinitis pigmentosa",
+          content: `## Retinitis pigmentosa
+
+Retinitis pigmentosa is the commonest inherited retinal dystrophy: a progressive degeneration of the photoreceptors that affects the rods first and the cones later.
+
+## How it presents
+
+- **Night blindness (nyctalopia)** is the earliest symptom, because the rods are affected first.
+- **Progressive loss of the peripheral visual field (tunnel vision)**, which eventually threatens central vision.
+- It usually begins in childhood or early adulthood and is typically bilateral.
+
+## Signs and inheritance
+
+- The classic fundus triad is **"bone-spicule" pigmentation** in the peripheral retina, **attenuated (narrowed) retinal vessels** and a **pale, waxy optic disc**.
+- It is genetically heterogeneous, with autosomal dominant, autosomal recessive and X-linked forms.
+- It can be part of a **syndrome** — for example **Usher syndrome** (retinitis pigmentosa with sensorineural hearing loss) or **Bardet-Biedl syndrome**.
+
+## Investigation and management
+
+- **Investigations**: electroretinography (reduced responses), visual field testing and optical coherence tomography; genetic testing and counselling.
+- **Management**: there is no cure, so care is supportive — low-vision aids, registration as sight-impaired, genetic counselling, and screening for treatable complications (cataract, macular oedema). Gene therapy and retinal implants are areas of active research.
+
+> Suspect retinitis pigmentosa in a young person with night blindness and tunnel vision; the fundal triad is bone-spicule pigmentation, attenuated vessels and a waxy pale disc. Always ask about hearing (Usher syndrome).`,
+        },
+        {
+          id: "uveitis",
+          name: "Uveitis",
+          content: `## Uveitis
+
+Uveitis is inflammation of the uveal tract (the iris, ciliary body and choroid). It is classified by the part affected — **anterior** (iris and ciliary body, the commonest), **intermediate**, **posterior** (choroid and retina), or **panuveitis** — and is strongly associated with systemic inflammatory disease.
+
+## Anterior uveitis (iritis)
+
+The commonest and most high-yield form:
+
+- **Presentation**: a painful red eye with **photophobia**, blurred vision and watering; the redness is concentrated around the cornea (ciliary flush) and the pupil may be small and irregular.
+- **Slit-lamp signs**: cells and flare in the anterior chamber, keratic precipitates on the corneal endothelium, and sometimes a hypopyon (a fluid level of pus) or posterior synechiae (adhesions of the iris to the lens).
+
+## Causes and associations
+
+- Often **idiopathic**, but strongly associated with **HLA-B27** conditions: ankylosing spondylitis, reactive arthritis, psoriatic arthritis and inflammatory bowel disease.
+- Also **sarcoidosis**, **Behçet's disease**, juvenile idiopathic arthritis (often painless and chronic in children), and infections (herpes, tuberculosis, syphilis).
+
+## Management
+
+- **Refer urgently to ophthalmology.**
+- **Topical corticosteroids** to settle the inflammation and a **cycloplegic/mydriatic** drop (for example cyclopentolate) to relieve the pain of ciliary spasm and to prevent or break synechiae.
+- Investigate and treat any **underlying systemic disease**; recurrent or posterior disease may need systemic immunosuppression.
+
+> Anterior uveitis is the painful red eye with photophobia, a small irregular pupil and ciliary flush — refer urgently, treat with steroid and cycloplegic drops, and look for an HLA-B27 association. Contrast it with conjunctivitis (gritty, not truly painful) and acute angle-closure glaucoma (fixed mid-dilated pupil, hard eye).`,
+        },
       ],
     },
     {
