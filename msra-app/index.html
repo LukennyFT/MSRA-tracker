@@ -1835,6 +1835,20 @@
         setViewModeState(m);
         try { localStorage.setItem("msra_tracker_mode", m); } catch (e) {}
       };
+      // Collapsed clinical-cluster accordions, keyed "<specialtyId>::<clusterName>" → true
+      const [collapsedClusters, setCollapsedClusters] = useState(() => {
+        try { return JSON.parse(localStorage.getItem("msra_tracker_collapsed") || "{}"); } catch (e) { return {}; }
+      });
+      const persistCollapsed = (next) => {
+        try { localStorage.setItem("msra_tracker_collapsed", JSON.stringify(next)); } catch (e) {}
+        return next;
+      };
+      const toggleCluster = (key) => setCollapsedClusters(prev => persistCollapsed({ ...prev, [key]: !prev[key] }));
+      const setClustersCollapsed = (keys, val) => setCollapsedClusters(prev => {
+        const next = { ...prev };
+        keys.forEach(k => { if (val) next[k] = true; else delete next[k]; });
+        return persistCollapsed(next);
+      });
 
       const currentSpecialty = SPECIALTIES.find(s => s.id === activeSpecialty) || SPECIALTIES[0];
 
@@ -1855,6 +1869,30 @@
         const matchFilter = filterStatus === "all" || (statuses[c.id] || "none") === filterStatus;
         return matchSearch && matchFilter;
       });
+
+      // Clinical clusters (from each condition's `cluster` field; array order = clinical order).
+      const hasClusters = currentSpecialty.conditions.some(c => c.cluster);
+      const clusterName = c => c.cluster || "Other";
+      // Full per-cluster status tallies (all conditions, ignoring search/filter) for the header progress.
+      const clusterFullStats = {};
+      const allClusterNames = [];
+      currentSpecialty.conditions.forEach(c => {
+        const nm = clusterName(c);
+        let s = clusterFullStats[nm];
+        if (!s) { s = clusterFullStats[nm] = { green: 0, yellow: 0, red: 0, none: 0, total: 0 }; allClusterNames.push(nm); }
+        s[statuses[c.id] || "none"]++; s.total++;
+      });
+      const allClusterKeys = allClusterNames.map(nm => `${currentSpecialty.id}::${nm}`);
+      // Group the FILTERED conditions into clusters, preserving clinical order; empty clusters drop out.
+      const clusterGroups = [];
+      const groupIndex = {};
+      filtered.forEach(c => {
+        const nm = clusterName(c);
+        if (groupIndex[nm] === undefined) { groupIndex[nm] = clusterGroups.length; clusterGroups.push({ name: nm, conditions: [] }); }
+        clusterGroups[groupIndex[nm]].conditions.push(c);
+      });
+      // While searching or status-filtering, reveal every matching cluster regardless of collapse.
+      const forceOpenClusters = search.trim() !== "" || filterStatus !== "all";
 
       const getStats = sp => {
         const counts = { green: 0, yellow: 0, red: 0, none: 0 };
@@ -2019,6 +2057,17 @@
                         </button>
                       ))}
                     </div>
+                    {hasClusters && (
+                      <div style={{ display: "flex", gap: 4, marginLeft: "auto" }}>
+                        {[{ label: "Collapse all", val: true }, { label: "Expand all", val: false }].map(b => (
+                          <button key={b.label} onClick={() => setClustersCollapsed(allClusterKeys, b.val)} style={{
+                            padding: "0.3rem 0.6rem", borderRadius: 5, cursor: "pointer",
+                            fontSize: "0.72rem", fontFamily: "monospace", background: "#fff",
+                            color: "#666", border: "1px solid #d0d0c0",
+                          }}>{b.label}</button>
+                        ))}
+                      </div>
+                    )}
                   </React.Fragment>
                 )}
               </div>
@@ -2027,7 +2076,10 @@
               <div style={{ marginBottom: "0.7rem", display: "flex", alignItems: "baseline", gap: "0.7rem" }}>
                 <span style={{ fontSize: "1.3rem" }}>{currentSpecialty.icon}</span>
                 <h2 style={{ margin: 0, fontSize: "1.18rem", fontWeight: 700, color: "#141a2b" }}>{currentSpecialty.name}</h2>
-                <span style={{ fontSize: "0.78rem", color: "#888", fontFamily: "monospace" }}>{filtered.length} {currentSpecialty.itemNoun || "conditions"}</span>
+                <span style={{ fontSize: "0.78rem", color: "#888", fontFamily: "monospace" }}>
+                  {filtered.length} {currentSpecialty.itemNoun || "conditions"}
+                  {viewMode === "list" && hasClusters && ` · ${allClusterNames.length} clusters`}
+                </span>
               </div>
 
               {/* Conditions */}
@@ -2037,9 +2089,8 @@
                   statusChangedAt={statusChangedAt}
                   hoverId={hoverId} setHoverId={setHoverId} />
               )}
-              {viewMode === "list" && (
-              <div style={{ display: "flex", flexDirection: "column", gap: "0.55rem" }}>
-                {filtered.map(condition => {
+              {viewMode === "list" && (() => {
+                const renderConditionCard = (condition) => {
                   const status = statuses[condition.id] || "none";
                   const sc = STATUS_CONFIG[status];
                   const isExpanded = expandedId === condition.id;
@@ -2205,14 +2256,87 @@
                       )}
                     </div>
                   );
-                })}
-                {filtered.length === 0 && (
-                  <div style={{ textAlign: "center", padding: "2.5rem", color: "#888" }}>
-                    No conditions match your filters.
+                };
+                if (filtered.length === 0) {
+                  return (
+                    <div style={{ textAlign: "center", padding: "2.5rem", color: "#888" }}>
+                      No conditions match your filters.
+                    </div>
+                  );
+                }
+                if (!hasClusters) {
+                  return (
+                    <div style={{ display: "flex", flexDirection: "column", gap: "0.55rem" }}>
+                      {filtered.map(renderConditionCard)}
+                    </div>
+                  );
+                }
+                return (
+                  <div style={{ display: "flex", flexDirection: "column", gap: "0.7rem" }}>
+                    {clusterGroups.map(group => {
+                      const key = `${currentSpecialty.id}::${group.name}`;
+                      const cs = clusterFullStats[group.name] || { green: 0, yellow: 0, red: 0, none: 0, total: 0 };
+                      const rated = cs.total - cs.none;
+                      const isCollapsed = !forceOpenClusters && !!collapsedClusters[key];
+                      return (
+                        <div key={key}>
+                          <button
+                            onClick={() => toggleCluster(key)}
+                            aria-expanded={!isCollapsed}
+                            style={{
+                              width: "100%", display: "flex", alignItems: "center", gap: "0.6rem",
+                              background: "#efece3", border: "1px solid #e0ddd5", borderRadius: 9,
+                              padding: "0.5rem 0.7rem", cursor: "pointer", textAlign: "left", fontFamily: "inherit",
+                            }}>
+                            <span style={{
+                              color: "#9a968a", fontSize: "0.7rem", flexShrink: 0,
+                              transform: isCollapsed ? "rotate(-90deg)" : "none", transition: "transform .2s",
+                            }}>▼</span>
+                            <span style={{
+                              fontWeight: 700, fontSize: "0.9rem", color: "#141a2b",
+                              flex: 1, minWidth: 0, lineHeight: 1.3,
+                            }}>{group.name}</span>
+                            <span style={{ display: "flex", gap: 7, flexShrink: 0 }} className="cluster-dots">
+                              {["green", "yellow", "red"].map(st => cs[st] > 0 ? (
+                                <span key={st} style={{
+                                  display: "inline-flex", alignItems: "center", gap: 3,
+                                  fontFamily: "monospace", fontSize: "0.68rem", color: STATUS_CONFIG[st].color,
+                                }}>
+                                  <span style={{ width: 8, height: 8, borderRadius: "50%", background: STATUS_CONFIG[st].color }} />
+                                  {cs[st]}
+                                </span>
+                              ) : null)}
+                            </span>
+                            <span style={{
+                              display: "flex", width: 66, height: 6, borderRadius: 3,
+                              overflow: "hidden", background: "#e0dccf", flexShrink: 0,
+                            }}>
+                              {["green", "yellow", "red", "none"].map(st => cs[st] > 0 ? (
+                                <span key={st} style={{
+                                  width: `${(cs[st] / cs.total) * 100}%`,
+                                  background: st === "none" ? "#d3cfc1" : STATUS_CONFIG[st].color,
+                                }} />
+                              ) : null)}
+                            </span>
+                            <span style={{
+                              fontFamily: "monospace", fontSize: "0.68rem", color: "#8a8578",
+                              flexShrink: 0, minWidth: 34, textAlign: "right",
+                            }}>{rated}/{cs.total}</span>
+                          </button>
+                          {!isCollapsed && (
+                            <div style={{
+                              display: "flex", flexDirection: "column", gap: "0.5rem",
+                              padding: "0.5rem 0 0.15rem 0.65rem",
+                            }}>
+                              {group.conditions.map(renderConditionCard)}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
-                )}
-              </div>
-              )}
+                );
+              })()}
             </div>
           </div>
 
