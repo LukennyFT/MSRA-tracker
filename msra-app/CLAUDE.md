@@ -81,7 +81,7 @@ msra-app/
 ├── dilemmas-data.js        # DILEMMAS.scenarios — Professional Dilemmas SJT items
 ├── firebase-config.js      # placeholder; leaves sync disabled until filled in
 ├── server.py               # tiny static server for local running
-├── vendor/                 # react, react-dom, babel, firebase (all local, offline)
+├── vendor/                 # react, react-dom, babel, firebase, mermaid (all local, offline)
 └── docs/                   # architecture, data-schemas, content-status, deployment-and-sync
 ```
 
