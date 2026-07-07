@@ -15,6 +15,7 @@ Five globals set across the `*-data.js` files. The `id` fields marked ⚠ must n
   conditions: [
     {
       id: "cvs_af",          // ⚠ NEVER CHANGE — keys statuses/notes/timestamps
+      cluster: "Arrhythmias & conduction disease", // clinical group; see note below
       name: "Atrial fibrillation",
       // OPTIONAL extended fields — present on genuine CONDITIONS, omitted on
       // "topic" entries. Rendered (when present) ABOVE presentation, in this order:
@@ -32,6 +33,8 @@ Five globals set across the `*-data.js` files. The `id` fields marked ⚠ must n
   ],
 }
 ```
+
+**`cluster` (required on every condition).** A plain-string clinical-group label. `TrackerView`'s list mode groups the specialty's conditions into collapsible **accordion** sections by this field, in array order (conditions are kept contiguous per cluster, so first-appearance order = clinical order). Cluster membership is display-only and does **not** affect ids or statuses. When adding a condition, set `cluster` to one of the specialty's existing cluster labels (or introduce a new one and place the condition adjacent to its cluster-mates). If a condition ever lacks `cluster` it falls into a trailing "Other" group; if *no* condition in a specialty has one, the list falls back to the old flat view. All 487 conditions currently carry a cluster (see `content-status.md`).
 
 All condition fields are plain strings shown in the expand panel; array order = sidebar order. `TrackerView` renders the four extended fields only when present, so adding them to non-conditions ("topics") is optional — currently **179 of 215 entries** carry them, and the 36 that do not are the topic-style entries (all of Pharmacology and Public Health, plus process/concept entries such as `genetics_inheritance`, `immuno_allergy_testing`, `id_abx_choice`, `repro_contraception`, `paeds_milestones`, `haem_anticoag`). `fieldLabels` / `fields` are display-only — the underlying keys stay `presentation`/`investigations`/`treatment`, so ids and statuses are never affected.
 
