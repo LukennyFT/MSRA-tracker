@@ -96,6 +96,7 @@
   <script src="vendor/react.min.js"></script>
   <script src="vendor/react-dom.min.js"></script>
   <script src="vendor/babel.min.js"></script>
+  <script src="vendor/mermaid.min.js"></script>
   <script src="vendor/firebase-app-compat.js"></script>
   <script src="vendor/firebase-firestore-compat.js"></script>
   <script src="firebase-config.js"></script>
@@ -193,6 +194,95 @@
       red:    { label: "Struggling",     color: "#dc2626", bg: "#fee2e2", border: "#fca5a5" },
       none:   { label: "Not rated",      color: "#6b7280", bg: "transparent", border: "transparent" },
     };
+
+    // ---- Management flowcharts: Mermaid (NICE stepwise algorithms) with dark hover tooltips ----
+    (function initMermaid() {
+      try {
+        if (window.mermaid && !window.__mermaidInit) {
+          window.mermaid.initialize({
+            startOnLoad: false,
+            securityLevel: "strict",
+            theme: "base",
+            themeVariables: {
+              fontFamily: "'Avenir Next','Segoe UI',system-ui,sans-serif",
+              fontSize: "15px", lineColor: "#5a6b82",
+              primaryColor: "#d6e8fb", primaryBorderColor: "#2a6fb0", primaryTextColor: "#0d2f52",
+            },
+            flowchart: { curve: "basis", nodeSpacing: 42, rankSpacing: 52, padding: 8, useMaxWidth: true },
+          });
+          window.__mermaidInit = true;
+        }
+      } catch (e) {}
+    })();
+
+    // Shared node palette prepended to every diagram, so each condition's `def` stays concise.
+    const MERMAID_CLASSDEFS = [
+      "classDef start fill:#f7d7d7,stroke:#c0392b,color:#4a1010;",
+      "classDef process fill:#d6e8fb,stroke:#2a6fb0,color:#0d2f52;",
+      "classDef decision fill:#d6e8fb,stroke:#2a6fb0,color:#0d2f52;",
+      "classDef good fill:#d7f0da,stroke:#3b8f52,color:#12401f;",
+      "classDef warn fill:#fdf0d0,stroke:#c99a2e,color:#5a4410;",
+      "classDef danger fill:#f7d7d7,stroke:#c0392b,color:#4a1010;",
+    ].join("\n");
+
+    let __flowSeq = 0;
+    function ManagementFlow({ def, tips }) {
+      const holderRef = useRef(null);
+      const tipRef = useRef(null);
+      const [err, setErr] = useState(false);
+      const idRef = useRef("mflow" + (++__flowSeq));
+
+      useEffect(() => {
+        let cancelled = false;
+        const holder = holderRef.current;
+        if (!holder) return;
+        if (!window.mermaid) { setErr(true); return; }
+        setErr(false);
+        const src = "flowchart TD\n" + MERMAID_CLASSDEFS + "\n" + def;
+        (async () => {
+          try {
+            const out = await window.mermaid.render(idRef.current, src);
+            if (cancelled) return;
+            holder.innerHTML = out.svg;
+            const tip = tipRef.current;
+            holder.querySelectorAll("g.node").forEach(node => {
+              const m = (node.id || "").match(/^flowchart-(.+)-\d+$/);
+              const key = m ? m[1] : null;
+              const text = key && tips && tips[key];
+              if (!text || !tip) return;
+              node.style.cursor = "help";
+              node.addEventListener("mouseenter", () => {
+                tip.textContent = text;
+                tip.style.display = "block";
+                const hb = holder.getBoundingClientRect();
+                const nb = node.getBoundingClientRect();
+                let left = nb.left - hb.left + nb.width / 2 - tip.offsetWidth / 2;
+                left = Math.max(4, Math.min(left, holder.clientWidth - tip.offsetWidth - 4));
+                let top = nb.top - hb.top - tip.offsetHeight - 8;
+                if (top < 4) top = nb.bottom - hb.top + 8;
+                tip.style.left = left + "px";
+                tip.style.top = top + "px";
+              });
+              node.addEventListener("mouseleave", () => { tip.style.display = "none"; });
+            });
+          } catch (e) { if (!cancelled) setErr(true); }
+        })();
+        return () => { cancelled = true; };
+      }, [def]);
+
+      if (err) return null;
+      return (
+        <div style={{ position: "relative", marginTop: 4 }}>
+          <div ref={holderRef} style={{ overflowX: "auto", padding: "2px 0" }} />
+          <div ref={tipRef} style={{
+            display: "none", position: "absolute", zIndex: 30, maxWidth: 270,
+            background: "#141a2b", color: "#eef2f8", fontSize: "0.78rem", lineHeight: 1.45,
+            padding: "0.5rem 0.7rem", borderRadius: 8, pointerEvents: "none",
+            boxShadow: "0 6px 18px rgba(0,0,0,0.3)", fontFamily: "system-ui,-apple-system,sans-serif",
+          }} />
+        </div>
+      );
+    }
 
     // -------- date / phase helpers --------
     const MS_PER_DAY = 1000 * 60 * 60 * 24;
@@ -2198,6 +2288,23 @@
                                             lineHeight: 1.65, whiteSpace: "pre-line" }}>{row.value}</div>
                             </div>
                           ))}
+                          {/* Stepwise management flowchart (NICE) */}
+                          {condition.management && (
+                            <div style={{ marginTop: "0.5rem", paddingTop: "0.7rem", borderTop: "1px dashed #d0cdc3" }}>
+                              <div style={{
+                                fontSize: "0.66rem", fontWeight: 700, color: "#888",
+                                textTransform: "uppercase", letterSpacing: "0.1em",
+                                fontFamily: "monospace", marginBottom: 6,
+                                display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
+                              }}>
+                                <span>🗺️ Stepwise management</span>
+                                <span style={{ fontWeight: 400, textTransform: "none", letterSpacing: 0, color: "#a09a8e", fontStyle: "italic" }}>
+                                  {condition.management.source || "NICE"} · hover a box for detail
+                                </span>
+                              </div>
+                              <ManagementFlow def={condition.management.def} tips={condition.management.tips} />
+                            </div>
+                          )}
                           {/* Notes section */}
                           <div style={{
                             marginTop: "0.5rem", paddingTop: "0.7rem",
