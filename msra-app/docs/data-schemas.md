@@ -29,12 +29,20 @@ Five globals set across the `*-data.js` files. The `id` fields marked ⚠ must n
       // OPTIONAL: fieldLabels (3 strings) overrides the labels for this entry only.
       // OPTIONAL: fields [{label, value}, ...] fully replaces the 3 fixed fields with
       //   any number of sections (used by pharm_paracetamol_od).
+      // OPTIONAL: management { def, tips } — a stepwise NICE management flowchart
+      //   rendered (Mermaid) in the expanded card; see note below.
     },
   ],
 }
 ```
 
 **`cluster` (required on every condition).** A plain-string clinical-group label. `TrackerView`'s list mode groups the specialty's conditions into collapsible **accordion** sections by this field, in array order (conditions are kept contiguous per cluster, so first-appearance order = clinical order). Cluster membership is display-only and does **not** affect ids or statuses. When adding a condition, set `cluster` to one of the specialty's existing cluster labels (or introduce a new one and place the condition adjacent to its cluster-mates). If a condition ever lacks `cluster` it falls into a trailing "Other" group; if *no* condition in a specialty has one, the list falls back to the old flat view. All 487 conditions currently carry a cluster (see `content-status.md`).
+
+**`management` (optional).** A stepwise **NICE management flowchart** shown at the bottom of the expanded card, only on conditions with a genuine stepwise pathway. Shape: `{ def: "<mermaid body>", tips: { NodeId: "explanation", ... } }`.
+- `def` is a **Mermaid flowchart body WITHOUT the `flowchart TD` header** and without `classDef` lines — the `ManagementFlow` component (in `index.html`) prepends `flowchart TD` + a shared class palette. Style nodes with the inline classes `:::start` (presenting problem, pink), `:::process` (blue stage), `:::decision` (blue diamond — use `{"..."}`), `:::good` (green drug/action/endpoint), `:::warn` (amber caution/escalate), `:::danger` (red emergency/urgent). Node ids are single letters/short tokens, reused freely across conditions (each diagram renders independently). Keep node **labels short** (detail goes in the tip). Avoid `;`, `&`, and unescaped `"` inside labels.
+- `tips` maps a node id → a one-sentence guideline-level explanation shown as a **dark hover tooltip** (matches the Mermaid tooltip look). Add tips to the clinically important nodes.
+- `source` (optional) — the small italic label after "🗺️ Stepwise management" (defaults to `"NICE"`). Set it when the pathway isn't NICE, e.g. `"Obstetric emergency"` on `repro_afe`.
+- Rendered by Mermaid (`vendor/mermaid.min.js`, loaded in `index.html`). Authoring/injection is scripted — see `content-status.md`, `scratchpad/inject_management.py` (adds `management` to an existing condition) and `scratchpad/insert_conditions.py` (adds a whole new condition after an anchor). 43 conditions currently carry one.
 
 All condition fields are plain strings shown in the expand panel; array order = sidebar order. `TrackerView` renders the four extended fields only when present, so adding them to non-conditions ("topics") is optional — currently **179 of 215 entries** carry them, and the 36 that do not are the topic-style entries (all of Pharmacology and Public Health, plus process/concept entries such as `genetics_inheritance`, `immuno_allergy_testing`, `id_abx_choice`, `repro_contraception`, `paeds_milestones`, `haem_anticoag`). `fieldLabels` / `fields` are display-only — the underlying keys stay `presentation`/`investigations`/`treatment`, so ids and statuses are never affected.
 
