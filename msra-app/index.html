@@ -1912,7 +1912,7 @@
       );
     }
 
-    function TrackerView({ statuses, setStatus, statusChangedAt, activeSpecialty, setActiveSpecialty, notes, setNote }) {
+    function TrackerView({ statuses, setStatus, statusChangedAt, activeSpecialty, setActiveSpecialty, notes, setNote, textNotes, setTextNote }) {
       const [search, setSearch] = useState("");
       const [filterStatus, setFilterStatus] = useState("all");
       const [expandedId, setExpandedId] = useState(null);
@@ -1951,6 +1951,8 @@
           (c.presentation || "") + " " +
           (c.investigations || "") + " " +
           (c.treatment || "") + " " +
+          (c.complications || "") + " " +
+          (textNotes[c.id] || "") + " " +
           (c.fields ? c.fields.map(f => f.value).join(" ") : "")
         ).toLowerCase();
         const matchSearch = !search ||
@@ -2277,6 +2279,7 @@
                                   { label: "🔬 Investigations", value: condition.investigations },
                                   { label: "💊 Treatment",       value: condition.treatment },
                                 ]),
+                            { label: "⚠️ Complications",   value: condition.complications },
                           ].map(row => row.value && (
                             <div key={row.label} style={{ marginBottom: "0.65rem" }}>
                               <div style={{
@@ -2310,6 +2313,27 @@
                             marginTop: "0.5rem", paddingTop: "0.7rem",
                             borderTop: "1px dashed #d0cdc3",
                           }}>
+                            {/* Keyboard / typed notes — above the handwritten box */}
+                            <div style={{ marginBottom: "0.85rem" }}>
+                              <div style={{
+                                fontSize: "0.66rem", fontWeight: 700, color: "#888",
+                                textTransform: "uppercase", letterSpacing: "0.1em",
+                                fontFamily: "monospace", marginBottom: 6,
+                              }}>⌨️ Typed notes</div>
+                              <textarea
+                                value={textNotes[condition.id] || ""}
+                                onChange={e => setTextNote(condition.id, e.target.value)}
+                                placeholder="Type notes here…"
+                                rows={3}
+                                style={{
+                                  width: "100%", boxSizing: "border-box", resize: "vertical",
+                                  minHeight: 60, fontSize: "0.85rem", lineHeight: 1.55,
+                                  color: "#1a1a1a", background: "#fff",
+                                  border: "1px solid #d0cdc3", borderRadius: 6, padding: "0.6rem 0.7rem",
+                                  fontFamily: "'Avenir Next','Segoe UI',system-ui,sans-serif", outline: "none",
+                                }}
+                              />
+                            </div>
                             <div style={{
                               display: "flex", alignItems: "center", gap: 8, marginBottom: 6,
                             }}>
@@ -2317,7 +2341,7 @@
                                 fontSize: "0.66rem", fontWeight: 700, color: "#888",
                                 textTransform: "uppercase", letterSpacing: "0.1em",
                                 fontFamily: "monospace", flex: 1,
-                              }}>✏️ My notes</div>
+                              }}>✏️ Handwritten notes</div>
                               <button
                                 onClick={() => setNoteEditId(condition.id)}
                                 style={{
@@ -3875,6 +3899,9 @@
       const [notes, setNotes] = useState(() => {
         try { return JSON.parse(localStorage.getItem("msra_notes") || "{}"); } catch { return {}; }
       });
+      const [textNotes, setTextNotes] = useState(() => {
+        try { return JSON.parse(localStorage.getItem("msra_text_notes") || "{}"); } catch { return {}; }
+      });
       const [statusChangedAt, setStatusChangedAt] = useState(() => {
         try { return JSON.parse(localStorage.getItem("msra_status_changed_at") || "{}"); } catch { return {}; }
       });
@@ -4019,10 +4046,11 @@
             if (data.dilemmasProgress && typeof data.dilemmasProgress === "object") setDilemmasProgress(data.dilemmasProgress);
             if (typeof data.examDate === "string") setExamDate(data.examDate);
             if (typeof data.planStart === "string") setPlanStart(data.planStart);
+            if (data.textNotes && typeof data.textNotes === "object") setTextNotes(data.textNotes);
           } else {
             // First time using this code: upload current local state as the seed
             docRef.set({
-              hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart,
+              hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes,
               updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
             }, { merge: true }).catch(err => console.warn("seed write failed:", err));
           }
@@ -4076,6 +4104,13 @@
               }
               if (typeof data.examDate === "string") setExamDate(prev => prev !== data.examDate ? data.examDate : prev);
               if (typeof data.planStart === "string") setPlanStart(prev => prev !== data.planStart ? data.planStart : prev);
+              if (data.textNotes) {
+                setTextNotes(prev => {
+                  if (JSON.stringify(prev) === JSON.stringify(data.textNotes)) return prev;
+                  try { localStorage.setItem("msra_text_notes", JSON.stringify(data.textNotes)); } catch {}
+                  return data.textNotes;
+                });
+              }
               setLastSyncAt(Date.now());
               // unset on next tick
               setTimeout(() => { applyingRemote.current = false; }, 0);
@@ -4125,14 +4160,14 @@
         clearTimeout(writeTimer.current);
         writeTimer.current = setTimeout(() => {
           FIRESTORE.collection("sync").doc(syncCode).set({
-            hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart,
+            hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes,
             updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
           }, { merge: true })
             .then(() => setLastSyncAt(Date.now()))
             .catch(err => { console.warn("write failed:", err); setSyncStatus("error"); });
         }, 700);
         return () => clearTimeout(writeTimer.current);
-      }, [hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, syncCode]);
+      }, [hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, syncCode]);
 
       const setNote = useCallback((id, dataUrl) => {
         setNotes(prev => {
@@ -4160,6 +4195,16 @@
           }
         }
       }, [syncCode]);
+
+      // Typed (keyboard) notes — small, so they ride along in the main sync doc via the debounced write below.
+      const setTextNote = useCallback((id, text) => {
+        setTextNotes(prev => {
+          const updated = { ...prev };
+          if (text && text.trim()) updated[id] = text; else delete updated[id];
+          try { localStorage.setItem("msra_text_notes", JSON.stringify(updated)); } catch (err) {}
+          return updated;
+        });
+      }, []);
 
       const completeOnboarding = useCallback(dateStr => {
         const startStr = localISO();
@@ -4200,7 +4245,8 @@
                                               statusChangedAt={statusChangedAt}
                                               activeSpecialty={activeSpecialty}
                                               setActiveSpecialty={setActiveSpecialty}
-                                              notes={notes} setNote={setNote} />}
+                                              notes={notes} setNote={setNote}
+                                              textNotes={textNotes} setTextNote={setTextNote} />}
           {view === "notebook" && <NotebookView
                                               activeNotebookSectionId={activeNotebookSectionId}
                                               setActiveNotebookSectionId={setActiveNotebookSectionId}
