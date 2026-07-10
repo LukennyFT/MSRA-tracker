@@ -48,7 +48,8 @@ All state is per-device; a subset is also synced via Firestore when enabled.
 | `msra_tracker_collapsed` | object | per-device | `{"<specialtyId>::<clusterName>": true}` — collapsed clinical-cluster accordions |
 | `msra_qbank_progress` | object | ✅ | `{questionId: {attempts, correct, lastSeen, lastCorrect}}` |
 | `msra_dilemmas_progress` | object | ✅ | `{scenarioId: {attempts, bestFrac, lastFrac, lastSeen}}` |
-| `msra_notes` | object | not synced (size) | `{conditionId: pngDataUrl}` for Pencil notes |
+| `msra_notes` | object | ✅ (own `notes` subcollection, per-note — PNGs too big for the main doc) | `{conditionId: pngDataUrl}` for Apple-Pencil handwritten notes |
+| `msra_text_notes` | object | ✅ (rides in the main sync doc as `textNotes` — small) | `{conditionId: string}` for keyboard/typed notes; shown as a textarea ABOVE the handwriting box |
 | `msra_notebook_bookmarks` | object | ✅ | `{topicId: true}` |
 | `msra_notebook_section` | string | per-device | last viewed notebook section |
 | `msra_exam_date` | `YYYY-MM-DD` | ✅ | chosen exam date; drives the whole timeline. Falls back to `window.EXAM_DATE` |
