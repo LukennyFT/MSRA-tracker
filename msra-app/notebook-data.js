@@ -401,6 +401,37 @@ Management of significant hypercalcaemia is **aggressive rehydration with intrav
 
 > High-yield: PTH is the single most useful test in hypercalcaemia. A raised or inappropriately normal PTH means primary hyperparathyroidism, while a suppressed PTH means look for malignancy — and together these two account for around 90% of all hypercalcaemia. Remember PTH raises calcium but lowers phosphate, whereas active vitamin D raises both.`,
         },
+        {
+          id: "siadh_di",
+          name: "SIADH & diabetes insipidus",
+          content: `## SIADH and diabetes insipidus
+
+These two disorders of antidiuretic hormone (ADH, also called vasopressin) sit at opposite ends of water balance: too much ADH (SIADH) dilutes the plasma, while too little or ineffective ADH (diabetes insipidus) concentrates it.
+
+## Syndrome of inappropriate ADH (SIADH)
+
+Inappropriate ADH secretion drives water reabsorption, producing a **euvolaemic hyponatraemia** with concentrated urine. It is a diagnosis of exclusion, defined by:
+
+- True hyponatraemia with a **low serum osmolality** (under 275 mmol/kg)
+- **Inappropriately concentrated urine** (urine osmolality over 100) with a **urine sodium over 20**
+- Clinical euvolaemia
+- Normal thyroid, adrenal (a normal 9 am cortisol) and renal function
+
+The causes group into four Cs: **cancer** (especially small-cell lung cancer secreting ADH ectopically), **central nervous system disease** (meningitis, haemorrhage, abscess), **chest disease** (pneumonia, tuberculosis) and **drugs** (selective serotonin reuptake inhibitors, carbamazepine, opioids, proton-pump inhibitors). Management is fluid restriction and treating the cause; vasopressin-receptor antagonists ("vaptans" such as tolvaptan) are used for resistant cases.
+
+## Diabetes insipidus
+
+Diabetes insipidus produces large volumes of dilute urine (**polyuria and polydipsia**) with a tendency to hypernatraemia. The hallmark is a **urine-to-plasma osmolality ratio below 2** — dilute urine despite concentrated plasma.
+
+| Feature | Cranial DI | Nephrogenic DI |
+|---|---|---|
+| Problem | Too little ADH produced | Kidney insensitive to ADH |
+| Causes | Pituitary surgery, trauma, tumour (craniopharyngioma), autoimmune | Lithium, hypercalcaemia, hypokalaemia, inherited channel defects |
+| Desmopressin response | Urine concentrates (over 600) | No response |
+| Treatment | Desmopressin | Treat the cause; thiazide diuretic (paradoxically) |
+
+The **water deprivation test** distinguishes them: after fluid restriction the urine stays dilute in diabetes insipidus (whereas it concentrates in primary polydipsia); giving desmopressin then concentrates the urine in cranial but not nephrogenic disease. Always first exclude diabetes mellitus (glucose), hypokalaemia and hypercalcaemia.`,
+        },
       ],
     },
     {
@@ -807,6 +838,126 @@ Management is about slowing progression (renoprotection):
 - A statin and lifestyle measures, with dialysis or transplantation for end-stage disease.
 
 > High-yield: Kimmelstiel-Wilson nodules are the classic histology; microalbuminuria is the earliest marker; and ACE inhibitors or ARBs plus SGLT2 inhibitors are the renoprotective mainstays.`,
+        },
+        {
+          id: "sodium_disorders",
+          name: "Sodium: hyponatraemia & hypernatraemia",
+          content: `## Sodium: hyponatraemia and hypernatraemia
+
+Sodium is the main extracellular cation, and extracellular volume follows it. Sodium disturbances are usually disturbances of **water** balance rather than of sodium itself. The reference range is 135–145 mmol/L.
+
+## Hyponatraemia
+
+Mild hyponatraemia is common in hospital; treat the cause, not the number, unless it is severe (below about 125 mmol/L) or symptomatic. Symptoms progress with severity — nausea, then confusion, then seizures and non-cardiogenic pulmonary oedema, then coma. Chronic, compensated hyponatraemia is dangerous to correct too quickly.
+
+**Step 1 — measure serum osmolality** to confirm true hyponatraemia:
+
+| Serum osmolality | Interpretation |
+|---|---|
+| High | Excess osmotic solute (hyperglycaemia, mannitol) pulling water out of cells |
+| Normal | Pseudohyponatraemia (hyperlipidaemia, paraproteinaemia) or a spurious drip-arm sample |
+| Low | True hyponatraemia — assess volume status next |
+
+In transurethral resection of the prostate, absorbed glycine irrigation fluid causes a dilutional hyponatraemia ("TURP syndrome").
+
+**Step 2 — assess volume status and urinary sodium** in true (low-osmolality) hyponatraemia:
+
+| Volume status | Urine Na over 20 (renal loss) | Urine Na under 20 (non-renal) |
+|---|---|---|
+| Hypovolaemic | Diuretics, Addison's, salt-losing nephropathy | Vomiting, diarrhoea, sweating, third-space loss |
+| Euvolaemic | SIADH, hypothyroidism, glucocorticoid deficiency | — |
+| Hypervolaemic | Acute or chronic kidney disease | Heart failure, cirrhosis, excess intravenous fluid |
+
+Stop diuretics before measuring urinary sodium, as they distort it. Management follows the volume category: replace fluid slowly in hypovolaemia; fluid-restrict (and treat the cause) in euvolaemia and hypervolaemia. The euvolaemic cause — the syndrome of inappropriate antidiuretic hormone (SIADH) — is covered in the **SIADH & diabetes insipidus** topic.
+
+> Correct hyponatraemia slowly — by no more than about 8–10 mmol/L in 24 hours. Over-rapid correction causes **osmotic demyelination (central pontine myelinolysis)**, presenting days later with a pseudobulbar palsy or "locked-in" syndrome; malnourished alcoholics are most at risk. Hypertonic (3%) saline is reserved for severe symptoms such as seizures, under specialist or critical-care guidance.
+
+## Hypernatraemia
+
+Hypernatraemia (sodium above about 148 mmol/L) is less common but usually significant. Thirst normally corrects it, so it appears when a patient cannot access or respond to water — the frail, the very unwell, or those with a swallowing or consciousness problem. Symptoms are thirst, then confusion, seizures and coma.
+
+| Volume status | Causes |
+|---|---|
+| Hypovolaemic (water lost in excess of sodium; commonest) | Gastrointestinal or skin loss, osmotic diuresis, diabetes insipidus, renal impairment |
+| Euvolaemic | Insensible loss (fever, tachypnoea), diabetes insipidus |
+| Hypervolaemic | Mineralocorticoid excess (Conn's), hypertonic saline |
+
+Replace water gradually — encouraging oral fluids is safest — because **too-rapid correction causes cerebral oedema**. Diabetes insipidus is a key cause, covered in the next topic.`,
+        },
+        {
+          id: "potassium_disorders",
+          name: "Potassium: hypokalaemia & hyperkalaemia",
+          content: `## Potassium: hypokalaemia and hyperkalaemia
+
+Potassium is the main intracellular cation, so plasma levels reflect both total body potassium and shifts across the cell membrane. Hydrogen and potassium move in opposite directions across the membrane, so **acidosis raises** plasma potassium and **alkalosis lowers** it. The reference range is about 3.5–5.5 mmol/L.
+
+## Hypokalaemia
+
+Causes are loss or shift into cells:
+
+- **Gastrointestinal loss**: vomiting, diarrhoea.
+- **Renal loss**: thiazide and loop diuretics, hyperaldosteronism (suspect **Conn's syndrome** with hypertension and a low potassium), Cushing's, osmotic diuresis.
+- **Shift into cells**: insulin, beta-agonists, metabolic alkalosis, refeeding syndrome.
+- **Other**: renal tubular acidosis types 1 and 2, and hypomagnesaemia (which must be corrected for the potassium to respond).
+
+It causes muscle weakness, arrhythmias and polyuria. Replace with oral potassium if 3.0–3.5 mmol/L; give intravenous potassium chloride if below 3.0 or symptomatic, at no more than **10 mmol/hour** through a peripheral line (faster needs cardiac monitoring and central access).
+
+## Hyperkalaemia
+
+Less common but more dangerous. First **exclude a spurious result** from a haemolysed or delayed sample, and get an electrocardiogram (ECG). Causes:
+
+- **Reduced excretion**: acute kidney injury, chronic kidney disease, drugs (angiotensin-converting enzyme inhibitors, angiotensin-receptor blockers, potassium-sparing diuretics, non-steroidal anti-inflammatory drugs), Addison's disease, type 4 renal tubular acidosis.
+- **Shift out of cells**: acidosis, insulin deficiency (diabetic ketoacidosis), tissue breakdown (rhabdomyolysis, tumour lysis).
+- **Excess intake**: almost always iatrogenic, or stored blood.
+
+ECG changes evolve as **tall tented T waves → loss of P waves → broad QRS → a sine wave** and cardiac arrest. Treat if potassium is above 6.5 mmol/L, or above 5.5 with ECG changes:
+
+- **Calcium gluconate** (10 mL of 10%) stabilises the myocardium — it does not lower potassium (use cautiously in patients on digoxin).
+- **Insulin with dextrose** (for example 10 units of soluble insulin in 25 g glucose) and **nebulised salbutamol** shift potassium into cells.
+- **Potassium binders** remove it from the body — the newer agents sodium zirconium cyclosilicate and patiromer have largely replaced calcium or sodium polystyrene sulfonate.
+- Always treat the cause; dialysis for refractory cases.
+
+> A high-normal sodium with a low-normal potassium suggests **Conn's syndrome**; the reverse — low sodium with high potassium — suggests **Addison's disease**.`,
+        },
+        {
+          id: "acid_base",
+          name: "Acid–base & arterial blood gases",
+          content: `## Acid–base and arterial blood gases
+
+## A systematic approach
+
+Read an arterial blood gas in order:
+
+- **pH** (7.35–7.45): acidaemia or alkalaemia?
+- **CO2** (4.7–6.0 kPa): does it explain the pH? A high CO2 is acidifying.
+- **Bicarbonate** (22–30 mmol/L): does it explain the pH? A low bicarbonate is acidifying.
+- **Compensation**: is the other system shifting to pull the pH back toward normal (partial or complete)?
+
+The primary problem is whichever value — CO2 or bicarbonate — matches the direction of the pH.
+
+| Disorder | pH | CO2 | Bicarbonate | Compensation |
+|---|---|---|---|---|
+| Metabolic acidosis | Low | Low | Low | Hyperventilation (fast) |
+| Metabolic alkalosis | High | High | High | Hypoventilation (fast) |
+| Respiratory acidosis | Low | High | High | Renal bicarbonate retention (slow) |
+| Respiratory alkalosis | High | Low | Low | Renal bicarbonate loss (slow) |
+
+## Metabolic acidosis and the anion gap
+
+The **anion gap** — (Na) minus (Cl plus bicarbonate), normally about 4–12 mmol/L, largely reflecting albumin — separates the two kinds of metabolic acidosis:
+
+- **Raised anion gap** (added acid) — remember **KUL-T**: **K**etoacidosis (diabetic, alcoholic, starvation), **U**raemia (renal failure), **L**actic acidosis (shock, sepsis, ischaemia, metformin) and **T**oxins (methanol, ethylene glycol, salicylates).
+- **Normal anion gap** (bicarbonate loss): diarrhoea, renal tubular acidosis, acetazolamide, pancreatic or high-output stoma losses, Addison's.
+
+## Causes by pattern
+
+- **Respiratory acidosis** (hypoventilation): chronic obstructive pulmonary disease and other lung disease, opioids and sedatives, neuromuscular weakness. A rising or high-normal CO2 in a tiring patient is an emergency.
+- **Respiratory alkalosis** (hyperventilation): anxiety, pain, pulmonary embolism, asthma, high altitude, pregnancy, early salicylate poisoning.
+- **Metabolic alkalosis**: vomiting (loss of acid), diuretics, hypokalaemia, Conn's syndrome.
+
+## The osmolar gap
+
+The osmolar gap is the difference between the measured and the calculated osmolality (calculated as 2 times (Na plus K), plus urea plus glucose). A value above about 10 mmol/kg points to an unmeasured solute such as **methanol or ethylene glycol** — useful when investigating a raised-anion-gap acidosis after suspected toxic-alcohol ingestion.`,
         },
       ],
     },
@@ -1713,6 +1864,422 @@ Bleeding risk tracks the count. Spontaneous bleeding is unusual until the platel
 
 > High-yield: separate the dangerous consumptive causes from benign ITP. Low platelets with schistocytes and haemolysis mean a microangiopathy — TTP (with fever and neurology, from deficient ADAMTS13) or HUS (with renal failure after E. coli diarrhoea). TTP needs emergency plasma exchange and **never** a platelet transfusion. A platelet count falling 5 to 10 days after starting heparin is HIT until proven otherwise — stop the heparin.`,
         },
+        {
+          id: "anaemia_overview",
+          name: "Anaemia: a diagnostic framework",
+          content: `## Anaemia: a diagnostic framework
+
+Anaemia is a haemoglobin concentration below the reference range for age and sex (men below 135 g/L, women below 115 g/L). It reflects reduced red-cell production, increased loss or destruction, or dilution by an expanded plasma volume (as in pregnancy).
+
+Typical symptoms are fatigue, breathlessness, faintness, palpitations and headache. Signs include pallor and, once the haemoglobin falls below about 80 g/L, a hyperdynamic circulation with tachycardia and a flow murmur, and ultimately high-output heart failure.
+
+## Classify by red-cell size (MCV)
+
+The mean corpuscular volume (MCV) is the first branch point.
+
+| Microcytic (low MCV) | Normocytic (normal MCV) | Macrocytic (high MCV) |
+|---|---|---|
+| Iron-deficiency anaemia | Acute blood loss | B12 or folate deficiency |
+| Anaemia of chronic disease | Anaemia of chronic disease | Alcohol and liver disease |
+| Thalassaemia | Bone-marrow failure, renal failure | Hypothyroidism |
+| Sideroblastic anaemia | Haemolysis, reticulocytosis | Myelodysplasia, reticulocytosis |
+
+Anaemia of chronic disease can be either microcytic or normocytic. A brisk reticulocytosis (as in haemolysis or acute bleeding) raises the MCV because reticulocytes are large.
+
+## Iron studies
+
+Interpreting iron studies is high-yield.
+
+| Condition | Serum iron | TIBC | Ferritin |
+|---|---|---|---|
+| Iron deficiency | Low | High | Low |
+| Anaemia of chronic disease | Low | Low | High |
+| Chronic haemolysis | High | Low | High |
+| Haemochromatosis | High | Low or normal | High |
+| Sideroblastic anaemia | High | Normal | High |
+
+Total iron-binding capacity (TIBC) rises when stores are low. The transferrin saturation (serum iron divided by TIBC) is the most reliable single marker: below 20% indicates iron deficiency. Ferritin is an acute-phase protein and rises with any inflammation, so always check a C-reactive protein alongside it — in an inflammatory state the transferrin saturation is more informative.
+
+## Iron-deficiency anaemia
+
+The film is microcytic and hypochromic with anisocytosis (varying size), poikilocytosis (varying shape) and pencil cells. Signs include koilonychia (spoon nails), atrophic glossitis, angular cheilosis and, rarely, post-cricoid webs (Plummer-Vinson syndrome).
+
+The cause is blood loss until proven otherwise — menorrhagia in younger women, and gastrointestinal loss (peptic ulceration, colorectal cancer) in older adults. Under NICE guidance, unexplained iron deficiency warrants upper gastrointestinal endoscopy and colonoscopy, a urine dip and coeliac serology; anyone aged 60 or over should be referred on the two-week-wait colorectal cancer pathway.
+
+Correct the cause and replace iron. Oral iron is first line, and giving it on **alternate days** is almost as effective and better tolerated (fewer of the nausea, constipation and black stools) because it avoids the hepcidin surge that blocks absorption. Intravenous iron is reserved for failed or poorly absorbed oral iron, or when a rapid rise is needed before surgery. In active sepsis, withhold iron (it is poorly absorbed and can fuel infection) and transfuse if necessary.
+
+## Anaemia of chronic disease
+
+Chronic infection (tuberculosis, osteomyelitis), inflammation (rheumatoid arthritis, vasculitis) and malignancy drive a cytokine-mediated anaemia. Interleukin-6 stimulates hepatic **hepcidin**, which traps iron in macrophages and blocks gut absorption, while cytokines blunt erythropoietin. Ferritin is therefore high or normal with a low serum iron — the mirror image of iron deficiency. In chronic kidney disease the mechanism is instead erythropoietin deficiency, treated with an erythropoiesis-stimulating agent.
+
+## Sideroblastic anaemia
+
+Ineffective erythropoiesis loads iron into the mitochondria of red-cell precursors, producing ring sideroblasts in the marrow and systemic iron overload. Causes include myelodysplasia, chemotherapy, irradiation, alcohol, lead and anti-tuberculous drugs. Treat the cause and consider pyridoxine (vitamin B6).`,
+        },
+        {
+          id: "macrocytic_anaemia",
+          name: "Macrocytic anaemia: B12 & folate",
+          content: `## Macrocytic anaemia: B12 and folate
+
+A raised mean corpuscular volume (MCV) is either megaloblastic (a defect in DNA synthesis) or non-megaloblastic.
+
+- **Megaloblastic**: vitamin B12 deficiency, folate deficiency, or cytotoxic drugs. The film shows hypersegmented neutrophils (more than five lobes) and oval macrocytes; the marrow shows megaloblasts — precursors with an immature nucleus but mature cytoplasm, because B12 and folate are needed for nuclear maturation.
+- **Non-megaloblastic**: alcohol (the commonest cause of macrocytosis without anaemia), reticulocytosis from haemolysis, liver disease, hypothyroidism and pregnancy.
+- **Marrow disease**: myelodysplasia, myeloma and aplastic anaemia.
+
+## Vitamin B12
+
+Vitamin B12 comes from meat and dairy and is stored in large amounts in the liver, so deficiency develops slowly. It is absorbed in the terminal ileum bound to intrinsic factor, which is made by gastric parietal cells. Deficiency arises from a vegan diet, loss of intrinsic factor (pernicious anaemia, gastrectomy), terminal ileal disease (Crohn's disease, ileal resection, coeliac disease) or nitrous oxide misuse.
+
+The distinctive feature is neurological involvement: paraesthesiae, a peripheral neuropathy with early loss of vibration sense and proprioception, absent ankle reflexes and, untreated, subacute combined degeneration of the spinal cord. There may also be glossitis and neuropsychiatric change.
+
+**Pernicious anaemia** is the commonest cause in Western countries — an autoimmune atrophic gastritis producing achlorhydria and loss of intrinsic factor. Test for intrinsic-factor antibodies (specific but only around half sensitive) and parietal-cell antibodies (sensitive but less specific). Treat with intramuscular hydroxocobalamin, loading over two weeks then three-monthly for life when the cause is autoimmune.
+
+## Folate
+
+Folate comes from green vegetables and is stored only in small amounts, so deficiency develops within weeks. Causes are poor diet, increased demand (pregnancy, haemolysis, malignancy), malabsorption (coeliac disease) and drugs (alcohol, phenytoin, methotrexate, trimethoprim). Treat with oral folic acid.
+
+> Always check and replace B12 before giving folic acid. Correcting folate alone in a B12-deficient patient can precipitate or worsen subacute combined degeneration of the spinal cord.`,
+        },
+        {
+          id: "haemolytic_anaemias",
+          name: "Haemolytic anaemias",
+          content: `## Haemolytic anaemias
+
+Haemolysis is destruction of red cells before their normal 120-day lifespan. The marrow compensates by increasing output, so a **reticulocytosis** is the hallmark, with a raised unconjugated bilirubin, raised lactate dehydrogenase (LDH) and raised urobilinogen. Chronic haemolysis brings pigmented gallstones and susceptibility to an aplastic crisis if parvovirus B19 shuts red-cell production down.
+
+| Intravascular haemolysis | Extravascular haemolysis |
+|---|---|
+| Raised free plasma haemoglobin | Occurs in the spleen and liver |
+| Low haptoglobin (it mops up free haemoglobin) | Splenomegaly |
+| Haemoglobinuria (dark urine) | Pigmented gallstones |
+
+## Inherited causes
+
+- **Hereditary spherocytosis** is autosomal dominant (a spectrin or ankyrin membrane defect). The film shows spherocytes, osmotic fragility is increased and the eosin-5-maleimide (EMA) binding test is diagnostic; the direct antiglobulin (Coombs) test is negative because it is not antibody-mediated. Treat with folic acid, and splenectomy in more severe cases.
+- **Glucose-6-phosphate dehydrogenase (G6PD) deficiency** is X-linked and commonest in men of African, Mediterranean or Middle-Eastern descent. Oxidative stress — fava beans, infection, or drugs such as primaquine, dapsone, sulfonamides and nitrofurantoin — triggers acute haemolysis with Heinz bodies and bite cells on the film. Management is to avoid triggers.
+- **Pyruvate kinase deficiency** is autosomal recessive and causes chronic haemolysis.
+
+## Acquired causes
+
+Autoimmune haemolytic anaemia (AIHA) is Coombs (direct antiglobulin test) positive and is split by the temperature at which the antibody binds.
+
+| | Warm AIHA | Cold agglutinin disease |
+|---|---|---|
+| Antibody | IgG, binds at 37C | IgM, binds below 37C |
+| Film | Spherocytes | Agglutination; Raynaud's, acrocyanosis |
+| Causes | Idiopathic; lymphoma, chronic lymphocytic leukaemia, systemic lupus, methyldopa | Idiopathic; lymphoma, Epstein-Barr virus, mycoplasma |
+| Treatment | Steroids, then rituximab or splenectomy | Treat the cause, keep warm |
+
+Non-immune (Coombs-negative) causes include mechanical destruction by metal heart valves; **paroxysmal nocturnal haemoglobinuria**, an acquired loss of protective surface proteins (the glycosylphosphatidylinositol, GPI, anchor) causing complement-mediated intravascular haemolysis, morning haemoglobinuria and thrombosis, treated with the complement inhibitor eculizumab; and microangiopathic haemolytic anaemia, in which red cells are sheared through fibrin strands to give schistocytes. The microangiopathic causes (haemolytic uraemic syndrome, thrombotic thrombocytopenic purpura, disseminated intravascular coagulation, pre-eclampsia) are covered in the **Thrombocytopenia** topic.`,
+        },
+        {
+          id: "haemoglobinopathies",
+          name: "Haemoglobinopathies: sickle cell & thalassaemia",
+          content: `## Haemoglobinopathies: sickle cell and thalassaemia
+
+Adult haemoglobin is four globin chains around a haem group. Most is haemoglobin A (two alpha and two beta chains); small amounts are haemoglobin A2 (two alpha, two delta) and fetal haemoglobin F (two alpha, two gamma), which predominates before six months of age. Sickle cell disease and beta thalassaemia are disorders of the beta chain; alpha thalassaemia is caused by deletion of alpha-chain genes.
+
+## Sickle cell disease
+
+Sickle cell disease is autosomal recessive: a single base change (GAG to GTG) substitutes valine for glutamic acid at codon 6 of the beta chain, producing haemoglobin S. Homozygotes (HbSS) have sickle cell anaemia; heterozygotes (HbAS, sickle cell trait) are usually asymptomatic except under extreme stress. Because it depends on the switch away from fetal haemoglobin, disease appears from three to six months of age. Deoxygenation makes haemoglobin S polymerise, and the rigid sickled cells both haemolyse and occlude small vessels.
+
+- **Haemolysis**: chronic anaemia, splenomegaly in children, folate deficiency, pigmented gallstones and aplastic crises triggered by parvovirus B19.
+- **Vaso-occlusion**: painful crises, stroke, acute chest syndrome, splenic sequestration, hyposplenism from autoinfarction (hence infection risk), renal papillary necrosis, retinopathy, priapism, dactylitis and avascular necrosis.
+
+Diagnosis is by haemoglobin electrophoresis, with newborn screening (the Guthrie test) allowing early penicillin and pneumococcal prophylaxis.
+
+Acute crises need prompt strong analgesia (often opioids), hydration, oxygen and treatment of any trigger; severe crises, especially acute chest syndrome, need exchange transfusion. Long-term, every patient should receive penicillin V, pneumococcal and Haemophilus vaccination, and folic acid. **Hydroxycarbamide** (hydroxyurea), which raises fetal haemoglobin, reduces crises and organ damage and is the mainstay disease-modifying drug. Regular exchange transfusions are used after stroke or recurrent severe crises, and allogeneic stem-cell transplantation can cure selected children.
+
+> An emerging curative option is CRISPR gene therapy (exagamglogene autotemcel, Casgevy), approved in the UK from 2023.
+
+## Thalassaemia
+
+In thalassaemia, unbalanced globin synthesis leaves unmatched chains that precipitate, causing haemolysis and ineffective erythropoiesis.
+
+**Beta thalassaemia** results from point mutations that reduce beta-chain synthesis, with a compensatory rise in haemoglobin A2 and F. Severity depends on genotype:
+
+- **Minor (trait)**: an asymptomatic carrier with a mild microcytic picture and haemoglobin A2 above 3.5%. Often mistaken for iron deficiency, but ferritin is normal.
+- **Intermedia**: moderate anaemia with splenomegaly and bony changes.
+- **Major (both beta genes absent)**: severe transfusion-dependent anaemia from three to six months of age, with failure to thrive, hepatosplenomegaly from extramedullary haematopoiesis, and skull changes (bossing, a hair-on-end X-ray).
+
+**Alpha thalassaemia** is caused by deletion of the four alpha genes: one or two deleted gives an asymptomatic trait; three deleted gives haemoglobin H disease (moderate anaemia); all four deleted gives haemoglobin Bart's hydrops fetalis, which is incompatible with life.
+
+Transfusion-dependent patients need iron chelation to prevent overload of the heart, liver and endocrine organs — subcutaneous desferrioxamine or, increasingly, an oral agent such as deferasirox or deferiprone — alongside folic acid and monitoring for iron loading.`,
+        },
+        {
+          id: "blood_films",
+          name: "Peripheral blood film findings",
+          content: `## Peripheral blood film findings
+
+The blood film is a high-yield source of single-best-answer clues: a described cell often points straight to the diagnosis.
+
+| Finding | Description | Associations |
+|---|---|---|
+| Target cells | Bull's-eye central pallor | Liver disease, hyposplenism, thalassaemia, iron deficiency |
+| Spherocytes | Small, round, no central pallor | Hereditary spherocytosis, autoimmune haemolytic anaemia |
+| Schistocytes | Sheared red-cell fragments | Microangiopathic haemolysis (DIC, HUS, TTP), metal heart valves |
+| Howell-Jolly bodies | Nuclear remnants in red cells | Hyposplenism or post-splenectomy, coeliac disease |
+| Heinz bodies | Denatured haemoglobin at the cell edge | G6PD deficiency, chronic liver disease |
+| Basophilic stippling | Fine dots (residual RNA) | Lead poisoning, thalassaemia, megaloblastic anaemia |
+| Pencil cells | Thin elongated cells | Iron-deficiency anaemia |
+| Tear-drop cells | Teardrop-shaped red cells | Myelofibrosis, marrow infiltration |
+| Rouleaux | Red cells stacked like coins | Chronic inflammation, myeloma, paraproteinaemia |
+| Hypersegmented neutrophils | More than five nuclear lobes | B12 or folate deficiency |
+| Leucoerythroblastic film | Nucleated red cells and myeloid precursors | Marrow infiltration (myelofibrosis, malignancy) |
+| Smear (smudge) cells | Fragile lymphocytes ruptured on the slide | Chronic lymphocytic leukaemia |
+| Auer rods | Pink-red cytoplasmic rods in blasts | Acute myeloid leukaemia |
+
+- **Howell-Jolly bodies** are the classic sign of a non-functioning spleen — remember that hyposplenic patients need pneumococcal, meningococcal and Haemophilus vaccination and penicillin prophylaxis.
+- **Rouleaux** with anaemia, bone pain and renal impairment should prompt a myeloma screen.`,
+        },
+        {
+          id: "bleeding_disorders",
+          name: "Haemostasis & bleeding disorders",
+          content: `## Haemostasis and bleeding disorders
+
+## The coagulation cascade in practice
+
+Two laboratory tests map onto the cascade and are worth knowing cold:
+
+- The **intrinsic pathway** (factors XII, XI, IX, VIII) is measured by the **activated partial thromboplastin time (APTT)** and is used to monitor unfractionated heparin.
+- The **extrinsic pathway** (factor VII) is measured by the **prothrombin time (PT)**, reported as the international normalised ratio (INR), and is used to monitor warfarin.
+- Both feed into the **common pathway** (factors X, V, II/thrombin and fibrinogen).
+
+## Recognising the pattern
+
+The site and timing of bleeding separate platelet or vascular problems from coagulation-factor problems.
+
+| Platelet or vascular defect | Coagulation-factor defect |
+|---|---|
+| Superficial bleeding into skin and mucous membranes | Bleeding into deep tissues, muscles and joints |
+| Bleeding immediately after injury | Delayed but severe bleeding after injury |
+| Petechiae, easy bruising | Haemarthroses, large haematomas |
+
+## Vascular defects
+
+Easy bruising and bleeding with normal platelets and clotting. Causes include hereditary haemorrhagic telangiectasia (Osler-Weber-Rendu syndrome), Ehlers-Danlos syndrome, senile purpura, long-term steroids, and scurvy (perifollicular haemorrhages).
+
+## Inherited coagulation disorders
+
+- **Haemophilia A** is factor VIII deficiency — X-linked recessive, affecting about 1 in 10,000 males. It causes haemarthroses and deep bleeding, with a raised APTT, a normal PT and a low factor VIII assay. Severity tracks the factor level (severe below 1%). Avoid non-steroidal anti-inflammatory drugs and intramuscular injections; treat with factor VIII (prophylaxis in severe disease, on-demand for milder disease).
+- **Haemophilia B** (Christmas disease) is factor IX deficiency — clinically identical, treated with factor IX concentrate.
+- **Von Willebrand disease** is the commonest inherited bleeding disorder, usually autosomal dominant. Von Willebrand factor (VWF) both helps platelets stick and carries factor VIII, so patients get a mixed picture — mostly mucocutaneous bleeding but a raised APTT too. Type 1 is a partial quantitative deficiency, type 2 a functional defect, type 3 a near-complete absence (haemophilia-like). Treat bleeds with tranexamic acid and desmopressin (which releases stored VWF), or with VWF/factor VIII concentrate.
+
+## Acquired coagulation disorders
+
+- **Vitamin K deficiency** impairs factors II, VII, IX and X (and proteins C and S). Causes include warfarin, malabsorption, biliary obstruction and antibiotics. Treat with intravenous vitamin K, or fresh frozen plasma for acute haemorrhage.
+- **Liver disease** reduces synthesis of most clotting factors and impairs platelet function, prolonging the PT and APTT — although advanced liver disease is paradoxically often prothrombotic.
+- **Disseminated intravascular coagulation** consumes factors and platelets; it is covered with the microangiopathic disorders in the **Thrombocytopenia** topic.
+
+## Interpreting the clotting screen
+
+| Disorder | PT / INR | APTT | Platelets |
+|---|---|---|---|
+| Thrombocytopenia | Normal | Normal | Low |
+| Haemophilia A or B | Normal | Raised | Normal |
+| Von Willebrand disease | Normal | Normal or raised | Normal |
+| Vitamin K deficiency / warfarin | Raised | Raised | Normal |
+| Liver disease | Raised | Raised | Low or normal |
+| Disseminated intravascular coagulation | Raised | Raised | Low |
+| Heparin (unfractionated) | Normal or raised | Raised | Normal (low in HIT) |`,
+        },
+        {
+          id: "vte_thrombophilia",
+          name: "Venous thromboembolism & thrombophilia",
+          content: `## Venous thromboembolism and thrombophilia
+
+Venous thromboembolism (VTE) — deep vein thrombosis (DVT) and pulmonary embolism (PE) — arises through **Virchow's triad**: endothelial injury, venous stasis and hypercoagulability.
+
+## Diagnosis
+
+The two-level Wells score sets the pre-test probability. A DVT-likely score (2 or more) leads to a proximal-leg ultrasound; a PE-likely score (over 4) leads to a CT pulmonary angiogram. If the score is below the threshold, a negative D-dimer excludes VTE without imaging. (Detailed PE and DVT pathways are in the Tracker.)
+
+## Thrombophilia
+
+| Inherited | Acquired |
+|---|---|
+| Factor V Leiden (about 5% of white Europeans; resistance to activated protein C) | Antiphospholipid syndrome |
+| Prothrombin G20210A gene mutation | Malignancy (especially pancreatic) |
+| Protein C deficiency | Combined oral contraceptive pill, HRT, pregnancy |
+| Protein S deficiency | Surgery, immobility, long-haul travel |
+| Antithrombin III deficiency (highest relative risk) | Obesity, increasing age, previous VTE |
+
+**Factor V Leiden** is by far the commonest inherited thrombophilia but carries only a modest (roughly fourfold) risk; **antithrombin III deficiency** is rare but confers the highest relative risk. **Antiphospholipid syndrome** (lupus anticoagulant, anticardiolipin and anti-beta-2-glycoprotein antibodies) causes both venous and arterial thrombosis and recurrent miscarriage, and paradoxically prolongs the APTT in the laboratory.
+
+## Treatment
+
+> Under NICE guidance (NG158), a **direct oral anticoagulant (apixaban or rivaroxaban) is first-line** for most confirmed DVT or PE. Anticoagulate for at least 3 months, then stop for clearly **provoked** VTE; for **unprovoked** VTE, continue **long-term**, weighing the risk of recurrence against bleeding risk.
+
+- Low-molecular-weight heparin or a DOAC is still used for cancer-associated thrombosis and in pregnancy (heparin, as DOACs and warfarin are avoided).
+- **Antiphospholipid syndrome** is an exception: warfarin is preferred over a DOAC, because rivaroxaban performed worse in trials of triple-positive disease.
+- When warfarin is started, low-molecular-weight heparin is continued until the INR is therapeutic, because warfarin transiently lowers proteins C and S and is procoagulant for the first few days.
+
+The drugs themselves — heparins, warfarin and the DOACs, with monitoring and reversal — are covered in the **Anticoagulants** topic.`,
+        },
+        {
+          id: "anticoagulants",
+          name: "Anticoagulants: heparin, warfarin & DOACs",
+          content: `## Anticoagulants: heparin, warfarin and DOACs
+
+## Heparin
+
+Heparin potentiates antithrombin III, which inactivates thrombin and factors IX, X and XI.
+
+- **Low-molecular-weight heparin** (for example enoxaparin, dalteparin) is given subcutaneously once daily and needs no monitoring, except that anti-Xa levels can be checked in late pregnancy or renal failure.
+- **Unfractionated heparin** is given intravenously (a loading dose then an infusion) and monitored by the APTT. It is preferred in renal impairment and where rapid reversibility matters, because its effect is short-lived and reversed by **protamine sulphate**.
+- Side effects are bleeding, **heparin-induced thrombocytopenia (HIT)** — an immune, prothrombotic fall in platelets — and osteoporosis with long-term use. Both are commoner with unfractionated heparin.
+
+## Warfarin
+
+Warfarin inhibits vitamin K epoxide reductase, reducing synthesis of factors II, VII, IX and X (and proteins C and S). It is teratogenic and can cause skin necrosis.
+
+| Target INR | Indications |
+|---|---|
+| 2.5 (range 2–3) | First DVT or PE, atrial fibrillation, cardiomyopathy, mural thrombus |
+| 3.5 (range 3–4) | Recurrent VTE, mechanical prosthetic valve, antiphospholipid syndrome |
+
+Its effect is potentiated by liver disease, cytochrome P450 inhibitors (amiodarone, ciprofloxacin), cranberry juice and non-steroidal anti-inflammatory drugs.
+
+**Managing a high INR:**
+
+| Situation | Action |
+|---|---|
+| INR 5–8, no bleeding | Withhold one or two doses, reduce maintenance; restart when INR below 5 |
+| INR above 8, no or minor bleeding | Stop warfarin, give oral vitamin K, recheck INR daily |
+| Any major bleeding | Stop warfarin, give prothrombin complex concentrate (or fresh frozen plasma if unavailable) plus intravenous vitamin K |
+
+Intravenous vitamin K takes about 6 hours to work; prothrombin complex concentrate (Octaplex, Beriplex) works within about 30 minutes and is preferred for major bleeding.
+
+## Direct oral anticoagulants (DOACs)
+
+- **Factor Xa inhibitors**: apixaban, rivaroxaban, edoxaban.
+- **Direct thrombin inhibitor**: dabigatran.
+
+DOACs need no routine monitoring and are now first-line for most atrial fibrillation and VTE. A normal PT or APTT does not exclude a DOAC effect. Reversal: **idarucizumab** for dabigatran; **andexanet alfa** for the factor Xa inhibitors, though its cost means prothrombin complex concentrate is often used instead. They are avoided in pregnancy, in significant renal impairment and in antiphospholipid syndrome.`,
+        },
+        {
+          id: "leukaemias",
+          name: "Leukaemias: ALL, AML, CML & CLL",
+          content: `## Leukaemias: ALL, AML, CML and CLL
+
+Leukaemias are neoplasms of blood-forming cells. **Acute** leukaemias are defined by more than 20% immature blasts in the marrow and progress rapidly; **chronic** leukaemias accumulate more mature cells over years. All can cause marrow-failure symptoms — anaemia, thrombocytopenia (bleeding) and neutropenia (infection) — plus organ infiltration (hepatosplenomegaly, lymphadenopathy, bone pain, gum hypertrophy).
+
+| Leukaemia | Typical age | Hallmark | Key point |
+|---|---|---|---|
+| Acute lymphoblastic (ALL) | Children | "children get it ALL" | Lymphadenopathy, central nervous system and testicular disease |
+| Acute myeloid (AML) | Older adults | Auer rods | Subtype M3 is acute promyelocytic leukaemia |
+| Chronic myeloid (CML) | 40–60 | Philadelphia chromosome | Massive splenomegaly, basophilia |
+| Chronic lymphocytic (CLL) | Elderly | Smear (smudge) cells | Often incidental; Richter's transformation |
+
+## Acute leukaemias
+
+Diagnosis rests on the blood film, immunophenotyping (flow cytometry) and cytogenetics. **Acute lymphoblastic leukaemia** is the commonest childhood cancer; blasts express B-lineage (CD19, CD20) or T-lineage (CD3) markers. Treatment is prolonged — remission induction, consolidation, central-nervous-system-directed intrathecal chemotherapy and up to two to three years of maintenance — with allogeneic transplant for high-risk disease. Imatinib is added if the Philadelphia chromosome, t(9;22), is present.
+
+**Acute myeloid leukaemia** is largely a disease of older adults, and its blasts may contain **Auer rods**. One subtype matters most: **acute promyelocytic leukaemia (M3)**, with t(15;17), which causes disseminated intravascular coagulation and bleeding but responds to all-trans retinoic acid (ATRA) and arsenic trioxide, often without conventional chemotherapy.
+
+> Starting chemotherapy can precipitate **tumour lysis syndrome** — a rise in potassium, phosphate and urate with a fall in calcium, risking acute kidney injury and arrhythmia. Prevent it with hydration and allopurinol, or rasburicase in high-risk patients.
+
+## Chronic myeloid leukaemia
+
+A myeloproliferative disorder of middle age, often found on a routine count showing a very high white-cell count with neutrophilia and — unusually — **basophilia**, plus massive splenomegaly on examination. Over 80% carry the **Philadelphia chromosome**, a t(9;22) translocation producing the BCR-ABL1 fusion gene. It runs through a chronic phase, an accelerated phase and a blast crisis (which resembles acute leukaemia). The tyrosine kinase inhibitor **imatinib**, which targets BCR-ABL1, transformed the outlook, with high remission rates.
+
+## Chronic lymphocytic leukaemia
+
+CLL is a proliferation of mature B lymphocytes — essentially the same disease as small lymphocytic lymphoma. It affects the elderly and is often found incidentally on a lymphocytosis. There is symmetrical painless lymphadenopathy, marrow failure and recurrent infection (low immunoglobulins), with **smear (smudge) cells** on the film and a CD5-positive, CD23-positive clone on flow cytometry. It can be complicated by autoimmune haemolytic anaemia or immune thrombocytopenia (both together being Evans syndrome), and by **Richter's transformation** to an aggressive diffuse large B-cell lymphoma. Staging uses the Binet system. Many patients need no treatment (watch and wait); when treatment is needed, options are a Bruton tyrosine kinase (BTK) inhibitor such as ibrutinib or acalabrutinib, the BCL2 inhibitor venetoclax, and anti-CD20 antibodies (rituximab, obinutuzumab) with chemotherapy.
+
+## Stem-cell transplantation
+
+- **Autologous** transplant reinfuses the patient's own stored stem cells after high-dose chemotherapy; there is no graft-versus-host disease, and it is used mainly in myeloma and lymphoma.
+- **Allogeneic** transplant uses a human-leukocyte-antigen-matched donor and adds a **graft-versus-leukaemia** effect, so it is favoured in leukaemia — at the cost of graft-versus-host disease, opportunistic infection and infertility.`,
+        },
+        {
+          id: "lymphoma",
+          name: "Lymphoma: Hodgkin & non-Hodgkin",
+          content: `## Lymphoma: Hodgkin and non-Hodgkin
+
+Lymphomas are neoplasms of lymphoid tissue, usually presenting with painless lymphadenopathy. The key division is Hodgkin (about 20%) versus non-Hodgkin (about 80%). Both use the **Ann Arbor** stage (I: one node region; II: two or more on the same side of the diaphragm; III: both sides; IV: extranodal spread such as liver or marrow), with the suffix **B** for constitutional "B symptoms" — fever, drenching night sweats and unintentional weight loss over 10% in six months.
+
+## Hodgkin lymphoma
+
+Hodgkin lymphoma has a bimodal age distribution (young adults and the elderly), is associated with Epstein-Barr virus, and spreads contiguously from one node group to the next. Classic clues are **pain in affected nodes after drinking alcohol** and a cyclical **Pel-Ebstein fever**. The diagnostic cell is the **Reed-Sternberg cell** — a large binucleate "owl-eye" cell that stains CD15 and CD30 positive. Nodular sclerosing is the commonest subtype. Prognosis is excellent; treatment is combination chemotherapy — **ABVD** (doxorubicin, bleomycin, vinblastine, dacarbazine) — guided by an interim positron-emission-tomography (PET) scan, with radiotherapy for bulky disease (which carries a later breast-cancer risk in young women).
+
+## Non-Hodgkin lymphoma
+
+A large group graded from indolent to very aggressive. Counterintuitively, higher-grade lymphomas are often more curable because they are more chemosensitive. Most are B-cell; the workhorse regimen is **R-CHOP** (rituximab, cyclophosphamide, doxorubicin, vincristine, prednisolone).
+
+| Subtype | Grade | Hallmark |
+|---|---|---|
+| Burkitt | Very aggressive | t(8;14), c-myc; "starry-sky" film; jaw mass (endemic, Epstein-Barr virus) |
+| Diffuse large B-cell | Aggressive | Commonest non-Hodgkin lymphoma; sheets of large cells; R-CHOP |
+| Mantle cell | Aggressive | t(11;14), cyclin D1 |
+| Follicular | Indolent | t(14;18), BCL2; often incurable but slow |
+| Marginal zone (MALT) | Indolent | Chronic antigen drive — gastric from H. pylori, parotid from Sjögren's |
+
+Marginal-zone lymphoma of mucosa-associated lymphoid tissue (MALT) in the stomach can regress with **Helicobacter pylori eradication** alone. T-cell lymphomas are rarer; enteropathy-associated T-cell lymphoma complicates longstanding coeliac disease.
+
+## Translocations worth memorising
+
+- Burkitt lymphoma — t(8;14)
+- Mantle cell lymphoma — t(11;14)
+- Follicular lymphoma — t(14;18)
+- Anaplastic large-cell lymphoma — t(2;5)`,
+        },
+        {
+          id: "myeloma",
+          name: "Myeloma & paraproteinaemias",
+          content: `## Myeloma and paraproteinaemias
+
+## Multiple myeloma
+
+Multiple myeloma is a malignancy of plasma cells that secretes a monoclonal immunoglobulin (a **paraprotein**, most often IgG). It affects the middle-aged and elderly and is commoner in people of African-Caribbean descent. The clinical picture is **CRAB**:
+
+- **Calcium** raised — from osteoclast-activating cytokines; causes thirst, confusion, constipation and renal stones.
+- **Renal** failure — light chains deposit in and obstruct the tubules.
+- **Anaemia** — from marrow infiltration.
+- **Bone** lesions — pain, osteoporosis, lytic lesions and pathological fractures (the "pepper-pot" or "rain-drop" skull).
+
+Investigations show a monoclonal band on serum protein electrophoresis, **Bence Jones protein** (free light chains) in the urine, **rouleaux** on the film, a very high erythrocyte sedimentation rate (ESR), and more than 10% clonal plasma cells in the marrow; whole-body low-dose CT or MRI has replaced the skeletal survey. Treat supportively (bisphosphonates for bone disease; manage the CRAB features), then give induction chemotherapy — a bortezomib-based regimen, increasingly with the anti-CD38 antibody daratumumab — aiming for autologous stem-cell transplant in fitter patients. It is not curable, but survival is improving.
+
+| Feature | MGUS | Smouldering myeloma | Multiple myeloma |
+|---|---|---|---|
+| Paraprotein | Under 30 g/L | 30 g/L or more | Present |
+| Clonal plasma cells | Under 10% | 10% or more | Often high |
+| CRAB / organ damage | None | None | Present |
+| Treatment | Monitor only | Monitor only | Yes |
+
+Monoclonal gammopathy of undetermined significance (MGUS) is common and benign but transforms to myeloma at roughly 1% per year, so it warrants monitoring.
+
+## Waldenström's macroglobulinaemia
+
+A low-grade lymphoplasmacytoid lymphoma of elderly men secreting monoclonal **IgM**. The large IgM molecule causes **hyperviscosity** (visual disturbance, confusion, heart failure) and is associated with Raynaud's. Hyperviscosity is treated with plasmapheresis, and active disease with rituximab-based therapy or ibrutinib.
+
+## AL amyloidosis
+
+Misfolded immunoglobulin **light chains** deposit in tissues, with or without overt myeloma, causing macroglossia, carpal tunnel syndrome, peripheral neuropathy, heart failure and renal failure. Diagnosis is by biopsy showing **apple-green birefringence** under polarised light after **Congo red** staining. (Amyloidosis is covered further in the Tracker.)`,
+        },
+        {
+          id: "mds_aplastic",
+          name: "Myelodysplasia & aplastic anaemia",
+          content: `## Myelodysplasia and aplastic anaemia
+
+## Myelodysplastic syndromes
+
+Myelodysplastic syndromes are clonal disorders of the myeloid stem cell in which cells proliferate but mature abnormally, so the marrow is paradoxically **hypercellular** while the blood shows **cytopenias**. They occur in the elderly and cause fatigue, infection and bleeding. By definition there are fewer than 20% blasts (20% or more defines acute leukaemia), and there is a real risk of transformation to acute myeloid leukaemia (AML).
+
+The film and marrow show dysplasia: **ring sideroblasts** (iron-laden red-cell precursors), hypogranular neutrophils with a **pseudo-Pelger-Huet** (bilobed) nucleus, and abnormal platelets. A distinctive subtype with an isolated **5q deletion** has anaemia with preserved or raised platelets and responds to lenalidomide.
+
+Management ranges from supportive care (transfusion, erythropoietin, granulocyte colony-stimulating factor, antibiotics) through hypomethylating agents such as **azacitidine** to allogeneic stem-cell transplant, the only cure. Prognosis is estimated by the International Prognostic Scoring System (marrow blast percentage, karyotype and depth of cytopenia); deaths are classically split roughly equally between infection, bleeding and transformation to acute leukaemia.
+
+## Aplastic anaemia
+
+Aplastic anaemia is failure of the marrow to produce blood cells, giving a **hypocellular** marrow and — despite the name — usually a pancytopenia rather than anaemia alone. Patients often present with bleeding.
+
+- **Primary**: idiopathic (the majority), or inherited such as Fanconi anaemia.
+- **Secondary**: drugs (including chemotherapy), radiation, viruses, marrow infiltration and autoimmune disease.
+
+It is closely linked to paroxysmal nocturnal haemoglobinuria and to leukaemia. Management is supportive (transfusion, antibiotics, iron chelation) plus definitive therapy: **immunosuppression** with antithymocyte globulin and ciclosporin (with the thrombopoietin-receptor agonist eltrombopag) for idiopathic disease, or **allogeneic stem-cell transplant**, which is curative and preferred in younger patients with a matched donor.`,
+        },
       ],
     },
     {
@@ -2066,6 +2633,127 @@ Like any discrete breast lump, it is evaluated by **triple assessment**:
 - **Excision** is offered if it is large (over about 3 cm), growing, symptomatic, or by patient preference.
 
 > The main differential in an older woman is a **phyllodes tumour**, which can arise within a fibroadenoma, tends to present over 50, and is excised with a wide margin because it can behave aggressively. Always confirm a clinical "fibroadenoma" with triple assessment rather than by examination alone.`,
+        },
+        {
+          id: "contraception_overview",
+          name: "Contraception",
+          content: `## Contraception
+
+Contraception divides into **long-acting reversible contraception (LARC)** — fitted and forgotten — and **short-acting** user-dependent methods. LARC methods are the most reliable because they do not depend on daily adherence.
+
+## Long-acting reversible contraception
+
+| Method | Hormone | Duration | Key points |
+|---|---|---|---|
+| Copper intrauterine device (Cu-IUD) | None | 5–10 years | Works immediately; can make periods heavier and more painful; also the most effective emergency contraception |
+| Levonorgestrel intrauterine system (Mirena) | Levonorgestrel | Up to 8 years (contraception) | Thins the endometrium — lighter or absent periods; also treats heavy menstrual bleeding and provides the progestogen for hormone replacement therapy |
+| Implant (Nexplanon) | Etonogestrel | 3 years | The most effective method overall; irregular bleeding is the main drawback; efficacy is reduced by enzyme-inducing drugs |
+| Injection (Depo-Provera) | Medroxyprogesterone | 13 weeks | Can cause weight gain and reduced bone density; fertility may take up to a year to return |
+
+## Short-acting hormonal methods
+
+The **combined oral contraceptive pill (COCP)** contains oestrogen and progestogen and works by preventing ovulation. It makes periods lighter and more regular and lowers ovarian and endometrial cancer risk, but raises the risk of venous thromboembolism, stroke, and breast and cervical cancer. It is taken for 21 days with a 7-day break (or "tricycled"). Absolute contraindications (UK Medical Eligibility Criteria category 4) include **migraine with aura**, a smoker aged over 35, previous venous thromboembolism or a thrombogenic mutation, uncontrolled hypertension and current breast cancer.
+
+The **progestogen-only pill (POP)** works mainly by thickening cervical mucus (desogestrel also inhibits ovulation). It avoids the oestrogen-related risks and suits women who cannot take the COCP, but must be taken within a strict daily window — 3 hours for traditional pills, 12 hours for desogestrel. The **patch** and **vaginal ring** are combined methods used like the COCP.
+
+## Missed pills
+
+- **COCP** — one missed pill: take it and continue, no extra cover needed. Two or more missed: take the most recent, use condoms for 7 days, and consider emergency contraception if pills were missed in the first week after the break.
+- **POP** — more than 3 hours late (12 hours for desogestrel): take it, use condoms for 48 hours, and consider emergency contraception if there has been unprotected sex.
+
+## Emergency contraception
+
+| Method | Window | Notes |
+|---|---|---|
+| Copper IUD | Up to 5 days after unprotected sex (or after earliest ovulation) | Most effective, and the only method that works after ovulation; can stay for ongoing contraception |
+| Ulipristal acetate (ellaOne) | Up to 120 hours | A progesterone-receptor modulator that delays ovulation; preferred if body weight over 70 kg |
+| Levonorgestrel (Levonelle) | Up to 72 hours | Inhibits ovulation; double the dose if over 70 kg or BMI over 26 |
+
+The copper IUD is the most effective and should be offered first. Ongoing hormonal contraception can be started immediately after levonorgestrel, but only 5 days after ulipristal (using condoms in between).`,
+        },
+        {
+          id: "menopause_hrt",
+          name: "Menopause & HRT",
+          content: `## Menopause and HRT
+
+Menopause is the permanent cessation of menstruation, diagnosed clinically after 12 months of amenorrhoea. Falling oestrogen causes vasomotor symptoms (hot flushes, night sweats), urogenital atrophy (vaginal dryness, dyspareunia, urinary symptoms), mood and sleep disturbance, and accelerated bone loss.
+
+## Hormone replacement therapy
+
+The principle is to replace oestrogen, adding a progestogen to protect the endometrium in any woman who still has a uterus (unopposed oestrogen causes endometrial hyperplasia and cancer).
+
+- **Oestrogen alone** — only for women who have had a hysterectomy.
+- **Combined (oestrogen plus progestogen)** — for women with a uterus. **Cyclical** regimens (with a monthly or three-monthly withdrawal bleed) suit the perimenopause; **continuous** combined regimens suit women who are clearly postmenopausal. A levonorgestrel intrauterine system can provide the progestogen component.
+
+Routes are oral, transdermal (patch or gel) or vaginal (for local urogenital symptoms). **Transdermal** oestrogen avoids the first-pass clot risk and is preferred in women who are obese or at higher risk of venous thromboembolism.
+
+**Benefits** are relief of vasomotor and urogenital symptoms and prevention of osteoporosis. **Risks** are small and depend on the preparation: a raised risk of breast cancer (mainly with the combined form), venous thromboembolism (lower with transdermal), stroke and, in older women, coronary heart disease.
+
+**Absolute contraindications** are current or past breast cancer, oestrogen-dependent (endometrial) cancer, undiagnosed vaginal bleeding, untreated endometrial hyperplasia, current venous thromboembolism, active liver disease and pregnancy.
+
+## Non-hormonal options
+
+For vasomotor symptoms, selective serotonin reuptake inhibitors (fluoxetine, citalopram) or venlafaxine, and cognitive behavioural therapy, help; clonidine is an alternative. Vaginal dryness responds to lubricants or topical oestrogen.
+
+## Contraception in the perimenopause
+
+Fertility persists into the menopause, so contraception is still needed: until **2 years** of amenorrhoea if under 50, or **1 year** if over 50.`,
+        },
+        {
+          id: "pregnancy_hypertension",
+          name: "Hypertensive disorders of pregnancy",
+          content: `## Hypertensive disorders of pregnancy
+
+Hypertension in pregnancy is graded by timing and by the presence of proteinuria:
+
+| Disorder | Definition |
+|---|---|
+| Chronic hypertension | Hypertension present before 20 weeks (or pre-pregnancy) |
+| Gestational hypertension | New hypertension after 20 weeks, without proteinuria |
+| Pre-eclampsia | New hypertension after 20 weeks, with proteinuria or other organ involvement |
+| Eclampsia | Seizures complicating pre-eclampsia |
+
+## Aspirin prophylaxis
+
+Offer **aspirin 75–150 mg daily from 12 weeks until birth** to women with **one high-risk factor** (previous hypertensive pregnancy, chronic hypertension, chronic kidney disease, diabetes, or an autoimmune disease such as lupus or antiphospholipid syndrome) **or two moderate-risk factors** (first pregnancy, age over 40, pregnancy interval over 10 years, BMI over 35, family history, or multiple pregnancy).
+
+## Managing the blood pressure
+
+Antihypertensives are started when the blood pressure is consistently above 140/90, aiming for below 135/85. First-line is **labetalol**, then **nifedipine**, then **methyldopa**. **Angiotensin-converting enzyme inhibitors, angiotensin-receptor blockers and thiazides are stopped** — they are teratogenic. Methyldopa is stopped within two days of birth because of the risk of postnatal depression.
+
+## Pre-eclampsia
+
+Beyond hypertension and proteinuria, warning features are headache, visual disturbance, epigastric pain, hyperreflexia, and rising liver enzymes or falling platelets. **HELLP syndrome** (haemolysis, elevated liver enzymes, low platelets) is a severe variant. The only cure is **delivery**, planned around 37 weeks (earlier if severe or the fetus is compromised); give antenatal corticosteroids if delivering before 34–36 weeks, and magnesium sulfate if severe with imminent delivery.
+
+## Eclampsia
+
+Eclampsia is a seizure and an obstetric emergency: ABCDE, call for senior help, and give **intravenous magnesium sulfate** — a 4 g loading dose then a 1 g/hour infusion, continued for 24 hours after the last seizure or after delivery. Monitor for toxicity (loss of reflexes, respiratory depression); the antidote is **calcium gluconate**. Control the blood pressure (labetalol, nifedipine or hydralazine) and expedite delivery once the mother is stable.`,
+        },
+        {
+          id: "gestational_diabetes",
+          name: "Gestational diabetes",
+          content: `## Gestational diabetes
+
+Gestational diabetes is glucose intolerance first recognised in pregnancy, driven by the insulin resistance of placental hormones. It raises the risk of macrosomia, traumatic delivery, neonatal hypoglycaemia and stillbirth, and marks a high lifetime risk of type 2 diabetes.
+
+## Screening and diagnosis
+
+Risk factors — a previous large baby or previous gestational diabetes, a family history, obesity (BMI over 30) and certain ethnic backgrounds (South Asian, Black Caribbean, Middle Eastern) — prompt an **oral glucose tolerance test at 24–28 weeks** (earlier, and repeated, if there was previous gestational diabetes). It is diagnosed if the **fasting glucose is 5.6 mmol/L or above, or the 2-hour value is 7.8 mmol/L or above**.
+
+## Management
+
+Glucose targets in pregnancy are tight: fasting below 5.3, one hour after meals below 7.8, and two hours after below 6.4 mmol/L.
+
+- **First line** is diet (low glycaemic index) and exercise, provided the fasting glucose is below 7.
+- **Second line** is **metformin** if targets are not met within one to two weeks.
+- **Third line** adds **insulin**.
+- If the fasting glucose is **7 mmol/L or above at diagnosis**, start insulin straight away.
+
+Serial growth scans (every four weeks from 28 to 36 weeks) monitor for macrosomia, and birth is planned by around 40–41 weeks.
+
+## After delivery
+
+Glucose-lowering treatment is **stopped immediately after birth**, and the baby's glucose is checked to exclude neonatal hypoglycaemia. A **fasting glucose (or HbA1c) is checked at 6–13 weeks postpartum** to exclude persistent diabetes, with annual review thereafter given the future risk of type 2 diabetes. Pre-existing diabetes is managed differently — high-dose (5 mg) folic acid, tighter targets, and stopping all agents except metformin and insulin.`,
         },
       ],
     },
