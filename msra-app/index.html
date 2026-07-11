@@ -332,6 +332,60 @@
       return PHASES.reduce((sum, p) => sum + phaseBaselineHours(p) * (p.weekEnd - p.weekStart + 1), 0);
     }
 
+    // -------- Day-type override (today's real working pattern) --------
+    // Lets the user say what kind of day today actually is, overriding the
+    // automatic weekday/weekend guess. On-call = ~1/3 of a normal working day.
+    const ONCALL_FACTOR = 1 / 3;
+    const DAY_TYPES = [
+      { id: "zero",    label: "Zero day", hint: "No study today" },
+      { id: "oncall",  label: "On-call",  hint: "About a third of a working day" },
+      { id: "working", label: "Working",  hint: "Normal post-shift study block" },
+      { id: "dayoff",  label: "Day off",  hint: "Long study block" },
+    ];
+    function localDayKey(d) {
+      return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    }
+    function autoDayType(d) {
+      const dow = d.getDay();
+      return (dow === 0 || dow === 6) ? "dayoff" : "working";
+    }
+    function dayTypeHours(type, phase, scale) {
+      const wd = phase.weekdayHrsBase * scale;
+      if (type === "zero")   return 0;
+      if (type === "oncall") return wd * ONCALL_FACTOR;
+      if (type === "dayoff") return phase.dayOffHrsBase * scale;
+      return wd; // working
+    }
+    function dayTypeQs(type, phase, scale) {
+      if (type === "zero")   return 0;
+      if (type === "oncall") return Math.round(phase.qsPerWeekdayBase * scale * ONCALL_FACTOR);
+      if (type === "dayoff") return Math.round(phase.qsPerDayOffBase * scale);
+      return Math.round(phase.qsPerWeekdayBase * scale); // working
+    }
+    function DayTypeToggle({ overridden, effType, autoType, onSet, accent }) {
+      return (
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 6, alignItems: "center" }}>
+          {DAY_TYPES.map(dt => {
+            const active = dt.id === effType;
+            return (
+              <button key={dt.id} onClick={() => onSet(dt.id)} title={dt.hint} style={{
+                background: active ? `${accent}26` : "rgba(255,255,255,0.03)",
+                border: `1px solid ${active ? accent + "88" : "rgba(255,255,255,0.1)"}`,
+                color: active ? "#fff" : "#8a97ad",
+                borderRadius: 6, padding: "0.32rem 0.72rem", cursor: "pointer",
+                fontSize: "0.72rem", fontFamily: "monospace", fontWeight: active ? 700 : 500,
+              }}>{dt.label}</button>
+            );
+          })}
+          {overridden
+            ? <button onClick={() => onSet(null)} title="Revert to the automatic default for this day"
+                style={{ background: "none", border: "none", color: "#8a97ad", cursor: "pointer",
+                         fontSize: "0.68rem", fontFamily: "monospace", textDecoration: "underline" }}>↺ auto</button>
+            : <span style={{ color: "#5f6b80", fontSize: "0.66rem", fontFamily: "monospace" }}>auto</span>}
+        </div>
+      );
+    }
+
     // -------- Apple Pencil note canvas --------
     const PEN_COLORS = ["#141a2b", "#dc2626", "#2563eb", "#16a34a", "#d97706", "#7c3aed"];
 
@@ -992,7 +1046,7 @@
     }
 
     // -------- TODAY VIEW --------
-    function TodayView({ hoursPerWeek, statuses, setView, setActiveSpecialty }) {
+    function TodayView({ hoursPerWeek, statuses, setView, setActiveSpecialty, dayOverrides, setDayType }) {
       const today = new Date();
       const week = getCurrentWeek(today);
       const dow = today.getDay(); // 0 Sun .. 6 Sat
@@ -1033,8 +1087,14 @@
 
       const weekdayHrs = phase.weekdayHrsBase * scale;
       const dayOffHrs = phase.dayOffHrsBase * scale;
-      const todayHrs = isWeekend ? dayOffHrs : weekdayHrs;
-      const todayQs = Math.round((isWeekend ? phase.qsPerDayOffBase : phase.qsPerWeekdayBase) * scale);
+      const todayKey = localDayKey(today);
+      const autoType = isWeekend ? "dayoff" : "working";
+      const overridden = !!dayOverrides[todayKey];
+      const effType = dayOverrides[todayKey] || autoType;
+      const effLabel = (DAY_TYPES.find(d => d.id === effType) || {}).label;
+      const todayHrs = dayTypeHours(effType, phase, scale);
+      const todayQs = dayTypeQs(effType, phase, scale);
+      const adjustedWeek = hoursPerWeek - dayTypeHours(autoType, phase, scale) + todayHrs;
 
       const dayLabel = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][dow];
       const dateStr = today.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
@@ -1074,7 +1134,7 @@
               <div style={{
                 fontSize: "0.65rem", color: phase.color, letterSpacing: "0.15em",
                 textTransform: "uppercase", fontFamily: "monospace",
-              }}>{dayLabel} · {isWeekend ? "Day off" : "Post-shift"}</div>
+              }}>{dayLabel} · {effLabel}</div>
               <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "#fff", marginTop: 4 }}>
                 {dateStr}
               </div>
@@ -1087,10 +1147,24 @@
             {/* Today's targets */}
             <div style={{ flex: 1, minWidth: 260, display: "flex", gap: "0.8rem", flexWrap: "wrap" }}>
               <Stat label="Today's hours" value={`${todayHrs.toFixed(1)} h`}
-                    sub={isWeekend ? "Long block" : "Post-shift"} color={phase.color} />
+                    sub={effLabel} color={phase.color} />
               <Stat label="Q target" value={`${todayQs}`} sub="Passmed/Pastest" color="#27AE60" />
               <Stat label="Anki" value="Daily" sub="No skip days" color="#9B59B6" />
             </div>
+          </div>
+
+          {/* What kind of day is today? */}
+          <div style={{ marginBottom: "1.5rem", background: "#141a2b", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 10, padding: "0.9rem 1.1rem" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8, marginBottom: 8 }}>
+              <div style={{ fontSize: "0.62rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "#777", fontFamily: "monospace" }}>What kind of day is today?</div>
+              <div style={{ fontSize: "0.78rem", color: "#a8b8d0" }}>
+                This week ≈ <strong style={{ color: "#fff" }}>{adjustedWeek.toFixed(1)} h</strong>
+                {Math.abs(adjustedWeek - hoursPerWeek) >= 0.05 &&
+                  <span style={{ color: "#8a97ad" }}> · {hoursPerWeek} h planned</span>}
+              </div>
+            </div>
+            <DayTypeToggle overridden={overridden} effType={effType} autoType={autoType}
+                           onSet={t => setDayType(todayKey, t)} accent={phase.color} />
           </div>
 
           {/* This week's focus */}
@@ -1186,7 +1260,7 @@
     }
 
     // -------- PLAN VIEW --------
-    function PlanView({ hoursPerWeek, setView, setActiveSpecialty, autoOpenPhase }) {
+    function PlanView({ hoursPerWeek, setView, setActiveSpecialty, autoOpenPhase, dayOverrides, setDayType }) {
       const [activePhase, setActivePhase] = useState(autoOpenPhase ?? getCurrentPhaseIndex(getCurrentWeek()));
       const [showTips, setShowTips] = useState(false);
       const phase = PHASES[activePhase];
@@ -1205,6 +1279,18 @@
       else if (scale < 0.85) { phaseLabel = "Reduced pace";  phaseColor = "#E67E22"; }
       else if (scale < 1.15) { phaseLabel = "Plan baseline"; phaseColor = "#27AE60"; }
       else                   { phaseLabel = "Above baseline"; phaseColor = "#2dd4bf"; }
+
+      // Today's day-type override (today lives in the current phase, not the browsed tab)
+      const todayD = new Date();
+      const curWeek = getCurrentWeek();
+      const inPlan = curWeek >= 1 && todayD <= EXAM_DATE;
+      const curPhase = PHASES[getCurrentPhaseIndex(curWeek)];
+      const curScale = hoursPerWeek / phaseBaselineHours(curPhase);
+      const todayKey = localDayKey(todayD);
+      const autoType = autoDayType(todayD);
+      const overridden = !!dayOverrides[todayKey];
+      const effType = dayOverrides[todayKey] || autoType;
+      const adjustedWeek = hoursPerWeek - dayTypeHours(autoType, curPhase, curScale) + dayTypeHours(effType, curPhase, curScale);
 
       return (
         <div style={{ maxWidth: 1000, margin: "0 auto" }}>
@@ -1290,6 +1376,20 @@
             {/* Adapted weekly rhythm */}
             <Card>
               <SectionLabel>Weekly rhythm · adapted to {hoursPerWeek} hrs/wk</SectionLabel>
+              {inPlan && (
+                <div style={{ marginBottom: 12, paddingBottom: 12, borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8, marginBottom: 8 }}>
+                    <div style={{ fontSize: "0.78rem", color: "#c8c4bc" }}>Today is a…</div>
+                    <div style={{ fontSize: "0.75rem", color: "#a8b8d0" }}>
+                      This week ≈ <strong style={{ color: "#fff" }}>{adjustedWeek.toFixed(1)} h</strong>
+                      {Math.abs(adjustedWeek - hoursPerWeek) >= 0.05 &&
+                        <span style={{ color: "#8a97ad" }}> · {hoursPerWeek} h planned</span>}
+                    </div>
+                  </div>
+                  <DayTypeToggle overridden={overridden} effType={effType} autoType={autoType}
+                                 onSet={t => setDayType(todayKey, t)} accent={curPhase.color} />
+                </div>
+              )}
               <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
                 <RhythmRow icon="🏥" label="Weekdays (post-shift) × 5"
                   hours={weekdayHrs} qs={weekdayQs} color={phase.color}
@@ -3918,6 +4018,9 @@
       const [dilemmasProgress, setDilemmasProgress] = useState(() => {
         try { return JSON.parse(localStorage.getItem("msra_dilemmas_progress") || "{}"); } catch { return {}; }
       });
+      const [dayOverrides, setDayOverrides] = useState(() => {
+        try { return JSON.parse(localStorage.getItem("msra_day_overrides") || "{}"); } catch { return {}; }
+      });
 
       // ---- exam date / plan timeline (drives the whole schedule) ----
       const [examDate, setExamDate] = useState(() => localStorage.getItem("msra_exam_date") || window.EXAM_DATE);
@@ -3969,6 +4072,14 @@
       useEffect(() => { localStorage.setItem("msra_notebook_bookmarks", JSON.stringify(notebookBookmarks)); }, [notebookBookmarks]);
       useEffect(() => { localStorage.setItem("msra_qbank_progress", JSON.stringify(qbankProgress)); }, [qbankProgress]);
       useEffect(() => { localStorage.setItem("msra_dilemmas_progress", JSON.stringify(dilemmasProgress)); }, [dilemmasProgress]);
+      useEffect(() => { localStorage.setItem("msra_day_overrides", JSON.stringify(dayOverrides)); }, [dayOverrides]);
+      const setDayType = useCallback((key, type) => {
+        setDayOverrides(prev => {
+          const next = { ...prev };
+          if (!type) delete next[key]; else next[key] = type;
+          return next;
+        });
+      }, []);
       useEffect(() => { localStorage.setItem("msra_notebook_section", activeNotebookSectionId); }, [activeNotebookSectionId]);
       useEffect(() => { localStorage.setItem("msra_exam_date", examDate); }, [examDate]);
       useEffect(() => { localStorage.setItem("msra_plan_start", planStart); }, [planStart]);
@@ -4047,10 +4158,11 @@
             if (typeof data.examDate === "string") setExamDate(data.examDate);
             if (typeof data.planStart === "string") setPlanStart(data.planStart);
             if (data.textNotes && typeof data.textNotes === "object") setTextNotes(data.textNotes);
+            if (data.dayOverrides && typeof data.dayOverrides === "object") setDayOverrides(data.dayOverrides);
           } else {
             // First time using this code: upload current local state as the seed
             docRef.set({
-              hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes,
+              hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, dayOverrides,
               updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
             }, { merge: true }).catch(err => console.warn("seed write failed:", err));
           }
@@ -4111,6 +4223,13 @@
                   return data.textNotes;
                 });
               }
+              if (data.dayOverrides) {
+                setDayOverrides(prev => {
+                  if (JSON.stringify(prev) === JSON.stringify(data.dayOverrides)) return prev;
+                  try { localStorage.setItem("msra_day_overrides", JSON.stringify(data.dayOverrides)); } catch {}
+                  return data.dayOverrides;
+                });
+              }
               setLastSyncAt(Date.now());
               // unset on next tick
               setTimeout(() => { applyingRemote.current = false; }, 0);
@@ -4160,14 +4279,14 @@
         clearTimeout(writeTimer.current);
         writeTimer.current = setTimeout(() => {
           FIRESTORE.collection("sync").doc(syncCode).set({
-            hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes,
+            hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, dayOverrides,
             updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
           }, { merge: true })
             .then(() => setLastSyncAt(Date.now()))
             .catch(err => { console.warn("write failed:", err); setSyncStatus("error"); });
         }, 700);
         return () => clearTimeout(writeTimer.current);
-      }, [hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, syncCode]);
+      }, [hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, dayOverrides, syncCode]);
 
       const setNote = useCallback((id, dataUrl) => {
         setNotes(prev => {
@@ -4238,9 +4357,11 @@
                   onOpenSync={() => setShowSyncModal(true)}
                   syncStatus={syncStatus} onEditExam={() => setShowOnboarding(true)} />
           {view === "today"   && <TodayView   hoursPerWeek={hoursPerWeek} statuses={statuses}
-                                              setView={setView} setActiveSpecialty={setActiveSpecialty} />}
+                                              setView={setView} setActiveSpecialty={setActiveSpecialty}
+                                              dayOverrides={dayOverrides} setDayType={setDayType} />}
           {view === "plan"    && <PlanView    hoursPerWeek={hoursPerWeek}
-                                              setView={setView} setActiveSpecialty={setActiveSpecialty} />}
+                                              setView={setView} setActiveSpecialty={setActiveSpecialty}
+                                              dayOverrides={dayOverrides} setDayType={setDayType} />}
           {view === "tracker" && <TrackerView statuses={statuses} setStatus={setStatus}
                                               statusChangedAt={statusChangedAt}
                                               activeSpecialty={activeSpecialty}
