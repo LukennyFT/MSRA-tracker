@@ -92,6 +92,208 @@ Symptoms include breathlessness, orthopnoea (breathlessness lying flat) and paro
 
 First-line drug treatment combines an ACE inhibitor (or an angiotensin receptor blocker) with a beta-blocker, titrated up as tolerated. A mineralocorticoid receptor antagonist is added if symptoms persist, and a sodium-glucose co-transporter 2 (SGLT2) inhibitor now has an established role. Loop diuretics such as furosemide relieve congestion but do not improve survival.`,
         },
+        {
+          id: "atherosclerosis_ihd",
+          name: "Atherosclerosis & ischaemic heart disease",
+          content: `## Atherosclerosis and ischaemic heart disease
+
+Atherosclerosis is a chronic inflammatory disease of the intima (the innermost layer) of large and medium arteries, characterised by intimal thickening and lipid accumulation. It is the substrate for ischaemic heart disease, in which the oxygen supply to the myocardium falls below its demand because of narrowed coronary arteries.
+
+## How a plaque forms
+
+Atherogenesis is a stepwise process:
+
+- **Endothelial injury** (from hypertension, smoking, hyperglycaemia or turbulent flow) allows low-density lipoprotein (LDL) to accumulate in the sub-intimal space.
+- Trapped LDL is **oxidised**, which is pro-inflammatory and recruits monocytes.
+- Monocytes become macrophages that engulf oxidised LDL through scavenger receptors to become lipid-laden **foam cells**; their death releases the lipid that builds the necrotic core.
+- Vascular smooth muscle cells migrate over the core and lay down collagen to form the **fibrous cap**, separating the thrombogenic core from the lumen.
+
+Plaques favour arterial branch points, where **low or oscillatory shear stress** is atherogenic (high laminar flow is protective), and the abdominal aorta is affected more than the thoracic. A **thick fibrous cap** is stable, whereas a thin cap is vulnerable to rupture. Risk factors are modifiable (type 2 diabetes, hypertension, hypercholesterolaemia, smoking) and non-modifiable (male sex, increasing age, family history).
+
+## The clinical spectrum of ischaemia
+
+| Syndrome | Vessel | Pain |
+|---|---|---|
+| Stable angina | About 70% occlusion | On exertion, relieved by rest |
+| Unstable angina | Over 90% occlusion | At rest; heralds infarction |
+| Prinzmetal (variant) angina | Coronary artery spasm | At rest, not from a fixed stenosis |
+
+Angina causes reversible ischaemia with **no myocyte death**. Myocardial infarction (MI) occurs when a plaque ruptures, triggering platelet activation and an occlusive thrombus, so that ischaemia lasting beyond about 20 to 40 minutes causes irreversible **necrosis**.
+
+## How an infarct evolves
+
+| Time after MI | Histology |
+|---|---|
+| Under 6 hours | Normal (troponin and CK-MB not yet raised) |
+| 6 to 24 hours | Loss of nuclei, coagulative necrosis |
+| 1 to 4 days | Neutrophils then macrophages clear debris |
+| 5 to 10 days | Debris removed; granulation tissue begins |
+| 1 to 2 weeks | Granulation tissue, new vessels, collagen |
+| Weeks to months | Decellularised collagenous scar |
+
+## Complications of myocardial infarction
+
+- **Mechanical**: contractile failure and cardiogenic shock, papillary muscle rupture (acute mitral regurgitation), rupture of the free wall (tamponade) or the septum (a ventricular septal defect with a left-to-right shunt), and a **ventricular aneurysm** developing after about 4 weeks (persistent ST elevation).
+- **Arrhythmic**: ventricular fibrillation in the first 24 hours is a common cause of sudden death.
+- **Pericardial**: early peri-infarct (fibrinous) pericarditis, and **Dressler's syndrome** — chest pain, fever and a pericardial effusion weeks to months later, from an autoimmune reaction.
+- **Thrombotic**: a mural thrombus with systemic embolisation.
+
+> The timing of a post-infarct complication is the exam clue: ventricular fibrillation within hours, papillary muscle or free-wall rupture within days, and a ventricular aneurysm or Dressler's syndrome from weeks onward. For the clinical management of acute coronary syndrome, see the Acute coronary syndrome topic.`,
+        },
+        {
+          id: "cardiomyopathies",
+          name: "Cardiomyopathies",
+          content: `## Cardiomyopathies
+
+A cardiomyopathy is a disease of the heart muscle itself. The three classic patterns are distinguished by how they impair function, and each must be separated from **indirect** myocardial dysfunction caused by ischaemia, valve disease or hypertension.
+
+| Pattern | Functional problem | Typical causes |
+|---|---|---|
+| Dilated (too thin) | Systolic (poor contraction) | Idiopathic, alcohol, thyroid disease, haemochromatosis, viral myocarditis, peripartum |
+| Hypertrophic (too thick) | Diastolic (poor filling) | Genetic — sarcomeric protein mutations |
+| Restrictive (too stiff) | Diastolic (poor filling) | Amyloidosis, sarcoidosis, haemochromatosis, radiation fibrosis |
+
+## Dilated cardiomyopathy
+
+The ventricles dilate and contract poorly, producing systolic heart failure, functional mitral regurgitation, arrhythmias and a risk of mural thrombus. Alcohol is an important reversible cause.
+
+## Hypertrophic cardiomyopathy
+
+Hypertrophic cardiomyopathy is an **autosomal dominant** disease caused by mutations in genes encoding **sarcomeric proteins** — most commonly beta-myosin heavy chain, along with myosin-binding protein C and troponin T. The heart is thick-walled, heavy and hyper-contractile, with hypertrophy that is often asymmetrical and septal. The histological hallmark is **myocyte disarray**, which is arrhythmogenic and underlies the risk of **sudden cardiac death in young people** (troponin T mutations carry a particularly high risk). When septal hypertrophy obstructs the left ventricular outflow tract it is called **hypertrophic obstructive cardiomyopathy (HOCM)**.
+
+## Restrictive cardiomyopathy and ARVC
+
+In restrictive cardiomyopathy the ventricle is stiff and fills poorly (mimicking constrictive pericarditis); infiltration by amyloid is a classic cause. **Arrhythmogenic right ventricular cardiomyopathy (ARVC)** is fibrofatty replacement of the right ventricular myocardium, causing ventricular arrhythmias and sudden death in the young.
+
+> Hypertrophic cardiomyopathy is the classic cause of sudden cardiac death in a young athlete: autosomal dominant, sarcomeric protein mutations, and myocyte disarray on histology.`,
+        },
+        {
+          id: "valvular_heart_disease",
+          name: "Valvular heart disease",
+          content: `## Valvular heart disease
+
+The four common valve lesions are best learned by their murmur, their mechanism and their characteristic cause.
+
+| Lesion | Murmur | Key causes |
+|---|---|---|
+| Aortic stenosis | Ejection systolic, crescendo–decrescendo, radiating to the carotids | Calcification (age), congenital bicuspid valve |
+| Aortic regurgitation | Early diastolic, with a collapsing pulse | Infective endocarditis, aortic dissection, connective tissue disease (Marfan), ankylosing spondylitis |
+| Mitral stenosis | Mid-diastolic with an opening snap | Rheumatic fever (almost always) |
+| Mitral regurgitation | Pansystolic, radiating to the axilla | Mitral valve prolapse, infective endocarditis, post-infarct papillary muscle dysfunction, left ventricular dilatation |
+
+## The lesions in brief
+
+- **Aortic stenosis** obstructs left ventricular outflow, driving concentric hypertrophy; the classic exertional triad is syncope, angina and breathlessness.
+- **Aortic regurgitation** allows blood to leak back into the ventricle in diastole, causing a wide pulse pressure and volume overload.
+- **Mitral stenosis** raises left atrial pressure, causing atrial fibrillation, pulmonary congestion and, in time, right heart failure.
+- **Mitral regurgitation** volume-loads the left atrium and ventricle. **Mitral valve prolapse** — the commonest valve abnormality — classically presents in a middle-aged woman with a mid-systolic click and a late systolic murmur.
+
+## Chronic rheumatic valve disease
+
+Rheumatic disease is **predominantly left-sided**, affecting the mitral valve most often (mitral, then aortic, then tricuspid, then pulmonary). It thickens the leaflets along their lines of closure, fuses the commissures, and thickens, shortens and fuses the chordae tendineae — producing above all **mitral stenosis**.
+
+> Match the murmur to the lesion: ejection systolic radiating to the carotids is aortic stenosis; pansystolic radiating to the axilla is mitral regurgitation; and a mid-diastolic murmur with an opening snap is mitral stenosis, which is nearly always rheumatic.`,
+        },
+        {
+          id: "rheumatic_fever",
+          name: "Rheumatic fever",
+          content: `## Rheumatic fever
+
+Acute rheumatic fever is a multisystem inflammatory illness that follows a **group A streptococcal (Lancefield group A, Streptococcus pyogenes) throat infection** by 2 to 4 weeks. It peaks between the ages of 5 and 15 and is caused by **antigenic mimicry** — antibodies and T cells raised against streptococcal antigens cross-react with the body's own tissues, especially the heart.
+
+## Diagnosis — the Jones criteria
+
+Diagnosis requires evidence of a preceding group A streptococcal infection (a positive throat culture, a raised anti-streptolysin O titre, or recent scarlet fever) plus **two major criteria, or one major and two minor**.
+
+| Major criteria | Minor criteria |
+|---|---|
+| Carditis (a pancarditis) | Fever |
+| Arthritis (a migratory polyarthritis) | Raised CRP or ESR |
+| Sydenham's chorea | Arthralgia |
+| Erythema marginatum | Prolonged PR interval |
+| Subcutaneous nodules | Previous rheumatic fever |
+
+## What it affects
+
+- **Heart**: a **pancarditis** — endocarditis, myocarditis and pericarditis together. The mitral valve is affected most (about 70%), and both mitral and aortic in about a quarter.
+- **Joints**: a migratory arthritis of the large joints.
+- **Skin**: erythema marginatum and subcutaneous nodules.
+- **Central nervous system**: Sydenham's chorea.
+
+The histological hallmarks are **Aschoff bodies** (small granulomas containing giant cells) and **Anitschkov myocytes**, with small warty vegetations (**verrucae**) along the valve leaflet lines of closure.
+
+## Management
+
+Treat the streptococcal infection with **benzylpenicillin** (erythromycin if penicillin-allergic), with anti-inflammatories for the arthritis and carditis. Long-term penicillin prophylaxis prevents recurrence, because repeated attacks lead to **chronic rheumatic heart disease** — most importantly mitral stenosis, years later.
+
+> Rheumatic fever "licks the joints but bites the heart": the arthritis is transient and migratory, but the carditis can scar the mitral valve for life. It is now rare in the United Kingdom but remains a major cause of valve disease worldwide.`,
+        },
+        {
+          id: "infective_endocarditis",
+          name: "Infective endocarditis",
+          content: `## Infective endocarditis
+
+Infective endocarditis is colonisation of the endocardium — usually a heart valve — by microorganisms, forming friable **vegetations** of organisms, platelets and fibrin. It follows a bacteraemia, and the risk is higher on an abnormal, prosthetic or previously damaged valve.
+
+## Sources and organisms
+
+Bacteraemia arises from poor dental hygiene or dental work (viridans streptococci), intravenous drug use, skin and soft-tissue infection, and intravascular lines, cannulas or cardiac devices.
+
+| Feature | Acute | Subacute |
+|---|---|---|
+| Organism | Staphylococcus aureus | Viridans streptococci, Staphylococcus epidermidis, HACEK, Coxiella |
+| Virulence | High | Low |
+| Course | Rapid, on a normal valve | Indolent, on an abnormal valve |
+
+The mitral and aortic valves are usually affected, **except in intravenous drug users**, in whom the **tricuspid (right-sided)** valve is typically involved. Culture-negative causes include the HACEK organisms, Coxiella and Bartonella.
+
+## Clinical features and diagnosis
+
+Beyond fever, malaise and a **new or changing murmur**, look for the classic peripheral signs:
+
+- **Immune-complex phenomena**: Osler's nodes (painful finger-pulp nodules), Roth spots (retinal haemorrhages) and a glomerulonephritis causing haematuria.
+- **Thromboembolic phenomena**: Janeway lesions (painless palmar macules), splinter haemorrhages, and septic emboli to the lung, brain, spleen or kidney, with splenomegaly.
+
+Diagnosis uses the **Duke criteria** (positive blood cultures and echocardiographic evidence being the two major criteria); it is met by two major, one major plus three minor, or five minor criteria. Take **three sets of blood cultures** and perform echocardiography (a transoesophageal study is more sensitive for vegetations).
+
+## Management and the differential of sterile vegetations
+
+Start broad-spectrum antibiotics after cultures are taken, then tailor to sensitivities — for example benzylpenicillin with gentamicin for subacute streptococcal disease, and flucloxacillin for meticillin-sensitive Staphylococcus aureus. Not every vegetation is infective:
+
+- **Non-bacterial thrombotic (marantic) endocarditis** — small sterile thrombotic vegetations in advanced malignancy or a hypercoagulable state.
+- **Libman–Sacks endocarditis** — small sterile warty vegetations in systemic lupus erythematosus and the antiphospholipid syndrome.
+
+> Take three sets of blood cultures before antibiotics and image the valves: fever with a new murmur and embolic or immune signs is infective endocarditis until proven otherwise, and Staphylococcus aureus disease is aggressive.`,
+        },
+        {
+          id: "pericardial_disease",
+          name: "Pericardial disease",
+          content: `## Pericardial disease
+
+The pericardium is a two-layered sac around the heart. Its main diseases are inflammation (pericarditis), fluid accumulation (effusion) and the emergencies these can cause.
+
+## Pericarditis
+
+Pericarditis is inflammation of the pericardium, classified by its cause:
+
+- **Viral or idiopathic** — the commonest (about 90%).
+- **Fibrinous** — after a myocardial infarction, or in uraemia.
+- **Purulent** — bacterial, for example Staphylococcus.
+- **Granulomatous** — tuberculosis.
+- **Haemorrhagic** — malignancy, tuberculosis or uraemia.
+
+It classically presents with **sharp, pleuritic chest pain that is relieved by sitting forward**, a pericardial friction rub, and **widespread saddle-shaped ST elevation with PR depression** on the electrocardiogram. Most viral or idiopathic cases respond to a non-steroidal anti-inflammatory drug together with **colchicine**.
+
+## Pericardial effusion and tamponade
+
+A **pericardial effusion** is fluid in the pericardial sac; a common cause of a chronic effusion is heart failure, while exudative effusions follow inflammation, infection or malignancy. If fluid accumulates fast enough to compress the heart it causes **cardiac tamponade**, an emergency: ventricular filling is impaired and cardiac output falls. The signs are **Beck's triad** — muffled heart sounds, a raised jugular venous pressure and hypotension — often with pulsus paradoxus. Treatment is urgent **pericardiocentesis**. **Haemopericardium** (blood in the sac) may follow myocardial rupture after an infarct, or trauma.
+
+## Constrictive pericarditis
+
+Chronic inflammation (classically tuberculosis, or any of the causes above) can leave the pericardium thickened, fibrosed and sometimes calcified, so that it constricts the heart and impairs diastolic filling — presenting like right heart failure, with a raised jugular venous pressure and Kussmaul's sign. It is treated by pericardiectomy.
+
+> Cardiac tamponade is a clinical diagnosis — Beck's triad of muffled heart sounds, a raised jugular venous pressure and hypotension — and needs urgent pericardiocentesis, not a wait for imaging.`,
+        },
       ],
     },
     {
@@ -190,13 +392,15 @@ Extrinsic allergic alveolitis, also called hypersensitivity pneumonitis, is an i
 - The **acute** form follows heavy exposure in a sensitised person: fever, chills, a dry cough, chest tightness and breathlessness come on within hours and usually settle by the next day once exposure stops.
 - The **chronic** form, from repeated low-level exposure, causes a persistent cough, progressive breathlessness, weight loss and finger clubbing, and can scar the lung permanently.
 
-Recognising it early matters, because removing the responsible antigen can prevent progression to irreversible fibrosis. Classic named examples include farmer's lung (mouldy hay, caused by the bacterium Saccharopolyspora rectivirgula), pigeon fancier's lung (avian proteins in droppings and feathers), humidifier's lung (thermophilic actinomycetes growing in water reservoirs) and malt-worker's lung (Aspergillus species).
+Recognising it early matters, because removing the responsible antigen can prevent progression to irreversible fibrosis. Classic named examples include farmer's lung (mouldy hay, caused by the bacterium Saccharopolyspora rectivirgula), pigeon fancier's lung (avian proteins in droppings and feathers), humidifier's lung (thermophilic actinomycetes growing in water reservoirs), malt-worker's lung (Aspergillus species) and cheese-washer's lung (mould on cheese). Histologically, extrinsic allergic alveolitis and the related cryptogenic organising pneumonia show polypoid plugs of loose connective tissue within the alveoli and bronchioles — a pattern of organising pneumonia, also called bronchiolitis obliterans organising pneumonia (BOOP).
 
 ## Pneumoconioses and sarcoidosis
 
 The pneumoconioses are occupational diseases caused by inhaling mineral dusts and inorganic particles. The classic example is coal-worker's pneumoconiosis which, like silicosis, has a predilection for the **upper** lobes. Asbestos is the important exception: asbestosis (the fibrosis it causes) characteristically affects the **lower** lobes, and asbestos can also produce benign pleural plaques and malignant mesothelioma — this spectrum is covered in the Asbestos-related lung disease topic.
 
 Sarcoidosis is a multisystem granulomatous disease of unknown cause, most common in younger adults, in which non-caseating granulomas form in affected organs. In the chest it classically produces bilateral hilar lymphadenopathy and can lead to an interstitial fibrosis with a restrictive pattern; the serum angiotensin-converting enzyme and calcium may be raised.
+
+More broadly, a **granuloma** is an organised collection of histiocytes and macrophages, sometimes with multinucleate giant cells. Granulomatous lung disease may be **infectious** — tuberculosis, fungi (histoplasma, Cryptococcus, coccidioides, aspergillus and mucor) and Pneumocystis — or **non-infectious**, as in sarcoidosis, a foreign-body reaction to inhaled or aspirated material (including in intravenous drug use), drugs, or occupational dust exposure.
 
 > High-yield contrasts: a restrictive pattern keeps the FEV1/FVC ratio normal or high, whereas obstruction lowers it. Within the restrictive group, intrinsic (parenchymal) disease lowers the gas transfer factor while chest-wall and neuromuscular causes tend to spare it. Among the dust diseases, coal and silica favour the upper lobes whereas asbestosis favours the lower lobes.`,
         },
@@ -282,6 +486,155 @@ The **transfer factor for carbon monoxide (TLCO, also written DLCO)** measures h
 ## Flow-volume loops
 
 Plotting flow against volume produces a loop whose shape reflects the disease. **Obstructive** disease scoops out (makes concave) the expiratory limb; **restrictive** disease gives a tall, narrow loop with reduced volumes; and a **fixed large-airway obstruction** (such as a tracheal tumour or stenosis) flattens both the inspiratory and expiratory limbs.`,
+        },
+        {
+          id: "obstructive_lung_disease_pathology",
+          name: "Obstructive lung disease (pathology)",
+          content: `## Obstructive lung disease: the pathology
+
+Obstructive lung diseases limit airflow out of the lungs, giving a reduced ratio of forced expiratory volume in one second to forced vital capacity (FEV1/FVC) on spirometry (the spirometry pattern is set out in the Pulmonary function tests topic, and the clinical comparison of asthma and chronic obstructive pulmonary disease in the Asthma versus COPD topic). This topic covers the underlying pathology of each.
+
+## The five patterns compared
+
+| Disease | Site | Core pathology | Aetiology | Histology |
+|---|---|---|---|---|
+| Chronic bronchitis | Bronchus | Excess mucus production | Tobacco smoke, air pollution | Goblet cell hyperplasia and hypertrophy of the mucous glands |
+| Bronchiectasis | Bronchus | Permanent dilatation and scarring of the airways | Recurrent infection (cystic fibrosis a major risk factor) | Permanent fibrotic dilatation of the bronchi |
+| Asthma | Bronchus | Airway constriction from mast cell degranulation | Immunological — allergens, drugs, cold air, exercise | Smooth-muscle hyperplasia, excess mucus, eosinophils, Curschmann spirals (whorls of shed epithelium) and Charcot–Leyden crystals |
+| Emphysema | Acinus | Airspace enlargement with alveolar wall destruction | Tobacco smoke, alpha-1-antitrypsin deficiency | Loss of the alveolar parenchyma distal to the terminal bronchiole |
+| Small airway disease (bronchiolitis) | Bronchiole | Inflammatory scarring and obliteration | Tobacco smoke, air pollutants | Inflammatory narrowing of the bronchioles |
+
+- **Chronic bronchitis** is defined clinically as a cough productive of sputum on most days for at least 3 months over 2 consecutive years; it is complicated by recurrent infection, chronic hypoxia and pulmonary hypertension.
+- **Emphysema** presents with dyspnoea and cough and can be complicated by pneumothorax, respiratory failure and pulmonary hypertension. Chronic bronchitis and emphysema together make up chronic obstructive pulmonary disease.
+- **Asthma** causes episodic cough, reversible wheeze and acute dyspnoea; poorly controlled disease can become chronic or, rarely, fatal.
+
+## Bronchiectasis
+
+Bronchiectasis is permanent, abnormal dilatation of the bronchi. It develops through a **vicious cycle**: recurrent infection or inflammation causes bronchial wall oedema and excess mucus, which recruits lymphocytes and releases proteases that damage the bronchial wall, leaving it more prone to infection, so the cycle repeats. It presents with a chronic cough productive of large volumes of purulent sputum, and is complicated by recurrent infection, haemoptysis, pulmonary hypertension and (rarely) secondary amyloidosis. The causes divide into acquired and congenital:
+
+- **Post-infectious** — the commonest cause (for example after whooping cough or pneumonia).
+- **Impaired host defence** — primary (hypogammaglobulinaemia) or secondary (chemotherapy).
+- **Obstruction** — extrinsic or intrinsic, including middle-lobe syndrome (often secondary to chronic obstructive pulmonary disease).
+- **Associated disease** — asthma, connective tissue disorders, aspiration, and other interstitial or bronchiolar disease.
+- **Congenital** — cystic fibrosis, primary ciliary dyskinesia, hypogammaglobulinaemia, and Young's syndrome (the triad of rhinosinusitis, azoospermia and bronchiectasis).
+
+## Cystic fibrosis
+
+Cystic fibrosis is an **autosomal recessive** disorder caused by mutations in the **cystic fibrosis transmembrane conductance regulator (CFTR)** gene — most commonly the F508del mutation. Defective chloride transport produces abnormally thick secretions that obstruct hollow organs and are readily colonised by bacteria (frequently **Pseudomonas aeruginosa**), causing repeated lung infections and, in time, bronchiectasis. Because CFTR is expressed widely it is a multisystem disease, so pancreatic insufficiency causes malabsorption.
+
+> The named histological clues are worth memorising: Curschmann spirals and Charcot–Leyden crystals in asthma, goblet cell hyperplasia in chronic bronchitis, and destruction of the parenchyma distal to the terminal bronchiole in emphysema.`,
+        },
+        {
+          id: "pneumonia_patterns",
+          name: "Pneumonia: pathological patterns",
+          content: `## Pneumonia: pathological patterns
+
+Pneumonia is infection and inflammation of the lung parenchyma. Its clinical assessment and treatment (including CURB-65) are in the Pneumonia and CURB-65 topic; this topic covers the three pathological patterns, which map onto different organisms and hosts.
+
+## Bronchopneumonia
+
+Bronchopneumonia is **patchy** consolidation in a bronchial and peribronchial distribution, usually caused by **low-virulence** organisms. It is typically seen in the **elderly and frail**, often as a terminal event.
+
+## Lobar pneumonia
+
+Lobar pneumonia is a **fibrinosuppurative consolidation of an entire lobe**, usually caused by a **high-virulence** organism — classically **Streptococcus pneumoniae**, which produces rust-coloured sputum. Untreated, it passes through four classic stages:
+
+| Stage | Findings |
+|---|---|
+| Congestion | Vascular engorgement and protein-rich oedema fluid |
+| Red hepatisation | Red, firm, airless lung packed with red cells, neutrophils and fibrin |
+| Grey hepatisation | Red cells break down, leaving a dry grey-brown fibrinosuppurative surface |
+| Resolution | Enzymatic digestion of the exudate and restoration of the normal architecture |
+
+## Atypical pneumonia
+
+Atypical pneumonia is an **interstitial pneumonitis** — the inflammation lies in the alveolar walls rather than filling the air spaces, so there is little intra-alveolar exudate. It is caused by organisms such as **Mycoplasma pneumoniae, Chlamydophila pneumoniae and Legionella pneumophila**.
+
+> "Hepatisation" describes lobar pneumonia at the stage where the airless, consolidated lung looks and feels like liver — red first (red cells), then grey (fibrinosuppurative), before resolution.`,
+        },
+        {
+          id: "lung_cancer",
+          name: "Lung cancer",
+          content: `## Lung cancer
+
+Lung cancer is the leading cause of cancer death. For treatment it is divided into **small cell lung cancer** and **non-small cell lung cancer** (squamous cell carcinoma, adenocarcinoma and large cell carcinoma), which differ in their cell of origin, location, behaviour and molecular drivers.
+
+## The main types
+
+| Type | Frequency | Location | Key features |
+|---|---|---|---|
+| Squamous cell carcinoma | 30–50% | Central (proximal bronchi) | Strongest link to smoking; keratinisation and intercellular prickles (desmosomes); cavitation; hypercalcaemia from parathyroid-hormone-related peptide |
+| Adenocarcinoma | 20–30% | Peripheral | Commonest in women and non-smokers; glandular differentiation and mucin; metastasises early; EGFR mutations |
+| Small cell carcinoma | 20–25% | Central (proximal bronchi) | Neuroendocrine origin; strong smoking link; highly malignant, metastasises early; ectopic hormones |
+| Large cell carcinoma | 10–15% | Variable | Poorly differentiated, with no glandular or squamous features; poor prognosis |
+
+- **Squamous cell carcinoma** has the highest rate of p53 and c-myc mutations, spreads locally with late metastasis, and is less responsive to chemotherapy. It progresses from hyperplasia through squamous metaplasia and dysplasia to carcinoma in situ and then invasive carcinoma.
+- **Adenocarcinoma** shows mucin vacuoles on cytology and, at the molecular level, epidermal growth factor receptor (EGFR) mutations; it progresses from atypical adenomatous hyperplasia through in-situ change to invasive disease.
+- **Small cell carcinoma** consists of small, poorly differentiated "oat cells", commonly carries p53 and RB1 mutations, and although chemosensitive has a poor prognosis because it metastasises early — to bone, adrenal, liver and brain — and presents late.
+
+## Paraneoplastic syndromes
+
+Lung cancers commonly secrete hormones and peptides ectopically:
+
+| Substance | Effect | Usual type |
+|---|---|---|
+| Antidiuretic hormone | Syndrome of inappropriate antidiuretic hormone (hyponatraemia) | Small cell |
+| Adrenocorticotrophic hormone | Cushing's syndrome | Small cell |
+| Parathyroid-hormone-related peptide | Hypercalcaemia and bone pain | Squamous cell |
+| Calcitonin | Hypocalcaemia | Various |
+| Serotonin | Carcinoid syndrome (flushing, diarrhoea, bronchoconstriction) | Carcinoid |
+| Bradykinin | Cough | Various |
+
+Small cell tumours are also associated with **Lambert–Eaton myasthenic syndrome**.
+
+## Molecular markers and staging
+
+Molecular testing guides treatment of non-small cell cancers: **EGFR** mutations (usually adenocarcinoma) predict response to anti-EGFR tyrosine kinase inhibitors, whereas **KRAS** mutations and the **EML4–ALK** rearrangement predict a lack of benefit from those inhibitors, and **ERCC1** expression predicts a poorer response to cisplatin. Staging uses the **tumour–node–metastasis (TNM)** system — tumour size and invasion of the pleura or pericardium (T1–4), lymph node involvement (N0–2) and distant metastasis (M0–1) — and is the single most important prognostic factor.
+
+## Mesothelioma
+
+Malignant mesothelioma arises from the parietal or visceral **pleura**, spreads widely within the pleural space, and presents with chest pain, breathlessness and a large pleural effusion after a long latent period (25 to 45 years) from asbestos exposure. It is covered further in the Asbestos-related lung disease topic.
+
+> Match the tumour to its habit: squamous and small cell are central and smoking-related, whereas adenocarcinoma is peripheral and the type seen in non-smokers and women. For the paraneoplastic hormones, small cell drives the syndrome of inappropriate antidiuretic hormone and Cushing's syndrome, while squamous cell drives hypercalcaemia through parathyroid-hormone-related peptide.`,
+        },
+        {
+          id: "pulmonary_vascular_disease",
+          name: "Pulmonary vascular & alveolar disease",
+          content: `## Pulmonary vascular and alveolar disease
+
+This topic groups the diseases of the pulmonary circulation and the acute injuries of the alveoli: pulmonary embolism, pulmonary hypertension, pulmonary oedema and diffuse alveolar damage.
+
+## Pulmonary embolism
+
+About **95% of pulmonary emboli arise from deep vein thromboses**. The risk factors are those of **Virchow's triad** — venous stasis, vessel wall injury and hypercoagulability — and include immobility, cardiac disease, cancer, female sex, and primary or secondary hypercoagulable states.
+
+- **Large emboli** lodge in the main pulmonary arteries and cause acute right heart strain (acute cor pulmonale), cardiogenic shock and death if more than about 60% of the pulmonary vascular bed is occluded; an embolus straddling the bifurcation of the pulmonary trunk is a **saddle embolus**.
+- **Small emboli** may be silent or cause peripheral wedge-shaped infarcts; repeated small emboli can lead to pulmonary hypertension.
+- **Non-thrombotic emboli** include bone marrow, amniotic fluid, tumour, air, fat and foreign material.
+
+## Pulmonary hypertension
+
+Pulmonary hypertension is a mean pulmonary arterial pressure above **25 mmHg at rest**. The World Health Organization classifies it by cause:
+
+| Class | Cause |
+|---|---|
+| 1 | Pulmonary arterial hypertension — idiopathic, heritable, drug- or toxin-induced, or associated with congenital heart disease (idiopathic disease is commonest in women aged 20 to 40) |
+| 2 | Left heart disease — systolic or diastolic dysfunction, or valve disease |
+| 3 | Lung disease — for example interstitial lung disease |
+| 4 | Chronic thromboembolic disease — fibrosis from repeated emboli |
+| 5 | Unclear or multifactorial mechanisms — metabolic, systemic or haematological disorders |
+
+Mechanistically the raised pressure may be **pre-capillary** (chronic hypoxia or embolism), **capillary** (pulmonary fibrosis) or **post-capillary** (left heart disease or veno-occlusive disease), and chronic vasoconstriction of the arterioles leads to intimal fibrosis and thickened vessel walls. The main complication is **right heart failure**, with venous congestion of the organs (a nutmeg liver) and peripheral oedema.
+
+## Pulmonary oedema
+
+Pulmonary oedema is accumulation of fluid within the alveoli, which impairs gas exchange. The main cause is **left heart failure**. Histology shows intra-alveolar fluid acutely and, with chronic congestion, iron-laden macrophages known as **"heart failure cells"**. The chest radiograph shows alveolar shadowing in a **batwing** distribution, **Kerley B lines**, fluid in the horizontal fissure and (in cardiac cases) cardiomegaly.
+
+## Diffuse alveolar damage
+
+Diffuse alveolar damage is acute injury to the alveoli producing an exudative inflammatory reaction and rapid respiratory failure that often needs ventilation in intensive care. In adults it underlies the **acute respiratory distress syndrome (ARDS)** — triggered by infection, aspiration, drowning, burns or trauma — and in premature neonates it corresponds to **hyaline membrane disease**, from insufficient surfactant. The affected lung is expanded, firm, plum-coloured and airless, and the chest radiograph shows a **"white-out"** of both lung fields.
+
+> Two radiological signatures: cardiogenic pulmonary oedema gives batwing shadowing with Kerley B lines and a large heart, whereas diffuse alveolar damage (ARDS) gives a bilateral white-out. A saddle embolus straddles the bifurcation of the pulmonary trunk and can be rapidly fatal.`,
         },
       ],
     },
@@ -2635,6 +2988,66 @@ Like any discrete breast lump, it is evaluated by **triple assessment**:
 > The main differential in an older woman is a **phyllodes tumour**, which can arise within a fibroadenoma, tends to present over 50, and is excised with a wide margin because it can behave aggressively. Always confirm a clinical "fibroadenoma" with triple assessment rather than by examination alone.`,
         },
         {
+          id: "pcos",
+          name: "Polycystic ovary syndrome",
+          content: `## Polycystic ovary syndrome
+
+Polycystic ovary syndrome (PCOS) is the commonest endocrine disorder in women of reproductive age, affecting roughly 1 in 10. It is characterised by **hyperandrogenism, ovulatory dysfunction and polycystic ovaries**, underpinned by **insulin resistance**, which drives both the metabolic features and, through raised luteinising hormone and androgens, the reproductive ones.
+
+## Diagnosis — the Rotterdam criteria
+
+Diagnosis requires **two of the following three**, once mimics have been excluded:
+
+- **Oligo-ovulation or anovulation** — irregular or absent periods.
+- **Clinical or biochemical hyperandrogenism** — hirsutism, acne or male-pattern hair loss, or a raised total or free testosterone.
+- **Polycystic ovaries on ultrasound** — 12 or more follicles (2–9 mm) in one or both ovaries, or an ovarian volume above 10 mL.
+
+Supportive blood tests show a **raised luteinising-hormone-to-follicle-stimulating-hormone (LH:FSH) ratio**, a mildly raised testosterone with a **low sex-hormone-binding globulin**, and a normal or mildly raised prolactin. A markedly raised testosterone should prompt a search for an androgen-secreting tumour or congenital adrenal hyperplasia; also exclude thyroid disease, hyperprolactinaemia and Cushing's syndrome.
+
+## Complications
+
+Beyond subfertility and the distress of hirsutism and acne, PCOS carries important long-term risks: **impaired glucose tolerance and type 2 diabetes**, the metabolic syndrome and cardiovascular disease, obstructive sleep apnoea, and — because chronic anovulation leaves the endometrium under **unopposed oestrogen** — **endometrial hyperplasia and carcinoma**. Screen for diabetes with an oral glucose tolerance test or HbA1c.
+
+## Management
+
+Treatment is directed at the woman's main concern.
+
+- **Lifestyle and weight loss** are first-line for everyone: even modest weight loss restores ovulation, improves insulin sensitivity and lowers androgen levels.
+- **Menstrual regulation and endometrial protection** — a **combined oral contraceptive pill** regulates cycles and eases hyperandrogenism (it raises sex-hormone-binding globulin, lowering free androgens). If the pill is unsuitable, use **cyclical progestogen** or a **levonorgestrel intrauterine system**, aiming for at least three or four withdrawal bleeds a year to protect the endometrium.
+- **Hirsutism** — co-cyprindiol (cyproterone acetate with ethinylestradiol), topical eflornithine for facial hair, or an anti-androgen such as spironolactone, alongside cosmetic measures (electrolysis, laser).
+- **Subfertility** — after weight optimisation, **letrozole** (an aromatase inhibitor) is now the preferred first-line agent for ovulation induction, with **clomifene** as the alternative; either may be combined with **metformin**, which is particularly useful where insulin resistance is prominent. Gonadotrophins or **laparoscopic ovarian drilling** are second-line, with monitoring for ovarian hyperstimulation and the raised risk of multiple pregnancy.
+
+> The chronically anovulatory endometrium of PCOS sits under unopposed oestrogen, so investigate persistent abnormal bleeding and make sure a woman with amenorrhoea has at least three or four progestogen-induced bleeds a year to reduce her endometrial cancer risk.`,
+        },
+        {
+          id: "subfertility",
+          name: "Subfertility",
+          content: `## Subfertility
+
+Subfertility is failure to conceive after **12 months of regular unprotected intercourse** — or after 6 months if the woman is over 35 or there is a known cause. About 84% of couples conceive within a year and 90% within two. The causes divide roughly evenly between **male factor** (about a third), **ovulatory** and **tubal or pelvic** factors, with a large **unexplained** group; both partners are investigated together.
+
+## Investigating the couple
+
+- **Confirm ovulation** with a **mid-luteal (day 21) serum progesterone**, taken 7 days before the expected period — a level above about 30 nmol/L confirms ovulation. Add early-follicular (day 2–5) follicle-stimulating hormone, luteinising hormone and oestradiol, and check thyroid function, prolactin and testosterone if the cycle is irregular.
+- **Ovarian reserve** is judged from **anti-Müllerian hormone** (which is independent of cycle timing) and the **antral follicle count** on transvaginal ultrasound.
+- **Semen analysis** is the key male investigation; if abnormal, repeat after 3 months (one full cycle of sperm production).
+- **Tubal patency** is assessed with **hysterosalpingography** or hysterosalpingo-contrast sonography, or with **laparoscopy and dye** where tubal or pelvic disease is likely (previous pelvic inflammatory disease, endometriosis or ectopic pregnancy).
+- Screen both partners for **chlamydia**, and check the woman's rubella immunity.
+
+## Management
+
+Address modifiable factors first: regular intercourse every 2–3 days, **folic acid** (400 micrograms daily, or 5 mg if higher risk), a healthy body mass index (both extremes reduce fertility), smoking cessation, and reducing alcohol and caffeine.
+
+- **Ovulation induction** with **letrozole or clomifene** (adding metformin in polycystic ovary syndrome) for anovulation.
+- **Intrauterine insemination** for mild male-factor subfertility, same-sex couples or where donor sperm is used.
+- **In-vitro fertilisation (IVF)** for tubal disease and for unexplained subfertility persisting beyond about 2 years; **intracytoplasmic sperm injection (ICSI)** is added for significant male-factor infertility, and donor eggs or sperm are used where the couple's own gametes cannot be.
+- **Surgery** — laparoscopic treatment of endometriosis or adhesions, tubal surgery, or removal of a hydrosalpinx (which improves IVF success).
+
+NICE supports NHS-funded IVF (up to three cycles for eligible women under 40), although local commissioning varies.
+
+> Investigate both partners in parallel and refer early rather than waiting out a rigid 12 months when there is an obvious pointer — the woman is over 35, has amenorrhoea, or has had pelvic infection or surgery — because fertility, and ovarian reserve in particular, falls with age.`,
+        },
+        {
           id: "contraception_overview",
           name: "Contraception",
           content: `## Contraception
@@ -2698,6 +3111,113 @@ For vasomotor symptoms, selective serotonin reuptake inhibitors (fluoxetine, cit
 ## Contraception in the perimenopause
 
 Fertility persists into the menopause, so contraception is still needed: until **2 years** of amenorrhoea if under 50, or **1 year** if over 50.`,
+        },
+        {
+          id: "miscarriage",
+          name: "Miscarriage",
+          content: `## Miscarriage
+
+Miscarriage is the loss of a pregnancy before 24 weeks' gestation; most occur in the first trimester. It is common — affecting roughly one in five recognised pregnancies — and the majority of early losses are caused by sporadic chromosomal abnormalities, so a single miscarriage does not reduce the chance of a successful future pregnancy.
+
+## Types of miscarriage
+
+| Type | Bleeding | Cervical os | Ultrasound and notes |
+|---|---|---|---|
+| Threatened | Light bleeding | Closed | Viable intrauterine pregnancy; most settle |
+| Inevitable | Heavy bleeding, pain | Open | Products still in utero but the pregnancy will be lost |
+| Incomplete | Bleeding, pain | Open | Some products of conception retained |
+| Complete | Bleeding settling | Closed | Uterus empty; products already passed |
+| Missed (delayed) | Little or none | Closed | Non-viable pregnancy retained — no heartbeat, or an empty sac |
+| Septic | Offensive discharge, fever | Open or closed | Retained products with infection — a surgical and antibiotic emergency |
+
+A **threatened** miscarriage is bleeding with a closed os and a still-viable pregnancy; advise the woman to return if bleeding worsens or lasts beyond 14 days, and to continue routine antenatal care if it settles. **Recurrent miscarriage** — three or more consecutive losses — warrants investigation for antiphospholipid syndrome, parental chromosomal rearrangements, uterine anomalies and inherited thrombophilia.
+
+## Diagnosis
+
+- Assess haemodynamic stability first with a rapid ABCDE assessment: heavy bleeding, or products sitting in an open cervical os, can cause hypovolaemic shock.
+- A **transvaginal ultrasound scan** is the key investigation, looking for the fetal pole, crown–rump length and a fetal heartbeat.
+- Serum **human chorionic gonadotrophin (hCG)** is used mainly when the scan is inconclusive or the pregnancy location is unknown — in a normal early intrauterine pregnancy the level roughly doubles every 48 hours.
+- Miscarriage is confirmed on scan by a crown–rump length of 7 mm or more with no heartbeat, or a mean gestational sac diameter of 25 mm or more with no fetal pole; where measurements are below these thresholds, rescan after 7 days before confirming.
+
+## Management
+
+The three options are expectant, medical and surgical, and where there is a genuine choice the woman's preference guides it.
+
+- **Expectant management** is first-line for 7–14 days in a confirmed miscarriage, letting the products pass naturally. Avoid it where there is a raised bleeding risk (for example late first trimester), a previous traumatic pregnancy experience, evidence of infection, or an inability to tolerate haemorrhage. Advise a pregnancy test after 3 weeks, and rescan if bleeding has not started or is persisting or worsening.
+- **Medical management** uses **misoprostol** (a prostaglandin that softens the cervix and contracts the uterus), given vaginally or orally; for a *missed* miscarriage, oral **mifepristone** is given first, followed by misoprostol. Provide analgesia and anti-emetics, warn of bleeding within 4–48 hours, and advise a pregnancy test after 3 weeks (contact a professional if bleeding has not started within 24 hours).
+- **Surgical management** is manual vacuum aspiration under local anaesthetic, or surgical evacuation under general anaesthetic, with misoprostol often used to ripen the cervix first. It is preferred with haemodynamic instability, heavy bleeding, infection, or patient choice.
+
+Offer **anti-D immunoglobulin** to rhesus-D-negative women who have *surgical* management of a miscarriage; it is not needed for a threatened or medically-managed miscarriage before 12 weeks. Treat miscarriage as a bereavement — give clear safety-netting and psychological support to the woman and her partner, and signpost charities such as the Miscarriage Association.
+
+> Any woman of reproductive age with bleeding, pain and a positive pregnancy test has an **ectopic pregnancy** until proven otherwise — confirm the pregnancy is inside the uterus on a transvaginal scan before attributing her symptoms to miscarriage.`,
+        },
+        {
+          id: "ectopic_pregnancy",
+          name: "Ectopic pregnancy",
+          content: `## Ectopic pregnancy
+
+An ectopic pregnancy is implantation outside the uterine cavity — about 95% in a **fallopian tube** (most often its ampulla), and rarely in the cornu, ovary, cervix or a caesarean-section scar. It is never viable, and tubal rupture causes life-threatening intraperitoneal haemorrhage, so it is the key diagnosis to exclude in any woman of reproductive age with early-pregnancy pain or bleeding.
+
+## Presentation and risk factors
+
+- The classic picture is **6–8 weeks of amenorrhoea with unilateral lower abdominal or pelvic pain and vaginal bleeding** (often dark, like prune juice), sometimes with shoulder-tip pain (diaphragmatic irritation from blood) or dizziness and collapse if it has ruptured.
+- Risk factors reflect tubal damage: previous ectopic pregnancy, pelvic inflammatory disease, previous tubal surgery or sterilisation, endometriosis, assisted reproduction, and a pregnancy that occurs with an intrauterine device or the progestogen-only pill in situ.
+
+## Diagnosis
+
+- **Transvaginal ultrasound** is the investigation of choice — it may show an adnexal mass separate from the ovary, a tubal ring, or free fluid, with an empty uterus.
+- Serum **hCG** helps interpret an inconclusive scan (a "pregnancy of unknown location"): a viable intrauterine pregnancy usually raises the level by at least 63% over 48 hours, whereas a suboptimal rise or a plateau suggests an ectopic. Above the discriminatory level (around 1500 IU/L) an intrauterine pregnancy should be visible on a transvaginal scan.
+
+## Management
+
+Management depends on symptoms, size, hCG level and the woman's stability.
+
+| Approach | When it is appropriate |
+|---|---|
+| Expectant | Stable, asymptomatic, unruptured, mass under 35 mm, no heartbeat, hCG under 1000 IU/L and falling; follow with serial hCG on days 2, 4 and 7 (expecting a fall of at least 15%) |
+| Medical (methotrexate) | Stable, minimal pain, unruptured, mass under 35 mm, no heartbeat, no intrauterine pregnancy, hCG under 1500 IU/L, able to attend follow-up |
+| Surgical (laparoscopy) | Significant pain, rupture, mass over 35 mm, a fetal heartbeat, or hCG over 5000 IU/L; also first-line if she cannot attend follow-up |
+
+- **Methotrexate** is a single intramuscular dose — a folate antagonist that halts trophoblast proliferation. Follow up with serial hCG (days 4 and 7, then weekly until negative). Advise avoiding alcohol, sexual intercourse and prolonged sun exposure during treatment, and avoiding conception for at least 3 months afterwards, as it is teratogenic. Where the hCG is 1500–5000 IU/L and the other criteria are met, offer a choice of methotrexate or surgery.
+- **Surgery** is laparoscopic where possible. **Salpingectomy** (removing the tube) is first-line; **salpingotomy** (opening the tube and removing the pregnancy) is reserved for women with risk factors for infertility such as damage to the other tube — but around 1 in 5 salpingotomies need further methotrexate or salpingectomy, so serial hCG follow-up is required.
+- Offer **anti-D immunoglobulin** to rhesus-negative women who have surgical management; a Kleihauer test is not required.
+
+> Shoulder-tip pain or collapse in early pregnancy signals a ruptured ectopic with haemoperitoneum — resuscitate and arrange emergency surgery, and do not wait for a scan or an hCG result in a woman who is unstable.`,
+        },
+        {
+          id: "gestational_trophoblastic_disease",
+          name: "Gestational trophoblastic disease",
+          content: `## Gestational trophoblastic disease
+
+Gestational trophoblastic disease is a spectrum of tumours arising from **placental trophoblast**, ranging from the benign but pre-malignant **hydatidiform mole** (molar pregnancy) through the **invasive mole** to the malignant **choriocarcinoma**. Because trophoblast secretes hCG, these tumours can be tracked — and in the UK are managed — through a national screening and treatment programme.
+
+## Complete versus partial mole
+
+| Feature | Complete mole | Partial mole |
+|---|---|---|
+| Genetics | Diploid and entirely paternal (usually 46,XX, from one sperm duplicating in an empty ovum) | Triploid (usually 69,XXX or 69,XXY — two sperm fertilising one egg) |
+| Fetal tissue | Absent | Present, with an abnormal fetus |
+| hCG | Very high | Less markedly raised |
+| Malignant potential | Around 15% become invasive or choriocarcinoma | Around 0.5% |
+
+## Presentation
+
+- **Vaginal bleeding** in the first or early second trimester is the commonest feature, occasionally with passage of grape-like vesicles.
+- A **uterus large for dates** and a very high hCG can exaggerate pregnancy symptoms — hyperemesis, early **pre-eclampsia before 20 weeks**, and rarely hyperthyroidism (hCG is structurally similar to thyroid-stimulating hormone).
+- Ultrasound in a complete mole classically shows a **snowstorm or bunch-of-grapes** appearance with no fetus; the diagnosis is confirmed histologically after evacuation.
+
+## Management
+
+- **Suction curettage (evacuation of the uterus)** is first-line for complete and most partial moles — medical evacuation is used instead only where large fetal parts in a partial mole make suction impractical. Send all the products for histology.
+- Give **anti-D prophylaxis** to rhesus-negative women after evacuation.
+- **Register the woman with a trophoblastic screening centre** (Charing Cross, Sheffield or Dundee in the UK) for serial hCG follow-up, the duration depending on how quickly the hCG normalises; a partial mole is discharged after two normal samples at least 4 weeks apart.
+- Advise against conceiving until follow-up is complete, using **barrier contraception** until the hCG has normalised; avoid an intrauterine device until then (perforation risk), and use the combined pill only once the hCG is normal.
+
+## Persistent disease and choriocarcinoma
+
+If the hCG plateaus or rises after evacuation, **gestational trophoblastic neoplasia** (an invasive mole or choriocarcinoma) is diagnosed and treated with chemotherapy — highly curable, and guided by a prognostic score (single-agent methotrexate for low-risk disease, multi-agent regimens for high-risk). Choriocarcinoma spreads early to the lungs, so breathlessness or haemoptysis after any pregnancy event — including a normal delivery or a miscarriage — should prompt a pregnancy test.
+
+> Gestational trophoblastic neoplasia can follow a pregnancy of any kind, not just a mole — so a positive pregnancy test with persistent bleeding or new respiratory symptoms after any delivery or miscarriage is the clue to check an hCG.`,
         },
         {
           id: "pregnancy_hypertension",
