@@ -3275,6 +3275,331 @@ Serial growth scans (every four weeks from 28 to 36 weeks) monitor for macrosomi
 
 Glucose-lowering treatment is **stopped immediately after birth**, and the baby's glucose is checked to exclude neonatal hypoglycaemia. A **fasting glucose (or HbA1c) is checked at 6–13 weeks postpartum** to exclude persistent diabetes, with annual review thereafter given the future risk of type 2 diabetes. Pre-existing diabetes is managed differently — high-dose (5 mg) folic acid, tighter targets, and stopping all agents except metformin and insulin.`,
         },
+        {
+          id: "antenatal_care",
+          name: "Antenatal care & screening",
+          content: `## Antenatal care and screening
+
+Antenatal care is the schedule of appointments, screening and advice that supports a healthy pregnancy. NICE recommends **10 appointments in a first pregnancy** and **7 in later pregnancies** if uncomplicated. The estimated date of delivery is calculated by **Naegele's rule** — add one year, subtract three months and add seven days to the first day of the last menstrual period (adjusting for cycles longer than 28 days) — and confirmed by the dating scan.
+
+## The booking appointment (by 10 weeks)
+
+A full history identifies risk factors, and the following are arranged:
+
+- **Booking bloods** — full blood count (anaemia), blood group and rhesus D status, and red-cell antibodies.
+- **Infection screening** (offered, may be declined) — HIV, hepatitis B and syphilis, and screening for haemoglobinopathies.
+- **Urine** — dipstick and culture for asymptomatic bacteriuria and proteinuria.
+- **Folic acid** 400 micrograms daily until 12 weeks — or **5 mg** if at higher risk of a neural tube defect (a previous affected baby, diabetes, body mass index over 30, sickle cell disease, or taking antiepileptic drugs) — plus vitamin D 10 micrograms.
+- Assess the risk of venous thromboembolism, gestational diabetes and pre-eclampsia (offer **aspirin 75 to 150 mg from 12 weeks** if at risk — see the Hypertensive disorders of pregnancy topic).
+- Advice on smoking and alcohol, and offer the **influenza** vaccine now and the **pertussis (whooping cough)** vaccine from 16 weeks.
+
+## Screening scans and tests
+
+| Test | Timing | Purpose |
+|---|---|---|
+| Dating scan | 11 to 14 weeks | Confirm gestation by crown–rump length, detect multiple pregnancy, measure nuchal translucency |
+| Combined test | 11 to 14 weeks | Down's screening — nuchal translucency, free beta-hCG and pregnancy-associated plasma protein A (PAPP-A) |
+| Quadruple test | 15 to 20 weeks | Down's screening (blood markers only) if the combined test was missed |
+| Anomaly scan | 18 to 20+6 weeks | Structural anomalies and placental site (rescan at 32 weeks if low-lying) |
+| Oral glucose tolerance test | 24 to 28 weeks | Gestational diabetes, if risk factors |
+
+The combined and quadruple tests estimate the risk of trisomy 21 (Down's syndrome) as well as **trisomy 18 (Edwards)** and **trisomy 13 (Patau)**; a high-chance result is followed by a diagnostic test (chorionic villus sampling or amniocentesis) or non-invasive prenatal testing of cell-free fetal DNA.
+
+## Later appointments
+
+- From **24 weeks**, measure the **symphysis–fundal height** at each visit to monitor growth.
+- **Anti-D immunoglobulin** is given to rhesus-D-negative women — routinely at **28 weeks** (often with a second dose at 34 weeks), and after any potentially sensitising event.
+- At **28 weeks**, repeat the full blood count and antibody screen.
+- From **36 weeks**, palpate for **breech** presentation and offer external cephalic version (at 36 weeks if nulliparous, 37 weeks if multiparous).
+- At **41 weeks**, offer a membrane sweep and induction of labour.
+
+> Memorise the folic acid doses (400 micrograms standard, 5 mg high-risk), the anti-D schedule (routinely at 28 weeks, and after any sensitising event in a rhesus-negative woman), and the two Down's screening windows (combined 11 to 14 weeks, quadruple 15 to 20 weeks).`,
+        },
+        {
+          id: "labour",
+          name: "Labour",
+          content: `## Labour
+
+Labour is the onset of strong, regular, painful contractions producing progressive cervical change. It is divided into three stages.
+
+## The three stages
+
+| Stage | From and to | Notes |
+|---|---|---|
+| First | Onset of contractions to full dilatation (10 cm) | Latent phase to 3 to 4 cm, then active phase; progress about 1 cm every 2 hours |
+| Second | Full dilatation to delivery of the baby | Passive (descent) then active (pushing) phase |
+| Third | Delivery of the baby to delivery of the placenta | Normally 5 to 10 minutes |
+
+The first stage lasts on average 8 hours in a first labour and 5 hours in later ones. A prolonged first stage is usually from weak contractions, **cephalopelvic disproportion** or malpresentation.
+
+## The mechanism of labour
+
+The fetal head negotiates the pelvis in a set sequence: engagement and descent, flexion, internal rotation, extension (crowning and delivery of the head), restitution and external rotation, and finally delivery of the shoulders and body.
+
+## Managing the third stage
+
+- **Active management** is recommended for all women: **10 units of oxytocin** intramuscularly with delivery of the anterior shoulder, then controlled cord traction once the placenta separates. It reduces postpartum haemorrhage (from roughly 15% to 5%).
+- **Physiological management** (delivery by maternal effort, no drugs) causes more bleeding and is reserved for low-risk women who choose it.
+
+## Preterm labour
+
+Preterm labour is the onset of labour before 37 weeks. In a woman at risk (a previous preterm birth or a short cervix), **vaginal progesterone** or a **cervical cerclage** (stitch) can prevent it. In established preterm labour, offer:
+
+- **Antenatal corticosteroids** (intramuscular betamethasone) to accelerate fetal lung maturity — the single most important intervention.
+- **Tocolysis** to buy time for steroids or transfer — **nifedipine** first-line (atosiban second) — avoided if there is bleeding or infection.
+- **Intravenous magnesium sulfate** for fetal neuroprotection if birth is expected within 24 hours (typically before 30 to 34 weeks).
+
+## Rupture of membranes before labour
+
+- **PROM** (prelabour rupture at term, 37 weeks or more): most women go into labour within 24 hours; offer induction if not, and immediately if there is meconium or group B streptococcus.
+- **P-PROM** (preterm, before 37 weeks): admit, give **prophylactic erythromycin** and antenatal corticosteroids, and watch closely for **chorioamnionitis**; aim to deliver by 37 weeks.
+
+> Active management of the third stage — 10 units of oxytocin and controlled cord traction — is offered to every woman because it cuts the postpartum haemorrhage rate roughly threefold. In preterm labour, the priority interventions are corticosteroids for the lungs and magnesium sulfate for the brain.`,
+        },
+        {
+          id: "induction_of_labour",
+          name: "Induction of labour",
+          content: `## Induction of labour
+
+Induction is the artificial initiation of labour. Common indications are **prolonged pregnancy (offered at 41 weeks)**, prelabour rupture of membranes, fetal growth restriction, diabetes and intrauterine fetal death.
+
+## The Bishop score
+
+The **Bishop score** assesses cervical readiness from five features — dilatation, effacement (or length), consistency, position, and the station of the presenting part. A **score above 6 to 8 means a favourable cervix** likely to respond, while a **low score (6 or under) means the cervix needs ripening** first. The score guides the method.
+
+## Methods
+
+- **Membrane sweep** — a finger swept around the cervical os releases prostaglandins; offered from 40 to 41 weeks to prompt spontaneous labour and reduce the need for formal induction.
+- **Vaginal prostaglandin E2 (dinoprostone)** — first-line when the Bishop score is 6 or under, as a gel, tablet or pessary, to ripen the cervix.
+- **Cervical balloon (mechanical) catheter** — an alternative to prostaglandin that avoids hyperstimulation; preferred where prostaglandin is unsuitable, for example after a previous caesarean.
+- **Artificial rupture of membranes (amniotomy)** then **intravenous oxytocin** — used once the cervix is favourable (Bishop over 6); oxytocin augments contractions to 3 to 4 every 10 minutes.
+
+The main hazard is **uterine hyperstimulation** (too-frequent contractions causing fetal distress), managed by removing the prostaglandin or stopping the oxytocin and giving a tocolytic (terbutaline). If induction fails, the options are a further attempt after a rest, or a caesarean section.
+
+## Birth after a previous caesarean
+
+Women with a previous caesarean choose between a **planned vaginal birth after caesarean (VBAC)** and an **elective repeat caesarean**. VBAC succeeds in about **72 to 75%** of cases but carries a **1 in 200 risk of uterine rupture** (higher if labour is induced, especially with prostaglandins). A **previous classical (vertical) caesarean or a previous uterine rupture** is an absolute contraindication to VBAC.
+
+> Match the method to the Bishop score: a low score needs cervical ripening (vaginal prostaglandin or a balloon catheter) first, whereas a favourable cervix (over 6) allows amniotomy and oxytocin. Watch for uterine hyperstimulation throughout, and remember the raised rupture risk when inducing a VBAC.`,
+        },
+        {
+          id: "cardiotocography",
+          name: "Cardiotocography (CTG)",
+          content: `## Cardiotocography (CTG)
+
+Cardiotocography records the fetal heart rate against uterine contractions to detect fetal compromise. It is used in labour when there are risk factors — for example meconium, maternal pyrexia, oxytocin use, hypertension, bleeding, or a suspicious intermittent heart rate. A structured reading uses the mnemonic **DR C BRAVADO**.
+
+## Reading a CTG — DR C BRAVADO
+
+- **DR — Define Risk**: why is the CTG being done?
+- **C — Contractions**: count them in 10 minutes (aim for 3 to 4 in labour); the height of the trace does not reflect their strength.
+- **BRa — Baseline Rate**: normal is **110 to 160 beats per minute**. Tachycardia suggests infection, hypoxia or fever; bradycardia suggests hypoxia or cord compression.
+- **V — Variability**: the beat-to-beat variation; **normal is 5 to 25 bpm**. Reduced variability (under 5 bpm for over 30 to 50 minutes) suggests a fetal sleep cycle (if brief), drugs or hypoxia.
+- **A — Accelerations**: rises of at least 15 bpm for at least 15 seconds — a **reassuring** sign.
+- **D — Decelerations**: falls of at least 15 bpm for at least 15 seconds — the key abnormal feature (see below).
+- **O — Overall** impression: normal, suspicious or pathological.
+
+## Types of deceleration
+
+| Type | Timing | Significance |
+|---|---|---|
+| Early | Mirror the contraction (trough with the peak) | Benign — a normal response to head compression |
+| Variable | Vary in timing and shape, often V-shaped | Usually cord compression; concerning if deep or prolonged |
+| Late | Begin after the contraction peak and recover after it ends | Always abnormal — suggest fetal hypoxia |
+
+A **sinusoidal** trace (a smooth, regular wave) is an ominous sign of severe fetal anaemia or hypoxia.
+
+## Classification and action
+
+Each feature is reassuring, non-reassuring or abnormal, giving an overall category:
+
+- **Normal** — continue.
+- **Suspicious** (one non-reassuring feature) — conservative measures (left lateral position, fluids, stop oxytocin) and closer monitoring.
+- **Pathological** (two non-reassuring features, or any abnormal feature) — senior review, conservative measures, and consider fetal blood sampling or expedited delivery.
+
+An acute bradycardia or a single prolonged deceleration lasting **over 3 minutes** is an emergency: if it persists beyond about 9 minutes, expedite delivery.
+
+> Late decelerations and reduced variability point to fetal hypoxia, whereas early decelerations are benign head compression and variable decelerations are usually cord compression. A prolonged deceleration lasting over 3 minutes calls for urgent action.`,
+        },
+        {
+          id: "antepartum_haemorrhage",
+          name: "Antepartum haemorrhage",
+          content: `## Antepartum haemorrhage
+
+Antepartum haemorrhage is bleeding from the genital tract after **24 weeks** of pregnancy. The two dangerous causes to separate are **placenta praevia** and **placental abruption**; others include local causes and, rarely, vasa praevia.
+
+## Placenta praevia versus placental abruption
+
+| Feature | Placenta praevia | Placental abruption |
+|---|---|---|
+| Problem | Placenta lies over or near the internal cervical os | Placenta separates from the uterine wall before delivery |
+| Bleeding | **Painless**, often bright red | **Painful**, and may be concealed (little visible blood) |
+| Uterus | Soft, non-tender | **Tense, woody-hard** and tender |
+| Fetus | Usually not distressed early | Often distressed, and may die |
+| Key rule | **Never perform a vaginal examination** until praevia is excluded | A clinical diagnosis — a normal scan does not exclude it |
+
+## Placenta praevia
+
+Placenta praevia is defined after 16 weeks as the placenta lying over the internal os (a **low-lying placenta** is within 2 cm of it). Most low-lying placentas found at the 20-week anomaly scan resolve as the uterus grows, so a **rescan at 32 weeks** is arranged; if it persists, an **elective caesarean at around 36 to 37 weeks** is recommended. Symptomatic bleeding needs an ABCDE approach, anti-D if the mother is rhesus-negative, admission and fetal monitoring, with emergency caesarean if she is unstable or the fetus is distressed. Risk factors include a previous caesarean, a previous praevia, multiple pregnancy and smoking.
+
+## Placental abruption
+
+Abruption is premature separation of a normally sited placenta, causing painful bleeding and a hard, tender uterus; the blood loss may be **concealed** behind the placenta, so shock can be out of proportion to the visible bleeding. Risk factors include hypertension and pre-eclampsia, trauma, smoking, cocaine and a previous abruption. Manage with ABCDE, large-bore intravenous access, cross-match, anti-D if needed, and continuous fetal monitoring; deliver by **emergency caesarean** if there is fetal distress, and treat the disseminated intravascular coagulation it can trigger.
+
+> The classic split is painless bleeding with a soft uterus (praevia) versus painful bleeding with a hard, tender uterus (abruption). In any antepartum haemorrhage, do not perform a vaginal examination until placenta praevia has been excluded on a scan.`,
+        },
+        {
+          id: "obstetric_emergencies",
+          name: "Obstetric emergencies",
+          content: `## Obstetric emergencies
+
+This topic covers the intrapartum and postpartum emergencies of shoulder dystocia, cord prolapse, uterine rupture and postpartum haemorrhage. (Eclampsia is covered in the Hypertensive disorders of pregnancy topic, and amniotic fluid embolism has its own Tracker entry.)
+
+## Shoulder dystocia
+
+The anterior shoulder impacts behind the pubic symphysis after the head delivers. It is an emergency managed by a stepwise drill — call for help and tell the mother to stop pushing:
+
+- **McRoberts' manoeuvre** — hyperflex the hips onto the abdomen (successful in about 90%), with **suprapubic pressure**.
+- **Internal manoeuvres** — the Rubin and Wood's screw manoeuvres to rotate the shoulder, or delivery of the posterior arm.
+- Then the **all-fours** position, and last-resort measures (symphysiotomy, or the Zavanelli manoeuvre — replacing the head for caesarean).
+
+Complications include **brachial plexus injury (Erb's palsy)** and humeral or clavicular fracture in the baby, and postpartum haemorrhage and perineal tears in the mother.
+
+## Cord prolapse
+
+The umbilical cord descends past the presenting part after the membranes rupture, and cord compression or vasospasm then causes fetal hypoxia. It is an emergency: **push the presenting part up** (manually or by filling the bladder), place the mother in a **knee–chest or left-lateral head-down** position, avoid handling a cord that is outside the introitus, consider tocolysis, and **deliver immediately** — usually by emergency caesarean.
+
+## Uterine rupture
+
+A tear through the uterine wall, most often at a previous caesarean scar (especially with induced or augmented labour), presents with severe pain, fetal distress, loss of the contraction pattern, vaginal bleeding and maternal shock. Manage with ABCDE, resuscitation and transfusion, and an immediate **laparotomy** to deliver the baby and repair or remove the uterus.
+
+## Postpartum haemorrhage
+
+Postpartum haemorrhage (PPH) is blood loss over 500 mL after delivery (major if over 1000 mL). The causes are the **four Ts** — **Tone** (uterine atony, the commonest), **Trauma** (tears), **Tissue** (retained placenta) and **Thrombin** (coagulopathy). Manage with ABCDE and a major-haemorrhage call; for atony, **rub up the fundus** and give uterotonics in sequence — **oxytocin, ergometrine, carboprost and misoprostol** — then surgical measures (intrauterine balloon tamponade, a brace suture, or hysterectomy) if bleeding continues. Active management of the third stage helps prevent it.
+
+> The postpartum-haemorrhage causes are the four Ts (Tone, Trauma, Tissue, Thrombin), with uterine atony the commonest. For an impacted shoulder, McRoberts' with suprapubic pressure resolves most cases; for a prolapsed cord, relieve the compression and deliver immediately.`,
+        },
+        {
+          id: "torch_infections",
+          name: "TORCH & congenital infections",
+          content: `## TORCH and congenital infections
+
+**TORCH** is the classic group of infections that cross the placenta to harm the fetus: **T**oxoplasmosis, **O**ther (syphilis, parvovirus B19, listeria and others), **R**ubella, **C**ytomegalovirus and **H**erpes simplex. (Chickenpox in pregnancy has its own topic.) In general, the earlier in pregnancy the infection, the greater the risk of severe fetal damage.
+
+## Toxoplasmosis
+
+Caught from raw or undercooked meat and from cat faeces (soil and litter). Congenital toxoplasmosis classically causes the triad of **intracranial calcification, chorioretinitis and hydrocephalus**. The mother is given **spiramycin** to reduce transmission, adding sulfadiazine and pyrimethamine (with folinic acid) if fetal infection is confirmed. Prevent by avoiding raw meat, cat litter and unwashed soil when gardening.
+
+## Rubella
+
+Rubella is now rare thanks to MMR vaccination, but is devastating in the **first trimester**: **congenital rubella syndrome** causes **sensorineural deafness, cataracts and congenital heart disease (patent ductus arteriosus)**. There is **no treatment**, so prevention is everything — check rubella immunity before pregnancy and vaccinate before conceiving (MMR is a live vaccine and cannot be given during pregnancy).
+
+## Cytomegalovirus
+
+Cytomegalovirus (CMV) is the **commonest congenital infection**. It causes **sensorineural hearing loss**, and can also cause growth restriction, microcephaly and intracranial calcification. There is no antenatal treatment; the baby has audiology and ophthalmology follow-up and is given postnatal antivirals (valganciclovir) if infected.
+
+## Herpes simplex
+
+The danger is **neonatal herpes** acquired during delivery through an actively infected genital tract. A **primary genital infection in the third trimester** is the highest-risk situation: give the mother aciclovir and recommend an **elective caesarean**. A recurrent infection, or a primary one earlier in pregnancy, is managed with suppressive aciclovir from 36 weeks and usually allows vaginal delivery.
+
+## Other — syphilis, parvovirus B19 and listeria
+
+- **Syphilis** — screened for at booking and treated with **benzylpenicillin** (with genitourinary-medicine referral for contact tracing); untreated, it causes congenital syphilis, so the baby is treated if the mother was not.
+- **Parvovirus B19** (slapped-cheek disease) — suppresses fetal red-cell production, causing **fetal anaemia and hydrops fetalis**; refer to fetal medicine for surveillance, with **intrauterine transfusion** if hydrops develops.
+- **Listeria** — from unpasteurised dairy, soft cheeses and pâté; causes a flu-like maternal illness but can lead to miscarriage, stillbirth or neonatal sepsis, and is treated with **amoxicillin**.
+
+> Learn the congenital triads — toxoplasmosis (intracranial calcification, chorioretinitis, hydrocephalus) versus rubella (deafness, cataracts, cardiac). CMV is the commonest congenital infection and a leading cause of childhood sensorineural deafness, and parvovirus B19 causes fetal anaemia and hydrops.`,
+        },
+        {
+          id: "chickenpox_pregnancy",
+          name: "Chickenpox in pregnancy",
+          content: `## Chickenpox in pregnancy
+
+Chickenpox (primary varicella zoster virus infection) is dangerous in pregnancy for both mother and baby. The mother is at risk of **varicella pneumonitis, hepatitis and encephalitis**, and the fetus of **congenital varicella syndrome** or **neonatal varicella**. About 90% of adults are already immune, so the first step after any exposure is to establish immunity.
+
+## Exposure in a non-immune woman
+
+If a non-immune pregnant woman has significant exposure to chickenpox or shingles, check varicella antibodies, and if she is not immune give **post-exposure prophylaxis**:
+
+- **Under 20 weeks** — **varicella zoster immunoglobulin (VZIG)** as soon as possible (effective up to 10 days after contact).
+- **20 weeks or more** — VZIG or antiviral prophylaxis (aciclovir or valaciclovir) 7 to 14 days after exposure.
+
+She is then considered infectious for 3 to 4 weeks and should avoid other pregnant women and neonates.
+
+## If the rash develops
+
+- Give **oral aciclovir** if she presents **within 24 hours of the rash and is 20 weeks or more** (used with caution under 20 weeks); intravenous aciclovir for severe disease. VZIG has no benefit once the rash has appeared.
+- Refer to fetal medicine for a detailed ultrasound.
+
+## Fetal and neonatal risk
+
+- **Congenital varicella syndrome** — from maternal infection in the first 28 weeks (highest around 8 to 20 weeks): dermatomal skin scarring, limb hypoplasia, eye defects and neurological damage.
+- **Neonatal varicella** — most dangerous when the mother develops the rash from about **5 days before to 2 days after delivery**, leaving no time for protective antibody to cross the placenta. Delay planned delivery until 7 days after the rash if possible, and give the neonate **VZIG** (and aciclovir if infected).
+
+> The two decisions to get right: **VZIG** for a non-immune woman *exposed* to chickenpox (prophylaxis, before any rash), but **aciclovir** once the rash has appeared. Maternal chickenpox around delivery (5 days before to 2 days after) puts the newborn at serious risk and needs neonatal VZIG.`,
+        },
+        {
+          id: "pregnancy_uti_gbs",
+          name: "UTI, GBS & bloodborne viruses in pregnancy",
+          content: `## Urinary, group B streptococcal and bloodborne infections in pregnancy
+
+## Urinary tract infection
+
+**Asymptomatic bacteriuria** is screened for and treated in pregnancy because it can progress to **pyelonephritis** and trigger preterm labour. Antibiotic choice avoids the fetal-risk periods:
+
+- **Nitrofurantoin** first-line — but **avoid at term** (a risk of neonatal haemolysis).
+- **Trimethoprim** is a **folate antagonist and is avoided, especially in the first trimester** (when the teratogenic risk is highest).
+- Second-line options, guided by sensitivities, are amoxicillin or cefalexin.
+
+## Group B streptococcus
+
+Group B streptococcus (GBS) colonises the vagina in many women and can cause **early-onset neonatal sepsis**. The UK uses a **risk-based** approach (not universal screening), giving **intrapartum intravenous benzylpenicillin** to women with risk factors — GBS in this or a previous pregnancy, a previously affected baby, preterm labour, prolonged rupture of membranes, or intrapartum fever. Prophylaxis is not needed for a planned caesarean with intact membranes.
+
+## HIV
+
+With treatment, vertical transmission falls to under 1%. **Antiretroviral therapy is offered to all pregnant women**, and the **mode of delivery depends on the viral load at 36 weeks**:
+
+- **Under 50 copies/mL** — vaginal delivery can be offered.
+- **Over 50 copies/mL** — elective caesarean with an intrapartum zidovudine infusion.
+
+The cord is clamped early, the neonate receives antiretroviral prophylaxis, and in the UK mothers are **advised not to breastfeed**.
+
+## Hepatitis B and C
+
+- **Hepatitis B** — give the neonate **hepatitis B immunoglobulin and vaccination** at birth (which nearly abolishes transmission); the mother is given an antiviral (tenofovir) if the viral load is high. **Breastfeeding is safe.**
+- **Hepatitis C** — no specific delivery precautions reduce transmission, and the mother's antiviral treatment is **deferred until after pregnancy** (interferon and ribavirin are contraindicated).
+
+## Maternal sepsis
+
+Sepsis (for example from chorioamnionitis or a urinary source) is a leading cause of maternal death: apply the **Sepsis Six** (oxygen, blood cultures, intravenous antibiotics, fluids, lactate and urine-output monitoring) and monitor the fetus with continuous cardiotocography.
+
+> Two prescribing rules: avoid **trimethoprim** in the first trimester (a folate antagonist) and **nitrofurantoin** at term (neonatal haemolysis). For HIV, antiretrovirals for all, and the mode of delivery turns on the 36-week viral load (the 50 copies/mL threshold).`,
+        },
+        {
+          id: "pregnancy_liver_disease",
+          name: "Liver disease in pregnancy",
+          content: `## Liver disease in pregnancy
+
+Three liver disorders are specific to pregnancy: **intrahepatic cholestasis of pregnancy (obstetric cholestasis)**, **acute fatty liver of pregnancy**, and the **HELLP syndrome** (a variant of severe pre-eclampsia).
+
+## Obstetric cholestasis
+
+Intrahepatic cholestasis of pregnancy typically presents in the **third trimester** with **intense itching — classically of the palms and soles — and no rash**. Bile acids and liver transaminases are raised. The main danger is **stillbirth**, whose risk rises once the **serum bile acids reach about 100 micromol/L**.
+
+- **Symptom relief** — **ursodeoxycholic acid** (eases the pruritus), emollients and sedating antihistamines; **vitamin K** if the prothrombin time is prolonged.
+- **Monitoring** — weekly liver function and bile acids, and attention to fetal movements.
+- **Delivery** — the timing is guided by the bile-acid level: planned birth around 38 to 39 weeks for moderately raised acids, and earlier (35 to 36 weeks) once they reach 100 micromol/L. The itch and liver tests resolve after delivery (confirm at a postnatal review).
+
+## Acute fatty liver of pregnancy
+
+A rare but life-threatening microvesicular fatty infiltration of the liver, presenting in the third trimester with malaise, nausea and vomiting, right-upper-quadrant pain, jaundice, **hypoglycaemia** and coagulopathy; it is linked to fetal **long-chain 3-hydroxyacyl-CoA dehydrogenase (LCHAD) deficiency**. Management is **supportive intensive care** — correcting hypoglycaemia, electrolytes and coagulopathy — with **urgent delivery** once the mother is stabilised.
+
+## HELLP syndrome
+
+HELLP — **H**aemolysis, **E**levated **L**iver enzymes and **L**ow **P**latelets — is a severe manifestation of pre-eclampsia (see the Hypertensive disorders of pregnancy topic). It causes right-upper-quadrant or epigastric pain, nausea and malaise, and is managed like severe pre-eclampsia, with stabilisation and delivery.
+
+> Obstetric cholestasis is itching of the palms and soles without a rash, with raised bile acids and a stillbirth risk that drives timed delivery. Acute fatty liver brings hypoglycaemia and coagulopathy and needs urgent delivery, while HELLP is a severe pre-eclampsia variant.`,
+        },
       ],
     },
     {
