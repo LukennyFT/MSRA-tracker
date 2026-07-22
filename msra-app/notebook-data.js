@@ -3600,6 +3600,640 @@ HELLP — **H**aemolysis, **E**levated **L**iver enzymes and **L**ow **P**latele
 
 > Obstetric cholestasis is itching of the palms and soles without a rash, with raised bile acids and a stillbirth risk that drives timed delivery. Acute fatty liver brings hypoglycaemia and coagulopathy and needs urgent delivery, while HELLP is a severe pre-eclampsia variant.`,
         },
+        {
+          id: "vaginal_infections",
+          name: "Bacterial vaginosis & vulvovaginal candidiasis",
+          content: `## Bacterial vaginosis and vulvovaginal candidiasis
+
+These are two of the commonest causes of vaginal discharge. **Neither is a sexually transmitted infection**, although bacterial vaginosis is associated with sexual activity.
+
+## Comparing the common causes of vaginal discharge
+
+| Feature | Bacterial vaginosis | Vulvovaginal candidiasis | Trichomoniasis |
+|---|---|---|---|
+| Organism | Overgrowth of anaerobes (notably Gardnerella vaginalis) replacing lactobacilli | Candida albicans, a yeast | Trichomonas vaginalis, a flagellated protozoan |
+| Discharge | Thin, grey-white, homogeneous | Thick, white, curd-like ("cottage cheese") | Frothy, yellow-green, offensive |
+| Odour | Offensive, fishy | Not offensive | Offensive |
+| Itch and soreness | Usually absent | Prominent | Present |
+| Vaginal pH | Above 4.5 | Normal, 4.5 or below | Above 4.5 |
+| Sexually transmitted | No | No | Yes |
+
+## Bacterial vaginosis
+
+An overgrowth of anaerobic organisms that replaces the normal lactobacilli and raises the vaginal pH.
+
+## Investigating bacterial vaginosis
+
+- **Vaginal pH** — raised above 4.5, measured with narrow-range pH paper.
+- **Whiff (amine) test** — adding potassium hydroxide to the discharge releases a fishy odour.
+- **Gram-stained smear** — scored by the Hay-Ison or Nugent method. **Clue cells** (epithelial cells studded with adherent bacteria) are the classic microscopy finding.
+- **Full sexual health screen** — nucleic acid amplification testing (NAAT) for chlamydia and gonorrhoea, with HIV and syphilis serology, should be offered alongside.
+
+The **Amsel criteria** remain a practical bedside standard: three of the four of a thin homogeneous discharge, a pH above 4.5, a positive whiff test, and clue cells on microscopy.
+
+## Treating bacterial vaginosis
+
+- **First line** — **metronidazole 400 mg twice daily orally for 5 to 7 days**.
+- **Alternatives** — intravaginal metronidazole or clindamycin gel.
+- **If adherence is a problem** — a **single 2 g oral dose of metronidazole**, but **not in pregnancy**.
+- **Advice** — avoid vaginal douching and excessive genital washing, both of which disturb the normal flora.
+- **In pregnancy** — bacterial vaginosis is associated with **preterm labour and chorioamnionitis**, so symptomatic infection should be treated. Avoid the single 2 g dose.
+
+## Vulvovaginal candidiasis
+
+**Risk factors** are recent antibiotic use, combined oral contraception, diabetes mellitus and excessive washing. Explain clearly that this is **not a sexually transmitted infection**.
+
+## Treating vulvovaginal candidiasis
+
+Prescribe an antifungal, either local or oral.
+
+- **Local** — a clotrimazole pessary or cream, for example **clotrimazole 500 mg per vagina as a single dose**. This is **first line in pregnancy**.
+- **Oral** — **fluconazole 150 mg orally as a single dose**, which is first line in non-pregnant women, or **itraconazole 200 mg twice daily for one day**.
+- **If there are vulval symptoms** — add a **topical imidazole** (clotrimazole or ketoconazole) alongside the oral or intravaginal antifungal. Warn that topical imidazoles **damage latex condoms and diaphragms**.
+- **Girls aged 12 to 15 years** — consider topical clotrimazole 1% or 2% applied two to three times daily. Do **not** prescribe intravaginal or oral antifungals.
+- **Pregnancy** — use local treatment only (creams or pessaries); **oral antifungals are contraindicated**.
+- Intravaginal clotrimazole, topical clotrimazole and oral fluconazole are all available **over the counter**.
+
+## Self-care advice in candidiasis
+
+- Return if symptoms have not resolved in **7 to 14 days**.
+- Wash the vulval area with a **soap substitute**, externally and **no more than once a day**, and moisturise with a simple emollient.
+- Avoid soaps, shower gels, wipes and feminine hygiene products; avoid washing the vulval area more than once daily.
+- Avoid biological washing powders and fabric conditioners for underwear, vaginal douching, and tight-fitting or non-absorbent clothing.
+- Probiotics such as live yoghurt, taken orally or applied topically, may relieve symptoms.
+- Do **not** routinely treat an asymptomatic sexual partner.
+
+> Bacterial vaginosis gives a thin grey fishy discharge with a pH above 4.5 and clue cells, and is treated with metronidazole 400 mg twice daily for 5 to 7 days. Candidiasis gives a thick itchy white discharge with a normal pH, treated with a clotrimazole pessary or a single 150 mg dose of fluconazole — and local treatment only in pregnancy.`,
+        },
+        {
+          id: "pelvic_inflammatory_disease",
+          name: "Pelvic inflammatory disease",
+          content: `## Pelvic inflammatory disease
+
+Infection ascending from the cervix into the upper genital tract — the endometrium, fallopian tubes, ovaries and pelvic peritoneum. It is usually sexually transmitted, most often caused by Chlamydia trachomatis or Neisseria gonorrhoeae.
+
+**Risk factors** — age under 25 years, a current or previous sexually transmitted infection, multiple sexual partners, and previous pelvic inflammatory disease.
+
+## When to admit
+
+Arrange **urgent hospital admission** if there are severe systemic symptoms, signs of complications such as a tubo-ovarian abscess, or **any suspicion of pregnancy** (an ectopic pregnancy must be excluded).
+
+## Antibiotic treatment
+
+Treatment is started **empirically**, before swab results are available, because delay increases the risk of tubal damage.
+
+**Outpatient regimen**
+
+- **Ceftriaxone 1 g intramuscularly as a single dose**, plus
+- **Doxycycline 100 mg twice daily orally for 14 days**, plus
+- **Metronidazole 400 mg twice daily orally for 14 days**.
+- An alternative regimen is **ofloxacin plus metronidazole for 14 days**.
+
+**If the woman is pyrexial or oral treatment has failed**
+
+- **First line** — intravenous cefoxitin plus doxycycline.
+- **Second line** — intravenous clindamycin plus gentamicin.
+
+**Intrauterine device** — consider removing a device that is in situ, usually where the patient has failed to respond to treatment after **72 hours**.
+
+## Sexual health management
+
+- Offer **chlamydia and gonorrhoea testing**, ideally **before** starting antibiotics.
+- **Contact tracing** — current and recent partners (within the **last 6 months**) should be contacted and offered advice, screening and treatment.
+- Advise **no sexual intercourse until the antibiotic course is complete** and partners have been treated.
+- Advise on **barrier contraception**, and discuss ongoing contraception (including whether to remove an intrauterine device).
+- Arrange a **test of cure** if the initial chlamydia or gonorrhoea test was positive.
+
+## Follow-up
+
+- Review **within 72 hours** if managed as an outpatient, to assess the response. If there is no improvement, admit for intravenous antibiotics.
+- Review again at **2 to 4 weeks** to confirm resolution, reiterate the importance of sexual health, and reassure that fertility is not affected if the course was completed.
+
+## Complications
+
+- **Infertility** — counsel about the small risk of subfertility, which rises with each recurrence.
+- **Ectopic pregnancy**, from tubal scarring.
+- **Chronic pelvic pain**.
+- **Fitz-Hugh-Curtis syndrome** — perihepatitis producing right-upper-quadrant pain from peritoneal spread.
+
+Patient information is available from BASHH, the RCOG and the NHS.
+
+> Treat pelvic inflammatory disease empirically with ceftriaxone 1 g intramuscularly plus 14 days of doxycycline and metronidazole. Screen and trace partners from the last 6 months, review at 72 hours and again at 2 to 4 weeks, and counsel about infertility, ectopic pregnancy and chronic pelvic pain.`,
+        },
+        {
+          id: "urinary_incontinence",
+          name: "Urinary incontinence & overactive bladder",
+          content: `## Urinary incontinence and overactive bladder
+
+Management depends on the **predominant symptom**, so classification comes first.
+
+## Classification
+
+| Type | Definition |
+|---|---|
+| Stress incontinence | Involuntary leakage of small amounts of urine when intra-abdominal pressure rises — coughing, laughing or sneezing. Due to pelvic floor weakness or intrinsic sphincter deficiency. |
+| Urge incontinence | Involuntary leakage accompanied or immediately preceded by an urge to pass urine. |
+| Overactive bladder syndrome | Increased frequency and nocturia, not necessarily with incontinence. If incontinence is present it is classed as urge incontinence. |
+| Mixed incontinence | Features of both urge and stress incontinence. |
+| Overflow incontinence | Detrusor underactivity or bladder outlet obstruction causing urinary retention with leakage. |
+| Continuous incontinence | Indicates either severe incontinence or a fistula. |
+
+**Risk factors** — for stress incontinence: age, traumatic (forceps) delivery, obesity and previous pelvic surgery. For urge incontinence: age, obesity, smoking, family history and diabetes mellitus.
+
+## Managing stress incontinence
+
+- **Conservative** — avoid caffeinated drinks, avoid both excessive and unduly restricted daily fluid intake, lose weight if the body mass index is above 30, and stop smoking. Involve the local multidisciplinary team.
+- **First line** — **supervised pelvic floor muscle training**: at least **8 contractions performed 3 times a day for a minimum of 3 months**, continued longer if beneficial.
+- **Second line** — **surgery**, initiated only by secondary care. Options are colposuspension (sutures lift the bladder neck and fix it to Cooper's ligaments), an autologous rectus fascial sling, a retropubic mid-urethral mesh sling (both elevating the urethra), or intramural urethral bulking agents injected around the urethra. Follow-up after any of these should happen **within 6 months**.
+- **Third line** — **duloxetine**, which enhances sphincter contraction, for women unsuitable for surgery or who prefer drug treatment. Review at 2 to 4 weeks.
+
+## Managing urge incontinence and overactive bladder
+
+- **Conservative** — the same caffeine, fluid and weight measures.
+- **First line** — **bladder retraining for at least 6 weeks**, gradually increasing the interval between voids.
+- **Second line** — **bladder-stabilising drugs (antimuscarinics)**. NICE recommends immediate-release oxybutynin, immediate-release tolterodine, or once-daily darifenacin. **Immediate-release oxybutynin should be avoided in frail older women.**
+- **Third line** — **mirabegron**, a beta-3 agonist, useful where anticholinergic side effects are a concern in frail elderly patients.
+- **Fourth line** — **surgical and neuromodulatory options**: botulinum toxin injection, percutaneous tibial nerve stimulation, or sacral nerve stimulation.
+
+> Stress incontinence is treated with pelvic floor muscle training for at least 3 months, then surgery, with duloxetine reserved for those unsuitable for it. Urge incontinence is treated with 6 weeks of bladder retraining, then an antimuscarinic — avoiding immediate-release oxybutynin in frail older women — then mirabegron.`,
+        },
+        {
+          id: "urogenital_prolapse",
+          name: "Urogenital prolapse",
+          content: `## Urogenital prolapse
+
+Descent of the pelvic organs into the vagina as a result of pelvic floor weakness.
+
+**Risk factors** — multiparity, increasing age, obesity, a prolonged second stage of labour, and heavy lifting.
+
+Management is individualised. The factors to weigh are the woman's own preferences, the site of the prolapse, lifestyle factors, comorbidities, age, a desire for childbearing, previous abdominal or pelvic floor surgery, and the benefits and risks of each individual procedure.
+
+## General lifestyle advice
+
+- Lose weight if the body mass index is above 30.
+- Avoid heavy lifting.
+- Prevent and treat constipation.
+
+## Conservative and medical management
+
+- **Pelvic floor exercises** — a supervised **16-week course**.
+- **Oestrogens** — given as a pill, patch, cream or implant. These help symptom relief, particularly where there is coexisting vaginal atrophy.
+- **Vaginal ring pessary** — **changed every 6 months**. Side effects include unpleasant discharge, irritation, urinary tract infection, and interference with sexual intercourse (intercourse is not possible with a shelf pessary).
+
+## Surgical management
+
+**Where there is no preference about preserving the uterus**
+
+- Vaginal hysterectomy, with or without vaginal sacrospinous fixation — removal of the uterus, with the top of the vagina stitched to a pelvic ligament.
+- Vaginal sacrospinous hysteropexy — the cervix is stitched to a pelvic ligament.
+- Manchester repair — shortening of the cervix to support the uterus.
+- Sacro-hysteropexy with mesh — mesh attaches the uterus to the sacral vertebrae.
+
+**Where the uterus is to be preserved**
+
+- Vaginal sacrospinous hysteropexy.
+- Manchester repair, **unless** the woman wishes to have children in the future.
+
+**Vault prolapse, after previous hysterectomy**
+
+- Vaginal sacrospinous fixation.
+- Sacrocolpopexy — mesh attaches the vagina to the sacral vertebrae.
+
+**Colpocleisis** — closure of the vagina. Offered **only** to women who do not intend to have penetrative sex, or who are at high surgical risk.
+
+> Manage prolapse with weight loss, avoiding heavy lifting and treating constipation, then a 16-week pelvic floor course, topical oestrogen and a ring pessary changed every 6 months. Surgery is tailored to whether the uterus is to be preserved, with colpocleisis reserved for women not intending penetrative sex or at high surgical risk.`,
+        },
+        {
+          id: "endometriosis",
+          name: "Endometriosis",
+          content: `## Endometriosis
+
+Endometrial-like tissue occurring outside the uterine cavity. It affects around **10% of women of reproductive age**, is known to **recur throughout reproductive life**, and cannot be guaranteed to be cured.
+
+Treatment is based on **age, symptoms, extent of disease and the desire to have children** — so establish fertility plans first.
+
+**Risk factors** — early menarche, family history, nulliparity, prolonged menstruation (more than 5 days) and short menstrual cycles (under 28 days).
+
+## Medical therapy
+
+- **Analgesia** — NSAIDs and/or paracetamol reduce the severity of dysmenorrhoea and pelvic pain. **Codeine and opiates should be avoided**, because they can worsen coexisting irritable bowel syndrome.
+- **Combined oral contraceptive pill** — can be taken for 21 days with a 7-day pill-free break, but may be more effective at relieving symptoms if **tricycled** (three packets back to back), or taken continuously to induce amenorrhoea. If it gives symptomatic relief it can be continued for several years until pregnancy is intended. **Do not offer if trying to conceive.** If ineffective, consider treating coexisting conditions such as irritable bowel syndrome and change the medical management.
+- **Progestogens** — used to induce amenorrhoea in women with contraindications to the combined pill. **Do not offer if trying to conceive.** Depot medroxyprogesterone acetate and the levonorgestrel intrauterine system are particularly effective for long-term therapeutic effect, especially after surgery. The progestogen-only pill and the implant are alternatives.
+- **Gonadotrophin-releasing hormone (GnRH) agonists**, for example leuprorelin — effective at relieving symptom severity. Usually given as slow-release depot formulations lasting a month or more, and also available as daily intranasal sprays. They **should not be used for longer than 6 months** because of the risk of osteoporosis.
+
+## Fertility-sparing surgery
+
+- **Laparoscopy both diagnoses and treats** endometriosis. NICE recommends **laparoscopic excision or ablation of endometriosis plus adhesiolysis**. This is the preferred management where fertility is a priority, as it improves the chance of conceiving.
+- **Adjunct** — 3 months of a GnRH agonist before surgery.
+- Hormonal treatment can be considered after surgery to manage symptoms.
+- The **risk of recurrence after surgery is as high as 30%**, so long-term medical therapy is often necessary and is usually started straight afterwards.
+- Specialist surgery may be needed where endometriosis has caused extensive adhesions or involves other organs.
+
+## Hysterectomy and oophorectomy
+
+- Hysterectomy with removal of the ovaries and all visible endometriotic lesions should be considered in women who have **completed their family** and have failed to respond to conservative treatment.
+- The woman must be informed that **hysterectomy will not necessarily cure the symptoms or the disease**.
+
+> Endometriosis affects about 1 in 10 women of reproductive age. Establish fertility plans first: NSAIDs, then the combined pill (often tricycled) or a progestogen for those not trying to conceive, GnRH agonists for no more than 6 months, and laparoscopic excision or ablation where fertility matters — with recurrence in up to 30% after surgery.`,
+        },
+        {
+          id: "uterine_fibroids",
+          name: "Uterine fibroids",
+          content: `## Uterine fibroids
+
+Benign smooth-muscle tumours (leiomyomas) of the uterus. They are common, affecting **20 to 50% of women over 30**, and increase in prevalence with age until the menopause.
+
+**Risk factors** — increasing age until the menopause, early puberty, obesity, Afro-Caribbean ethnicity and a family history.
+
+**Asymptomatic fibroids** require only conservative management.
+
+## Medical treatment
+
+The commonest symptom is **menorrhagia**, so medical treatment often targets the bleeding.
+
+- **Levonorgestrel intrauterine system** — useful where the woman also requires contraception, but it **cannot be used if there is distortion of the uterine cavity**.
+- **Non-hormonal** — tranexamic acid or NSAIDs.
+- **Hormonal** — the combined oral contraceptive pill or oral progestogens.
+- These options may be ineffective in the presence of a submucous fibroid, or an enlarged uterus that is palpable abdominally.
+- **Injectable GnRH agonist** — the only effective medical treatment for fibroid size. It induces a menopausal state by shutting down ovarian oestradiol production, but is poorly tolerated because of severe menopausal symptoms. It is used short term, for example 3 months, to reduce fibroid size before surgery.
+- **Ulipristal acetate**, a selective progesterone receptor modulator, was formerly used to shrink fibroids but is **no longer part of routine practice** after reports of serious liver injury. Where used at all it is a last-line option for women unsuitable for surgery or embolisation, with liver function monitoring.
+- Neither GnRH agonists nor ulipristal are long-term solutions — **fibroids regrow as soon as ovarian function returns**.
+
+## Surgical treatment
+
+The choice depends on the presenting complaint and the patient's preferences about menstrual function and fertility.
+
+- **Hysteroscopic surgery** — minimally invasive removal of **submucous fibroids and fibroid polyps**, which relieves menorrhagia.
+- **Myomectomy** — preferred if preservation of fertility is required. It can be done laparoscopically (power morcellation shrinks the fibroids for removal) or open. There is a **small but significant risk of uncontrolled life-threatening bleeding**, which may require conversion to hysterectomy.
+- **Hysterectomy** — the definitive treatment.
+- **Hysteroscopic endometrial ablation**.
+- Hysterectomy and myomectomy can be preceded by **3 months of a GnRH agonist** to reduce the bulk and vascularity of the fibroids. This can allow a suprapubic incision and vaginal hysterectomy rather than a midline abdominal incision and abdominal hysterectomy, giving quicker recovery and fewer complications.
+
+## Radiological treatment
+
+**Uterine artery embolisation** — offered only to women **not desiring fertility**.
+
+- Embolisation induces infarction and degeneration of the fibroids, reducing fibroid volume by around **50%**.
+- Patients usually require admission to manage the pain of uterine artery occlusion, needing opiate analgesia.
+- **Complications** — fever, infection, fibroid expulsion and potential ovarian failure.
+- **One-third of women require further medical, radiological or surgical treatment within 5 years.**
+- It is as effective as myomectomy for relieving fibroid-related menorrhagia and pressure symptoms.
+
+> First line for symptomatic fibroids is the levonorgestrel intrauterine system, unless the cavity is distorted, with tranexamic acid or the combined pill as alternatives. GnRH agonists shrink fibroids short term before surgery. Myomectomy preserves fertility, while uterine artery embolisation does not and is followed by further treatment in a third of women within 5 years.`,
+        },
+        {
+          id: "ovarian_cysts",
+          name: "Ovarian cysts",
+          content: `## Ovarian cysts
+
+Management depends on the woman's **menopausal status**, the **size** of the cyst, and whether it appears **simple or complex** on ultrasound.
+
+## Asymptomatic cysts in premenopausal women
+
+These tend to be an incidental finding on ultrasound.
+
+- **Simple and small, under 50 mm** — likely to be physiological and likely to resolve within **3 menstrual cycles**. These do **not** require follow-up.
+- **Simple, 50 to 70 mm** — require **yearly ultrasound** follow-up.
+- **Over 70 mm** — require further imaging, such as magnetic resonance imaging, or surgical intervention with laparoscopic removal.
+- If the mass is **large with solid components**, for example a dermoid cyst, **laparotomy** may be indicated.
+
+## The acutely unwell woman
+
+Requires **urgent surgical exploration** — laparoscopy or laparotomy — to manage possible **ovarian torsion, cyst rupture or haemorrhage**, alongside resuscitation and broad-spectrum antibiotics.
+
+## Postmenopausal women
+
+A **solid or complex** ovarian cyst in a postmenopausal woman is regarded as **suspicious for malignancy**.
+
+- Perform **transvaginal ultrasound** to determine the **risk of malignancy index**, which combines the ultrasound features of the cyst, menopausal status and CA125.
+- Refer to **gynaecological oncology**, with laparotomy as required.
+
+The risk of malignancy index is set out in full in the Ovarian cancer topic.
+
+> Simple cysts under 50 mm in premenopausal women need no follow-up, 50 to 70 mm need yearly ultrasound, and those over 70 mm need magnetic resonance imaging or surgery. Any solid or complex cyst after the menopause is suspicious — calculate the risk of malignancy index and refer to gynaecological oncology. Sudden severe pain suggests torsion and needs urgent surgery.`,
+        },
+        {
+          id: "vulval_conditions",
+          name: "Vulval & vaginal conditions",
+          content: `## Vulval and vaginal conditions
+
+## Lichen sclerosus
+
+A chronic inflammatory skin condition producing white, atrophic, intensely itchy vulval plaques, and carrying a small long-term risk of vulval squamous cell carcinoma.
+
+- **Good skin care** — a soap substitute, emollients, and avoidance of irritants.
+- **Strong topical steroid** — for example **clobetasol propionate ointment for 3 months**, then review.
+- **Biopsy is indicated if the condition does not resolve** with treatment, to exclude malignancy.
+
+## Pruritus vulvae
+
+Vulval itching is a symptom rather than a diagnosis, so the priority is identifying and treating the underlying cause.
+
+**General advice**
+
+- Shower the vulval area with an emollient, avoiding both water alone and soap, and dab dry afterwards.
+- Avoid over-the-counter preparations, wet wipes, perfumed products, tight-fitting clothes, fabric softener and spermicidal condoms.
+- Use emollients liberally.
+- A sedating antihistamine at bedtime helps if sleep is affected.
+
+**Treating the underlying cause**
+
+- **Contact dermatitis** — remove the irritant exposure and use emollients as soap substitutes. Add **1% hydrocortisone** if mild, or **betamethasone or clobetasol** if severe or lichenified. Refer to dermatology if removing the irritant has not resolved the condition.
+- **Lichen simplex** — treat the underlying skin condition with a **potent topical corticosteroid such as betamethasone for 14 days**, plus an emollient as a soap substitute.
+- **Lichen sclerosus** — as described above.
+- **Unknown cause** — an emollient plus a mildly anxiolytic antihistamine such as **hydroxyzine** for symptomatic relief, and consider 1% hydrocortisone. If symptoms persist, refer to a dermatology, gynaecology or vulval clinic, continuing the emollient and antihistamine while waiting.
+
+**Referral**
+
+- Refer to secondary care if symptoms persist despite treatment of a known cause, if the cause is unclear, or if there is a pre-malignant condition.
+- Refer to a specialist under the **2-week-wait** pathway if cancer is suspected.
+
+## Atrophic vaginitis
+
+Oestrogen deficiency after the menopause causes vaginal dryness, soreness, dyspareunia and spotting.
+
+- **Exclude malignancy**, in particular **endometrial cancer**, before attributing bleeding to atrophy.
+- **Vaginal lubricants** before intercourse, and regular **moisturisers**.
+- **Topical oestrogens** — inform the patient that relief follows after about **3 weeks** of treatment. A ring can be inserted into the posterior fornix of the vagina and **changed every 3 months**.
+- **Systemic hormone replacement therapy** if there are coexisting menopausal symptoms, as covered in the Menopause and HRT topic.
+- **Reconsider the diagnosis** if treatment continues to fail.
+
+## Bartholin's cyst and abscess
+
+Obstruction of a Bartholin duct produces a cyst, which may become infected and form an abscess.
+
+**Risk factors** — nulliparity, child-bearing age, and a previous Bartholin's cyst.
+
+- **Asymptomatic, smaller cyst** — a conservative approach with sitz baths or warm compresses.
+- **Symptomatic, larger cyst** — **marsupialisation** (the internal aspect of the cyst is sutured to the outside to prevent it reforming) or **catheter drainage** using a **Word catheter left in place for 4 to 6 weeks**, with or without oral broad-spectrum antibiotics. Surgical excision, silver nitrate cauterisation or sclerotherapy are further options.
+- **Abscess** — conservative management with a sitz bath and analgesia, or **incision and drainage**, plus broad-spectrum antibiotics. Marsupialisation or catheter insertion may still be required.
+- Recommend a **sexual health screen**.
+
+## Female genital mutilation
+
+Female genital mutilation is illegal in the United Kingdom and is a form of abuse.
+
+- **Any case of female genital mutilation must be recorded in the notes.**
+- **Any case in a girl under 18 must be referred to the police and social services** — this is a mandatory duty.
+- The mandatory duty does **not** apply to at-risk or merely suspected cases in women over 18, although safeguarding assessment still applies.
+- **Check whether there are young girls in the family who are at risk.**
+- **De-infibulation**, the reversal of infibulation, should ideally be identified and planned **before conception**. It must be performed with **adequate analgesia to avoid flashbacks of the original mutilation**, with an incision made along the vulval scar. Women should receive prior screening for urinary infection with appropriate antibiotics, and access to specialist services and support groups is necessary.
+
+> Lichen sclerosus is treated with clobetasol for 3 months, with biopsy if it fails to settle. Pruritus vulvae needs the underlying cause treated, with emollients and soap substitutes throughout. A Bartholin's abscess needs incision and drainage or a Word catheter. Female genital mutilation in anyone under 18 is a mandatory police and social services referral.`,
+        },
+        {
+          id: "uterine_cavity_disorders",
+          name: "Asherman syndrome & endometrial polyps",
+          content: `## Asherman syndrome and endometrial polyps
+
+## Asherman syndrome
+
+Intrauterine adhesions, typically following instrumentation of the uterine cavity such as vigorous curettage, causing amenorrhoea or light periods, recurrent miscarriage and subfertility.
+
+- **Surgical breakdown of the intrauterine adhesions** — **hysteroscopic adhesiolysis**.
+- **Prevent re-formation** — insert a **paediatric Foley catheter or an intrauterine device for 4 to 8 weeks** afterwards.
+- **Promote endometrial regeneration** — give **2 cycles of cyclical oral oestrogen and progesterone** afterwards to aid endometrial proliferation.
+
+## Gynaecological polyps
+
+Benign overgrowths of endometrial or cervical tissue, which commonly cause abnormal uterine bleeding including intermenstrual and post-coital bleeding.
+
+- Some **small polyps resolve spontaneously**.
+- **Polypectomy** is recommended to relieve abnormal uterine bleeding symptoms, optimise fertility, and **exclude hyperplasia or cancer**.
+- It can be performed as a **day case under general anaesthesia**, or as an **outpatient procedure with or without local anaesthesia**.
+- A **hysteroscope** is used to visualise the polyp, and small instruments are used to remove it.
+
+> Asherman syndrome is treated by hysteroscopic adhesiolysis, then a paediatric Foley catheter or intrauterine device for 4 to 8 weeks and 2 cycles of cyclical oestrogen and progesterone. Endometrial polyps are removed hysteroscopically both to stop the bleeding and to exclude hyperplasia or cancer.`,
+        },
+        {
+          id: "premenstrual_syndrome",
+          name: "Premenstrual syndrome",
+          content: `## Premenstrual syndrome
+
+Physical, psychological and behavioural symptoms occurring in the **luteal phase** of the menstrual cycle and resolving with menstruation. Management is graded by severity.
+
+## Conservative measures
+
+These are offered to **all women regardless of severity**.
+
+- Stress reduction.
+- Limiting alcohol and caffeine.
+- Smoking cessation.
+- Regular exercise.
+- Regular sleep.
+- Regular, frequent (2 to 3 hourly) small balanced meals which are rich in complex carbohydrates.
+- Pain relief if required — paracetamol or NSAIDs.
+
+## Moderate symptoms
+
+Moderate disease has some impact on personal, social and professional life.
+
+- **Combined oral contraceptive pill**. **Yasmin**, which contains drospirenone, has the best evidence base. It can be given cyclically or continuously, and current data favour **continuous** use.
+
+## Severe symptoms
+
+Severe disease causes withdrawal from social and professional activities and prevents normal functioning.
+
+- **Referral for cognitive behavioural therapy**.
+- **Selective serotonin reuptake inhibitor (SSRI)** — given either continuously or only during the **luteal phase**, for example days 15 to 28 depending on cycle length. The treatment response must be monitored closely, especially regarding **self-harm**, and trialled initially for **3 months**.
+
+> All women receive lifestyle advice. Moderate premenstrual syndrome is treated with a combined pill — Yasmin has the best evidence and continuous use is preferred — and severe disease with cognitive behavioural therapy plus an SSRI, given continuously or in the luteal phase and trialled for 3 months.`,
+        },
+        {
+          id: "cervical_cancer_cin",
+          name: "Cervical intraepithelial neoplasia & cervical cancer",
+          content: `## Cervical intraepithelial neoplasia and cervical cancer
+
+Cervical cancer is caused by persistent infection with high-risk human papillomavirus, chiefly types 16 and 18. Screening and colposcopy are covered in the Cervical screening and colposcopy topic; this topic covers the management of confirmed disease.
+
+## Cervical intraepithelial neoplasia
+
+- **Colposcopy** — examination of the cervix, at which a biopsy can be taken.
+- Where there are **moderate to severe abnormalities**, the region can be **excised or ablated**.
+- **LLETZ (large loop excision of the transformation zone)** — removal of the abnormal cells using a thin wire loop heated by an electric current. This is an **outpatient procedure under local anaesthetic**.
+- **Cone biopsy** — used less commonly, reserved for larger lesions and performed **under general anaesthetic**.
+- **Risk of excision** — a large excision, or repeat excisions, carry an increased risk of **mid-trimester miscarriage and preterm delivery**. A prophylactic cervical cerclage may be needed in a future pregnancy.
+- **Test of cure** — a repeat smear at **6 months**.
+- **CIN1** is managed conservatively with a repeat smear at 12 months. **CIN2, CIN3 and CGIN** are treated with LLETZ or cone biopsy.
+
+## Management of cervical cancer by stage
+
+| Stage | Management |
+|---|---|
+| IA1 (microinvasive) | Conservative approach — loop electrosurgical excision and conisation. If the woman does not wish to preserve fertility, a simple hysterectomy. |
+| IA2 to IB2 (early), 4 cm or less | Radical hysterectomy with bilateral salpingectomy, with or without bilateral oophorectomy, plus lymphadenectomy. |
+| IA2 to IB2 (early), over 4 cm | Chemoradiation. |
+| IB3 to IVA (locally advanced) | Chemoradiation. |
+| IVB (metastatic) | Systemic chemotherapy, or single-agent therapy with palliative care. |
+
+**Special situations** — in pregnancy, take a multidisciplinary team approach with delivery after 35 weeks. Recurrent disease is managed with surgery, palliative chemotherapy or supportive care.
+
+## Risks of radical hysterectomy
+
+- **Bladder dysfunction (atony)** — common in the immediate postoperative period, and may require intermittent self-catheterisation.
+- **Sexual dysfunction** — due to vaginal shortening.
+- **Lymphoedema** — due to pelvic lymph node removal. It is managed with leg elevation, good skin care and massage.
+
+## Radiotherapy
+
+There are two ways of delivering radiotherapy.
+
+- **External beam radiotherapy** — usually given over 4 weeks, with each delivery lasting about 10 minutes.
+- **Intracavity radiotherapy (brachytherapy)** — radioactive rods, usually iridium-192, are inserted into the affected area. The effects extend up to 5 mm away from the rod.
+
+**Risks** — lethargy, bowel and bladder urgency, and skin erythema with external beam radiotherapy.
+
+**Long-term effects** — fibrosis, vaginal stenosis, cystitis-like symptoms, malabsorption with mucous diarrhoea, and radiotherapy-induced menopause.
+
+## Chemotherapy
+
+Usually **cisplatin**. It is ideally given in conjunction with radiotherapy, which improves cure rates.
+
+> LLETZ treats high-grade cervical intraepithelial neoplasia as an outpatient under local anaesthetic, at the cost of a raised risk of mid-trimester loss and preterm birth, with a test of cure at 6 months. Early cervical cancer is treated surgically with radical hysterectomy and lymphadenectomy, while bulky and locally advanced disease is treated with cisplatin-based chemoradiation.`,
+        },
+        {
+          id: "endometrial_cancer",
+          name: "Endometrial hyperplasia & endometrial cancer",
+          content: `## Endometrial hyperplasia and endometrial cancer
+
+Endometrial hyperplasia is abnormal thickening of the endometrium. It is taken seriously because of the risk of progression to cancer, particularly where there is **atypia**.
+
+## Endometrial hyperplasia
+
+| Type | Management |
+|---|---|
+| Hyperplasia without atypia | Address risk factors — obesity, hormone replacement therapy, tamoxifen therapy and anovulation. Observation can be considered. Treat with the levonorgestrel intrauterine system, or continuous oral progestogen. Surveillance endometrial biopsy at 6 months. |
+| Atypical hyperplasia | Non-fertility-preserving: total hysterectomy with bilateral salpingo-oophorectomy. Fertility-preserving: levonorgestrel intrauterine system or continuous oral progestogen, with surveillance endometrial biopsy at 3 months. |
+
+## Management of endometrial cancer by FIGO stage
+
+| FIGO stage | Management |
+|---|---|
+| 1 | Total hysterectomy with bilateral salpingo-oophorectomy. |
+| 2 | Radical hysterectomy with lymph node assessment, plus adjuvant radiotherapy. |
+| 3 | Where possible, maximal debulking surgery with chemotherapy and radiotherapy. |
+| 4 | Where possible, maximal debulking surgery. A palliative approach may be taken, using low-dose radiotherapy or high-dose progesterone. |
+
+## Adjuvant treatment
+
+- **Postoperative radiotherapy reduces the local recurrence rate but does not improve survival.**
+- Local radiotherapy or brachytherapy are the options.
+- **Chemotherapy** is used for advanced or metastatic disease, though there is little evidence to support its use.
+
+## Hormone treatment
+
+- High-dose **oral or intrauterine progestins**, with the **levonorgestrel intrauterine system preferred**.
+- Useful for women with **complex atypical hyperplasia** and **low-grade stage 1A** endometrial tumours.
+- **Relapse rates are high.**
+- It may suit women who are not fit for surgery, or who want to avoid surgery for fertility reasons.
+
+## Endometrial cancer and fertility
+
+- Primary infertility due to **polycystic ovary syndrome** is a risk factor for premenopausal endometrial cancer.
+- Alternatives to hysterectomy in premenopausal women are only possible for **pre-cancer or early-stage, low-grade** endometrial cancers.
+- Hormone therapy with oral progestogens or the levonorgestrel intrauterine system is associated with a **moderate response but high relapse rates**.
+- Women faced with losing their fertility should be referred to a specialist to discuss **ovarian conservation, stimulation for egg retrieval, and surrogacy**.
+
+## In summary
+
+- **Localised disease** — total abdominal hysterectomy with bilateral salpingo-oophorectomy.
+- **High-risk patients** may receive radiotherapy.
+- **Progestogen therapy** is used in frail elderly women who are not suitable for surgery.
+
+> Hyperplasia without atypia is treated with the levonorgestrel intrauterine system and re-biopsied at 6 months. Atypical hyperplasia warrants total hysterectomy with bilateral salpingo-oophorectomy, or the intrauterine system with 3-monthly biopsy where fertility is to be preserved. Stage 1 endometrial cancer is treated with total hysterectomy and bilateral salpingo-oophorectomy.`,
+        },
+        {
+          id: "ovarian_cancer",
+          name: "Ovarian cancer",
+          content: `## Ovarian cancer
+
+**Risk factors** — increasing age, family history, obesity, hormone replacement therapy, endometriosis, smoking and diabetes.
+
+**Protective factors** — the combined oral contraceptive pill, pregnancy and breastfeeding, and hysterectomy.
+
+## Risk of malignancy index
+
+The risk of malignancy index helps derive the risk that an ovarian mass is malignant. It is the product of three values:
+
+**Risk of malignancy index = U multiplied by M multiplied by CA125**
+
+- **U, the ultrasound score.** One point is scored for each of a multilocular cyst, solid areas, metastases, ascites and bilateral lesions. **U = 0** for no features, **U = 1** for one feature, and **U = 3** where two or more features are present.
+- **M, the menopausal status.** **M = 1** if premenopausal and **M = 3** if postmenopausal.
+- **CA125** — the serum level in units per millilitre.
+
+A risk of malignancy index **above 250** warrants referral to a specialist gynaecological oncology multidisciplinary team.
+
+## Management by stage
+
+| Stage | Management |
+|---|---|
+| 1 | Total hysterectomy with bilateral salpingo-oophorectomy, with or without adjuvant systemic chemotherapy. If fertility needs to be preserved, only the affected ovary is removed — this applies to stage 1a only. |
+| 2 | Debulking surgery to remove as much of the cancer as possible. Chemotherapy may be given as neo-adjuvant or adjuvant treatment. |
+| 3 | Similar to stage 2, with the addition of targeted treatment with bevacizumab, which targets VEGF-A. Where surgery is not possible, platinum-based chemotherapy is given alongside symptomatic treatment such as an ascitic drain and treatment of constipation. |
+| 4 | The same as stage 3, but palliative care is more likely. |
+
+## Chemotherapy
+
+Chemotherapy can be given as primary treatment, as an adjunct following surgery, or for relapse of disease.
+
+- **First line** — a combination of a **platinum compound with paclitaxel**. Most is given as an outpatient, **3 weeks apart for 6 cycles**.
+
+**Platinum compounds**
+
+- These are the most effective agents in ovarian cancer.
+- They cause **cross-linkage of DNA strands**, leading to cell cycle arrest.
+- **Carboplatin** is the main platinum compound used, as it is **less nephrotoxic and causes less nausea than cisplatin**.
+- The dose of carboplatin is calculated using the **glomerular filtration rate**.
+
+**Paclitaxel**
+
+- Causes **microtubular damage**, preventing replication and cell division.
+- **Pre-emptive steroids** are given to reduce hypersensitivity reactions and to reduce side effects such as peripheral neuropathy, neutropenia and myalgia.
+- Causes **total loss of body hair**.
+
+**Bevacizumab**
+
+- A **monoclonal antibody against vascular endothelial growth factor (VEGF)**.
+- It **inhibits angiogenesis**.
+- It is not routinely prescribed in ovarian cancer because of cost, but is available for the treatment of recurrent disease.
+
+## Follow-up
+
+- Patients undergo a **CT scan** following completion of chemotherapy, to assess the response to treatment.
+- Follow-up includes clinical examination and **CA125 measurement**.
+- **CA125 tends to rise before the onset of clinical evidence of disease recurrence.**
+- When disease recurs, treatment is largely **palliative**.
+
+> The risk of malignancy index multiplies the ultrasound score, menopausal status and CA125, and a value above 250 triggers referral to gynaecological oncology. Treatment is surgery plus carboplatin and paclitaxel, and a rising CA125 usually precedes clinical evidence of relapse.`,
+        },
+        {
+          id: "vulval_cancer",
+          name: "Vulval cancer",
+          content: `## Vulval cancer
+
+Most vulval cancers are squamous cell carcinomas. Lichen sclerosus and vulval intraepithelial neoplasia are important predisposing conditions, so a persistent vulval symptom, lump or ulcer warrants urgent referral.
+
+## Vulval excision
+
+- **Radical surgical excision aiming for a clear margin of 15 mm** is the mainstay of treatment.
+- Large lesions may be shrunk with **neoadjuvant radiotherapy**, often combined with chemotherapy.
+
+## Lymph node management and sentinel node biopsy
+
+- **Untreated groin node metastases will be fatal**, and affected nodes **cannot be reliably identified with radiology**.
+- The current approach is **full inguinofemoral lymphadenectomy** for all tumours with a **depth of invasion greater than 1 mm**.
+- Groin lymphadenectomy is a **very morbid procedure**, with complications including wound healing problems, infection, venous thromboembolism and chronic lymphoedema.
+- **Groin nodes are involved in 15% of women with vulval cancer.**
+- A full groin lymphadenectomy may be avoided by performing a **sentinel lymph node biopsy** — identifying the first node that the area drains to. A dye and a radioactive tracer are injected into the vulval tumour to identify the sentinel node.
+- **If the sentinel node is positive for disease, full groin lymphadenectomy is indicated.**
+
+## Radiotherapy
+
+- **Adjuvant radiotherapy** is indicated if the excision margins are close, or in the presence of **two or more groin node metastases**.
+- **Radical radiotherapy** may be used instead of surgery if the patient is unfit for surgery.
+
+> Vulval cancer is treated by radical excision aiming for a 15 mm clear margin. Any tumour invading deeper than 1 mm needs groin node assessment, and sentinel lymph node biopsy spares many women a morbid full inguinofemoral lymphadenectomy, which is reserved for those with a positive sentinel node.`,
+        },
       ],
     },
     {
