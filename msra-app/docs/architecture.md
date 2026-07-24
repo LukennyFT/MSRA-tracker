@@ -63,7 +63,15 @@ To add a synced field, update **both** the `onSnapshot` reader and the debounced
 
 ## Adaptive plan & timeline
 
-The plan is intrinsically **22 steps** (4 phases over "weeks" 1–22). Those steps are mapped onto the real calendar between `PLAN_START` and `EXAM_DATE` by `setTimeline()`, so the plan **compresses or stretches** to whatever time the user has. `DAYS_PER_STEP = PLAN_TOTAL_DAYS / 22`. Displayed week numbers are scaled to real calendar weeks via `realWeekOf()`. The exam date is user-chosen at onboarding (or via the ✎ edit button) and is a synced field.
+The plan is intrinsically **22 steps** (4 phases over "weeks" 1–22). Those steps are mapped onto the real calendar between `PLAN_START` and `EXAM_DATE` by `setTimeline()`, so the plan **compresses or stretches** to whatever time the user has. The exam date is user-chosen at onboarding (or via the ✎ edit button) and is a synced field.
+
+**Weeks are always real 7-day calendar weeks** measured from `PLAN_START`: week *N* begins exactly `7*(N-1)` days in. `getCurrentRealWeek()` returns that week (this is what the user is shown); `stepOfRealWeek(w)` then maps it onto the 22 plan steps, and `getCurrentWeek()` returns that **step** — which is what `getCurrentPhaseIndex()` and `systemMatchesWeek()` consume, since `PHASES` and the systems' `Wks N–M` labels are written in step space. When there is spare time a step is simply held for two consecutive weeks; when time is short, steps are skipped. At exactly 22 weeks the mapping is the identity, so a 22-week plan behaves exactly as originally designed.
+
+`realWeekOf(step)` / `lastRealWeekOf(step)` invert `stepOfRealWeek` **by scanning it directly**, so a displayed week range can never disagree with the week counter. `phaseDatesISO()` derives phase date ranges from those real weeks, so phases always start on a week boundary.
+
+> ⚠️ **Do not compute week boundaries by dividing a millisecond difference by `MS_PER_DAY`.** Two local midnights are an hour apart across a DST change, so a raw division silently loses a day and boundaries drift after the October clock change. Use the `daysBetween(from, to)` and `addDays(d, n)` helpers (defined next to `stripTime`), which round the difference and add days on the calendar respectively.
+>
+> Earlier versions advanced the week counter every `DAYS_PER_STEP = PLAN_TOTAL_DAYS / 22` days. With a span longer than 22 weeks that made a "week" longer than 7 days (e.g. 8.41 days over a 185-day plan), so the counter drifted later and later against the real calendar and some week numbers were never displayed at all. `DAYS_PER_STEP` is retained only as a descriptive average and no longer drives any boundary.
 
 Hour/question scaling per phase: `scale = userHoursPerWeek / (5·weekdayHrsBase + 2·dayOffHrsBase)`; all displayed numbers are `base · scale`. A feasibility ratio against the total baseline drives the colour-coded header indicator.
 
