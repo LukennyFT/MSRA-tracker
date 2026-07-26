@@ -1064,6 +1064,432 @@ Long-term corticosteroids suppress the adrenal axis, so they must not be stopped
       id: "gastro", name: "Gastroenterology & Nutrition", icon: "🩻",
       topics: [
         {
+          id: "oesophageal_pathology",
+          name: "Oesophageal disease",
+          content: `## Oesophageal disease
+
+The oesophagus is lined by **stratified squamous epithelium with no goblet cells**, which meets the mucin-secreting columnar epithelium of the stomach at the **squamo-columnar junction (the Z-line)**. Almost all oesophageal pathology is best understood as a consequence of what happens at that junction.
+
+## Reflux oesophagitis (gastro-oesophageal reflux disease)
+
+Gastro-oesophageal reflux disease (GORD) is the **commonest cause of oesophagitis**. Severity at endoscopy is graded by the **Los Angeles classification** (grades A to D, by the extent of mucosal breaks).
+
+- **Complications** — ulceration, haemorrhage (causing haematemesis or melaena), **Barrett's oesophagus**, stricture, and perforation.
+- **Management** — lifestyle change (stop smoking, lose weight) plus a **proton pump inhibitor (PPI)** or an H2-receptor antagonist.
+
+## Barrett's oesophagus
+
+**Intestinal metaplasia**: chronic acid exposure causes the squamous mucosa to be replaced by **columnar epithelium containing goblet cells**, and the squamo-columnar junction migrates upwards.
+
+- Occurs in around **10% of people with symptomatic GORD**.
+- It is a **premalignant** lesion, progressing through the sequence **metaplasia to dysplasia to adenocarcinoma**.
+- The **presence of goblet cells defines intestinal metaplasia** and confers an even higher risk of progression to carcinoma, so these patients enter endoscopic surveillance.
+
+## Comparing the two oesophageal carcinomas
+
+| Feature | Adenocarcinoma | Squamous cell carcinoma |
+|---|---|---|
+| Site | Distal one third | Middle one third (50%); upper third 20%, lower third 30% |
+| Main association | Barrett's oesophagus and chronic reflux | Alcohol and smoking |
+| Other risk factors | Smoking, obesity, previous radiotherapy | Achalasia of the cardia, Plummer-Vinson syndrome, nutritional deficiency, nitrosamines, human papillomavirus in high-prevalence areas |
+| Demographics | Commonest in Caucasians, strongly male predominant | About 6 times commoner in people of Afro-Caribbean descent, male predominant |
+
+**Presentation of oesophageal carcinoma** is **progressive dysphagia, initially for solids then for fluids**, with odynophagia (painful swallowing), anorexia and severe weight loss. Growth is rapid with early spread to lymph nodes, the liver and directly into adjacent proximal structures, so many patients are only suitable for **palliative care** at diagnosis.
+
+## Oesophageal varices
+
+Engorged, dilated submucosal veins, usually the result of **portal hypertension** causing back pressure through the porto-systemic anastomoses (see the Cirrhosis and portal hypertension topic).
+
+- The patient typically vomits **large volumes** of blood.
+- Management is **emergency endoscopy** with **sclerotherapy or band ligation**.
+
+> Barrett's oesophagus is intestinal metaplasia (columnar epithelium with goblet cells) driven by chronic reflux, and it predisposes to distal adenocarcinoma. Squamous cell carcinoma is instead linked to alcohol and smoking and sits in the middle third. Both present with progressive dysphagia for solids then fluids.`,
+        },
+        {
+          id: "gastric_duodenal_pathology",
+          name: "Stomach & duodenum: gastritis, ulcers & gastric tumours",
+          content: `## Stomach and duodenum
+
+The stomach is lined by gastric mucosa (**no goblet cells**), with mucin-secreting columnar epithelium and glands. Two cell types matter most:
+
+- **Parietal cells** secrete **hydrochloric acid and intrinsic factor**.
+- **Chief cells** secrete **pepsinogen**.
+
+## Gastritis
+
+| Type | Infiltrate | Typical insults |
+|---|---|---|
+| Acute | Neutrophils | Aspirin, NSAIDs, corrosives such as bleach, acute Helicobacter pylori infection, severe physiological stress such as burns |
+| Chronic | Lymphocytes and plasma cells | Helicobacter pylori (tends to be antral), autoimmune disease such as pernicious anaemia, alcohol, smoking |
+
+**Complications of chronic gastritis**
+
+- Progression to **gastric ulcer** formation.
+- Helicobacter pylori drives chronic antigenic stimulation, inducing lymphoid tissue in the stomach and raising the future risk of **mucosa-associated lymphoid tissue (MALT) lymphoma**.
+- It may also cause **intestinal metaplasia, then dysplasia, then carcinoma**.
+
+## Peptic ulcers
+
+An **ulcer breaches the muscularis mucosa into the submucosa**; a more superficial lesion is an **erosion**, not an ulcer.
+
+| Feature | Gastric ulcer | Duodenal ulcer |
+|---|---|---|
+| Frequency | Less common | About **4 times commoner** |
+| Pain and food | **Worse with food**, relieved by antacids | **Relieved by food and milk**, worse at night |
+| Age group | Mainly the elderly | Younger adults |
+| Weight | Epigastric pain with or without weight loss | Weight usually maintained |
+
+- **Risk factors** — Helicobacter pylori, smoking, NSAIDs and aspirin, corticosteroids, physiological stress, delayed gastric emptying, and increased acid secretion.
+- **Investigation** — biopsy to establish Helicobacter pylori histological status. The classic appearance is a **punched-out lesion with rolled margins**. A gastric ulcer must always be biopsied to exclude malignancy.
+- **Complications** — **iron-deficiency anaemia**, **perforation** (look for free air under the diaphragm on an **erect chest X-ray**), and malignancy.
+- **Helicobacter pylori eradication** uses **triple therapy**: a proton pump inhibitor with **amoxicillin** and **clarithromycin** (metronidazole substitutes for either in allergy), for 7 days.
+
+## Gastric cancer
+
+- Incidence is **higher in Japan and China**, where more fermented and pickled food is eaten.
+- **Over 95% of gastric tumours are adenocarcinomas.**
+- **Intestinal type** — well differentiated, goblet cells present, arising after intestinal metaplasia.
+- **Diffuse type** — poorly differentiated with no gland formation, and includes **signet ring cell carcinoma**.
+
+## Gastric MALT lymphoma
+
+- Caused by **Helicobacter pylori** through chronic antigenic stimulation.
+- Management is to **remove the cause**: Helicobacter pylori eradication with triple therapy (a proton pump inhibitor, clarithromycin and amoxicillin), which alone can cause regression of early-stage disease.
+
+> An ulcer breaches the muscularis mucosa; anything shallower is an erosion. Duodenal ulcers are four times commoner and are eased by food, while gastric ulcers are made worse by it and must be biopsied to exclude cancer. Helicobacter pylori links chronic gastritis to both gastric adenocarcinoma and MALT lymphoma, and eradicating it can cure early MALT lymphoma.`,
+        },
+        {
+          id: "coeliac_disease",
+          name: "Coeliac disease",
+          content: `## Coeliac disease
+
+A **T-cell mediated autoimmune** enteropathy triggered by dietary gluten, occurring in genetically susceptible people (**HLA-DQ2 and HLA-DQ8**).
+
+## Who gets it
+
+Classically presents either in **young children** or in adults, with a strong association with people of Irish descent (a favourite of exam questions). It is far commoner than once believed and is frequently diagnosed late.
+
+## How it presents
+
+Symptoms are those of **malabsorption**: steatorrhoea, abdominal pain, bloating, nausea and vomiting, weight loss, fatigue, **iron-deficiency anaemia**, and failure to thrive in children. Two associations are worth remembering:
+
+- **Dermatitis herpetiformis** — an intensely itchy vesicular rash, classically on the extensor surfaces.
+- **Hyposplenism** — so these patients may need **additional vaccination** (pneumococcal, and consider Haemophilus influenzae type b and meningococcal).
+
+The main **differential diagnosis** is **tropical sprue**.
+
+## Serological testing
+
+- **First line is IgA tissue transglutaminase (tTG-IgA)**, requested together with a **total IgA level** (selective IgA deficiency is commoner in coeliac disease and gives a false negative).
+- **IgA endomysial antibody (EMA)** is used second line, where tTG is weakly positive or IgA is deficient. It has excellent sensitivity and specificity.
+- **Anti-gliadin antibody** is a **poor marker** of disease and of disease control, and is no longer used.
+- The patient **must be eating gluten** (for at least six weeks) for serology and biopsy to be valid.
+
+## Gold standard investigation
+
+**Upper gastrointestinal endoscopy with duodenal biopsy**, which shows the triad of:
+
+- **Villous atrophy**
+- **Crypt hyperplasia**
+- **Increased intraepithelial lymphocytes**
+
+The normal **villus-to-crypt ratio is about 3:1 to 5:1**; in coeliac disease this falls as the villi flatten and the crypts lengthen.
+
+## Management and its most important complication
+
+Management is a **strict lifelong gluten-free diet**, which reverses the histology and the symptoms.
+
+Around **10% progress to enteropathy-associated T-cell lymphoma (EATL)** of the duodenum if the disease is not treated adequately, which is the single strongest argument for strict dietary adherence. Untreated coeliac disease also causes osteoporosis from calcium and vitamin D malabsorption.
+
+> Coeliac disease is a T-cell mediated reaction to gluten in HLA-DQ2 or DQ8 carriers. Test with IgA tissue transglutaminase plus a total IgA while the patient is still eating gluten, then confirm with duodenal biopsy showing villous atrophy, crypt hyperplasia and increased intraepithelial lymphocytes. Treatment is a lifelong gluten-free diet, which also protects against enteropathy-associated T-cell lymphoma.`,
+        },
+        {
+          id: "inflammatory_bowel_disease",
+          name: "Inflammatory bowel disease: Crohn's versus ulcerative colitis",
+          content: `## Inflammatory bowel disease
+
+The two chronic inflammatory bowel diseases are **Crohn's disease** and **ulcerative colitis**. Almost every distinguishing feature follows from one fact: Crohn's inflammation is **patchy and transmural** anywhere from mouth to anus, whereas ulcerative colitis is **continuous and superficial** and confined to the colon.
+
+## Epidemiology and aetiology
+
+| Feature | Crohn's disease | Ulcerative colitis |
+|---|---|---|
+| Frequency | Slightly less common | Slightly commoner than Crohn's |
+| Peak onset | The twenties, female predominant | 20 to 25 years |
+| Ethnicity | Western populations; white people 2 to 5 times more affected than non-white | White people more affected than non-white |
+| Smoking | **Worsens** symptoms | **Improves** symptoms and is protective |
+| Monozygotic twin concordance | About 50% | About 15% |
+
+The aetiology of both is unknown. Crohn's disease is the classic setting for the **hygiene hypothesis**: less food contamination means less enteric infection, so the processes that regulate the mucosal immune response develop inadequately, producing an exaggerated immune response to organisms that would otherwise cause self-limiting disease.
+
+## Pathology
+
+| Feature | Crohn's disease | Ulcerative colitis |
+|---|---|---|
+| Distribution | Whole gastrointestinal tract, **mouth to anus**; commonest in the terminal ileum and caecum | Extends **proximally from the rectum**, continuously |
+| Pattern | Patchy, giving **skip lesions**; healthy mucosa lies above diseased mucosa producing a **cobblestone appearance** | Continuous mucosal involvement. Small bowel spared unless severe pancolitis causes **backwash ileitis** |
+| Depth | **Transmural** inflammation | Inflammation **superficial, confined to the mucosa** |
+| Histology | **Non-caseating granulomas**; fistula and fissure formation common | **No** granulomas, fissures, fistulae or strictures |
+| Characteristic lesions | First lesion is the **aphthous ulcer**; deep **rose-thorn ulcers** which join to form serpentine ulcers | Islands of regenerating mucosa bulge into the lumen forming **pseudopolyps**, which can fuse into mucosal bridges |
+
+## Clinical features
+
+- **Crohn's disease** — intermittent diarrhoea, abdominal pain and fever.
+- **Ulcerative colitis** — **bloody diarrhoea with mucus**, and crampy abdominal pain **relieved by defecation**.
+
+## Extra-intestinal manifestations (common to both)
+
+- **General** — malabsorption and iron-deficiency anaemia, causing angular stomatitis.
+- **Eyes** — anterior uveitis (inflammation of the iris and ciliary body) and conjunctivitis.
+- **Skin** — **erythema nodosum** (tender, bruise-like swellings on the shins), **pyoderma gangrenosum**, erythema multiforme, and digital clubbing.
+- **Joints** — migratory asymmetrical polyarthropathy of the large joints (about 15%), sacroiliitis, myositis, and ankylosing spondylitis.
+- **Liver** — pericholangitis, **primary sclerosing cholangitis** (much commoner in ulcerative colitis than Crohn's), and steatosis.
+
+## Complications
+
+| Crohn's disease | Ulcerative colitis |
+|---|---|
+| Strictures, often requiring repeated bowel resection | **Toxic megacolon** and perforation — damage to the muscularis propria disrupts neuromuscular function, causing colonic dilatation |
+| Fistulae and abscess formation | About **30% require colectomy within 3 years** for uncontrollable symptoms |
+| Perforation and severe haemorrhage | **Colorectal adenocarcinoma** — a markedly increased risk, classically quoted as 20 to 30 times, rising with the duration and extent of disease, so patients enter colonoscopic surveillance |
+
+## Investigations
+
+- **Crohn's disease** — systemic markers of inflammation (erythrocyte sedimentation rate, C-reactive protein), barium contrast studies and endoscopy.
+- **Ulcerative colitis** — rectal biopsy, flexible sigmoidoscopy or colonoscopy, abdominal X-ray (looking for toxic megacolon) and stool culture to exclude infection.
+- Faecal calprotectin is now widely used to distinguish inflammatory from functional bowel disease before endoscopy.
+
+## Management
+
+**Crohn's disease**
+
+- **Mild attack** — oral **prednisolone**. Budesonide is an alternative for distal ileal or right-sided colonic disease if conventional steroids are unsuitable.
+- **Severe attack** — **intravenous hydrocortisone**, with metronidazole for perianal or septic complications.
+- **Additional and maintenance therapies** — **azathioprine** or mercaptopurine, **methotrexate**, and biologics such as **infliximab** or adalimumab for severe active disease. Aminosalicylates are of little value in maintaining remission in Crohn's disease.
+
+**Ulcerative colitis**
+
+- **Mild** — **prednisolone plus mesalazine** (a 5-aminosalicylic acid), with a topical aminosalicylate for distal disease.
+- **Moderate** — prednisolone plus a 5-aminosalicylate plus a **steroid enema twice daily**.
+- **Severe** — **admit**, keep nil by mouth, give intravenous fluids and **intravenous hydrocortisone**, plus rectal steroids; escalate to a biologic or colectomy if there is no response.
+- **Maintaining remission** — a **5-aminosalicylate first line**, then **azathioprine** second line.
+
+> Crohn's is patchy, transmural, mouth-to-anus disease with non-caseating granulomas, skip lesions and fistulae, made worse by smoking. Ulcerative colitis is continuous, mucosal, rectum-upwards disease with pseudopolyps, improved by smoking, and complicated by toxic megacolon and a high colorectal cancer risk. Aminosalicylates maintain remission in colitis but not in Crohn's.`,
+        },
+        {
+          id: "colitis_ischaemia_diverticular",
+          name: "Colitis, bowel obstruction, ischaemia & diverticular disease",
+          content: `## Colitis, obstruction, ischaemia and diverticular disease
+
+## Causes of colitis
+
+**Acute colitis**
+
+- **Infection** — bacterial, viral or protozoal.
+- **Drugs and toxins**, especially antibiotics.
+- **Chemotherapy or radiotherapy.**
+
+**Chronic colitis**
+
+- **Inflammatory bowel disease** — Crohn's disease and ulcerative colitis (see that topic).
+- **Tuberculosis.**
+
+## Clostridioides difficile colitis
+
+Antibiotics kill off commensal flora, allowing Clostridioides difficile to flourish; its **exotoxins cause pseudomembranous colitis**.
+
+The classic culprits are the **four Cs**: **ciprofloxacin, cephalosporins, co-amoxiclav and clindamycin**.
+
+- **Investigations** — stool culture with a **toxin assay**.
+- **Management** — **oral vancomycin 125 mg four times daily for 10 days** is first line (it is poorly absorbed, so it accumulates where it is needed in the gut lumen). **Fidaxomicin** is second line, or for recurrent infection. **Metronidazole is no longer recommended** first or second line.
+- **Infection control** — isolate in a side room with **soap-and-water handwashing** (alcohol gel does not kill spores) and review the antibiotic prescription.
+
+Other common bacterial causes of infective colitis are **Campylobacter, Salmonella and Shigella** species.
+
+## Mechanical bowel obstruction
+
+Causes include:
+
+- **Constipation.**
+- **Diverticular disease**, which is very common.
+- **Adhesions.**
+- **Herniation.**
+- An **external mass** such as a fetus, tumour, aneurysm or foreign body.
+- **Volvulus** — complete twisting of a bowel loop at the mesenteric base around its vascular pedicle. Small bowel volvulus occurs in infants; in the elderly **sigmoid volvulus is commoner than caecal**.
+- **Intussusception.**
+
+## Ischaemic colitis
+
+Caused by arterial or venous occlusion, small-vessel disease, low-flow states such as hypovolaemic shock, or obstruction.
+
+It characteristically affects the **watershed areas** where two arterial territories meet and perfusion is most marginal:
+
+- The **splenic flexure** — the transition from the superior mesenteric artery to the inferior mesenteric artery.
+- The **rectosigmoid** — the transition from the inferior mesenteric artery to the internal iliac artery.
+
+## Diverticular disease
+
+- High incidence in Western countries, probably because of a **low-fibre diet**.
+- High intraluminal pressure produces **outpouchings at weak points** in the bowel wall, seen on barium enema, computed tomography or endoscopy.
+- **90% occur in the left colon.**
+- The mere presence of diverticula is **diverticulosis**, not diverticulitis.
+- Often **asymptomatic**, sometimes causing rectal bleeding.
+- **Complications** — **diverticulitis** (fever and peritonism), gross perforation, fistula formation, and obstruction due to fibrosis.
+
+> The four Cs (ciprofloxacin, cephalosporins, co-amoxiclav, clindamycin) precipitate Clostridioides difficile, now treated with oral vancomycin first line and fidaxomicin second, not metronidazole. Ischaemic colitis strikes the watershed areas at the splenic flexure and rectosigmoid. Diverticula are left-sided in 90% of cases, and their presence alone is diverticulosis rather than diverticulitis.`,
+        },
+        {
+          id: "colorectal_polyps_cancer",
+          name: "Colorectal polyps & colorectal cancer",
+          content: `## Colorectal polyps and colorectal cancer
+
+## Neoplastic polyps: adenomas
+
+**Benign dysplastic lesions that are the precursor to most adenocarcinomas**, although most individual adenomas remain benign.
+
+- Found in **50% of people over 50** in the Western world, so they are very common.
+- Mostly **asymptomatic**, which is why surveillance matters. **Size is the single most important risk factor for malignancy**: an adenoma larger than about 4 cm carries a risk of malignant change approaching **45%**. The degree of dysplasia and an increased villous component also raise risk.
+- Classified by architecture as **tubular, tubulovillous or villous**.
+- A **villous adenoma** (rare) can cause **hypoproteinaemic hypokalaemia**, because it leaks large amounts of protein and potassium.
+
+## The adenoma to carcinoma sequence
+
+The classical **chromosomal instability sequence**:
+
+- **Normal colon** becomes **at-risk mucosa** after a first-hit mutation in one copy of the **APC** gene. People with familial adenomatous polyposis are **born with this first hit**.
+- At-risk mucosa becomes an **adenoma** after a second-hit mutation in the remaining **APC** gene.
+- Progression to **carcinoma** follows activation of **KRAS** and loss-of-function mutation of **p53**.
+
+## Non-neoplastic polyps
+
+| Type | Features |
+|---|---|
+| Hamartomatous polyp | Occurs sporadically and in genetic syndromes. **Juvenile polyps** are focal malformations of mucosa and lamina propria, the vast majority in children under 5, mostly rectal, causing bleeding. Usually solitary, but up to 100 are found in **juvenile polyposis** (autosomal dominant), which may need colectomy to stop haemorrhage. |
+| Peutz-Jeghers syndrome | Autosomal dominant, **LKB1 (STK11)** mutation. Multiple hamartomatous polyps with **mucocutaneous hyperpigmentation** — freckles around the mouth, palms and soles. Increased risk of **intussusception** and of malignancy, so needs regular surveillance of the gastrointestinal tract, pelvis and gonads. |
+| Hyperplastic polyp | Seen at 50 to 60 years; thought to result from shedding of epithelium causing cell build-up. |
+| Inflammatory pseudopolyp | Seen in inflammatory bowel disease. |
+
+## Colorectal cancer
+
+**Epidemiology** — the **second commonest cause of cancer death in the UK**, typically at **60 to 79 years**. Presentation **under 50 should prompt consideration of a familial syndrome**. Commoner in Western populations. **98% are adenocarcinoma** and **45% are in the rectum**.
+
+**Aetiology** — a diet low in fibre and high in fat, lack of exercise, obesity, familial syndromes and chronic inflammatory bowel disease. **NSAIDs are protective** (cyclo-oxygenase 2 is over-expressed in 90% of tumours).
+
+**Clinical features by side**
+
+- **Right-sided tumours** — **iron-deficiency anaemia** and weight loss (the lumen is capacious, so obstruction is late).
+- **Left-sided tumours** — **change in bowel habit** and crampy left lower quadrant pain.
+
+**Investigations** — proctoscopy, sigmoidoscopy, colonoscopy, barium enema, blood tests including full blood count, and computed tomography or magnetic resonance imaging. **Carcinoembryonic antigen (CEA)** is used to monitor disease and response to therapy, **not** to make the diagnosis.
+
+## Dukes staging
+
+Dukes staging helps determine treatment; TNM staging is also used. The subdivided form below is the **modified (Astler-Coller)** version.
+
+| Stage | Extent | 5-year survival |
+|---|---|---|
+| A | Confined to the mucosa | Over 95% |
+| B1 | Extending into the muscularis propria | 67% |
+| B2 | Transmural invasion, no lymph nodes involved | 54% |
+| C1 | Extending to the muscularis propria, with lymph node metastases | 43% |
+| C2 | Transmural invasion, with lymph node metastases | 23% |
+| D | Distant metastases | Under 10% |
+
+## Surgical management by site
+
+| Tumour site | Operation |
+|---|---|
+| Rectum, within 1 to 2 cm above the anal sphincter (lower third) | **Abdomino-perineal resection** |
+| Rectum or low sigmoid, more than 1 to 2 cm above the sphincter | **Anterior resection** |
+| Sigmoid colon | Sigmoid colectomy |
+| Descending colon and distal transverse | Left hemicolectomy |
+| Caecum, ascending colon and proximal transverse | Right hemicolectomy |
+| Transverse colon | Extended right hemicolectomy |
+
+**Radiotherapy** is given postoperatively to reduce local recurrence. **Chemotherapy** in palliation is based on **5-fluorouracil**.
+
+## Familial syndromes
+
+**Familial adenomatous polyposis (FAP)**
+
+- **Autosomal dominant**, caused by mutation of the **APC** tumour suppressor gene on **chromosome 5q21**.
+- Presents at **10 to 15 years**. **More than 100 adenomatous polyps are required for diagnosis**, and usually hundreds to thousands are seen.
+- **All will progress to adenocarcinoma by about 30 years** if untreated, so most patients undergo **prophylactic colectomy**.
+- Increased risk of neoplasia elsewhere, for example at the **ampulla of Vater** and in the stomach.
+- **Gardner syndrome** is a subtype of FAP with extra-intestinal features such as **osteomas of the skull** and dental abnormalities.
+- A separate, genuinely **autosomal recessive** polyposis exists — **MUTYH-associated polyposis** — caused by biallelic mutation of the **MUTYH** base-excision-repair gene, typically with fewer polyps and later onset.
+
+**Hereditary non-polyposis colorectal cancer (Lynch syndrome)**
+
+- **Autosomal dominant** mutations in **DNA mismatch repair** genes (MLH1, MSH2, MSH6, PMS2).
+- Carcinomas usually arise in the **right colon**, with **few polyps but rapid progression** to malignancy, so patients typically present **under 50**.
+- Associated **extra-colonic cancers**: endometrial, ovarian, small bowel, transitional cell and gastric carcinoma.
+- These patients need regular surveillance and will probably eventually require total colectomy.
+
+> Adenomas are the precursor lesion, and size is the dominant risk factor for malignancy. The classical sequence is a two-hit loss of APC, then KRAS activation, then p53 loss. Right-sided cancers bleed and cause anaemia while left-sided ones change bowel habit. Familial adenomatous polyposis is autosomal dominant APC disease needing prophylactic colectomy, whereas Lynch syndrome is mismatch-repair disease with few polyps, right-sided tumours and endometrial cancer.`,
+        },
+        {
+          id: "carcinoid_syndrome",
+          name: "Carcinoid tumours & carcinoid syndrome",
+          content: `## Carcinoid tumours and carcinoid syndrome
+
+A diverse group of tumours of **enterochromaffin cell** origin which produce **5-hydroxytryptamine (serotonin)**.
+
+- Commonly found in the **bowel**, but also in the **lung, ovaries and testes**.
+- Usually **slow growing**.
+
+## Why the syndrome needs liver metastases
+
+Serotonin released from a bowel primary drains into the portal vein and is **inactivated by the liver on first pass**, so a primary tumour alone usually causes no systemic symptoms. The **syndrome** appears once there are **hepatic metastases** (or a primary outside the portal drainage, such as bronchial), because vasoactive mediators then reach the systemic circulation directly.
+
+## Carcinoid syndrome versus carcinoid crisis
+
+| Carcinoid syndrome | Carcinoid crisis |
+|---|---|
+| **Bronchoconstriction** | Life-threatening **vasodilatation** |
+| **Flushing** | **Hypotension** |
+| **Diarrhoea** | **Tachycardia** |
+| | **Bronchoconstriction** |
+| | **Hyperglycaemia** |
+
+A carcinoid crisis is typically precipitated by anaesthesia, surgery or tumour handling, which is why patients are covered with octreotide perioperatively.
+
+## Investigation and management
+
+- **Investigation** — **24-hour urinary 5-hydroxyindoleacetic acid (5-HIAA)**, the main metabolite of serotonin. Plasma chromogranin A is also used as a marker, with imaging to localise the tumour.
+- **Management** — **octreotide**, a somatostatin analogue, which controls both symptoms and crises. Surgical resection is used for localised disease.
+
+**Carcinoid heart disease** is an important late complication: fibrous plaque deposition on the **right-sided valves** causes tricuspid regurgitation and pulmonary stenosis. Left-sided valves are spared because the lungs inactivate the mediators.
+
+> Carcinoid tumours are enterochromaffin-cell tumours secreting serotonin, and the syndrome of flushing, diarrhoea and bronchoconstriction only appears once liver metastases let mediators bypass hepatic first-pass metabolism. Diagnose with 24-hour urinary 5-HIAA and treat with octreotide, and remember right-sided valve fibrosis as the cardiac complication.`,
+        },
+        {
+          id: "congenital_gi_anomalies",
+          name: "Congenital GI anomalies & Hirschsprung's disease",
+          content: `## Congenital gastrointestinal anomalies
+
+A group of structural anomalies of the developing gut, presenting in the neonate or infant. They are covered further in the Paediatrics section.
+
+- **Atresia** — complete failure of the lumen to form (for example duodenal atresia, which gives the classic **double-bubble** sign on abdominal X-ray and is strongly associated with Down syndrome).
+- **Stenosis** — narrowing rather than complete occlusion, so presentation is later and more insidious.
+- **Duplication** — a duplicated segment of bowel.
+- **Imperforate anus** — failure of the anal opening to form, part of the anorectal malformation spectrum.
+
+## Hirschsprung's disease
+
+**Absence of ganglion cells in the myenteric (Auerbach) plexus** of the distal bowel, so that segment cannot relax and behaves as a functional obstruction. About **80% of cases are male**.
+
+- **Distribution** — the aganglionic segment always begins at the anus and extends proximally, most often involving the **rectosigmoid**. The **aganglionic segment is the narrow, constricted one**, and the normally innervated bowel proximal to it dilates.
+- **Presentation** — symptoms and signs of **obstruction in a young baby**: abdominal distension, bilious vomiting, and **failure to pass meconium within the first 48 hours** of life. It is the commonest cause of neonatal large-bowel obstruction.
+- **Associations** — **Down syndrome**, in about **2%** of cases.
+- **Genetics** — mutations of the **RET proto-oncogene** on **chromosome 10**.
+- **Gold standard investigation** — a **full-thickness (or suction) rectal biopsy**, which shows **hypertrophied nerve fibres and an absence of ganglion cells**.
+- **Treatment** — **resection of the affected constricted segment** with a **pull-through** of normal, functioning bowel.
+- **Key complication** — **Hirschsprung-associated enterocolitis**, which presents with fever, abdominal distension and explosive, often bloody diarrhoea, and is life-threatening; it needs urgent decompression, fluids and antibiotics.
+
+> Hirschsprung's disease is aganglionosis of the distal bowel, so the narrow segment is the diseased one and the bowel above it dilates. Suspect it in a baby boy who fails to pass meconium within 48 hours, especially with Down syndrome; diagnose on full-thickness rectal biopsy showing absent ganglia with hypertrophied nerve fibres, and treat by resecting the aganglionic segment with a pull-through.`,
+        },
+        {
           id: "jaundice",
           name: "Jaundice",
           content: `## Jaundice
