@@ -1540,6 +1540,519 @@ Two enzyme patterns are worth memorising. A **hepatocellular** picture raises th
 - **Courvoisier's law:** a palpable, non-tender gallbladder with painless jaundice is unlikely to be due to gallstones and points instead to malignant obstruction, such as cancer of the pancreatic head.
 - The **prothrombin time** is the best marker of the liver's synthetic function in acute liver injury.`,
         },
+        {
+          id: "pancreatic_physiology",
+          name: "Pancreatic structure, function & malformations",
+          content: `## Pancreatic structure and function
+
+The pancreas produces around **2 litres a day** of enzyme-rich, bicarbonate-rich fluid. Secretion is driven by two duodenal hormones:
+
+- **Secretin** — produced by **S cells** of the duodenum. It controls gastric acid secretion and buffers it with bicarbonate.
+- **Cholecystokinin (CCK)** — produced by **I cells** of the duodenum. It stimulates the digestion of fat and protein by causing release of digestive enzymes.
+
+## Exocrine versus endocrine pancreas
+
+| Feature | Exocrine | Endocrine |
+|---|---|---|
+| Structure | Ducts and acinar cells | Islets of Langerhans |
+| Function | Digestive: proteases, lipases and amylase | Hormonal |
+| Secretes into | Ducts | Bloodstream |
+
+## Cells of the islets of Langerhans
+
+| Cell | Product and action |
+|---|---|
+| Alpha | **Glucagon** — raises blood glucose |
+| Beta | **Insulin** — lowers blood glucose |
+| Delta | **Somatostatin** — regulates the other islet cells |
+| D1 | A **vasoactive peptide**, stimulating secretion of water into the pancreatic system |
+| PP | **Pancreatic polypeptide**, self-regulating secretory activity |
+
+## Pancreatic malformations
+
+- **Ectopic pancreas** — pancreatic tissue in an abnormal site, especially the stomach and small intestine.
+- **Pancreas divisum** — failure of fusion of the dorsal and ventral pancreatic buds, carrying an increased risk of pancreatitis.
+- **Annular (annular or ring) pancreas** — pancreatic tissue encircling the duodenum, which can present with **duodenal obstruction at around 1 year of age**.
+
+> The pancreas is stimulated by secretin (bicarbonate, from duodenal S cells) and cholecystokinin (enzymes, from I cells). Islet alpha cells make glucagon, beta cells insulin and delta cells somatostatin. Pancreas divisum predisposes to pancreatitis and annular pancreas to infantile duodenal obstruction.`,
+        },
+        {
+          id: "pancreatitis_pathology",
+          name: "Acute & chronic pancreatitis",
+          content: `## Acute pancreatitis
+
+Acute inflammation of the pancreas caused by inappropriate activation of digestive enzymes within the gland, producing autodigestion.
+
+## Causes: I GET SMASHED
+
+- **I** — Idiopathic
+- **G** — **Gallstones**
+- **E** — **Ethanol** (alcohol)
+- **T** — Trauma
+- **S** — Steroids
+- **M** — Mumps
+- **A** — Autoimmune
+- **S** — Scorpion venom
+- **H** — Hyperlipidaemia (also hypercalcaemia)
+- **E** — ERCP
+- **D** — Drugs, for example thiazides
+
+Gallstones and alcohol account for the great majority of cases in practice.
+
+## How it presents
+
+**Severe epigastric or central abdominal pain radiating through to the back, relieved by sitting forward**, with prominent vomiting.
+
+## Investigations
+
+- **Serum amylase** is only **transiently** raised, so a normal value late in the illness does not exclude the diagnosis.
+- **Serum lipase is more sensitive** and stays elevated longer.
+- Neither enzyme level correlates with severity.
+
+## Scoring severity
+
+The **modified Glasgow (Glasgow-Imrie) score** of **3 or more** indicates **severe pancreatitis**. Its components are remembered as **PANCREAS**, each scoring one point:
+
+- **P** — PaO2 under 8 kPa
+- **A** — Age over 55 years
+- **N** — Neutrophils, white cell count over 15
+- **C** — Calcium under 2 mmol/L
+- **R** — Renal function, urea over 16 mmol/L
+- **E** — Enzymes, lactate dehydrogenase over 600 or AST over 200
+- **A** — Albumin under 32 g/L
+- **S** — Sugar, glucose over 10 mmol/L
+
+## Histology and patterns of damage
+
+The histological hallmark is **coagulative necrosis**. Three patterns are described, and the pattern points to the cause:
+
+| Pattern | Site of necrosis | Suggests |
+|---|---|---|
+| Periductal | Acinar cells near the ducts | **Obstructive** causes |
+| Perilobular | The edge of the lobules | **Ischaemic** causes |
+| Panlobular | A combination of both | Mixed or severe disease |
+
+## Complications
+
+- **Pseudocyst** — a pathological collection of fluid without a true epithelial lining, particularly associated with alcoholic pancreatitis. May become an **abscess**.
+- **Shock**, from massive fluid sequestration and systemic inflammation.
+- **Hyperglycaemia**, from destruction of islet tissue.
+- **Hypocalcaemia** — digestive enzymes react with visceral fat and precipitate **calcium soaps** (fat necrosis), consuming calcium.
+
+## Chronic pancreatitis
+
+Long-standing inflammation causing irreversible destruction of pancreatic parenchyma.
+
+**Causes**
+
+- **Alcoholism** — much the commonest.
+- **Cystic fibrosis.**
+- **Hereditary** pancreatitis.
+- **Pancreatic duct obstruction**, for example by stones or tumour.
+- **Autoimmune** pancreatitis, in which **IgG4** is produced by plasma cells.
+
+**Presentation** — epigastric pain radiating to the back, **malabsorption** (weight loss and steatorrhoea, from loss of digestive enzymes) and **secondary diabetes mellitus**.
+
+**Histology** — closely resembles pancreatic carcinoma, which makes the distinction difficult: **fibrosis with loss of exocrine parenchyma, duct dilatation with thick secretions, and calcification**.
+
+**Complications** — pseudocysts, diabetes mellitus, and **pancreatic cancer**.
+
+> Acute pancreatitis is remembered by I GET SMASHED, presents with epigastric pain boring through to the back and relieved by sitting forward, and is scored for severity with the modified Glasgow (PANCREAS) criteria. Lipase is more sensitive than amylase, and enzyme levels do not reflect severity. Chronic pancreatitis is usually alcoholic, causes malabsorption and secondary diabetes, and its histology mimics carcinoma.`,
+        },
+        {
+          id: "pancreatic_tumours",
+          name: "Pancreatic carcinoma, neuroendocrine tumours & MEN",
+          content: `## Pancreatic carcinoma
+
+**Ductal adenocarcinoma of the pancreas** accounts for **85% of all pancreatic malignancies**.
+
+| Feature | Detail |
+|---|---|
+| Epidemiology | Average age 60 years, commoner in men |
+| Site | Usually the **head** of the pancreas |
+| Risk factors | **Smoking**, diet, and genetic syndromes including familial adenomatous polyposis and Lynch syndrome (HNPCC) |
+| Clinical features | Weight loss with **cachexia** and anorexia; chronic, persistent, severe upper abdominal and back pain; **painless jaundice** with pruritus and steatorrhoea; diabetes mellitus; ascites; an abdominal mass; **Virchow's node**; **Courvoisier's sign**; and **Trousseau's syndrome** (recurrent superficial thrombophlebitis) in about 25% |
+| Investigations | Bloods showing low haemoglobin and raised bilirubin and calcium; CT, MRI or ERCP; **CA19-9** above 70 IU/mL |
+| Management | **Chemotherapy is palliative** (5-fluorouracil). Surgery in only about **15%** of cases: **Whipple's procedure** (pancreaticoduodenectomy) |
+| Prognosis | Very poor, with **5-year survival under 5%** |
+
+**Courvoisier's law** is worth stating precisely: a **palpable, non-tender gallbladder with painless jaundice is unlikely to be due to gallstones**, and suggests malignant obstruction of the biliary tree.
+
+## Pancreatic neuroendocrine (islet cell) tumours
+
+- Normally arise in the **body or tail** of the pancreas.
+- Circumscribed, **1 to 5 cm**, with cells arranged in **nests or trabeculae** with granular cytoplasm.
+- Occur in **multiple endocrine neoplasia type 1** in around **15%**, and may then be **multiple**.
+- Behaviour is **unpredictable**, lying on a spectrum from benign to malignant.
+
+**Functional tumours** present with symptoms of hormone excess:
+
+| Tumour | Syndrome |
+|---|---|
+| **Insulinoma** | Hypoglycaemic attacks. The commonest functional islet cell tumour |
+| **Gastrinoma** | **Zollinger-Ellison syndrome** — high acid output causing recurrent, refractory peptic ulceration |
+| **VIPoma** | Profuse watery diarrhoea |
+| **Glucagonoma** | **Necrolytic migratory erythema** |
+
+**Non-functional tumours** are found incidentally on imaging, or when large enough to cause local or metastatic symptoms.
+
+- **Investigations** — CT or MRI, with **chromogranin A** as a tumour marker.
+- **Management** — surgery.
+
+## Multiple endocrine neoplasia (MEN)
+
+A group of inherited syndromes with functioning hormone-producing tumours in multiple organs.
+
+| Syndrome | Components |
+|---|---|
+| **MEN 1** | The three Ps: **Parathyroid** hyperplasia or adenoma, **Pancreatic** endocrine tumour (typically gastrinoma or insulinoma), and **Pituitary** adenoma |
+| **MEN 2A** | **Medullary thyroid carcinoma**, **phaeochromocytoma**, and **parathyroid** hyperplasia |
+| **MEN 2B** | **Medullary thyroid carcinoma**, **phaeochromocytoma**, and **mucosal neuromas** with intestinal ganglioneuromatosis, plus a **marfanoid** habitus. Parathyroid disease is characteristically absent |
+
+MEN 1 is caused by mutation of the **MEN1** tumour suppressor gene; MEN 2A and 2B by mutations of the **RET** proto-oncogene.
+
+## Acinar cell carcinoma
+
+- Rare, occurring in older adults, and characterised by **enzyme production by the neoplastic cells**.
+- **Presentation** — non-specific: abdominal pain, weight loss, nausea and diarrhoea. About **10% develop multifocal fat necrosis and polyarthralgia** because of **lipase hypersecretion**.
+- **Histopathology** — neoplastic epithelial cells with **eosinophilic granular cytoplasm**, showing positive immunoreactivity for **lipase, trypsin and chymotrypsin**.
+- **Prognosis** — median survival about **18 months**, with 5-year survival under 10%.
+
+> Pancreatic ductal adenocarcinoma sits in the head of the gland, causes painless obstructive jaundice with a palpable gallbladder (Courvoisier), and has under 5% five-year survival. Islet cell tumours favour body and tail: insulinoma is commonest, gastrinoma causes Zollinger-Ellison syndrome, and 15% occur in MEN 1 (parathyroid, pancreas, pituitary). Phaeochromocytoma belongs to MEN 2, not MEN 1.`,
+        },
+        {
+          id: "biliary_pathology",
+          name: "Gallbladder & biliary tract pathology",
+          content: `## Gallbladder and biliary tract pathology
+
+Gallbladder pathology is centred almost entirely on **gallstones**.
+
+## Gallstones
+
+- **Risk factors** — increasing age, female sex, the combined oral contraceptive pill, and disorders of bile metabolism. (The classic aide-memoire is the five Fs: female, forty, fertile, fat, fair.)
+- **Composition** — most are **cholesterol** stones, which are **radiolucent** and therefore invisible on plain X-ray. A minority are **calcium salt (pigment)** stones, which are **radio-opaque**. This is why ultrasound, not plain film, is the imaging of choice.
+
+## The spectrum of gallstone disease
+
+| Condition | Definition |
+|---|---|
+| **Cholelithiasis** | The presence of gallstones in the gallbladder, found in around **20% of adults** in the West and usually asymptomatic |
+| **Acute cholecystitis** | Acute inflammation of the gallbladder; **90% are associated with gallstones** |
+| **Chronic cholecystitis** | Chronic inflammation leading to **fibrosis**; again **90% associated with gallstones**. If the wall calcifies it becomes a **porcelain gallbladder** |
+| **Gallbladder carcinoma** | Adenocarcinoma of the gallbladder, of which around **90% are associated with gallstones**. A **porcelain gallbladder** is an important premalignant finding and is an indication for cholecystectomy |
+
+## Cholangiocarcinoma
+
+Adenocarcinoma arising from the **bile duct epithelium**, which may be intrahepatic or extrahepatic. Its risk factors are **different from those of gallbladder carcinoma** and gallstones are not the dominant association:
+
+- **Primary sclerosing cholangitis** — the most important association.
+- **Parasitic liver disease** (liver flukes such as Clonorchis and Opisthorchis).
+- **Chronic liver disease** and **congenital biliary abnormalities** such as choledochal cysts.
+- **Lynch syndrome type II.**
+
+It accounts for about **10% of liver tumours** and carries a **poor prognosis**.
+
+> Most gallstones are cholesterol and therefore radiolucent, so ultrasound is the investigation of choice. Ninety per cent of acute and chronic cholecystitis, and of gallbladder carcinoma, is gallstone-related, and a porcelain gallbladder is premalignant. Cholangiocarcinoma is a different disease, driven above all by primary sclerosing cholangitis and liver flukes rather than by stones.`,
+        },
+        {
+          id: "liver_architecture_injury",
+          name: "Liver structure, function & response to injury",
+          content: `## Liver structure
+
+The basic structural unit is the **hepatic lobule**, conventionally drawn as a **hexagon**.
+
+- At the **centre** lies the terminal branch of the hepatic vein, the **centrilobular vein**.
+- At each **point** of the hexagon sits a **portal tract**, containing the **portal triad**: a branch of the **bile duct**, the **hepatic artery** and the **portal vein**.
+
+## The three zones, and why they matter
+
+| Zone | Position | Significance |
+|---|---|---|
+| **Zone 1** | Closest to the portal triad (periportal) | Receives the **most oxygen**, and is **affected first in viral hepatitis** |
+| **Zone 2** | Mid zone | Intermediate |
+| **Zone 3** | Closest to the terminal hepatic vein (perivenular) | The **most mature and metabolically active** hepatocytes, containing most liver enzymes, and therefore **most sensitive to metabolic toxins and to ischaemia** |
+
+This explains a classic pairing: **paracetamol and ischaemic injury damage zone 3**, whereas **viral hepatitis starts in zone 1**.
+
+## Functions of the liver
+
+- **Metabolism** — glycolysis, glycogen storage, gluconeogenesis, amino acid synthesis, fatty acid synthesis and lipoprotein metabolism, plus **drug metabolism**.
+- **Protein synthesis** — makes **all circulating proteins except the gamma globulins**, including **albumin, fibrinogen and the coagulation factors**.
+- **Storage** — glycogen, and vitamins **A, D and B12** in large amounts, with smaller amounts of vitamin K, folate, iron and copper.
+- **Hormone metabolism** — **activates vitamin D**, conjugates and excretes steroid hormones (oestrogen and glucocorticoids), and metabolises peptide hormones (insulin, growth hormone and parathyroid hormone).
+- **Bile synthesis** — **600 to 1000 mL daily**.
+- **Immune function** — antigens from the gut reach the liver through the portal circulation and are phagocytosed by **Kupffer cells**.
+
+Because the liver makes albumin and the clotting factors, liver failure produces **hypoalbuminaemia with oedema** and a **coagulopathy with a prolonged prothrombin time**.
+
+## The response to injury: how fibrosis develops
+
+- A normal liver has hepatocytes with **microvilli**, and **stellate cells** lying quiescent in the **space of Disse** (between hepatocyte and sinusoid).
+- **Chronic inflammation** causes **loss of the microvilli** and **activation of the stellate cells**, which begin to produce **collagen**.
+- The activated stellate cells become **myofibroblasts**, initiating **fibrosis** by depositing collagen in the space of Disse.
+- These myofibroblasts **contract**, constricting the sinusoids and **increasing vascular resistance** — the beginning of portal hypertension.
+- Undamaged hepatocytes **regenerate in nodules** between the fibrous septa, giving the nodularity of cirrhosis.
+
+> The portal triad sits at the points of the hexagonal lobule and the hepatic vein at its centre. Zone 1 is oxygen-rich and hit first by viral hepatitis, while zone 3 is enzyme-rich and hit first by toxins such as paracetamol and by ischaemia. Fibrosis begins when chronic inflammation activates stellate cells in the space of Disse into collagen-producing myofibroblasts, which contract and raise vascular resistance.`,
+        },
+        {
+          id: "hepatitis_pathology",
+          name: "Acute & chronic hepatitis: the histological picture",
+          content: `## Acute hepatitis
+
+Caused either by **viruses (hepatitis A to E)** or by **drugs**. The viral serology is covered in the Viral infections and antivirals topic.
+
+**Histopathology** — the hallmark is **spotty necrosis**: small foci of inflammation and inflammatory infiltrate scattered through the lobule.
+
+## Chronic hepatitis
+
+Two separate descriptors are used, and confusing them is a common error:
+
+- **Grade** = the severity of **inflammation**.
+- **Stage** = the severity of **fibrosis**.
+
+**Causes** — viruses, more often **hepatitis B and C**, and drugs; also chronic inflammation from **primary biliary cholangitis, primary sclerosing cholangitis, Wilson's disease and haemochromatosis**.
+
+## The four histological steps
+
+- **Portal inflammation** — inflammatory cells confined to the portal tracts.
+- **Interface hepatitis**, also called **piecemeal necrosis** — inflammation spills across the limiting plate so that **the border between the portal tract and the parenchyma can no longer be seen**.
+- **Lobular inflammation** — inflammation extends into the lobule itself.
+- **Bridging fibrosis** — a fibrous bridge forms **from the portal vein to the central vein**. This is the **critical step in the evolution of hepatitis into cirrhosis**, because blood is now shunted past the hepatocytes.
+
+## Why bridging matters clinically
+
+Bridging creates **intrahepatic shunting**: blood bypasses functioning hepatocytes, so the liver loses its **detoxification** capacity. This is the mechanism by which **hepatic encephalopathy** develops, as nitrogenous waste (notably ammonia) reaches the systemic circulation unmetabolised.
+
+> Acute hepatitis shows spotty necrosis. In chronic hepatitis, grade describes inflammation and stage describes fibrosis. The sequence runs portal inflammation, then interface hepatitis (piecemeal necrosis, with loss of the portal-parenchymal border), then lobular inflammation, then bridging fibrosis — the critical step to cirrhosis, which shunts blood past hepatocytes and causes encephalopathy.`,
+        },
+        {
+          id: "cirrhosis_portal_hypertension",
+          name: "Cirrhosis & portal hypertension",
+          content: `## Cirrhosis
+
+A **diffuse abnormality of liver architecture that interferes with both blood flow and liver function**. It is the common end point of most chronic liver disease.
+
+## How portal hypertension arises
+
+Disruption of the architecture **increases resistance to blood flow through the liver**, producing **portal hypertension**. **Fibrotic bridges** form between the portal triad and the central vein. The raised portal pressure then forces blood through **porto-systemic anastomoses**, causing congestion at those sites:
+
+- **Oesophageal varices** — the most dangerous, because rupture causes torrential haematemesis.
+- **Anorectal varices.**
+- **Caput medusae** — dilated periumbilical veins.
+- **Splenomegaly**, often with thrombocytopenia.
+
+## Causes of cirrhosis
+
+- **Alcoholic liver disease.**
+- **Non-alcoholic fatty liver disease.**
+- **Chronic viral hepatitis** — hepatitis B, with or without D, and hepatitis C.
+- **Autoimmune hepatitis.**
+- **Biliary causes** — **primary biliary cholangitis** and **primary sclerosing cholangitis**.
+- **Genetic causes** — **haemochromatosis** (HFE gene, chromosome 6), **Wilson's disease** (ATP7B gene, chromosome 13), **alpha-1 antitrypsin deficiency**, **galactosaemia** and the **glycogen storage diseases**.
+- **Drugs**, for example **methotrexate**.
+
+## Histopathology of the cirrhotic liver
+
+- **Hepatocyte necrosis**
+- **Fibrosis**
+- **Nodules of regenerating hepatocytes**
+- **Disturbance of vascular architecture**
+
+## Classification by nodule size
+
+| Type | Nodules | Pattern | Typical causes |
+|---|---|---|---|
+| **Micronodular** | Under 3 mm | Uniform liver involvement | **Alcoholic hepatitis**, biliary tract disease |
+| **Macronodular** | Over 3 mm | Variable nodule size | **Viral hepatitis**, Wilson's disease, alpha-1 antitrypsin deficiency |
+
+## The modified Child-Pugh score
+
+Child-Pugh indicates prognosis in cirrhosis. Its five components are remembered as **ABCDE**: **A**lbumin, **B**ilirubin, **C**lotting (prothrombin time), **D**istension (ascites) and **E**ncephalopathy.
+
+| Component | 1 point | 2 points | 3 points |
+|---|---|---|---|
+| Albumin (g/L) | Over 35 | 28 to 35 | Under 28 |
+| Bilirubin (micromol/L) | Under 34 | 34 to 50 | Over 50 |
+| Clotting: prothrombin time (seconds prolonged) | Under 4 | 4 to 6 | Over 6 |
+| Distension: ascites | None | Mild | Moderate or severe |
+| Encephalopathy | None | Mild | Marked |
+
+**Interpretation**
+
+| Total score | Class | Survival |
+|---|---|---|
+| Under 7 | **Child-Pugh A** | About 100% at 1 year, 85% at 2 years |
+| 7 to 9 | **Child-Pugh B** | About 80% at 1 year, 60% at 2 years |
+| 10 or more | **Child-Pugh C** | About 45% at 1 year, 35% at 2 years |
+
+## Decompensation
+
+Compensated cirrhosis may be silent. **Decompensation** is signalled by **jaundice, ascites, hepatic encephalopathy** or **variceal bleeding**, and markedly worsens prognosis. Patients with cirrhosis also need **6-monthly ultrasound surveillance for hepatocellular carcinoma**.
+
+> Cirrhosis is diffuse architectural disruption causing both loss of function and portal hypertension, which opens porto-systemic shunts and gives oesophageal varices, caput medusae and splenomegaly. Micronodular disease is typically alcoholic and macronodular typically viral. Child-Pugh (ABCDE: albumin, bilirubin, clotting, distension, encephalopathy) grades prognosis, and jaundice, ascites, encephalopathy or variceal bleeding mark decompensation.`,
+        },
+        {
+          id: "fatty_liver_disease",
+          name: "Alcohol-related & non-alcoholic fatty liver disease",
+          content: `## Alcohol-related liver disease
+
+Alcohol causes a **spectrum** of liver injury, and the earliest stage is fully reversible.
+
+| Stage | Macroscopic | Microscopic |
+|---|---|---|
+| **Hepatic steatosis (fatty liver)** | Large, pale, yellow and greasy liver | Accumulation of **fat droplets in hepatocytes**. Chronic exposure leads to fibrosis at a late stage. **Fully reversible if alcohol is avoided** |
+| **Alcoholic hepatitis** | Large, fibrotic liver | **Hepatocyte ballooning** and necrosis from accumulation of fat, water and protein; **Mallory-Denk bodies** (clumped cytoskeleton); fibrosis |
+| **Alcoholic cirrhosis** | Yellow-tan, fatty and enlarged, later transforming into a shrunken, non-fatty, brown organ | **Micronodular cirrhosis**: small nodules separated by bands of fibrous tissue |
+
+**Alcoholic hepatitis** is characteristically seen **acutely after a period of heavy drinking**, and ranges from asymptomatic to fulminant liver failure. **Each episode carries a 10 to 20% mortality**, which is why it must never be dismissed as minor.
+
+## Non-alcoholic fatty liver disease (NAFLD)
+
+**Hepatic steatosis occurring in people who do not drink significantly.** Histologically it looks very similar to alcoholic liver disease, so the distinction rests on the alcohol history.
+
+- It is the **commonest cause of chronic liver disease in the West**.
+- It occurs mainly in **obese** people with **hyperlipidaemia or the metabolic syndrome**, and **diabetes** is a further risk factor.
+
+**The NAFLD spectrum**
+
+- **Simple steatosis** — fatty infiltration alone, relatively benign.
+- **Non-alcoholic steatohepatitis (NASH)** — steatosis **plus** inflammation (fatty infiltration with hepatitis), which **can progress to cirrhosis**.
+
+## The metabolic syndrome
+
+NAFLD is the hepatic manifestation of the metabolic syndrome, a cluster of findings that together raise the risk of ischaemic heart disease:
+
+- **Fasting hyperglycaemia** above 6 mmol/L.
+- **Blood pressure** above 140/90 mmHg.
+- **Central obesity** — waist circumference over 94 cm in men, over 80 cm in women.
+- **Dyslipidaemia** — HDL cholesterol below 1 mmol/L and triglycerides above 2 mmol/L.
+- **Microalbuminuria.**
+
+> Alcohol causes reversible steatosis, then alcoholic hepatitis with hepatocyte ballooning and Mallory-Denk bodies (10 to 20% mortality per episode), then micronodular cirrhosis. NAFLD looks identical histologically but occurs without significant alcohol intake, is the commonest chronic liver disease in the West, and progresses through NASH (steatosis plus inflammation) to cirrhosis. It is the liver manifestation of the metabolic syndrome.`,
+        },
+        {
+          id: "autoimmune_biliary_liver_disease",
+          name: "Autoimmune hepatitis, PBC & PSC",
+          content: `## Autoimmune hepatitis
+
+- Frequently occurs **alongside other autoimmune disease**, such as coeliac disease, systemic lupus erythematosus, rheumatoid arthritis, thyroiditis, Sjogren syndrome and ulcerative colitis.
+- **78% are female**, typically either young or postmenopausal.
+- Associated with **HLA-DR3**.
+- The characteristic cell on histology is the **plasma cell**.
+
+**Antibody types**
+
+| Type | Antibodies |
+|---|---|
+| **Type 1** | **Antinuclear antibody (ANA)**, **anti-smooth muscle antibody**, anti-actin antibody, and anti-soluble liver antigen antibody |
+| **Type 2** | **Anti-liver-kidney microsomal (anti-LKM) antibody** |
+
+**Treatment** — **immunosuppression with corticosteroids** (usually with azathioprine as a steroid-sparing agent) as a bridge to **transplantation**, but the disease **recurs in up to 40%** after transplant.
+
+## Comparing the two biliary causes of cirrhosis
+
+| Feature | Primary biliary cholangitis (PBC) | Primary sclerosing cholangitis (PSC) |
+|---|---|---|
+| Pathology | Autoimmune inflammatory destruction of **small and medium intrahepatic** bile ducts, causing cholestasis and **slow** development of cirrhosis over many years | Inflammation and **obliterative fibrosis of both extrahepatic and intrahepatic** ducts, causing **multifocal strictures with dilatation of the preserved segments** |
+| Sex | **Female to male 10:1** | **Male predominant** |
+| Peak incidence | 40 to 50 years | 40 to 50 years |
+| Key association | Other autoimmune conditions | **Inflammatory bowel disease, especially ulcerative colitis** |
+| Antibody | **Anti-mitochondrial antibody in over 90%** | Several autoantibodies, particularly **p-ANCA** |
+| Biochemistry | Raised alkaline phosphatase, raised cholesterol, raised **IgM**, and hyperbilirubinaemia late | Raised alkaline phosphatase |
+| Ultrasound | **No** bile duct dilatation | **Bile duct dilatation** |
+| ERCP | Not characteristic | **Beading** of the bile ducts, like a string of necklace beads |
+| Histology | **Bile duct loss with granulomas** | **Onion-skinning**: concentric periductal fibrosis |
+| Malignant risk | Cirrhosis and its complications | **Increased incidence of cholangiocarcinoma** |
+
+## Clinical features and treatment of PBC
+
+- Presents with **fatigue, pruritus and abdominal discomfort**.
+- Secondary features include **skin pigmentation**, **xanthelasma** (particularly of the eyelid), **steatorrhoea**, **vitamin D malabsorption** and an inflammatory arthropathy.
+- **Ursodeoxycholic acid** in the early phase induces remission in about **25%**.
+
+Note the change of name: PBC was formerly called *primary biliary cirrhosis*, but was renamed **primary biliary cholangitis** because most patients do not have cirrhosis at diagnosis.
+
+> Autoimmune hepatitis is a young or postmenopausal woman with HLA-DR3, plasma cells on biopsy, ANA and anti-smooth muscle (type 1) or anti-LKM (type 2) antibodies, treated with steroids. PBC is an itchy middle-aged woman with anti-mitochondrial antibody, raised IgM, granulomatous bile duct loss and no duct dilatation, treated with ursodeoxycholic acid. PSC is a man with ulcerative colitis, p-ANCA, beading on ERCP, onion-skin fibrosis and a risk of cholangiocarcinoma.`,
+        },
+        {
+          id: "genetic_liver_disease",
+          name: "Genetic liver disease: haemochromatosis, Wilson's & A1AT deficiency",
+          content: `## Genetic causes of cirrhosis
+
+| Feature | Hereditary haemochromatosis | Wilson's disease | Alpha-1 antitrypsin deficiency |
+|---|---|---|---|
+| Inheritance | **Autosomal recessive** | **Autosomal recessive** | **Autosomal recessive** (the abnormal PiZ and PiS alleles are co-dominantly expressed) |
+| Incidence | Homozygotes about **1 in 400**; heterozygote carriers about **1 in 10** of Caucasians | About **1 in 30,000** (very rare) | Around 1 in 2000 to 1 in 5000 of northern Europeans |
+| Typical age | **40 to 50 years** | **11 to 14 years** | Childhood (neonatal jaundice) or adult life |
+| Gene and mechanism | Mutated **HFE** gene at **6p21.3**, causing increased **iron** absorption from the gut, which deposits in liver, heart, pancreas, adrenals, pituitary, joints and skin, causing fibrosis | Mutated **ATP7B** on **chromosome 13**, encoding a copper-transporting ATPase on the canalicular membrane, so **biliary copper excretion falls** and copper deposits in liver, central nervous system and iris | Failure to secrete alpha-1 antitrypsin into the blood, so it **accumulates within hepatocytes** as intracytoplasmic inclusions causing hepatitis, while its **absence in the lungs causes emphysema** |
+| Histology stain | Iron deposits stain with **Prussian blue** | Copper stains with **rhodanine**; Mallory bodies and fibrosis are seen | **Intracytoplasmic globules** staining with **periodic acid-Schiff (PAS)** |
+
+## Clinical features
+
+**Hereditary haemochromatosis**
+
+- **Skin bronzing** from melanin deposition.
+- **Diabetes mellitus** — hence the old term "bronze diabetes".
+- **Hepatomegaly** with **micronodular cirrhosis**.
+- **Cardiomyopathy.**
+- **Hypogonadism.**
+- **Pseudogout.**
+
+**Wilson's disease**
+
+- **Liver disease** — acute hepatitis, fulminant liver failure, or cirrhosis.
+- **Neurological disease** — **parkinsonism**, psychosis and dementia, reflecting **basal ganglia** involvement.
+- **Kayser-Fleischer rings** — copper deposits in **Descemet's membrane** of the cornea.
+
+**Alpha-1 antitrypsin deficiency**
+
+- **Children** — neonatal jaundice.
+- **Adults** — **emphysema** (characteristically basal and panacinar) and chronic liver disease.
+
+## Investigations
+
+| Disease | Findings |
+|---|---|
+| Haemochromatosis | Raised **iron** and **ferritin**, **transferrin saturation above 45%**, and a **low total iron-binding capacity** |
+| Wilson's disease | **Low serum caeruloplasmin**, low total serum copper, and **raised urinary copper** |
+| Alpha-1 antitrypsin deficiency | **Low serum alpha-1 antitrypsin**, with an **absent alpha-globulin band** on electrophoresis |
+
+## Treatment
+
+- **Haemochromatosis** — **venesection** is first line, with **desferrioxamine** (iron chelation) reserved for those who cannot tolerate it. Around **30% of those with cirrhosis develop hepatocellular carcinoma**, so surveillance is essential.
+- **Wilson's disease** — **lifelong penicillamine** (a copper chelator). The prognosis is good with early treatment, but **any neurological damage is permanent**, and liver transplantation may be required.
+- **Alpha-1 antitrypsin deficiency** — supportive; avoid smoking absolutely, and consider transplantation for end-stage lung or liver disease.
+
+> Haemochromatosis is autosomal recessive HFE disease of iron overload presenting at 40 to 50 with bronze skin, diabetes and cirrhosis, treated by venesection, with a 30% risk of hepatocellular carcinoma once cirrhotic. Wilson's is autosomal recessive ATP7B copper overload presenting in the teens with liver plus basal ganglia disease and Kayser-Fleischer rings, treated with penicillamine. Alpha-1 antitrypsin deficiency gives PAS-positive hepatocyte globules and emphysema.`,
+        },
+        {
+          id: "liver_tumours",
+          name: "Liver tumours",
+          content: `## Benign liver tumours
+
+| Tumour | Clinical features |
+|---|---|
+| **Hepatic adenoma** | Associated with the **combined oral contraceptive pill**. Presents with abdominal pain or **intraperitoneal bleeding**. Resect if symptomatic, larger than **5 cm**, or if it fails to shrink when the pill is stopped |
+| **Haemangioma** | The **commonest benign liver lesion**. Requires **no treatment** |
+
+## Malignant liver tumours
+
+| Tumour | Clinical features |
+|---|---|
+| **Hepatocellular carcinoma (HCC)** | Occurs most commonly in **chronic liver disease**, closely linked to **viral hepatitis**, **alcoholic cirrhosis**, **haemochromatosis**, **NAFLD**, **aflatoxin B1** and **androgenic steroids**. Cirrhotic patients are **screened with 6-monthly ultrasound**. Investigations are **alpha-fetoprotein** and ultrasound |
+| **Cholangiocarcinoma** | Adenocarcinoma arising from the **bile ducts**, either intrahepatic or extrahepatic. About **10% of liver tumours**, with a **poor prognosis**. Causes include **primary sclerosing cholangitis**, parasitic liver disease, chronic liver disease, congenital biliary abnormalities and **Lynch syndrome type II** |
+| **Haemangiosarcoma (angiosarcoma)** | Cancer of the **vascular endothelium**, highly invasive. Classically linked to vinyl chloride, arsenic and thorotrast exposure |
+| **Hepatoblastoma** | Occurs in **children and infants**, presenting with an **abdominal mass**. Arises from immature liver precursor cells |
+
+## Secondary (metastatic) tumours
+
+- **Metastases are the commonest malignant liver lesion overall** — far commoner than primary liver cancer.
+- Usually spread from the **gastrointestinal tract, breast or bronchus**.
+- Characteristically **multiple**, in contrast to the usually solitary primary tumour.
+
+> The commonest benign liver lesion is a haemangioma, and hepatic adenoma is linked to the oral contraceptive pill. Hepatocellular carcinoma arises in cirrhosis, is screened for with 6-monthly ultrasound plus alpha-fetoprotein, and is linked to viral hepatitis, haemochromatosis and aflatoxin. But the commonest malignant lesion in the liver overall is metastatic disease, usually multiple and from gut, breast or bronchus.`,
+        },
       ],
     },
     {
