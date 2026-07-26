@@ -642,117 +642,162 @@ Diffuse alveolar damage is acute injury to the alveoli producing an exudative in
       id: "endocrinology", name: "Endocrinology & Metabolic", icon: "🦋",
       topics: [
         {
-          id: "diabetes_overview",
-          name: "Diabetes mellitus",
-          content: `## Diabetes mellitus
+          id: "pituitary_axis_function_tests",
+          name: "Pituitary axis & dynamic function testing",
+          content: `## The pituitary axis
 
-Diabetes is a group of conditions causing persistent hyperglycaemia. The two common forms differ in mechanism.
+The pituitary sits in the sella turcica of the sphenoid bone, immediately below the optic chiasm, and is joined to the hypothalamus by the pituitary stalk. It has two functionally distinct lobes. The **anterior pituitary** manufactures its own hormones in response to releasing factors carried down the stalk in a portal blood supply. The **posterior pituitary** is neural tissue that stores and releases two hormones made in the hypothalamus itself.
 
-| Feature | Type 1 | Type 2 |
+## Hypothalamic control of the anterior pituitary
+
+| Hypothalamic hormone | Effect | Anterior pituitary hormone |
 |---|---|---|
-| Mechanism | Autoimmune beta-cell destruction | Insulin resistance and relative deficiency |
-| Typical onset | Younger, lean | Older, often overweight |
-| Ketosis-prone | Yes | No (usually) |
-| First-line treatment | Insulin | Lifestyle then metformin |
+| Growth hormone-releasing hormone (GHRH) | Stimulates | Growth hormone (GH) |
+| Gonadotrophin-releasing hormone (GnRH, also called LHRH) | Stimulates | Luteinising hormone (LH) and follicle-stimulating hormone (FSH) |
+| Thyrotrophin-releasing hormone (TRH) | Stimulates | Thyroid-stimulating hormone (TSH), and also prolactin |
+| Dopamine | **Inhibits** | Prolactin |
+| Corticotrophin-releasing hormone (CRH) | Stimulates | Adrenocorticotrophic hormone (ACTH) |
 
-## Diagnosis
+Prolactin is the exception that explains a great deal of pituitary pathology: it is the only anterior pituitary hormone held under **tonic inhibition**. Dopamine travelling down the stalk continuously suppresses it, so anything that interrupts the stalk raises prolactin, as do dopamine-blocking drugs.
 
-Glycated haemoglobin (HbA1c) of 48 mmol/mol or more is diagnostic, or a fasting glucose of 7.0 mmol/L or more. In someone with symptoms a single abnormal result is enough; without symptoms it should be repeated.
+The **posterior pituitary** releases only two hormones, both synthesised in the hypothalamus and carried down the stalk within nerve axons: **antidiuretic hormone (ADH, also called vasopressin)** and **oxytocin**. The disorders of ADH are covered in the *SIADH and diabetes insipidus* topic.
 
-## Type 2 treatment escalation
+## Combined pituitary function test
 
-Start with lifestyle change, then metformin. A sodium-glucose co-transporter 2 (SGLT2) inhibitor is added or chosen early when there is established cardiovascular disease, heart failure or chronic kidney disease. Targets are individualised, with particular care to avoid hypoglycaemia in frail or older people.
+The combined pituitary function test assesses every component of anterior pituitary function in one sitting. It is used mainly in pituitary tumours, and after they have been treated, to establish what needs replacing.
 
-## Complications to screen for
+**Indication**
 
-Diabetes damages small and large vessels. Annual review covers the eyes (retinopathy), kidneys (urine albumin and estimated glomerular filtration rate), feet (neuropathy and circulation) and cardiovascular risk.`,
+- Assessment of all components of anterior pituitary function, particularly in pituitary tumours or following tumour treatment
+
+**Contraindications**
+
+- **Ischaemic heart disease** — the induced hypoglycaemia is a major cardiac stress
+- **Epilepsy** — hypoglycaemia may provoke a seizure
+- **Untreated hypothyroidism**, which blunts both the GH and the cortisol response and so makes the result uninterpretable
+
+**Side effects**
+
+- Sweating, palpitations and loss of consciousness — all the adrenergic effects of hypoglycaemia
+- Rarely, convulsions with the hypoglycaemia
+- Warn the patient that the TRH injection commonly causes a transient metallic taste in the mouth, flushing and nausea
+
+**Procedure**
+
+- Fast the patient overnight, secure good intravenous access and weigh them
+- Draw up insulin at 0.15 units/kg, TRH 200 micrograms and LHRH 100 micrograms into a 5 mL syringe and give intravenously
+- Take a basal thyroxine, then glucose, cortisol, GH, LH, FSH, TSH and prolactin every 30 minutes for the first hour
+- Continue glucose, cortisol and GH out to 2 hours, so that samples exist at 0, 30, 60, 90 and 120 minutes
+
+## Interpreting the result
+
+The test has three components, each read separately.
+
+**The insulin tolerance test** is the reference standard for the growth hormone and cortisol axes. Insulin induces hypoglycaemia (a glucose below 2.2 mmol/L), which is a powerful metabolic stress and should drive ACTH and GH release.
+
+- An adequate cortisol response is a rise of more than 170 nmol/L, to a peak above 500 nmol/L
+- An adequate GH response is a rise to more than 6 micrograms/L
+
+**The TRH test** should raise both TSH and prolactin, since TRH stimulates the lactotrophs as well.
+
+- The normal result is a TSH rise to more than 5 mU/L, with the 30-minute value higher than the 60-minute value
+- In hyperthyroidism the TSH remains suppressed
+- In hypothyroidism there is an exaggerated response
+- Modern sensitive TSH assays mean basal levels are now adequate, so this dynamic test is no longer routinely needed to diagnose hyperthyroidism
+
+**The GnRH (LHRH) test** should raise LH and FSH, with the normal peak at either 30 or 60 minutes.
+
+- LH should rise above 10 U/L and FSH above 2 U/L
+- An inadequate response may be an early indication of hypopituitarism
+- Pre-pubertal children should show no LH or FSH response to LHRH
+
+## Diagnosing gonadotrophin deficiency
+
+Gonadotrophin deficiency is diagnosed on the **basal** levels rather than on the dynamic response. What you are looking for is a low sex steroid **without** the compensatory rise in gonadotrophins that a healthy pituitary would produce:
+
+- In men, a low testosterone in the absence of raised basal gonadotrophins
+- In women, a low oestradiol without elevated basal gonadotrophins, and no response to clomifene
+
+If sex steroids are already present — as in precocious puberty — the pituitary is "primed" and will respond to LHRH. Priming with sex steroids must therefore **not** be given before this test.
+
+## Replacing what is missing
+
+Hypopituitarism is treated by replacing the target-gland hormones rather than the pituitary ones: hydrocortisone, levothyroxine, sex steroids (oestrogen or testosterone) and, where indicated, growth hormone.
+
+> Safety point: always replace **hydrocortisone before levothyroxine**. Thyroid hormone accelerates cortisol metabolism, so starting levothyroxine first in someone with unrecognised ACTH deficiency can precipitate an adrenal crisis.`,
         },
         {
-          id: "thyroid_overview",
-          name: "Thyroid disease",
-          content: `## Thyroid disease
+          id: "pituitary_tumours",
+          name: "Pituitary tumours, prolactinoma & acromegaly",
+          content: `## Pituitary tumours
 
-The thyroid axis is read from the thyroid-stimulating hormone (TSH) and the free thyroxine (T4).
+Almost all pituitary tumours are benign adenomas. They may produce any combination of pituitary hormones or be entirely non-secreting, and they cause disease in three ways: by the hormone they make, by the hormones they destroy, and by pressing on neighbouring structures.
 
-| Pattern | TSH | Free T4 | Interpretation |
-|---|---|---|---|
-| Hypothyroid | High | Low | Primary hypothyroidism |
-| Hyperthyroid | Low | High | Primary hyperthyroidism |
-| Subclinical hypothyroid | High | Normal | Monitor; treat by symptoms/level |
+- A **microadenoma** is under 10 mm, and is usually benign and slow-growing
+- A **macroadenoma** is 10 mm or larger and behaves far more aggressively, with a much greater chance of local compression
 
-## Hypothyroidism
+## Mass effect
 
-The picture is one of a slowed metabolism: fatigue, weight gain, cold intolerance, constipation and dry skin. The commonest cause is autoimmune (Hashimoto) thyroiditis. Treatment is levothyroxine, titrated against the TSH, starting at a low dose in older people or those with heart disease.
+The optic chiasm lies directly above the gland, so upward extension compresses the crossing nasal retinal fibres and produces the classical **bitemporal hemianopia**. Lateral extension into the cavernous sinus involves the third, fourth and sixth cranial nerves, causing diplopia, and the first and second divisions of the trigeminal nerve, causing facial numbness. Headache is common, and progressive destruction of the normal gland produces hypopituitarism.
 
-## Hyperthyroidism
+A separate and easily missed mechanism is the **stalk effect**. A non-functioning adenoma may crush the pituitary stalk, reducing the blood flow that carries inhibitory dopamine to the lactotrophs, so prolactin rises. Crucially the rise is only modest, whereas a true prolactinoma produces a massive one — and that difference in magnitude is how the two are told apart.
 
-Features reflect a fast metabolism: weight loss, heat intolerance, tremor and palpitations. Graves disease adds eye signs and a diffuse goitre. A beta-blocker controls symptoms quickly while definitive treatment (carbimazole, radioiodine or surgery) takes effect.`,
-        },
-        {
-          id: "calcium_homeostasis",
-          name: "Calcium, vitamin D & hypercalcaemia",
-          content: `## Calcium, vitamin D and hypercalcaemia
+**Pituitary apoplexy** is sudden haemorrhage into or infarction of an adenoma. It presents with thunderclap headache, visual loss, ophthalmoplegia and hypotension from acute ACTH deficiency, and needs urgent intravenous hydrocortisone and neurosurgical assessment.
 
-Calcium balance is controlled by two hormones — parathyroid hormone and the active form of vitamin D — acting on the gut, kidneys and bone. Once their actions are clear, the biochemistry of the calcium disorders and the approach to hypercalcaemia both fall into place.
+## How high is the prolactin?
 
-## Calcium in the blood
+Because a raised prolactin has so many causes, the degree of elevation is the single most useful discriminator.
 
-The normal plasma calcium is about 2.2 to 2.6 mmol/L, and it travels in three forms: roughly **45% is ionised** (free and biologically active), about **50% is bound to albumin**, and the remaining 5% is complexed with citrate and bicarbonate. Because so much is protein-bound, the laboratory reports a **corrected calcium** that adjusts the measured value for the albumin level — otherwise a low albumin would mimic hypocalcaemia.
-
-## The two hormones that control calcium
-
-| Hormone | Source and trigger | Main actions |
+| Mild elevation (under 1000 mIU/L) | Moderate elevation (1000 to 5000 mIU/L) | Extreme elevation (over 5000 mIU/L) |
 |---|---|---|
-| Parathyroid hormone (PTH) | Parathyroid glands, released when calcium falls | Mobilises calcium from bone, increases renal calcium reabsorption, increases renal phosphate excretion, and activates vitamin D |
-| Calcitriol — active vitamin D | Final activation in the kidney | Increases absorption of both calcium and phosphate from the gut, and supports bone remodelling |
+| Stress; recent breast examination; vaginal examination; hypothyroidism; polycystic ovary syndrome | Hypothalamic tumour; non-functioning pituitary tumour compressing the stalk; microprolactinoma; polycystic ovary syndrome; drugs such as domperidone, metoclopramide and the phenothiazines | Macroprolactinoma |
 
-The key contrast to memorise is that **PTH raises calcium but lowers phosphate** (it makes the kidney waste phosphate), whereas **active vitamin D raises both calcium and phosphate**.
+Hypothyroidism raises prolactin because the high TRH of primary hypothyroidism stimulates the lactotrophs directly, so always check thyroid function before investigating a raised prolactin any further.
 
-## Activating vitamin D
+## Prolactinoma
 
-Vitamin D needs two hydroxylation steps before it can work:
+A prolactinoma is the commonest functioning pituitary tumour. Prolactin suppresses gonadotrophin release, so the clinical picture is one of hypogonadism: **galactorrhoea**, amenorrhoea or oligomenorrhoea and infertility in women, and loss of libido, erectile dysfunction and gynaecomastia in men. Men tend to present later, and therefore with larger tumours and visual field loss.
 
-- It enters the body as **cholecalciferol (vitamin D3)**, made in the skin under ultraviolet light or taken in the diet, or as **ergocalciferol (vitamin D2)** from the diet.
-- The **liver** adds the first hydroxyl group to make **25-hydroxyvitamin D (calcidiol)** — the stored form, and the one measured to assess a patient's vitamin D status.
-- The **kidney** adds the second to make **1,25-dihydroxyvitamin D (calcitriol)**, the active hormone. This final step is stimulated by PTH (and by a low phosphate).
+The biochemistry shows a prolactin **above 5000 mIU/L**, and often far higher in a macroprolactinoma. On combined pituitary function testing the other axes frequently fail, with no adequate rise in growth hormone (above 10 micrograms/L) or cortisol (above 550 nmol/L) — evidence that the tumour has compressed the rest of the gland, and that those hormones will need replacing.
 
-A lack of vitamin D therefore lowers calcium and phosphate, drives a compensatory rise in PTH, and impairs bone mineralisation — causing **osteomalacia** in adults and **rickets** in children.
+Treatment is unusual among tumours in being **medical first**:
 
-## Reading the biochemistry
+- **First line is a dopamine agonist** — cabergoline, which is better tolerated and more effective, or bromocriptine, which is preferred where pregnancy is planned. These shrink the tumour as well as normalising the prolactin, so they frequently reverse the visual field defect too
+- **Second line is transsphenoidal excision**, reserved for visual or pressure symptoms that fail to respond to medical treatment, or for drug intolerance
+- Replace whatever the tumour has knocked out — hydrocortisone, levothyroxine, oestrogen or testosterone, and growth hormone
 
-The pattern of calcium, phosphate, PTH and alkaline phosphatase (ALP) pins down the disorder — one of the highest-yield tables in endocrinology:
+## Non-functioning pituitary adenoma
 
-| Condition | Calcium | Phosphate | PTH | ALP |
-|---|---|---|---|---|
-| Primary hyperparathyroidism | High | Low | High or inappropriately normal | Normal or high |
-| Secondary hyperparathyroidism | Low | High (in CKD) | High | High |
-| Tertiary hyperparathyroidism | High | Variable | High | Normal or high |
-| Hypoparathyroidism | Low | High | Low | Normal |
-| Osteomalacia / rickets | Low | Low | High | High |
-| Paget's disease of bone | Normal | Normal | Normal | High |
-| Osteoporosis | Normal | Normal | Normal | Normal |
+A non-functioning adenoma secretes no hormone of its own, so it declares itself either through mass effect or as an incidental scan finding. The prolactin is **moderately** raised, characteristically 1000 to 5000 mIU/L, through the stalk effect rather than by secretion.
 
-A few anchors: **primary hyperparathyroidism** (usually a single adenoma) gives a high calcium with a low phosphate and a PTH that is high or inappropriately normal; **secondary hyperparathyroidism** is the appropriate PTH rise to a low calcium, classically from chronic kidney disease (CKD) or vitamin D deficiency; **tertiary** is when a chronically stimulated gland becomes autonomous. Note that **osteoporosis has completely normal biochemistry** — a useful negative.
+A dopamine agonist may be tried, but it will not shrink the tumour as it does a true prolactinoma, so surgery is needed for compressive symptoms. A small, asymptomatic adenoma can simply be watched with serial imaging and visual fields — doing nothing is a legitimate option where it is causing no symptoms.
 
-## Hypercalcaemia
+## Acromegaly
 
-Hypercalcaemia is a corrected calcium of 2.6 mmol/L or more. Two causes account for the great majority:
+Acromegaly is growth hormone excess in an adult, almost always from a pituitary somatotroph adenoma. The same excess before the epiphyses fuse causes gigantism instead. The changes come on so insidiously that serial photographs are one of the most useful diagnostic tools.
 
-- **Primary hyperparathyroidism** — the commonest cause in the community, often an incidental finding in a well outpatient.
-- **Malignancy** — the commonest cause in hospital inpatients, through bony metastases, myeloma, or secretion of **parathyroid hormone-related peptide (PTHrP)**, classically by squamous cell carcinomas.
+The features are coarsening of the facial features with a prominent supraorbital ridge and prognathism, enlarging hands and feet so that rings and shoes stop fitting, macroglossia, a deepening voice, excessive sweating, skin tags, carpal tunnel syndrome and arthropathy. Systemically there is **hypertension, cardiomyopathy, obstructive sleep apnoea and an increased risk of colorectal polyps and carcinoma**.
 
-Other causes include granulomatous disease such as **sarcoidosis** (where macrophages produce extra active vitamin D), thyrotoxicosis, the milk-alkali syndrome, vitamin D toxicity, thiazide diuretics and prolonged immobilisation.
+The biochemical signs are a **high glucose** — growth hormone antagonises insulin, so around a third develop diabetes — together with a raised **calcium** and **phosphate**.
 
-The symptoms are remembered as **bones, stones, abdominal groans and psychic moans**: bone pain, renal stones, abdominal pain and constipation, and psychiatric features such as depression and confusion — together with polyuria, thirst and muscle weakness.
+**Investigation**
 
-The pivotal investigation is the **PTH level**:
+- The **oral glucose tolerance test (OGTT) is the gold standard**: a glucose load normally suppresses GH, whereas in acromegaly the GH fails to suppress
+- **Insulin-like growth factor 1 (IGF-1)** is the practical screening test and the main measure for follow-up, because it reflects average GH exposure rather than the pulsatile level
+- A random GH is of little diagnostic value, since in acromegaly it is already high at baseline; prolactin is often raised too, and the cortisol response may be absent where the tumour has compromised the corticotrophs
+- Magnetic resonance imaging of the pituitary localises the adenoma, and visual fields are documented
 
-- A **high or inappropriately normal PTH** means the parathyroids are the driver — primary (or tertiary) hyperparathyroidism.
-- A **suppressed PTH** points to a non-parathyroid cause, above all malignancy; the phosphate and ALP then help, as bony metastases raise ALP whereas myeloma typically leaves it normal.
+**Management, in order of preference**
 
-Management of significant hypercalcaemia is **aggressive rehydration with intravenous 0.9% saline** first, followed by an **intravenous bisphosphonate** (such as zoledronate) for malignant or severe disease. Treat the underlying cause — parathyroidectomy for primary hyperparathyroidism, corticosteroids for sarcoidosis or vitamin D toxicity — and stop contributing drugs such as thiazides.
+- **Transsphenoidal surgery** is the best treatment and the only one likely to cure
+- **Pituitary radiotherapy** where surgery is incomplete or unsuitable
+- **Cabergoline**, a dopamine agonist, which is less effective here than in prolactinoma but useful where prolactin is co-secreted
+- **A somatostatin analogue** such as octreotide or lanreotide, which suppresses GH release directly; these are expensive and are given by injection
+- **Pegvisomant**, a growth hormone **receptor** antagonist, which normalises IGF-1 but does not shrink the tumour
 
-> High-yield: PTH is the single most useful test in hypercalcaemia. A raised or inappropriately normal PTH means primary hyperparathyroidism, while a suppressed PTH means look for malignancy — and together these two account for around 90% of all hypercalcaemia. Remember PTH raises calcium but lowers phosphate, whereas active vitamin D raises both.`,
+Follow-up is yearly GH and IGF-1 with an OGTT where needed, plus visual fields, vascular assessment, body mass index and serial photographs.
+
+> High-yield: the degree of prolactin elevation is the discriminator. Over 5000 mIU/L means a macroprolactinoma, 1000 to 5000 is usually stalk compression by a non-functioning adenoma, and under 1000 is stress, drugs, hypothyroidism or polycystic ovary syndrome. Prolactinoma is treated medically first with a dopamine agonist, whereas acromegaly is treated surgically first.`,
         },
         {
           id: "siadh_di",
@@ -779,11 +824,765 @@ Diabetes insipidus produces large volumes of dilute urine (**polyuria and polydi
 | Feature | Cranial DI | Nephrogenic DI |
 |---|---|---|
 | Problem | Too little ADH produced | Kidney insensitive to ADH |
-| Causes | Pituitary surgery, trauma, tumour (craniopharyngioma), autoimmune | Lithium, hypercalcaemia, hypokalaemia, inherited channel defects |
+| Causes | Pituitary surgery, trauma, tumour (craniopharyngioma), autoimmune — but around **half of cases are idiopathic** | Usually iatrogenic (**lithium**); also hypercalcaemia, hypokalaemia, chronic kidney disease, inherited channel defects |
 | Desmopressin response | Urine concentrates (over 600) | No response |
 | Treatment | Desmopressin | Treat the cause; thiazide diuretic (paradoxically) |
 
-The **water deprivation test** distinguishes them: after fluid restriction the urine stays dilute in diabetes insipidus (whereas it concentrates in primary polydipsia); giving desmopressin then concentrates the urine in cranial but not nephrogenic disease. Always first exclude diabetes mellitus (glucose), hypokalaemia and hypercalcaemia.`,
+The **water deprivation test** distinguishes them: after fluid restriction the urine stays dilute in diabetes insipidus (whereas it concentrates in primary polydipsia); giving desmopressin then concentrates the urine in cranial but not nephrogenic disease. Always first exclude diabetes mellitus (glucose), hypokalaemia and hypercalcaemia.
+
+A third and much rarer form is **adipsic (hypothalamic) diabetes insipidus**, in which damage to the hypothalamus destroys the thirst drive as well. These patients become **hypernatraemic without feeling thirsty**, so they do not drink to compensate and cannot be managed on desmopressin alone; they need a prescribed daily fluid intake with regular weights and sodium monitoring.`,
+        },
+        {
+          id: "thyroid_overview",
+          name: "Thyroid function tests & the causes of thyroid disease",
+          content: `## Reading thyroid function tests
+
+The thyroid axis is read from the thyroid-stimulating hormone (TSH) together with the free thyroxine (T4), and in selected cases the free tri-iodothyronine (T3). TSH is the more sensitive marker, because the pituitary responds steeply to very small changes in circulating thyroid hormone.
+
+| Test | Reference range |
+|---|---|
+| TSH | 0.33 to 4.5 mU/L |
+| Free T4 | 10.2 to 22.0 pmol/L |
+| Free T3 | 3.2 to 6.5 pmol/L |
+
+Eight patterns cover essentially every thyroid result you will be shown.
+
+| TSH | Free T4 or T3 | Interpretation |
+|---|---|---|
+| High | Low T4 | **Primary hypothyroidism** — atrophic, Hashimoto's, subacute (De Quervain's), postpartum or Riedel's thyroiditis |
+| High | Normal T4 | **Treated hypothyroidism or subclinical hypothyroidism** — look for the associated hypercholesterolaemia |
+| High | High T4 | **A TSH-secreting pituitary tumour, or thyroid hormone resistance** — rare, but the only pattern in which both are high |
+| Low | High T4 or T3 | **Hyperthyroidism** — Graves' disease, toxic multinodular goitre, toxic adenoma, drugs (thyroxine, amiodarone) or ectopic production from a trophoblastic tumour or struma ovarii |
+| Low | Normal T3 and T4 | **Subclinical hyperthyroidism** |
+| Low | Low T4 | **Secondary hypothyroidism**, from hypothalamic or pituitary disease |
+| High, later low | Low T3 and T4 | **Sick euthyroid syndrome**, with any severe illness, as the body shuts down metabolism |
+| Normal | Abnormal T4 | Consider assay interference, a change in thyroid-binding globulin, or amiodarone |
+
+Two of these deserve expanding. In **subclinical hypothyroidism** progression to overt disease is much more likely if **anti-thyroid peroxidase antibodies are positive**. **Sick euthyroid syndrome** is not thyroid disease at all but the biochemical signature of severe non-thyroidal illness, which is why thyroid function should not be checked in an acutely unwell inpatient without a specific reason, and should be repeated once they have recovered.
+
+## Hypothyroidism
+
+The picture is one of a slowed metabolism: fatigue, weight gain, cold intolerance, constipation, dry skin and hair, hoarseness, menorrhagia, slow-relaxing reflexes and low mood. Hypercholesterolaemia and a macrocytic anaemia often accompany it.
+
+| Group | Cause |
+|---|---|
+| **Autoimmune** | **Primary atrophic hypothyroidism** — the commonest cause in the United Kingdom. Diffuse lymphocytic infiltration causes atrophy, so there is **no goitre** and the gland is small. No specific antibody has been identified. It is associated with pernicious anaemia, vitiligo and other endocrinopathies |
+| **Autoimmune** | **Hashimoto's thyroiditis** — plasma cell infiltration with a painless **goitre**, typically in older women. There may be an initial thyrotoxic phase, "Hashitoxicosis". Autoantibody titres are high (anti-thyroid peroxidase and anti-thyroglobulin), and **Hurthle cells** are seen histologically |
+| **Other** | **Iodine deficiency** — the commonest cause worldwide |
+| **Other** | Post-thyroidectomy or post-radioiodine |
+| **Other** | Drugs — antithyroid drugs, **lithium** and **amiodarone** |
+| **Other** | **Riedel's thyroiditis** — dense fibrosis replacing the normal parenchyma, giving a painless, **stony-hard** gland |
+
+## Hyperthyroidism
+
+Features reflect a fast metabolism: weight loss despite a good appetite, heat intolerance, sweating, tremor, palpitations and atrial fibrillation, anxiety, diarrhoea and oligomenorrhoea. Graves' disease adds eye signs and a diffuse goitre.
+
+The most useful way to classify the causes is by **radionuclide uptake**, because that separates a gland which is genuinely overproducing hormone from one that is merely leaking stored hormone — and the distinction dictates the treatment.
+
+| Uptake | Cause |
+|---|---|
+| **High** | **Graves' disease** — the commonest cause, far more common in women (roughly 9 to 1), with a painless diffuse goitre, **anti-TSH receptor antibodies** and **high diffuse uptake** on isotope scanning with technetium-99 |
+| **High** | **Toxic multinodular goitre (Plummer's disease)** — multiple high-uptake "hot" nodules in a painless gland; the follicular cells are enlarged and distended with colloid, with a flattened epithelium |
+| **High** | **Toxic adenoma** — about 5% of cases, a solitary hot nodule giving a single area of uptake |
+| **Low** | **Subacute (De Quervain's) thyroiditis** — a self-limiting, post-viral, **painful** goitre; thyrotoxic first, then hypothyroid, then recovery |
+| **Low** | **Postpartum thyroiditis** — the same pattern as De Quervain's, occurring after delivery |
+| **Low** | **Ectopic** — a trophoblastic tumour or struma ovarii, driven by excess human chorionic gonadotrophin — or exogenous thyroxine |
+
+> High-yield: a **painful** goitre with **low** uptake means thyroiditis, in which preformed hormone is simply leaking from a damaged gland, so **antithyroid drugs do not work** and treatment is supportive. A **painless** goitre with **high** uptake means true overproduction, which does respond to antithyroid drugs or radioiodine. Treatment is covered in the *Treating hyperthyroidism and hypothyroidism* topic.`,
+        },
+        {
+          id: "thyroid_treatment",
+          name: "Treating hyperthyroidism & hypothyroidism",
+          content: `## Treating hyperthyroidism
+
+There are three definitive modalities — antithyroid drugs, radioiodine and surgery — plus symptom control, which is started in everyone while the definitive treatment takes effect.
+
+## Symptom relief
+
+- A **beta-blocker**, usually propranolol because it also blocks the peripheral conversion of T4 to T3, controls tremor, tachycardia and anxiety within hours
+- **Topical steroids** for the dermopathy of Graves' disease, and lubricating **eye drops** for symptomatic thyroid eye disease
+
+## Antithyroid drugs
+
+**Carbimazole** is the drug used most commonly. It blocks thyroid peroxidase and therefore hormone synthesis, but because the gland already holds several weeks of preformed hormone it takes four to six weeks to work. There are two regimens:
+
+- **Titration** — the dose is adjusted downwards against the free T4 and T3 to keep the patient euthyroid
+- **Block and replace** — a high dose deliberately renders the patient hypothyroid and levothyroxine is added back. This is used less often, because the higher carbimazole dose carries a greater risk of side effects
+
+The important adverse effects are a **rash**, which is common, and **agranulocytosis**, which is rare but dangerous: warn every patient to seek an urgent full blood count if they develop a sore throat, mouth ulcers or fever. Carbimazole is teratogenic, so women of childbearing potential need effective contraception, and **propylthiouracil** is substituted in the first trimester and where conception is planned within six months. Carbimazole is also associated with acute pancreatitis and should not be restarted in anyone who has had it.
+
+## Radioiodine
+
+Radioactive iodine is concentrated by the thyroid and destroys thyroid tissue over weeks to months. Current NICE guidance (NG145) positions it as the **first-line definitive treatment** for Graves' disease where antithyroid drugs are unlikely to achieve lasting remission, rather than as something reserved for when drugs have failed. It is also the treatment of choice for **toxic nodular disease**, which never remits spontaneously, so drug treatment can only ever suppress it.
+
+- **Permanent hypothyroidism** is the expected outcome rather than a complication, so lifelong levothyroxine and monitoring follow
+- It is **contraindicated in pregnancy and in breastfeeding women**, and conception should be avoided for several months afterwards
+- It can worsen **active thyroid eye disease**, so is avoided or covered with corticosteroids in that situation
+
+## Surgery
+
+Hemithyroidectomy or total thyroidectomy. The indications are:
+
+- A woman intending to become pregnant within the next six months
+- Local compression from a goitre, causing oesophageal or tracheal symptoms
+- Cosmetic concern
+- Suspected cancer
+- Co-existing hyperparathyroidism, since both glands can be dealt with in one operation
+- Disease refractory to medical therapy
+- A large goitre, or patient preference
+
+Two rules matter. The patient **must be rendered euthyroid before surgery**, or the operation can precipitate a thyroid storm. And anyone having a total thyroidectomy will need lifelong thyroid hormone replacement. The specific surgical risks are damage to the **recurrent laryngeal nerve**, causing hoarseness, and to the parathyroid glands, causing hypocalcaemia.
+
+## Thyroid storm
+
+Thyroid storm is decompensated thyrotoxicosis and a medical emergency. It presents as **shock with pyrexia, confusion, vomiting** and tachyarrhythmia, usually triggered by infection, surgery, trauma or iodinated contrast in someone whose hyperthyroidism is untreated.
+
+It must be managed with high-dependency or intensive care support:
+
+- Active **cooling** and paracetamol; avoid aspirin, which displaces thyroid hormone from its binding protein and makes matters worse
+- **High-dose antithyroid drugs**, with iodine (Lugol's solution) given at least an hour later to block the release of stored hormone
+- **Corticosteroids**, which both cover possible relative adrenal insufficiency and block peripheral T4 to T3 conversion
+- A beta-blocker for rate control, together with circulatory and respiratory support
+- Treatment of the precipitating illness
+
+## Treating hypothyroidism
+
+Treatment is thyroid replacement therapy with **levothyroxine**, taken once daily on an empty stomach and separated from iron, calcium and proton-pump inhibitors, all of which impair its absorption.
+
+- Start at a **low dose of 25 micrograms in older people and in anyone with ischaemic heart disease**, because a sudden rise in metabolic rate can precipitate angina or an arrhythmia; otherwise a full replacement dose of roughly 1.6 micrograms/kg per day is reasonable
+- Recheck the TSH **six to eight weeks** after any dose change, since the axis takes that long to re-equilibrate, then annually once stable
+- Titrate against the **TSH** in primary hypothyroidism — but in **secondary** hypothyroidism the TSH is meaningless and the free T4 is used instead
+- The requirement rises by roughly a quarter to a half in pregnancy, so increase the dose as soon as pregnancy is confirmed
+- Overtreatment is not harmless: a suppressed TSH carries a risk of atrial fibrillation and osteoporosis
+
+In **subclinical hypothyroidism**, treat where the TSH is above 10 mU/L on two occasions. Where the TSH sits between the upper limit of normal and 10, offer a six-month trial of levothyroxine to symptomatic people under 65 and review the effect, and otherwise monitor.`,
+        },
+        {
+          id: "thyroid_neoplasia",
+          name: "Thyroid nodules & thyroid cancer",
+          content: `## Assessing a thyroid nodule
+
+Thyroid nodules are common and the great majority are benign, so the task is to select the few that need a tissue diagnosis. The features carrying a higher risk of neoplasm are a nodule that is **solitary**, **solid**, in a **young** patient or a **male**, and **cold** on isotope scanning — that is, it takes up no tracer. Rapid growth, hardness, fixation, hoarseness from recurrent laryngeal nerve involvement, cervical lymphadenopathy and previous neck irradiation add further weight.
+
+The order of investigation is thyroid function, then imaging, then cytology. If the TSH is suppressed the nodule is likely to be a "hot", autonomously functioning adenoma, which is almost never malignant and is investigated as hyperthyroidism instead. With a normal TSH, ultrasound assesses the nodule and the neck nodes, and suspicious nodules proceed to **fine-needle aspiration cytology**.
+
+## The types of thyroid cancer
+
+| Type | Typical patient | Key features |
+|---|---|---|
+| **Papillary (75 to 85%)** | 20 to 40 years, female; associated with previous **irradiation** | The commonest type, with a **very good prognosis**. Often presents as painless cervical lymphadenopathy with no obvious clinical abnormality of the thyroid itself. Spreads to **lymph nodes** and lung. Histology shows **psammoma bodies** (foci of calcification) and empty-appearing nuclei with central clearing, the "Orphan Annie eyes". Tumour marker: thyroglobulin. Managed with surgery with or without radioiodine, plus thyroxine to suppress TSH |
+| **Follicular (10 to 20%)** | 40 to 60 years | Well differentiated but **spreads early and by the bloodstream**, to lung, bone, liver, breast and adrenals. Histology shows fairly uniform cells forming small follicles, reminiscent of normal thyroid — so the diagnosis rests on capsular or vascular invasion, which is why fine-needle aspiration cannot separate it from a follicular adenoma. Tumour marker: thyroglobulin. Managed with surgery, radioiodine and thyroxine |
+| **Medullary (5%)** | 50 to 60 years; 80% sporadic, **20% familial as part of MEN 2** | A **neuroendocrine** neoplasm of the parafollicular **C cells**, which secrete **calcitonin**. It arises from a different cell line, so it does **not** take up iodine and responds to neither radioiodine nor TSH suppression. Tumour markers: calcitonin and carcinoembryonic antigen (CEA). Histology shows sheets of dark cells with **amyloid deposition** within the tumour, formed from broken-down calcitonin. **Screen for phaeochromocytoma before operating**, then total thyroidectomy with node clearance |
+| **Anaplastic** | Elderly | Rare, and most die within a year. Presents as a rapidly enlarging, fixed, hard mass compromising the airway. Very aggressive, with early and wide metastasis locally, to nodes and by blood. Histology is undifferentiated follicular tissue, with large pleomorphic giant cells and spindle cells of sarcomatous appearance |
+| **Lymphoma** | — | A **MALToma** of the thyroid. The risk factor is **chronic Hashimoto's thyroiditis**, in which sustained lymphocyte proliferation provides the substrate. Good prognosis |
+
+After surgery for the differentiated cancers, **thyroglobulin** serves as the marker of recurrence — which only works once all normal thyroid tissue has been removed or ablated — and levothyroxine is given at a dose that **suppresses TSH**, removing the growth stimulus to any residual tumour.
+
+## Multiple endocrine neoplasia
+
+Medullary thyroid carcinoma is one arm of the multiple endocrine neoplasia (MEN) syndromes: a group of three **autosomal dominant** disorders carrying a predisposition to cancers of the endocrine system.
+
+| Syndrome | Components |
+|---|---|
+| **MEN 1** | The three Ps: **Pituitary** adenoma, **Pancreatic** endocrine tumour such as an insulinoma, and **Parathyroid** disease causing hyperparathyroidism |
+| **MEN 2A** | Two Ps and an M: **Parathyroid**, **Phaeochromocytoma** and **Medullary** thyroid carcinoma |
+| **MEN 2B** | One P and two Ms: **Phaeochromocytoma**, **Medullary** thyroid carcinoma and **Mucocutaneous neuromas**, with a marfanoid habitus |
+
+MEN 1 arises from mutation of the MEN1 tumour suppressor gene, and MEN 2A and 2B from mutations of the RET proto-oncogene. The pancreatic tumours are covered further in the *Pancreatic carcinoma, neuroendocrine tumours and MEN* topic.
+
+> High-yield: papillary is the commonest, spreads to lymph nodes, and shows psammoma bodies and Orphan Annie nuclei. Follicular spreads early by blood. Medullary arises from C cells, secretes calcitonin, is linked to MEN 2 and does not take up radioiodine. Anaplastic is aggressive and rapidly fatal. Lymphoma follows Hashimoto's thyroiditis.`,
+        },
+        {
+          id: "adrenal_insufficiency",
+          name: "Adrenal insufficiency & Addisonian crisis",
+          content: `## Adrenal insufficiency
+
+The adrenal cortex makes three classes of steroid, and which of them is lost depends on where the problem lies. **Primary** adrenal insufficiency — Addison's disease — is destruction of the gland itself, so both **cortisol and aldosterone** fail. **Secondary** adrenal insufficiency is a lack of ACTH, from pituitary disease or, far more often, from suppression of the axis by exogenous corticosteroids; here aldosterone is preserved, because it is driven by the renin-angiotensin system rather than by ACTH.
+
+## Causes
+
+| Cause | Note |
+|---|---|
+| **Autoimmune adrenalitis** | The commonest cause in Europe, often alongside other autoimmune disease |
+| **Tuberculosis** | The commonest cause worldwide |
+| **Metastases** | Tumour deposits in the adrenals, especially from lung and breast |
+| **Adrenal haemorrhage** | The Waterhouse-Friderichsen syndrome of meningococcal sepsis |
+| **Amyloidosis** | Infiltration of the cortex |
+| **Sudden steroid withdrawal** | Abrupt cessation of long-term corticosteroids in an already suppressed axis |
+
+## Clinical and biochemical picture
+
+The onset is insidious and the symptoms unhelpfully vague — **lethargy**, weakness, anorexia, weight loss, nausea, abdominal pain, and **depression or even psychosis** — which is why the diagnosis is so often missed until the patient decompensates. The more specific signs are **postural hypotension** and **skin pigmentation** of the palmar creases, buccal mucosa and scars. The pigmentation belongs to **primary** disease alone: the high ACTH is cleaved from a precursor shared with melanocyte-stimulating hormone, so it stimulates melanocytes directly. Salt craving is characteristic.
+
+The classic biochemistry is a **low sodium with a high potassium** — the mirror image of Conn's syndrome — together with **hypoglycaemia**, since cortisol is a counter-regulatory hormone, plus a mild metabolic acidosis, a raised urea, and sometimes hypercalcaemia and eosinophilia.
+
+## Investigation
+
+The **short Synacthen test** is diagnostic: a baseline cortisol is taken, 250 micrograms of synthetic ACTH (tetracosactide) is given, and cortisol is measured again at 30 minutes. Failure to rise adequately confirms adrenal insufficiency. Measuring **ACTH** then separates the two levels — it is **high in primary** disease, because the pituitary is shouting at a gland that cannot answer, and **low or inappropriately normal in secondary** disease. Adrenal autoantibodies against 21-hydroxylase support an autoimmune cause, and imaging is used where an infiltrative or infective cause is suspected.
+
+## Treatment
+
+Replacement is with **hydrocortisone**, in divided doses that mimic the diurnal rhythm with the largest dose on waking, plus **fludrocortisone** where the lesion is a primary adrenal one and aldosterone is therefore also missing. Secondary insufficiency needs hydrocortisone alone.
+
+Education matters as much as the prescription:
+
+- **Sick day rules** — double the hydrocortisone dose during febrile illness, and switch to the intramuscular route if vomiting
+- Carry a **steroid card** and an emergency alert bracelet, and keep a hydrocortisone injection kit at home
+- **Never stop the steroid abruptly**, and increase the dose to cover surgery or other major stress
+
+## Addisonian crisis
+
+An untreated or undertreated patient can decompensate into an **Addisonian crisis**: shock with hypotension unresponsive to fluid alone, vomiting, abdominal pain, confusion and profound hypoglycaemia, usually precipitated by infection, surgery or missed doses.
+
+Treat immediately, without waiting for confirmatory tests: **intravenous hydrocortisone 100 mg** followed by regular doses, **rapid intravenous 0.9% sodium chloride** to restore the circulation, intravenous glucose for the hypoglycaemia, and treatment of the precipitant. Fludrocortisone is not needed while high-dose hydrocortisone is running, because at that dose hydrocortisone has enough mineralocorticoid activity of its own. A baseline cortisol and ACTH can be taken before the first dose, provided doing so causes no delay.`,
+        },
+        {
+          id: "cushings_syndrome",
+          name: "Cushing's syndrome",
+          content: `## Cushing's syndrome
+
+Cushing's syndrome is the clinical state of chronic glucocorticoid excess, whatever its source. Cushing's **disease** is one specific cause of it — a pituitary adenoma secreting ACTH — and the two terms are not interchangeable.
+
+## Causes
+
+The mnemonic **CAPE** covers them: **C**ushing's disease, **A**drenal adenoma, **P**araneoplastic ectopic ACTH, and **E**xogenous steroids. Overall, by a wide margin, the commonest cause is the last of these.
+
+| Group | Cause | Share of endogenous cases |
+|---|---|---|
+| **ACTH dependent**, with a raised ACTH | **Pituitary adenoma — Cushing's disease** | About 85% |
+| **ACTH dependent**, with a raised ACTH | **Ectopic ACTH-producing tumour**, classically **small cell lung cancer** or a carcinoid tumour | About 5% |
+| **ACTH independent**, with a suppressed ACTH | **Adrenal adenoma or carcinoma**, or adrenal nodular hyperplasia | About 10% |
+| **ACTH independent**, with a suppressed ACTH | **Iatrogenic corticosteroid use** | The commonest cause of all in practice |
+
+## Features
+
+The appearance is characteristic: a **moon face**, a **buffalo hump** of interscapular fat, **central obesity** with wasted limbs, and purple **striae**. There is thin skin with easy **bruising**, **acne**, **hirsutism**, **proximal myopathy** with difficulty rising from a chair or climbing stairs, **hypertension**, **diabetes** or impaired glucose tolerance, osteoporosis, poor wound healing, and mood disturbance ranging from euphoria to depression and frank psychosis.
+
+Ectopic ACTH from a small cell lung cancer behaves quite differently. It is so rapid and so severe that the classic habitus has no time to develop, and it presents instead with profound **hypokalaemic alkalosis**, weakness, pigmentation and hyperglycaemia in a rapidly deteriorating patient.
+
+## Confirming the diagnosis
+
+The first step is to establish that cortisol really is in excess and no longer under normal control — after excluding exogenous steroids with a careful drug history that includes inhaled, topical and injected preparations.
+
+**First line, to confirm the syndrome**
+
+- The **overnight dexamethasone suppression test** — 1 mg of dexamethasone at midnight should suppress the 9 am cortisol, and a failure to suppress is a positive result
+- **24-hour urinary free cortisol**, on two collections
+- Late-night salivary cortisol, which detects loss of the normal diurnal fall
+
+A positive first-line test suggests true Cushing's syndrome and takes you on to finding the source.
+
+**Second line, to find the source**
+
+Measure **ACTH**. A suppressed ACTH means an adrenal cause, and the adrenals are imaged. A normal or raised ACTH means the source is either the pituitary or an ectopic tumour, and those two must be separated.
+
+The traditional method was the **low-dose (0.5 mg) and high-dose (2 mg) dexamethasone suppression test**. Low-dose dexamethasone fails to suppress cortisol in all forms of Cushing's syndrome, whereas high-dose dexamethasone **does** suppress it in pituitary disease, because a pituitary adenoma retains some negative feedback while an ectopic tumour has none. This test is no longer recommended, because roughly one ectopic source in five also suppresses with high-dose dexamethasone, producing a false positive for pituitary disease.
+
+**Inferior petrosal sinus sampling** has replaced it as the definitive discriminator: ACTH is measured simultaneously in the venous drainage of the pituitary and in the periphery, and a central-to-peripheral gradient localises the source to the pituitary.
+
+**Third line, imaging**
+
+Magnetic resonance imaging of the pituitary for suspected Cushing's disease, and computed tomography or positron emission tomography of the chest and abdomen to hunt for an ectopic ACTH source.
+
+## Treatment
+
+Treatment is aimed at the underlying disease and is usually **surgical removal of the lesion** — transsphenoidal resection of a pituitary adenoma, adrenalectomy for an adrenal tumour, and resection of an ectopic source where that is feasible. Where surgery must be delayed or is impossible, **metyrapone or ketoconazole** can block steroid synthesis in the interim. Iatrogenic Cushing's is managed by tapering the steroid — never by stopping it abruptly, because the axis is suppressed.
+
+> High-yield: confirm the syndrome with an overnight dexamethasone suppression test or 24-hour urinary free cortisol, then use the ACTH to split it — suppressed means adrenal, raised means pituitary or ectopic. Sudden, severe hypokalaemic alkalosis with pigmentation and no Cushingoid habitus is ectopic ACTH from a small cell lung cancer until proven otherwise.`,
+        },
+        {
+          id: "conn_phaeochromocytoma",
+          name: "Primary hyperaldosteronism & phaeochromocytoma",
+          content: `## Two adrenal causes of secondary hypertension
+
+Both of these are surgically correctable causes of high blood pressure, and both are worth hunting for in a young patient with hypertension, in hypertension resistant to three drugs, or where the potassium is unexpectedly low.
+
+## Primary hyperaldosteronism (Conn's syndrome)
+
+Autonomous aldosterone secretion drives sodium and water retention with loss of potassium and hydrogen ions. The result is **hypertension that is difficult to control**, a **high or high-normal sodium**, a **low potassium** and a metabolic alkalosis, characteristically in a **younger patient**. Many are otherwise asymptomatic; the hypokalaemia may cause muscle weakness, cramps, polyuria and polydipsia.
+
+Two causes account for nearly all of it — **bilateral adrenal hyperplasia**, which is the commoner, and a unilateral **aldosterone-producing adrenal adenoma**, the classical Conn's adenoma. The distinction is the whole point of the workup, because one is treated with drugs and the other with an operation.
+
+**Investigation**
+
+- The screening test is the **aldosterone-to-renin ratio**, which is **raised**: aldosterone is high while renin is suppressed, because the volume expansion switches the renin-angiotensin system off. In *secondary* hyperaldosteronism — renal artery stenosis, heart failure, cirrhosis — both are high
+- Correct hypokalaemia and stop interfering drugs first, since spironolactone, beta-blockers and angiotensin-converting enzyme inhibitors all distort the ratio
+- Confirm with a saline suppression test, in which aldosterone fails to suppress
+- Then localise, with **computed tomography of the adrenals** followed by **adrenal vein sampling** to prove that the excess really is coming from one side before anyone operates
+
+**Treatment**
+
+- **Bilateral hyperplasia** is treated medically with an **aldosterone antagonist** — spironolactone, or eplerenone where the gynaecomastia and menstrual disturbance caused by spironolactone are a problem — or with the potassium-sparing diuretic amiloride
+- A **unilateral adenoma** is treated by laparoscopic **adrenalectomy**, which cures or substantially improves the hypertension in most patients
+- Any adrenal mass over 4 cm raises the possibility of adrenocortical carcinoma and is generally removed regardless of its hormonal activity
+
+## Phaeochromocytoma
+
+A phaeochromocytoma is a catecholamine-secreting tumour of the **chromaffin cells of the adrenal medulla**. Secretion is episodic, and that is what gives the condition its characteristic paroxysmal presentation.
+
+The classic triad is **headache, hypertension and hyperhidrosis** — that is, sweating — typically in paroxysms lasting minutes, with palpitations, pallor, tremor, anxiety and a sense of impending doom, separated by periods of feeling entirely normal. The hypertension may be sustained or purely episodic. Untreated, it causes **arrhythmias**, hypertensive crisis, cardiomyopathy, stroke and **death**.
+
+The condition is often summarised by the **rule of tens**: roughly 10% are bilateral, 10% malignant and 10% extra-adrenal, the last being a paraganglioma, most often at the organ of Zuckerkandl. A substantial minority are **inherited** — as part of **MEN 2A and 2B**, von Hippel-Lindau disease or neurofibromatosis type 1 — so a phaeochromocytoma should always prompt consideration of genetic testing.
+
+**Investigation** is by measurement of **plasma metanephrines** or **24-hour urinary metanephrines**. These are the breakdown products of adrenaline and noradrenaline, and are more reliable than measuring the catecholamines themselves precisely because secretion is intermittent; urinary vanillylmandelic acid is an older and less sensitive alternative. Computed tomography or magnetic resonance imaging of the abdomen then localises the tumour, with MIBG scintigraphy for extra-adrenal or metastatic disease.
+
+**Treatment is surgical, and the sequence is the examinable point. Remember ABC:**
+
+- **A — Alpha blockade first**, with phenoxybenzamine or doxazosin, together with liberal fluid and salt to fill the vasodilated circulation
+- **B — Beta blockade second**, once alpha blockade is established, to control the tachycardia
+- **C — Cut it out**: laparoscopic adrenalectomy, once the blood pressure is well controlled
+
+Giving a **beta-blocker first is dangerous**. Blocking the vasodilating beta-2 receptors leaves alpha-mediated vasoconstriction unopposed, and can precipitate a hypertensive crisis.
+
+> High-yield: hypertension with a **low** potassium suggests Conn's syndrome; hypertension with **paroxysmal** headache and sweating suggests a phaeochromocytoma; hypotension with a **high** potassium suggests Addison's disease. In phaeochromocytoma, alpha blockade always comes before beta blockade.`,
+        },
+        {
+          id: "calcium_homeostasis",
+          name: "Calcium, vitamin D & hypercalcaemia",
+          content: `## Calcium, vitamin D and hypercalcaemia
+
+Calcium balance is controlled by two hormones — parathyroid hormone and the active form of vitamin D — acting on the gut, kidneys and bone. Once their actions are clear, the biochemistry of the calcium disorders and the approach to hypercalcaemia both fall into place.
+
+## Calcium in the blood
+
+The normal plasma calcium is about 2.2 to 2.6 mmol/L, and it travels in three forms: roughly **45% is ionised** (free and biologically active), about **50% is bound to albumin**, and the remaining 5% is complexed with globulins and other ions including citrate and bicarbonate. Because so much is protein-bound, the laboratory reports a **corrected calcium** that adjusts the measured value for the albumin level — otherwise a low albumin would mimic hypocalcaemia.
+
+## The two hormones that control calcium
+
+| Hormone | Source and trigger | Main actions |
+|---|---|---|
+| Parathyroid hormone (PTH) | Parathyroid glands, released when calcium falls | Mobilises calcium from bone by **activating osteoclasts**, increases renal calcium reabsorption, increases renal phosphate excretion, and increases tubular **1-alpha hydroxylation** of vitamin D |
+| Calcitriol — active vitamin D | Final activation in the kidney | Increases absorption of both calcium and phosphate from the gut, and supports bone remodelling |
+
+The key contrast to memorise is that **PTH raises calcium but lowers phosphate** (it makes the kidney waste phosphate), whereas **active vitamin D raises both calcium and phosphate**.
+
+## Activating vitamin D
+
+Vitamin D needs two hydroxylation steps before it can work:
+
+- It enters the body as **cholecalciferol (vitamin D3)**, made in the skin under ultraviolet light or taken in the diet, or as **ergocalciferol (vitamin D2)** from the diet.
+- The **liver** adds the first hydroxyl group to make **25-hydroxyvitamin D (calcidiol)** — the stored form, and the one measured to assess a patient's vitamin D status.
+- The **kidney** adds the second to make **1,25-dihydroxyvitamin D (calcitriol)**, the active hormone. This final step is stimulated by PTH (and by a low phosphate).
+
+A lack of vitamin D therefore lowers calcium and phosphate, drives a compensatory rise in PTH, and impairs bone mineralisation — causing **osteomalacia** in adults and **rickets** in children.
+
+## Causes of the parathyroid disorders
+
+**Primary hyperparathyroidism** is an intrinsic problem with the gland itself driving PTH up:
+
+- **80% a single parathyroid adenoma**
+- **15% hyperplasia or multiple adenomas**
+- **0.5% parathyroid carcinoma** — and most carcinomas are in fact non-functional
+- As part of **MEN 1** (typically an adenoma) or **MEN 2** (typically hyperplasia)
+
+**Secondary hyperparathyroidism** is an appropriate PTH rise driven by pathology *outside* the gland — **chronic kidney disease**, **vitamin D deficiency** or a **malabsorption syndrome**.
+
+**Tertiary hyperparathyroidism** is what happens when prolonged secondary stimulation makes the glands autonomous, so PTH secretion is no longer regulated. It is classically unmasked by **kidney transplantation**, when the renal driver is removed but the hyperplastic glands carry on secreting.
+
+**Hypoparathyroidism** is most often iatrogenic:
+
+- **Post-surgical** — the commonest cause, typically after thyroid or parathyroid surgery
+- Post-radiation
+- Autoimmune
+- **Iron deposition** in thalassaemia, from repeated transfusion
+- **Hypomagnesaemia or hypermagnesaemia** — magnesium is required both for PTH release and for PTH to act
+- **Pseudohypoparathyroidism** — resistance to PTH rather than a lack of it
+- **DiGeorge syndrome** — failure of parathyroid development
+
+**Albright hereditary osteodystrophy** is the phenotype of hereditary pseudohypoparathyroidism. Because the problem is resistance to PTH, the biochemistry is a **low calcium with a HIGH PTH** — the opposite of true hypoparathyroidism — and it comes with a **round face** and characteristically **shortened fourth and fifth metacarpals**.
+
+## Reading the biochemistry
+
+The pattern of calcium, phosphate, PTH, alkaline phosphatase (ALP) and vitamin D pins down the disorder — one of the highest-yield tables in endocrinology:
+
+| Condition | Calcium | Phosphate | PTH | ALP | Vitamin D |
+|---|---|---|---|---|---|
+| Primary hyperparathyroidism | High | Low | High or inappropriately normal | Normal or high | Normal |
+| Secondary hyperparathyroidism | Low | High (in CKD) | High | High | Low or normal |
+| Tertiary hyperparathyroidism | High or normal | Variable | High | Normal or high | Low or normal |
+| Hypoparathyroidism | Low | High | Low | Low or normal | Normal |
+| Pseudohypoparathyroidism | Low | High | **High** | Normal | Normal |
+| Osteomalacia / rickets | Low | Low | High | High | Low |
+| Paget's disease of bone | Normal | Normal | Normal | High | Normal |
+| Osteoporosis | Normal | Normal | Normal | Normal | Normal |
+
+A few anchors: **primary hyperparathyroidism** gives a high calcium with a low phosphate and a PTH that is high or inappropriately normal; **secondary hyperparathyroidism** is the appropriate PTH rise to a low calcium, classically from chronic kidney disease (CKD) or vitamin D deficiency; **tertiary** is when a chronically stimulated gland becomes autonomous. Note that **osteoporosis has completely normal biochemistry** — a useful negative — and that **pseudohypoparathyroidism is separated from hypoparathyroidism by the PTH**, which is high rather than low.
+
+## Hypercalcaemia
+
+Hypercalcaemia is a corrected calcium of 2.6 mmol/L or more. Two causes account for the great majority:
+
+- **Primary hyperparathyroidism** — the commonest cause in the community, often an incidental finding in a well outpatient.
+- **Malignancy** — the commonest cause in hospital inpatients, through bony metastases, myeloma, or secretion of **parathyroid hormone-related peptide (PTHrP)**, classically by squamous cell carcinomas.
+
+Other causes include dehydration, granulomatous disease such as **sarcoidosis** (where macrophages produce extra active vitamin D), thyrotoxicosis, the milk-alkali syndrome, vitamin D toxicity, thiazide diuretics and prolonged immobilisation.
+
+The symptoms are remembered as **stones, bones, groans, moans and thrones**: renal stones, bone pain, psychiatric features such as depression and confusion, abdominal pain and constipation, and polyuria — together with thirst and muscle weakness.
+
+## Working out the cause from the routine bloods
+
+The pivotal investigation is the **PTH level**: a **high or inappropriately normal PTH** means the parathyroids are the driver, while a **suppressed PTH** points to a non-parathyroid cause, above all malignancy. Before that result is back, the routine biochemistry already narrows it down considerably:
+
+- **Urea high and albumin high** — **dehydration**, the commonest benign explanation.
+- **Urea normal and albumin high** — a **cuffed specimen**, where a prolonged tourniquet has artefactually concentrated the sample. Repeat it before doing anything else.
+- **Albumin low or normal, with a LOW phosphate** — **primary or tertiary hyperparathyroidism**, since PTH wastes phosphate. Confirm with a raised PTH.
+- **Albumin low or normal, with a HIGH phosphate and a normal ALP** — **myeloma, excess vitamin D or sarcoidosis**.
+- **Albumin low or normal, with a HIGH phosphate and a RAISED ALP** — high bone turnover, so **bone metastases** or **thyrotoxicosis**.
+
+Management of significant hypercalcaemia is **aggressive rehydration with intravenous 0.9% saline** first, followed by an **intravenous bisphosphonate** (such as zoledronate) for malignant or severe disease. Treat the underlying cause — parathyroidectomy for primary hyperparathyroidism, corticosteroids for sarcoidosis or vitamin D toxicity — and stop contributing drugs such as thiazides.
+
+> High-yield: PTH is the single most useful test in hypercalcaemia. A raised or inappropriately normal PTH means primary hyperparathyroidism, while a suppressed PTH means look for malignancy — and together these two account for around 90% of all hypercalcaemia. Remember PTH raises calcium but lowers phosphate, whereas active vitamin D raises both. Hypocalcaemia is covered in the next topic.`,
+        },
+        {
+          id: "hypocalcaemia",
+          name: "Hypocalcaemia",
+          content: `## Hypocalcaemia
+
+Where hypercalcaemia is dominated by two causes, hypocalcaemia is best approached through the **phosphate**, which splits the causes cleanly in two, and then through the PTH.
+
+## Symptoms
+
+Low ionised calcium raises the excitability of nerve and muscle, so the features are those of neuromuscular irritability:
+
+- **Perioral paraesthesia** — often the earliest symptom
+- **Carpopedal spasm**, and tetany in more severe cases
+- Feeling **anxious or irritable**, with impaired orientation
+- **Increased smooth muscle tone**, which may cause wheeze, colic or dysphagia
+- **Trousseau's sign** — carpal spasm when a blood pressure cuff is inflated above systolic pressure for a few minutes
+- **Chvostek's sign** — twitching of the facial muscles when the facial nerve is tapped in front of the ear
+- Dermatitis, and rarely **impetigo herpetiformis**
+- A **prolonged QT interval**, which is the reason severe hypocalcaemia is a cardiac emergency
+
+## Causes, split by the phosphate
+
+| Hypocalcaemia with a HIGH phosphate | Hypocalcaemia with a NORMAL or LOW phosphate |
+|---|---|
+| **Chronic kidney disease** — the failing kidney both retains phosphate and cannot make active vitamin D | **Osteomalacia** (vitamin D deficiency) |
+| **Hypoparathyroidism**, including after thyroid surgery | **Acute pancreatitis** — calcium is consumed forming calcium soaps in fat necrosis |
+| **Pseudohypoparathyroidism** — resistance to PTH | **Overhydration**, by dilution |
+| **Artefact**, above all hypoalbuminaemia — always check the corrected calcium | **Respiratory alkalosis** — the total calcium is normal but alkalosis drives calcium onto albumin, lowering the **ionised** fraction |
+
+The respiratory alkalosis mechanism is worth holding on to, because it explains why a hyperventilating patient develops perioral tingling and carpopedal spasm with an entirely normal total calcium.
+
+## Treatment
+
+**If symptomatic, or the calcium is below 1.875 mmol/L**, give **parenteral calcium**: intravenous **10% calcium gluconate**, with cardiac monitoring because of the arrhythmia risk, followed by an infusion if needed.
+
+**If asymptomatic, chronic or mild**, oral calcium supplementation is enough. Oral calcium is absorbed better **away from meals**, so it should not be taken with food.
+
+**If the PTH or vitamin D is low**, replace vitamin D as well, and the preparation depends on whether the kidney can still activate it:
+
+- **Chronic kidney disease** — use **alfacalcidol**, which is already 1-alpha hydroxylated and so bypasses the failing kidney
+- **Everyone else, including those with liver disease** — **ergocalciferol (vitamin D2)** or **cholecalciferol (vitamin D3)**
+
+Two further points change management in practice. **Magnesium must be checked and corrected**, because hypocalcaemia caused by hypomagnesaemia is refractory to calcium until the magnesium is replaced. And in **hypoparathyroidism** the aim is a low-normal calcium rather than a fully normal one, since PTH is absent to drive renal calcium reabsorption and pushing the level up causes hypercalciuria and nephrocalcinosis.
+
+> High-yield: use the phosphate to split the causes — high phosphate points to chronic kidney disease or a parathyroid problem, normal or low phosphate to vitamin D deficiency, pancreatitis or alkalosis. Trousseau's and Chvostek's signs, a long QT and perioral paraesthesia are the clinical markers, and refractory hypocalcaemia is hypomagnesaemia until proven otherwise.`,
+        },
+        {
+          id: "diabetes_overview",
+          name: "Diabetes mellitus",
+          content: `## Diabetes mellitus
+
+Diabetes is a group of conditions causing persistent hyperglycaemia. The two common forms differ in mechanism.
+
+| Feature | Type 1 | Type 2 |
+|---|---|---|
+| Mechanism | **Autoimmune destruction of pancreatic beta cells** by CD4 and CD8 T lymphocytes | **Insulin resistance** with a relative deficiency, strongly linked to obesity |
+| Typical onset | Younger, lean | Older, often overweight |
+| Ketosis-prone | Yes — may present in diabetic ketoacidosis | No (usually) |
+| Insulin dependent | Yes | Not initially |
+| First-line treatment | Insulin | Lifestyle, then metformin with an SGLT2 inhibitor |
+
+Both produce the same cardinal symptoms, and each follows directly from the high glucose: **polyuria** from the osmotic diuresis once glucose exceeds the renal threshold, **polydipsia** from the resulting rise in plasma osmolality, and **recurrent infections**, because hyperglycaemia impairs immune function. Blurred vision, unexplained weight loss and tiredness complete the picture.
+
+## Diagnosis
+
+Any one of the following is diagnostic **in a symptomatic patient**:
+
+- **HbA1c of 48 mmol/mol or more**
+- **Fasting plasma glucose of 7.0 mmol/L or more**
+- **Random plasma glucose of 11.1 mmol/L or more**
+- **Two-hour glucose of 11.1 mmol/L or more** on an oral glucose tolerance test
+
+If the patient is **asymptomatic**, the abnormal result must be repeated — preferably using the same test — before the diagnosis is made.
+
+Two intermediate states sit below the diagnostic thresholds and identify people at high risk of progressing:
+
+- **Impaired glucose tolerance** — a two-hour oral glucose tolerance test value of **7.8 to 11.0 mmol/L**
+- **Impaired fasting glucose** — a fasting glucose of **6.1 to 6.9 mmol/L**
+
+## Other causes of hyperglycaemia
+
+Hyperglycaemia is not always type 1 or type 2 diabetes, and the differential matters because several of these are reversible:
+
+- **Gestational diabetes**
+- **Endocrine disease** — **Cushing's syndrome** and **acromegaly**, both of which produce counter-regulatory hormone excess
+- **Drugs**, above all **corticosteroids**
+- **Pancreatic disease**, such as pancreatitis or pancreatectomy, which destroys the islets
+- **Acute stress** — the transient hyperglycaemia seen after a stroke or myocardial infarction
+
+## The metabolic syndrome
+
+Type 2 diabetes usually sits within a cluster of findings that together raise the risk of ischaemic heart disease:
+
+- **Fasting hyperglycaemia** above 6 mmol/L
+- **Blood pressure** above 140/90 mmHg
+- **Central obesity** — a waist over 94 cm in men or 80 cm in women
+- **Dyslipidaemia** — HDL cholesterol below 1 mmol/L and triglycerides above 2 mmol/L
+- **Microalbuminuria**
+
+## Type 2 treatment escalation
+
+Start with lifestyle change. Current NICE guidance makes **dual therapy first-line for everyone** — modified-release metformin plus a **sodium-glucose co-transporter 2 (SGLT2) inhibitor** — with triple therapy first-line where there is established atherosclerotic cardiovascular disease. Targets are individualised, with particular care to avoid hypoglycaemia in frail or older people.
+
+## Complications to screen for
+
+Diabetes damages both large and small vessels, and the complications divide neatly along that line:
+
+| Macrovascular | Microvascular |
+|---|---|
+| **Cardiac** — ischaemic heart disease | **Renal** — diabetic nephropathy, with glomerular damage |
+| **Peripheral vascular disease** — claudication, colour and temperature change, poorly healing ulcers | **Neuropathic** — peripheral neuropathy, causing sensory loss and neuropathic foot ulcers |
+| **Cerebral** — stroke | **Ocular** — diabetic retinopathy |
+
+Annual review therefore covers the eyes (retinopathy screening), kidneys (urine albumin-to-creatinine ratio and estimated glomerular filtration rate), feet (sensation and circulation) and cardiovascular risk. Note that the **foot ulcer sits on both sides of the table**: it arises from neuropathy but heals badly because of the arterial disease, which is why diabetic foot disease is so difficult to treat.`,
+        },
+        {
+          id: "diabetic_emergencies",
+          name: "Diabetic ketoacidosis & hyperosmolar hyperglycaemic state",
+          content: `## The two hyperglycaemic emergencies
+
+Diabetic ketoacidosis and the hyperosmolar hyperglycaemic state are the two ends of a spectrum. In **ketoacidosis** there is essentially no insulin, so unrestrained lipolysis generates ketones and an acidosis. In the **hyperosmolar state** there is enough insulin to suppress ketogenesis but not enough to control glucose, so glucose climbs far higher over a much longer period and the problem is profound dehydration rather than acidosis.
+
+| | Diabetic ketoacidosis | Hyperosmolar hyperglycaemic state |
+|---|---|---|
+| Typical patient | Type 1 diabetes | Type 2 diabetes, often elderly |
+| Onset | **Rapid**, over hours | **Slow**, over days |
+| pH | **Below 7.3** | Above 7.3 |
+| Glucose | Above 11 mmol/L | **Above 30 mmol/L** |
+| Ketones | **Above 3 mmol/L**, or 2+ on urine dipstick | Minimal |
+| Osmolality | Variable | **Above 320 mOsm/kg** |
+
+## Diabetic ketoacidosis
+
+The diagnosis requires all three of a **pH below 7.3**, a **glucose above 11 mmol/L** and **ketones above 3 mmol/L** (or 2+ in the urine). It presents with confusion, **Kussmaul breathing** (deep sighing respiration compensating for the acidosis), abdominal pain, nausea and vomiting. The usual precipitants are infection, surgery, trauma and missed insulin doses.
+
+Management follows an A to E approach with early senior help:
+
+- **Fluids first, and insulin only after fluids** — dehydration is what kills. If the systolic blood pressure is below 90 mmHg give a 500 mL bolus over 15 minutes as resuscitation fluid; otherwise give 1 litre of 0.9% sodium chloride over an hour.
+- **Potassium**: add potassium chloride to the second litre if the potassium is 3.5 to 5.5 mmol/L. Insulin drives potassium into cells, so a patient who starts hypokalaemic will become dangerously so — **do not start insulin if the potassium is below 3.5 mmol/L** until it has been replaced. Outside a critical care setting you cannot give more than 10 mmol of potassium per hour.
+- **Insulin** at a **fixed rate of 0.1 units/kg/hour**, which is what switches off ketogenesis. Once the glucose falls below 14 mmol/L, add 10% glucose **and reduce the insulin to 0.05 units/kg/hour**, so that ketone clearance continues without causing hypoglycaemia.
+- **Monitoring**: hourly glucose and potassium, and catheterise aiming for a urine output above 0.5 mL/kg/hour.
+- **Resolution** is defined as **ketones below 0.6 mmol/L and a pH above 7.3**. Do not stop the infusion until the patient is eating and their subcutaneous insulin has been given and had time to take effect.
+
+Two traps are worth naming. Long-acting background insulin should be **continued** throughout. And **euglycaemic ketoacidosis** — full-blown ketoacidosis with a near-normal glucose — occurs in patients taking SGLT2 inhibitors, so a normal glucose does not exclude the diagnosis if ketones are raised.
+
+## Hyperosmolar hyperglycaemic state
+
+The diagnosis is a **pH above 7.3** with an **osmolality above 320 mOsm/kg** and a **glucose above 30 mmol/L**. It develops over several days, so patients arrive acutely unwell with confusion and marked clinical dehydration, and the fluid deficit is often 100 to 220 mL/kg. Mortality is considerably higher than in ketoacidosis.
+
+Management again begins with A to E assessment and **0.9% sodium chloride**, which alone will bring the glucose down substantially by restoring the circulation and renal perfusion:
+
+- **Insulin is not started routinely.** It is only added if there is significant ketonaemia (above 1 mmol/L), and then at the **lower fixed rate of 0.05 units/kg/hour** — half the ketoacidosis rate.
+- Correction must be **slow**. Aim for a fall in osmolality of only **3 to 8 mOsm/kg per hour**; correcting faster risks cerebral oedema and central pontine myelinolysis. Expect the sodium to **rise** initially as glucose falls, which is normal and not a reason to accelerate.
+- Full correction takes 24 to 72 hours.
+- Monitor with serial urea and electrolytes and glucose, and give **prophylactic anticoagulation**, since the hyperviscosity carries a high thrombotic risk.
+
+> High-yield: in ketoacidosis, fluids before insulin, potassium in the second bag, and 0.1 units/kg/hour. In the hyperosmolar state, fluids alone are usually enough, insulin is halved to 0.05 units/kg/hour and only given for ketonaemia, and the osmolality must not fall faster than 3 to 8 mOsm/kg/hour.`,
+        },
+        {
+          id: "hypoglycaemia",
+          name: "Hypoglycaemia",
+          content: `## Hypoglycaemia
+
+Hypoglycaemia is classically defined by **Whipple's triad**: a low plasma glucose, symptoms consistent with hypoglycaemia, and relief of those symptoms when the glucose is corrected. The symptoms come in two waves — first **autonomic** (sweating, tremor, palpitations, hunger, anxiety) as counter-regulatory hormones are released, then **neuroglycopenic** (confusion, drowsiness, seizures, focal neurological signs and coma) as the brain runs out of substrate.
+
+## Classifying the cause
+
+The useful framework asks two questions in order: **is the insulin high or low?** and, if it is low, **are ketones present?**
+
+**Hyperinsulinaemic hypoglycaemia** — insulin is inappropriately high:
+
+- **Insulin overdose**, which is the commonest cause of all
+- **Sulfonylurea excess**
+- **Insulinoma**
+
+**Hypoinsulinaemic hypoglycaemia with ketones present** — insulin is low, so fat is being broken down normally and ketones appear as the alternative fuel:
+
+- **An alcohol binge without food** — alcohol blocks gluconeogenesis
+- **Pituitary insufficiency**
+- **Addison's disease**
+- **Liver failure**
+
+**Hypoinsulinaemic hypoglycaemia with ketones absent** — insulin is low but ketogenesis is *also* suppressed, which is the odd combination that points to something insulin-like acting on the receptor:
+
+- **Non-pancreatic neoplasms**, classically **fibrosarcomas and fibromas**
+- **Fatty acid oxidation disorders**, such as MCAD deficiency, in which fat cannot be converted to ketones at all
+
+## Separating insulinoma from exogenous insulin
+
+This is the highest-yield distinction, and it turns on **C-peptide**. Endogenous insulin is made as proinsulin and cleaved into insulin *and* C-peptide in equal amounts, whereas manufactured insulin contains no C-peptide.
+
+| Finding | Insulinoma | Injected insulin | Sulfonylurea |
+|---|---|---|---|
+| Insulin | High | High | High |
+| **C-peptide** | **High** | **Low or absent** | **High** |
+| Sulfonylurea screen | Negative | Negative | **Positive** |
+
+So a high insulin with a **low C-peptide** means insulin has been injected — whether through poor understanding of the regimen, an unsuitable delivery method (for example someone unable to read the units on a pen or titrate the dose), or deliberate misuse, which raises safeguarding and psychiatric concerns. A high insulin with a **high C-peptide** is endogenous, and an insulinoma can only be diagnosed once a **sulfonylurea screen is negative**. Quinine and pentamidine (used for toxoplasmosis, *Pneumocystis* pneumonia and leishmaniasis) also stimulate endogenous insulin release.
+
+## Non-islet cell tumour hypoglycaemia
+
+A distinctive paraneoplastic syndrome in which a large mesenchymal or epithelial tumour secretes **"big IGF-2"** — an incompletely processed form of insulin-like growth factor 2 that binds the IGF-1 and insulin receptors. The biochemistry is characteristic and everything is **low**: glucose, insulin, C-peptide, free fatty acids and ketones. The suppressed fatty acids and ketones are what separate it from the other hypoinsulinaemic causes.
+
+## Hypoglycaemia in the newborn
+
+Neonates are a special case, because the normal response to fasting is not yet mature. Expect **high free fatty acids and detectable ketones** in a healthy neonate who becomes hypoglycaemic. The important risk groups are **prematurity**, **intrauterine growth restriction**, significant comorbidity, and an underlying **inherited metabolic disorder** — and the absence of ketones in a hypoglycaemic baby is the finding that should prompt an urgent metabolic workup.
+
+## Other precipitants
+
+In adults with low insulin, the everyday triggers to remember are **fasting**, **strenuous exercise**, **critical illness**, **endocrine deficiency** (hypopituitarism, adrenal failure), **liver failure** and **anorexia nervosa**.
+
+> High-yield: take the "hypoglycaemia screen" **before** giving glucose, since the values are uninterpretable afterwards — glucose, insulin, C-peptide, ketones, free fatty acids, cortisol, growth hormone and a sulfonylurea screen. Low C-peptide with high insulin means exogenous insulin; high C-peptide means insulinoma or a sulfonylurea; everything low including ketones means a non-islet cell tumour.`,
+        },
+        {
+          id: "lipid_disorders",
+          name: "Lipoprotein metabolism & the dyslipidaemias",
+          content: `## Lipoprotein metabolism
+
+Lipids are insoluble in plasma, so they travel packaged in **lipoproteins** — a lipid core wrapped in phospholipid and apolipoproteins, the latter acting as the address labels that direct each particle to its receptor.
+
+The particles are named by density, which rises as the proportion of protein rises and that of triglyceride falls. In order of **increasing density**:
+
+- **Chylomicrons** — the largest and least dense, carrying dietary triglyceride from the gut
+- **Very low density lipoprotein (VLDL)** — carries triglyceride made by the liver
+- **Intermediate density lipoprotein (IDL)** — the remnant left as VLDL is delipidated
+- **Low density lipoprotein (LDL)** — the end product, cholesterol-rich, and the particle that drives atherosclerosis
+- **High density lipoprotein (HDL)** — the smallest and densest, which carries cholesterol *back* to the liver in reverse cholesterol transport
+
+Two further players are worth knowing by name. **PCSK9** binds the LDL receptor and promotes its degradation, so a **gain-of-function mutation in PCSK9 raises LDL** by removing the receptors that clear it — which is exactly why blocking PCSK9 with a monoclonal antibody such as **evolocumab** is an effective LDL-lowering therapy. **Lipoprotein(a)** is an independent cardiovascular risk factor that is largely genetically determined and barely responds to statins; **nicotinic acid** lowers it.
+
+## The primary dyslipidaemias
+
+| Group | Disease | Defect |
+|---|---|---|
+| **Primary hypercholesterolaemia** | **Familial hypercholesterolaemia (type II)** | Autosomal dominant: **LDL receptor**, **apoB** or **PCSK9**. A rare autosomal recessive form affects LDLRAP1 |
+| **Primary hypercholesterolaemia** | Polygenic hypercholesterolaemia | Several polymorphisms acting together — much commoner than the monogenic forms |
+| **Primary hypercholesterolaemia** | Familial hyperalphalipoproteinaemia | **CETP deficiency**, which raises HDL |
+| **Primary hypercholesterolaemia** | Phytosterolaemia | ABCG5 and ABCG8 |
+| **Primary hypertriglyceridaemia** | Familial type I | **Lipoprotein lipase** or **apoC-II** deficiency |
+| **Primary hypertriglyceridaemia** | Familial type V | apoA-V deficiency in some cases |
+| **Primary hypertriglyceridaemia** | Familial type IV | Increased triglyceride synthesis |
+| **Primary mixed hyperlipidaemia** | Familial combined hyperlipidaemia | The commonest familial dyslipidaemia |
+| **Primary mixed hyperlipidaemia** | Familial dysbetalipoproteinaemia | Remnant accumulation |
+| **Primary mixed hyperlipidaemia** | Familial hepatic lipase deficiency | Hepatic lipase |
+| **Hypolipidaemia** | Abetalipoproteinaemia | **Microsomal triglyceride transfer protein** deficiency |
+| **Hypolipidaemia** | Hypobetalipoproteinaemia | Truncated apoB |
+| **Hypolipidaemia** | **Tangier disease** | HDL deficiency, with characteristic orange tonsils |
+| **Hypolipidaemia** | Hypoalphalipoproteinaemia | apoA-I mutations in some cases |
+
+**Familial hypercholesterolaemia** is the one to recognise clinically: an autosomal dominant condition affecting roughly 1 in 250 people, causing very high LDL from birth and premature coronary disease. The signs are **tendon xanthomata** (classically in the Achilles and the extensor tendons of the hand), **xanthelasma** and a **corneal arcus before the age of about 45**. A total cholesterol above 7.5 mmol/L with a family history of premature coronary heart disease should prompt formal assessment against the Simon Broome or Dutch Lipid Clinic Network criteria, cascade testing of relatives, and specialist referral.
+
+## Managing hyperlipidaemia
+
+**Conservative measures come first** — dietary modification and exercise — although it is worth knowing that dietary cholesterol intake correlates poorly with the measured lipid levels, so diet alone rarely achieves large reductions.
+
+**Statins** are the mainstay. They inhibit **HMG-CoA reductase**, the rate-limiting enzyme of hepatic cholesterol synthesis; the fall in intracellular cholesterol upregulates LDL receptors, which is what clears LDL from the plasma. The adverse effects to counsel on are **myopathy**, ranging from myalgia through a raised creatine kinase to frank **rhabdomyolysis**, and fatigue. Risk factors for statin myopathy include a high dose, a genetic predisposition and previous myopathy on a different statin, and it is reversible on stopping.
+
+The current UK approach (NICE NG238) is:
+
+- Estimate risk with **QRISK3** in people aged 25 to 84 without established cardiovascular disease
+- **Primary prevention**: offer **atorvastatin 20 mg** where the 10-year risk is **10% or more** — and do not rule it out below that threshold if the person has an informed preference or their risk is likely to be underestimated
+- **Secondary prevention**: offer **atorvastatin 80 mg**
+- **Recheck the lipids at 3 months**, aiming for a **reduction in non-HDL cholesterol of more than 40%** from baseline
+- If that is not achieved, add **ezetimibe**, which blocks intestinal cholesterol absorption
+- If still not at target, injectable options follow — **inclisiran** (a small interfering RNA against PCSK9) or a **PCSK9 monoclonal antibody**, evolocumab or alirocumab. For secondary prevention the targets are an LDL of 2.0 mmol/L or below, or a non-HDL of 2.6 mmol/L or below
+
+> High-yield: the density order is chylomicron, VLDL, IDL, LDL, HDL. PCSK9 degrades the LDL receptor, so blocking it lowers LDL. Statins inhibit HMG-CoA reductase and cause myopathy; the practical target is a greater than 40% fall in non-HDL cholesterol at 3 months, with ezetimibe added if it is not reached.`,
+        },
+        {
+          id: "obesity_management",
+          name: "Obesity & weight management",
+          content: `## Assessing overweight and obesity
+
+Obesity is now treated as a **chronic, relapsing condition** requiring long-term support rather than a one-off intervention, and current UK guidance (NICE NG246) reflects that in both its assessment and its language.
+
+Assessment uses **two measurements together**, because body mass index alone says nothing about where the fat is:
+
+- **Body mass index (BMI)**, as a practical estimate of overall adiposity
+- **A measure of central adiposity**, in practice the **waist-to-height ratio** — but do **not** measure the waist if the BMI is above 35 kg/m2, because the measurement is no longer accurate at that size
+
+**Ethnicity changes the thresholds.** People from **South Asian, Chinese, other Asian, Middle Eastern, Black African and African-Caribbean** backgrounds develop central adiposity and weight-related disease at a lower BMI, so the thresholds are **lowered, usually by 2.5 kg/m2**.
+
+The consultation itself matters. Ask permission before raising weight and accept a decision to decline or defer; use **person-first language** such as "living with obesity"; and avoid **diagnostic overshadowing** — if someone attends about knee pain, address the knee pain first.
+
+## Conservative management
+
+Dietary approaches must be flexible, since no single diet suits everyone; the aim is simply to keep total energy intake below energy expenditure while remaining nutritionally balanced. Reducing a specific macronutrient (a low-fat or low-carbohydrate approach) is a reasonable option, and intermittent fasting is not specifically recommended. **Low-energy and very-low-energy diets belong in specialist services only**, and very-low-energy diets are reserved for specific situations such as weight loss before surgery, for a **maximum of 12 weeks**, because excessive restriction promotes weight cycling and regain.
+
+Physical activity should be encouraged **even where weight is not lost**, as should dietary improvement, since both improve the lipid profile and diabetes risk independently of the number on the scale. Weight regain should not be framed as failure.
+
+## Drug treatment
+
+Medication is considered **after behavioural approaches have been started and evaluated**, always alongside a reduced-calorie diet and increased physical activity. Incretin mimetics have changed this field substantially.
+
+| Drug | Mechanism | Eligibility | Where prescribed |
+|---|---|---|---|
+| **Orlistat** | **Pancreatic lipase inhibitor**, reducing fat absorption | BMI 30 or above, or 28 or above with associated risk factors | Primary care |
+| **Tirzepatide** | Dual **GIP and GLP-1** receptor agonist, weekly injection | BMI 35 or above with at least one weight-related comorbidity | Primary care |
+| **Semaglutide** | **GLP-1** receptor agonist, weekly injection | At least one weight-related comorbidity plus BMI 35 or above, or BMI 30 or above meeting specialist referral criteria | Specialist weight management services |
+| **Liraglutide** | **GLP-1** receptor agonist, daily injection | BMI 35 or above with non-diabetic hyperglycaemia and high cardiovascular risk | Specialist weight management services |
+
+Orlistat's adverse effects — steatorrhoea, urgency and **profound flatus and diarrhoea** — are frequently intolerable, and they worsen the more fat is eaten, which is what limits its use. It also impairs absorption of the **fat-soluble vitamins A, D, E and K**, and severe diarrhoea can cause oral contraception to fail, so an additional contraceptive method is advised.
+
+None of these drugs should be used in pregnancy. With tirzepatide, oral contraception may be unreliable, so women should switch to a non-oral method or add a barrier method for **4 weeks after starting and after each dose escalation**.
+
+**Rimonabant**, a cannabinoid receptor antagonist, was trialled for obesity and **withdrawn because of an increased risk of suicide** — a useful example of a drug withdrawn on psychiatric grounds.
+
+## Bariatric surgery
+
+Bariatric (metabolic) surgery is considered where the BMI is **40 kg/m2 or above**, or **35 kg/m2 or above with a significant comorbidity** that would be expected to improve with weight loss — with expedited assessment for people with **recent-onset type 2 diabetes**, and the same downward ethnicity adjustment to the thresholds. It requires extensive pre-operative assessment and a commitment to long-term follow-up, because these operations cause lifelong malabsorption of iron, vitamin B12, folate, calcium and the fat-soluble vitamins.
+
+> High-yield: assess with BMI **and** waist-to-height ratio, and lower the thresholds by about 2.5 kg/m2 for South Asian, Chinese, other Asian, Middle Eastern, Black African and African-Caribbean backgrounds. Orlistat and tirzepatide can be prescribed in primary care; semaglutide and liraglutide are specialist-service drugs. Surgery is for a BMI of 40, or 35 with a comorbidity.`,
+        },
+        {
+          id: "inherited_metabolic_disease",
+          name: "Newborn screening & inherited metabolic disease",
+          content: `## UK newborn screening
+
+Every baby in the United Kingdom is offered the **newborn blood spot (Guthrie) test at around day 5 to 8** of life, taken by heel prick onto a card. It is worth being clear about what it does: the programme **measures chemicals in the blood spot and does not perform genetic testing**, so an abnormal chemical level does not by itself mean a genetic disorder is present — it means a diagnostic workup is needed.
+
+The classic conditions screened for are:
+
+| Condition | Underlying defect | Screening test |
+|---|---|---|
+| **Phenylketonuria** | **Phenylalanine hydroxylase** deficiency — the "musty" baby | Phenylalanine level |
+| **Congenital hypothyroidism** | Dysgenesis or agenesis of the thyroid gland | TSH level |
+| **Cystic fibrosis** | **CFTR** mutation (F508del commonest), giving viscous secretions and ductal blockage | Immunoreactive trypsin; if positive, DNA mutation testing |
+| **Sickle cell disease** | Haemoglobin S | Haemoglobin variants |
+| **MCAD deficiency** | Medium-chain acyl-CoA dehydrogenase deficiency, a fatty acid oxidation disorder | Acylcarnitine levels by tandem mass spectrometry |
+
+The programme has since been expanded to include several further inherited metabolic disorders, including maple syrup urine disease, isovaleric acidaemia, glutaric aciduria type 1 and homocystinuria. The statistical concepts underpinning any screening programme — sensitivity, specificity and predictive value — are covered in the *Screening tests: sensitivity, specificity and predictive value* topic.
+
+## Inherited metabolic disease
+
+The individual disorders are rare and there are hundreds of them, so the practical approach is to recognise the **five groups** by their pattern of presentation rather than to memorise individual diseases.
+
+| Group | Examples | Key features |
+|---|---|---|
+| **1. Accumulation of toxins** | **Organic acidaemias**, such as propionic acidaemia | High urea and ketones, **metabolic acidosis with hyperammonaemia**. Characteristic **cheesy or sweaty odours** from the organic acids. Treated with a low-protein diet, carnitine and haemofiltration |
+| **1. Accumulation of toxins** | **Urea cycle disorders** — nine in total, including **ornithine transcarbamylase deficiency**, which is X-linked | Very **high ammonia** (above 200 micromol/L) causing encephalopathy and developmental delay, with a **respiratory alkalosis** (ammonia stimulates respiration), vomiting and diarrhoea. Treated with a low-protein diet to stop urea formation |
+| **1. Accumulation of toxins** | **Aminoacidopathies** — phenylketonuria, maple syrup urine disease | High phenylalanine, with **blue eyes and fair hair and skin** (phenylalanine blocks melanin synthesis) and intellectual disability. Maple syrup urine disease characteristically smells of sweaty feet |
+| **2. Reduced energy stores** | **Glycogen storage disorders**, including **von Gierke's disease** | **Hypoglycaemia with lactic acidosis**, hepatomegaly and developmental delay, with a high risk of hepatoblastoma. Treated with regular carbohydrate |
+| **2. Reduced energy stores** | **Galactosaemia** | Galactose-1-phosphate accumulates and causes **cataracts**, with hypoglycaemia and **neonatal conjugated jaundice**. Urine tests positive for reducing substances. Treated with a lactose- and galactose-free diet |
+| **2. Reduced energy stores** | **Fatty acid oxidation disorders**, including **MCAD deficiency** | Hypoglycaemia, cardiomyopathy and rhabdomyolysis, with characteristically **LOW ketones** — fat cannot be converted into them. Screened by blood acylcarnitine, confirmed on urine organic acids. Treated with regular carbohydrate and **absolutely no fasting** |
+| **3. Defective synthesis of large molecules** (all dysmorphic) | **Peroxisomal disorders** — cannot break down very long chain fatty acids or make bile acids | Poor feeding, seizures, retinopathy, hepatomegaly with a mixed hyperbilirubinaemia, and hypotonia — the **floppy baby** |
+| **3. Defective synthesis of large molecules** | **Glycosylation disorders** | Intellectual disability and **inverted nipples**. Diagnosed by measuring serum transferrins |
+| **4. Defective breakdown of large molecules** | **Lysosomal storage disorders**, including **Tay-Sachs disease**, which declares itself at 3 to 6 months | Slowly progressive **neuroregression** with hepatosplenomegaly and cardiomyopathy. Tay-Sachs is classically associated with **Ashkenazi Jewish** ancestry. Tested by urine mucopolysaccharides and white cell enzyme levels |
+| **5. Mitochondrial disorders** | **MELAS**, Kearns-Sayre syndrome | Involve the tissues with the highest energy demand — **central nervous system, muscle and heart** — with a **high lactate** and raised creatine kinase and a myopathy. **Muscle biopsy is diagnostic** |
+
+> High-yield: hypoglycaemia **with** ketones fits a glycogen storage disorder; hypoglycaemia **without** ketones fits a fatty acid oxidation disorder such as MCAD, where fasting must be avoided. A metabolic acidosis with hyperammonaemia points to an organic acidaemia, while hyperammonaemia with a **respiratory alkalosis** and no acidosis points to a urea cycle defect. A raised lactate with a myopathy suggests mitochondrial disease.`,
         },
       ],
     },
@@ -1025,6 +1824,52 @@ Keeping patient information private underpins trust. The duty is strong but not 
 If a patient has a condition that makes them unsafe to drive, advise them that they must inform the Driver and Vehicle Licensing Agency (DVLA). If they continue to drive against advice and cannot be persuaded to stop, you may breach confidentiality and inform the DVLA, telling the patient before you do so.
 
 > The principle that recurs in the Professional Dilemmas paper is to share information on a need-to-know basis, seek consent where possible, and document your reasoning.`,
+        },
+        {
+          id: "screening_test_statistics",
+          name: "Screening tests: sensitivity, specificity & predictive value",
+          content: `## Why these four numbers exist
+
+Any test divides people into positive and negative, and the truth divides them into diseased and not diseased. Crossing those gives four cells, and the four statistics are simply four different ways of reading that table. The distinction that makes them click is this: **sensitivity and specificity are properties of the test applied to a population, whereas the predictive values tell an individual what their own result means** — and, crucially, the predictive values change with how common the disease is, while sensitivity and specificity do not.
+
+## The two-by-two table
+
+Take a worked example of a screening test for cystic fibrosis in 185 people:
+
+| | Has cystic fibrosis | Does not have cystic fibrosis |
+|---|---|---|
+| **Test positive** | 90 — true positive | 5 — false positive |
+| **Test negative** | 10 — false negative | 80 — true negative |
+
+## The four measures
+
+**Sensitivity** is the probability that someone **with** the disease correctly tests positive. It is calculated as true positives divided by everyone who has the disease.
+
+- 100 people have cystic fibrosis, and 90 test positive, so sensitivity is 90 out of 100, which is **90%**
+- A **highly sensitive test is good for ruling disease OUT**, because it produces few false negatives
+
+**Specificity** is the probability that someone **without** the disease correctly tests negative — true negatives divided by everyone who is disease-free.
+
+- 85 people do not have cystic fibrosis, and 80 test negative, so specificity is 80 out of 85, which is **94%**
+- A **highly specific test is good for ruling disease IN**, because it produces few false positives
+
+**Positive predictive value** is the probability that someone who tests positive **actually has** the disease — true positives divided by everyone who tested positive.
+
+- 95 people tested positive, of whom 90 have the disease, so the positive predictive value is 90 out of 95, which is **95%**
+
+**Negative predictive value** is the probability that someone who tests negative really is **disease-free** — true negatives divided by everyone who tested negative.
+
+- 90 people tested negative, of whom 80 are disease-free, so the negative predictive value is 80 out of 90, which is **89%**
+
+It is much easier to reason through the table in words, as above, than to memorise the formulae.
+
+## Why prevalence matters
+
+Sensitivity and specificity are fixed properties of the test itself. The **predictive values are not** — they depend on how common the disease is in the population being tested. Apply an excellent test to a population in which the condition is very rare and most positives will be false positives, so the positive predictive value collapses even though the test has not changed. This is the central reason screening programmes are targeted at defined risk groups rather than offered to everyone, and why a positive screening result is a trigger for a diagnostic test rather than a diagnosis in itself.
+
+The **UK newborn blood spot programme** is the standard illustration, and the conditions it covers are set out in the *Newborn screening and inherited metabolic disease* topic.
+
+> High-yield: **SnNOut and SpPIn** — a **Sn**sitive test that is **N**egative rules **Out**; a **Sp**ecific test that is **P**ositive rules **In**. Sensitivity and specificity belong to the test; predictive values belong to the population and move with prevalence.`,
         },
       ],
     },
@@ -2053,6 +2898,57 @@ Note the change of name: PBC was formerly called *primary biliary cirrhosis*, bu
 
 > The commonest benign liver lesion is a haemangioma, and hepatic adenoma is linked to the oral contraceptive pill. Hepatocellular carcinoma arises in cirrhosis, is screened for with 6-monthly ultrasound plus alpha-fetoprotein, and is linked to viral hepatitis, haemochromatosis and aflatoxin. But the commonest malignant lesion in the liver overall is metastatic disease, usually multiple and from gut, breast or bronchus.`,
         },
+        {
+          id: "nutrition_vitamins",
+          name: "Nutrition: vitamins, trace elements & deficiency states",
+          content: `## Vitamins
+
+Vitamins divide into the **fat-soluble** group (A, D, E and K), which are stored in the liver and fat and therefore go into deficiency slowly but can accumulate to toxic levels, and the **water-soluble** group (the B vitamins, C and folate), which are not stored and so become deficient far more quickly. As a rule, **fat-soluble deficiencies are rare and water-soluble deficiencies are common**.
+
+| Vitamin | Deficiency | Excess | Test |
+|---|---|---|---|
+| **A — retinol** | Night blindness and impaired colour vision, xerophthalmia, skin exfoliation | Hepatitis; teratogenic in pregnancy | Serum |
+| **D — cholecalciferol** | **Osteomalacia** in adults, **rickets** in children | **Hypercalcaemia** | Serum |
+| **E — tocopherol** | Haemolytic anaemia, neuropathy, ataxia; associated with ischaemic heart disease | — | Serum |
+| **K — phytomenadione** | **Defective clotting** — a prolonged prothrombin time, haemorrhagic disease of the newborn | — | Prothrombin time |
+| **B1 — thiamine** | **Beri-beri**: *wet* is cardiovascular (high-output failure), *dry* is neurological. Also peripheral neuropathy and **Wernicke's encephalopathy** | — | Red cell transketolase |
+| **B2 — riboflavin** | **Angular stomatitis and glossitis** | — | Red cell glutathione reductase |
+| **B3 — niacin** | **Pellagra — the three Ds: dementia, dermatitis and diarrhoea** | — | — |
+| **B6 — pyridoxine** | Dermatitis and **sideroblastic anaemia** | Peripheral neuropathy | Red cell AST activation |
+| **B12 — cobalamin** | **Pernicious anaemia** and **subacute combined degeneration of the cord** | — | Serum B12 |
+| **C — ascorbate** | **Scurvy** — bleeding gums, perifollicular haemorrhage, poor wound healing | Renal stones | Plasma |
+| **Folate** | **Megaloblastic anaemia**; **neural tube defects** in pregnancy | — | Red cell folate |
+
+Note that **vitamin B6 is one of the few vitamins with a well-recognised toxicity** — a sensory peripheral neuropathy from excessive supplementation — and that **vitamin C excess predisposes to renal stones**, because ascorbate is metabolised to oxalate.
+
+## Trace elements
+
+| Element | Deficiency | Excess | Test |
+|---|---|---|---|
+| **Iron** | **Hypochromic microcytic anaemia** | **Haemochromatosis** | Full blood count, iron and binding studies, ferritin |
+| **Iodine** | **Goitre and hypothyroidism** | Either hypo- or hyperthyroidism — the **Wolff-Chaikoff** and **Jod-Basedow** effects | Thyroid function tests |
+| **Zinc** | Dermatitis, poor wound healing, impaired taste | — | — |
+| **Copper** | Anaemia | **Wilson's disease** | Copper, caeruloplasmin |
+| **Fluoride** | Dental caries | Fluorosis — mottled enamel | — |
+
+The two iodine effects are easily confused and worth separating. The **Wolff-Chaikoff effect** is the *protective* transient shutdown of thyroid hormone synthesis after a large iodine load, which can cause hypothyroidism. The **Jod-Basedow effect** is the opposite — iodine-induced *hyper*thyroidism, typically when someone with a nodular goitre or long-standing iodine deficiency is suddenly given a large iodine load, such as radiographic contrast or amiodarone.
+
+## Deficiency patterns in specific diseases
+
+Rather than learning individual vitamins in isolation, it is more useful to know which deficiencies to expect in which disease — this is how the question is usually asked.
+
+| Condition | Expected deficiencies |
+|---|---|
+| **Crohn's disease** | **Vitamin B12** and the fat-soluble vitamins **A, D, E and K** where the terminal ileum is involved. **Folate** deficiency if on methotrexate. Calcium, phosphate, magnesium and zinc become deranged with high-output or chronic diarrhoea |
+| **Coeliac disease** | **Iron** (the classic presentation), vitamins **A, D, E and K**, **thiamine** and **vitamin B6** |
+| **Chronic liver disease** | Vitamins **A, D, E and K**, **vitamin B12**, selenium, magnesium, zinc and folate |
+| **Chronic kidney disease** | **Protein-energy wasting syndrome** |
+| **Pancreatic insufficiency** | The fat-soluble vitamins **A, D, E and K**, because fat cannot be digested without lipase |
+
+The unifying principle is that **anything interfering with fat digestion or absorption causes fat-soluble vitamin deficiency** — pancreatic insufficiency, cholestasis, coeliac disease, terminal ileal Crohn's and orlistat all do it by different mechanisms. **Terminal ileal disease is specific for vitamin B12**, because that is the only site where the B12-intrinsic factor complex is absorbed.
+
+> High-yield: pellagra is the three Ds of niacin deficiency; beri-beri is thiamine, wet for the heart and dry for the nerves; scurvy is vitamin C. Terminal ileal disease means B12. Anything impairing fat absorption means A, D, E and K. Jod-Basedow is iodine-induced hyperthyroidism, Wolff-Chaikoff the protective shutdown.`,
+        },
       ],
     },
     {
@@ -2250,6 +3146,85 @@ The **anion gap** — (Na) minus (Cl plus bicarbonate), normally about 4–12 mm
 ## The osmolar gap
 
 The osmolar gap is the difference between the measured and the calculated osmolality (calculated as 2 times (Na plus K), plus urea plus glucose). A value above about 10 mmol/kg points to an unmeasured solute such as **methanol or ethylene glycol** — useful when investigating a raised-anion-gap acidosis after suspected toxic-alcohol ingestion.`,
+        },
+        {
+          id: "renal_stones",
+          name: "Renal & ureteric stones",
+          content: `## Renal and ureteric stones
+
+Renal colic is severe, colicky loin-to-groin pain with nausea, vomiting and restlessness — patients characteristically cannot lie still, which distinguishes it from peritonitis. There may be haematuria, usually microscopic.
+
+## Risk factors
+
+- **Dehydration**, which is the single most important and most modifiable factor
+- **Abnormal urine pH** — a high meat intake acidifies the urine and favours uric acid stones, while **renal tubular acidosis** alkalinises it and favours calcium phosphate stones
+- **Increased urinary excretion of stone constituents**, notably **hypercalciuria** and **hyperoxaluria**
+- **Urinary infection**, which must be treated
+- **Anatomical abnormalities** causing stasis, such as a horseshoe kidney or pelviureteric junction obstruction
+
+Note that most patients forming **calcium stones are normocalcaemic** — it is the amount of calcium in the *urine*, not the blood, that matters. Hyperoxaluria arises from increased intake or increased absorption, and hypercalciuria from increased intake or a renal leak.
+
+## Stone types
+
+| Constituent | Frequency | X-ray appearance |
+|---|---|---|
+| Calcium — mixed | About 45% | Radio-opaque |
+| Calcium oxalate | About 35% | Radio-opaque |
+| Calcium phosphate | About 1% | Radio-opaque |
+| **Triple phosphate ("struvite")** — magnesium ammonium phosphate | About 10% | Radio-opaque, forming **staghorn** calculi |
+| **Uric acid** | About 5% | **Radiolucent** |
+| Cystine | 1 to 2% | Faintly radio-opaque |
+| Others, such as xanthine | Rare | Xanthine lucent, most others opaque |
+
+Two of these carry a specific message. **Struvite stones form in the presence of urease-producing organisms** such as *Proteus*, which split urea and alkalinise the urine; they grow to fill the collecting system as a staghorn calculus and cannot be cured without eradicating the infection. **Uric acid stones are radiolucent**, so they are invisible on a plain film — which is one reason plain radiography is not the diagnostic test.
+
+## Investigation
+
+**Offer urgent imaging within 24 hours of presentation.** The first-line test is a **low-dose non-contrast CT of the kidneys, ureters and bladder** in adults. **Ultrasound is used instead in pregnancy**, and is the first-line test in **children and young people**, with low-dose CT considered only if uncertainty remains.
+
+Alongside this, check renal function, calcium and urate, dipstick and culture the urine, and exclude the emergency that must not be missed — **an obstructed, infected kidney**, which presents with fever and systemic upset and requires urgent decompression by nephrostomy or stenting, not elective stone treatment.
+
+## Analgesia
+
+- **A non-steroidal anti-inflammatory drug by any route is first-line** — more effective than opioids in renal colic
+- **Intravenous paracetamol** if NSAIDs are contraindicated or insufficient
+- **Opioids** only if both of the above are contraindicated or inadequate
+- **Do not offer antispasmodics**
+
+## Treatment
+
+**Medical expulsive therapy**: consider an **alpha blocker** for **distal ureteric stones smaller than 10 mm**, which relaxes ureteric smooth muscle and improves spontaneous passage. It is also worth considering as an adjunct when shockwave lithotripsy is used for a ureteric stone under 10 mm.
+
+The surgical options are **shockwave lithotripsy (SWL)**, **ureteroscopy (URS)** and **percutaneous nephrolithotomy (PCNL)**, and the choice depends on both the site and the size of the stone. For an asymptomatic **renal** stone under 5 mm, watchful waiting is appropriate.
+
+| Stone site and size | Treatment in adults |
+|---|---|
+| **Renal, under 10 mm** | Offer **SWL**; consider URS if SWL is contraindicated, has failed, or is not anatomically possible; PCNL if both fail |
+| **Renal, 10 to 20 mm** | Consider **URS or SWL**; PCNL if either fails |
+| **Renal, over 20 mm (including staghorn)** | Offer **PCNL**; consider URS if PCNL is not an option |
+| **Ureteric, under 10 mm** | Offer **SWL**; consider URS if clearance is not achievable within 4 weeks, SWL is contraindicated, the stone is not targetable, or SWL has failed |
+| **Ureteric, 10 to 20 mm** | Offer **URS**; consider SWL if local facilities allow clearance within 4 weeks; PCNL for impacted proximal stones where URS has failed |
+
+Treat **within 48 hours** of diagnosis or readmission where the pain is ongoing and not tolerated, or the stone is unlikely to pass. Pre-treatment stenting is not offered before shockwave lithotripsy in adults, and routine stenting is not offered after ureteroscopy for stones under 20 mm.
+
+## Preventing recurrence
+
+Recurrence is common, so prevention matters. Advise adults to:
+
+- **Drink 2.5 to 3 litres of water a day** (1 to 2 litres for children, depending on age)
+- **Add fresh lemon juice** to drinking water, which raises urinary citrate
+- **Avoid carbonated drinks**
+- Keep **salt intake below 6 g a day**
+- **Do not restrict calcium.** This is counter-intuitive but important: maintain a normal intake of 700 to 1200 mg a day, because restricting dietary calcium leaves more oxalate free to be absorbed and actually *increases* stone formation
+
+Drug prevention is targeted rather than universal:
+
+- **Potassium citrate** for adults with recurrent stones that are more than 50% **calcium oxalate**
+- **Thiazides** for adults with recurrent predominantly calcium oxalate stones **and hypercalciuria**, after sodium intake has been restricted to 6 g a day. Thiazides work here because they are **hypocalciuric** — they increase distal tubular calcium reabsorption, so less calcium reaches the urine
+
+For anyone with recurrent stones, investigate properly: **stone analysis**; serum creatinine, bicarbonate, calcium, phosphate, urate and PTH if hypercalcaemic; a spot urine for pH, culture, amino acids and albumin; and a **24-hour urine collection** for volume (aiming above 2.5 litres), calcium, oxalate, urate and citrate.
+
+> High-yield: urgent low-dose non-contrast CT within 24 hours, ultrasound in pregnancy. NSAIDs first-line for pain, not opioids. Uric acid stones are the radiolucent ones; struvite staghorn stones mean urease-producing infection. For prevention, drink more, salt less — and do **not** cut calcium intake.`,
         },
       ],
     },
