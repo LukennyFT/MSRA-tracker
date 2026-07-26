@@ -4306,10 +4306,18 @@
         if (applyingRemote.current) return;
         clearTimeout(writeTimer.current);
         writeTimer.current = setTimeout(() => {
+          // NB: this is a FULL-DOCUMENT write (no { merge: true }) — and it must stay that way.
+          // Firestore's merge:true DEEP-merges nested map fields, so a key REMOVED from a map
+          // (e.g. clearing a condition's RAG status, so `statuses` no longer has that id) would
+          // NOT be deleted server-side; the onSnapshot listener would then echo the stale key
+          // back and the status would "un-clear" itself a moment later. This write already
+          // contains the COMPLETE app state, so replacing the whole doc is correct and lets
+          // deletions in statuses / bookmarks / progress maps propagate. (Notes live in a
+          // subcollection and are unaffected by this document write.)
           FIRESTORE.collection("sync").doc(syncCode).set({
             hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, dayOverrides,
             updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
-          }, { merge: true })
+          })
             .then(() => setLastSyncAt(Date.now()))
             .catch(err => { console.warn("write failed:", err); setSyncStatus("error"); });
         }, 700);
