@@ -2,7 +2,18 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
-_Last updated: **ENGINE CHANGE — added an "⤢ Expand" button to every Tracker flowchart, opening a full-screen view with zoom and pan.** This is an `index.html` change, so **`index.html` must be re-uploaded or the button will not appear**. No content, ids or data files were touched.
+_Last updated: **Added Hashimoto's thyroiditis, Toxic multinodular goitre and Thyroid storm to the Endocrinology Tracker**, all three in the *Thyroid* cluster. None existed (`endo_thyrotoxicosis` is a broader, separate entity), so no duplicates. **This closes the "no thyroid storm" sibling gap flagged when Myxoedema coma was added** — the cluster now has both decompensation emergencies.
+
+**Placement — each umbrella is now followed by its causes, then its emergency.** The three were inserted after `endo_hypothyroid`, `endo_graves` and `endo_thyrotoxicosis` respectively, so **no existing condition moved relative to another** and the cluster reads: Hypothyroidism → **Hashimoto's thyroiditis** → Myxoedema coma → Hyperthyroidism → Graves' disease → **Toxic multinodular goitre** → De Quervain's thyroiditis → Thyrotoxicosis → **Thyroid storm** → Thyroid eye disease. The three hyperthyroid causes now sit in **radionuclide uptake order** (diffuse high → focal high → globally low), mirroring the three-way split in the `endo_hyperthyroid` flowchart.
+
+**6th application of the umbrella/subset scoping rule.** The existing charts already own particular ground, so each new one was scoped to what it uniquely adds and cross-references the rest:
+- `endo_hypothyroid` owns the **levothyroxine titration ladder**, so **`endo_hashimotos`** owns the **antibody and decision-to-treat pathway** instead — anti-TPO confirmation, then the three-way split into overt disease, subclinical disease (the TSH-above-10 rule versus a 6-month trial if symptomatic and under 65), and the euthyroid antibody-positive patient who needs only annual monitoring — ending on the **rapid painless enlargement → urgent lymphoma referral** red flag. It hands off to the Hypothyroidism entry for dosing.
+- `endo_hyperthyroid` already three-way-splits on uptake and states "radioiodine first-line, antithyroid drugs do NOT cure nodular disease", so **`endo_toxic_mng`** does **not** re-tell the triage. It owns the **nodular goitre workup and definitive-treatment choice**: ultrasound and FNA of any dominant or cold nodule, the compression/retrosternal branch (CT or MRI plus flow-volume loop → thyroidectomy) versus the radioiodine branch, and the **Jod-Basedow** hazard from iodinated contrast and amiodarone, which nothing else in the app covered.
+- **`endo_thyroid_storm`** had no owner at all and gets a full emergency chart, source **"Endocrine emergency"** to match Myxoedema coma. It is deliberately built around a **sequencing trap, exactly as the myxoedema coma chart is** — where that one turns on *hydrocortisone before thyroid hormone*, this one turns on **thionamide before iodine**.
+
+**The drug sequence was verified on the web rather than recalled**, and the reason matters: **iodine given first supplies substrate and INCREASES thyroid hormone stores**, so Lugol's must follow the thionamide by **at least an hour**. Also captured: propylthiouracil is traditionally preferred because it additionally blocks peripheral T4-to-T3 conversion, though the evidence for superiority over carbimazole is not clear-cut; **hydrocortisone 300 mg then 100 mg 8-hourly**; **paracetamol not aspirin** for cooling, since aspirin displaces thyroid hormone from thyroid-binding globulin; and a **Burch-Wartofsky score of 45 or more** as highly suggestive. The entry states plainly that hormone levels **overlap with uncompensated thyrotoxicosis**, which is why the diagnosis is clinical and treatment must not wait for the assay.
+
+Endocrinology 37→40; **total 530→533** (genuine seven-field 482→485); **flowcharts 143→146**. Verified in the preview: all three load in the intended cluster positions with **all seven fields plus the Complications row (9/9 sections each)**; a **regression loop re-rendered all 146 flowcharts with 0 failures, 0 blank tips and 0 orphan tips**; the Endocrinology count reads 40 and the Thyroid cluster 10; the thyroid storm chart was opened in the new expanded view and the sequencing-trap tooltip confirmed on hover; the cross-references to the Hypothyroidism and Hyperthyroidism entries render; no `;` or `&` in any Mermaid definition; no id changed or duplicated; balance 0/0/0; `node --check` passes; and there are no console errors. **Re-upload `data.js`** (only app file changed). Earlier: **ENGINE CHANGE — added an "⤢ Expand" button to every Tracker flowchart, opening a full-screen view with zoom and pan.** This is an `index.html` change, so **`index.html` must be re-uploaded or the button will not appear**. No content, ids or data files were touched.
 
 **What was added.** The flowchart header in an expanded condition card now ends with an **⤢ Expand** button. Clicking it opens a full-screen modal containing the same diagram, with a header (condition name, `source` label, "hover a box for detail · drag to pan"), **zoom controls (− / percentage / + / Reset, clamped 50%–300% in 25% steps)** and a **✕ Close**. It closes on the ✕, a **backdrop click** or **Escape**, with `+`, `-` and `0` as zoom shortcuts, and the diagram can be **dragged to pan** when zoomed in. Hover tooltips work exactly as they do inline.
 
@@ -277,14 +288,14 @@ Earlier: **Added Acute bronchitis to the Respiratory Tracker.** `resp_acute_bron
 
 ## Tracker (`data.js`) — complete
 
-All 19 specialties populated, **530 conditions** total. **482** genuine conditions carry the seven-field layout (Key facts → Epidemiology → Aetiology → Pathophysiology → Presentation → Investigations → Treatment); the other 48 are topic-style entries with their own field structure. Each condition has `presentation` / `investigations` / `treatment` (Pharmacology uses relabelled fields; `pharm_paracetamol_od` uses a 3-section `fields` array).
+All 19 specialties populated, **533 conditions** total. **485** genuine conditions carry the seven-field layout (Key facts → Epidemiology → Aetiology → Pathophysiology → Presentation → Investigations → Treatment); the other 48 are topic-style entries with their own field structure. Each condition has `presentation` / `investigations` / `treatment` (Pharmacology uses relabelled fields; `pharm_paracetamol_od` uses a 3-section `fields` array).
 
 | Specialty | id | Conditions |
 | --- | --- | ---: |
 | Cardiovascular | `cardiology` | 63 |
 | Respiratory | `respiratory` | 27 |
 | Gastroenterology & Nutrition | `gastro` | 46 |
-| Endocrinology & Metabolic | `endocrinology` | 37 |
+| Endocrinology & Metabolic | `endocrinology` | 40 |
 | Renal & Urology | `renal` | 26 |
 | Neurology | `neurology` | 34 |
 | Psychiatry & Mental Health | `psychiatry` | 16 |
