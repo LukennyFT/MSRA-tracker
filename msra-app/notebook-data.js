@@ -6154,6 +6154,1433 @@ Most vulval cancers are squamous cell carcinomas. Lichen sclerosus and vulval in
       id: "paediatrics", name: "Paediatrics & Child Health", icon: "🧒",
       topics: [
         {
+          id: "neonatal_respiratory_distress",
+          name: "Respiratory distress in the newborn",
+          content: `## The tachypnoeic newborn
+
+Respiratory distress in a newborn shows itself as tachypnoea (a respiratory rate above 60), grunting, nasal flaring, intercostal and subcostal recession, and cyanosis. The differential is short and is usually settled by the **gestation, the mode of delivery and the chest X-ray**.
+
+| Condition | Typical baby | Chest X-ray |
+|---|---|---|
+| **Respiratory distress syndrome** | **Preterm**, especially under 32 weeks | Diffuse **ground-glass** shadowing with air bronchograms |
+| **Transient tachypnoea of the newborn** | Term, often **caesarean section** | Fluid in the **horizontal fissure**, hyperinflation |
+| **Meconium aspiration** | **Post-term**, meconium-stained liquor | **Asymmetrical patchy opacities**, hyperinflation |
+| **Persistent pulmonary hypertension** | Term, often follows asphyxia or meconium aspiration | Often relatively clear lungs despite severe hypoxia |
+| **Pneumothorax** | Any, especially ventilated or preterm | Lucency with absent lung markings, mediastinal shift if tension |
+| **Congenital pneumonia or sepsis** | Any, especially prolonged rupture of membranes | Variable, may mimic any of the above |
+
+Because congenital pneumonia can look like all of them, antibiotics are frequently started while cultures are awaited.
+
+## Respiratory distress syndrome
+
+Surfactant deficiency in the immature lung raises alveolar surface tension, so alveoli collapse at end-expiration and the work of breathing rises. Histologically it is **hyaline membrane disease**.
+
+**Prophylaxis** is the highest-yield point: **antenatal corticosteroids** are given to mothers in suspected or confirmed preterm labour, which increases fetal surfactant production and reduces both the incidence and the severity of the syndrome.
+
+Management is:
+
+- **ABC resuscitation**, reviewing the history and examining the baby to identify the cause of the distress
+- **Endotracheal surfactant**
+- **Continuous positive airway pressure (CPAP)**, which keeps the lungs inflated, with intubation and ventilation reserved for severe disease
+- **Supplementary oxygen**, targeting saturations of **91 to 95%** in preterm neonates — over-oxygenation is itself harmful, causing retinopathy of prematurity and chronic lung disease
+- Intravenous fluids, and **broad-spectrum intravenous antibiotics** (benzylpenicillin and gentamicin, or amoxicillin and gentamicin if listeria is suspected)
+- A **chest X-ray** as soon as possible, unless the distress is mild, in which case it can be delayed
+
+## Transient tachypnoea of the newborn
+
+The commonest cause of respiratory distress in a term baby, caused by **delayed clearance of fetal lung fluid**. It is commoner after caesarean section, because the baby has not had the thoracic squeeze of a vaginal delivery, and it settles within 24 to 48 hours.
+
+Management is largely **observation and supportive care**: oxygen by head box or nasal cannula to keep saturations above 90%. If the respiratory rate is **60 to 80 breaths per minute** the baby should not feed orally, so nutrition is given by nasogastric tube or parenteral nutrition. If the tachypnoea persists beyond **4 to 6 hours**, start antibiotics (ampicillin and gentamicin), because at that point infection can no longer be excluded.
+
+## Meconium aspiration
+
+Meconium passed in utero is aspirated into the airways, where it obstructs them, is directly toxic to the lung and inactivates surfactant. It is commoner in **post-term** delivery, and the history usually mentions **meconium-stained amniotic fluid**.
+
+- A **normal term infant with meconium-stained liquor and no group B streptococcal risk** simply needs **observation**
+- If there are risk factors or laboratory findings suggesting infection, give **intravenous ampicillin and gentamicin**
+- Oxygen and non-invasive ventilation such as CPAP are used in more severe cases
+- **Boluses of surfactant and inotropes** are given in moderate disease
+
+## Persistent pulmonary hypertension of the newborn
+
+The pulmonary vascular resistance fails to fall after birth, so blood continues to shunt right to left through the ductus arteriosus and foramen ovale, producing **severe hypoxia that is out of proportion to the chest X-ray**. A difference between pre-ductal and post-ductal saturations is the clue.
+
+Management is:
+
+- **Respiratory support** — oxygen, ventilation, surfactant, and suction of secretions from the endotracheal tube
+- **Inhaled nitric oxide**, a selective pulmonary vasodilator, if the oxygen requirement remains high
+- **Circulatory support** with fluid and inotropes, since systemic pressure must be kept above pulmonary pressure to reduce the shunt
+- **Correction of any pH abnormality**, because acidosis worsens pulmonary vasoconstriction
+- Treatment of the underlying cause
+
+## Pneumothorax
+
+**Prevention** matters most in ventilated babies: pressures are titrated carefully to achieve effective ventilation while minimising barotrauma.
+
+- **Small pneumothorax** — close observation, even if ventilated, with **100% oxygen for 1 to 2 hours** to wash out nitrogen and speed reabsorption
+- **Needle drainage** if urgent decompression is needed, such as an infant at immediate risk of respiratory failure
+- **Chest drain** for all tension pneumothoraces, and for any ventilated or preterm infant with a non-tension pneumothorax who deteriorates
+
+## Chronic lung disease of prematurity (bronchopulmonary dysplasia)
+
+A complication of preterm birth, defined as an **oxygen requirement at 36 weeks corrected gestational age**, with classical chest X-ray changes and a history of mechanical ventilation.
+
+- **Prophylaxis** — corticosteroids for women in suspected, diagnosed or established preterm labour before 34 weeks, and considered between 34 and 36 weeks
+- **Respiratory support** — high-flow oxygen with care not to over-oxygenate, **CPAP in preference to intubation** wherever possible, and surfactant if invasive ventilation is needed
+- **Caffeine citrate**, which stimulates the respiratory effort
+- **Formal sleep studies** to assess oxygen saturations during sleep and guide home management
+- **Long-term oxygen** at home, weaned over the first year of life
+- **Palivizumab** monthly, a monoclonal antibody that reduces the risk and severity of bronchiolitis
+
+> High-yield: preterm with ground-glass shadowing is respiratory distress syndrome; term after caesarean with fluid in the fissure is transient tachypnoea; post-term with meconium-stained liquor and patchy asymmetrical opacities is meconium aspiration; severe hypoxia with a near-normal film is persistent pulmonary hypertension.`,
+        },
+        {
+          id: "neonatal_jaundice",
+          name: "Neonatal jaundice & haemolytic disease of the newborn",
+          content: `## Neonatal jaundice
+
+Jaundice affects the majority of newborns, and the whole of the assessment turns on **when it appeared**.
+
+- **Under 24 hours old — always pathological.** This is haemolysis or sepsis until proven otherwise and needs urgent investigation.
+- **Between 24 hours and 14 days — usually physiological.** The fetal haemoglobin load is being broken down while an immature liver conjugates it slowly.
+- **Over 14 days (21 days if preterm) — prolonged jaundice**, which needs investigation to exclude **biliary atresia** and congenital hypothyroidism.
+
+The critical division is **unconjugated versus conjugated** bilirubin. Unconjugated bilirubin is fat-soluble, so it crosses the blood-brain barrier and can cause **kernicterus** — bilirubin deposition in the basal ganglia, giving an acute encephalopathy and permanent choreoathetoid cerebral palsy, sensorineural deafness and gaze palsy. **Conjugated** bilirubin is never physiological and always signals liver or biliary disease.
+
+## Investigations
+
+- **Transcutaneous bilirubin** — a non-invasive screening test, pleasanter for the baby but less precise. It is used where the risk of pathological jaundice is relatively low, that is jaundice starting after 24 hours in a baby born after 35 weeks.
+- **Serum bilirubin** — used where the risk is higher: onset under 24 hours of age, or born before 35 weeks. It is also used to check any transcutaneous reading above the treatment threshold.
+- **Thyroid function, liver function tests and a split (conjugated) bilirubin** if the baby presents after 2 weeks.
+
+**Do not rely on visual inspection alone.** Jaundice and the underlying skin colour change are considerably harder to see in babies with darker skin, so measure the bilirubin rather than eyeballing it whenever jaundice is suspected. Check the sclerae, gums and blanched skin, and always measure if there is any doubt.
+
+## Managing unconjugated hyperbilirubinaemia
+
+Treatment is decided from the **treatment threshold graph**: the serum bilirubin is plotted against the age of the baby in hours, using a graph selected for the gestation.
+
+- **Below the lower line** — no active treatment
+- **Between the lines** — **phototherapy** first-line, which converts unconjugated bilirubin into water-soluble isomers that can be excreted without conjugation. If ineffective, escalate to **intensified (multiple) phototherapy** with adjuncts such as **intravenous immunoglobulin**, which is useful where the cause is immune haemolysis such as ABO or rhesus disease
+- **Above the upper line** — **exchange transfusion** first-line, removing the infant's blood and replacing it with donor blood
+
+Babies stay in after phototherapy stops so that a **rebound bilirubin** can be checked. During phototherapy the eyes are protected and blood samples are needed frequently, but the treatment itself is not harmful — a point worth making explicitly to parents.
+
+**Physiological jaundice** needs only reassurance and observation. **Breast milk jaundice** is a prolonged unconjugated jaundice in a thriving breastfed baby: breastfeeding continues as normal and the bilirubin level guides management. **Conjugated** hyperbilirubinaemia is managed by treating the cause — for example surgery for biliary atresia, which must not be delayed.
+
+## Haemolytic disease of the newborn
+
+Maternal antibodies cross the placenta and destroy fetal red cells. The classic form is **rhesus disease**, where a RhD-negative mother sensitised in a previous pregnancy makes anti-D that haemolyses the red cells of a RhD-positive fetus, causing anaemia, jaundice within the first 24 hours, and in severe cases **hydrops fetalis**. ABO incompatibility causes a milder version that does not require prior sensitisation.
+
+**Prevention is by anti-D immunoglobulin**, given either as:
+
+- A **single dose of 1500 IU at 28 weeks** and again after delivery, or
+- **Two doses of 500 IU at 28 and 34 weeks**, and after delivery
+
+Further doses are given after any **potentially sensitising event**, such as antepartum haemorrhage, abdominal trauma, external cephalic version or invasive testing. The antenatal schedule is covered further in the *Antenatal care and screening* topic.
+
+**Management of the baby:**
+
+- **Resuscitation** with an A to E approach, particularly if the baby is preterm, anaemic or hydropic
+- **Phototherapy** if there is significant jaundice, screening with transcutaneous bilirubin
+- **Intravenous immunoglobulin** where the bilirubin continues to rise by more than 8.5 micromol/L per hour, and only for immune haemolysis
+- **Exchange transfusion** if the bilirubin is rising rapidly at more than 8 to 10 micromol/L per hour despite adequate phototherapy, if severe hyperbilirubinaemia is not responding to phototherapy and supportive care, or if there is significant anaemia with a haemoglobin below 100 g/L
+- **Follow-up** — check for **late anaemia at 4 to 6 weeks**, since the maternal antibody persists for weeks after delivery, and consider folate supplementation to protect against it. Arrange a hearing screen, because bilirubin is toxic to the auditory pathway
+
+The parents should be counselled that haemolytic disease can **recur, and be more severe, in subsequent pregnancies**.
+
+> High-yield: jaundice in the first 24 hours is never physiological. Jaundice after 14 days needs a **split bilirubin** — a raised conjugated fraction with pale stools and dark urine is biliary atresia until proven otherwise, and it is a surgical emergency. Treat from the threshold graph, not from how yellow the baby looks.`,
+        },
+        {
+          id: "neonatal_sepsis_infection",
+          name: "Neonatal sepsis, group B streptococcus & hepatitis B",
+          content: `## Neonatal sepsis
+
+Newborns present non-specifically, so the threshold for treating is deliberately low. **Early-onset** infection (within 72 hours) is acquired from the birth canal and is dominated by **group B streptococcus** and *Escherichia coli*; **late-onset** infection is usually hospital-acquired, with coagulase-negative staphylococci prominent in babies with lines.
+
+The red flags are respiratory distress, temperature instability (a newborn is as likely to be **hypothermic** as febrile), poor feeding, lethargy, hypotonia, hypoglycaemia, apnoea, a bulging fontanelle and seizures.
+
+**First-line empirical antibiotics for suspected early-onset infection are intravenous benzylpenicillin with gentamicin** (NICE NG195), unless local resistance patterns dictate otherwise. Benzylpenicillin is given at 25 mg/kg every 12 hours and gentamicin at a starting dose of 5 mg/kg. Take blood cultures before starting, and check the C-reactive protein; a lumbar puncture is performed where meningitis is suspected. Substitute **amoxicillin and gentamicin if listeria is suspected**, because listeria is not reliably covered by benzylpenicillin.
+
+## Group B streptococcal infection
+
+**Prevention** is by **intrapartum benzylpenicillin** (or vancomycin if the mother is allergic to penicillin), offered to women who:
+
+- Have had a **previous baby with invasive group B streptococcal infection**
+- Have group B streptococcal **colonisation, bacteriuria or infection in the current pregnancy**
+- Are in **preterm labour**
+
+Note that the United Kingdom uses this **risk-factor-based** approach rather than universal screening. If the baby does become infected, treatment is intravenous **benzylpenicillin and gentamicin** as above.
+
+## Listeria monocytogenes
+
+Maternal listeriosis is acquired from unpasteurised dairy products, soft cheeses and pâté, and can cause miscarriage, preterm labour and severe neonatal sepsis with meconium-stained liquor in a preterm baby — an unusual and telling combination.
+
+Treatment is **amoxicillin and gentamicin** where blood or cerebrospinal fluid cultures grow listeria.
+
+## Hepatitis B
+
+Infants of mothers who are **hepatitis B surface antigen (HBsAg) positive** receive an accelerated immunisation schedule:
+
+- **Monovalent hepatitis B vaccine within 24 hours of birth**, then again at 4 weeks and at 1 year of age
+- The routine **6-in-1 vaccine** (diphtheria, tetanus, acellular pertussis, inactivated polio, *Haemophilus influenzae* type b and hepatitis B) at the usual 8, 12 and 16 weeks
+
+**Hepatitis B immunoglobulin (HBIG)** is added if:
+
+- The mother is **HBsAg positive**, even if she is HBeAg negative
+- The mother had **acute hepatitis B during pregnancy**
+- The mother had an **HBV DNA level of 1 x 10 to the 6 IU/mL or above** in any antenatal sample during the current pregnancy
+
+HBIG should ideally be given at the same time as the first vaccine dose, but **at a different site**. Acute hepatitis B infection itself is managed with supportive care. Breastfeeding is not contraindicated once the baby has been immunised.
+
+## Ophthalmia neonatorum
+
+Conjunctivitis in the first 28 days of life. **Every case of acute bacterial conjunctivitis in a neonate needs an urgent same-day referral to an ophthalmologist**, because gonococcal infection can perforate the cornea within days.
+
+The timing is a useful clue: **gonococcal** conjunctivitis presents in the **first 48 hours** with a profuse purulent discharge and marked lid swelling, whereas **chlamydial** conjunctivitis appears later, at **5 to 14 days**, and is the commoner of the two.
+
+| Cause | Treatment |
+|---|---|
+| **Mild bacterial** | Chloramphenicol eye drops |
+| **Chlamydial** (the commonest) | **Oral erythromycin** — systemic treatment is essential, because the organism also colonises the nasopharynx and can cause a pneumonitis |
+| **Gonococcal** | A **single dose of parenteral cefotaxime or ceftriaxone**. Cefotaxime is generally preferred in the newborn, since ceftriaxone displaces bilirubin from albumin and interacts with calcium-containing infusions |
+| **Pseudomonal** | Gentamicin eye drops plus systemic antibiotics |
+| **Viral** | No specific antiviral; topical antihistamine and artificial tears relieve the itching |
+
+For chlamydial or gonococcal infection, **the mother and her sexual partner also require treatment**, and the case should prompt sexual health follow-up.
+
+> High-yield: benzylpenicillin and gentamicin is the answer for early-onset neonatal sepsis, and amoxicillin replaces benzylpenicillin if listeria is in the frame. Purulent conjunctivitis in the first 48 hours is gonococcal and sight-threatening; at 5 to 14 days it is chlamydial and needs oral, not topical, treatment.`,
+        },
+        {
+          id: "congenital_infections_neonatal",
+          name: "Congenital infections: treating the newborn",
+          content: `## Treating the infected newborn
+
+The maternal side of the congenital infections — how they are acquired, screened for and prevented — is covered in the *TORCH and congenital infections* topic. What follows is the **management of the baby**, which is examined separately and has some very specific answers.
+
+## Cytomegalovirus
+
+Cytomegalovirus is the **commonest congenital infection** and the leading non-genetic cause of **sensorineural deafness**. Affected babies may have a petechial "blueberry muffin" rash, microcephaly with **periventricular calcification**, hepatosplenomegaly and chorioretinitis, but the majority are asymptomatic at birth and still at risk of later hearing loss.
+
+- **Diagnosis is by PCR of urine or saliva within the first 2 weeks of life.** The timing is essential: after 2 weeks a positive result cannot distinguish congenital infection from postnatal acquisition
+- **Oral valganciclovir is first-line** treatment, with intravenous ganciclovir reserved for babies who cannot tolerate oral medication or who absorb poorly
+- **Barrier nursing**, because the virus is shed in urine and body secretions
+- Long-term audiology follow-up is essential
+
+## Herpes simplex virus
+
+Maternal genital herpes by itself does not cause pregnancy complications or fetal abnormality. The risk is **transmission during childbirth**, and neonatal herpes carries a **high mortality and morbidity**. The management depends entirely on *when* the mother acquired the infection, because it is the transfer of maternal antibody that protects the baby.
+
+| Maternal situation | Management |
+|---|---|
+| **Primary genital herpes before 28 weeks** | Prophylactic regular **aciclovir from 36 weeks**. Vaginal delivery is possible if she is asymptomatic and more than 6 weeks have passed since the initial infection; **caesarean section if symptomatic** |
+| **Primary genital herpes after 28 weeks** | Aciclovir during the initial infection, then regular prophylactic aciclovir. **Caesarean section is recommended in all cases**, because there is not enough time to transfer protective antibody |
+| **Recurrent herpes**, known before pregnancy | **Low risk** to the neonate, because maternal antibody crosses the placenta. Consider prophylactic aciclovir from 36 weeks to reduce symptoms |
+
+Aciclovir or valaciclovir can also be given prophylactically to the baby during the at-risk period.
+
+**Suspected symptomatic neonatal infection** is investigated with blood, swab and cerebrospinal fluid **PCR**, and treated with **intravenous aciclovir**. Do not treat with oral or topical aciclovir even if the baby otherwise appears well — neonatal herpes disseminates rapidly and can present with isolated skin, eye and mouth disease, central nervous system disease, or fulminant disseminated infection.
+
+## Toxoplasmosis
+
+**Symptomatic babies:**
+
+- Refer to **paediatric infectious diseases**
+- **Pyrimethamine, sulfadiazine and folinic acid**, all three continued for **1 year**
+- Monitor liver function tests and full blood count **every 4 to 6 weeks**, since pyrimethamine and sulfadiazine both suppress the marrow — the folinic acid is given specifically to mitigate this
+- Add **glucocorticoids (prednisolone)** if the cerebrospinal fluid protein is above 1 g/L or **active chorioretinitis threatens vision**
+
+**Asymptomatic babies with positive serology:** there are no definitive guidelines and treatment remains controversial, so individual cases are discussed with infection and virology specialists.
+
+**Ongoing ophthalmology and audiology assessment** is recommended for all of them, because chorioretinitis and hearing loss may present late.
+
+> High-yield: congenital CMV must be confirmed by urine or saliva PCR **within 2 weeks of birth** and is treated with oral valganciclovir. Neonatal herpes needs **intravenous** aciclovir, never oral or topical. Congenital toxoplasmosis is a year of pyrimethamine, sulfadiazine and folinic acid, with steroids added for sight-threatening chorioretinitis.`,
+        },
+        {
+          id: "hypoxic_ischaemic_encephalopathy",
+          name: "Hypoxic-ischaemic encephalopathy",
+          content: `## Hypoxic-ischaemic encephalopathy
+
+Hypoxic-ischaemic encephalopathy is brain injury following a period of inadequate oxygen delivery around the time of birth. It is the commonest cause of neonatal seizures and a major cause of cerebral palsy.
+
+The usual precipitants are anything that interrupts placental or umbilical blood flow: **placental abruption**, **cord prolapse** or a tight nuchal cord, uterine rupture, shoulder dystocia, maternal shock, and prolonged or obstructed labour.
+
+Supporting evidence for a hypoxic insult includes a **metabolic acidosis on cord gases**, a **low Apgar score at 5 and 10 minutes**, the need for prolonged resuscitation, multi-organ dysfunction, and abnormalities on the cardiotocograph beforehand.
+
+## Grading
+
+Severity is graded clinically using **Sarnat staging**, which classifies the encephalopathy into **three stages**:
+
+| Stage | Features | Outlook |
+|---|---|---|
+| **1 — mild** | Irritability, hyperalert, staring eyes, poor feeding, normal tone; resolves within about 24 hours | Usually complete recovery |
+| **2 — moderate** | Lethargy, hypotonia, reduced movement, **seizures** | Up to about 40% develop cerebral palsy |
+| **3 — severe** | Coma, absent reflexes, prolonged seizures, fluctuating tone, multi-organ failure | Around 50% mortality, and severe disability in most survivors |
+
+## Management
+
+The immediate management is **supportive resuscitation**:
+
+- **Optimising ventilation** — avoiding both hypoxia and hypocapnia, since a low carbon dioxide reduces cerebral perfusion
+- **Supporting the circulation**
+- **Ensuring adequate nutrition**
+- **Treating any seizures**
+
+The specific intervention is **therapeutic hypothermia**, from which babies born **at or near term** benefit. It is delivered in the neonatal intensive care unit and works by reducing the inflammation and neuronal loss that follow an acute hypoxic injury — much of the damage occurs in the hours *after* the insult, during reperfusion, which is the window this treatment targets.
+
+- The baby's **core temperature is actively cooled to between 33 and 34 degrees Celsius**
+- Cooling continues for **72 hours**
+- The baby is then **rewarmed gradually to normal temperature over 6 hours**
+
+Cooling must be started within 6 hours of birth to be effective, so recognition is time-critical. Alongside it, babies are monitored with amplitude-integrated EEG for subclinical seizures, and **MRI is performed after rewarming** to assess the pattern and extent of injury and to inform the discussion with parents about prognosis.
+
+Long-term follow-up by a developmental paediatrician is arranged for every baby, since the consequences — cerebral palsy, epilepsy, learning difficulty, visual and hearing impairment — may not declare themselves for months or years.
+
+> High-yield: Sarnat grades the encephalopathy into three stages, and **therapeutic hypothermia to 33 to 34 degrees for 72 hours, started within 6 hours of birth**, is the only treatment shown to improve outcome. Rewarm slowly over 6 hours and image with MRI afterwards.`,
+        },
+        {
+          id: "neonatal_surgical_conditions",
+          name: "Neonatal surgical conditions",
+          content: `## Necrotising enterocolitis
+
+Necrotising enterocolitis is inflammation and ischaemic necrosis of the bowel, predominantly affecting **preterm, formula-fed** babies in the first weeks of life. Breast milk is protective. It presents with feed intolerance, bilious vomiting, abdominal distension and tenderness, and **blood in the stool**, progressing to shock.
+
+The abdominal X-ray findings are the classic examination material: **pneumatosis intestinalis** (gas within the bowel wall) is the pathognomonic sign, with dilated loops, **portal venous gas**, and — if the bowel has perforated — free air, seen as **Rigler's sign** (both sides of the bowel wall visible) or a football sign.
+
+**Management:**
+
+- **Stop enteral feeding and enteral medications.** Parenteral nutrition is needed if feeds are stopped for more than 24 hours, and in confirmed disease feeds are held for **7 days**
+- **Nasogastric tube** to drain fluid and gas from the gut, with **hourly gastric aspirates** monitored
+- **Broad-spectrum intravenous antibiotics** covering both aerobes and anaerobes, for example cefotaxime and vancomycin
+- **Intravenous fluids** for cardiovascular support, with inotropes if required
+- **Surgery** — indicated for **perforation** or **failure to respond to medical treatment**. A laparotomy is performed with resection of necrotic bowel and either a primary anastomosis or a defunctioning stoma
+
+The important late complication is **short bowel syndrome** after extensive resection, and strictures may develop at the site of healed disease.
+
+## Tracheo-oesophageal fistula and oesophageal atresia
+
+A failure of separation of the trachea and oesophagus in early development. It is suspected antenatally from **polyhydramnios** (the fetus cannot swallow amniotic fluid) and postnatally from frothy secretions, choking and cyanosis with the first feed. The diagnostic test is simple: **a nasogastric tube cannot be passed**, and coils in the upper oesophagus on X-ray.
+
+The **Gross classification** describes the anatomy, and **type C — proximal oesophageal atresia with a distal tracheo-oesophageal fistula — accounts for about 85% of cases**. Around half of babies have other anomalies, classically the **VACTERL** association (vertebral, anorectal, cardiac, tracheo-oesophageal, renal and limb).
+
+Management is **primarily surgical correction**, and depends on the type:
+
+| Type | Management |
+|---|---|
+| **Type A** — atresia with no fistula | Stabilisation and **gastrostomy** first, then oesophageal replacement, since the gap between the two ends is too long to join |
+| **Types B and D** | Suction catheter and surgical correction |
+| **Type C** — the commonest | Stabilisation and surgical correction |
+| **Type E** — the "H-type" fistula with no atresia | Nil by mouth and surgical division of the fistula |
+
+## Congenital diaphragmatic hernia
+
+A defect in the diaphragm allows abdominal contents into the chest, which compresses the developing lung and causes **pulmonary hypoplasia** — and it is the lung hypoplasia and the resulting pulmonary hypertension, rather than the hernia itself, that determine survival. Most are left-sided (through the posterolateral Bochdalek defect), producing a **scaphoid abdomen**, bowel sounds in the chest and displaced heart sounds.
+
+- **Antenatally**, about half are diagnosed on routine scans. The mother's care is transferred to a specialist neonatal surgical unit, and a **planned delivery** (induction or caesarean) is offered
+- **At birth**, resuscitate with **intubation and ventilation** — avoid bag-and-mask ventilation, which inflates the stomach and worsens lung compression. Pass a **wide-bore nasogastric tube** to decompress the stomach, preventing vomiting and swelling and giving the lungs more room to inflate. **Extracorporeal membrane oxygenation (ECMO)** is used if pulmonary hypertension does not improve. The baby is managed in the neonatal intensive care unit
+- **Surgery is deliberately delayed** until the baby is physiologically stable. Timing varies, but babies needing less respiratory support generally have repair at **48 to 72 hours** of age
+
+## Cleft lip and palate
+
+**Cleft lip** is a congenital open section of the upper lip; **cleft palate** is an opening between the mouth and the nasal cavity from a defect in the hard or soft palate. They may occur together or separately, and a cleft palate is a feature of the **Pierre Robin sequence** alongside micrognathia and glossoptosis.
+
+- **Refer early to the cleft lip and palate multidisciplinary team.** The **first priority is adequate nutrition** for the baby, and long-term **speech and language therapy** input is often needed
+- **Feeding** — most babies can breastfeed normally; others need support with bottle feeding using dental plates and specially shaped bottles and teats
+- **Surgery is the definitive treatment.** Primary closure of the **cleft lip at around 3 months**, and of the **cleft palate at 6 to 12 months**
+
+Children with a cleft palate need monitoring for **secretory otitis media** and consequent hearing loss, because the defect impairs Eustachian tube function.
+
+> High-yield: pneumatosis intestinalis in a preterm formula-fed baby is necrotising enterocolitis. An NG tube that will not pass, with polyhydramnios in the history, is oesophageal atresia — type C in 85%. A scaphoid abdomen with bowel sounds in the chest is a diaphragmatic hernia, and the danger is pulmonary hypoplasia, not the hernia.`,
+        },
+        {
+          id: "neonatal_hypoglycaemia",
+          name: "Neonatal hypoglycaemia",
+          content: `## Neonatal hypoglycaemia
+
+A transient fall in blood glucose is common and usually self-correcting in the first hours of life, as the baby switches from a continuous placental glucose supply to intermittent feeding. It becomes significant when it is persistent or symptomatic, because prolonged hypoglycaemia causes permanent neurological injury.
+
+The babies at risk are those with **poor glycogen stores** (preterm, small for gestational age, intrauterine growth restriction), those who are **hyperinsulinaemic** (the infant of a diabetic mother, whose pancreas has been driven hard in utero, and babies with hyperinsulinism), and those who are **stressed or unwell** (sepsis, hypothermia, hypoxic-ischaemic encephalopathy, polycythaemia).
+
+Symptoms are non-specific: jitteriness, irritability, poor feeding, hypotonia, apnoea, temperature instability, and in severe cases seizures and coma.
+
+## Prevention
+
+- **Feed the baby within 30 minutes of birth**
+- **Frequent milk feeding thereafter, every 2 to 3 hours**
+
+## Asymptomatic hypoglycaemia
+
+- **Confirm the hypoglycaemia with a laboratory blood glucose assay**, since bedside glucometers are unreliable at low values in neonates
+- **Support breastfeeding technique** as appropriate
+- **Offer an additional feed** if the baby is willing, then increase the frequency, supplementing with a breast milk substitute or intravenous glucose if needed
+- **Buccal glucose gel** may be used alongside a feeding plan
+- **Remeasure the blood glucose after 1 hour** whenever a feeding intervention has been given, to confirm a response
+- **Inform the neonatal doctor**
+- If first-line feeding measures do not work, start a **10% glucose intravenous infusion** and retest **within 15 minutes**
+
+## Symptomatic hypoglycaemia, or a pre-feed glucose below 2 mmol/L
+
+This needs **immediate intravenous glucose**:
+
+- An initial **bolus of 2 mL/kg of 10% glucose**
+- Followed by an **infusion of 3.6 mL/kg/hour of 10% glucose**
+- **Aim for a glucose of 3 to 4 mmol/L**
+
+If intravenous access is delayed, use **buccal glucose gel or intramuscular glucagon** in the interim. If the glucose is **below 1 mmol/L**, give buccal glucose gel as a holding measure while intravenous access and an infusion are arranged.
+
+## Persistent hypoglycaemia
+
+**Refer to the endocrinology team for investigation.** As in adults, the diagnostic samples must be taken **during** the hypoglycaemia and before it is corrected — glucose, insulin, C-peptide, ketones, free fatty acids, cortisol and growth hormone. The adult framework for interpreting these is set out in the *Hypoglycaemia* topic; in a neonate, remember that **detectable ketones and high free fatty acids are the normal response**, so their absence points to hyperinsulinism or a fatty acid oxidation disorder.
+
+Where hypoglycaemia is **secondary to hyperinsulinism**, give one of:
+
+- A **glucagon infusion**
+- **Diazoxide with chlorothiazide** — diazoxide opens the pancreatic potassium channel and suppresses insulin release, and the thiazide counteracts the fluid retention it causes
+- A **somatostatin analogue**
+
+> High-yield: feed within 30 minutes of birth and every 2 to 3 hours. Asymptomatic hypoglycaemia is managed by feeding and rechecking at 1 hour; symptomatic hypoglycaemia or a glucose below 2 mmol/L needs intravenous 10% glucose, 2 mL/kg then 3.6 mL/kg/hour. Take the hypoglycaemia screen before correcting persistent cases.`,
+        },
+        {
+          id: "down_syndrome_neonatal",
+          name: "Down syndrome & the chromosomal childhood syndromes",
+          content: `## Down syndrome
+
+Trisomy 21 is the commonest autosomal trisomy compatible with life. The genetics and the recurrence risks are covered in the *Chromosomal disorders* topic; what follows is the **diagnosis and the practical management of the newborn**.
+
+## Diagnosis
+
+- **Antenatal screening** usually takes place at around **12 weeks** by the combined test, or later by the triple or quadruple test
+- **Confirmatory testing** after a screen-positive result is by **amniocentesis or chorionic villus sampling**, both of which are diagnostic rather than screening tests
+- **Postnatal diagnosis** is made on an **urgent blood PCR for trisomy 21**, so that the parents are not left waiting on a full karyotype
+
+## Investigations and management of the newborn
+
+- **Echocardiogram.** Cardiac abnormalities occur in **45%** of babies with Down syndrome, and the commonest is an **atrioventricular septal defect**
+- **Full blood count and blood film.** About **10%** have **transient abnormal myelopoiesis**, a self-resolving leukaemoid picture that nonetheless carries an increased risk of later **acute lymphoblastic leukaemia**
+- **Hearing screening**, then annual hearing testing with auditory thresholds, **tympanometry** and otoscopy
+- **Ophthalmology review at 3 to 6 months**, and thereafter
+- An **MDT approach** throughout
+
+**Monitor for the associated conditions:**
+
+- **Hypothyroidism** — thyroid function tests at birth, 6 months, 1 year and annually thereafter
+- **Duodenal atresia** — the antenatal or neonatal "double bubble"
+- **Hirschsprung disease**
+- **Coeliac disease**
+- **Epilepsy**
+- **Atlantoaxial instability**, which matters before any anaesthetic or contact sport
+
+## The multidisciplinary team
+
+- **Speech and language therapy** if there is difficulty swallowing, and later for communication
+- **Physiotherapy** and **occupational therapy** for fine motor skills, as early intervention therapies in childhood
+- **Parental counselling and education**, including recommending support groups such as the Down's Syndrome Association
+- **Genetic counselling** for the family
+- An **individualised educational plan**
+
+## The chromosomal childhood syndromes
+
+Several other chromosomal syndromes present in the newborn period or early childhood. Most require an **MDT approach**, and specific management is highly condition-dependent.
+
+| Syndrome | Genetics | Recognisable features |
+|---|---|---|
+| **Patau syndrome** | **Trisomy 13** | Microcephaly, cleft lip and palate, polydactyly, holoprosencephaly; very poor prognosis |
+| **Edwards syndrome** | **Trisomy 18** | Micrognathia, **overlapping fingers**, rocker-bottom feet, cardiac defects; very poor prognosis |
+| **Fragile X** | **CGG repeat expansion in FMR1**, X-linked | The commonest inherited cause of learning disability; long face, large ears, macro-orchidism after puberty |
+| **Noonan syndrome** | Autosomal dominant, commonly **PTPN11** | Short stature, webbed neck, **pulmonary stenosis**, pectus deformity — a "male Turner" phenotype but with a normal karyotype |
+| **Pierre Robin sequence** | Not a chromosomal disorder as such | **Micrognathia, glossoptosis and cleft palate**, with airway obstruction as the immediate risk |
+| **Prader-Willi syndrome** | Loss of the **paternal** 15q11-13, by deletion or maternal uniparental disomy | Neonatal hypotonia and poor feeding, then **hyperphagia and obesity**, hypogonadism, learning difficulty |
+| **Williams syndrome** | **7q11 deletion** | Very sociable personality, **supravalvular aortic stenosis**, **hypercalcaemia**, starburst iris |
+| **Cri du chat syndrome** | **5p deletion** | **High-pitched cat-like cry**, microcephaly, hypertelorism, learning difficulty |
+| **Turner syndrome** | **45,X** | Short stature, webbed neck, **coarctation of the aorta**, primary amenorrhoea |
+| **Klinefelter syndrome** | **47,XXY** | Tall stature, small firm testes, gynaecomastia, infertility |
+| **DiGeorge syndrome** | **22q11.2 microdeletion** | **CATCH-22** — cardiac defects, abnormal facies, thymic aplasia, cleft palate, hypocalcaemia from parathyroid aplasia |
+
+> High-yield: every newborn with Down syndrome needs an **echocardiogram** (45% have a cardiac lesion, most often an AVSD) and **thyroid function tests at birth, 6 months, 1 year and annually**. Angelman syndrome is the maternal counterpart of Prader-Willi at the same 15q locus, and DiGeorge is the one to remember for neonatal hypocalcaemia.`,
+        },
+        {
+          id: "sudden_infant_death_syndrome",
+          name: "Sudden infant death syndrome & safer sleep",
+          content: `## Sudden infant death syndrome
+
+Sudden infant death syndrome is the sudden, unexpected death of an apparently healthy infant that remains unexplained after a full investigation, including post-mortem examination, review of the circumstances and review of the clinical history. It is a **diagnosis of exclusion**, and it remains the commonest cause of death between one month and one year of age.
+
+The peak incidence is between **2 and 4 months**, and the great majority occur before 6 months.
+
+## Risk factors
+
+- **Prone or side sleeping position**
+- **Parental smoking**, both in pregnancy and after birth
+- **Co-sleeping**, particularly on a sofa or armchair, and especially where a parent has taken alcohol, sedatives or drugs
+- **Overheating** and excessive bedding
+- **Prematurity and low birth weight**
+- Male sex, and social deprivation
+
+## Prevention: the safer sleep advice
+
+This is the highest-yield content, because it is advice given to every new parent and is examined as counselling:
+
+- **Put the infant to sleep on their back** for every sleep, day and night
+- Place the baby in the **"feet to foot" position**, with their feet at the foot of the cot, so they cannot wriggle down under the bedding
+- **Avoid overheating** — keep the room at a comfortable temperature and do not over-wrap
+- **No smoking exposure**, either in pregnancy or around the baby
+- The baby should sleep **in the parents' bedroom for the first 6 months**, in their own cot
+- The baby should **not be in the parents' bed** when a parent is very tired, or has taken alcohol, sedative medicines or drugs — and never on a sofa or armchair
+- **Ideally the infant should be breastfed**, which is independently protective
+
+## When a baby dies unexpectedly
+
+An unexpected infant death triggers a **joint agency response**: the death is discussed with the coroner, a **post-mortem examination** is arranged, and a multi-agency review involving paediatrics, police and social care follows. This process is standard and is not an accusation of wrongdoing, which is worth stating plainly to parents — but it does exist partly because **non-accidental injury** and previously unrecognised medical conditions, including inherited metabolic disease and cardiac arrhythmia syndromes, must be excluded.
+
+Bereaved families need clear, sensitive follow-up, including the offer of a meeting once results are available, bereavement support, and discussion of any implications for future pregnancies.
+
+> High-yield: back to sleep, feet to foot, room-share for 6 months but never bed-share on a sofa or after alcohol, avoid overheating and smoke exposure, and breastfeed. The peak age is 2 to 4 months.`,
+        },
+        {
+          id: "congenital_heart_disease_overview",
+          name: "Congenital heart disease: the approach",
+          content: `## Framing congenital heart disease
+
+Congenital heart disease affects around 8 in 1000 live births. Almost every lesion can be placed by answering two questions, and the answers determine both how the baby presents and what you do about it.
+
+**Is the child cyanosed?**
+
+- **Acyanotic lesions** shunt blood **left to right**, so deoxygenated blood is not reaching the systemic circulation. Extra blood is pushed through the lungs instead, and the child presents with **breathlessness, poor feeding and heart failure** — or with an asymptomatic murmur. The examples are atrial septal defect, ventricular septal defect and patent ductus arteriosus, and the obstructive lesions (aortic stenosis, pulmonary stenosis, coarctation) sit here too.
+- **Cyanotic lesions** shunt blood **right to left**, so deoxygenated blood bypasses the lungs and enters the systemic circulation. The child presents with **cyanosis**. The examples are tetralogy of Fallot, transposition of the great arteries and tricuspid atresia.
+
+**Is the lesion duct-dependent?** The ductus arteriosus stays open in fetal life and normally closes within the first few days. Some lesions can only survive while it remains open, which is why they **present dramatically at around 48 hours to a week of age**, exactly when the duct closes.
+
+| Duct-dependent for | Lesions | What the duct is doing |
+|---|---|---|
+| **Pulmonary blood flow** | Pulmonary atresia, critical pulmonary stenosis, tricuspid atresia, severe tetralogy of Fallot | Supplying the lungs from the aorta |
+| **Systemic blood flow** | **Critical coarctation**, interrupted aortic arch, critical aortic stenosis, hypoplastic left heart | Supplying the body from the pulmonary artery |
+| **Mixing** | **Transposition of the great arteries** | Allowing oxygenated and deoxygenated blood to mix between two parallel circulations |
+
+## The cyanosed newborn
+
+Cyanosis in a newborn is either cardiac or respiratory, and the **hyperoxia (nitrogen washout) test** separates them: give **100% oxygen for 10 minutes** and remeasure. If the saturations remain persistently low despite this, the cause is likely to be **congenital cyanotic heart disease** or a primary pulmonary pathology, because blood that is bypassing the lungs altogether cannot be oxygenated however much oxygen is given.
+
+Management of a suspected duct-dependent cyanotic lesion:
+
+- **Airway and breathing** — intubate if indicated, and give **supplemental oxygen only to maintain saturations of 75 to 85%**. This looks alarmingly low, and is deliberate: oxygen is a pulmonary vasodilator and closes the duct, so over-oxygenating floods the lungs and shuts the lesion's lifeline
+- **Circulation** — site **two intravenous cannulae**, or consider umbilical venous and arterial catheters. Give a **10 mL/kg crystalloid bolus** for hypotension, to a maximum of 30 mL/kg, then adrenaline for resistant hypotension
+- **Maintain duct patency, which is the key to early survival** — start a **prostaglandin E1 infusion**. Most infants with cyanotic heart disease presenting in the first week of life are duct-dependent
+- **Check blood glucose regularly**
+
+**The side effects of prostaglandin E1 are examinable**: **apnoea** (the important one — be prepared to intubate), hypoglycaemia with jitteriness and flushing, seizures, vasodilatation, hypotension and fever.
+
+## Eisenmenger syndrome
+
+The reason acyanotic shunts are closed rather than simply watched forever: a large, long-standing left-to-right shunt drives high flow through the pulmonary circulation, which causes irreversible pulmonary vascular remodelling and **pulmonary hypertension**. Once the pulmonary pressure exceeds the systemic pressure, **the shunt reverses to right-to-left and the patient becomes cyanosed**. This is **Eisenmenger syndrome**, it is irreversible, and it is a **contraindication to closing the defect** — at that point the shunt is acting as a pressure-relief valve. The only definitive treatment is heart-lung transplantation.
+
+> High-yield: a baby who collapses or turns blue at **48 hours to a week** old has a duct-dependent lesion until proven otherwise — **prostaglandin E1**, and do not be tempted to correct the saturations to normal.`,
+        },
+        {
+          id: "acyanotic_shunt_lesions",
+          name: "Atrial septal defect, ventricular septal defect & patent ductus arteriosus",
+          content: `## The left-to-right shunts
+
+These three lesions all move blood from the systemic to the pulmonary circulation. They are acyanotic, they present with a murmur or with heart failure, and their long-term risks are **pulmonary hypertension progressing to Eisenmenger syndrome** and **infective endocarditis**.
+
+| Lesion | Murmur | Where |
+|---|---|---|
+| **Atrial septal defect** | **Mid-systolic, crescendo-decrescendo**, with **fixed splitting of the second heart sound** | Upper left sternal border |
+| **Ventricular septal defect** | **Loud pansystolic**, with a quiet pulmonary second sound | Lower left sternal edge, third and fourth intercostal spaces |
+| **Patent ductus arteriosus** | **Continuous "machinery" murmur** | Left infraclavicular area |
+
+## Atrial septal defect
+
+A defect in the septum between the two atria. There are three main types, from most to least common:
+
+- **Ostium secundum** — the septum secundum fails to close fully. This is the commonest
+- **Patent foramen ovale** — the foramen ovale fails to close. Strictly this is **not a true atrial septal defect**
+- **Ostium primum** — the septum primum fails to close, leaving a hole low in the septum. It **commonly also involves an atrioventricular valve defect**, which is why it is the type associated with Down syndrome
+
+Two points explain the signs. The murmur is **not** made by flow through the defect itself, which is low-pressure and silent; it comes from the **increased volume crossing the pulmonary valve**. And the **fixed splitting** occurs because right ventricular volume overload delays pulmonary valve closure to the same degree throughout the respiratory cycle, so the normal inspiratory variation in splitting is lost.
+
+Every child with an atrial septal defect should be **referred to a paediatric cardiologist**.
+
+**Management**
+
+- **Observation** is the main strategy for small or asymptomatic defects
+- **Closure** is generally **deferred until after two years of age** in asymptomatic patients
+- **Transcatheter closure** with an occlusive device is used for **ostium secundum** defects. It has a similar success rate to surgery but with **lower complication rates and a shorter hospital stay**
+- **Open heart surgery** with direct repair is needed for **primum** defects, and sometimes for secundum defects
+
+**Indications for closure:**
+
+- **Right heart enlargement**
+- **Symptomatic pulmonary over-circulation**
+- **Substantial left-to-right shunting**, supported by a ratio of pulmonary to systemic blood flow **greater than 1.5**
+
+These findings usually accompany moderate to large defects, which are unlikely to close spontaneously.
+
+## Ventricular septal defect
+
+The commonest congenital heart lesion. A counter-intuitive rule governs the murmur: **the smaller the defect, the louder the murmur**, because a small hole generates more turbulence. A large defect may be almost silent while causing florid heart failure. Other causes of a pansystolic murmur are mitral and tricuspid regurgitation.
+
+**Management**
+
+- **Observation is first-line.** Small shunts with no pulmonary hypertension or heart failure will often **close spontaneously**, shown by disappearance of the murmur and a normal echocardiogram
+- While the defect is present, prevent bacterial endocarditis by **maintaining good dental hygiene** (see the caveat on antibiotic prophylaxis below)
+- **Large defects** are closed by **transvenous catheter closure through the femoral vein**, or by open heart surgery
+- **Heart failure** is treated with **furosemide**, or furosemide with **captopril** and sometimes **digoxin**
+- **Additional calorie intake**, since these babies tire with feeding and have raised energy requirements
+
+## Patent ductus arteriosus
+
+Failure of the ductus arteriosus to close after birth. It is commoner in **preterm** infants and after **congenital rubella**. The signs are a continuous machinery murmur with **bounding or collapsing pulses** and a wide pulse pressure. **Closure is recommended to abolish the lifelong risk of bacterial endocarditis and of pulmonary vascular disease.**
+
+**Management**
+
+- **Intravenous indomethacin is first-line** — a prostacyclin synthetase inhibitor. **Ibuprofen** is an alternative, and both work by inhibiting the prostaglandin synthesis that keeps the duct open. This is usually done in **premature or very low birth weight** infants
+- If drugs fail, use **surgical ligation** or **percutaneous catheter device closure**. Symptomatic children, or those with evidence of heart failure, are treated earlier
+- **The critical exception:** if a cyanotic lesion is **dependent** on the duct — transposition of the great arteries, for example — the patient must be started on a **prostaglandin infusion to keep the duct open** until corrective surgery can be performed. Closing the duct in that situation would be fatal
+
+> High-yield: fixed splitting of the second heart sound is an atrial septal defect; a loud pansystolic murmur at the lower left sternal edge is a ventricular septal defect, and the louder it is the smaller the hole; a continuous machinery murmur with bounding pulses is a patent ductus arteriosus. Indomethacin **closes** a duct and prostaglandin **keeps it open** — which one you want depends entirely on the underlying lesion.`,
+        },
+        {
+          id: "obstructive_congenital_lesions",
+          name: "Aortic stenosis, pulmonary stenosis & coarctation of the aorta",
+          content: `## The obstructive lesions
+
+These lesions obstruct outflow rather than shunt blood. They are acyanotic, and severity ranges from an incidental murmur to neonatal collapse when a critical lesion is duct-dependent.
+
+## Aortic stenosis
+
+The **gold standard investigation for establishing the diagnosis is an echocardiogram**. Regular follow-up is needed to monitor progression, comprising **paediatric cardiology review, echocardiography, ECG and exercise testing**.
+
+- **Percutaneous balloon aortic valvuloplasty** is commonly the treatment of choice for valvar aortic stenosis in children. It works well here because **children's aortic valve leaflets are typically easy to dilate**, in contrast to adults, in whom calcific change makes them far harder to dilate — this is the key difference from adult practice
+- **Transcatheter aortic valve replacement or surgical valvotomy** are usually second-line to balloon valvuloplasty
+
+Critical aortic stenosis in a neonate is duct-dependent for systemic flow and presents with shock as the duct closes.
+
+## Pulmonary stenosis
+
+- **Mild disease is asymptomatic and rarely progresses**, so it needs only observation and follow-up
+- **Moderate and severe disease** — **transcatheter balloon dilatation is the treatment of choice**, with surgical valvuloplasty second-line
+- The guide advises endocarditis prophylaxis before high-risk procedures; see the caveat below on how this differs in the United Kingdom
+
+Pulmonary stenosis is a feature of **Noonan syndrome**, and is one of the four components of tetralogy of Fallot.
+
+## Coarctation of the aorta
+
+A narrowing of the aorta, of which **98% occur distal to the left subclavian artery**, usually at the origin of the ductus arteriosus.
+
+The **commonest presentation is at 48 hours of age, when the ductus arteriosus closes** and the systemic circulation below the coarctation abruptly loses its supply — the baby presents in shock with absent femoral pulses and a metabolic acidosis. Milder coarctation presents later in childhood with **upper limb hypertension**, **radiofemoral delay** and weak femoral pulses, and in older children with **rib notching** from collateral vessels and a "3 sign" on the chest X-ray. It is strongly associated with **Turner syndrome** and with a bicuspid aortic valve.
+
+**Management**
+
+- **Prostaglandin E1 infusion** to maintain duct patency — this is the immediate life-saving step in a collapsed neonate
+- **Surgical repair** — end-to-end anastomosis, or arch reconstruction with a patch or a bypass graft
+- **Older patients** may instead be managed with **stent insertion** or surgical resection
+
+> High-yield: a shocked baby at 48 hours old with **absent femoral pulses** is critical coarctation — prostaglandin E1 first, and check for Turner syndrome. Balloon valvuloplasty is first-line for both aortic and pulmonary stenosis in children, which is not the case in adults.`,
+        },
+        {
+          id: "cyanotic_heart_disease_lesions",
+          name: "Tetralogy of Fallot, transposition & tricuspid atresia",
+          content: `## The three cyanotic lesions
+
+All three shunt blood right to left, so the child is cyanosed. The general approach — the hyperoxia test, saturation targets and prostaglandin E1 — is covered in the *Congenital heart disease: the approach* topic; what follows is what is specific to each.
+
+## Tetralogy of Fallot
+
+The commonest cyanotic congenital heart disease beyond the newborn period, with **four** components:
+
+- A **ventricular septal defect**
+- An **overriding aorta**, sitting above the defect and receiving blood from both ventricles
+- **Right ventricular outflow tract obstruction** (pulmonary stenosis), which is what determines severity
+- **Right ventricular hypertrophy**, the consequence of that obstruction
+
+The chest X-ray classically shows a **boot-shaped heart**. Severity depends entirely on the degree of outflow tract obstruction: mild cases present with a murmur, severe cases with cyanosis from birth.
+
+**Management**
+
+- **If severe with worsening cyanosis** — a **prostaglandin E1 infusion**, then a **Blalock-Taussig shunt**, an artificial tube between the subclavian artery and the pulmonary artery that provides a stable supply of blood to the lungs
+- **Total surgical repair by open heart surgery is the definitive treatment**, performed from **4 months of age** onwards. It involves **closing the ventricular septal defect and relieving the right ventricular outflow tract obstruction**
+
+**Hypercyanotic ("tet") spells** are the complication to know. They are intermittent symptomatic periods in which the right-to-left shunt temporarily worsens, either because pulmonary vascular resistance rises or because systemic vascular resistance falls — so more deoxygenated blood is diverted across the defect and away from the lungs. They are typically triggered by crying, feeding or waking. Management is aimed at reversing that pressure balance:
+
+- **Knee-to-chest position** — this kinks the femoral arteries and raises systemic vascular resistance, pushing blood back towards the lungs. In an older child, squatting achieves the same thing, which is why children with tetralogy squat
+- **Supplementary oxygen**
+- **Intravenous fluids**
+- **Beta-blockers**, which relax the right ventricular outflow tract and improve flow to the pulmonary vessels
+- **Morphine**, to decrease respiratory drive and settle the child
+- **Sodium bicarbonate**, to counteract metabolic acidosis
+- **Phenylephrine infusion**, to increase systemic vascular resistance
+
+## Transposition of the great arteries
+
+The aorta arises from the right ventricle and the pulmonary artery from the left, so the pulmonary and systemic circulations run **in parallel rather than in series**. Deoxygenated blood circulates round the body and oxygenated blood round the lungs, and the baby can only survive while the two circuits **mix** — through the duct and the foramen ovale. It therefore presents with profound cyanosis in the **first day or two of life**, worsening as the duct closes. The chest X-ray is classically an **"egg on a string"**, from the narrow mediastinum.
+
+**Management**
+
+- **Supportive** — maintain body temperature, and correct acidosis and hypoglycaemia
+- **Prostaglandin E1 infusion** to maintain the ductus arteriosus
+- **Balloon atrial septostomy** — a catheter is passed into the foramen ovale and a balloon inflated to create a **large atrial septal defect**, so blood returning from the lungs can flow to the right side of the heart and into the aorta. A **bolus of heparin** is given beforehand
+- **Definitive management is the arterial switch procedure in the first 2 weeks of life**, on cardiopulmonary bypass. Note that the **coronary arteries must also be transferred** to the new aorta, which is the technically demanding part of the operation
+
+## Tricuspid atresia
+
+The tricuspid valve fails to form, so there is no flow from right atrium to right ventricle and the right ventricle is hypoplastic. Blood must cross an atrial septal defect to reach the left heart, and pulmonary flow depends on a ventricular septal defect or the duct.
+
+**Initial medical management**
+
+- **Prostaglandin E1 infusion** to maintain adequate flow through the duct
+- **Cardiorespiratory support** — oxygen and mechanical ventilation, inotropes and intravenous fluid
+
+**Surgery is staged, in three operations**, because **complete corrective surgery is not possible in most cases — there is only one functioning ventricle**. The goal is therefore a **Fontan circulation**, in which systemic venous blood flows passively to the lungs and the single ventricle pumps only to the body:
+
+| Stage | Timing | Operation |
+|---|---|---|
+| **First** | Neonatal | Early palliation to secure blood supply to the lungs at low pressure: a **Blalock-Taussig shunt** between the subclavian and pulmonary arteries, or a **pulmonary artery banding** operation to *reduce* pulmonary blood flow if the child is breathless |
+| **Second** | **3 to 6 months** | **Glenn** procedure — remove the shunt and anastomose the superior vena cava directly to the right pulmonary artery |
+| **Third** | **2 to 5 years** | **Fontan** procedure — a direct venous pathway from the inferior vena cava into the pulmonary arteries |
+
+These children need antibiotic prophylaxis (see the caveat in the *Infective endocarditis and rheumatic fever in children* topic).
+
+> High-yield: cyanosis on **day 1 to 2** with an egg-on-a-string chest X-ray is transposition — prostaglandin, then balloon atrial septostomy, then arterial switch within 2 weeks. Cyanosis with a **boot-shaped heart** and squatting is tetralogy. A knee-to-chest position is the first move in a tet spell.`,
+        },
+        {
+          id: "paediatric_heart_failure",
+          name: "Heart failure in children",
+          content: `## Heart failure in children
+
+Heart failure in childhood is usually the consequence of a **structural lesion** rather than of ischaemic heart disease. The commonest cause in infancy is a large **left-to-right shunt** flooding the pulmonary circulation, and beyond infancy, cardiomyopathy, arrhythmia or acquired disease such as myocarditis or rheumatic heart disease.
+
+The presentation is quite unlike the adult picture. Infants show it through **feeding**: they tire and sweat during feeds, take a long time to finish, and fail to thrive. Look also for tachypnoea, tachycardia, recurrent chest infections, hepatomegaly (a much more reliable sign of fluid overload in a child than a raised jugular venous pressure) and, in older children, the more familiar oedema and exercise intolerance.
+
+## Aims of management
+
+Treatment is best remembered as a set of physiological aims rather than a drug list, because the same aims are met by different agents depending on how unwell the child is.
+
+| Aim | How it is achieved |
+|---|---|
+| **Reduce preload** | **Diuretics** such as furosemide; more rarely venous dilators such as nitroglycerin |
+| **Enhance cardiac contractility** | Intravenous agents such as **dopamine**; other options are **digoxin, dobutamine, adrenaline and milrinone** |
+| **Reduce afterload** | Oral **ACE inhibitors**; intravenous agents such as hydralazine, nitroprusside and alprostadil |
+| **Improve oxygen delivery** | **Beta-blockers** such as **carvedilol** |
+| **Enhance nutrition** | Caloric needs are **increased** and these children tire with feeding, so **intermittent or continuous nasogastric or gastrostomy tube feeds** are often needed |
+| **Exercise and physical activity** | Routine daily exercise, according to capacity |
+
+The nutritional aim is easy to overlook and is genuinely important: a child in heart failure has a higher energy requirement precisely when feeding has become hard work, so growth failure is common and tube feeding is a therapeutic intervention rather than an afterthought.
+
+Alongside all of this, **treat the underlying cause** — closing the shunt, repairing the lesion or controlling the arrhythmia is what actually resolves the failure.
+
+> High-yield: in an infant, heart failure presents as **breathlessness and sweating during feeds with poor weight gain**, and **hepatomegaly** rather than a raised JVP. Think of management as five aims — reduce preload, improve contractility, reduce afterload, improve oxygen delivery, and feed the child.`,
+        },
+        {
+          id: "paediatric_arrhythmia_syncope",
+          name: "Supraventricular tachycardia & syncope in children",
+          content: `## Supraventricular tachycardia
+
+Supraventricular tachycardia is the commonest significant arrhythmia of childhood, usually caused by a re-entry circuit through an accessory pathway. Rates are much faster than in adults — often **above 220 beats per minute in an infant** and above 180 in an older child — and the QRS complex is narrow.
+
+Infants cannot report palpitations, so they present with **poor feeding, pallor, irritability, tachypnoea** and, if the arrhythmia is sustained, heart failure. Older children describe a sudden-onset, sudden-offset racing heartbeat.
+
+## Management
+
+**If haemodynamically stable:**
+
+- **First-line: vagal manoeuvres**, ideally performed **supine with the legs raised**. In young children apply an **ice-cold flannel to the face** (the diving reflex); older children can perform a **Valsalva** manoeuvre
+- **Second-line: adenosine**, given as a rapid bolus into a large proximal vein followed by an immediate saline flush, because its half-life is only seconds. The paediatric dose escalates: **100 micrograms/kg, then 200 micrograms/kg, then 300 micrograms/kg**. Warn the child and family that it causes a few seconds of intensely unpleasant chest tightness and flushing
+- **Third-line: one of** synchronised **DC cardioversion**, **amiodarone 5 mg/kg**, **procainamide 15 mg/kg** or **flecainide 2 mg/kg**
+
+**If haemodynamically unstable:**
+
+- **Synchronised DC cardioversion is the definitive intervention**, at 1 J/kg then 2 J/kg
+- Vagal manoeuvres and adenosine should still be attempted, since they may work while preparations are made and neither delays cardioversion meaningfully
+
+**Catheter ablation** is recommended for recurrent episodes or where an accessory pathway is demonstrated.
+
+Look for **Wolff-Parkinson-White** syndrome on the resting ECG once sinus rhythm is restored: a **short PR interval with a delta wave** (a slurred upstroke to the QRS).
+
+## Vasovagal syncope
+
+The ordinary faint, and much the commonest cause of syncope in children and adolescents. It is a reflex fall in heart rate and vascular tone, typically provoked by prolonged standing, heat, pain, fright or the sight of blood, and preceded by a **prodrome** of nausea, warmth, tunnel vision and ringing in the ears. Recovery is rapid and complete.
+
+**Management is largely non-pharmacological:**
+
+- **Patient education is the main treatment** — teaching the child to recognise the warning symptoms and to avoid known triggers
+- **Physical counter-pressure manoeuvres** (leg crossing with tensing, handgrip, arm tensing) and **tilt training**, which abort the faint when the warning signs appear
+- **Increase circulating volume** — increased dietary salt and electrolyte-rich sports drinks
+- **Fludrocortisone** may be given where these measures fail
+
+## The features that make syncope cardiac
+
+This is the point of the assessment, because vasovagal syncope is benign and cardiac syncope can be fatal. Refer urgently for an ECG and cardiology assessment if there is:
+
+- Syncope **during exercise** (as opposed to immediately after it)
+- **No prodrome** — a sudden collapse without warning
+- Syncope while **supine** or sitting
+- **Palpitations or chest pain** immediately beforehand
+- A **family history of sudden cardiac death**, or of inherited arrhythmia or cardiomyopathy
+- An abnormal cardiovascular examination or an abnormal ECG
+
+> High-yield: vagal manoeuvres, then adenosine at 100 then 200 then 300 micrograms/kg, then cardioversion — and cardioversion first if the child is unstable. Exertional syncope, syncope with no prodrome, or a family history of sudden death is cardiac until proven otherwise.`,
+        },
+        {
+          id: "paediatric_endocarditis_rheumatic_fever",
+          name: "Infective endocarditis & rheumatic fever in children",
+          content: `## Infective endocarditis in children
+
+Infective endocarditis is **uncommon in children**, with an incidence of about **0.43 cases per 100,000 per year**. The pathology, the Duke criteria and the general principles are covered in the adult *Infective endocarditis* topic; what follows is what differs in children.
+
+**Almost every affected child has an identifiable risk factor** — either **pre-existing heart disease** or an **indwelling central venous catheter**. That second group is increasingly important, as children with long-term lines for oncology, parenteral nutrition or dialysis now make up a substantial share of cases.
+
+**Management**
+
+- **A multidisciplinary approach** involving cardiologists, cardiac surgeons, infectious disease specialists and microbiologists
+- **Blood cultures in every patient** — a **minimum of three sets over up to 48 hours**. In a **critically ill** child take all three **as quickly as possible, within an hour**, and start empirical antibiotics promptly; in a child who is **not acutely ill**, antibiotics can be **withheld for at least 48 hours** while cultures are collected, which greatly improves the chance of identifying the organism
+- **Surgery** is indicated for removal of infected prosthetic material
+
+**Empirical antibiotic therapy:**
+
+| Situation | Regimen |
+|---|---|
+| **Native valve** | A **beta-lactam**, with or without low-dose gentamicin |
+| Native valve, **penicillin allergy or severe sepsis** | **Low-dose gentamicin plus vancomycin**, in place of the beta-lactam |
+| Native valve, **severe sepsis with risk factors for Gram-negative infection** | **Vancomycin plus meropenem**, in place of the beta-lactam |
+| **Prosthetic valve** | **Vancomycin plus rifampicin plus low-dose gentamicin** |
+
+Once cultures return, treatment is narrowed to targeted therapy following the European Society of Cardiology regimens.
+
+## Antibiotic prophylaxis: the United Kingdom position
+
+This is a genuine point of international divergence and is worth getting right for a UK examination. European and American guidance recommends antibiotic prophylaxis before dental and other invasive procedures for patients at high risk of endocarditis. **NICE does not.**
+
+**NICE CG64 states that antibiotic prophylaxis against infective endocarditis is not recommended *routinely* for people undergoing dental or other interventional procedures.** The word "routinely" was added in 2016 and is doing real work: it leaves room for clinical judgement in individual patients at particularly high risk, and in October 2024 NICE amended the guideline to signpost the Scottish Dental Clinical Effectiveness Programme implementation advice, which sets out how to make that decision. Any prophylaxis in a high-risk child should therefore be an individualised decision made with the paediatric cardiology team, not a routine prescription.
+
+What NICE does emphasise for everyone at increased risk is the part that is easy to forget: **excellent oral and dental hygiene**, regular dental review, avoidance of piercings and tattoos, and clear advice to seek help early for infection — measures that prevent far more endocarditis than prophylaxis ever did.
+
+## Rheumatic fever
+
+An immune-mediated complication of group A streptococcal pharyngitis, and still an important cause of acquired heart disease in children worldwide. The Jones criteria, the pathology and chronic rheumatic valve disease are covered in the adult *Rheumatic fever* topic.
+
+**Management of the acute episode**
+
+- **Anti-inflammatory therapy.** **NSAIDs — naproxen or ibuprofen are now preferred**, where aspirin was used historically — are very effective at suppressing the inflammatory response in the joints and the heart. They are given at **high dose for 1 to 2 weeks, or 6 to 8 weeks** where there is carditis
+- **Anti-streptococcal antibiotics** — penicillin V, benzathine benzylpenicillin or amoxicillin — if there is any evidence of persistent infection
+- **Symptomatic heart failure** is treated with **diuretics and ACE inhibitors**, and **prednisolone** may be required for severe carditis
+
+**Secondary prophylaxis** must then follow, because recurrence causes cumulative valve damage: **benzathine penicillin every 3 to 4 weeks**, continued for years — the duration depending on whether carditis occurred and whether valve disease persists.
+
+> High-yield: in a child with endocarditis, look for pre-existing heart disease or a central line. Take three sets of blood cultures, and if the child is well you can wait 48 hours for them. Rheumatic fever is now treated with **naproxen or ibuprofen rather than aspirin**, followed by **benzathine penicillin every 3 to 4 weeks** as secondary prophylaxis.`,
+        },
+        {
+          id: "paediatric_asthma",
+          name: "Asthma in children: diagnosis & chronic management",
+          content: `## A guideline that has changed completely
+
+Asthma management in the United Kingdom was rewritten in **November 2024** by a joint **BTS, NICE and SIGN guideline (NG245)**, which replaced NICE NG80 and the BTS/SIGN guideline. It was updated again in **November 2025**. The old ladder — a short-acting beta-2 agonist alone, then add an inhaled corticosteroid, then a leukotriene receptor antagonist, then a long-acting beta-2 agonist — no longer applies, and the changes are substantial enough that older revision material is actively misleading.
+
+The single most important new principle applies at every age:
+
+> **Do not prescribe a short-acting beta-2 agonist (SABA) to anyone with asthma without also prescribing an inhaled corticosteroid (ICS).** SABA-only treatment relieves symptoms while leaving the underlying inflammation untreated, and high SABA use is a marker of asthma death.
+
+Two terms are needed throughout:
+
+- **AIR — anti-inflammatory reliever.** A single inhaler containing an ICS with **formoterol**, taken **only as needed** for symptom relief, with no regular maintenance dose. Formoterol is used because it is a long-acting beta-2 agonist with a **rapid onset**, so it works as a reliever.
+- **MART — maintenance and reliever therapy.** The same ICS/formoterol inhaler taken **regularly as maintenance and additionally as needed** for relief. People on MART do not normally need a separate SABA.
+
+## Diagnosis in children aged 5 to 16
+
+Asthma is now confirmed with objective testing wherever possible, in this order:
+
+- **Fractional exhaled nitric oxide (FeNO)** first — **diagnose asthma if 35 parts per billion or more**
+- If FeNO is negative or unavailable, measure **bronchodilator reversibility** with spirometry — diagnostic if the FEV1 rises by **12% or more** from baseline, or by 10% or more of the predicted value
+- If spirometry is unavailable, measure **peak expiratory flow twice daily for 2 weeks** — diagnostic if variability is **20% or more**
+- If asthma is still suspected, perform **skin prick testing to house dust mite**, or measure **total IgE with a blood eosinophil count**. Asthma is excluded if there is no sensitisation and a normal IgE; it is diagnosed if the child is sensitised or has a raised IgE **and** an eosinophil count above 0.5 x 10 to the 9 per litre
+- If uncertainty persists, refer for consideration of **bronchial challenge testing**
+
+**In children under 5 objective testing is not possible**, so the approach is to treat with inhaled corticosteroids and review regularly, then **attempt objective tests once the child reaches 5**.
+
+## Chronic management: children under 5
+
+- **Start** a **twice-daily paediatric low-dose ICS** with a SABA as reliever, as an **8 to 12 week trial**. This is offered where symptoms at presentation clearly warrant maintenance treatment, or after severe acute episodes (hospitalisation, or two or more courses of oral corticosteroids)
+- **If uncontrolled** on a paediatric **moderate-dose** ICS plus SABA, **add a leukotriene receptor antagonist (LTRA)** for an **8 to 12 week trial** — and **stop it if it is not working**
+- **If still uncontrolled**, refer to a **specialist respiratory paediatrician**
+- **If symptoms resolve**, consider stopping treatment after 8 to 12 weeks and review again at 3 months. If symptoms recur by that review, or there is an acute episode needing systemic corticosteroids or admission, restart regular ICS and titrate
+
+**There is no MART pathway for children under 5.**
+
+## Chronic management: children aged 5 to 11
+
+**Start** with a **twice-daily paediatric low-dose ICS plus a SABA as needed.**
+
+If that does not control the asthma, there are two routes, and **MART is preferred wherever the child can manage it**:
+
+| Step | MART pathway (preferred) | Conventional pathway (if unable to manage MART) |
+|---|---|---|
+| **Next step** | Paediatric **low-dose MART** | **Add an LTRA** to low-dose ICS plus SABA as an 8 to 12 week trial, stopping if ineffective; **or** move to low-dose **ICS/LABA** plus SABA |
+| **Then** | Paediatric **moderate-dose MART** | **Moderate-dose ICS/LABA** plus SABA, with or without the LTRA |
+| **Then** | **Refer to a specialist** | **Refer to a specialist** |
+
+A practical prescribing point: as of the **November 2025 update**, the only inhaler licensed for MART in this age group is a **budesonide/formoterol dry powder inhaler (100/6 micrograms), licensed for ages 6 to 11** — not from 5. Using any other ICS/formoterol inhaler for MART under the age of 12 is **off-label**, and local off-label prescribing policy applies.
+
+## Chronic management: 12 years and over
+
+- **Start with as-needed AIR** — a low-dose ICS/formoterol combination inhaler used only for symptom relief. If the young person is highly symptomatic at presentation, or has had a severe exacerbation, start **low-dose MART** instead and consider stepping down to AIR later
+- **If uncontrolled**, move to **low-dose MART**
+- **Then moderate-dose MART**
+- **If still uncontrolled** despite good adherence, **check FeNO and blood eosinophils**. If **either is raised**, refer to a specialist. If **neither is raised**, trial an **LTRA or a long-acting muscarinic antagonist (LAMA)** for 8 to 12 weeks added to moderate-dose MART — if there is partial benefit add the other, and if there is none, stop and try the other
+- **Refer to a specialist** if control is still not achieved
+
+## What actually changed, and why it is examinable
+
+| Change | Old approach | NG245 |
+|---|---|---|
+| **Starting treatment at 12 and over** | Regular low-dose ICS with a SABA as needed | **As-needed AIR** (ICS/formoterol as the reliever) |
+| **LTRA** | Added routinely as the next step after ICS | **Time-limited 8 to 12 week trial with an explicit stop rule**, and in adults only after moderate-dose MART and only if FeNO and eosinophils are not raised |
+| **ICS/LABA in children 5 to 11** | The standard step-up | **Reserved for children who cannot manage MART** |
+| **LAMA** | Not used | **New option** at 12 and over, as an alternative to an LTRA |
+| **Monitoring** | No systematic FeNO | **Consider FeNO monitoring** at review and around treatment changes in adults |
+| **Digital inhalers** | Not addressed | **Not recommended for routine use** |
+
+Note also the **MHRA warning on montelukast**: it can cause **neuropsychiatric reactions**, including sleep disturbance, agitation, depression and suicidal thoughts. Warn families explicitly and review at the end of any trial.
+
+## Everything that is not a drug
+
+This part of the guide has not changed and is heavily examined:
+
+- **Assess baseline asthma status**, using an asthma control questionnaire or lung function testing such as spirometry
+- Provide **self-management education and a personalised asthma action plan**
+- Ensure the child is **up to date with routine immunisations**
+- Signpost sources of support, such as Asthma and Lung UK
+- Advise on **trigger avoidance** — specific allergens, smoke, **beta-blockers and NSAIDs**
+- **Assess for anxiety and depression**
+- Ensure the child has **their own peak flow meter**, and knows how to use it
+- **Teach and check inhaler technique**, with a spacer
+
+**At every review**: confirm adherence, review inhaler technique, decide whether treatment needs changing, and ask about triggers and, in older adolescents, occupational exposures.
+
+> High-yield: never a SABA without an ICS. Under 5, low-dose ICS then an LTRA trial then refer, with no MART. Aged 5 to 11, low-dose ICS then **MART if they can manage it**, otherwise LTRA or ICS/LABA. Aged 12 and over, **as-needed AIR** then low-dose MART then moderate-dose MART.`,
+        },
+        {
+          id: "acute_asthma_children",
+          name: "Acute asthma attack in children",
+          content: `## Assessing severity
+
+Severity is graded before anything else, because it determines both where the child is treated and what they receive. The heart rate and respiratory rate thresholds are age-banded.
+
+| | Moderate | Severe | Life-threatening |
+|---|---|---|---|
+| **Peak flow** | 50 to 75% of best or predicted | **33 to 50%** | **Under 33%** |
+| **Speech** | Able to talk in sentences | Cannot complete a sentence in one breath, or too breathless to feed or talk | — |
+| **Oxygen saturation** | Above 92% | **Below 92%** | **Below 92%** |
+| **Heart rate** | Under 140 (age 1 to 5), under 125 (over 5) | **Over 140 (1 to 5), over 125 (over 5)** | — |
+| **Respiratory rate** | Under 40 (age 1 to 5), under 30 (over 5) | **Over 40 (1 to 5), over 30 (over 5)** | — |
+| **Other** | — | Accessory muscle use | **Altered consciousness or confusion, exhaustion, silent chest, hypotension, cyanosis, poor respiratory effort** |
+
+The life-threatening features are the ones to recognise instantly: a **silent chest** means air is no longer moving, and **poor respiratory effort** means the child is tiring — both are more alarming than loud wheeze.
+
+## Severe or life-threatening: admit
+
+Give the following while awaiting admission:
+
+- **Oxygen** — high-flow to all children with life-threatening asthma, or if saturations are **below 94%**, by tight-fitting facemask, venturi mask or nasal cannula, **targeting 94 to 98%**
+- **Salbutamol, nebulised** — **5 mg if over 5 years, 2.5 mg if 2 to 5 years**. It should ideally be **oxygen-driven**, and a flow rate of at least **6 L/min** is usually needed
+- **Ipratropium bromide, nebulised**, in combination with the salbutamol — **250 micrograms** from 1 month to 11 years, **every 20 to 30 minutes for the first 2 hours** then every 4 to 6 hours as required; **500 micrograms** from 12 to 17 years, every 4 to 6 hours as required
+- **Magnesium sulphate, nebulised — 150 mg added to each nebulised salbutamol and ipratropium in the first hour**, in children with a short duration of acute severe symptoms
+- **Corticosteroids** to all children with severe or life-threatening asthma — **prednisolone is the steroid of choice**, at **1 to 2 mg/kg once daily orally, to a maximum of 40 mg/day**. It can be given intramuscularly if the oral route is not possible. **Three days is usually sufficient**, extended according to severity
+- **Monitor peak flow and oxygen saturation** to assess the response
+- **Second-line if the above fails**: intravenous salbutamol, intravenous aminophylline or intravenous magnesium sulphate
+- **Discuss with a senior clinician, a paediatrician or paediatric intensive care**
+
+## Moderate exacerbation requiring admission
+
+Admit a child with moderate asthma whose symptoms are worsening despite initial bronchodilator treatment, or who has had a **previous near-fatal attack**. While awaiting admission:
+
+- **Oxygen** if saturations are below 94%, targeting 94 to 98%
+- **Salbutamol by pressurised metered-dose inhaler with a large-volume spacer** — **1 puff every 30 to 60 seconds, up to 10 puffs**, taking **5 tidal breaths per puff**. If the response is still poor, give further doses and switch to a nebuliser if one is available
+- **Ipratropium bromide** if the initial response to salbutamol is poor, at the doses above
+- **Prednisolone** 1 to 2 mg/kg once daily, maximum 40 mg/day
+- Monitor peak flow and saturations
+
+## Mild, or moderate not requiring admission
+
+- Admission is not required
+- **Oxygen** if saturations are below 94%
+- **Salbutamol by pressurised metered-dose inhaler and large-volume spacer** — 1 puff every 30 to 60 seconds up to 10 puffs, 5 tidal breaths per puff, **repeated every 10 to 20 minutes** according to response
+- **Consider a short course of prednisolone**, 3 to 5 days
+- Once symptoms settle, return to the **SABA as required, up to 4 times a day and not more often than 4-hourly**
+- **The ICS dose does not need to be altered, and an ICS must never be used as a substitute for oral prednisolone**
+- Advise parents to monitor peak flow and to seek help if symptoms worsen or the peak flow falls
+- Consider starting **montelukast in children over 2 years**
+
+## Antibiotics
+
+**Antibiotics are not routinely prescribed** unless bacterial infection is genuinely suspected — **most asthma attacks are triggered by viral infection**.
+
+## Follow-up
+
+- Within **48 hours of presentation** if the child was not admitted
+- Within **2 working days of discharge** if they were
+
+At that review, assess symptoms, peak flow and inhaler technique; consider stepping up treatment; consider non-adherence to current treatment; check vaccinations; and ask about smoking, including household exposure. Ensure the family has received **self-management education and a personalised asthma action plan**. **Refer to a respiratory physician if the child has had 2 asthma attacks within 12 months.**
+
+> High-yield: a **silent chest, exhaustion, cyanosis or altered consciousness** is life-threatening asthma. Nebulised salbutamol 5 mg over 5 years and 2.5 mg for 2 to 5 years; prednisolone 1 to 2 mg/kg to a maximum of 40 mg; and nebulised magnesium 150 mg in the first hour for severe attacks. Do not give antibiotics routinely.`,
+        },
+        {
+          id: "bronchiolitis_and_viral_wheeze",
+          name: "Bronchiolitis & viral episodic wheeze",
+          content: `## Two overlapping causes of the wheezy young child
+
+**Bronchiolitis** is a lower respiratory tract infection of infancy, usually caused by **respiratory syncytial virus (RSV)**, presenting with coryza followed by cough, tachypnoea, widespread fine crackles and wheeze, poor feeding and sometimes apnoea. It typically affects babies under 1 year, peaks at 3 to 6 months and in winter.
+
+**Viral episodic wheeze** is wheeze occurring only with viral upper respiratory tract infections in a preschool child who is entirely well in between. The important instruction is explicit in the guidance: **do not diagnose these children with asthma**, because many preschool children will grow out of the illness by the age of 6.
+
+## Bronchiolitis: when to refer and admit
+
+**Refer immediately, by 999 ambulance, if there is:**
+
+- **Apnoea**, observed or reported
+- A child who **looks seriously unwell**
+- **Severe respiratory distress** — grunting, marked recession, or a respiratory rate above **70 per minute**
+- **Central cyanosis**
+
+**Consider referral if there is:**
+
+- A respiratory rate above **60 per minute**
+- Difficulty breastfeeding or inadequate oral intake, at **50 to 75% of the usual volume**
+- **Clinical dehydration** — capillary refill over 3 seconds, reduced skin turgor, dry mucous membranes, reduced urine output
+- Persistent oxygen saturation **below 92%** on air
+
+**Admit if there is:**
+
+- **Apnoea**, observed or reported
+- Persistently low saturations — **below 92% in babies under 6 weeks, or at any age with an underlying health condition; below 90% in children aged 6 weeks and over**
+- **Inadequate fluid intake**, at 50 to 75% of normal
+- Features of **severe respiratory distress** — grunting, chest recession, respiratory rate above 70
+
+Have a **lower threshold to admit** infants with risk factors for severe disease: prematurity, chronic lung disease of prematurity, congenital heart disease, immunodeficiency, neuromuscular disease, and age under 3 months.
+
+Note the deliberate asymmetry between the thresholds: **92% is the threshold for referral, but 90% for admission and for oxygen** in a baby aged 6 weeks or over.
+
+## Bronchiolitis: investigations
+
+**Bronchiolitis is a clinical diagnosis.**
+
+- **Do not routinely perform blood tests**
+- **Do not routinely perform a chest X-ray**, because the changes can mimic pneumonia and lead to unnecessary antibiotics
+
+## Bronchiolitis: management
+
+Treatment is supportive. Bronchodilators, corticosteroids, antibiotics, nebulised hypertonic saline and montelukast are **not** effective in bronchiolitis, which is the point most often tested.
+
+- **Humidified oxygen** if saturations are persistently below **92% in babies under 6 weeks or with underlying conditions**, or below **90% in children aged 6 weeks and over**
+- **CPAP** if there is **impending respiratory failure**
+- **Upper airway suction** — **do not perform routinely**; do it if upper airway secretions are causing respiratory distress or feeding difficulty
+- **Fluids by nasogastric or orogastric tube** if the baby cannot take enough by mouth; **intravenous fluids** if they cannot tolerate enteral fluids or have impending respiratory failure
+
+**Prevention**
+
+- **Infection control measures** on the ward, because RSV is highly infectious
+- **Palivizumab**, a monoclonal antibody against RSV given monthly, reduces hospital admissions in **high-risk preterm infants**
+
+## Viral episodic wheeze: management
+
+Management is most commonly at home or in hospital, and follows the same bronchodilator principles as acute asthma.
+
+- **First-line is salbutamol.** **Burst therapy** is typically used: **10 puffs through a large-volume spacer, one puff every 30 to 60 seconds**, then reassess the response and **repeat every 10 to 20 minutes**
+- If the child can go **4 hours without symptoms reappearing**, they can be discharged, with a **salbutamol weaning regimen** using the inhaler and spacer, to be used as required at home in future episodes
+- **Escalate as per acute asthma** if the child does not respond
+- Where the wheeze is **mild, intermittent and only occurs with viral upper respiratory infections**, consider **not** starting maintenance treatment, and plan a review at an agreed interval instead
+- **Encourage parents who smoke to stop**
+- **Follow up within 48 hours** if not admitted, or within **2 working days of discharge**
+
+> High-yield: bronchiolitis is a **clinical diagnosis** treated **supportively** — no bronchodilators, no steroids, no antibiotics, no routine X-ray. The oxygen and admission threshold is **90%** from 6 weeks of age, but **92%** under 6 weeks or with comorbidity. Preschool viral wheeze responds to salbutamol but must not be labelled asthma.`,
+        },
+        {
+          id: "stridor_in_children",
+          name: "Stridor: croup, epiglottitis & laryngomalacia",
+          content: `## The stridulous child
+
+Stridor is a harsh noise produced by turbulent flow through a narrowed **extrathoracic** airway, and it is classically **inspiratory**. The differential is settled largely by the speed of onset and the presence of toxicity.
+
+| Feature | Croup | Acute epiglottitis | Laryngomalacia |
+|---|---|---|---|
+| Onset | Over **days**, worse at night | **Hours**, rapidly progressive | From the first weeks of life, chronic |
+| Cough | **Barking, seal-like** | Absent or minimal | Absent |
+| Voice | Hoarse | **Muffled, "hot potato"** | Normal |
+| Systemic upset | Mild | **Toxic, high fever** | None |
+| Posture and drooling | Normal | **Sitting forward, drooling, unable to swallow** | Normal |
+| Cause | Parainfluenza virus | *Haemophilus influenzae* type b | Floppy supraglottic tissue |
+
+## Croup (laryngotracheobronchitis)
+
+Consider admitting all children with **moderate or severe** illness. The features to grade are the **seal-like barking cough, stridor, sternal or intercostal recession at rest**, and **agitation or lethargy**.
+
+**Admit any child with impending respiratory failure**, recognised by:
+
+- A **minimal barking cough** — and note that **stridor may become harder to hear** as obstruction worsens, which is an ominous rather than reassuring sign
+- Increasing upper airway obstruction, sternal and intercostal recession
+- **Asynchronous chest wall and abdominal movement**
+- Fatigue, pallor, cyanosis
+- **Decreased level of consciousness**
+- Respiratory rate above 70
+
+**Management**
+
+- **All severities receive oral dexamethasone 0.15 mg/kg**, which can be repeated after 12 hours if required. If oral medication is not possible, give **inhaled beclometasone 2 mg** or **intramuscular dexamethasone 0.6 mg/kg**
+- **Mild croup** — no admission needed. Safety-net clearly: return to hospital if stridor becomes continuous or the skin between the ribs pulls in with every breath, and **call an ambulance** if the child is very pale, blue or grey for more than a few seconds, unusually sleepy or unresponsive, has a lot of trouble breathing, is agitated and cannot be calmed, or is unable to talk, drooling or having trouble swallowing
+- **Moderate croup** — oxygen
+- **Severe croup** — oxygen, **nebulised budesonide**, and **nebulised adrenaline (1 in 1000, 1 mg/mL)**, with intubation and ventilation in the minority who develop respiratory failure
+
+Two counselling points: croup **improves over about 48 hours**, and the cough is **worse at night**, so parents should check on the child overnight.
+
+## Acute epiglottitis
+
+A true airway emergency, now rare because of Hib immunisation — which means an unimmunised child raises the suspicion.
+
+**If acute epiglottitis is suspected, urgent hospital admission to intensive care is required.**
+
+- **Secure the airway, and do NOT examine the throat.** Examining the pharynx, or distressing the child in any way, can precipitate complete airway obstruction. **Direct rigid laryngoscopy and intubation** is the most common approach, performed by the most senior anaesthetist available
+- **Take a blood culture**
+- **Intravenous second or third generation cephalosporins** — for example **ceftriaxone — for 7 to 10 days**
+- **Consider supplemental oxygen** if the child is stable and there are no signs of impending airway compromise
+- **Consider steroids**, and adrenaline may be used to reduce inflammation
+- Prolonged intubation may be necessary in severe cases
+- With appropriate treatment, **most children recover completely within 2 to 3 days**
+
+## Laryngomalacia
+
+Floppy supraglottic tissue collapses inward on inspiration. The key examination finding is a **high-pitched inspiratory stridor that is worse on lying flat or on exertion**. The prognosis is excellent, with **99% resolving with time**.
+
+| Severity | Management |
+|---|---|
+| **Mild (90% of cases)** | Observation and reassurance that it **resolves by 12 to 16 months**, though symptoms may **peak at 6 months** and worsen after respiratory infections. Gastro-oesophageal reflux exacerbates it, so consider anti-reflux measures: **thickened feeds** first, then **famotidine or omeprazole**, and Nissen fundoplication as a last resort. Feed the child **upright** |
+| **Moderate to severe** | Observation, since there may be increased work of breathing and poor weight gain, plus reflux therapy. **Elective surgery** may be needed — **endoscopic supraglottoplasty** first, then **tracheostomy**. **BiPAP** if there is obstructive sleep apnoea and surgery is not indicated or has not worked |
+| **Life-threatening** | Worsening stridor or respiratory distress with severe airway compromise. **Keep the child calm**, involve senior paediatrics, anaesthetics and ENT early, and move to resus or HDU. If maintaining their own airway: **humidified oxygen, nebulised adrenaline, oral or intravenous dexamethasone** (cannulate only when necessary, to avoid distressing the child) and **heliox**. If failing to maintain the airway: bag and mask, nasopharyngeal airway, laryngeal mask, endotracheal tube, or surgical intervention |
+
+> High-yield: **barking cough with stridor** is croup, and every severity gets **dexamethasone 0.15 mg/kg**. **Drooling, muffled voice, high fever and a child sitting forward** is epiglottitis — do not examine the throat, do not distress the child, and get the airway secured. Chronic inspiratory stridor worse lying flat in a thriving infant is laryngomalacia, and it resolves.`,
+        },
+        {
+          id: "foreign_body_inhalation",
+          name: "Foreign body inhalation & choking",
+          content: `## Choking in a child
+
+Inhalation of a foreign body typically occurs in a **toddler**, often with a witnessed episode of choking while eating or playing, and classically with **peanuts or small toys**. Objects most often lodge in the **right main bronchus**, which is wider, shorter and more vertical.
+
+The distinction that drives management is **effective versus ineffective coughing**. A child who is coughing forcefully, can cry or speak, and is able to take a breath before coughing has an **effective** cough — encourage them to keep coughing and do nothing else that might dislodge the object into a worse position. Intervene only when the cough becomes **ineffective**: a silent or quiet cough, inability to speak or breathe, cyanosis, or a decreasing level of consciousness.
+
+## The conscious child
+
+Following the Resuscitation Council paediatric choking sequence:
+
+- **Encourage coughing** while the cough remains effective
+- If coughing becomes ineffective, move to **external manoeuvres**:
+- **Five back blows**
+- Then **five abdominal thrusts (the Heimlich manoeuvre)** in a child **over 1 year of age**
+- **Five chest thrusts instead of abdominal thrusts in infants.** Abdominal thrusts must **NOT** be performed on infants and very young children, because the liver is relatively large and unprotected by the rib cage and is easily ruptured
+- **Reassess** after each cycle. If the object has not been expelled and the child is still conscious, **continue the sequence** of back blows alternating with chest or abdominal thrusts, and call out or send for help if it has not already arrived
+
+## The unconscious child
+
+- **Start CPR** in line with paediatric basic life support guidelines
+- **Secure the airway immediately** with endotracheal intubation, **unless the foreign body can be seen and removed from the upper airway** — attempt removal only with a **single finger sweep** under direct vision. Blind finger sweeps are not performed, as they can push the object further in
+- A **cricothyroidotomy** may be needed if the airway cannot be secured from above
+- Give **five rescue breaths**
+
+## Removal in hospital
+
+- **First-line is bronchoscopy.** **Rigid** bronchoscopy is preferred where there is **stridor, asphyxia, a radio-opaque object seen on the chest X-ray, or a clear history of foreign body aspiration** associated with **unilateral decreased breath sounds, a localising wheeze, obstructive hyperinflation or atelectasis**
+- In all other cases, **flexible bronchoscopy** is performed to confirm the diagnosis, usually under conscious sedation or general anaesthesia
+- **Second-line is surgery — thoracotomy**
+
+A practical point worth remembering: most inhaled foreign bodies are **radiolucent**, so a normal chest X-ray does not exclude one. The indirect signs are the useful ones — unilateral hyperinflation from a ball-valve effect (best seen on an expiratory film), or collapse distal to a complete obstruction.
+
+> High-yield: **effective cough — encourage coughing and do nothing else.** Ineffective cough — five back blows then five thrusts, and those thrusts are **chest thrusts in an infant, never abdominal**. A normal chest X-ray does not exclude an inhaled foreign body.`,
+        },
+        {
+          id: "paediatric_pneumonia_pertussis",
+          name: "Pneumonia & whooping cough in children",
+          content: `## Pneumonia
+
+**Refer immediately for hospital admission if there is:**
+
+- Persistent oxygen saturation **below 92%** on air
+- **Grunting, marked chest recession, or a respiratory rate above 60 per minute**
+- **Cyanosis**
+- A child who **looks seriously unwell**, does not wake or stay awake when roused, or does not respond to normal social cues
+- A **temperature above 38 degrees in a child under 3 months**
+
+**Consider admission** if there is dehydration, decreased activity, nasal flaring, or a predisposing disease such as chronic lung disease. While awaiting admission, give controlled supplemental oxygen if saturations are persistently below 92%.
+
+**If admission is not needed**, most children can be managed at home:
+
+- **Bacterial and viral pneumonia cannot be reliably distinguished clinically, so all children should be given antibiotics**
+- **Amoxicillin is first-line, for 5 days**, in low to moderate severity. If penicillin-allergic, give **clarithromycin**
+- A **macrolide can be added at any stage** if there is no response to first-line treatment
+- **Co-amoxiclav** for high severity, adding **clarithromycin** if an atypical organism is suspected
+- **Paracetamol or ibuprofen** as antipyretics, and maintain adequate hydration
+- Seek advice if the respiratory rate increases, dehydration develops or the fever worsens
+
+If admitted, give **oral antibiotics if tolerated**; otherwise intravenous, reviewing at **48 hours** to consider switching to oral.
+
+For context on the causative organisms and the pathological patterns — bronchopneumonia, lobar pneumonia and the atypicals — see the *Pneumonia: pathological patterns* topic. In children, **Streptococcus pneumoniae** is the commonest bacterial cause at all ages beyond the newborn period, with **respiratory syncytial virus** the commonest viral cause in infants and **Mycoplasma pneumoniae** becoming important in school-age children.
+
+## Whooping cough (pertussis)
+
+Caused by *Bordetella pertussis*, and a **notifiable disease** — **notify the Health Protection Unit**. It runs in three phases: a **catarrhal** phase indistinguishable from a cold, then a **paroxysmal** phase of coughing fits ending in the characteristic inspiratory **whoop** (often absent in infants, who may instead present with **apnoea** as the only sign), and then a prolonged **convalescent** phase. Post-tussive vomiting and subconjunctival haemorrhages are characteristic.
+
+**Admit in isolation if the child is:**
+
+- **Under 6 months old, or acutely unwell**
+- Has **significant breathing difficulties** — apnoea, severe paroxysms, cyanosis
+- Has **significant complications** — seizures, pneumonia
+
+**Management**
+
+- If admission is not needed, **prescribe an antibiotic if the onset of the cough is within 21 days** — beyond that the child is no longer infectious and antibiotics do not alter the course
+- **Under 1 month: clarithromycin**
+- **Over 1 month and not pregnant: azithromycin**
+- If macrolides are contraindicated, give **co-trimoxazole**, but **not in infants under 6 weeks**
+
+**Advice**
+
+- Rest, adequate fluids, and paracetamol or ibuprofen for symptomatic relief
+- Explain that **despite antibiotics the cough is likely to be protracted**, taking weeks and sometimes **3 months or more** to resolve — antibiotics reduce infectivity rather than shorten the cough
+- **Avoid nursery until 48 hours of appropriate antibiotic treatment is completed**, or **21 days after the onset of the cough** if untreated
+- Once the acute illness is over, **complete any outstanding immunisations**, and discuss any parental concerns about immunisation
+
+> High-yield: give **amoxicillin for 5 days** for childhood pneumonia, and give it to everyone, because you cannot tell bacterial from viral. In whooping cough, notify the HPU, treat only if the cough started **within 21 days**, and exclude from nursery for **48 hours after starting antibiotics or 21 days if untreated**.`,
+        },
+        {
+          id: "common_cold_and_covid_children",
+          name: "Common cold, cough & COVID-19 in children",
+          content: `## The common cold
+
+- **Reassure that the common cold is self-limiting.** Symptoms may **peak after 2 to 3 days** and typically resolve **within 2 weeks**
+- Consider possible **SARS-CoV-2 infection** if there are any key symptoms
+- Encourage **rest, adequate fluid intake and a healthy diet**
+- **Paracetamol or ibuprofen** for symptomatic relief. They should **not be given simultaneously in children under 5**, but may be alternated if the child appears distressed on one alone, and should be continued only for as long as the child appears distressed
+- Simple remedies that may help: **steam inhalation, vapour rubs, gargling salt water, and nasal saline drops**
+- **Honey and lemon with water** can be used for cough in children **over 1 year** — not below, because of the risk of infant botulism
+
+**Over-the-counter cough and cold products should not be used under the age of 6.** The ingredients to avoid are:
+
+| Class | Examples |
+|---|---|
+| **Antitussives** | Dextromethorphan, pholcodine |
+| **Expectorants** | Guaifenesin, ipecacuanha |
+| **Decongestants**, topical and oral | Ephedrine, oxymetazoline, phenylephrine, pseudoephedrine, xylometazoline |
+| **Antihistamines** | Brompheniramine, chlorphenamine, diphenhydramine, doxylamine, promethazine, triprolidine |
+
+## Cough
+
+Acute cough in a child is usually viral and is managed as for the common cold. What matters is recognising the cough that is **not** simple: a cough lasting more than 8 weeks, a cough that began suddenly with choking (see *Foreign body inhalation and choking*), a productive cough with failure to thrive (see *Cystic fibrosis*), a paroxysmal cough with whoop or apnoea (see *Pneumonia and whooping cough in children*), and nocturnal cough with wheeze (see *Asthma in children*).
+
+## COVID-19 in children
+
+COVID-19 is a **notifiable disease**.
+
+**Testing.** Test individuals with a **new continuous cough**, a **temperature of 37.8 degrees or above**, or **loss of or change in normal sense of smell (anosmia) or taste (ageusia)**. Also consider testing in people with an acute respiratory infection, clinical or radiological evidence of pneumonia, an influenza-like illness, acute worsening of an underlying respiratory illness, fever without another cause, new delirium in an older person, or an immunocompromised person with a possible atypical presentation.
+
+**Children are at lower risk of severe COVID-19** than adults. Those most at risk are **under 1 year, and aged 10 to 24 years**. **Children with mild to moderate disease do not routinely need admission or investigations** such as blood tests and radiology — and that describes most children.
+
+**Management**
+
+- **Vaccination** — children over 5 can be vaccinated; a full course is **2 doses at least 8 weeks apart**
+- **Radiology** — chest X-rays and CT scans **may reveal findings even in asymptomatic children**, of unclear individual relevance. They should **not be performed routinely, even in children who need oxygen on admission**, and should only be used to answer a specific question
+- **Isolation**
+- **Oxygen** — most children, even with lung involvement, are unlikely to develop respiratory failure. Start with **low-flow nasal cannula oxygen** if hypoxic, with escalation decided by a senior team member. **CPAP** may be considered to prevent deterioration
+- **Dexamethasone** (or hydrocortisone or prednisolone as alternatives) **if supplemental oxygen is required**, or if the child is hypoxic to a degree requiring oxygen but cannot tolerate it. **Specialist advice is required for all children aged 5 years and under**
+- **Remdesivir** — specialist advice required. A **5-day course** is considered for hospitalised children **at least 4 weeks old and at least 3 kg** needing supplemental oxygen
+- **Intensive care** escalation is discussed by senior teams
+- **Antibiotics** if secondary bacterial infection is suspected, which occurs in about **15% of children**, and considered if a child is unusually unwell at admission with an identifiable source
+
+**Paediatric inflammatory multisystem syndrome** is the complication specific to children — a post-infectious hyperinflammatory illness with persistent fever, rash, conjunctivitis, gastrointestinal symptoms and shock, overlapping clinically with Kawasaki disease and toxic shock syndrome. It **requires admission, close monitoring and discussion with high-dependency or paediatric intensive care**.
+
+> High-yield: no over-the-counter cough and cold preparations under 6, and no honey under 1. In COVID-19, do not image children routinely even if they need oxygen, and give dexamethasone only to those needing supplemental oxygen.`,
+        },
+        {
+          id: "cystic_fibrosis_management",
+          name: "Cystic fibrosis: management in children",
+          content: `## Cystic fibrosis
+
+An autosomal recessive disorder of the **cystic fibrosis transmembrane conductance regulator (CFTR)** chloride channel, producing viscous secretions that block ducts throughout the body. The genetics, the F508del mutation and the pathological consequences are covered in the *Obstructive lung disease (pathology)* topic; what follows is management.
+
+**Children with cystic fibrosis should be managed at a specialist tertiary centre.** The diagnosis is usually made on newborn screening (see *Newborn screening and inherited metabolic disease*), confirmed by a **sweat chloride test** and genotyping.
+
+## CFTR modulators
+
+These are the drugs that have transformed the condition. They act on the defective protein itself rather than on its consequences, and have been shown to **significantly improve FEV1 and quality of life — not only respiratory symptoms — and to reduce acute exacerbations**.
+
+**All children with cystic fibrosis should undergo CFTR genotyping** to establish whether they carry a mutation approved for modulator therapy; more than 180 eligible mutations have been identified.
+
+| Situation | Treatment |
+|---|---|
+| **F508del present and over 2 years old** | **Triple therapy is first-line — elexacaftor/tezacaftor/ivacaftor (Kaftrio)**, the most effective of the modulators, typically improving FEV1 by around 15% |
+| **F508del present and under 2 years old** | **Lumacaftor-ivacaftor** if homozygous; **ivacaftor** if heterozygous |
+
+## Respiratory management
+
+The common pulmonary complications are **pneumonia, nasal polyps and sinusitis** (the prevalence of which rises with age).
+
+**General prophylaxis**
+
+- **Airway clearance techniques**, principally physiotherapy
+- **Mucoactive agents** — **first-line rhDNase (dornase alfa)**; second-line **hypertonic sodium chloride** with or without rhDNase; third-line **mannitol dry powder for inhalation**. These are recommended unless the child is over 12, taking Kaftrio, and has normal or only mildly reduced lung function
+
+**Infection**
+
+- Use **sputum cultures and local microbiology guidelines** to manage pulmonary exacerbations
+- **Flucloxacillin** as prophylaxis against *Staphylococcus aureus* pneumonia
+- **Chronic azithromycin** after *Pseudomonas aeruginosa* has been cultured — its benefit here is due to **dual antimicrobial and immunomodulatory effects**
+- **Colistin and tobramycin**, usually nebulised, for chronic or persistent *Pseudomonas aeruginosa* infection
+
+## Gastrointestinal management
+
+Common complications are **malnutrition and being underweight, intussusception, meconium ileus** (which affects about 1 in 7 newborn babies with the condition) and **fat-soluble vitamin deficiency (A, D, E and K)**.
+
+- A **high-calorie diet**
+- **Pancreatic enzyme replacement therapy** such as Creon. Pancreatic insufficiency is confirmed by a low **faecal elastase**
+- An **H2 receptor antagonist or proton pump inhibitor** if malabsorption persists despite optimal enzyme replacement — raising the gastric pH stops the enzymes being denatured
+- **Distal intestinal obstruction syndrome** — first-line treatment is **Gastrografin**, orally or by enteral tube
+- **Liver disease**, whose prevalence rises with age into early adulthood — if the liver function tests are abnormal, **ursodeoxycholic acid** is first-line, stopped once they recover; refer to a specialist if chronic and deteriorating
+
+## Other complications
+
+- **Male infertility from obstructive azoospermia** — almost all males with cystic fibrosis are infertile, because of congenital bilateral absence of the vas deferens. Female fertility is reduced but not absent
+- **Cystic-fibrosis-related diabetes** — uncommon under 10 years, but the prevalence rises with age and it affects up to **1 in 2 adults**. These children are seen in joint clinics with paediatric endocrinologists
+- **Reduced bone mineral density**, with **DEXA scans every 5 years** as standard care
+- **Genetic counselling** for the parents, and for the child once old enough
+
+> High-yield: genotype every child, because **Kaftrio (elexacaftor/tezacaftor/ivacaftor) is first-line from 2 years of age if F508del is present**. First-line mucoactive agent is rhDNase; chronic azithromycin follows a *Pseudomonas* isolate; and Gastrografin treats distal intestinal obstruction syndrome.`,
+        },
+        {
+          id: "paediatric_bronchiectasis",
+          name: "Bronchiectasis in children",
+          content: `## Diagnosis
+
+**All children with suspected bronchiectasis should be referred to a paediatric respiratory consultant** for investigations to confirm the diagnosis, determine the underlying cause and arrange treatment.
+
+**High resolution CT is the gold standard investigation.** The radiological features are:
+
+- **Bronchial wall thickening**
+- A **bronchial diameter larger than that of the accompanying artery** — the **"signet ring" sign**
+- **Visible peripheral bronchi**, which should not normally be seen at the lung periphery
+
+**Bronchoscopy is not required to diagnose bronchiectasis.** It is generally reserved for children with **focal** bronchiectasis on CT, or where there is evidence of a possible airway abnormality — the concern in focal disease being an obstructing lesion or a retained foreign body.
+
+## Finding the cause
+
+In children, bronchiectasis is far more likely than in adults to have a specific, treatable underlying cause, so the workup is mandatory rather than optional:
+
+- **Sweat chloride test or genetic testing for cystic fibrosis** — offered to **all** children
+- **Screen for antibody deficiency** with **IgG, IgA and IgM** — done for all patients with a confirmed diagnosis
+- **Test for primary ciliary dyskinesia** — only if no other cause is found **and** there is a history of **continuous rhinitis, neonatal respiratory distress, or dextrocardia** (the last being part of Kartagener syndrome)
+
+## Management
+
+- **Treat the underlying cause** — for example cystic fibrosis
+- **Vaccinate against *Streptococcus pneumoniae* and seasonal influenza**, offered to all patients with bronchiectasis
+- **Airway clearance techniques**, with or without **nebulised saline**
+
+**Acute exacerbation of non-cystic-fibrosis bronchiectasis.** The commonly isolated organisms are **non-encapsulated *Haemophilus influenzae*, *Streptococcus pneumoniae* and *Moraxella catarrhalis*** — whereas ***Pseudomonas* species are characteristic of cystic fibrosis bronchiectasis**. Antibiotics can be started empirically but should be guided by **sputum culture sensitivities** once available.
+
+| Age and route | First-line | Second-line |
+|---|---|---|
+| **Oral, 1 month to 11 years** | **Amoxicillin** or **clarithromycin** | **Co-amoxiclav** |
+| **Oral, 12 to 17 years** | **Doxycycline** | **Co-amoxiclav**; ciprofloxacin on specialist advice if co-amoxiclav cannot be used |
+| **Intravenous, 1 month to 17 years** — if severely unwell or unable to take oral | **Co-amoxiclav** or **piperacillin with tazobactam** | Ciprofloxacin (from 1 year, on specialist advice) |
+
+**Refer from primary to secondary care if:**
+
+- **Three or more infective exacerbations in one year**
+- They have had a **severe infection**
+- Symptoms are **not responding to repeated courses of antibiotics**
+
+**Refer to hospital** for signs of more serious illness — **cardiorespiratory failure** or **sepsis**.
+
+**Admit for an exacerbation if there is:**
+
+- **Breathlessness** with a raised respiratory rate and increased work of breathing
+- **Circulatory or respiratory failure**
+- **Cyanosis**
+- **Temperature above 38 degrees**
+- Inability to take oral medication
+- **No improvement with oral antibiotics**, indicating a step up to intravenous treatment
+
+> High-yield: high resolution CT with the **signet ring sign** makes the diagnosis, and bronchoscopy is not needed unless the disease is **focal**. Every child needs cystic fibrosis and immunoglobulin testing; test for primary ciliary dyskinesia only if nothing else fits and there is rhinitis, neonatal respiratory distress or dextrocardia.`,
+        },
+        {
+          id: "sleep_disordered_breathing_children",
+          name: "Sleep-disordered breathing in children",
+          content: `## Sleep-disordered breathing
+
+Sleep-disordered breathing in children spans a spectrum from simple snoring to **obstructive sleep apnoea**, in which repeated upper airway collapse during sleep causes intermittent hypoxia and arousal. The commonest cause by far is **adenotonsillar hypertrophy**, which is why the peak age is 2 to 6 years, when the tonsils and adenoids are largest relative to the airway.
+
+Other important risk groups are children with **Down syndrome** (midface hypoplasia, macroglossia, hypotonia and a narrow airway together make this very common), obesity, craniofacial abnormalities, neuromuscular disease, and cerebral palsy.
+
+The presentation differs from adults in an important way. Adults are sleepy; **children are more often hyperactive, inattentive and irritable**, so obstructive sleep apnoea is a recognised mimic of attention deficit hyperactivity disorder. The nocturnal features are **snoring, witnessed apnoeas, restless sleep, unusual sleeping positions with the neck extended, mouth breathing and secondary nocturnal enuresis**; the daytime consequences are behavioural and educational difficulties, morning headache, and in severe untreated cases **faltering growth and pulmonary hypertension**.
+
+Diagnosis is clinical in straightforward cases, supported by **overnight oximetry** or formal **polysomnography** where the diagnosis is uncertain, the child is very young or has comorbidity, or surgery is being considered in a higher-risk child.
+
+## Management
+
+- **Adenotonsillectomy** is the definitive treatment for children with adenotonsillar hypertrophy, and **usually causes a dramatic improvement in symptoms**
+- **CPAP or BiPAP** benefits other children, maintaining the upper airway at night. This is the route where surgery is not appropriate — for example in obesity-related or neuromuscular disease
+- **Montelukast, with or without intranasal budesonide**, can be used where surgery has not relieved the obstruction, or in mild disease
+
+Weight management is addressed alongside where obesity is contributing.
+
+> High-yield: a child who snores with witnessed apnoeas and is **hyperactive and inattentive rather than sleepy** has obstructive sleep apnoea until proven otherwise, the usual cause is adenotonsillar hypertrophy, and adenotonsillectomy is usually curative. Have a much lower threshold for investigating a child with Down syndrome.`,
+        },
+        {
+          id: "paediatric_hip_conditions",
+          name: "Paediatric hip conditions",
+          content: `## Paediatric hip conditions
+
+A limp or hip pain in a child has a differential best narrowed by **age**, and the priority is always to exclude **septic arthritis**.
+
+## The limping child by age
+
+| Age | Most likely causes |
+|---|---|
+| 0–4 years | Developmental dysplasia of the hip, septic arthritis, toddler's fracture |
+| 4–10 years | Transient synovitis (commonest), Perthes disease, septic arthritis |
+| 10–16 years | Slipped capital femoral epiphysis, septic arthritis |
+
+Septic arthritis must be considered at any age.
+
+## Developmental dysplasia of the hip (DDH)
+
+- Abnormal development of the hip joint, from instability to frank dislocation; commoner in **girls, breech babies and with a family history**, and on the left.
+- Screened at the newborn and 6-week checks with the **Barlow** (dislocates an unstable hip) and **Ortolani** (relocates a dislocated hip) manoeuvres; later signs are asymmetric skin creases and limited hip abduction.
+- **Ultrasound** is used under 6 months (requested at 6 weeks for a breech presentation or delivery, or a family history); **X-ray** is better from 6 months.
+- Most unstable hips resolve spontaneously; otherwise a **Pavlik harness** (holding the hip flexed and abducted) under about 4–5 months, with surgery (reduction and spica cast) if that fails or for late presentation.
+
+## Transient synovitis (irritable hip)
+
+- The **commonest cause of acute hip pain and limp** in young children (about 3–8 years), typically **after a viral upper respiratory infection**.
+- The child is **systemically well**, with a limp and reduced hip movement and little or no fever.
+- It is a diagnosis of exclusion — the key step is to **rule out septic arthritis**. Management is rest and analgesia (NSAIDs); it settles within a few days.
+
+## Perthes disease
+
+- **Idiopathic avascular necrosis of the femoral head**, in children about **4–8 years old** and **commoner in boys**.
+- Presents with an insidious limp and hip or knee pain, with reduced abduction and internal rotation.
+- Diagnosed on X-ray (early flattening and later fragmentation of the femoral head); management aims to **keep the femoral head contained** in the acetabulum — observation and physiotherapy in younger children, surgery if older or severe.
+
+## Slipped capital femoral epiphysis (SUFE)
+
+- The femoral head epiphysis slips through the growth plate, typically in an **overweight adolescent boy** (about 10–16 years), sometimes after minor trauma.
+- Presents with hip, groin or **referred knee pain** and an externally rotated, shortened leg with limited internal rotation.
+- X-ray shows the slip — **Trethowan's sign**: Klein's line drawn along the superior femoral neck fails to intersect the epiphysis.
+- It is an orthopaedic emergency: keep the child **non-weight-bearing** and refer for **in-situ screw fixation**.
+
+## Septic arthritis — never miss it
+
+- Bacterial infection of the joint (usually Staphylococcus aureus) that can destroy it within hours.
+- An **unwell, febrile child** who refuses to weight-bear, with a hot, painful joint held still.
+- The **Kocher criteria** help distinguish it from transient synovitis: non-weight-bearing, fever over 38.5 degrees, ESR over 40, and white cell count over 12. Confirm with **urgent joint aspiration** and blood cultures.
+- Treatment is **joint washout and prolonged antibiotics** — a surgical emergency.
+
+> The two diagnoses not to miss are septic arthritis (an unwell, febrile child who will not weight-bear — aspirate the joint) and SUFE (an adolescent with knee pain — examine and X-ray the hip). Hip pathology classically refers pain to the knee, so always examine the hip in a child presenting with knee pain.`,
+        },
+        {
           id: "developmental_milestones",
           name: "Developmental milestones",
           content: `## Developmental milestones
@@ -6220,58 +7647,6 @@ Refer for assessment if a limit age passes without the skill, or if development 
 - **Loss of previously acquired skills (regression)** — always significant.
 
 > Always correct for prematurity (up to 2 years), assess all four domains together, and take parental concern seriously. Global delay (all domains) points to a different cause from an isolated single-domain delay, and regression of skills is a red flag warranting urgent investigation.`,
-        },
-        {
-          id: "paediatric_hip_conditions",
-          name: "Paediatric hip conditions",
-          content: `## Paediatric hip conditions
-
-A limp or hip pain in a child has a differential best narrowed by **age**, and the priority is always to exclude **septic arthritis**.
-
-## The limping child by age
-
-| Age | Most likely causes |
-|---|---|
-| 0–4 years | Developmental dysplasia of the hip, septic arthritis, toddler's fracture |
-| 4–10 years | Transient synovitis (commonest), Perthes disease, septic arthritis |
-| 10–16 years | Slipped capital femoral epiphysis, septic arthritis |
-
-Septic arthritis must be considered at any age.
-
-## Developmental dysplasia of the hip (DDH)
-
-- Abnormal development of the hip joint, from instability to frank dislocation; commoner in **girls, breech babies and with a family history**, and on the left.
-- Screened at the newborn and 6-week checks with the **Barlow** (dislocates an unstable hip) and **Ortolani** (relocates a dislocated hip) manoeuvres; later signs are asymmetric skin creases and limited hip abduction.
-- **Ultrasound** is used under 6 months (requested at 6 weeks for a breech presentation or delivery, or a family history); **X-ray** is better from 6 months.
-- Most unstable hips resolve spontaneously; otherwise a **Pavlik harness** (holding the hip flexed and abducted) under about 4–5 months, with surgery (reduction and spica cast) if that fails or for late presentation.
-
-## Transient synovitis (irritable hip)
-
-- The **commonest cause of acute hip pain and limp** in young children (about 3–8 years), typically **after a viral upper respiratory infection**.
-- The child is **systemically well**, with a limp and reduced hip movement and little or no fever.
-- It is a diagnosis of exclusion — the key step is to **rule out septic arthritis**. Management is rest and analgesia (NSAIDs); it settles within a few days.
-
-## Perthes disease
-
-- **Idiopathic avascular necrosis of the femoral head**, in children about **4–8 years old** and **commoner in boys**.
-- Presents with an insidious limp and hip or knee pain, with reduced abduction and internal rotation.
-- Diagnosed on X-ray (early flattening and later fragmentation of the femoral head); management aims to **keep the femoral head contained** in the acetabulum — observation and physiotherapy in younger children, surgery if older or severe.
-
-## Slipped capital femoral epiphysis (SUFE)
-
-- The femoral head epiphysis slips through the growth plate, typically in an **overweight adolescent boy** (about 10–16 years), sometimes after minor trauma.
-- Presents with hip, groin or **referred knee pain** and an externally rotated, shortened leg with limited internal rotation.
-- X-ray shows the slip — **Trethowan's sign**: Klein's line drawn along the superior femoral neck fails to intersect the epiphysis.
-- It is an orthopaedic emergency: keep the child **non-weight-bearing** and refer for **in-situ screw fixation**.
-
-## Septic arthritis — never miss it
-
-- Bacterial infection of the joint (usually Staphylococcus aureus) that can destroy it within hours.
-- An **unwell, febrile child** who refuses to weight-bear, with a hot, painful joint held still.
-- The **Kocher criteria** help distinguish it from transient synovitis: non-weight-bearing, fever over 38.5 degrees, ESR over 40, and white cell count over 12. Confirm with **urgent joint aspiration** and blood cultures.
-- Treatment is **joint washout and prolonged antibiotics** — a surgical emergency.
-
-> The two diagnoses not to miss are septic arthritis (an unwell, febrile child who will not weight-bear — aspirate the joint) and SUFE (an adolescent with knee pain — examine and X-ray the hip). Hip pathology classically refers pain to the knee, so always examine the hip in a child presenting with knee pain.`,
         },
       ],
     },

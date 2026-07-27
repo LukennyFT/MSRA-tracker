@@ -226,11 +226,33 @@
     ].join("\n");
 
     let __flowSeq = 0;
-    function ManagementFlow({ def, tips }) {
+
+    // Scale a rendered diagram without re-running mermaid. The intrinsic width comes
+    // from the SVG's viewBox, cached on first use so repeated zooming stays stable.
+    function applyFlowZoom(svg, z) {
+      if (!svg) return;
+      let base = Number(svg.dataset.baseW);
+      if (!base) {
+        const vb = (svg.getAttribute("viewBox") || "").split(/[\s,]+/);
+        base = parseFloat(vb[2]) || svg.getBoundingClientRect().width || 600;
+        svg.dataset.baseW = String(base);
+      }
+      svg.style.maxWidth = "none";
+      svg.style.width = Math.round(base * z) + "px";
+      svg.style.height = "auto";
+    }
+
+    // Renders one Mermaid diagram with hover tooltips. `zoom` is null for the inline
+    // card (leave mermaid's own responsive sizing alone) or a number in the expanded
+    // modal. Each instance takes its own mermaid id, so inline and modal copies of the
+    // same diagram can coexist.
+    function FlowDiagram({ def, tips, zoom }) {
       const holderRef = useRef(null);
       const tipRef = useRef(null);
       const [err, setErr] = useState(false);
       const idRef = useRef("mflow" + (++__flowSeq));
+      const zoomRef = useRef(zoom);
+      zoomRef.current = zoom;
 
       useEffect(() => {
         let cancelled = false;
@@ -244,6 +266,7 @@
             const out = await window.mermaid.render(idRef.current, src);
             if (cancelled) return;
             holder.innerHTML = out.svg;
+            if (zoomRef.current != null) applyFlowZoom(holder.querySelector("svg"), zoomRef.current);
             const tip = tipRef.current;
             holder.querySelectorAll("g.node").forEach(node => {
               const m = (node.id || "").match(/^flowchart-(.+)-\d+$/);
@@ -270,16 +293,177 @@
         return () => { cancelled = true; };
       }, [def]);
 
+      // Zoom changes only restyle the existing SVG — no re-render, so scroll position
+      // and the attached tooltip handlers survive.
+      useEffect(() => {
+        if (zoom == null) return;
+        const holder = holderRef.current;
+        if (holder) applyFlowZoom(holder.querySelector("svg"), zoom);
+      }, [zoom]);
+
       if (err) return null;
       return (
-        <div style={{ position: "relative", marginTop: 4 }}>
-          <div ref={holderRef} style={{ overflowX: "auto", padding: "2px 0" }} />
+        <div style={{ position: "relative" }}>
+          <div ref={holderRef} style={zoom == null
+            ? { overflowX: "auto", padding: "2px 0" }
+            : { display: "inline-block", minWidth: "100%", padding: "2px 0" }} />
           <div ref={tipRef} style={{
             display: "none", position: "absolute", zIndex: 30, maxWidth: 270,
             background: "#141a2b", color: "#eef2f8", fontSize: "0.78rem", lineHeight: 1.45,
             padding: "0.5rem 0.7rem", borderRadius: 8, pointerEvents: "none",
             boxShadow: "0 6px 18px rgba(0,0,0,0.3)", fontFamily: "system-ui,-apple-system,sans-serif",
           }} />
+        </div>
+      );
+    }
+
+    const FLOW_ZOOM_MIN = 0.5, FLOW_ZOOM_MAX = 3, FLOW_ZOOM_STEP = 0.25;
+    const clampZoom = z => Math.min(FLOW_ZOOM_MAX, Math.max(FLOW_ZOOM_MIN, Math.round(z * 100) / 100));
+
+    // Full-screen view of a flowchart: zoom controls, drag-to-pan, and the same
+    // hover tooltips. Closes on the ✕, the backdrop, or Escape.
+    function FlowchartModal({ open, onClose, title, source, def, tips }) {
+      const [zoom, setZoom] = useState(1);
+      const scrollRef = useRef(null);
+      const dragRef = useRef(null);
+
+      useEffect(() => { if (open) setZoom(1); }, [open]);
+
+      useEffect(() => {
+        if (!open) return;
+        const onKey = e => {
+          if (e.key === "Escape") { e.preventDefault(); onClose(); }
+          else if (e.key === "+" || e.key === "=") setZoom(z => clampZoom(z + FLOW_ZOOM_STEP));
+          else if (e.key === "-" || e.key === "_") setZoom(z => clampZoom(z - FLOW_ZOOM_STEP));
+          else if (e.key === "0") setZoom(1);
+        };
+        window.addEventListener("keydown", onKey);
+        const prevOverflow = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+        return () => {
+          window.removeEventListener("keydown", onKey);
+          document.body.style.overflow = prevOverflow;
+        };
+      }, [open, onClose]);
+
+      if (!open) return null;
+
+      const startDrag = e => {
+        const el = scrollRef.current;
+        if (!el || e.button !== 0) return;
+        dragRef.current = { x: e.clientX, y: e.clientY, sl: el.scrollLeft, st: el.scrollTop };
+        el.style.cursor = "grabbing";
+      };
+      const onDrag = e => {
+        const el = scrollRef.current, d = dragRef.current;
+        if (!el || !d) return;
+        el.scrollLeft = d.sl - (e.clientX - d.x);
+        el.scrollTop = d.st - (e.clientY - d.y);
+      };
+      const endDrag = () => {
+        const el = scrollRef.current;
+        dragRef.current = null;
+        if (el) el.style.cursor = "grab";
+      };
+
+      const ctrlBtn = {
+        border: "1px solid #cfc9bb", background: "#fbfaf6", color: "#3a3a3a",
+        borderRadius: 7, cursor: "pointer", fontSize: "0.82rem", lineHeight: 1,
+        padding: "0.36rem 0.6rem", fontFamily: "system-ui,-apple-system,sans-serif",
+      };
+
+      return ReactDOM.createPortal(
+        <div
+          onClick={onClose}
+          style={{
+            position: "fixed", inset: 0, zIndex: 1000, background: "rgba(6,9,18,0.86)",
+            display: "flex", flexDirection: "column", padding: "clamp(8px,2vw,22px)",
+          }}
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            style={{
+              background: "#f3f1ea", borderRadius: 14, display: "flex", flexDirection: "column",
+              flex: 1, minHeight: 0, overflow: "hidden", boxShadow: "0 24px 60px rgba(0,0,0,0.5)",
+            }}
+          >
+            <div style={{
+              display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap",
+              padding: "0.6rem 0.8rem", borderBottom: "1px solid #ded9cd", background: "#eae7dd",
+            }}>
+              <span style={{ fontWeight: 700, fontSize: "0.94rem", color: "#2a2a2a" }}>🗺️ {title}</span>
+              <span style={{ fontSize: "0.72rem", fontStyle: "italic", color: "#8b8578" }}>
+                {source} · hover a box for detail · drag to pan
+              </span>
+              <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 6 }}>
+                <button style={ctrlBtn} title="Zoom out (−)"
+                  onClick={() => setZoom(z => clampZoom(z - FLOW_ZOOM_STEP))}>−</button>
+                <span style={{
+                  fontFamily: "monospace", fontSize: "0.76rem", color: "#6b6558",
+                  minWidth: 42, textAlign: "center",
+                }}>{Math.round(zoom * 100)}%</span>
+                <button style={ctrlBtn} title="Zoom in (+)"
+                  onClick={() => setZoom(z => clampZoom(z + FLOW_ZOOM_STEP))}>+</button>
+                <button style={ctrlBtn} title="Reset zoom (0)" onClick={() => setZoom(1)}>Reset</button>
+                <button
+                  style={{ ...ctrlBtn, background: "#2dd4bf", borderColor: "#2dd4bf", color: "#06261f", fontWeight: 600 }}
+                  title="Close (Esc)" onClick={onClose}>✕ Close</button>
+              </div>
+            </div>
+            <div
+              ref={scrollRef}
+              onMouseDown={startDrag}
+              onMouseMove={onDrag}
+              onMouseUp={endDrag}
+              onMouseLeave={endDrag}
+              style={{
+                flex: 1, minHeight: 0, overflow: "auto", background: "#fdfcf9",
+                cursor: "grab", padding: 16, textAlign: "center",
+              }}
+            >
+              <FlowDiagram def={def} tips={tips} zoom={zoom} />
+            </div>
+          </div>
+        </div>,
+        document.body
+      );
+    }
+
+    // Header + inline diagram + the expanded view. Self-contained, because the call
+    // site sits inside a .map() over conditions where a hook cannot live.
+    function ManagementFlow({ def, tips, title, source }) {
+      const [open, setOpen] = useState(false);
+      return (
+        <div>
+          <div style={{
+            fontSize: "0.66rem", fontWeight: 700, color: "#888",
+            textTransform: "uppercase", letterSpacing: "0.1em",
+            fontFamily: "monospace", marginBottom: 6,
+            display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
+          }}>
+            <span>🗺️ Stepwise management</span>
+            <span style={{ fontWeight: 400, textTransform: "none", letterSpacing: 0, color: "#a09a8e", fontStyle: "italic" }}>
+              {source} · hover a box for detail
+            </span>
+            <button
+              onClick={() => setOpen(true)}
+              title="Expand flowchart for a larger view"
+              style={{
+                marginLeft: "auto", border: "1px solid #c8c2b4", background: "#fbfaf6",
+                color: "#3a3a3a", borderRadius: 7, cursor: "pointer",
+                fontSize: "0.68rem", fontWeight: 600, letterSpacing: "0.04em",
+                textTransform: "none", padding: "0.28rem 0.55rem",
+                fontFamily: "system-ui,-apple-system,sans-serif", whiteSpace: "nowrap",
+              }}
+            >⤢ Expand</button>
+          </div>
+          <div style={{ marginTop: 4 }}>
+            <FlowDiagram def={def} tips={tips} zoom={null} />
+          </div>
+          <FlowchartModal
+            open={open} onClose={() => setOpen(false)}
+            title={title} source={source} def={def} tips={tips}
+          />
         </div>
       );
     }
@@ -2422,18 +2606,12 @@
                           {/* Stepwise management flowchart (NICE) */}
                           {condition.management && (
                             <div style={{ marginTop: "0.5rem", paddingTop: "0.7rem", borderTop: "1px dashed #d0cdc3" }}>
-                              <div style={{
-                                fontSize: "0.66rem", fontWeight: 700, color: "#888",
-                                textTransform: "uppercase", letterSpacing: "0.1em",
-                                fontFamily: "monospace", marginBottom: 6,
-                                display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
-                              }}>
-                                <span>🗺️ Stepwise management</span>
-                                <span style={{ fontWeight: 400, textTransform: "none", letterSpacing: 0, color: "#a09a8e", fontStyle: "italic" }}>
-                                  {condition.management.source || "NICE"} · hover a box for detail
-                                </span>
-                              </div>
-                              <ManagementFlow def={condition.management.def} tips={condition.management.tips} />
+                              <ManagementFlow
+                                def={condition.management.def}
+                                tips={condition.management.tips}
+                                title={condition.name}
+                                source={condition.management.source || "NICE"}
+                              />
                             </div>
                           )}
                           {/* Notes section */}
