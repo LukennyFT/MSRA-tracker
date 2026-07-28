@@ -7974,38 +7974,6 @@ Two counselling points: it takes **2 to 3 weeks** to fully eliminate cow's milk 
 > High-yield: extra-intestinal features — rash, wheeze, faltering growth — mean **allergy**, not intolerance. Cow's milk protein allergy is treated with extensively hydrolysed formula first and amino acid formula only if that fails, and the mother must exclude cow's milk if breastfeeding.`,
         },
         {
-          id: "scarlet_fever",
-          name: "Scarlet fever",
-          content: `## Scarlet fever
-
-A group A streptococcal infection producing a characteristic exanthem, caused by an erythrogenic toxin. It typically affects children aged 2 to 8 and usually follows streptococcal pharyngitis.
-
-The presentation is a sore throat and high fever, then after a day or two a **sandpaper-textured, blanching, punctate erythematous rash** that begins on the trunk and spreads, sparing the palms and soles, with **flushed cheeks and circumoral pallor** and a **"strawberry tongue"** (initially white-coated, then red and papillate). **Desquamation** of the fingers and toes follows in convalescence.
-
-## Notification
-
-**Scarlet fever is a notifiable disease — notify the Health Protection Unit within 3 days.**
-
-## Management
-
-- **Phenoxymethylpenicillin (penicillin V) four times daily for 10 days**
-- **Azithromycin** if penicillin-allergic, in children aged 6 months to 17 years
-- **The 10-day course matters**: it is given to prevent the non-suppurative complications, **acute glomerulonephritis and rheumatic fever**, not merely to shorten the illness
-- **Stay away from nursery or school until 24 hours after starting antibiotics**
-- **Effective and frequent handwashing**
-- **Paracetamol or ibuprofen** for symptomatic relief
-- Symptoms should settle after about **1 week**. Arrange follow-up if they worsen or have not improved after 7 days, and advise seeking medical advice if complications develop
-
-Penicillin V remains first choice. Where it is unavailable, the order of preference is **amoxicillin, then a macrolide, then cefalexin**.
-
-## Complications
-
-- **Suppurative**: peritonsillar abscess (quinsy), otitis media, sinusitis, mastoiditis, and rarely necrotising fasciitis or streptococcal toxic shock syndrome
-- **Non-suppurative, immune-mediated**: **acute post-streptococcal glomerulonephritis** and **acute rheumatic fever** — the reason for completing the full antibiotic course
-
-> High-yield: sandpaper rash with circumoral pallor and a strawberry tongue. **Notify the Health Protection Unit**, give **penicillin V for 10 days**, and exclude from school for **24 hours after starting antibiotics**. The 10 days is about preventing rheumatic fever and glomerulonephritis.`,
-        },
-        {
           id: "paediatric_gord_and_colic",
           name: "Reflux & infant colic",
           content: `## Gastro-oesophageal reflux in infants
@@ -8692,6 +8660,785 @@ An autosomal recessive defect of copper transport (the *ATP7B* gene) causing cop
 - **Liver transplantation**
 
 > High-yield: hepatitis C is **not treated until after 3 years of age**, because vertically acquired infection often clears by itself. In Wilson's disease, give **pyridoxine alongside penicillamine** to prevent neuropathy, and warn that neurological recovery takes up to a year.`,
+        },
+        {
+          id: "feverish_child_traffic_light",
+          name: "The feverish child & the traffic light system",
+          content: `## The feverish child
+
+Fever is the commonest reason a child is brought for medical attention. The task is not to treat the number but to **decide how likely a serious bacterial infection is**, and NICE guideline NG143 gives a structured way of doing that for the child under 5 with fever and no obvious source.
+
+## Measuring the temperature
+
+- **Under 4 weeks**: use an **electronic thermometer in the axilla**
+- **4 weeks to 5 years**: an electronic or chemical dot thermometer in the axilla, or an **infrared tympanic thermometer**
+- **Do not** use the oral or rectal route routinely in this age group, and do not rely on forehead chemical thermometers, which are unreliable
+- **A fever reported by a parent or carer should be taken seriously**, even if the child is afebrile in the clinic
+
+## Does the height of the temperature matter?
+
+Beyond infancy the height of the fever is a poor discriminator, with two important exceptions:
+
+| Age | Threshold | Risk category |
+|---|---|---|
+| **Under 3 months** | **38 degrees or above** | **Red — high risk** |
+| **3 to 6 months** | **39 degrees or above** | **At least amber — intermediate risk** |
+| **Over 6 months** | No threshold applies | **Do not use the height of the temperature alone** to identify serious illness |
+
+## The traffic light table
+
+Assess colour, activity, respiratory features, circulation and hydration, and a final "other" group. A child with **any red feature is high risk**; a child with **any amber feature and no red feature is intermediate risk**; a child with **only green features is low risk**.
+
+| | Green — low risk | Amber — intermediate risk | Red — high risk |
+|---|---|---|---|
+| **Colour** of skin, lips and tongue | Normal colour | **Pallor** reported by parent or carer | **Pale, mottled, ashen or blue** |
+| **Activity** | Responds normally to social cues, content or smiles, stays awake or awakens quickly, strong normal cry or not crying | Not responding normally to social cues, no smile, wakes only with prolonged stimulation, decreased activity | **No response to social cues**, appears ill to a healthcare professional, **does not wake, or if roused does not stay awake**, weak, high-pitched or continuous cry |
+| **Respiratory** | Normal | **Nasal flaring**, tachypnoea (over 50 breaths per minute at 6 to 12 months, over 40 above 12 months), oxygen saturation 95% or less in air, crackles in the chest | **Grunting**, tachypnoea **over 60 breaths per minute**, **moderate or severe chest indrawing** |
+| **Circulation and hydration** | Normal skin and eyes, moist mucous membranes | **Tachycardia** (over 160 beats per minute under 12 months, over 150 at 12 to 24 months, over 140 at 2 to 5 years), **capillary refill 3 seconds or more**, dry mucous membranes, poor feeding in infants, reduced urine output | **Reduced skin turgor** |
+| **Other** | None of the amber or red features | Age **3 to 6 months with temperature 39 degrees or above**, **fever for 5 days or more**, **rigors**, swelling of a limb or joint, non-weight-bearing or not using an extremity | Age **under 3 months with temperature 38 degrees or above**, **non-blanching rash**, **bulging fontanelle**, **neck stiffness**, **status epilepticus**, focal neurological signs, focal seizures |
+
+## What to do — green
+
+- **Manage at home** with appropriate care and advice
+- **Safety net**: give advice on the warning symptoms and signs and when urgent review is needed, arrange a follow-up appointment in primary care, and liaise with other healthcare professionals including out-of-hours providers so the child has direct access if further assessment is needed
+- **Paracetamol or ibuprofen** if the child is uncomfortable or distressed, with advice on preventing dehydration
+- **Test the urine** for urinary tract infection
+- **No routine blood tests and no chest X-ray**
+
+## What to do — amber
+
+- **Provide a safety net, or refer to a paediatric specialist** for further assessment
+- **Consider hospital admission** if the child is **under 3 months with a suspected urinary tract infection and no alternative focus** (to obtain a reliable urine specimen and start treatment), if the fever has no obvious cause and the child has been unwell for longer than expected for a self-limiting illness, or if there is **significant parental anxiety or difficulty coping** because of the family or social situation
+- **Test for urinary tract infection** and send a **full blood count**
+- **Chest X-ray if the temperature is above 39 degrees and the white cell count is above 20 x 10⁹/L**
+- **Consider a lumbar puncture in a child under 1 year**
+
+## What to do — red
+
+- **Arrange immediate ambulance transfer to the emergency department** if there are life-threatening features, otherwise **urgent face-to-face assessment within 2 hours**
+- **Full blood count, C-reactive protein and blood culture**, plus urine testing
+- **Chest X-ray, lumbar puncture, serum electrolytes and a blood gas**
+- **Give empirical parenteral antibiotics** if the child is **under 1 month**, is **under 3 months and appears unwell**, or is **shocked, unrousable or has signs of meningococcal disease**
+
+**Do not prescribe oral antibiotics to a child with fever without an apparent source.**
+
+## Antipyretics — the rules that get examined
+
+- Use **paracetamol or ibuprofen** in a child with fever **who appears distressed** — not simply because the temperature is high. **Do not use antipyretics with the sole aim of reducing body temperature.**
+- **Do not give both agents simultaneously.** Start with one, and **consider switching to the other if the child's distress is not relieved**.
+- **Only consider alternating the two** if the distress persists or recurs before the next dose is due.
+- **Continue only for as long as the child appears distressed**, and dose by age and weight.
+- **Antipyretics do not prevent febrile convulsions** and must not be used for that purpose.
+- **Tepid sponging is not recommended.** Equally, do not underdress or over-wrap a feverish child.
+- **Maintain hydration** and encourage regular fluids; in a breastfed infant, breast milk is the fluid of choice.
+
+> High-yield: **under 3 months with a temperature of 38 degrees or more is automatically red**, and **3 to 6 months with 39 degrees or more is at least amber**; above 6 months the number alone means little. Give antipyretics for **distress, not for the temperature**, never both together, and **do not tepid sponge**.`,
+        },
+        {
+          id: "paediatric_bacterial_meningitis",
+          name: "Bacterial meningitis in children",
+          content: `## Bacterial meningitis
+
+Infection of the meninges — the membranes surrounding the brain and spinal cord. It is a medical emergency: outcome depends almost entirely on **how quickly antibiotics are given**. UK practice follows **NICE guideline NG240**, published in March 2024, which replaced the long-standing CG102.
+
+## Organisms by age
+
+| Age | Commonest organisms |
+|---|---|
+| **Under 3 months** | **Group B streptococcus**, *Escherichia coli* and other Gram-negative bacilli, ***Listeria monocytogenes*** |
+| **3 months to 6 years** | ***Neisseria meningitidis***, ***Streptococcus pneumoniae***, *Haemophilus influenzae* type b (now rare because of vaccination) |
+| **Over 6 years** | ***Neisseria meningitidis***, ***Streptococcus pneumoniae*** |
+
+## How it presents
+
+The classic triad of **fever, headache and neck stiffness** with photophobia belongs to the older child. **Infants present non-specifically** and this is the trap: fever, lethargy, poor feeding, vomiting, irritability and a high-pitched cry, with a **bulging fontanelle** and hypotonia. **Kernig's and Brudzinski's signs are often absent in young children.**
+
+**The non-blanching (petechial or purpuric) rash of meningococcal septicaemia** is a late sign and its absence never excludes the diagnosis. Other red flags are a rapidly spreading purpuric rash, cold hands and feet with limb pain, reduced consciousness, focal neurological signs and seizures.
+
+## Investigation
+
+- **Blood cultures, full blood count, C-reactive protein, glucose, coagulation screen, blood gas** and **whole-blood PCR for meningococcus and pneumococcus** — the PCR remains positive after antibiotics have been given, so it is invaluable
+- **Lumbar puncture** should be done **before antibiotics unless it is unsafe or would cause a clinically significant delay** — and **antibiotics must never wait for the lumbar puncture**
+- **Measure the blood glucose immediately before the lumbar puncture** so the cerebrospinal fluid to blood glucose ratio can be calculated
+- Send cerebrospinal fluid for **red and white cell count with differential, total protein, glucose, Gram stain, culture and sensitivities, and PCR**; results should be available **within 4 hours**
+
+**Do not perform a lumbar puncture if there is:**
+
+- **Extensive or rapidly spreading purpura**
+- **Infection at the lumbar puncture site**
+- **Risk factors for an evolving space-occupying lesion**, or features of raised intracranial pressure — **new focal neurological signs** (including seizures or posturing), **abnormal pupillary reactions**, or a **Glasgow Coma Scale of 9 or less** or a progressive, sustained or rapid fall in consciousness
+
+**Stabilise first**: an unprotected airway, respiratory compromise, shock, uncontrolled seizures or a bleeding risk must all be treated before a lumbar puncture is attempted.
+
+## Interpreting the cerebrospinal fluid
+
+| Feature | Bacterial | Viral | Tuberculous |
+|---|---|---|---|
+| **Appearance** | Cloudy or turbid | Clear | Clear or opalescent, may form a fibrin web |
+| **Predominant cell** | **Neutrophils** | **Lymphocytes** | **Lymphocytes** |
+| **White cell count** | Markedly raised | Moderately raised | Moderately raised |
+| **Protein** | High | Normal or mildly raised | **Very high** |
+| **Glucose (ratio to blood)** | **Low** | **Normal** | **Very low** |
+
+Interpret with care: **red cells suggest a traumatic tap or a different diagnosis**, **earlier antibiotics reduce the diagnostic yield**, and the **normal thresholds for white cell count and protein are higher in babies under 3 months**.
+
+## Management in hospital
+
+**Give intravenous antibiotics as soon as bacterial meningitis is suspected, and within 1 hour of arrival in hospital.**
+
+- **3 months and over: intravenous ceftriaxone** at the highest dose in the BNF for Children
+- **Under 3 months: intravenous ceftriaxone plus amoxicillin**, the amoxicillin covering ***Listeria monocytogenes***. Add amoxicillin at any age where there are Listeria risk factors such as immunosuppression
+- **Use cefotaxime instead of ceftriaxone where ceftriaxone is contraindicated** — most importantly in **pre-term babies under 41 weeks corrected gestational age**, and where calcium-containing infusions are being given
+- **Severe beta-lactam allergy: chloramphenicol** (with **co-trimoxazole** added if there are Listeria risk factors). A non-severe penicillin allergy is not a reason to avoid ceftriaxone, because cephalosporin anaphylaxis is rare
+- **Suspected or confirmed meningococcal disease: intravenous ceftriaxone**, and **stop after 5 days if the person has recovered**
+
+**Supportive care**
+
+- Analgesia and antipyretics
+- **Oxygen by reservoir rebreathing mask** unless intubation is required
+- **Anticonvulsants** for seizures
+- **Intravenous fluids** — 0.9% sodium chloride with 5% glucose
+- **Vasopressors if hypotensive despite fluid resuscitation**, in a high-dependency or intensive care setting
+
+## Dexamethasone
+
+**Give intravenous dexamethasone to anyone over 3 months with strongly suspected or confirmed bacterial meningitis.** This is a change from the older guidance, which gated the decision on cerebrospinal fluid findings.
+
+- Give the **first dose with or before the first dose of antibiotics** where possible — but **never delay antibiotics** to wait for it
+- If it was not given within 12 hours of the antibiotics, seek infection specialist advice on whether it is still likely to help
+- **Once the organism is known, continue dexamethasone only for pneumococcus or *Haemophilus influenzae* type b, and stop it for all other organisms**
+- **Under 3 months: get infection specialist advice**
+- **Do not routinely give corticosteroids in meningococcal disease**
+
+## In primary care
+
+If meningococcal disease is strongly suspected, **give intramuscular or intravenous benzylpenicillin (or ceftriaxone) immediately and telephone 999 for emergency transfer** — but **do not delay transfer to hospital in order to give antibiotics**. Check for penicillin allergy; in severe allergy, transfer without delay and give chloramphenicol in hospital.
+
+## Public health
+
+- **Bacterial meningitis and meningococcal disease are notifiable — notify the Health Protection Unit immediately**
+- **Antibiotic prophylaxis for close contacts: ciprofloxacin is preferred over rifampicin** — a single dose, given as soon as possible and ideally within 24 hours
+- Close contacts are those with **prolonged close contact in the 7 days before the onset of illness** — usually the household, kissing contacts and, occasionally, a childcare group
+- Vaccination protects against much of this: **MenB, MenC/Hib and MenACWY** for teenagers, and the **pneumococcal conjugate vaccine**
+
+## Complications and follow-up
+
+The commonest long-term complication is **sensorineural hearing loss**; others are seizures and epilepsy, hydrocephalus, cerebral abscess, learning and behavioural difficulties, cerebral palsy, and — in meningococcal septicaemia — skin necrosis, scarring, limb amputation and adrenal haemorrhage (**Waterhouse-Friderichsen syndrome**).
+
+- **Offer a formal audiological assessment within 4 weeks of the child being well enough to be tested, and preferably before discharge**; refer urgently for **cochlear implant assessment** if there is severe or profound deafness
+- **Review with a paediatrician 4 to 6 weeks after discharge**, covering the hearing result, bone and joint damage, skin scarring, psychosocial problems, and neurological and developmental progress
+- **Babies under 12 months should be reviewed by a paediatrician 1 year after discharge**, and community child development services should assess for neurodevelopmental complications for **at least 2 years**
+
+## Explaining it to a parent
+
+- The infection involves **the tissues surrounding the brain**; it is serious, but we have **effective antibiotics that treat it**
+- It needs **hospital admission** for those antibiotics and for close monitoring
+- There can be **long-term complications, the commonest being hearing loss**, which is why a formal hearing test is arranged
+- **Follow-up with the paediatricians at 4 to 6 weeks**
+- **Close contacts will be offered ciprofloxacin**
+- **Meningitis Now** is a good source of support
+
+> High-yield: **antibiotics within 1 hour, and never delayed for a lumbar puncture**. Under NG240 it is **ceftriaxone at every age**, with **amoxicillin added under 3 months for Listeria** and **chloramphenicol for severe beta-lactam allergy**. **Dexamethasone for everyone over 3 months**, continued only for pneumococcus or Hib and **avoided in meningococcal disease**. **Ciprofloxacin for contacts**, and **audiology within 4 weeks**.`,
+        },
+        {
+          id: "paediatric_encephalitis",
+          name: "Encephalitis in children",
+          content: `## Encephalitis
+
+Inflammation of the brain parenchyma itself, which is why it disturbs brain **function** — altered consciousness, confusion, behaviour and personality change, seizures and focal deficits — rather than producing the neck stiffness and photophobia of meningitis. The two frequently overlap as **meningoencephalitis**. For the pathology, the autoimmune causes and the classic temporal-lobe findings of herpes simplex encephalitis, see the *Encephalitis* topic in Neurology; what follows is the paediatric management.
+
+**All suspected cases must be admitted and treated as an emergency, with an A to E assessment.**
+
+## Empirical treatment
+
+- **Start high-dose intravenous aciclovir immediately** on clinical suspicion, and continue it until the cause is determined — do not wait for confirmation, because untreated herpes simplex encephalitis carries a high mortality and aciclovir works far better given early
+- **Empirical antibiotics are usually given alongside** — a third-generation cephalosporin such as **cefotaxime**, with **vancomycin** — because bacterial meningitis cannot be excluded at the outset
+
+## Supportive care, usually in intensive care
+
+- **Endotracheal intubation and mechanical ventilation** where the airway or consciousness is compromised
+- **Intravenous fluids**
+- **Reduce raised intracranial pressure** — corticosteroids and mannitol
+- **Deep vein thrombosis prophylaxis**
+- Seizure control
+
+## Treatment directed at the organism
+
+| Virus | Treatment |
+|---|---|
+| **Herpes simplex virus 1 and 2** | **High-dose intravenous aciclovir for 2 to 3 weeks** — the longer course matters, because relapses occur after shorter ones |
+| **Varicella-zoster virus** | Aciclovir, or ganciclovir |
+| **Cytomegalovirus** | **Ganciclovir plus foscarnet for 2 to 3 weeks** |
+| **Epstein-Barr virus** | Aciclovir is started empirically; once EBV encephalitis is confirmed, cidofovir is a possible alternative |
+
+**Corticosteroids** — methylprednisolone — are used for complications such as **cerebral vasculitis**.
+
+## Follow-up
+
+- **Supportive care, cognitive and motor rehabilitation and monitoring should continue for at least 1 year after discharge**
+- **Perform a hearing evaluation at, or shortly after, discharge**
+
+> High-yield: **give intravenous aciclovir before you have the diagnosis**, add empirical antibiotics because you cannot yet exclude bacterial meningitis, and treat proven herpes simplex encephalitis for a **full 2 to 3 weeks** — short courses relapse.`,
+        },
+        {
+          id: "measles_mumps_rubella",
+          name: "Measles, mumps & rubella",
+          content: `## The three MMR-preventable infections
+
+All three are **notifiable — notify the local Health Protection Team**, all three are managed supportively, and for all three the most useful thing you do is **check the immunisation status of close contacts and encourage vaccination once the child has recovered**.
+
+## Measles
+
+A paramyxovirus, and one of the most infectious organisms known. A prodrome of **fever, cough, coryza and conjunctivitis** (the "three Cs") with **Koplik spots** — white grains on an erythematous buccal mucosa, pathognomonic and present before the rash — is followed by a **maculopapular rash starting behind the ears and at the hairline** and spreading down the body, becoming confluent.
+
+**Management**
+
+- Explain that measles is **self-limiting but likely to cause unpleasant symptoms** — rash, fever, cough and conjunctivitis
+- **Rest and drink plenty of fluids**
+- **Paracetamol (10 to 15 mg/kg every 4 to 6 hours) or ibuprofen (5 to 10 mg/kg every 4 to 6 hours)** for symptomatic relief
+- **Stay away from school for at least 4 days after the rash appears**
+- **Immediately notify the local Health Protection Team**
+- **Seek urgent medical advice for complications** — shortness of breath, uncontrolled fever, or convulsions or altered consciousness
+- **Vitamin A orally for 2 days**, especially in a child who is **hospitalised or under 2 years old**
+- **Respiratory support** if pneumonia develops, and **neurological support** for encephalitis
+- **Isolate children admitted to hospital**
+- **Ribavirin** may have a role in the immunocompromised
+- **Find out the immunisation status of close contacts** and encourage vaccination once the acute episode has settled
+
+**Complications**: **otitis media is the commonest**; also pneumonia (the commonest cause of death), febrile convulsions, keratoconjunctivitis, diarrhoea, and **encephalitis** (rare). **Subacute sclerosing panencephalitis** is very rare but devastating — a progressive, fatal neurodegeneration presenting **years after** the original infection.
+
+## Mumps
+
+A paramyxovirus spread by respiratory droplets, causing fever, malaise and **parotitis** — classically bilateral parotid swelling with earache and pain on eating.
+
+**Management**
+
+- Advise that it is **self-limiting and usually resolves within 1 to 2 weeks**
+- **Rest and adequate fluids**, with **paracetamol or ibuprofen** at the doses above
+- **Stay away from school for 5 days after the parotid swelling develops**
+- **Seek help for symptoms suggesting meningitis or epididymo-orchitis**
+- **Notify the local Health Protection Unit**
+- **Find out the immunisation status of close contacts** and tell them to watch for symptoms
+- **Encourage MMR vaccination once recovered** if not previously vaccinated
+
+**Complications**: **orchitis** (in around a quarter of post-pubertal males, usually unilateral; subfertility is uncommon), **aseptic meningitis**, pancreatitis, oophoritis and sensorineural deafness.
+
+## Rubella (German measles)
+
+A togavirus causing a mild illness: low-grade fever, a fine pink maculopapular rash starting on the face and spreading, and characteristically **tender suboccipital and postauricular lymphadenopathy**.
+
+**Management**
+
+- Advise that it is **usually mild and self-limiting, typically resolving in about a week**
+- **Rest and adequate fluids**
+- **Stay away from school for at least 5 days after the rash first appears**
+- **Avoid all contact with pregnant women** — this is the point of the whole topic
+- **Consider admission for a serious complication** such as **haemorrhagic complications from thrombocytopenia, or encephalitis**
+- **Notify the local Health Protection Unit**
+
+**The danger is not to the child but to a fetus.** Maternal rubella in the first trimester causes **congenital rubella syndrome** — sensorineural deafness, cataracts and congenital heart disease (classically patent ductus arteriosus). See the *TORCH and congenital infections* topic.
+
+## Vaccination — and answering the parent
+
+Since **January 2026 the UK routine schedule uses the combined MMRV vaccine**, which adds **varicella** to measles, mumps and rubella. Children born on or after 1 January 2025 receive **two doses, at 12 months and at 18 months** — the second dose having been **brought forward from 3 years 4 months**. Older cohorts receive transitional schedules, and a catch-up programme runs from **November 2026 to March 2028** for children aged 3 years 4 months to under 6 years with no history of chickenpox or varicella vaccination.
+
+MMR and MMRV are **live attenuated** vaccines, so they are **contraindicated in significant immunosuppression and in pregnancy**.
+
+Parents frequently raise the autism question, and it should be answered directly:
+
+- **The vaccine is not associated with autism.** The 1998 study that suggested a link was very poorly designed and heavily biased, it was retracted, and **many subsequent large studies have disproved the hypothesis**
+- **It is a safe vaccine**
+- **The risk of serious complications from the diseases themselves is far higher than any serious risk associated with vaccination**
+
+> High-yield: exclusion periods are **measles 4 days after the rash, rubella 5 days after the rash, mumps 5 days after the parotitis**. **Koplik spots** precede the measles rash; measles' commonest complication is **otitis media** and its most feared late one is **SSPE**. Rubella matters because of **pregnancy**. All three are notifiable, and the schedule is now **MMRV at 12 and 18 months**.`,
+        },
+        {
+          id: "scarlet_fever",
+          name: "Scarlet fever",
+          content: `## Scarlet fever
+
+A group A streptococcal infection producing a characteristic exanthem, caused by an erythrogenic toxin. It typically affects children aged 2 to 8 and usually follows streptococcal pharyngitis.
+
+The presentation is a sore throat and high fever, then after a day or two a **sandpaper-textured, blanching, punctate erythematous rash** that begins on the trunk and spreads, sparing the palms and soles, with **flushed cheeks and circumoral pallor** and a **"strawberry tongue"** (initially white-coated, then red and papillate). **Desquamation** of the fingers and toes follows in convalescence.
+
+## Notification
+
+**Scarlet fever is a notifiable disease — notify the Health Protection Unit within 3 days.**
+
+## Management
+
+- **Phenoxymethylpenicillin (penicillin V) four times daily for 10 days**
+- **Azithromycin** if penicillin-allergic, in children aged 6 months to 17 years
+- **The 10-day course matters**: it is given to prevent the non-suppurative complications, **acute glomerulonephritis and rheumatic fever**, not merely to shorten the illness
+- **Stay away from nursery or school until 24 hours after starting antibiotics**
+- **Effective and frequent handwashing**
+- **Paracetamol or ibuprofen** for symptomatic relief
+- Symptoms should settle after about **1 week**. Arrange follow-up if they worsen or have not improved after 7 days, and advise seeking medical advice if complications develop
+
+Penicillin V remains first choice. Where it is unavailable, the order of preference is **amoxicillin, then a macrolide, then cefalexin**.
+
+## Complications
+
+- **Suppurative**: peritonsillar abscess (quinsy), otitis media, sinusitis, mastoiditis, and rarely necrotising fasciitis or streptococcal toxic shock syndrome
+- **Non-suppurative, immune-mediated**: **acute post-streptococcal glomerulonephritis** and **acute rheumatic fever** — the reason for completing the full antibiotic course
+
+> High-yield: sandpaper rash with circumoral pallor and a strawberry tongue. **Notify the Health Protection Unit**, give **penicillin V for 10 days**, and exclude from school for **24 hours after starting antibiotics**. The 10 days is about preventing rheumatic fever and glomerulonephritis.`,
+        },
+        {
+          id: "roseola_parvovirus",
+          name: "Roseola infantum & slapped cheek disease",
+          content: `## Two benign viral exanthems
+
+Both are common, both are managed with reassurance and antipyretics, and **neither requires school exclusion** — but each has one complication worth knowing.
+
+## Roseola infantum (human herpesvirus 6 and 7)
+
+Also called exanthem subitum or "sixth disease". It affects infants and toddlers, typically **6 months to 2 years**.
+
+The pattern is characteristic: **3 to 5 days of high fever in a child who otherwise looks remarkably well**, and then, **as the fever breaks, a rose-pink maculopapular rash appears** on the trunk and spreads to the limbs, sparing the face. The rash arriving *after* the fever settles is the diagnostic clue.
+
+**Management**
+
+- Explain that **the condition resolves over a few days to a week**
+- **Paracetamol (10 to 15 mg/kg every 4 to 6 hours) or ibuprofen (5 to 10 mg/kg every 4 to 6 hours)** for symptomatic relief
+- **Maintain adequate hydration**
+- **Explain the risk of febrile seizures** — roseola is one of the commonest identifiable causes of a febrile convulsion, precisely because the fever is high and rises fast
+- **School exclusion is NOT needed**
+
+## Erythema infectiosum (human parvovirus B19)
+
+"Slapped cheek disease" or "fifth disease", commonest in children aged 4 to 10. After a mild coryzal prodrome the child develops **bright red "slapped" cheeks**, followed a day or two later by a **lacy, reticular rash on the trunk and limbs** that can recur for weeks with heat, exercise or sunlight. **The child is no longer infectious once the rash appears.**
+
+**Management**
+
+- **Paracetamol or ibuprofen** at the doses above for symptomatic relief
+- **Encourage adequate fluid intake and rest**
+- **Secondary arthritis** — commoner in adolescents and adults — may be treated with **ibuprofen 4 to 10 mg/kg every 6 to 8 hours**
+- **If the infection persists beyond 3 weeks**: give **intravenous immunoglobulin for 5 days**, and a **red cell transfusion may be needed for anaemia**
+
+**Why parvovirus B19 matters**: it **infects red cell precursors and arrests erythropoiesis**. In a healthy child that is harmless, but it causes an **aplastic crisis** in anyone with a shortened red cell lifespan — **sickle cell disease, thalassaemia, hereditary spherocytosis** — and **chronic anaemia in the immunocompromised**. In pregnancy it can cause **fetal anaemia and hydrops fetalis**, so **contact with pregnant women should be avoided** (see the *TORCH and congenital infections* topic).
+
+## The classic childhood exanthems compared
+
+| | Organism | Rash | Distinguishing feature | School exclusion |
+|---|---|---|---|---|
+| **Measles** (first disease) | Measles virus | Maculopapular, behind the ears then downwards, becomes confluent | **Koplik spots**, the three Cs, miserable child | **4 days after rash onset** |
+| **Scarlet fever** (second disease) | Group A streptococcus | **Sandpaper**, punctate, spares palms and soles | **Strawberry tongue, circumoral pallor** | **24 hours after starting antibiotics** |
+| **Rubella** (third disease) | Rubella virus | Fine pink maculopapular, face then downwards | **Suboccipital and postauricular lymphadenopathy** | **5 days after rash onset** |
+| **Erythema infectiosum** (fifth disease) | **Parvovirus B19** | **Slapped cheeks**, then a lacy reticular rash | Aplastic crisis in haemolytic anaemia; hydrops in pregnancy | **None** — not infectious once the rash appears |
+| **Roseola infantum** (sixth disease) | **Human herpesvirus 6 and 7** | Rose-pink macules on the trunk | **Rash appears as the high fever breaks**; febrile seizures | **None** |
+| **Chickenpox** | Varicella-zoster virus | Vesicles in **crops at different stages**, starting on the trunk | Intensely itchy, lesions of differing ages | **Until all lesions have crusted over** |
+
+The "fourth disease" of the historical list (Dukes' disease) is no longer considered a distinct entity.
+
+> High-yield: **roseola's rash appears as the fever falls** and it is a classic trigger for **febrile convulsions**. **Parvovirus B19** gives slapped cheeks and causes an **aplastic crisis in sickle cell disease and spherocytosis** and **hydrops fetalis** in pregnancy. **Neither needs school exclusion.**`,
+        },
+        {
+          id: "paediatric_chickenpox",
+          name: "Chickenpox in children",
+          content: `## Chickenpox (varicella)
+
+Primary infection with **varicella-zoster virus**, spread by respiratory droplets and by direct contact with vesicle fluid. After a mild prodrome of fever and malaise, an intensely itchy rash appears — **macules, then papules, then vesicles, then crusts, in successive crops so that lesions of different ages are present at once**. It starts on the trunk and face and spreads centrifugally. The virus then remains latent in the dorsal root ganglia and can reactivate later as **shingles**.
+
+## Infectivity and exclusion
+
+**The most infectious period is 1 to 2 days before the rash appears, and infectivity continues until all the lesions are dry and have crusted over** — usually around **5 days after the rash starts**.
+
+**Avoid contact with:**
+
+- **School or nursery**
+- **Immunocompromised people**
+- **Pregnant women**
+- **Infants under 4 weeks old**
+
+## General advice
+
+- **Encourage adequate fluid intake**
+- **Dress appropriately** to avoid overheating or shivering
+- **Wear smooth, cotton fabrics**
+- **Keep the nails short** to limit damage from scratching
+
+## Symptomatic relief
+
+- **Paracetamol for pain and fever** — note it is **not licensed in children under 2 months**
+- **Avoid non-steroidal anti-inflammatory drugs**, including ibuprofen: they are associated with **severe skin and soft-tissue infection** in chickenpox. This is the important exception to the usual "paracetamol or ibuprofen" advice for a feverish child
+- **Topical calamine lotion** for itch
+- **Chlorphenamine** for itch, **if aged 1 year or older**
+
+## When to admit
+
+Admit if there are serious complications:
+
+- **Pneumonia**
+- **Encephalitis** — including cerebellitis with ataxia
+- **Dehydration** — reduced urine output, lethargy, cool peripheries
+- **Bacterial superinfection** — suspect this with a **sudden high-grade pyrexia with erythema and tenderness around the original chickenpox lesions**; the risk is invasive group A streptococcal infection including necrotising fasciitis
+- **Purpura fulminans**
+
+Tell the family to **seek urgent medical advice if the child deteriorates or develops complications**.
+
+## Antiviral treatment
+
+| Group | Treatment |
+|---|---|
+| **Mild to moderate disease** | General advice only — **no antiviral** |
+| **Severe disease in an adolescent aged 14 or over** | Consider **oral aciclovir 800 mg five times a day for 7 days**, if they present **within 24 hours of the rash appearing** |
+| **Neonatal chickenpox** | **Seek immediate specialist advice** |
+| **Immunocompromised child** | **Intravenous aciclovir for 7 days** if they present within 24 hours of the rash, or if the chickenpox is severe. **Oral valaciclovir** may be substituted |
+
+## Prevention
+
+- **Human varicella-zoster immunoglobulin** should be given to **high-risk immunocompromised individuals with deficient T-cell function following contact with chickenpox**
+- **Since January 2026 varicella vaccination is part of the routine UK childhood schedule**, given as the combined **MMRV vaccine at 12 and 18 months**, with a catch-up programme for older pre-school children. It is a **live vaccine**, so it is contraindicated in significant immunosuppression and in pregnancy
+
+For chickenpox contracted during pregnancy, and for the risks to the fetus and newborn, see the *Chickenpox in pregnancy* topic.
+
+> High-yield: **avoid ibuprofen in chickenpox** — it is linked to severe soft-tissue infection; use paracetamol. Infectious **until every lesion has crusted**. Aciclovir is for the **immunocompromised, neonates and adolescents aged 14 or over presenting within 24 hours** — not for the ordinary well child. **Sudden high fever with tenderness around the spots means bacterial superinfection.**`,
+        },
+        {
+          id: "glandular_fever",
+          name: "Glandular fever (infectious mononucleosis)",
+          content: `## Glandular fever
+
+Infection with **Epstein-Barr virus**, spread in saliva — hence "the kissing disease". It is commonest in adolescents and young adults, and presents with a triad of **fever, tonsillar pharyngitis and lymphadenopathy**, together with marked **fatigue**. Other features are palatal petechiae, **splenomegaly** (in around half), hepatomegaly and a transient jaundice.
+
+Diagnosis rests on a **monospot or heterophile antibody test** (which may be negative in the first week and in young children), **EBV-specific serology** where the monospot is unhelpful, and a **full blood count showing lymphocytosis with atypical lymphocytes**. Liver transaminases are often mildly raised.
+
+## When to admit
+
+Arrange hospital admission if there is:
+
+- **Stridor**
+- **Dehydration, or difficulty swallowing fluids**
+- The child has **become systemically unwell**
+- A **suspected serious complication, such as splenic rupture** — sudden abdominal pain
+- **Haemolytic anaemia or thrombocytopenia**
+
+## Supportive care
+
+- **Paracetamol (10 to 15 mg/kg every 4 to 6 hours) or ibuprofen (5 to 10 mg/kg every 4 to 6 hours)**
+- **Good hydration**
+- **Rest**
+
+## What to tell the family
+
+- **Symptoms usually last 2 to 4 weeks**, and **tiredness is common** and may persist for longer
+- **Exclusion from school or work is not necessary**, but tailor activities to what the child finds comfortable
+- **Limit spread by avoiding kissing and by not sharing eating utensils**
+- **Avoid heavy lifting and contact or collision sports for at least the first month of the illness**, and commonly for **up to 8 weeks** — this is because of the risk of **splenic rupture** from a spleen enlarged by the infection
+
+## Specific treatments
+
+- **Oral prednisolone** if there is **upper airway obstruction or haemolytic anaemia** — the child should be **admitted to hospital**
+- **Intravenous immunoglobulin** may be given where there is **active bleeding due to thrombocytopenia**
+
+## Two prescribing traps
+
+- **Ampicillin and amoxicillin cause a florid maculopapular rash** in a child with EBV, and should be avoided. In practice this is why an adolescent with a "sore throat" treated blind with amoxicillin who then erupts in a widespread rash has glandular fever, not penicillin allergy
+- **Do not give aspirin**, because of the risk of **Reye's syndrome** — an encephalopathy with fatty liver degeneration, the reason aspirin is avoided in under-16s generally
+
+## Complications
+
+Splenic rupture, upper airway obstruction from tonsillar enlargement, haemolytic anaemia and thrombocytopenia, hepatitis, chronic fatigue, and a long-term association with **Burkitt lymphoma, nasopharyngeal carcinoma and Hodgkin lymphoma**.
+
+> High-yield: fever, tonsillitis, lymphadenopathy and profound fatigue in a teenager. **Never give amoxicillin** (florid rash) or **aspirin** (Reye's syndrome), and **avoid contact sports for at least a month** because of **splenic rupture**.`,
+        },
+        {
+          id: "kawasaki_disease",
+          name: "Kawasaki disease",
+          content: `## Kawasaki disease
+
+A **medium-vessel vasculitis** of unknown cause, affecting mainly **children under 5** and commoner in those of Japanese and Korean ancestry. It matters for one reason: untreated, **around a quarter of children develop coronary artery aneurysms**, and treatment cuts that to a few per cent. See the *Vasculitides* topic for where it sits among the vasculitides.
+
+## Diagnosis
+
+It is a **clinical diagnosis**: **fever for 5 days or more** that is characteristically **high, persistent and resistant to antipyretics**, plus **four of the following five**:
+
+- **Conjunctivitis** — bilateral, bulbar and non-purulent
+- **Rash** — polymorphous, often with desquamation in the groin
+- **Adenopathy** — cervical lymphadenopathy, usually unilateral and over 1.5 cm
+- **Strawberry tongue**, with cracked, red lips and a red oral mucosa
+- **Hands and feet** — erythema and oedema of the palms and soles, followed in the second and third week by **peeling of the fingers and toes**
+
+The mnemonic is **CRASH and burn** — Conjunctivitis, Rash, Adenopathy, Strawberry tongue, Hands and feet, plus the fever. **Incomplete Kawasaki disease**, with fewer criteria, is commoner in infants and is exactly the group in whom aneurysms are most likely, so a low threshold is needed.
+
+There is no diagnostic test, but supportive findings include a **raised C-reactive protein and erythrocyte sedimentation rate, a normocytic anaemia, a raised white cell count and — in the second week — a markedly raised platelet count (thrombocytosis)**. Liver enzymes may be raised, and there is often a sterile pyuria.
+
+## Management
+
+- **Intravenous immunoglobulin 2 g/kg as a single infusion**, ideally **within 10 days of the onset of fever**. **It may be repeated 36 hours after the first infusion is completed** if the fever persists
+- **High-dose aspirin**, to reduce the risk of thrombosis, continued until **24 to 72 hours after the fever has settled**, then **low-dose aspirin for 8 weeks**
+- **Second line, for disease resistant to immunoglobulin**: **corticosteroids and infliximab**
+- **Third line**: **ciclosporin, anakinra or plasma exchange**
+
+**Kawasaki disease is the one situation in which aspirin is deliberately given to a young child**, despite the usual concern about Reye's syndrome — the risk of coronary thrombosis outweighs it.
+
+## Echocardiography and follow-up
+
+**Echocardiography is the first-line investigation for risk assessment for coronary artery aneurysms**, and is repeated to guide how long antiplatelet treatment continues.
+
+| Risk category | Antiplatelet treatment | Surveillance |
+|---|---|---|
+| **Low risk** — no coronary abnormality | **No further medication after the 8 weeks of aspirin** | Routine |
+| **Moderate risk** | **Low-dose aspirin until aneurysm regression is demonstrated** | **ECG and echocardiogram annually** |
+| **High risk** — large or giant aneurysms | **Low-dose aspirin long term**, with **long-term warfarin to a target INR of 2 to 3**; **clopidogrel may also be needed** | **ECG and echocardiogram twice a year** |
+
+## Complications
+
+**Coronary artery aneurysms** are the important one, with the risks of thrombosis, myocardial infarction and sudden death. Others are myocarditis, pericarditis, arrhythmia, valvular regurgitation and, rarely, aneurysms elsewhere in the arterial tree.
+
+> High-yield: **fever for 5 or more days plus 4 of the CRASH criteria**. Treat with **IVIG 2 g/kg within 10 days** and **aspirin — the exception to the Reye's rule**. **Echocardiography** looks for **coronary artery aneurysms**, and **giant aneurysms need long-term warfarin**.`,
+        },
+        {
+          id: "paediatric_staph_strep_skin",
+          name: "Impetigo, scalded skin syndrome & toxic shock syndrome",
+          content: `## Three staphylococcal and streptococcal presentations
+
+All three are caused by *Staphylococcus aureus* or group A streptococcus. Impetigo is a superficial skin infection; the other two are driven by **exotoxins** and are far more serious.
+
+## Impetigo
+
+A superficial, highly contagious skin infection, usually caused by *Staphylococcus aureus* and sometimes by group A streptococcus. **Non-bullous** impetigo — the common form — produces the classic **golden or honey-coloured crusts**, typically around the nose and mouth. **Bullous** impetigo is caused by toxin-producing *Staphylococcus aureus* and produces flaccid, fluid-filled blisters that rupture to leave a thin brown crust; it is commoner in infants and more often accompanied by systemic upset.
+
+**Advice**
+
+- Reassure that **impetigo usually heals without scarring**, taking **2 to 3 weeks**
+- **Hygiene matters**: wash the affected areas with soapy water, wash hands after touching lesions, avoid scratching and keep the nails short, and **do not share towels or bathwater**
+- **Children should stay away from school until the lesions are dry and scabbed over**, or until 48 hours of antibiotic treatment has been completed
+
+**Antibiotic treatment**
+
+| Presentation | Treatment |
+|---|---|
+| **Localised non-bullous** | **Hydrogen peroxide 1% cream**. If unsuitable, **5 days of topical fusidic acid 2% or mupirocin 2%** |
+| **Widespread non-bullous** | **Topical fusidic acid 2% or mupirocin 2%**, or **oral flucloxacillin** (clarithromycin if penicillin-allergic) |
+| **Bullous impetigo, or a child systemically unwell or at high risk of complications** | **Oral flucloxacillin** (clarithromycin if penicillin-allergic) |
+| **Recurrent impetigo** | **Intranasal mupirocin 2%** to eradicate nasal carriage |
+
+Hydrogen peroxide is first-line for localised disease as part of **antimicrobial stewardship** — it avoids an antibiotic altogether. If **MRSA is suspected, consult local microbiological guidelines**.
+
+**Arrange follow-up if there is no improvement after 7 days**: review the diagnosis, check compliance with treatment and with the hygiene measures, **take a swab** (and check for MRSA), and **consider oral antibiotics if fusidic acid was used initially**.
+
+## Staphylococcal scalded skin syndrome
+
+Caused by **exfoliative toxins from *Staphylococcus aureus*** which cleave desmoglein-1 in the superficial epidermis, splitting the skin just beneath the granular layer. It affects mainly **children under 5**, whose immature renal clearance of the toxin and lack of antibodies leave them vulnerable.
+
+A prodrome of fever and irritability is followed by a **widespread tender erythema**, then **flaccid blisters and sheets of superficial skin peeling away**, often starting in the flexures and around the mouth. **Nikolsky's sign is positive** — gentle lateral pressure shears the skin off. Importantly, **the mucous membranes are spared**, which helps distinguish it from toxic epidermal necrolysis.
+
+**Management**
+
+- **Hospital admission**
+- **Intravenous antibiotics — flucloxacillin**
+- **Analgesia**, especially when changing dressings
+- **Emollient** to relieve pruritus and tenderness
+- **Monitor hydration and fluid balance, and give intravenous fluids** — the denuded skin loses fluid like a burn
+- **Burns dressings** to the affected areas as required
+
+Healing is usually complete **without scarring**, because the split is so superficial.
+
+## Toxic shock syndrome
+
+A **toxin-mediated** illness in which staphylococcal or streptococcal exotoxins act as **superantigens**, activating T-cells en masse and producing a massive cytokine release. It is classically associated with retained tampons and with nasal packing, but in children it more often follows a **burn, a surgical wound, or a skin or soft-tissue infection — including a superinfected chickenpox lesion**.
+
+It presents with **high fever, hypotension, a diffuse macular erythematous rash resembling sunburn, and multi-organ involvement** — vomiting and diarrhoea, myalgia, renal and hepatic impairment, thrombocytopenia and confusion — with **desquamation of the palms and soles 1 to 2 weeks later**.
+
+**Management**
+
+- **Intensive care support is required to manage a patient in shock** — **intravenous fluids, antibiotics and vasopressor support**
+- **Surgical debridement of the area of infection**: infected tissue must be removed to prevent progression, and **amputation is occasionally needed**
+- **Start clindamycin plus either meropenem or co-amoxiclav before culture results return.** **Clindamycin is central** — it is a protein synthesis inhibitor and so **switches off toxin production**, which a cell-wall agent cannot do
+
+| Organism | Antibiotics |
+|---|---|
+| **Streptococcal** | **Clindamycin plus benzylpenicillin**, or vancomycin |
+| **Staphylococcal, meticillin-sensitive** | **Clindamycin plus flucloxacillin** (oxacillin or nafcillin in other countries), or vancomycin |
+| **Staphylococcal, MRSA** | **Clindamycin plus vancomycin**, or linezolid |
+
+**Intravenous immunoglobulin** is often added in severe streptococcal toxic shock syndrome to neutralise circulating toxin.
+
+> High-yield: **hydrogen peroxide 1% cream is first-line for localised non-bullous impetigo**; flucloxacillin for bullous or widespread disease; school exclusion **until the lesions crust**. **Scalded skin syndrome spares the mucous membranes** (toxic epidermal necrolysis does not) and needs IV flucloxacillin. In **toxic shock syndrome, always include clindamycin** — it stops toxin production — and debride the source.`,
+        },
+        {
+          id: "imported_fever_children",
+          name: "Fever in the returning traveller: malaria, dengue & typhoid",
+          content: `## The child with fever after travel
+
+**Always ask about travel.** In any febrile child who has been abroad, **malaria must be excluded first**, because it is the one that kills quickly. Take a careful history of where, when, for how long, what prophylaxis was taken and what exposures occurred. **Malaria, dengue and typhoid are all notifiable — notify the local Health Protection Team (UKHSA).**
+
+## Malaria
+
+Caused by *Plasmodium* species transmitted by the female *Anopheles* mosquito. ***Plasmodium falciparum*** causes almost all severe disease and deaths, and typically presents **within a month of return**; *P. vivax* and *P. ovale* form dormant liver **hypnozoites** and can relapse **months to years later**.
+
+Fever is the constant feature, with rigors, headache, myalgia, vomiting and diarrhoea; children often lack the classical periodic fever pattern and can look deceptively non-specific. Anaemia, thrombocytopenia, jaundice and splenomegaly are common.
+
+**Diagnosis** is by **thick and thin blood films** — the thick film detects parasites, the thin film speciates and gives the parasite count. **Three negative films over 48 hours are needed to exclude malaria**; a rapid antigen test supports but does not replace microscopy.
+
+**Management**
+
+- **Arrange immediate admission for specialist assessment and treatment — for every child with malaria.** If the child is already in hospital, **discuss urgently with an infectious diseases specialist**
+- **Uncomplicated *falciparum* malaria**: **artemisinin combination therapy** — artemether with lumefantrine, or artenimol with piperaquine phosphate. **Chloroquine or hydroxychloroquine** may be used instead if the infection was acquired in a chloroquine-sensitive region, and **quinine is second line**, usually given with an antibiotic such as doxycycline or clindamycin
+- **Severe *falciparum* malaria**: **parenteral artesunate**, then after at least 24 hours switch to a full oral artemisinin combination course, with **supportive care and intensive care as needed**
+- **Non-falciparum malaria** (*P. vivax*, and less commonly *P. ovale*, *P. malariae* and *P. knowlesi*): **artemisinin combination therapy or chloroquine**
+- **For *P. vivax* and *P. ovale*, follow the treatment with primaquine to eradicate the liver hypnozoites** — the "radical cure" — otherwise the child relapses. **Check glucose-6-phosphate dehydrogenase activity before giving primaquine**, because it causes haemolysis in G6PD deficiency
+
+**Features of severe malaria** include impaired consciousness or seizures, respiratory distress or acidosis, hypoglycaemia, shock, renal failure, haemoglobin below 80 g/L, spontaneous bleeding, and a **parasitaemia above 2% in a child**.
+
+## Dengue
+
+A flavivirus spread by the daytime-biting *Aedes* mosquito, and the commonest arbovirus infection in returning travellers. It causes a **sudden high fever with severe headache, retro-orbital pain and intense myalgia and arthralgia** — hence "breakbone fever" — with a macular rash, and characteristically **leucopenia and thrombocytopenia**. Most cases are self-limiting, but a minority progress to **severe dengue** with plasma leakage, haemorrhage and shock, typically **as the fever falls**.
+
+**Warning signs** to look for are abdominal pain or tenderness, persistent vomiting, clinical fluid accumulation, mucosal bleeding, lethargy or restlessness, hepatomegaly and a rising haematocrit with a falling platelet count.
+
+Management follows the **WHO groups**:
+
+| Group | Features | Management |
+|---|---|---|
+| **A** | **No warning signs**; tolerating adequate fluid volume and **passing urine every 6 hours** | **Manage at home.** Rest and oral fluids using rehydration products, **paracetamol** for fever, and **monitor for warning signs** |
+| **B** | **Developing warning signs** | **Hospital admission**, intravenous or oral fluids, monitor for progression. **Discharge once afebrile for more than 48 hours** |
+| **C** | **Established warning signs** or severe dengue | **Admission to intensive care.** **Intravenous 0.9% sodium chloride — maintenance plus a 5% fluid deficit**, consider **blood transfusion**, monitor for worsening and investigate other causes. **Discharge once afebrile for more than 48 hours** |
+
+The fluid deficit is calculated with the standard maintenance rule — **100 mL/kg for the first 10 kg, 50 mL/kg for the second 10 kg and 20 mL/kg for every kilogram above 20 kg**.
+
+**Use paracetamol, not non-steroidal anti-inflammatory drugs or aspirin**, because of the bleeding risk from thrombocytopenia. **Tepid sponging is not recommended.**
+
+## Typhoid (enteric fever)
+
+Caused by ***Salmonella* Typhi** and *Salmonella* Paratyphi, acquired through contaminated food and water, overwhelmingly from **South Asia**. Unlike most gastroenteritis it is a **systemic** illness: a **stepwise rising fever** over the first week with headache, abdominal pain, and — characteristically — **constipation more often than diarrhoea in the early stages**, a **relative bradycardia**, **rose spots** on the trunk and hepatosplenomegaly. **Blood culture is the key diagnostic test.** Untreated, it can perforate the terminal ileum or bleed in the third week.
+
+**Management**
+
+- **Supportive care: intravenous fluids and antipyretics**
+- **Suspected enteric fever: ceftriaxone and azithromycin**
+- **Confirmed disease: treat according to sensitivities.** **Azithromycin or ceftriaxone are the reliable choices** for infection acquired in South Asia, where **fluoroquinolone resistance is now widespread**; ciprofloxacin for 7 days remains appropriate only where the isolate is known to be sensitive
+- **If there is no response after 4 to 5 days, add azithromycin**
+- **If the child is encephalopathic, add high-dose dexamethasone**
+- **Extensively drug-resistant strains**, reported particularly from Pakistan, are resistant to ceftriaxone and ciprofloxacin and require **azithromycin, a carbapenem such as meropenem, or both**
+
+> High-yield: **exclude malaria first in any febrile returning traveller** — three negative films over 48 hours. Give **artemisinin combination therapy**, **artesunate for severe disease**, and **primaquine after checking G6PD** for vivax and ovale. In dengue, deterioration comes **as the fever falls**, and you avoid NSAIDs. In typhoid, think **South Asia, constipation and relative bradycardia**, and **do not rely on ciprofloxacin**.`,
+        },
+        {
+          id: "paediatric_tuberculosis",
+          name: "Tuberculosis in children",
+          content: `## Tuberculosis in children
+
+For the microbiology, the Ghon focus and latency, the extrapulmonary forms and the drug toxicities, see the *Tuberculosis* topic in Infectious Diseases. What follows is what differs in children.
+
+**Children are harder to diagnose and more likely to disseminate.** Young children rarely produce sputum, so samples are obtained by **gastric lavage or induced sputum**; they are usually **paucibacillary**, so smears are often negative and the diagnosis frequently rests on **a positive contact history plus a positive tuberculin skin test or interferon-gamma release assay and a compatible chest X-ray**. **Infants and children under 5 are at much higher risk of progressing rapidly from infection to disease, and of miliary TB and tuberculous meningitis** — which is why contact tracing and treatment of latent infection matter so much in this age group.
+
+## Initial management
+
+- **Tuberculosis is notifiable — notify the Health Protection Unit**
+- **Arrange hospital admission if active TB is suspected and the child is unwell**
+- **If admission is not needed, arrange urgent referral to a specialist TB service** for confirmation of the diagnosis and ongoing management
+
+## Drug treatment
+
+**Active disease** is treated with the standard four-drug regimen:
+
+- **Rifampicin and isoniazid for 6 months**
+- **Pyrazinamide and ethambutol for the first 2 months**
+- **Pyridoxine (vitamin B6)** is given **weekly** alongside isoniazid to prevent peripheral neuropathy
+
+**Tuberculous meningitis** is treated for **12 months in total** — **rifampicin and isoniazid are continued for a further 10 months after the initial 2-month intensive phase** — and **dexamethasone is given initially to reduce the risk of long-term neurological sequelae**.
+
+**Latent tuberculosis**, treated to reduce the risk of reactivation in later life:
+
+- **Isoniazid for 6 months**, or
+- **Rifampicin with isoniazid for 3 months**
+
+The World Health Organization also endorses a **shortened 4-month regimen** — 2 months of isoniazid, rifampicin and pyrazinamide with or without ethambutol, then 2 months of isoniazid and rifampicin — for children and adolescents aged 3 months to 16 years with **non-severe** drug-susceptible disease, on the basis of the SHINE trial. UK practice still follows the standard 6-month regimen for active disease.
+
+## Resistance, adherence and contacts
+
+- **Undertake a risk assessment for drug-resistant TB**, which **should be identified on the original sputum PCR**
+- Take a **multidisciplinary approach**, including a **key worker** who monitors **adherence to treatment (directly observed therapy where adherence is uncertain), clinical response, adverse effects and the need for psychological support**
+- **Contact tracing**
+- **TB Alert** is a useful source of further information for families
+
+**BCG vaccination** is offered in the UK to infants at increased risk — those living in an area of high incidence, or with a parent or grandparent born in a country with a high incidence — and is a **live vaccine**, so it must not be given to a child who is immunosuppressed or has HIV.
+
+> High-yield: children give **gastric lavage rather than sputum** and are usually **smear-negative**, so diagnosis leans on contact history plus IGRA or Mantoux. Regimen is **RIPE for 2 months then rifampicin and isoniazid for 4** — but **TB meningitis runs for 12 months with initial dexamethasone**. **Pyridoxine with isoniazid.** Notify, contact-trace, and remember **BCG is live**.`,
+        },
+        {
+          id: "paediatric_hiv",
+          name: "HIV in children",
+          content: `## HIV in children
+
+Most childhood HIV in the UK is **vertically acquired**. For the AIDS-defining illnesses of advanced disease, see the four HIV topics in Infectious Diseases; for management in pregnancy, see *UTI, GBS and bloodborne viruses in pregnancy*.
+
+**Refer to a specialist service**, with a high focus on a **holistic approach to care**. The **decision to start treatment is based on a combination of clinical status, HIV viral load and CD4 count** — but **infants should start antiretroviral therapy shortly after diagnosis regardless**, because they are at much higher risk of rapid disease progression.
+
+## Antiretroviral therapy
+
+- **First-line therapy is two nucleoside reverse transcriptase inhibitors (NRTIs) with either an integrase strand transfer inhibitor (INSTI), a non-nucleoside reverse transcriptase inhibitor (NNRTI) or a protease inhibitor (PI)** — an integrase inhibitor is the usual third agent in current practice
+- **Counselling to help the child and family commit to lifelong therapy** is central, and adherence is the main determinant of success
+- **Prophylaxis against opportunistic infection**, most importantly **co-trimoxazole for *Pneumocystis jirovecii* pneumonia**
+- **Treat other concomitant infections**
+
+## Other aspects of care
+
+- **Micronutrient supplementation**
+- **Immunisation: follow the normal childhood schedule, but do NOT give BCG**, which is a live vaccine. **Additional immunisation against influenza, hepatitis A, hepatitis B and varicella-zoster should be considered.** Note that **MMR may be given** to most children with HIV, but BCG and yellow fever may not
+- **A multidisciplinary approach.** The child can be seen in a **family clinic** together with other family members who may also be living with HIV, with an adult specialist involved
+- **Regular follow-up with particular attention to weight and developmental progress**, both of which are sensitive markers of control
+
+## Prophylaxis
+
+**Post-exposure prophylaxis** is **started within 72 hours of exposure and continued for 28 days**. The first-line regimen is **tenofovir disoproxil with emtricitabine, plus raltegravir** — two NRTIs with an integrase inhibitor.
+
+**Reducing vertical transmission**
+
+- **Mothers with a high viral load are more likely to transmit HIV to their infant**, and **caesarean section will be recommended**
+- **Babies born to HIV-positive mothers receive zidovudine for 6 weeks** (extended, combination prophylaxis is used where the maternal viral load is not suppressed)
+- **Avoiding breastfeeding also reduces transmission**, and formula feeding is recommended in the UK
+
+## Health promotion for young people
+
+As children with HIV reach adolescence, care shifts to include **cardiovascular disease prevention, cervical screening, immunisations, safe sex practices, contraception and mental health screening**. Two specific points:
+
+- **Undetectable equals untransmissible** — someone with a sustained undetectable viral load cannot transmit HIV sexually. This is a powerful message for adherence and for reducing stigma
+- **Check for interactions between contraception and antiretroviral therapy**, particularly with protease inhibitors and some NNRTIs, which induce or inhibit hepatic enzymes
+
+**aidsmap** is a good source of information and support for families.
+
+> High-yield: **start infants on antiretroviral therapy as soon as they are diagnosed**, whatever the CD4 count. **No BCG.** **Co-trimoxazole for PCP prophylaxis.** **PEP within 72 hours for 28 days.** Neonates of HIV-positive mothers get **zidovudine for 6 weeks** and **are not breastfed**. **U equals U.**`,
+        },
+        {
+          id: "paediatric_immunodeficiency",
+          name: "Primary immunodeficiency in children",
+          content: `## Recognising primary immunodeficiency
+
+An inherited defect in one or more parts of the immune system. Individually rare, but the pattern of infection gives it away — suspect it when infection is **serious, persistent, unusual or recurrent** (the **SPUR** pattern), and particularly with **failure to thrive, chronic diarrhoea, an unusual organism, deep-seated infection, or a family history of early infant death**.
+
+**The type of infection points to the arm of the immune system at fault** — antibody defects give recurrent encapsulated bacterial infection, T-cell defects give viral and fungal infection, phagocyte defects give deep abscesses, and terminal complement defects give recurrent *Neisseria*. The full classification, the individual syndromes and the investigations are set out in the *Immunodeficiency* topic in Immunology and Allergy; what follows is the management of an affected child.
+
+**Refer to a specialist immunology service.**
+
+## Antimicrobial prophylaxis
+
+| Defect | Prophylaxis |
+|---|---|
+| **T-cell and neutrophil defects** | **Co-trimoxazole** to prevent *Pneumocystis jirovecii* pneumonia, and **itraconazole or fluconazole** to prevent other fungal infections |
+| **B-cell (antibody) defects** | **Antibiotic prophylaxis, for example azithromycin**, to prevent recurrent bacterial infection |
+
+## Treating infection
+
+- **Treat infections promptly**
+- Use **longer courses** than you would in an immunocompetent child
+- Keep a **low threshold for intravenous therapy**
+
+## Definitive and supportive management
+
+- **Screen for end-organ disease** — for example, a **CT scan in a child with antibody deficiency to detect bronchiectasis**, which develops silently from repeated sinopulmonary infection
+- **Immunoglobulin replacement therapy** for children with **antibody deficiency**
+- **Bone marrow (haematopoietic stem cell) transplantation** — for example for **severe combined immunodeficiency and chronic granulomatous disease**
+- **Gene therapy** is now an established option for some conditions, severe combined immunodeficiency in particular
+- **Consider isolation**, in hospital or at home, **for severe immunodeficiencies — especially a child awaiting haematopoietic stem cell transplant**
+- **Caregiver counselling and hygiene advice**
+- **Vaccination of the patient, family members and caregivers**, to build protection around the child. **Live vaccines must be avoided in the child with a significant T-cell or combined defect** — this includes BCG, MMR and MMRV, varicella, rotavirus and the intranasal influenza vaccine, for whom the injected inactivated influenza vaccine is used instead
+- **Genetic counselling for the family if they are considering further children**
+
+> High-yield: think **SPUR** infections plus failure to thrive. **Co-trimoxazole for PCP** in T-cell and neutrophil defects, **immunoglobulin replacement** for antibody deficiency, and **stem cell transplant for SCID and chronic granulomatous disease**. **Vaccinate the family around the child, and avoid live vaccines in the child.**`,
         },
         {
           id: "paediatric_hip_conditions",

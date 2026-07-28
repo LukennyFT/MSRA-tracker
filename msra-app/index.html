@@ -2224,7 +2224,206 @@
       );
     }
 
-    function TrackerView({ statuses, setStatus, statusChangedAt, activeSpecialty, setActiveSpecialty, notes, setNote, textNotes, setTextNote }) {
+    // ===================================================================
+    // TEXT HIGHLIGHTING — Tracker condition fields
+    // ===================================================================
+    // Shape: msra_highlights = { [conditionId]: { [fieldKey]: [ {s,e,t,c}, … ] } }
+    // `s`/`e` are character offsets into that field's string, `t` is the exact
+    // highlighted substring and `c` is a colour id.
+    //
+    // Storing BOTH the offsets and the text is deliberate. Condition content in
+    // data.js gets rewritten as the app grows, which would silently shift every
+    // stored offset. On render we prefer the offsets, fall back to re-finding the
+    // stored text, and only drop a highlight when its text has gone entirely — so
+    // a content re-upload degrades gracefully instead of scattering highlights.
+    const HL_COLORS = [
+      { id: "y", name: "Yellow", bg: "#fdf0a0", border: "#e3c93f" },
+      { id: "g", name: "Green",  bg: "#bdf0d6", border: "#4bbe86" },
+      { id: "p", name: "Pink",   bg: "#ffc9dd", border: "#ef7aa6" },
+      { id: "b", name: "Blue",   bg: "#c3e2ff", border: "#5aa7e6" },
+    ];
+    const HL_BY_ID = HL_COLORS.reduce((m, c) => { m[c.id] = c; return m; }, {});
+    const hlColor = id => HL_BY_ID[id] || HL_COLORS[0];
+
+    // Field keys are PROPERTY names, never the display label — `fieldLabels` can
+    // override labels per condition or per specialty, so labels are not stable.
+    // Conditions using a custom `fields` array key by index (f0, f1, …).
+    function hlFieldText(cond, key) {
+      if (!cond || !key) return null;
+      if (/^f\d+$/.test(key)) {
+        const f = cond.fields && cond.fields[parseInt(key.slice(1), 10)];
+        return f ? f.value : null;
+      }
+      return cond[key] || null;
+    }
+
+    // Character offset of a DOM (node, offset) position within `root`'s text.
+    function hlOffsetOf(root, node, offset) {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      let total = 0, n;
+      while ((n = walker.nextNode())) {
+        if (n === node) return total + offset;
+        total += n.nodeValue.length;
+      }
+      // A selection boundary can land on an element rather than a text node.
+      if (node === root) {
+        let seen = 0;
+        for (let i = 0; i < offset && i < root.childNodes.length; i++) seen += (root.childNodes[i].textContent || "").length;
+        return seen;
+      }
+      return null;
+    }
+
+    // Current selection → {start, end, rect} within `root`, or null if unusable.
+    function hlSelectionIn(root) {
+      const sel = window.getSelection();
+      if (!sel || sel.isCollapsed || sel.rangeCount === 0) return null;
+      const range = sel.getRangeAt(0);
+      if (!root.contains(range.startContainer) || !root.contains(range.endContainer)) return null;
+      const a = hlOffsetOf(root, range.startContainer, range.startOffset);
+      const b = hlOffsetOf(root, range.endContainer, range.endOffset);
+      if (a == null || b == null || a === b) return null;
+      return { start: Math.min(a, b), end: Math.max(a, b), rect: range.getBoundingClientRect() };
+    }
+
+    // Remove [s,e) from every stored span, splitting any span that straddles it.
+    function hlSubtract(spans, s, e) {
+      const out = [];
+      (spans || []).forEach(sp => {
+        if (sp.e <= s || sp.s >= e) { out.push(sp); return; }
+        if (sp.s < s) out.push({ s: sp.s, e: s, c: sp.c, t: sp.t.slice(0, s - sp.s) });
+        if (sp.e > e) out.push({ s: e, e: sp.e, c: sp.c, t: sp.t.slice(e - sp.s) });
+      });
+      return out;
+    }
+
+    // Add [s,e) in colour `c`, then merge touching/overlapping spans of that colour.
+    function hlAdd(spans, s, e, c, text) {
+      const kept = hlSubtract(spans, s, e);
+      kept.push({ s, e, c, t: text.slice(s, e) });
+      kept.sort((a, b) => a.s - b.s);
+      const merged = [];
+      kept.forEach(sp => {
+        const last = merged[merged.length - 1];
+        if (last && last.c === sp.c && sp.s <= last.e) {
+          last.e = Math.max(last.e, sp.e);
+          last.t = text.slice(last.s, last.e);
+        } else merged.push({ s: sp.s, e: sp.e, c: sp.c, t: sp.t });
+      });
+      return merged.filter(sp => sp.e > sp.s);
+    }
+
+    // Re-anchor stored spans against the CURRENT field text (see note above).
+    function hlResolve(spans, text) {
+      if (!spans || !spans.length || !text) return [];
+      const out = [];
+      spans.forEach(sp => {
+        if (typeof sp.s === "number" && typeof sp.e === "number" && text.slice(sp.s, sp.e) === sp.t) {
+          out.push({ s: sp.s, e: sp.e, c: sp.c });
+        } else if (sp.t) {
+          const idx = text.indexOf(sp.t);
+          if (idx !== -1) out.push({ s: idx, e: idx + sp.t.length, c: sp.c });
+        }
+      });
+      out.sort((a, b) => a.s - b.s || a.e - b.e);
+      // After a re-anchor two spans can collide; keep the first and drop the rest.
+      const clean = [];
+      out.forEach(sp => {
+        const last = clean[clean.length - 1];
+        if (last && sp.s < last.e) return;
+        clean.push(sp);
+      });
+      return clean;
+    }
+
+    // Rebase stored spans onto the CURRENT text before writing to them. Without this,
+    // an edit made after the source text changed would mix stale stored offsets with
+    // the live selection's offsets and land the highlight in the wrong place.
+    function hlNormalise(spans, text) {
+      return hlResolve(spans, text).map(sp => ({ s: sp.s, e: sp.e, c: sp.c, t: text.slice(sp.s, sp.e) }));
+    }
+
+    const hlCount = condHl => Object.keys(condHl || {}).reduce((n, k) => n + (condHl[k] ? condHl[k].length : 0), 0);
+
+    // A condition field rendered as plain text plus <mark> runs. The data-* attributes
+    // are what the document-level selection handler reads to know which condition and
+    // field a selection belongs to.
+    function HighlightableText({ text, condId, fieldKey, spans, onTapSpan, style }) {
+      const resolved = hlResolve(spans, text);
+      const parts = [];
+      let at = 0;
+      resolved.forEach((sp, i) => {
+        if (sp.s > at) parts.push(text.slice(at, sp.s));
+        const col = hlColor(sp.c);
+        parts.push(
+          <mark key={"h" + i} data-hl-span={sp.s + ":" + sp.e} data-hl-c={sp.c}
+            style={{
+              background: col.bg, color: "inherit", borderRadius: 3,
+              padding: "0.05em 0.1em", boxShadow: "inset 0 -0.14em 0 " + col.border,
+              cursor: "pointer",
+            }}>{text.slice(sp.s, sp.e)}</mark>
+        );
+        at = sp.e;
+      });
+      if (at < text.length) parts.push(text.slice(at));
+      return (
+        <div
+          data-hl-cond={condId} data-hl-field={fieldKey} style={style}
+          onClick={e => {
+            const m = e.target.closest && e.target.closest("mark[data-hl-span]");
+            if (!m) return;
+            // Only treat it as a tap when the user isn't mid-selection.
+            const sel = window.getSelection();
+            if (sel && !sel.isCollapsed) return;
+            e.stopPropagation();
+            const bits = m.getAttribute("data-hl-span").split(":");
+            const r = m.getBoundingClientRect();
+            onTapSpan({
+              condId, fieldKey, start: +bits[0], end: +bits[1], active: m.getAttribute("data-hl-c"),
+              x: r.left + r.width / 2, top: r.top, bottom: r.bottom,
+            });
+          }}
+        >{parts}</div>
+      );
+    }
+
+    // Floating colour picker. Portalled to <body> so no ancestor overflow can clip it.
+    function HighlightToolbar({ at, onPick, onRemove, onClose }) {
+      if (!at) return null;
+      const W = 232, H = 42;
+      const left = Math.max(8, Math.min(window.innerWidth - W - 8, at.x - W / 2));
+      // Prefer above the selection; drop below if there is no room, and clamp to the
+      // viewport either way so it stays reachable near the very top or bottom edge.
+      const top = Math.max(8, Math.min(window.innerHeight - H - 8,
+        at.top > H + 14 ? at.top - H - 10 : at.bottom + 10));
+      const iconBtn = {
+        width: 26, height: 26, borderRadius: 6, cursor: "pointer", padding: 0,
+        background: "transparent", border: "1px solid #2c3550", color: "#cfe0f0",
+        fontSize: "0.8rem", lineHeight: 1, display: "flex", alignItems: "center", justifyContent: "center",
+      };
+      return ReactDOM.createPortal(
+        <div data-hl-toolbar="1" onMouseDown={e => e.preventDefault()}
+          style={{
+            position: "fixed", left, top, zIndex: 4000, display: "flex", alignItems: "center", gap: 6,
+            background: "#141a2b", border: "1px solid #2c3550", borderRadius: 10, padding: "6px 8px",
+            boxShadow: "0 6px 24px rgba(0,0,0,0.38)",
+          }}>
+          {HL_COLORS.map(c => (
+            <button key={c.id} title={c.name} onClick={() => onPick(c.id)}
+              style={{
+                width: 26, height: 26, borderRadius: "50%", cursor: "pointer", padding: 0, background: c.bg,
+                border: at.active === c.id ? "3px solid #2dd4bf" : "2px solid " + c.border,
+              }} />
+          ))}
+          <div style={{ width: 1, height: 22, background: "#2c3550", margin: "0 1px" }} />
+          <button title="Remove highlight" onClick={onRemove} style={iconBtn}>⌫</button>
+          <button title="Close" onClick={onClose} style={iconBtn}>✕</button>
+        </div>,
+        document.body
+      );
+    }
+
+    function TrackerView({ statuses, setStatus, statusChangedAt, activeSpecialty, setActiveSpecialty, notes, setNote, textNotes, setTextNote, highlights, setHighlight, clearHighlights }) {
       const [search, setSearch] = useState("");
       const [filterStatus, setFilterStatus] = useState("all");
       const [expandedId, setExpandedId] = useState(null);
@@ -2236,6 +2435,74 @@
       const setViewMode = (m) => {
         setViewModeState(m);
         try { localStorage.setItem("msra_tracker_mode", m); } catch (e) {}
+      };
+
+      // ---- highlighter: pending selection / tapped span, drives the floating toolbar ----
+      const [hlAt, setHlAt] = useState(null);
+
+      // Watch the selection rather than a pointer event, so this works for both
+      // mouse drags and the iPad's long-press-and-drag selection handles.
+      useEffect(() => {
+        let t = null;
+        const onSel = () => {
+          clearTimeout(t);
+          t = setTimeout(() => {
+            const sel = window.getSelection();
+            if (!sel || sel.isCollapsed || !sel.rangeCount) return;
+            let node = sel.getRangeAt(0).commonAncestorContainer;
+            if (node.nodeType === 3) node = node.parentNode;
+            const host = node && node.closest && node.closest("[data-hl-field]");
+            if (!host) return;
+            const r = hlSelectionIn(host);
+            if (!r) return;
+            setHlAt({
+              condId: host.getAttribute("data-hl-cond"),
+              fieldKey: host.getAttribute("data-hl-field"),
+              start: r.start, end: r.end, active: null,
+              x: r.rect.left + r.rect.width / 2, top: r.rect.top, bottom: r.rect.bottom,
+            });
+          }, 160);
+        };
+        document.addEventListener("selectionchange", onSel);
+        return () => { document.removeEventListener("selectionchange", onSel); clearTimeout(t); };
+      }, []);
+
+      // Dismiss on any pointer press that isn't on the toolbar itself. Starting a
+      // fresh drag-select also lands here; selectionchange then re-opens it.
+      useEffect(() => {
+        if (!hlAt) return;
+        const onDown = e => {
+          if (e.target.closest && e.target.closest("[data-hl-toolbar]")) return;
+          setHlAt(null);
+        };
+        document.addEventListener("pointerdown", onDown);
+        return () => document.removeEventListener("pointerdown", onDown);
+      }, [hlAt]);
+
+      const hlFinish = () => {
+        const sel = window.getSelection();
+        if (sel) sel.removeAllRanges();
+        setHlAt(null);
+      };
+      const hlApply = colorId => {
+        if (!hlAt) return;
+        const cond = (SPECIALTIES.find(s => s.id === activeSpecialty) || SPECIALTIES[0])
+          .conditions.find(c => c.id === hlAt.condId);
+        const text = hlFieldText(cond, hlAt.fieldKey);
+        if (!text) return hlFinish();
+        setHighlight(hlAt.condId, hlAt.fieldKey,
+          prev => hlAdd(hlNormalise(prev, text), hlAt.start, hlAt.end, colorId, text));
+        hlFinish();
+      };
+      const hlRemove = () => {
+        if (!hlAt) return;
+        const cond = (SPECIALTIES.find(s => s.id === activeSpecialty) || SPECIALTIES[0])
+          .conditions.find(c => c.id === hlAt.condId);
+        const text = hlFieldText(cond, hlAt.fieldKey);
+        if (!text) return hlFinish();
+        setHighlight(hlAt.condId, hlAt.fieldKey,
+          prev => hlSubtract(hlNormalise(prev, text), hlAt.start, hlAt.end));
+        hlFinish();
       };
       // Collapsed clinical-cluster accordions, keyed "<specialtyId>::<clusterName>" → true
       const [collapsedClusters, setCollapsedClusters] = useState(() => {
@@ -2500,6 +2767,8 @@
                   const isExpanded = expandedId === condition.id;
                   // Field labels: per-condition override → per-specialty override → default
                   const condFieldLabels = condition.fieldLabels || currentSpecialty.fieldLabels;
+                  const condHl = highlights[condition.id] || {};
+                  const condHlN = hlCount(condHl);
                   return (
                     <div key={condition.id} style={{
                       background: status === "none" ? "#fff" : sc.bg,
@@ -2574,35 +2843,59 @@
                             </div>
                           )}
                           {[
-                            { label: "💡 Key facts",       value: condition.keyFacts },
-                            { label: "📊 Epidemiology",    value: condition.epidemiology },
-                            { label: "🧬 Aetiology",       value: condition.aetiology },
-                            { label: "⚙️ Pathophysiology", value: condition.pathophysiology },
+                            { key: "keyFacts",        label: "💡 Key facts",       value: condition.keyFacts },
+                            { key: "epidemiology",    label: "📊 Epidemiology",    value: condition.epidemiology },
+                            { key: "aetiology",       label: "🧬 Aetiology",       value: condition.aetiology },
+                            { key: "pathophysiology", label: "⚙️ Pathophysiology", value: condition.pathophysiology },
                             ...(condition.fields
-                              ? condition.fields
+                              ? condition.fields.map((f, i) => ({ key: "f" + i, label: f.label, value: f.value }))
                               : condFieldLabels
                               ? [
-                                  { label: condFieldLabels[0], value: condition.presentation },
-                                  { label: condFieldLabels[1], value: condition.investigations },
-                                  { label: condFieldLabels[2], value: condition.treatment },
+                                  { key: "presentation",   label: condFieldLabels[0], value: condition.presentation },
+                                  { key: "investigations", label: condFieldLabels[1], value: condition.investigations },
+                                  { key: "treatment",      label: condFieldLabels[2], value: condition.treatment },
                                 ]
                               : [
-                                  { label: "🩺 Presentation",   value: condition.presentation },
-                                  { label: "🔬 Investigations", value: condition.investigations },
-                                  { label: "💊 Treatment",       value: condition.treatment },
+                                  { key: "presentation",   label: "🩺 Presentation",   value: condition.presentation },
+                                  { key: "investigations", label: "🔬 Investigations", value: condition.investigations },
+                                  { key: "treatment",      label: "💊 Treatment",       value: condition.treatment },
                                 ]),
-                            { label: "⚠️ Complications",   value: condition.complications },
+                            { key: "complications",   label: "⚠️ Complications",   value: condition.complications },
                           ].map(row => row.value && (
-                            <div key={row.label} style={{ marginBottom: "0.65rem" }}>
+                            <div key={row.key} style={{ marginBottom: "0.65rem" }}>
                               <div style={{
                                 fontSize: "0.66rem", fontWeight: 700, color: "#888",
                                 textTransform: "uppercase", letterSpacing: "0.1em",
                                 fontFamily: "monospace", marginBottom: 4,
                               }}>{row.label}</div>
-                              <div style={{ fontSize: "0.86rem", color: "#2a2a2a",
-                                            lineHeight: 1.65, whiteSpace: "pre-line" }}>{row.value}</div>
+                              <HighlightableText
+                                text={row.value} condId={condition.id} fieldKey={row.key}
+                                spans={condHl[row.key]} onTapSpan={setHlAt}
+                                style={{ fontSize: "0.86rem", color: "#2a2a2a",
+                                         lineHeight: 1.65, whiteSpace: "pre-line" }}
+                              />
                             </div>
                           ))}
+                          {/* Highlighter affordance — the feature is invisible until you know it exists */}
+                          <div style={{
+                            display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
+                            marginTop: "-0.1rem", marginBottom: "0.55rem",
+                          }}>
+                            <span style={{ fontSize: "0.68rem", color: "#9a968c", fontFamily: "monospace" }}>
+                              🖍️ Select any text above to highlight it
+                            </span>
+                            {condHlN > 0 && (
+                              <button
+                                onClick={() => { if (confirm("Clear all " + condHlN + " highlight" + (condHlN === 1 ? "" : "s") + " for this condition?")) clearHighlights(condition.id); }}
+                                style={{
+                                  background: "transparent", color: "#888", border: "1px solid #d0cdc3",
+                                  padding: "0.2rem 0.5rem", borderRadius: 5,
+                                  fontFamily: "monospace", fontSize: "0.66rem", cursor: "pointer",
+                                }}>
+                                Clear {condHlN}
+                              </button>
+                            )}
+                          </div>
                           {/* Stepwise management flowchart (NICE) */}
                           {condition.management && (
                             <div style={{ marginTop: "0.5rem", paddingTop: "0.7rem", borderTop: "1px dashed #d0cdc3" }}>
@@ -2789,6 +3082,13 @@
               />
             );
           })()}
+
+          {/* Highlighter colour picker — follows the current selection */}
+          {!noteEditId && (
+            <HighlightToolbar
+              at={hlAt} onPick={hlApply} onRemove={hlRemove} onClose={hlFinish}
+            />
+          )}
         </div>
       );
     }
@@ -4208,6 +4508,9 @@
       const [textNotes, setTextNotes] = useState(() => {
         try { return JSON.parse(localStorage.getItem("msra_text_notes") || "{}"); } catch { return {}; }
       });
+      const [highlights, setHighlights] = useState(() => {
+        try { return JSON.parse(localStorage.getItem("msra_highlights") || "{}"); } catch { return {}; }
+      });
       const [statusChangedAt, setStatusChangedAt] = useState(() => {
         try { return JSON.parse(localStorage.getItem("msra_status_changed_at") || "{}"); } catch { return {}; }
       });
@@ -4364,11 +4667,12 @@
             if (typeof data.examDate === "string") setExamDate(data.examDate);
             if (typeof data.planStart === "string") setPlanStart(data.planStart);
             if (data.textNotes && typeof data.textNotes === "object") setTextNotes(data.textNotes);
+            if (data.highlights && typeof data.highlights === "object") setHighlights(data.highlights);
             if (data.dayOverrides && typeof data.dayOverrides === "object") setDayOverrides(data.dayOverrides);
           } else {
             // First time using this code: upload current local state as the seed
             docRef.set({
-              hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, dayOverrides,
+              hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides,
               updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
             }, { merge: true }).catch(err => console.warn("seed write failed:", err));
           }
@@ -4427,6 +4731,13 @@
                   if (JSON.stringify(prev) === JSON.stringify(data.textNotes)) return prev;
                   try { localStorage.setItem("msra_text_notes", JSON.stringify(data.textNotes)); } catch {}
                   return data.textNotes;
+                });
+              }
+              if (data.highlights) {
+                setHighlights(prev => {
+                  if (JSON.stringify(prev) === JSON.stringify(data.highlights)) return prev;
+                  try { localStorage.setItem("msra_highlights", JSON.stringify(data.highlights)); } catch {}
+                  return data.highlights;
                 });
               }
               if (data.dayOverrides) {
@@ -4493,14 +4804,14 @@
           // deletions in statuses / bookmarks / progress maps propagate. (Notes live in a
           // subcollection and are unaffected by this document write.)
           FIRESTORE.collection("sync").doc(syncCode).set({
-            hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, dayOverrides,
+            hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides,
             updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
           })
             .then(() => setLastSyncAt(Date.now()))
             .catch(err => { console.warn("write failed:", err); setSyncStatus("error"); });
         }, 700);
         return () => clearTimeout(writeTimer.current);
-      }, [hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, dayOverrides, syncCode]);
+      }, [hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides, syncCode]);
 
       const setNote = useCallback((id, dataUrl) => {
         setNotes(prev => {
@@ -4535,6 +4846,33 @@
           const updated = { ...prev };
           if (text && text.trim()) updated[id] = text; else delete updated[id];
           try { localStorage.setItem("msra_text_notes", JSON.stringify(updated)); } catch (err) {}
+          return updated;
+        });
+      }, []);
+
+      // Tracker text highlights — same size class as textNotes, so they ride in the
+      // main sync doc too. `updater` takes the field's current span array and returns
+      // the next one; empty arrays and empty conditions are pruned so the document
+      // does not accumulate dead keys (which the full-document write would preserve).
+      const setHighlight = useCallback((condId, fieldKey, updater) => {
+        setHighlights(prev => {
+          const forCond = prev[condId] || {};
+          const spans = updater(forCond[fieldKey] || []);
+          const nextCond = { ...forCond };
+          if (spans && spans.length) nextCond[fieldKey] = spans; else delete nextCond[fieldKey];
+          const updated = { ...prev };
+          if (Object.keys(nextCond).length) updated[condId] = nextCond; else delete updated[condId];
+          try { localStorage.setItem("msra_highlights", JSON.stringify(updated)); } catch (err) {}
+          return updated;
+        });
+      }, []);
+
+      const clearHighlights = useCallback(condId => {
+        setHighlights(prev => {
+          if (!prev[condId]) return prev;
+          const updated = { ...prev };
+          delete updated[condId];
+          try { localStorage.setItem("msra_highlights", JSON.stringify(updated)); } catch (err) {}
           return updated;
         });
       }, []);
@@ -4581,7 +4919,8 @@
                                               activeSpecialty={activeSpecialty}
                                               setActiveSpecialty={setActiveSpecialty}
                                               notes={notes} setNote={setNote}
-                                              textNotes={textNotes} setTextNote={setTextNote} />}
+                                              textNotes={textNotes} setTextNote={setTextNote}
+                                              highlights={highlights} setHighlight={setHighlight} clearHighlights={clearHighlights} />}
           {view === "notebook" && <NotebookView
                                               activeNotebookSectionId={activeNotebookSectionId}
                                               setActiveNotebookSectionId={setActiveNotebookSectionId}
