@@ -17,7 +17,7 @@ Six views in total, switched from the top tab strip:
 | --- | --- | --- |
 | 📍 Today | `today` | Auto-detected day/week/phase, today's hour & question target, this week's focus systems, Professional Dilemmas reminders. |
 | 🗺️ Plan | `plan` | The 4-phase adaptive revision plan, recalculated live from the hours/week slider. |
-| ✅ Tracker | `tracker` | 17 clinical specialties; red/amber/green status per condition, search/filter, day-counter, Apple-Pencil notes, and a Constellation skill-tree mode. |
+| ✅ Tracker | `tracker` | 19 clinical specialties; red/amber/green status per condition, search/filter, day-counter, Apple-Pencil notes, marker-pen text highlighting, and a Constellation skill-tree mode. |
 | 📓 Notebook | `notebook` | Distilled high-yield content, Markdown-lite, bookmarks, search. |
 | 🩺 CPS | `qbank` | Clinical Problem Solving question bank (practice / mock). |
 | ⚖️ Dilemmas | `dilemmas` | Professional Dilemmas SJT practice (practice / mock). |
