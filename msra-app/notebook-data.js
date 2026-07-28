@@ -313,9 +313,28 @@ Both cause an obstructive pattern on spirometry, but they differ in reversibilit
 | Reversibility | Significant with bronchodilator | Limited |
 | Atopy | Common | Less relevant |
 
+## Confirming the diagnosis
+
+Asthma is now confirmed with objective testing rather than on history alone. In adults and young people aged 16 and over, measure a **blood eosinophil count or fractional exhaled nitric oxide (FeNO)** first — asthma is diagnosed if the eosinophil count is above the laboratory reference range, or the **FeNO is 50 parts per billion or more**. If neither is raised, test **bronchodilator reversibility** with spirometry, then **peak flow variability over 2 weeks**, then a bronchial challenge test.
+
 ## Asthma management
 
-Treatment is stepwise. Current guidance favours an inhaled corticosteroid combined with a long-acting beta agonist used both as maintenance and reliever therapy (the MART regimen). Always check inhaler technique and adherence before escalating.
+**UK asthma management was rewritten in November 2024** by a joint **BTS, NICE and SIGN guideline (NG245)**, replacing NICE NG80 and the older BTS/SIGN guideline, and updated again in November 2025. The previous ladder — a short-acting beta-2 agonist alone, then adding an inhaled corticosteroid, then a leukotriene receptor antagonist, then a long-acting beta-2 agonist — no longer applies.
+
+> **Do not prescribe a short-acting beta-2 agonist (SABA) to anyone with asthma, at any age, without also prescribing an inhaled corticosteroid (ICS).** SABA-only treatment relieves symptoms while leaving the inflammation untreated, and high SABA use is a marker of asthma death.
+
+Two terms carry the new approach. **AIR** (anti-inflammatory reliever) is a combined **ICS with formoterol** inhaler taken **only as needed**; **MART** (maintenance and reliever therapy) is the same inhaler taken **regularly and additionally as needed**. Formoterol is used because it is a long-acting beta-2 agonist with a rapid enough onset to work as a reliever, and patients on MART do not normally need a separate SABA.
+
+**For people aged 12 and over:**
+
+- **Start with as-needed AIR** — low-dose ICS/formoterol used for symptom relief only. If the patient is highly symptomatic at presentation or has had a severe exacerbation, start **low-dose MART** instead
+- **Step up to low-dose MART**, then **moderate-dose MART**
+- If still uncontrolled despite good adherence, **check FeNO and blood eosinophils**. If **either is raised, refer to a specialist**. If **neither is raised**, trial a **leukotriene receptor antagonist or a long-acting muscarinic antagonist (LAMA)** for 8 to 12 weeks, adding the other if there is partial benefit
+- **Refer** if control is still not achieved
+
+The leukotriene receptor antagonist has been demoted to a **time-limited trial with an explicit stop rule**, and carries the **MHRA warning on montelukast** about neuropsychiatric reactions. The **LAMA is a new option** at this step. Children under 12 follow different ladders — see *Asthma in children: diagnosis and chronic management*.
+
+**Always check inhaler technique and adherence before escalating**, and note that **digital inhalers are not recommended for routine use**.
 
 ## COPD management
 
@@ -2739,7 +2758,7 @@ Compensated cirrhosis may be silent. **Decompensation** is signalled by **jaundi
         },
         {
           id: "fatty_liver_disease",
-          name: "Alcohol-related & non-alcoholic fatty liver disease",
+          name: "Alcohol-related & metabolic (MASLD) fatty liver disease",
           content: `## Alcohol-related liver disease
 
 Alcohol causes a **spectrum** of liver injury, and the earliest stage is fully reversible.
@@ -2752,21 +2771,43 @@ Alcohol causes a **spectrum** of liver injury, and the earliest stage is fully r
 
 **Alcoholic hepatitis** is characteristically seen **acutely after a period of heavy drinking**, and ranges from asymptomatic to fulminant liver failure. **Each episode carries a 10 to 20% mortality**, which is why it must never be dismissed as minor.
 
-## Non-alcoholic fatty liver disease (NAFLD)
+## Metabolic dysfunction-associated steatotic liver disease (MASLD)
 
-**Hepatic steatosis occurring in people who do not drink significantly.** Histologically it looks very similar to alcoholic liver disease, so the distinction rests on the alcohol history.
+**Hepatic steatosis occurring in people who do not drink significantly.** Histologically it looks very similar to alcohol-related liver disease, so the distinction rests on the alcohol history.
+
+**The name changed in 2023.** A multi-society Delphi consensus (AASLD, EASL and ALEH) replaced the old terms, because "non-alcoholic" defined the condition by what it was not, and "fatty" was felt to be stigmatising:
+
+| Old term | Current term |
+|---|---|
+| Non-alcoholic fatty liver disease (**NAFLD**) | **MASLD** — metabolic dysfunction-associated steatotic liver disease |
+| Non-alcoholic steatohepatitis (**NASH**) | **MASH** — metabolic dysfunction-associated steatohepatitis |
+| — | **Steatotic liver disease (SLD)** is the new umbrella term for all of it |
+
+**MASLD is diagnosed as hepatic steatosis plus at least ONE of five cardiometabolic criteria** — raised body mass index or waist circumference, dysglycaemia or type 2 diabetes, raised blood pressure, raised triglycerides, or low HDL cholesterol (or treatment for any of them). This is the substantive change rather than a relabelling: the old NAFLD was a diagnosis of exclusion, whereas MASLD requires **positive** evidence of metabolic dysfunction.
 
 - It is the **commonest cause of chronic liver disease in the West**.
 - It occurs mainly in **obese** people with **hyperlipidaemia or the metabolic syndrome**, and **diabetes** is a further risk factor.
 
-**The NAFLD spectrum**
+**The spectrum**
 
 - **Simple steatosis** — fatty infiltration alone, relatively benign.
-- **Non-alcoholic steatohepatitis (NASH)** — steatosis **plus** inflammation (fatty infiltration with hepatitis), which **can progress to cirrhosis**.
+- **MASH** — steatosis **plus** inflammation (fatty infiltration with hepatitis), which **can progress to cirrhosis**.
+
+## MetALD — the new middle category
+
+The old framework forced a binary choice between alcohol and metabolic causes, which never reflected reality. **MetALD** describes people who meet the criteria for MASLD **and** drink more than a modest amount:
+
+| Category | Weekly alcohol |
+|---|---|
+| **MASLD** | Below 140 g in women, below 210 g in men |
+| **MetALD** | **140 to 350 g in women, 210 to 420 g in men** |
+| **Alcohol-related liver disease** | Above those ranges |
+
+As a rough conversion, 140 g a week is about 20 g a day, or roughly two and a half UK units. The practical value of the category is that it stops a patient with both drivers being mislabelled as having one of them, and it makes explicit that **reducing alcohol and treating the metabolic risk factors are both required**.
 
 ## The metabolic syndrome
 
-NAFLD is the hepatic manifestation of the metabolic syndrome, a cluster of findings that together raise the risk of ischaemic heart disease:
+MASLD is the hepatic manifestation of the metabolic syndrome, a cluster of findings that together raise the risk of ischaemic heart disease:
 
 - **Fasting hyperglycaemia** above 6 mmol/L.
 - **Blood pressure** above 140/90 mmHg.
@@ -2774,7 +2815,7 @@ NAFLD is the hepatic manifestation of the metabolic syndrome, a cluster of findi
 - **Dyslipidaemia** — HDL cholesterol below 1 mmol/L and triglycerides above 2 mmol/L.
 - **Microalbuminuria.**
 
-> Alcohol causes reversible steatosis, then alcoholic hepatitis with hepatocyte ballooning and Mallory-Denk bodies (10 to 20% mortality per episode), then micronodular cirrhosis. NAFLD looks identical histologically but occurs without significant alcohol intake, is the commonest chronic liver disease in the West, and progresses through NASH (steatosis plus inflammation) to cirrhosis. It is the liver manifestation of the metabolic syndrome.`,
+> Alcohol causes reversible steatosis, then alcoholic hepatitis with hepatocyte ballooning and Mallory-Denk bodies (10 to 20% mortality per episode), then micronodular cirrhosis. **MASLD** (formerly NAFLD) looks identical histologically but occurs without significant alcohol intake, is the commonest chronic liver disease in the West, and progresses through **MASH** (formerly NASH — steatosis plus inflammation) to cirrhosis. It is the liver manifestation of the metabolic syndrome, and unlike the old NAFLD it requires **positive** evidence of metabolic dysfunction rather than simply the absence of alcohol. Where both drivers are present, the category is **MetALD**.`,
         },
         {
           id: "autoimmune_biliary_liver_disease",
@@ -2885,7 +2926,7 @@ Note the change of name: PBC was formerly called *primary biliary cirrhosis*, bu
 
 | Tumour | Clinical features |
 |---|---|
-| **Hepatocellular carcinoma (HCC)** | Occurs most commonly in **chronic liver disease**, closely linked to **viral hepatitis**, **alcoholic cirrhosis**, **haemochromatosis**, **NAFLD**, **aflatoxin B1** and **androgenic steroids**. Cirrhotic patients are **screened with 6-monthly ultrasound**. Investigations are **alpha-fetoprotein** and ultrasound |
+| **Hepatocellular carcinoma (HCC)** | Occurs most commonly in **chronic liver disease**, closely linked to **viral hepatitis**, **alcoholic cirrhosis**, **haemochromatosis**, **MASLD** (formerly NAFLD), **aflatoxin B1** and **androgenic steroids**. Cirrhotic patients are **screened with 6-monthly ultrasound**. Investigations are **alpha-fetoprotein** and ultrasound |
 | **Cholangiocarcinoma** | Adenocarcinoma arising from the **bile ducts**, either intrahepatic or extrahepatic. About **10% of liver tumours**, with a **poor prognosis**. Causes include **primary sclerosing cholangitis**, parasitic liver disease, chronic liver disease, congenital biliary abnormalities and **Lynch syndrome type II** |
 | **Haemangiosarcoma (angiosarcoma)** | Cancer of the **vascular endothelium**, highly invasive. Classically linked to vinyl chloride, arsenic and thorotrast exposure |
 | **Hepatoblastoma** | Occurs in **children and infants**, presenting with an **abdominal mass**. Arises from immature liver precursor cells |
@@ -3655,7 +3696,223 @@ A malignancy of melanocytes — less common than the keratinocyte cancers but re
     {
       id: "ent", name: "ENT", icon: "👂",
       topics: [
-        { id: "_pending_ent", name: "(Coming soon)", content: `## This section is scaffolding\n\nNotebook content for ENT has not been written yet.` },
+        {
+          id: "acute_otitis_media",
+          name: "Acute otitis media",
+          content: `## Acute otitis media
+
+Infection of the middle ear, and one of the commonest reasons a child is brought to a doctor. It usually follows a viral upper respiratory infection, which blocks the Eustachian tube; the short, horizontal Eustachian tube of a young child is why the condition is so much commoner before the age of about 7.
+
+The child presents with **otalgia** — or, if too young to report it, with ear-tugging, irritability, poor feeding and fever. Otoscopy shows a **red, bulging tympanic membrane with loss of the normal light reflex**. If the drum perforates, the pain **suddenly improves** and there is purulent discharge.
+
+## When to admit
+
+- **Severe systemic infection**
+- **Complications** — meningitis, mastoiditis or facial nerve palsy
+- **Children under 3 months with a temperature above 38 degrees**
+
+## Management
+
+The usual course is **about 3 days, but can last up to a week** — tell the family this, because it sets expectations and reduces pressure for antibiotics.
+
+- **Regular paracetamol or ibuprofen for pain**, which is the treatment that actually helps
+- **There is no evidence for decongestants or antihistamines**
+
+Antibiotic prescribing follows one of three strategies:
+
+| Strategy | When and what to say |
+|---|---|
+| **No antibiotic prescription** | Most cases resolve spontaneously. Advise seeking help if symptoms have not improved after **3 days**, or if the child deteriorates clinically |
+| **Back-up (delayed) prescription** | Advise that the antibiotic is **not needed immediately**, but should be used if symptoms have not improved after 3 days, or worsen significantly at any time |
+| **Immediate prescription** | Advise seeking help if symptoms worsen rapidly or the child becomes systemically unwell |
+
+**Amoxicillin for 5 to 7 days is first-line.** If the child is penicillin-allergic, use **clarithromycin or erythromycin**.
+
+A point worth holding on to when counselling: **antibiotics marginally reduce the duration of pain but have no effect on the risk of hearing loss.**
+
+## Two things not to confuse it with
+
+**Otitis media with effusion ("glue ear")** is fluid behind an intact, dull, retracted drum **without** acute infection. It causes conductive hearing loss and speech delay rather than pain, and is managed with a period of active observation over about 3 months before considering grommets — not with antibiotics.
+
+**Mastoiditis** is the complication to fear: persistent pain and fever with a tender, boggy, erythematous swelling **behind** the ear that pushes the pinna forward and down. It needs urgent admission, intravenous antibiotics and ENT assessment.
+
+> High-yield: pain relief matters more than antibiotics. Amoxicillin 5 to 7 days when antibiotics are indicated, and admit any child under 3 months with a fever above 38 degrees. A pinna pushed forward by a boggy post-auricular swelling is mastoiditis.`,
+        },
+        {
+          id: "otitis_externa",
+          name: "Otitis externa",
+          content: `## Otitis externa
+
+Inflammation of the external ear canal, often called "swimmer's ear" because moisture is the dominant risk factor. Others are trauma from cotton buds or scratching, hearing aids, and eczema or psoriasis of the canal. It presents with itch, pain that is worse on moving the tragus or pinna, discharge and conductive hearing loss if the canal occludes.
+
+## Localised otitis externa
+
+A furuncle (folliculitis) in the canal.
+
+- **Analgesia and local heat** using a warm flannel is often sufficient, as it tends to be mild and self-limiting
+- **Oral antibiotics are rarely indicated**
+
+## Acute otitis externa (under 3 months)
+
+- **Keep the ears clean and dry**, and **avoid damaging the canal**
+- Consider over-the-counter **acetic acid 2% ear drops or spray** — in children **over 12 years** — used morning, evening and after swimming, showering or bathing, for a **maximum of 7 days**
+- **Ibuprofen or paracetamol** for pain
+- Consider **antibacterial with or without a topical corticosteroid ear drop**, for example **ciprofloxacin with dexamethasone (0.3%/0.1%) twice daily for 7 to 14 days**. The ear must be **cleaned of wax first**, and a **wick** may be needed to deliver the drops if the canal is too swollen
+- If treatment fails, check **adherence and technique**, send an **ear swab for microscopy, culture and sensitivity**, then seek specialist advice or refer to ENT
+
+## Chronic otitis externa (over 3 months)
+
+- **Avoid triggers** — swimming, scratching and aggressive cleaning
+- **Analgesia** with paracetamol or ibuprofen as needed
+- Send an **ear swab for both bacterial and fungal** culture
+
+Then treat according to what is found:
+
+| Finding | Treatment |
+|---|---|
+| **Fungal infection** (mild to moderate) | **Clotrimazole 1% solution**, acetic acid 2% spray, or clioquinol with a corticosteroid |
+| **Allergic dermatitis** | Topical corticosteroid |
+| **Seborrhoeic dermatitis** | Combined antifungal and corticosteroid |
+| **No cause evident** | A 7-day topical preparation containing **corticosteroid only, with no antibiotic**, considering co-prescription of acetic acid spray |
+
+## Malignant (necrotising) otitis externa
+
+The emergency not to miss. Infection — almost always ***Pseudomonas aeruginosa*** — spreads from the canal into the temporal bone, causing osteomyelitis of the skull base. It occurs in **elderly people with diabetes** and in the immunocompromised.
+
+Suspect it when there is **severe pain out of proportion to the findings**, especially at night, **granulation tissue at the bone-cartilage junction** of the canal floor, and failure to respond to topical treatment. **Cranial nerve palsies — the facial nerve first — indicate advanced disease.**
+
+**Urgent admission is required**, with imaging (CT or MRI of the skull base), **systemic antibiotics** with antipseudomonal cover such as prolonged intravenous ciprofloxacin, and surgical **debridement** where needed.
+
+> High-yield: keep the ear dry, use topical rather than oral treatment, and clean the canal before drops. Severe night pain with granulation tissue in an elderly diabetic patient is **malignant otitis externa** — admit, image and treat systemically for *Pseudomonas*.`,
+        },
+        {
+          id: "acute_sinusitis",
+          name: "Acute sinusitis",
+          content: `## Acute sinusitis
+
+Inflammation of the paranasal sinuses — maxillary, ethmoid, frontal and sphenoid — nearly always following a viral upper respiratory infection. The features are nasal blockage and discharge, facial pain or pressure that is worse on leaning forward, and reduction or loss of smell. Sinusitis lasting more than **12 weeks** is chronic rhinosinusitis and is managed differently.
+
+## When to refer to hospital
+
+Refer if there are symptoms or signs of:
+
+- **Severe systemic infection**
+- **Intraorbital or periorbital complications** — periorbital cellulitis, a displaced eyeball, or double vision
+- **Intracranial complications** — such as features of meningitis
+
+These matter because the ethmoid sinuses are separated from the orbit by only the paper-thin lamina papyracea, so infection crosses easily.
+
+## Symptoms lasting under 10 days
+
+**Do NOT offer an antibiotic.** Explain that:
+
+- Acute sinusitis is **usually caused by a virus** and takes **2 to 3 weeks to resolve**
+- **Paracetamol or ibuprofen** manages fever and pain
+- Some people find relief with **nasal saline or nasal decongestants**
+- An **intranasal corticosteroid** may be given for congestion
+- Medical advice should be sought if symptoms worsen rapidly, do not improve within 3 weeks, or the person becomes systemically unwell
+
+## Symptoms lasting more than 10 days but under 4 weeks
+
+At this point bacterial infection becomes more likely.
+
+- Consider a **high-dose nasal corticosteroid for 14 days** in adults and children **over 12 years** (for example mometasone). It may improve symptoms but is **unlikely to affect the duration** of the illness, and can cause systemic side effects
+- Consider **no antibiotic prescription, or a back-up prescription**. Antibiotics are unlikely to change the course of the illness. The back-up prescription should be used if symptoms get **considerably worse**, or have still not improved **by 7 days**
+- **First-line: phenoxymethylpenicillin for 5 days**; **clarithromycin** if penicillin-allergic
+- **Second-line: co-amoxiclav**
+
+Advise seeking medical advice if complications develop or symptoms do not improve.
+
+> High-yield: the **10-day rule** is the whole decision. Under 10 days it is viral — no antibiotic. Over 10 days, consider a high-dose nasal steroid and at most a back-up prescription. Periorbital swelling, proptosis or diplopia means orbital involvement and needs hospital assessment the same day.`,
+        },
+        {
+          id: "sore_throat_tonsillitis",
+          name: "Sore throat, tonsillitis & the FeverPAIN score",
+          content: `## Sore throat
+
+Most sore throats are viral and self-limiting. The clinical task is to identify the minority caused by **group A streptococcus** who benefit from antibiotics, and to spot the few with a dangerous cause.
+
+## When to admit
+
+- **Difficulty breathing**
+- **Clinical dehydration**
+- **Peritonsillar abscess (quinsy) or cellulitis**
+- Signs of **marked systemic illness or sepsis**
+- A **suspected rare cause** — for example Kawasaki disease or diphtheria
+
+**Quinsy** is worth recognising: unilateral severe pain with **trismus** (difficulty opening the mouth), a **"hot potato" muffled voice**, and deviation of the uvula away from the affected side. It needs ENT assessment for aspiration or incision and drainage.
+
+## Scoring: who has streptococcal infection?
+
+Two validated scores estimate the probability of streptococcal infection.
+
+| Score | Components |
+|---|---|
+| **FeverPAIN** | **F**ever in the past 24 hours; **P**urulence; **A**ttended rapidly, within 3 days of onset; severely **I**nflamed tonsils; **N**o cough or coryza |
+| **Centor** | Tonsillar exudate; tender anterior cervical lymphadenopathy; history of fever; **absence** of cough |
+
+## When to give antibiotics
+
+Offer an antibiotic — immediate or back-up — if:
+
+- **Group A streptococcus has been confirmed**, by throat culture or rapid antigen testing
+- **FeverPAIN is 4 or 5**, or **Centor is 3 or 4**
+- The person has **severe symptoms, is systemically very unwell, or is at high risk of complications** — in which case give an **immediate** prescription
+
+**An important deviation for children:** interim guidance from NHS England and UKHSA, endorsed by NICE, the RCGP and the RCPCH, advises that in children a decision to treat may be guided by a **FeverPAIN score of 3 or more**, combined with clinical judgement. This is a **lower threshold than standard NICE guidance**, adopted in light of the rise in invasive group A streptococcal infection.
+
+## Which antibiotic
+
+- **Phenoxymethylpenicillin for 5 to 10 days.** A 10-day course "may increase the chance of microbiological cure", and 10 days is used where eradication matters, such as scarlet fever
+- **Clarithromycin** if penicillin-allergic
+- **AVOID amoxicillin.** If the sore throat is in fact **infectious mononucleosis**, amoxicillin causes a florid widespread maculopapular rash
+
+## Advice
+
+- Adequate **fluid intake**, and **paracetamol or ibuprofen** as needed
+- **Salt water gargling, lozenges or anaesthetic sprays** such as benzydamine (Difflam) give temporary relief
+- Children can return to school once the **fever has resolved and they feel well**, and after **24 hours of antibiotics**
+
+**Recurrent tonsillitis** may warrant ENT referral for tonsillectomy. The usual thresholds are **7 or more episodes in 1 year, 5 per year for 2 years, or 3 per year for 3 years**, where the episodes are disabling and prevent normal functioning.
+
+> High-yield: FeverPAIN 4 to 5 or Centor 3 to 4 justifies antibiotics — **but in children the endorsed threshold is FeverPAIN 3 or more**. Give phenoxymethylpenicillin, never amoxicillin, because of the glandular fever rash.`,
+        },
+        {
+          id: "laryngitis",
+          name: "Laryngitis",
+          content: `## Laryngitis
+
+Inflammation of the larynx, presenting with **hoarseness or voice loss**, throat discomfort and a dry cough. The great majority are acute and viral, following an upper respiratory infection, and settle within a week.
+
+## The red flag that outranks everything
+
+**Hoarseness persisting for more than 3 weeks requires urgent referral on a suspected cancer pathway** for laryngeal carcinoma — particularly in a smoker or someone who drinks heavily, and especially with associated neck lump, dysphagia, otalgia or stridor. Acute laryngitis should never be the label attached to a persistently hoarse voice.
+
+## If there is airway compromise
+
+- **Secure the airway** — an emergency **tracheostomy** may be required
+- **If the patient does not have diphtheria**: give **dexamethasone sodium phosphate** to reduce oedema, and **cefazolin with cefalexin**, started intravenously and changed to oral
+- **If the patient has diphtheria**: **isolate** the patient, give **intravenous or intramuscular benzylpenicillin for 14 days**, and give **diphtheria antitoxin**
+
+Diphtheria is now vanishingly rare in the United Kingdom because of immunisation, but it is the reason an unimmunised child with a severe membranous pharyngolaryngitis is an emergency — the classic sign is a **grey adherent pseudomembrane** that bleeds when scraped.
+
+## If there is no airway compromise
+
+**Viral laryngitis**
+
+- **Analgesia** as required, with paracetamol
+- **Vocal hygiene** — voice rest for **3 to 7 days**, increased hydration, humidification, and reduced caffeine intake
+- A **mucolytic** may be given to help lubricate the vocal folds
+
+**Bacterial laryngitis**
+
+- **Phenoxymethylpenicillin for 14 days**
+- Analgesia and the same vocal hygiene measures as above
+
+A practical point on vocal hygiene: **whispering strains the vocal folds more than speaking softly**, so advise gentle normal speech rather than whispering, and avoid throat-clearing, which is traumatic to the folds.
+
+> High-yield: acute laryngitis is viral and needs voice rest, fluids and analgesia rather than antibiotics. **Hoarseness lasting more than 3 weeks is a two-week-wait referral for laryngeal cancer** until proven otherwise.`,
+        },
       ],
     },
     {
@@ -4693,6 +4950,129 @@ Far more common than primary disease, and the cause is usually evident:
 Investigate with a full blood count, immunoglobulin levels and specific antibody (vaccine) responses, lymphocyte subsets, complement (CH50/AP50) and an HIV test, escalating to genetic testing. Manage by **treating infections promptly with prophylaxis, replacing what is missing** (immunoglobulin for antibody deficiency), **avoiding live vaccines** in significant deficiency, and considering stem cell transplantation for severe combined or phagocyte disease.
 
 > High-yield: encapsulated-bacterial infections point to an antibody, complement or splenic problem; recurrent Neisseria means terminal complement deficiency; viral and Pneumocystis infections point to a T-cell defect (and to HIV); and deep abscesses with fungi point to a phagocyte (chronic granulomatous) defect. Secondary causes are far commoner than primary ones.`,
+        },
+        {
+          id: "allergic_rhinitis",
+          name: "Allergic rhinitis",
+          content: `## Allergic rhinitis
+
+An IgE-mediated inflammation of the nasal mucosa causing sneezing, itch, watery rhinorrhoea and nasal blockage, often with **allergic conjunctivitis**. It is classified as **intermittent** or **persistent**, and as **mild** or **moderate to severe** according to the effect on sleep, daily activities and school or work.
+
+## Assessment
+
+- **Identify the most likely causative allergen** — the pattern over the year usually gives it away, with grass and tree pollen seasonal and house dust mite and animal dander perennial
+- **Assess for atopy**, including asthma, allergic conjunctivitis and eczema, since they cluster
+- Look for signs of **chronic nasal congestion** — mouth breathing, cough and halitosis
+- **Examine the nose** for nasal polyps, a deviated septum, mucosal swelling, and a depressed or widened nasal bridge
+
+## Management
+
+| Mild-moderate intermittent, or mild persistent | Persistent moderate to severe, or uncontrolled | Add-ons if therapy is ineffective |
+|---|---|---|
+| **First: allergen avoidance.** Consider **nasal saline irrigation**. Then **intranasal antihistamines** or oral non-sedating antihistamines such as loratadine or cetirizine | **First: continue the above and add a regular intranasal corticosteroid** during allergen exposure — mometasone or fluticasone. Onset is **6 to 8 hours** after the first dose and maximal effect may take **2 weeks** | **Check compliance first.** For nasal congestion add an **intranasal decongestant** such as ephedrine or xylometazoline, for **up to 5 to 7 days only** |
+| **Second: if intranasal antihistamines are contraindicated or not tolerated**, use an intranasal chromone such as sodium cromoglicate | **Second: for severe uncontrolled symptoms significantly affecting quality of life**, consider a short course of oral corticosteroid such as prednisolone for **3 to 7 days** | For persistent **watery rhinorrhoea**, add an intranasal anticholinergic such as **ipratropium bromide**. If there are asthma symptoms, consider a **leukotriene receptor antagonist**. Consider **immunotherapy** |
+
+Two practical points. **Intranasal antihistamines such as azelastine have a faster onset and are more effective than oral antihistamines.** And intranasal decongestants must be limited to under a week, because longer use causes **rhinitis medicamentosa** — rebound congestion that perpetuates the problem.
+
+**Review 2 to 4 weeks** after starting any treatment to consider stepping up if symptoms persist. Once symptoms are controlled, continue treatment until the person is no longer exposed to the allergen.
+
+## Immunotherapy
+
+**Sublingual immunotherapy** is available in the United Kingdom only for **house dust mite, mixed grass pollens, timothy grass pollen and short ragweed pollen**. It has the potential to modify the disease rather than just suppress symptoms, but is **reserved for patients resistant to other medications**.
+
+> High-yield: intranasal corticosteroids are the most effective single treatment for moderate to severe disease, but they take up to 2 weeks to work — so start them **before** the pollen season rather than during it. Limit intranasal decongestants to 5 to 7 days.`,
+        },
+        {
+          id: "urticaria_angioedema",
+          name: "Urticaria & angioedema",
+          content: `## Urticaria and angioedema
+
+**Urticaria** is an itchy weal-and-flare eruption caused by histamine release from dermal mast cells; individual weals characteristically **come and go within 24 hours**. **Angioedema** is the same process in the deeper dermis and subcutaneous tissue, producing non-pitting swelling of the lips, eyelids, tongue and sometimes the larynx. The two frequently occur together. Urticaria is **acute** if it lasts under 6 weeks and **chronic** beyond that.
+
+The emergency at the far end of this spectrum — anaphylaxis — is covered in the *Anaphylaxis and allergy* topic. What follows is everything short of that.
+
+## Angioedema without anaphylaxis
+
+**Rapidly developing angioedema** still needs urgent treatment:
+
+- **Chlorphenamine and hydrocortisone**, given slowly as an intravenous infusion or intramuscularly
+- **Arrange emergency admission**, and arrange a **review after discharge**
+- For **stable** angioedema without anaphylaxis, identify the underlying cause so that further episodes can be avoided
+
+## Assessment of urticaria
+
+- **Identify triggers** and give clear avoidance strategies where one is found. A **symptom diary** helps establish the frequency, duration and severity of episodes
+- The **Urticaria Activity Score (UAS7)** grades severity: the patient or parent records the severity of itch and the number of weals daily for **7 days**. A score **below 7** in a week indicates controlled disease, and **above 28** indicates severe disease
+
+## Treatment
+
+- For **mild urticaria with an identifiable, avoidable trigger**, advise that it is likely to be **self-limiting**
+- Where treatment is needed, give a **non-sedating antihistamine** — **cetirizine**, fexofenadine or loratadine — usually for **up to 6 weeks**, and for **3 to 6 months** if symptoms are likely to recur
+- For **severe symptoms**, add a **short course of an oral corticosteroid** such as prednisolone, alongside the antihistamine. In angioedema the guide's figure is prednisolone **40 mg daily for up to 7 days**
+- **Advise seeking immediate help — 999 or A&E — if symptoms progress rapidly or features of anaphylaxis develop**
+
+**Refer to dermatology or immunology if** the urticaria is painful and persistent, symptoms are not well controlled with antihistamines, or there is **acute severe urticaria due to food or latex allergy**.
+
+For patient information, point families to the **British Association of Dermatologists** leaflet on urticaria and angioedema, the **NHS A-Z** entry on urticaria (hives), and the **Allergy UK** website.
+
+## The one that is not histamine-mediated
+
+**Hereditary angioedema** must be recognised, because it behaves completely differently. It is an autosomal dominant deficiency of **C1 esterase inhibitor**, causing recurrent angioedema **without urticaria and without itch**, often with abdominal pain from bowel wall oedema, and frequently triggered by trauma, dental work or stress.
+
+Crucially it is **bradykinin-mediated, not histamine-mediated**, so it does **not respond to antihistamines, corticosteroids or adrenaline**. A **low C4** is the screening test, with C1 inhibitor level and function confirming it. Acute attacks are treated with **C1 esterase inhibitor concentrate** or icatibant. The same mechanism explains **ACE inhibitor-induced angioedema**, which can begin months or years after starting the drug and requires permanent discontinuation of the class.
+
+> High-yield: weals that last more than 24 hours or leave bruising are not ordinary urticaria — think **urticarial vasculitis**. Angioedema **without** urticaria or itch that fails to respond to adrenaline is **hereditary angioedema or an ACE inhibitor**, not allergy.`,
+        },
+        {
+          id: "food_allergy",
+          name: "Food allergy",
+          content: `## Food allergy
+
+An immune-mediated reaction to a food, which must be distinguished from food **intolerance**, which is non-immune. The distinction that governs everything is **IgE-mediated** versus **non-IgE-mediated**.
+
+| | IgE-mediated | Non-IgE-mediated |
+|---|---|---|
+| **Onset after ingestion** | **Minutes, up to 2 hours** | **2 to 72 hours** |
+| **Typical features** | Urticaria, angioedema, vomiting, wheeze, anaphylaxis | Vomiting, diarrhoea, reflux, blood or mucus in stool, eczema, faltering growth |
+| **Testing** | **Skin prick testing or specific IgE** are useful | Skin prick and specific IgE are **not** useful — diagnosis is by **exclusion and reintroduction** |
+
+**Arrange immediate ambulance transfer to A&E if there are systemic symptoms or suspected anaphylaxis**, with or without angioedema.
+
+## Dietary treatment
+
+- **Exclusion of the offending food or foods from the diet**
+- **Referral to a paediatric dietitian**, which is not optional — exclusion diets risk nutritional deficiency and faltering growth in a child
+- **Dietary exclusion in the mother** should be considered if she is breastfeeding
+
+## Drug treatment
+
+- **Mild reactions**, with no cardiorespiratory symptoms, are treated with **antihistamines**
+- **Severe reactions** — with cardiovascular, laryngeal or bronchial involvement — require **intramuscular adrenaline**, which may be given by autoinjector, plus **salbutamol if there is bronchospasm**
+
+**Adrenaline autoinjector doses (1 in 1000):**
+
+| Age | Dose |
+|---|---|
+| **Over 12 years** | **500 micrograms** |
+| **6 to 12 years** | **300 micrograms** |
+| **6 months to 6 years** | **150 micrograms** |
+| **Under 6 months** | **100 to 150 micrograms** |
+
+## Education and the allergy action plan
+
+- Educate the child and family on how to manage an allergic attack, with a **written self-management plan and training**
+- Provide autoinjectors for home use, and advise carrying **two doses at all times**
+- Teach recognition of early symptoms, and when to use adrenaline rather than waiting
+
+## Food challenge
+
+- After **6 to 12 months symptom-free**, consider a food challenge. This is the **gold standard for diagnosis**
+- Increasing quantities of the allergen are given under medical supervision, starting with **direct mucosal exposure** (contact with the lips) and then titrated oral ingestion as tolerated. If no symptoms are provoked the test is negative and clinical allergy is excluded
+- If the previous reaction was **severe**, do the challenge **in hospital**, and not usually until **at least 2 years** afterwards
+
+Natural history is worth knowing for counselling: allergy to **cow's milk and egg often resolves in early childhood**, so gradual reintroduction is frequently possible, whereas allergy to **nuts and seafood usually persists into adulthood**.
+
+> High-yield: onset within minutes is IgE-mediated and can be skin-prick tested; onset over hours to days is non-IgE-mediated and can only be diagnosed by exclusion and reintroduction. Everyone with an autoinjector carries **two**.`,
         },
       ],
     },
@@ -7527,6 +7907,791 @@ Diagnosis is clinical in straightforward cases, supported by **overnight oximetr
 Weight management is addressed alongside where obesity is contributing.
 
 > High-yield: a child who snores with witnessed apnoeas and is **hyperactive and inattentive rather than sleepy** has obstructive sleep apnoea until proven otherwise, the usual cause is adenotonsillar hypertrophy, and adenotonsillectomy is usually curative. Have a much lower threshold for investigating a child with Down syndrome.`,
+        },
+        {
+          id: "cows_milk_allergy_lactose_intolerance",
+          name: "Cow's milk protein allergy & lactose intolerance",
+          content: `## Two conditions that are constantly confused
+
+Both cause an unhappy infant with loose stools after milk, but they are entirely different problems and the distinction determines the treatment.
+
+| | Cow's milk protein allergy | Lactose intolerance |
+|---|---|---|
+| **Mechanism** | **Immune** reaction to the protein | **Enzymatic** — lactase deficiency, so lactose is unabsorbed and fermented |
+| **Features beyond the gut** | Yes — urticaria, eczema, wheeze, anaphylaxis | **No** — purely gastrointestinal |
+| **Treatment** | Exclude cow's milk **protein** | Reduce **lactose**, or replace the enzyme |
+
+## Cow's milk protein allergy
+
+It affects roughly **5 to 15% of infants** and, like other food allergy, splits by mechanism: **IgE-mediated** with onset within minutes (up to 2 hours) of ingestion, and **non-IgE-mediated** with onset **2 to 72 hours** afterwards.
+
+**IgE-mediated, mild to moderate**
+
+- **Allergy testing at a specialist allergy clinic**, and **referral to a paediatric dietitian**
+- **Exclusively breastfed**: the **mother excludes all cow's milk protein from her diet**, and takes **calcium and vitamin D supplements**
+- **Formula-fed or mixed feeding**: a trial of **extensively hydrolysed formula**
+
+**IgE-mediated, severe**
+
+- As above, plus consider an **elemental (amino acid) formula** if extensively hydrolysed formula is not effective
+- **Refer to A&E if there are severe respiratory or cardiovascular signs** — the risk is anaphylaxis
+
+**Non-IgE-mediated, mild to moderate**
+
+- Be **wary of over-diagnosing**, because vomiting and diarrhoea are extremely common in infants
+- **Exclusively breastfed**: the mother excludes all cow's milk protein for **2 to 4 weeks**, followed by **home reintroduction to confirm the diagnosis** if there has been clear improvement. Calcium and vitamin D supplements for the mother
+- **Formula-fed or mixed feeding**: a trial of **extensively hydrolysed formula**
+
+**Non-IgE-mediated, severe** — classified as severe when the above measures have been taken and symptoms persist and are severe. Look for:
+
+- **Skin**: pruritus, erythema, atopic eczema
+- **Gastrointestinal**: reflux, vomiting, loose stools, blood or mucus in the stool, abdominal pain, infantile colic, food refusal or aversion, constipation, perianal redness, faltering growth
+- **Respiratory**: cough, chest tightness, wheeze, shortness of breath
+
+Manage as for mild to moderate disease **plus urgent referral to the local paediatric allergy service and to a dietitian**.
+
+**Follow-up and reintroduction**
+
+- Advise a **cow's-milk-free diet until the child is 9 to 12 months old, and for at least 6 months**, if non-IgE-mediated allergy is confirmed
+- Then begin the **milk ladder** for home reintroduction, to assess whether tolerance has been acquired
+- For **weaned infants and older children**: exclude cow's milk protein, offer **nutritional counselling with a paediatric dietitian**, **monitor growth regularly**, and **re-evaluate every 6 to 12 months** by reintroducing cow's milk protein. Where tolerance is established, work up the **milk ladder** towards less processed milk
+
+Two counselling points: it takes **2 to 3 weeks** to fully eliminate cow's milk protein from breast milk, so a maternal exclusion trial must run long enough to be meaningful; and **many children grow out of it**, which is why reintroduction is planned rather than avoided indefinitely.
+
+## Lactose intolerance
+
+**Hereditary (primary)**
+
+- **Dietary modification** by avoidance, trialling different foods to establish the individual **lactose threshold** — done with a **dietitian**
+- **Lactase-treated dairy products or oral lactase supplementation**
+- **Calcium and vitamin D supplementation** is required
+
+**Acquired (secondary)** — most often transient after gastroenteritis, which strips the lactase-bearing brush border
+
+- **Treat the underlying cause**
+- The same dietary modification with a dietitian, lactase-treated products or lactase supplements, and calcium and vitamin D supplementation
+
+> High-yield: extra-intestinal features — rash, wheeze, faltering growth — mean **allergy**, not intolerance. Cow's milk protein allergy is treated with extensively hydrolysed formula first and amino acid formula only if that fails, and the mother must exclude cow's milk if breastfeeding.`,
+        },
+        {
+          id: "scarlet_fever",
+          name: "Scarlet fever",
+          content: `## Scarlet fever
+
+A group A streptococcal infection producing a characteristic exanthem, caused by an erythrogenic toxin. It typically affects children aged 2 to 8 and usually follows streptococcal pharyngitis.
+
+The presentation is a sore throat and high fever, then after a day or two a **sandpaper-textured, blanching, punctate erythematous rash** that begins on the trunk and spreads, sparing the palms and soles, with **flushed cheeks and circumoral pallor** and a **"strawberry tongue"** (initially white-coated, then red and papillate). **Desquamation** of the fingers and toes follows in convalescence.
+
+## Notification
+
+**Scarlet fever is a notifiable disease — notify the Health Protection Unit within 3 days.**
+
+## Management
+
+- **Phenoxymethylpenicillin (penicillin V) four times daily for 10 days**
+- **Azithromycin** if penicillin-allergic, in children aged 6 months to 17 years
+- **The 10-day course matters**: it is given to prevent the non-suppurative complications, **acute glomerulonephritis and rheumatic fever**, not merely to shorten the illness
+- **Stay away from nursery or school until 24 hours after starting antibiotics**
+- **Effective and frequent handwashing**
+- **Paracetamol or ibuprofen** for symptomatic relief
+- Symptoms should settle after about **1 week**. Arrange follow-up if they worsen or have not improved after 7 days, and advise seeking medical advice if complications develop
+
+Penicillin V remains first choice. Where it is unavailable, the order of preference is **amoxicillin, then a macrolide, then cefalexin**.
+
+## Complications
+
+- **Suppurative**: peritonsillar abscess (quinsy), otitis media, sinusitis, mastoiditis, and rarely necrotising fasciitis or streptococcal toxic shock syndrome
+- **Non-suppurative, immune-mediated**: **acute post-streptococcal glomerulonephritis** and **acute rheumatic fever** — the reason for completing the full antibiotic course
+
+> High-yield: sandpaper rash with circumoral pallor and a strawberry tongue. **Notify the Health Protection Unit**, give **penicillin V for 10 days**, and exclude from school for **24 hours after starting antibiotics**. The 10 days is about preventing rheumatic fever and glomerulonephritis.`,
+        },
+        {
+          id: "paediatric_gord_and_colic",
+          name: "Reflux & infant colic",
+          content: `## Gastro-oesophageal reflux in infants
+
+Regurgitation is normal in babies: the lower oesophageal sphincter is immature, the diet is entirely liquid and the baby spends much of the day lying flat. It becomes reflux **disease** only when it causes distress, feeding difficulty or faltering growth.
+
+**Reassure the parents that:**
+
+- It is **very common**
+- It **begins early, before 8 weeks**, and may be frequent
+- It usually becomes **less frequent with time**, resolving in most infants by a year
+- **Treatment and investigation are not usually needed**
+
+## When that reassurance does not apply
+
+**Review the infant if there is:**
+
+- **Projectile** regurgitation — think **pyloric stenosis**
+- **Bile-stained vomit or haematemesis**
+- New concerns such as **faltering growth** or feeding difficulty
+- **Persistent frequent regurgitation beyond the first year of life**
+
+**Refer the same day if there is haematemesis, melaena, signs of raised intracranial pressure such as a bulging fontanelle, or dysphagia.**
+
+**Bile-stained (green) vomiting in an infant is intestinal obstruction until proven otherwise** and is covered in the *Bowel obstruction in children* topic — it is never reflux.
+
+## Management
+
+**If breastfed:** carry out a **breastfeeding assessment**, then trial **smaller, more frequent feeds**. If the problem persists despite advice, consider a trial of **alginate therapy for 1 to 2 weeks**, stopping at intervals to check whether the infant has recovered.
+
+**If formula-fed**, work through in order:
+
+- **Review the feeding history** and **reduce feed volumes if excessive** for the infant's weight, aiming for **150 to 180 mL/kg/day**
+- **First**, a trial of **smaller, more frequent feeds**
+- **Second**, a trial of **thickened or anti-regurgitant formula**
+- **Third**, **alginate therapy without feed thickeners**, stopping at 2-week intervals to see whether the infant has recovered
+
+Each trial should last **1 to 2 weeks**.
+
+**Positional advice:** keep the infant **upright after feeds** and avoid overfeeding. Prone and left-lateral positioning helps but only **while awake** — **do not use positional management in a sleeping infant, who must sleep on their back** (see *Sudden infant death syndrome and safer sleep*).
+
+**Pharmacological:** consider a **2 to 4 week trial of a proton pump inhibitor or an H2-receptor antagonist** where there is one or more of unexplained feeding difficulty (refusing feeds, choking), distressed behaviour, faltering growth, or no resolution after a 1 to 2 week alginate trial. Consider **specialist referral** if there is still no resolution.
+
+**Last resort:** enteral feeding if there is failure to thrive, or **Nissen fundoplication**, in which the fundus of the stomach is wrapped around the intra-abdominal oesophagus, done abdominally or laparoscopically.
+
+If the child fails to respond to all of this, **reconsider the diagnosis — cow's milk protein allergy is the usual alternative** (see that topic).
+
+## Infant colic
+
+Excessive crying in an otherwise healthy, thriving baby, conventionally defined as crying for more than three hours a day on more than three days a week.
+
+- **Reassure that colic is common and should resolve by 6 months of age**
+- **Avoid over- or under-feeding**, and feed in a **semi-upright position to avoid aerophagia**
+- **Breastfeeding should continue**, and the mother may benefit from a **hypoallergenic diet**
+- **Formula-fed infants:** check the **bottle teat size** is correct; a hypoallergenic formula may help but should be re-challenged periodically to see whether the problem has resolved naturally. **Avoid soy formula**
+- **Do NOT recommend simeticone (Infacol) or lactase drops (Colief)** — the evidence base is insufficient
+
+**Strategies to soothe a crying infant:** holding the baby through the episode, reducing environmental stimuli, gentle motion such as rocking or pushing the pram, **white noise**, a warm bath, and optimal winding technique during and after feeds.
+
+**Support the parents, not just the baby.** Encourage them to get help from family and friends, meet other parents, rest, and **put the baby somewhere safe and take a time out** if they feel overwhelmed. Point them to the health visitor and to Cry-sis and the ICON campaign. Seek paediatric advice if the parents feel unable to cope despite primary care support, if faltering growth is suspected, or if an underlying cause is suspected.
+
+> High-yield: reflux is a clinical diagnosis needing reassurance, not investigation. **Projectile vomiting means pyloric stenosis; green vomit means obstruction.** Never position a sleeping infant other than on their back, whatever the reflux.`,
+        },
+        {
+          id: "pyloric_stenosis",
+          name: "Pyloric stenosis",
+          content: `## Infantile hypertrophic pyloric stenosis
+
+Hypertrophy of the pyloric muscle progressively obstructs the gastric outlet. It affects roughly 1 in 500 infants, presents between **2 and 8 weeks of age**, and is around four times commoner in **boys**, classically the **firstborn**, with a strong family history.
+
+## Presentation
+
+- **Projectile, NON-bilious vomiting** shortly after feeds — the obstruction is proximal to the ampulla, so the vomit never contains bile
+- The baby is **hungry immediately afterwards** and feeds avidly, which is the detail that distinguishes it from reflux and from sepsis
+- **Weight loss, dehydration and constipation**
+- **Visible gastric peristalsis** across the upper abdomen, and a palpable **"olive"** mass in the right upper quadrant, best felt during a **test feed**
+
+## The classic biochemistry
+
+Persistent vomiting of gastric contents loses hydrogen and chloride, producing a **hypochloraemic, hypokalaemic metabolic alkalosis**. Potassium falls both from the vomiting and because the kidney excretes potassium while trying to retain hydrogen ions. A **paradoxical aciduria** develops late, as the kidney eventually prioritises sodium and water retention over acid-base balance.
+
+**Diagnosis is confirmed by ultrasound**, showing a thickened, elongated pylorus.
+
+## Management
+
+**This is a medical emergency but NOT a surgical one** — the child must be resuscitated and biochemically corrected before theatre, because operating on an alkalotic infant risks post-operative apnoea.
+
+- **Intravenous fluid resuscitation is essential to correct the fluid and electrolyte disturbance before surgery**
+- Provide fluids at **1.5 times the maintenance rate**, using **5% dextrose with 0.45% saline**
+- **Add potassium once urine output is adequate**
+- Keep the infant nil by mouth with a nasogastric tube on free drainage
+
+**Definitive treatment is a Ramstedt pyloromyotomy**, in which the hypertrophied muscle is divided **down to but not including the mucosa**. It can be performed open or laparoscopically, and feeding is usually restarted within hours with an excellent prognosis.
+
+> High-yield: a hungry baby of 2 to 8 weeks with **projectile non-bilious vomiting**, a palpable olive and a **hypochloraemic hypokalaemic metabolic alkalosis**. Correct the biochemistry first, then perform a Ramstedt pyloromyotomy.`,
+        },
+        {
+          id: "paediatric_acute_abdomen",
+          name: "The acute abdomen in children",
+          content: `## Appendicitis
+
+The commonest surgical emergency of childhood, peaking between 10 and 20 years but occurring at any age. Obstruction of the appendiceal lumen — by a faecolith, lymphoid hyperplasia after a viral illness, or rarely a tumour — leads to distension, ischaemia and then perforation.
+
+The classic history is **central periumbilical colicky pain that migrates over hours to the right iliac fossa** and becomes constant and sharp, with **anorexia** (a genuinely useful sign — a child who wants to eat rarely has appendicitis), nausea, vomiting and a low-grade fever. Examination shows tenderness and guarding at **McBurney's point**, with percussion tenderness and **Rovsing's sign**.
+
+**Appendicitis is harder and more dangerous in young children**, because the history is unobtainable, the omentum is less able to wall off infection, and perforation is therefore both commoner and earlier.
+
+**Management**
+
+- **A surgical emergency — admit and monitor closely**
+- **Nil by mouth from the time of diagnosis**
+- **Intravenous fluids and analgesia**, and consider **intravenous antibiotics (cefoxitin)**
+- **Appendicectomy without delay**, open or laparoscopic. **Laparoscopic surgery carries fewer risks and gives faster recovery** than open surgery
+- **Follow-up in clinic afterwards**
+
+## Mesenteric adenitis
+
+Inflammation of the mesenteric lymph nodes, and the commonest mimic of appendicitis in a child. It **often follows a viral infection**, particularly an upper respiratory tract infection.
+
+The features that point away from appendicitis are a **higher fever with a less unwell child**, a **preceding or concurrent sore throat or coryza**, **generalised or shifting tenderness** rather than tenderness fixed at McBurney's point, and often **cervical lymphadenopathy**.
+
+It is a **self-limiting condition**, so treatment is supportive: **pain management and adequate hydration**. Warn that **the pain can take 2 to 4 weeks to resolve**. The practical difficulty is that it cannot always be distinguished from early appendicitis, so a period of active observation with repeated examination is often the safest course.
+
+## Recurrent (functional) abdominal pain
+
+Common in school-age children, and a diagnosis made positively rather than purely by exclusion.
+
+- **Say explicitly that the pain is real, not faked.** This is the single most important thing the family needs to hear
+- **"Functional" means there is no physical disease causing the pain** — not that there is no pain
+- A **physical examination and, where relevant, investigations for alternative diagnoses** must be performed to rule out organic causes
+- **Reassurance and continuation of normal physical activities**, including school attendance, which is itself therapeutic
+- **Psychological interventions may help** — cognitive behavioural therapy, family therapy, and coping skills such as relaxation and distraction
+
+Red flags that argue against a functional diagnosis and warrant investigation include pain that wakes the child at night, weight loss or faltering growth, blood in the stool, persistent vomiting, dysphagia, and a family history of inflammatory bowel disease or coeliac disease.
+
+> High-yield: anorexia with migratory right iliac fossa pain is appendicitis; a well-ish child with a high fever, a recent viral illness and shifting tenderness is mesenteric adenitis. When in doubt, observe and re-examine rather than discharge.`,
+        },
+        {
+          id: "paediatric_bowel_obstruction",
+          name: "Bowel obstruction in children",
+          content: `## The rule that governs this topic
+
+**Bile-stained (green) vomiting in a child is intestinal obstruction until proven otherwise**, and in a neonate it is **malrotation with volvulus** until proven otherwise. It demands urgent surgical assessment and imaging, never reassurance.
+
+## Intussusception
+
+One segment of bowel telescopes into the segment distal to it, most often **ileocolic**. It peaks between **6 months and 2 years**, and the lead point is usually **hypertrophied Peyer's patches following a viral illness**; in older or recurrent cases look for a **pathological lead point** such as a **Meckel's diverticulum**, a polyp or Henoch-Schonlein purpura.
+
+The child has **paroxysms of severe colicky pain during which they draw up their legs and go pale**, becoming lethargic between episodes. There may be a **sausage-shaped mass** in the right upper quadrant, and — as a **late** sign — **"redcurrant jelly" stool** of blood and mucus. Ultrasound shows the **target or doughnut sign**.
+
+**Management**
+
+- **ABCDE approach**, with **intravenous fluids and nasogastric aspiration** as needed
+- **Unless there are signs of peritonitis, reduction by rectal air insufflation under fluoroscopic guidance** is attempted by a radiologist. The **success rate is about 75%**, and the remaining 25% need an operation
+- **Contraindications to enema reduction: peritonitis, perforation and hypovolaemic shock**
+- Give **broad-spectrum antibiotics** — clindamycin with gentamicin, or piperacillin-tazobactam, or cefoxitin with vancomycin
+- **Second-line is surgical reduction** with broad-spectrum antibiotics
+- **Immediate laparotomy** is indicated for **peritonitis or perforation**, and considered where there is a **prolonged history over 24 hours**, a high likelihood of a pathological lead point, or a failed enema
+- **Recurrence occurs in about 5%**, usually within a couple of days, and recurrent intussusception should prompt investigation for a pathological lead point
+
+## Malrotation and volvulus
+
+During fetal development the midgut fails to rotate normally, leaving a narrow mesenteric base and abnormal peritoneal (**Ladd's**) bands. The bowel can then twist around the superior mesenteric artery — a **midgut volvulus** — infarcting the entire small bowel within hours.
+
+Most present in the **first month of life** with **bilious vomiting**. The diagnostic test is an **upper gastrointestinal contrast study** showing an abnormally placed duodenojejunal flexure, with a **corkscrew** appearance if volvulus has occurred.
+
+**Management**
+
+- **Signs of vascular compromise require emergency laparotomy — this is a surgical emergency**
+- If **asymptomatic**, the operation can be elective; with **intermittent symptoms** and no ischaemia it should be **urgent**
+- The operation is a **Ladd procedure**: detorting the bowel and dividing the **Ladd bands**. It is done **laparoscopically if elective or non-urgent**, and by **open laparotomy if emergency or urgent**
+- The bowel is left in the **non-rotated position**, with the duodenojejunal flexure on the right and the caecum and appendix on the left. **The appendix is usually removed** to avoid diagnostic confusion should the child later present with an acute abdomen
+- **Antibiotics (cefazolin)**
+
+**Volvulus** itself is managed with the same principles: supportive care with a **nasogastric tube** if obstruction is present, **broad-spectrum antibiotics** and **intravenous fluids**, then — **whether or not vascular compromise is present** — an emergency **Ladd procedure via open laparotomy**.
+
+## Meckel's diverticulum
+
+A persistent remnant of the vitellointestinal duct, and the commonest congenital anomaly of the gastrointestinal tract. It is remembered by the **rule of 2s**: present in about **2%** of the population, **2 feet** from the ileocaecal valve, about **2 inches** long, usually symptomatic before age **2**, and containing **2** types of ectopic tissue — gastric and pancreatic. It is the ectopic gastric mucosa that ulcerates the adjacent ileum and causes painless rectal bleeding, and that makes it visible on a **technetium-99m pertechnetate (Meckel's) scan**.
+
+| Situation | Management |
+|---|---|
+| **Asymptomatic, found incidentally on imaging** | **No treatment required** |
+| **Asymptomatic, found during surgery for another reason** | **Prophylactic excision** |
+| **Bleeding** | Excision of the diverticulum, with blood transfusion if haemodynamically unstable |
+| **Obstruction** | Excision of the diverticulum and lysis of adhesions |
+| **Perforation or peritonitis** | Excision, or segmental small bowel resection, with perioperative antibiotics |
+
+Surgery is usually laparoscopic.
+
+## Small bowel atresia
+
+A congenital interruption of the small bowel lumen, presenting in the newborn with **bilious vomiting and abdominal distension**, and often suspected antenatally from polyhydramnios.
+
+- **Initially: nil by mouth, a nasogastric tube on suction, intravenous hydration and broad-spectrum antibiotics**
+- **Surgical repair** depends on the site of the atresia, and is mainly an **end-to-end anastomosis**
+
+## Hirschsprung disease
+
+Absence of ganglion cells in the distal bowel produces a functionally obstructed, contracted segment with proximal dilatation. It presents with **failure to pass meconium within 48 hours of birth**, abdominal distension and bilious vomiting, or later with severe chronic constipation. The pathology and the suction rectal biopsy that diagnoses it are covered in the *Congenital GI anomalies* topic.
+
+- **Initial management is bowel irrigation**, which softens the faeces and flushes them from the bowel
+- **Surgery** usually involves an **initial colostomy**, followed by anastomosing normally innervated bowel to the anus — the **anorectal pull-through** procedure
+- **Total colonic aganglionosis** requires an initial **ileostomy** with later corrective surgery
+
+The complication to fear is **Hirschsprung-associated enterocolitis**, presenting with fever, explosive foul-smelling diarrhoea and sepsis, which is life-threatening and needs urgent decompression and antibiotics.
+
+> High-yield: green vomit in a neonate is malrotation with volvulus until an upper GI contrast study says otherwise. Intussusception at 6 months to 2 years is reduced by air enema unless there is peritonitis, perforation or shock. Meckel's follows the rule of 2s and is found on a technetium scan.`,
+        },
+        {
+          id: "paediatric_hernias",
+          name: "Hernias in children",
+          content: `## Inguinal hernia
+
+In children an inguinal hernia is almost always **indirect**, arising from a **patent processus vaginalis** rather than from acquired muscle weakness. It is commoner in **boys** and in **preterm** infants, and the younger the child, the higher the risk of **incarceration**.
+
+- **Treatment is surgical repair in every case** — unlike in adults, watchful waiting has no place, because the incarceration risk is substantial
+- **If complications are suspected — strangulation or bowel obstruction — arrange emergency hospital admission**
+- **Otherwise arrange urgent referral to a paediatric surgeon, preferably within 2 weeks**
+
+The repair is a **herniotomy** (simple ligation of the patent sac) rather than the mesh repair used in adults, because there is no fascial defect to reinforce.
+
+## Umbilical hernia
+
+Failure of the umbilical ring to close. It is very common, particularly in preterm and Afro-Caribbean infants, and the great majority **close spontaneously**, so the approach is the opposite of the inguinal hernia.
+
+| Situation | Management |
+|---|---|
+| **Small and asymptomatic** | **Observation until 4 to 5 years of age.** If it is still present and small, **elective repair at 4 to 5 years** |
+| **Large or symptomatic** | **Elective repair at 2 to 3 years of age** — that is, a hernia **larger than 1.5 cm**, or with intermittent symptoms of incarceration or recurring pain |
+| **Incarceration during the observation period** | **Manual reduction with pressure**, then **surgical repair at the earliest opportunity**. If it cannot be reduced, an **emergency operation** is required |
+
+> High-yield: an **inguinal** hernia in a child always gets repaired, urgently, because it strangulates; an **umbilical** hernia is usually watched until 4 to 5 years, because it closes on its own. That is the exact reverse of the adult approach to groin hernias.`,
+        },
+        {
+          id: "paediatric_constipation",
+          name: "Constipation & anal fissure in children",
+          content: `## Idiopathic constipation
+
+Constipation is extremely common in children and usually idiopathic, arising from a self-perpetuating cycle in which a hard painful stool leads to withholding, which allows the stool to harden further.
+
+**Exclude red flag symptoms before treating in primary care.** Treat a child in primary care **only if a working diagnosis of idiopathic constipation has been made and red flags have been excluded**. The features that suggest an underlying cause and warrant urgent specialist referral are:
+
+- **Failure to pass meconium within 48 hours of birth** — Hirschsprung disease
+- Constipation from the **first few weeks of life**
+- **Ribbon stools**, or abdominal distension with vomiting
+- **Faltering growth**
+- Abnormal **lower limb neurology**, or a **sacral dimple, tuft of hair or naevus** over the spine — spinal dysraphism
+- **Perianal bruising, fissures or fistulae** raising the possibility of abuse or Crohn's disease
+
+## Management
+
+**Laxatives may have to be taken for several months** — this expectation must be set at the outset, or treatment fails.
+
+**First, check for faecal impaction.** If present, use a **disimpaction regimen**:
+
+- An **osmotic laxative — macrogol (Movicol: polyethylene glycol with electrolytes) — at an escalating dose over 2 weeks**
+- Together with **dietary and lifestyle modification**
+- If unresponsive, **add a stimulant laxative such as senna**, either alone or, if stools are hard, combined with **lactulose** or another softener such as **docusate**
+
+**Then start maintenance treatment**, once impaction is absent or has been treated:
+
+- **Macrogol** with dietary and lifestyle modification
+- **Continue the effective dose for at least several weeks after regular bowel movements are established**, aiming for a soft, regular, formed stool
+- If macrogol is not tolerated, substitute a **stimulant laxative such as senna**, combining with lactulose or docusate if stools are hard. **Adding fruit squash can improve adherence**
+- **Reduce the maintenance dose gradually over months. Laxatives must NOT be stopped abruptly**
+- **Children who are toilet training should remain on laxatives until toilet training is well established**
+- **Consider specialist referral if there is no response to maintenance treatment in primary care after 3 months**
+
+**A practical safety point:** children should **brush their teeth after taking laxatives**, because the syrup preparations promote dental decay.
+
+## Behavioural interventions
+
+These matter as much as the drug:
+
+- A **bowel habit diary** for monitoring
+- **Scheduled toileting** after meals and before bedtime, exploiting the gastrocolic reflex
+- **Reward systems and star charts — given for attempting to open the bowels, not for actually succeeding.** Rewarding the outcome punishes the child for something they cannot control
+- **Address anxieties about going to the toilet**, staying calm and reassuring
+- **Posture** — make sure both feet are flat on the floor or on a step
+
+Give **diet and lifestyle advice** on adequate fluid and fibre — more water, fruit and vegetables — and **follow up to assess adherence and response**. **Secondary behavioural problems are common** and should be asked about directly.
+
+## Types of laxative
+
+| Class | Examples |
+|---|---|
+| **Bulk-forming** | Ispaghula husk (Fybogel), methylcellulose |
+| **Osmotic** | **Macrogol (Movicol)**, lactulose |
+| **Stimulant** | Senna, bisacodyl, sodium picosulfate |
+| **Stool softener** | Docusate sodium, arachis oil |
+
+## Anal fissure
+
+Usually a consequence of constipation, and the pain it causes drives further withholding — so treating the fissure means treating the constipation.
+
+- **Ensure stools are soft and easy to pass**: increase **dietary fibre** (whole grains, fruit and vegetables) and **fluid intake**, and consider laxatives — **lactulose, macrogol or senna**
+- **Manage the pain** with simple analgesia (paracetamol or ibuprofen), and **sitting in a shallow warm bath**, particularly after a bowel movement
+- Advise on the importance of **anal hygiene**
+- Advise parents to **seek help if it has not healed after 2 weeks**, or the child remains in a great deal of pain
+- **Keep in mind the possibility of sexual abuse**, particularly with multiple, lateral or atypical fissures
+
+> High-yield: treat impaction before maintenance, warn that laxatives are needed for months and must be tapered rather than stopped, and reward the **attempt**, not the result. Failure to pass meconium in the first 48 hours points to Hirschsprung disease.`,
+        },
+        {
+          id: "gastroenteritis_and_fluid_management",
+          name: "Gastroenteritis & fluid management in children",
+          content: `## Gastroenteritis
+
+Usually viral — rotavirus and norovirus predominate — and self-limiting. **Diarrhoea usually lasts 5 to 7 days and stops within 2 weeks; vomiting usually lasts 1 to 2 days and stops within 3 days.**
+
+**Rehydration advice**
+
+- **No dehydration**: continue usual feeds and encourage regular fluids
+- **Mild dehydration** manageable at home: give **oral rehydration solution** in addition to usual feeds and fluids. **Discourage fruit juices and carbonated drinks**, which worsen the osmotic diarrhoea
+- A trial over a few hours in the emergency department with close input and output monitoring can guide the admission decision
+
+**Admit if there is:**
+
+- Systemic illness
+- **Severe dehydration or shock**
+- **Intractable or bilious vomiting**
+- **Painful, bloody diarrhoea**
+- **Confirmed Shiga toxin-producing *E. coli*** infection
+- A suspected serious complication such as **haemolytic uraemic syndrome** or sepsis
+
+Consider admission where there is an inadequate response to oral rehydration solution, risk factors for progression, or parents unable to monitor or manage the child safely at home.
+
+**Antibiotics are NOT routinely required — even when the cause is bacterial.** They are indicated only for suspected or confirmed **sepsis**, extra-intestinal spread, ***Salmonella* in an infant under 6 months** or in a malnourished or immunocompromised child, and specific infections such as *Clostridioides difficile* pseudomembranous colitis, cholera, shigellosis and giardiasis.
+
+**Nutrition:** breastfeeding continues during rehydration, and **nutritional intake needs to be increased after the illness** to allow catch-up. **Do not routinely prescribe antidiarrhoeals, antiemetics, zinc or probiotics.**
+
+**Prevention and exclusion:** handwashing, flushing the toilet, and washing soiled clothing and bed linen separately at a high temperature. **Children should not attend school until at least 48 hours after the last episode of vomiting or diarrhoea.**
+
+## Assessing and replacing fluid
+
+**The most accurate measure of dehydration is the degree of weight loss during the illness**: clinical dehydration is **5% or more**, and shock is **more than 10%**.
+
+| Degree | Treatment |
+|---|---|
+| **No dehydration** | Oral rehydration solution **60 to 120 mL** (under 10 kg) or **120 to 240 mL** (over 10 kg) per episode of vomiting or diarrhoea, with an age-appropriate diet continued |
+| **Mild, under 5%** | Rehydration with **ORS at 50 mL/kg over 4 hours**, plus the per-episode replacement above |
+| **Moderate, 5 to 10%** | Rehydration with **ORS at 100 mL/kg over 4 hours**, plus the per-episode replacement above |
+| **Severe, over 10%** | **Medical emergency.** Immediate **intravenous resuscitation** and admission: **saline or Ringer's lactate 20 mL/kg over 1 hour**, repeated until haemodynamically stable, then ORS once well enough |
+
+**Intravenous fluids are indicated only for shock, for deterioration, or for persistent vomiting** — otherwise oral rehydration is the mainstay.
+
+You will also see the deficit for clinical dehydration quoted as a single figure of **75 mL/kg of oral rehydration solution over 4 hours**, given in addition to maintenance fluids. Either approach is acceptable; what matters is that the deficit is replaced over hours orally, and that ongoing losses are replaced on top.
+
+## The three fluid calculations
+
+**1. Fluid resuscitation**
+
+- **0.9% sodium chloride 20 mL/kg over less than 10 minutes**, considering a smaller dose where there is pre-existing disease such as kidney disease
+- **Term neonates: 10 to 20 mL/kg**
+- **Repeat the bolus if still shocked**; if larger volumes are needed, transfer to high-dependency or paediatric intensive care
+- **Resuscitation is different in diabetic ketoacidosis**, because of the risk of cerebral oedema
+
+**2. Correction of dehydration**
+
+- **Percentage dehydration x weight in kg x 10**, given **over 48 hours**
+
+**3. Routine maintenance** (the "100/50/20" rule, over 24 hours)
+
+- **100 mL/kg** for the first 10 kg
+- **50 mL/kg** for each kg from 10 to 20 kg
+- **20 mL/kg** for each kg above 20 kg
+- **Males rarely need more than 2500 mL and females more than 2000 mL per day**
+- **Measure electrolytes and glucose when starting intravenous fluids and at least every 24 hours thereafter**
+
+**Worked example — a 20 kg child with 5% dehydration:** maintenance is 1500 mL over 24 hours; correction is 5 x 20 x 10 = 1000 mL over 48 hours; together that is **2000 mL per 24 hours, or about 83 mL/hour**.
+
+## Neonatal maintenance requirements
+
+| Age | Volume |
+|---|---|
+| **Day 1** | 50 to 60 mL/kg/day |
+| **Day 2** | 70 to 80 mL/kg/day |
+| **Day 3** | 80 to 100 mL/kg/day |
+| **Day 4** | 100 to 120 mL/kg/day |
+| **Days 5 to 28** | 120 to 150 mL/kg/day |
+
+For term neonates use **isotonic crystalloid with 5 to 10% dextrose**.
+
+## Hypernatraemic dehydration
+
+Suspect it when there are **jittery movements, increased muscle tone, hyperreflexia, convulsions, drowsiness or coma** — the neurological picture is what gives it away, because the intravascular volume is relatively preserved and the child looks less unwell than the deficit suggests.
+
+- **Use oral rehydration solution to rehydrate** wherever possible
+- If intravenous fluids are needed, **the reduction in plasma sodium must be slow**: a rapid fall in sodium and osmolality shifts water into cerebral cells and can cause **seizures and cerebral oedema**
+- **Replace the fluid deficit over at least 48 hours** and **measure the plasma sodium regularly**
+
+> High-yield: weigh the child — weight loss is the most accurate measure of dehydration. Resuscitate with 20 mL/kg, calculate the deficit as **% x weight x 10 over 48 hours**, and use 100/50/20 for maintenance. In hypernatraemic dehydration, correct slowly.`,
+        },
+        {
+          id: "faltering_growth",
+          name: "Faltering growth",
+          content: `## Faltering growth
+
+Previously called failure to thrive, faltering growth describes a slower rate of weight gain than expected for a child's age and sex, usually recognised as a **sustained fall across centile lines** on the growth chart rather than from a single measurement. Length or height and head circumference should be plotted alongside weight, because the pattern in which they fall tells you a great deal about the cause.
+
+The causes divide by mechanism into **inadequate intake** (feeding difficulty, poor technique, neglect, cleft palate, poverty), **inadequate retention** (vomiting, severe reflux), **malabsorption** (coeliac disease, cow's milk protein allergy, cystic fibrosis), and **increased requirement** (congenital heart disease, chronic infection, chronic kidney disease, hyperthyroidism).
+
+## Monitoring
+
+Where there are concerns about faltering growth, **monitor weight at appropriate intervals**:
+
+| Age | Frequency |
+|---|---|
+| **Under 1 month** | **Daily** |
+| **1 to 6 months** | **Weekly** |
+| **6 to 12 months** | **Fortnightly** |
+| **From 1 year** | **Monthly** |
+
+Weighing more often than this is counterproductive: day-to-day variation swamps the trend and simply alarms the family.
+
+## Management by severity
+
+**Mild**
+
+- **Feeding or eating behaviour recommendations**
+- **Second line: referral, and review of the eating behaviour recommendations**
+
+**Moderate**
+
+- **Feeding or eating behaviour recommendations, plus referral to a specialist**
+- **Second line: further referrals** — to child and adolescent mental health services, or to children's social care — **with or without hospitalisation**
+- **Consider dietetic input**, such as introducing calorie-dense foods or oral nutritional supplements
+
+Throughout, take a careful feeding history, observe an actual feed where possible, and look for the treatable organic causes above before concluding the problem is purely behavioural or social. **Safeguarding must be considered** where growth fails without an organic explanation, but neglect is a diagnosis of exclusion and not an assumption.
+
+> High-yield: plot weight, length and head circumference together, weigh no more often than the intervals above, and observe a feed. Faltering growth is a symptom, not a diagnosis — look for reflux, coeliac disease, cow's milk protein allergy and cystic fibrosis before attributing it to feeding behaviour alone.`,
+        },
+        {
+          id: "paediatric_ibd",
+          name: "Inflammatory bowel disease in children",
+          content: `## What differs in children
+
+The pathology and the adult treatment ladders are covered in the *Inflammatory bowel disease* topic. Two things change in children: **growth failure and delayed puberty** are both presenting features and treatment targets, and the drive to avoid long-term corticosteroids is correspondingly stronger.
+
+## Crohn's disease
+
+The gold-standard guidance is the **ECCO-ESPGHAN** paediatric guideline. At diagnosis the child is **risk-stratified using the Paris classification** into low, medium or high risk, using predictors of poor outcome identified at endoscopy:
+
+- **Low risk** — purely inflammatory disease, with no stricturing or penetrating disease
+- **Medium risk** — low-risk children with no clinical or biochemical remission **12 weeks** after starting initial treatment, and children with **growth delay**
+- **High risk** — **stricturing or penetrating disease**, or any additional risk factor such as growth delay, extensive disease, deep ulceration or perianal disease
+
+Treatment aims either to **induce** remission or to **maintain** it.
+
+**High-risk children**
+
+- **First line is anti-TNF therapy such as infliximab**, considering combination with an immunomodulator such as **methotrexate**
+- If induction is **effective** — shown by a fall in **faecal calprotectin** or an improved **Paediatric Crohn's Disease Activity Index** — continue **maintenance anti-TNF monotherapy**
+- If induction is **ineffective**, optimise the anti-TNF: add an immunomodulator, consider increasing the dose or frequency, and **as a last resort switch anti-TNF agent**, for example to adalimumab
+
+**Low-risk children**
+
+- **First line is exclusive enteral nutrition (EEN) for 12 weeks.** This is the striking difference from adult practice: a liquid-only feed is as effective as corticosteroids at inducing remission, and unlike steroids it **improves growth and nutrition**
+- **If EEN is not an option, corticosteroids may be considered**
+- If effective, switch to **maintenance methotrexate or a thiopurine**, escalating to anti-TNF if remission is not adequately maintained
+- If not effective, **step up early to anti-TNF with immunomodulation**
+
+**Monitoring disease activity:** biochemically with **faecal calprotectin** (with CRP) or anti-TNF **trough levels**; clinically with the **Paediatric Crohn's Disease Activity Index**; and by **small-bowel MRI or endoscopy**.
+
+**The shift to "top-down" therapy** — starting anti-TNF agents such as infliximab first line rather than the older step-up model — was driven by trials including **TISKIDS and REACH**, which showed substantially better outcomes in children.
+
+## Ulcerative colitis
+
+Severity is assessed with the **Paediatric Ulcerative Colitis Activity Index (PUCAI)**: **remission 0 to 9, mild 10 to 34, moderate 35 to 64, severe above 65**.
+
+| Severity | Management |
+|---|---|
+| **Proctitis** | **Topical aminosalicylate for 4 weeks**; if no improvement, add an oral aminosalicylate |
+| **Mild** | **5-ASA**, topically (suppository or enema) first and orally if remission is not achieved within 4 weeks. For **extensive disease, topical plus high-dose oral is first line**. Continue as maintenance if there is no relapse; treat relapse with **oral prednisolone, tapered** |
+| **Moderate** | **Oral prednisolone for 2 to 4 weeks, then taper.** A good response is followed by oral 5-ASA as maintenance. A poor response warrants intravenous steroid, tapered back to oral |
+| **Steroid-dependent** | **Thiopurine or infliximab.** If inadequate: **colectomy, adalimumab or vedolizumab** — colectomy being the final option |
+| **Severe** | **A medical emergency.** High-dose **intravenous methylprednisolone**, **stop oral 5-ASA**, antibiotics if there is bacteraemia, and **parenteral nutrition** until improvement or surgery. Surgical treatment is **colectomy with an ileostomy or an ileal pouch** |
+
+Frequent relapse on steroids defines **steroid-dependent disease**.
+
+## Wider care in both conditions
+
+- **Assess the impact of symptoms on home, school and leisure activities**, and check for associated **anxiety and depression**
+- **Assess osteoporosis risk** and consider **calcium and vitamin D supplementation**
+- **Monitor** full blood count for anaemia, plus folate, B12, calcium and vitamin D, supplementing as appropriate
+- Signpost support: **Crohn's and Colitis UK**, and CICRA for children
+
+> High-yield: **exclusive enteral nutrition for 12 weeks is first-line induction in low-risk paediatric Crohn's**, not steroids, because it treats the growth failure too. High-risk children go straight to anti-TNF ("top-down"). Ulcerative colitis severity is scored with PUCAI.`,
+        },
+        {
+          id: "paediatric_coeliac_ibs_peptic",
+          name: "Coeliac disease, IBS & peptic ulcer in children",
+          content: `## Coeliac disease
+
+The immunology, the antibodies and the histology are covered in the *Coeliac disease* topic. **The single most important practical rule is that the child must remain on a gluten-containing diet until testing is complete** — starting a gluten-free diet before serology and biopsy makes the diagnosis impossible to confirm and commits the family to a lifelong diet on uncertain grounds.
+
+**The only effective treatment is long-term adherence to a gluten-free diet.**
+
+- All products containing gluten — **wheat, rye and barley** — are removed
+- A selection of **gluten-free products can be prescribed on the NHS**
+- **Consider dietitian referral** if there are problems adhering to the diet
+- Assess for nutritional deficiency and whether **iron, folic acid, calcium or vitamin D** supplementation is needed. **Do not routinely recommend nutritional supplements** to prevent deficiency
+
+**Arrange annual review**, checking:
+
+- **Height, weight and body mass index**, plotted on centile charts
+- **Symptoms**, and **adherence to the diet** — monitored with an **IgA-tTG titre every 3 months until it normalises, then yearly**
+- Consider **coeliac serology, full blood count, thyroid and liver function, vitamin D, B12, folate, calcium and urea and electrolytes**
+- If there are concerns, evaluate **bone mineral density with a DEXA scan**
+
+Counselling points: it is **common, affecting about 1 in 100**; the treatment is straightforward but must be **strict**, because the complications of non-adherence include malnutrition, osteoporosis and small bowel lymphoma; and **Coeliac UK** is the support organisation.
+
+## Irritable bowel syndrome
+
+A functional disorder, diagnosed positively once red flags are excluded.
+
+**Lifestyle and dietary modification comes first:**
+
+- Ensure **sufficient fluid intake** and **eat regularly**
+- **Limit fresh fruit**, and reduce **resistant starch** and **insoluble fibre such as bran**
+- If fibre needs increasing, use **soluble fibre** — oats, ispaghula husk or sterculia
+- **Reduce stress**; identify precipitants such as **caffeine, lactose or fructose**
+- Consider **probiotics**, the **FODMAP diet**, and referral to a **dietitian**
+
+**Medication is only for severe symptoms that have not responded to non-drug approaches**: laxatives such as macrogol or lactulose for constipation-related pain, **loperamide** for diarrhoea, and **antispasmodics** for pain.
+
+| | With pain or bloating | Without pain or bloating |
+|---|---|---|
+| **Diarrhoea-predominant** | Lifestyle and diet, then **antidiarrhoeals plus antispasmodics**, or a **tricyclic antidepressant**. Consider **CBT or hypnotherapy** | Lifestyle and diet, plus antidiarrhoeals |
+| **Constipation-predominant** | Lifestyle and diet, then **laxatives plus antispasmodics**, or an **SSRI with linaclotide**. Consider CBT or hypnotherapy | Lifestyle and diet, plus laxatives |
+| **Alternating** | Lifestyle and diet, then **antispasmodics with laxatives and loperamide**, or a **tricyclic or SSRI**. Consider CBT or hypnotherapy | Lifestyle and diet, plus laxatives and loperamide |
+
+## Peptic ulcer disease
+
+Much less common in children than adults, and more often secondary to another illness or to drugs.
+
+- **Suspected peptic ulceration in a child is treated with a proton pump inhibitor**, for example lansoprazole
+- **If it fails to respond, perform an upper gastrointestinal endoscopy.** If that is normal, the diagnosis is **functional dyspepsia** — which is probably a variant of irritable bowel syndrome affecting the upper gastrointestinal tract
+
+**Acute management by scenario:**
+
+| Scenario | Management |
+|---|---|
+| **Actively bleeding ulcer** | **Endoscopy**, with blood transfusion as needed, plus a **PPI**; surgery or embolisation if bleeding continues |
+| **Not bleeding, *H. pylori* negative** | Treat the underlying cause plus a **PPI**; second line an **H2 antagonist** |
+| **Not bleeding, *H. pylori* positive** | ***H. pylori* eradication triple therapy for 7 days: a PPI twice daily with clarithromycin and amoxicillin** |
+
+> High-yield: **never start a gluten-free diet before coeliac testing is complete.** Monitor adherence with IgA-tTG every 3 months until it normalises, then yearly. In children, a suspected ulcer gets a PPI first and endoscopy only if it fails.`,
+        },
+        {
+          id: "biliary_atresia_and_acute_liver_failure",
+          name: "Biliary atresia & acute liver failure in children",
+          content: `## Biliary atresia
+
+Progressive fibro-obliterative destruction of the extrahepatic bile ducts, and the commonest reason a baby needs a liver transplant. It presents with **persistent jaundice beyond 14 days of life** that is **conjugated**, with **pale, chalky stools and dark urine** in a baby who is otherwise initially well and feeding normally — which is exactly why it gets missed.
+
+**Any baby jaundiced beyond 14 days needs a split (conjugated) bilirubin.** A raised conjugated fraction is never physiological.
+
+**Timing is everything.**
+
+- **Surgical intervention is recommended immediately, ideally within the first 60 days of life** — outcomes fall sharply with every week of delay
+- The operation is a **Kasai hepatoportoenterostomy**: the fibrous ducts are ligated above their junction with the duodenum, dissection continues proximally to the **porta hepatis**, and a **loop of jejunum is joined directly to the porta hepatis**, allowing bile to drain
+- Give **antibiotic cover for the first year of life**
+- **Liver transplantation** is considered if the Kasai procedure is unsuccessful, or if the infant already has end-stage liver disease at presentation
+
+**Managing the complications** — which are growth failure, portal hypertension, cholangitis and ascites:
+
+- **Choleretics**: **ursodeoxycholic acid** promotes bile flow
+- **Nutritional supplementation**: during the first year, either breast milk or **medium-chain triglyceride-enriched formula**, with monthly monitoring of nutritional status. MCTs are used because they are absorbed without bile salts
+- **Fat-soluble vitamins (A, D, E and K) are given to all children** with the condition, with levels monitored and doses adjusted
+- **Prevent cholangitis** with **prophylactic antibiotics, usually co-trimoxazole**, during the first year of life
+
+## Acute liver failure
+
+Acute liver failure in a child is defined by coagulopathy not corrected by vitamin K, in the presence of biochemical evidence of liver injury — and encephalopathy may be **absent or very hard to detect** in an infant, so its absence does not exclude the diagnosis.
+
+**Refer early to a national paediatric liver centre.** This is the single most important step, because transplantation is time-critical and cannot be arranged locally.
+
+**Steps to stabilise the child**
+
+- **Maintain blood glucose above 4 mmol/L with intravenous dextrose** — hypoglycaemia is common, because the failing liver cannot mobilise glucose
+- **Prevent sepsis** with broad-spectrum **antibiotics and antifungals**
+- **Prevent haemorrhage** with **intravenous vitamin K** and an **H2 antagonist or proton pump inhibitor**
+- **Prevent cerebral oedema** with **fluid restriction and mannitol diuresis**
+- **Monitor neurological status** to assess for encephalopathy, using **lactulose** to treat and prevent it by reducing ammonia
+- Management otherwise depends on the **suspected cause**
+
+**Features of a POOR prognosis:**
+
+- A **shrinking liver**
+- A **rising bilirubin**
+- **Falling transaminases** — counter-intuitive, and the point most often missed: the enzymes fall not because the liver is recovering but because there are too few surviving hepatocytes left to release them
+- **Worsening coagulopathy**
+- **Coma**
+
+**Assess for liver transplantation.** The **prothrombin time is the best marker of liver failure** — and for that reason, avoid giving vitamin K or fresh frozen plasma indiscriminately, since correcting the clotting removes the marker being used to judge severity and transplant need.
+
+## Hepatic encephalopathy
+
+- **Supportive care** with **frequent monitoring of neurological and mental status**
+- **Identify and correct precipitating factors** — gastrointestinal bleeding, infection, electrolyte disturbance and drugs
+- **Reduce the nitrogenous load**: **dietary protein restriction**, being careful not to worsen protein-calorie malnutrition, and reducing the load from the gut with **non-absorbable disaccharides such as lactulose** or **antibiotics such as rifaximin**
+
+> High-yield: **jaundice beyond 14 days needs a split bilirubin** — a conjugated rise is biliary atresia until proven otherwise, and the Kasai must be done **within 60 days**. In acute liver failure, **falling transaminases with a rising bilirubin and prothrombin time is a bad sign, not a good one.**`,
+        },
+        {
+          id: "paediatric_hepatitis_chronic_liver",
+          name: "Viral hepatitis & chronic liver disease in children",
+          content: `## Hepatitis A
+
+- **Supportive treatment** for pain, nausea or itch as required
+- **Avoid paracetamol**, given the hepatic injury
+- **Assess for co-infection with other hepatitis viruses**, which can complicate the course
+- **Close contacts should be vaccinated within 2 weeks of the onset of illness**
+- **Unvaccinated patients with recent exposure (under 2 weeks)** should receive **human normal immunoglobulin** (if under 12 months, or with chronic liver disease) or the **hepatitis A vaccine** (if over 12 months)
+- **Notify the Health Protection Unit**
+
+## Hepatitis B
+
+**Acute**
+
+- **Supportive** treatment for pain, nausea or itch
+- **Antiviral therapy** — lamivudine, entecavir or tenofovir disoproxil — with or without liver transplantation
+
+**Chronic**
+
+- **Supportive**, as it is usually asymptomatic
+- **Interferon or antiviral monotherapy** is recommended in selected patients: entecavir, tenofovir disoproxil, interferon alfa, peginterferon alfa or lamivudine
+
+**Prevention** — this is the examinable part:
+
+- **ALL pregnant women should have antenatal screening for HBsAg**
+- **Babies of all HBsAg-positive mothers should receive hepatitis B vaccination**
+- **Hepatitis B immunoglobulin is also given** where the mother was HBeAg-positive (see *Neonatal sepsis, group B streptococcus and hepatitis B* for the full criteria and schedule)
+- **Other family members should also be vaccinated**
+
+**Check for co-infection** with hepatitis D, hepatitis C and HIV, and **notify the Health Protection Unit**.
+
+## Hepatitis C
+
+- **Treatment decisions are based on the genotype** of the virus
+- **Direct-acting antiviral monotherapies** such as **glecaprevir with pibrentasvir**, or **sofosbuvir with velpatasvir**, are used for the majority of genotypes
+- On treatment failure, a combination of therapies may be trialled, or **oral ribavirin** added
+- **Treatment is NOT undertaken until over 3 years of age**, because vertically acquired infection may **resolve spontaneously**
+- **Notify the Health Protection Unit**
+
+## Autoimmune hepatitis
+
+- **Most children respond to prednisolone and azathioprine**
+- **Primary sclerosing cholangitis** is managed with **ursodeoxycholic acid** and relief of pruritus, for example with **colestyramine**, a bile acid sequestrant. **The only definitive treatment is transplantation, though it may recur**
+- **Liver transplantation** may be considered in severe cases
+
+Note that in children the overlap between autoimmune hepatitis and sclerosing cholangitis — autoimmune sclerosing cholangitis — is considerably commoner than in adults, so cholangiography is often part of the workup.
+
+## Metabolic dysfunction-associated steatotic liver disease (MASLD)
+
+Formerly called **non-alcoholic fatty liver disease**; the nomenclature was changed by international consensus in 2023, with non-alcoholic steatohepatitis (NASH) becoming **MASH**. It is increasingly common in children in parallel with obesity.
+
+- **Weight loss** through **diet and exercise**, with medication (**orlistat**) and possibly **bariatric surgery** (Roux-en-Y gastric bypass) in selected cases
+- **Treat insulin resistance and diabetes**
+- **Statins** for the associated dyslipidaemia
+- **Vitamin E (alpha-tocopherol)**
+- **Liver transplantation** in children with end-stage disease
+- **Check for genetic causes** where findings are atypical
+
+## Wilson's disease
+
+An autosomal recessive defect of copper transport (the *ATP7B* gene) causing copper accumulation in the liver, brain and cornea. The genetics and the diagnostic biochemistry — a low caeruloplasmin, raised urinary copper and **Kayser-Fleischer rings** — are covered in the *Genetic liver disease* topic. Severity is assessed with the **Nazar score or the King's Wilson score**.
+
+- **Zinc** — blocks intestinal copper reabsorption
+- **Oral chelation therapy** — **penicillamine** or **trientine**, the latter increasing urinary copper excretion
+- **Pyridoxine (vitamin B6)** is given alongside penicillamine to **prevent peripheral neuropathy**
+- **Dietary restriction of copper** — reduce liver and shellfish intake
+- **Neurological improvement may take up to 12 months**, which matters for setting expectations
+- **Liver transplantation** in children with end-stage liver disease
+
+## Cirrhosis and portal hypertension
+
+- **Treat the underlying cause**
+- **Prevent superimposed hepatic insults**: avoid hepatotoxic drugs such as NSAIDs and high-dose paracetamol, **immunise against hepatitis A and B** in susceptible patients, manage metabolic risk factors, maintain adequate nutrition, and encourage regular exercise
+- **Monitor for complications**, for example abdominal ultrasound for ascites
+- **Ascites**: sodium and fluid restriction, and diuretics. **Refractory ascites**: albumin infusion and paracentesis
+- **Liver transplantation**
+
+> High-yield: hepatitis C is **not treated until after 3 years of age**, because vertically acquired infection often clears by itself. In Wilson's disease, give **pyridoxine alongside penicillamine** to prevent neuropathy, and warn that neurological recovery takes up to a year.`,
         },
         {
           id: "paediatric_hip_conditions",
