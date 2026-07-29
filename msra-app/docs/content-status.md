@@ -2,7 +2,21 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
-_Last updated: **Added 3 more Tracker conditions, each with a flowchart and a Complications row: `endo_kallmann` Kallmann syndrome, `gi_acute_mesenteric_ischaemia` Acute mesenteric ischaemia and `gi_ischaemic_colitis` Ischaemic colitis.** All three clusters were specified by the user. None existed anywhere in the Tracker (checked first). Endocrinology 40→41, Gastro 50→52, **total 538→541**, flowcharts 151→154. No id changed and nothing existing moved.
+_Last updated: **Added `gi_masld` MASLD to `gastro`'s *Liver disease* cluster, with a 17-node flowchart and a Complications row.** Inserted **directly after `gi_alcoholic_liver`**, so the two steatotic liver diseases sit together — which matters here more than usual, because **MetALD is literally the overlap between them**. Gastro 52→53, **total 541→542**, flowcharts 154→155. No id changed, nothing moved, no new cluster. There was no NAFLD or MASLD entry anywhere in the Tracker before this — a real gap, since the notebook has covered it since Batch 13.
+
+**Source is deliberately dual — `"NICE NG49 / EASL-EASD-EASO"` — because the UK and international pathways have diverged, and the flowchart shows both.** Verified on the web:
+- **NICE NG49 is still current, still called "Non-alcoholic fatty liver disease (NAFLD)", and still uses the ELF test** — a score of **10.51 or above** indicates advanced fibrosis and warrants referral, with retesting every **3 years** in adults (2 in children) below that.
+- **EASL-EASD-EASO 2024** uses the new naming and a stepwise **FIB-4 first, then transient elastography** approach, which is what has largely become practice because FIB-4 is free and calculable from routine bloods.
+
+The chart therefore branches explicitly on which pathway is being followed rather than pretending they agree.
+
+**⚠️ Genuinely new UK development, and the thing I would have got wrong from memory — two MASH drugs were licensed in the UK this year.** The **MHRA authorised resmetirom (Rezdiffra) on 3 June 2026** for MASH with **stage F2–F3 fibrosis** — the first medicine ever licensed in the UK specifically for MASH — and also authorised **semaglutide** for MASH with moderate to advanced fibrosis, on the strength of the **ESSENCE** phase 3 trial. **Both are awaiting NICE technology appraisal, so neither is routinely available on the NHS yet**, and the entry says so rather than implying they are standard care.
+
+**Other content worth flagging:** the entry leads on the change that came with the 2023 renaming — **MASLD requires POSITIVE metabolic criteria (at least one of five cardiometabolic factors), where the old NAFLD was a diagnosis of exclusion**; that **fibrosis stage, not steatosis, determines outcome**; that **transaminases are often normal and a normal ALT does not exclude advanced fibrosis**; that **statins are safe and must not be withheld**, because **cardiovascular disease — not liver disease — is the leading cause of death in MASLD**; and that **MASLD-related HCC can arise without cirrhosis**, unusually among the chronic liver diseases. Weight-loss targets are given as the dose-response that gets examined: ~5% improves steatosis, 7–10% achieves MASH resolution, 10%+ can regress fibrosis.
+
+**⚠️ NEW GAP FLAGGED, not changed (out of scope):** the notebook topic **`fatty_liver_disease` has the 2023 nomenclature but NO management content at all** — no FIB-4, no ELF, no GLP-1 receptor agonists, and nothing on resmetirom or semaglutide. It was written from the Path Guide and is purely pathology-facing, so the Tracker now carries substantially richer management than the Notebook for the same disease. **Offer to bring it up to date.**
+
+Verified: **a regression loop re-rendered all 155 flowcharts through the app's own Mermaid engine with 0 failures**; the new chart renders **17 nodes with 0 blank tips and 0 orphan tips**, and all nine edge labels were read back from the generated SVG; every fork is labelled (asserted statically by the insertion script, per the `endo_dka` rule); no `;` or `&` in the definition; no id changed or lost, **542 unique of 542**; balance 0/0/0; `node --check` passes. **The React card-level check again did not complete** — the preview server had stopped between turns and, once restarted, the tab stayed backgrounded and the throttled in-browser Babel compile never finished. **Re-upload `data.js`** (only app file changed). Earlier: **Added 3 more Tracker conditions, each with a flowchart and a Complications row: `endo_kallmann` Kallmann syndrome, `gi_acute_mesenteric_ischaemia` Acute mesenteric ischaemia and `gi_ischaemic_colitis` Ischaemic colitis.** All three clusters were specified by the user. None existed anywhere in the Tracker (checked first). Endocrinology 40→41, Gastro 50→52, **total 538→541**, flowcharts 151→154. No id changed and nothing existing moved.
 
 - **`endo_kallmann` Kallmann syndrome** → *Pituitary & hypothalamic*, inserted **after `endo_prolactinoma`**, so the cluster now runs anterior-pituitary/gonadal axis (acromegaly → prolactinoma → Kallmann) then the water-balance trio (cranial DI → nephrogenic DI → SIADH). Flowchart 16 nodes, **`source: "European Consensus (CHH)"`**.
 - **`gi_acute_mesenteric_ischaemia`** and **`gi_ischaemic_colitis`** → *Lower GI & colorectal*, inserted **after `gi_diverticular`**, keeping the acute-abdomen entries together (appendicitis → diverticular → the two ischaemic conditions) before the hernias, neoplasia and anorectal runs. Emergency first, then the milder cousin. Flowcharts 13 nodes each, **`source: "WSES / ESVS"`** and **`"ACG"`**.
@@ -418,13 +432,13 @@ Earlier: **Added Acute bronchitis to the Respiratory Tracker.** `resp_acute_bron
 
 ## Tracker (`data.js`) — complete
 
-All 19 specialties populated, **541 conditions** total. **493** genuine conditions carry the seven-field layout (Key facts → Epidemiology → Aetiology → Pathophysiology → Presentation → Investigations → Treatment); the other 48 are topic-style entries with their own field structure. Each condition has `presentation` / `investigations` / `treatment` (Pharmacology uses relabelled fields; `pharm_paracetamol_od` uses a 3-section `fields` array).
+All 19 specialties populated, **542 conditions** total. **494** genuine conditions carry the seven-field layout (Key facts → Epidemiology → Aetiology → Pathophysiology → Presentation → Investigations → Treatment); the other 48 are topic-style entries with their own field structure. Each condition has `presentation` / `investigations` / `treatment` (Pharmacology uses relabelled fields; `pharm_paracetamol_od` uses a 3-section `fields` array).
 
 | Specialty | id | Conditions |
 | --- | --- | ---: |
 | Cardiovascular | `cardiology` | 63 |
 | Respiratory | `respiratory` | 27 |
-| Gastroenterology & Nutrition | `gastro` | 52 |
+| Gastroenterology & Nutrition | `gastro` | 53 |
 | Endocrinology & Metabolic | `endocrinology` | 41 |
 | Renal & Urology | `renal` | 26 |
 | Neurology | `neurology` | 34 |
