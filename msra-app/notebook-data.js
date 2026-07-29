@@ -4893,7 +4893,7 @@ Immunity to an infection is either **active** (the person mounts their own respo
 
 | Type | What it contains | Examples | Key point |
 |---|---|---|---|
-| Live attenuated | A weakened live organism | MMR, varicella-zoster, BCG, oral polio and typhoid, yellow fever, intranasal flu | Strong, often lifelong immunity, but contraindicated in immunosuppression and pregnancy |
+| Live attenuated | A weakened live organism | MMR and MMRV, varicella-zoster, BCG, oral polio and typhoid, yellow fever, intranasal flu | Strong, often lifelong immunity, but contraindicated in immunosuppression and pregnancy |
 | Inactivated or subunit | Killed organism or isolated antigen | Hepatitis B (surface antigen), human papillomavirus, injected polio and flu | Safe in immunodeficiency but need boosters |
 | Toxoid | An inactivated toxin | Tetanus, diphtheria | |
 | Conjugate | Polysaccharide linked to a protein carrier | Meningococcus, Haemophilus influenzae type b, pneumococcus | Protects against encapsulated bacteria and works in young children |
@@ -4903,14 +4903,35 @@ Immunity to an infection is either **active** (the person mounts their own respo
 
 ## The UK schedule in outline
 
-- **Infants:** the 6-in-1 (diphtheria, tetanus, pertussis, polio, Haemophilus influenzae type b, hepatitis B) at 8, 12 and 16 weeks, with meningococcal B, pneumococcal and rotavirus vaccines.
-- **One year:** Haemophilus influenzae type b/meningococcal C, measles-mumps-rubella (MMR), and pneumococcal and meningococcal B boosters.
-- **Pre-school:** MMR and a 4-in-1 booster. **Teenagers:** human papillomavirus, then a 3-in-1 and meningococcal ACWY booster.
-- **Adults:** annual flu and (from 65) pneumococcal; shingles from 70; and in **pregnancy**, flu and pertussis to protect the newborn.
+The routine childhood schedule was substantially revised on **1 January 2026**. There are now six routine pre-school appointments: 8, 12 and 16 weeks, one year, **18 months** (a new appointment) and 3 years 4 months.
+
+- **Infants:** the 6-in-1 (diphtheria, tetanus, pertussis, polio, Haemophilus influenzae type b, hepatitis B) at 8, 12 and 16 weeks, with meningococcal B at 8 and 12 weeks, pneumococcal at 16 weeks, and oral rotavirus at 8 and 12 weeks.
+- **One year:** **measles-mumps-rubella-varicella (MMRV)**, with pneumococcal and meningococcal B boosters. The Haemophilus influenzae type b/meningococcal C booster has been **withdrawn** from this visit: its only brand (Menitorix) is no longer manufactured, teenage meningococcal ACWY vaccination gives herd protection against group C, and the Haemophilus type b component is instead covered by a fourth dose of the 6-in-1.
+- **Eighteen months:** the **fourth 6-in-1 dose** and the **second MMRV dose**, brought forward from 3 years 4 months. This appointment is offered to children born on or after 1 July 2024.
+- **Pre-school (3 years 4 months):** the 4-in-1 booster (diphtheria, tetanus, pertussis, polio). Children in the transitional birth cohorts also receive MMRV at this visit.
+- **Teenagers:** human papillomavirus at 12 to 13, then a 3-in-1 and meningococcal ACWY booster at 14.
+- **Adults:** annual flu, with pneumococcal and shingles from 65 and respiratory syncytial virus (RSV) at 75; and in **pregnancy**, flu at any stage, pertussis from 16 weeks and RSV from 28 weeks, all to protect the newborn.
+
+## Varicella in the routine schedule
+
+**MMRV replaced MMR in the routine childhood programme on 1 January 2026**, bringing chickenpox (varicella) into the schedule for the first time. Which doses a child is offered depends on their date of birth, because the change caught each cohort at a different point.
+
+| Date of birth | What is offered |
+|---|---|
+| 1 January 2025 onwards | MMRV at 12 months and at 18 months |
+| 1 July to 31 December 2024 | MMR at 12 months, then MMRV at 18 months and again at 3 years 4 months |
+| 1 September 2022 to 30 June 2024 | MMR at 12 months as before, then a single MMRV at 3 years 4 months |
+| 1 January 2020 to 31 August 2022 | Selective catch-up only |
+
+A **catch-up programme runs from 1 November 2026 to 31 March 2028**, offering one MMRV dose to that last cohort (aged 3 years 4 months to under 6 years at the end of 2025) provided the child has neither had chickenpox nor already received two doses of varicella vaccine.
+
+Two products are used, **ProQuad and Priorix-Tetra**. They are clinically equivalent and interchangeable, and Priorix-Tetra is the one offered where porcine gelatine is declined, because ProQuad contains it.
+
+The safety point worth knowing is **febrile convulsion**. The first MMRV dose carries a risk of roughly **1 in 1,000** in the 7 to 10 days afterwards, about double that of separate MMR and varicella vaccines given at the same visit. It remains far below the 1 in 43 risk that follows natural measles, no excess is seen after the second dose, and prophylactic paracetamol is not recommended — treat a fever if one develops. If a varicella-like rash appears three to four weeks later, use paracetamol rather than ibuprofen, and remember that spread from a healthy vaccinated child is very unlikely.
 
 ## Key safety rule
 
-**Live vaccines are contraindicated in significant immunosuppression and in pregnancy.** People living with HIV may receive MMR but not BCG or yellow fever.`,
+**Live vaccines are contraindicated in significant immunosuppression and in pregnancy.** The live vaccines to recognise are **MMR and MMRV, varicella and zoster, BCG, yellow fever, oral polio and oral typhoid, and the intranasal influenza vaccine**. Varicella now sits inside the routine infant schedule as part of MMRV, so this rule bites at the 12-month and 18-month appointments as well as later in life. Where an immunosuppressed child needs varicella protection, take specialist advice rather than giving MMRV. People living with HIV may receive MMR, and MMRV where immunosuppression is absent or moderate (a CD4 count above 500 in a child aged 1 to 5, after specialist discussion), but not BCG or yellow fever.`,
         },
         {
           id: "immunodeficiency",
