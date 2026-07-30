@@ -2815,7 +2815,85 @@ MASLD is the hepatic manifestation of the metabolic syndrome, a cluster of findi
 - **Dyslipidaemia** — HDL cholesterol below 1 mmol/L and triglycerides above 2 mmol/L.
 - **Microalbuminuria.**
 
-> Alcohol causes reversible steatosis, then alcoholic hepatitis with hepatocyte ballooning and Mallory-Denk bodies (10 to 20% mortality per episode), then micronodular cirrhosis. **MASLD** (formerly NAFLD) looks identical histologically but occurs without significant alcohol intake, is the commonest chronic liver disease in the West, and progresses through **MASH** (formerly NASH — steatosis plus inflammation) to cirrhosis. It is the liver manifestation of the metabolic syndrome, and unlike the old NAFLD it requires **positive** evidence of metabolic dysfunction rather than simply the absence of alcohol. Where both drivers are present, the category is **MetALD**.`,
+## Fibrosis stage, not steatosis, determines the outcome
+
+The single most important principle in managing MASLD is that **the amount of fat in the liver matters far less than the amount of scar tissue**. Fibrosis stage is what predicts liver-related complications and death, so a patient who has been given the label has not actually been assessed until their fibrosis risk has been estimated.
+
+Two consequences follow, and both are heavily examined.
+
+- **A normal alanine aminotransferase (ALT) does not exclude advanced fibrosis.** Liver enzymes are frequently normal in MASLD, including in people who already have bridging fibrosis or cirrhosis, so normal liver blood tests must never be used to reassure the patient or to close the episode.
+- **Cardiovascular disease, not liver disease, is the leading cause of death** in this population. Most people with MASLD die of myocardial infarction or stroke rather than of liver failure, which makes cardiovascular risk management as much a part of treatment as anything aimed at the liver itself.
+
+Fibrosis is staged from F0 to F4, and two of those thresholds carry practical weight.
+
+| Stage | Meaning | Why it matters |
+|---|---|---|
+| **F0 to F1** | No or mild fibrosis | Manage in primary care |
+| **F2** | Significant fibrosis | The lower threshold for the newly licensed drug treatments |
+| **F3** | Advanced (bridging) fibrosis | **Refer to hepatology** |
+| **F4** | Cirrhosis | Refer, and begin surveillance for cancer and varices |
+
+## Risk-stratifying for fibrosis: the United Kingdom and international pathways differ
+
+Every patient with MASLD needs their fibrosis risk estimated rather than simply being labelled and discharged. Which test is used depends on which guideline is being followed, and the two currently differ because United Kingdom guidance predates the 2023 renaming.
+
+| Feature | NICE NG49 (United Kingdom) | EASL-EASD-EASO 2024 (international) |
+|---|---|---|
+| Terminology | Still titled **"Non-alcoholic fatty liver disease (NAFLD)"** | Uses **MASLD** and **MASH** throughout |
+| First-line test | The **Enhanced Liver Fibrosis (ELF) blood test** | The **Fibrosis-4 (FIB-4) index**, calculated from age, aspartate aminotransferase (AST), ALT and platelet count |
+| Threshold for concern | An **ELF score of 10.51 or above** indicates advanced fibrosis and warrants referral | FIB-4 **below 1.3** (below 2.0 if over 65 years) rules advanced fibrosis out |
+| Second step | None; the ELF result decides | **Transient elastography** (FibroScan) where FIB-4 is indeterminate or raised |
+| If reassuring | Retest every **3 years in adults** and every **2 years in children and young people** | Reassess periodically, and annually in type 2 diabetes |
+
+On transient elastography, a liver stiffness measurement below **8 kilopascals (kPa)** rules advanced fibrosis out, **8 to 12 kPa** is indeterminate, and **12 kPa or above** rules it in. FIB-4 has become the practical first step in most settings because it costs nothing and is calculated from blood tests that have usually already been done, whereas the ELF test is not universally available. Liver biopsy remains the reference standard, but it is now reserved for cases in which the diagnosis stays genuinely uncertain.
+
+NICE is currently updating NG49, and the replacement guideline is expected in **July 2027**; it will adopt MASLD and MASH in its title and throughout. Until it appears, NG49 as written remains current United Kingdom practice, which is why the ELF test and the older name are still what you will meet in the National Health Service (NHS) and in examinations.
+
+## Weight loss is the mainstay, and the dose matters
+
+Lifestyle change is the only intervention that improves every stage of the disease, and its effect is **dose-dependent**, so how much weight is lost determines what improves.
+
+| Weight lost | What it achieves |
+|---|---|
+| **About 5%** | Improves hepatic **steatosis** |
+| **7 to 10%** | Achieves **resolution of MASH** |
+| **10% or more** | Can **regress fibrosis**, which happened in roughly 45% of those reaching this target in the landmark lifestyle study |
+
+In practice this means a Mediterranean-style diet, avoiding sugar-sweetened drinks and fructose, at least 150 minutes a week of moderate aerobic exercise with added resistance training, and reducing alcohol. Where the diagnosis is **MetALD, both drivers have to be addressed**, because cutting down alcohol alone or losing weight alone will not be enough.
+
+## Treat the cardiometabolic risk, and do not withhold statins
+
+Since cardiovascular disease kills far more of these patients than liver disease does, treating type 2 diabetes, hypertension and dyslipidaemia to target is part of treating the liver disease rather than a separate exercise.
+
+**Statins are safe in MASLD and must not be withheld.** They are very often stopped, or never started, because the transaminases are mildly raised, and that is precisely the wrong response: mildly deranged liver enzymes in MASLD are a reason to treat cardiovascular risk more assertively rather than less. Statins reduce cardiovascular events in this group and, if anything, appear to benefit the liver as well. Only decompensated cirrhosis calls for real caution.
+
+## Drug treatment
+
+| Treatment | Who it is for | Points to note |
+|---|---|---|
+| **Glucagon-like peptide-1 (GLP-1) receptor agonists**, such as semaglutide and tirzepatide | Coexisting obesity or type 2 diabetes | They deliver the weight loss that drives histological improvement while also improving cardiometabolic outcomes |
+| **Bariatric (metabolic) surgery** | Obesity, particularly alongside type 2 diabetes | Produces the largest and most durable weight loss, and can resolve MASH |
+| **Pioglitazone** | Biopsy-proven MASH, especially with type 2 diabetes | Causes weight gain and fluid retention, should be avoided in heart failure, and carries a fracture risk |
+| **Vitamin E, 800 international units (IU) daily** | Selected non-diabetic adults with biopsy-proven MASH | Prolonged high-dose use has been linked to prostate cancer and haemorrhagic stroke |
+
+### Two MASH-specific medicines were licensed in the United Kingdom in 2026
+
+| Medicine | Authorisation | Licensed for | Evidence |
+|---|---|---|---|
+| **Resmetirom (Rezdiffra)**, a liver-directed thyroid hormone receptor-beta agonist | Medicines and Healthcare products Regulatory Agency (MHRA), **3 June 2026** | MASH with **stage F2 to F3 fibrosis**. It is the **first medicine ever licensed in the United Kingdom for MASH** | In the MAESTRO-NASH trial, MASH resolved without worsening fibrosis in about 26 to 30% at 12 months against 10% on placebo. The dose is 80 mg once daily below 100 kg and 100 mg once daily at or above it |
+| **Semaglutide (Wegovy)** | MHRA, **3 July 2026**, as a conditional marketing authorisation | MASH with **moderate to advanced fibrosis** | In the ESSENCE phase 3 trial, at 72 weeks MASH resolved without worsening fibrosis in 62.9% against 34.1% on placebo, and fibrosis improved in 37% against 22.5% |
+
+**Neither medicine is routinely available on the NHS yet.** Both are awaiting a technology appraisal from the National Institute for Health and Care Excellence (NICE), which assesses clinical and cost effectiveness before the NHS will routinely fund a treatment. Marketing authorisation and NHS availability are two separate hurdles, and so far only the first has been cleared.
+
+## Referral, surveillance and complications
+
+Refer to hepatology when the ELF score is 10.51 or above, when FIB-4 and elastography point to advanced fibrosis, or when there is any clinical sign of cirrhosis.
+
+- Once the patient is **cirrhotic**, enrol them in **6-monthly ultrasound surveillance for hepatocellular carcinoma (HCC)**, with or without alpha-fetoprotein, and in **endoscopic screening for oesophageal varices**.
+- **MASLD-related HCC can arise without cirrhosis**, which is unusual among the chronic liver diseases and means that an absence of cirrhosis does not entirely remove the risk. Routine surveillance is nevertheless not recommended in non-cirrhotic disease, so at stage F3 the decision is made case by case on individual risk.
+- MASLD is now one of the fastest-growing indications for **liver transplantation**.
+
+> Alcohol causes reversible steatosis, then alcoholic hepatitis with hepatocyte ballooning and Mallory-Denk bodies (10 to 20% mortality per episode), then micronodular cirrhosis. **MASLD** (formerly NAFLD) looks identical histologically but occurs without significant alcohol intake, is the commonest chronic liver disease in the West, and progresses through **MASH** (formerly NASH — steatosis plus inflammation) to cirrhosis. It is the liver manifestation of the metabolic syndrome, and unlike the old NAFLD it requires **positive** evidence of metabolic dysfunction rather than simply the absence of alcohol. Where both drivers are present, the category is **MetALD**. In management, **fibrosis stage rather than steatosis determines the outcome** and a normal ALT does not exclude advanced fibrosis, so every patient is risk-stratified: NICE NG49 uses the **ELF test** (10.51 or above means advanced fibrosis, otherwise retest at 3 years), while **EASL-EASD-EASO 2024** uses **FIB-4** followed by transient elastography. Weight loss is the mainstay and is dose-dependent, with about 5% improving steatosis, 7 to 10% resolving MASH and 10% or more regressing fibrosis. **Statins are safe and must not be withheld**, because cardiovascular rather than liver disease is the leading cause of death. GLP-1 receptor agonists, bariatric surgery, pioglitazone and vitamin E help selected patients, and **resmetirom and semaglutide were licensed in the United Kingdom in 2026** for MASH with fibrosis but both await NICE appraisal, so neither is routinely available on the NHS. Once cirrhotic, patients need 6-monthly ultrasound for HCC, which in MASLD can also arise without cirrhosis.`,
         },
         {
           id: "autoimmune_biliary_liver_disease",
