@@ -1638,21 +1638,481 @@ Most headaches are benign (tension-type or migraine), but a small number signal 
           name: "Stroke & TIA",
           content: `## Stroke and transient ischaemic attack
 
-A stroke is a sudden focal neurological deficit of vascular origin. A transient ischaemic attack (TIA) produces similar symptoms that resolve, and is a warning of high stroke risk.
+A **stroke** is a sudden focal (occasionally global) neurological deficit of vascular origin lasting more than 24 hours or leading to death. A **transient ischaemic attack (TIA)** produces the same kind of deficit but without lasting damage: the modern tissue-based definition is a transient episode of neurological dysfunction caused by focal ischaemia **without acute infarction on imaging**, which has replaced the older rule of "symptoms lasting less than 24 hours". Most TIAs in fact last one to five minutes.
 
-## Recognition
+A TIA is a warning, not a lesser illness. Around 15% of first strokes are preceded by one, and the risk of stroke is highest in the first few days afterwards, so a TIA is treated as an emergency.
 
-The public message is FAST: Face, Arm, Speech, Time. Clinically, look for unilateral weakness, speech disturbance, visual field loss and facial droop.
+## The two kinds of stroke
 
-## Immediate management of suspected stroke
+| | Ischaemic | Haemorrhagic |
+|---|---|---|
+| Proportion | About 85% | About 15% |
+| Mechanism | Thrombosis or embolism occluding an artery | Bleeding into the brain or subarachnoid space |
+| Immediate treatment | Reperfusion, then antiplatelet | Reverse anticoagulation, lower blood pressure, no antiplatelet |
 
-- Arrange an **urgent computed tomography (CT) head** to distinguish ischaemic stroke from haemorrhage, because treatment differs completely.
-- For ischaemic stroke within the treatment window, offer thrombolysis and consider thrombectomy.
-- Once haemorrhage is excluded, give aspirin 300 mg.
+They cannot be told apart reliably at the bedside, which is why **imaging comes before treatment in every case**.
 
-## After a TIA
+## Causes and risk factors
 
-Give aspirin immediately and refer for specialist assessment within 24 hours. Secondary prevention addresses blood pressure, a statin, antiplatelet therapy, atrial fibrillation and carotid disease.`,
+The risk factors are those of atheroma: hypertension (the most important modifiable one), smoking, diabetes, hyperlipidaemia, increasing age, family history, a previous TIA, excess alcohol, peripheral vascular disease and the combined oral contraceptive pill. Hyperviscosity states such as sickle cell anaemia and polycythaemia vera also raise the risk.
+
+The mechanisms are worth separating because they lead to different secondary prevention:
+
+- **Large-artery atherosclerosis**, typically at the carotid bifurcation, causing thrombosis or artery-to-artery embolism.
+- **Cardioembolism**, most often from atrial fibrillation, and also from prosthetic valves, endocarditis and recent myocardial infarction.
+- **Small-vessel (lacunar) disease** from lipohyalinosis of the deep penetrating arteries, driven by hypertension and diabetes.
+- **Other causes**, which matter most in younger patients: carotid or vertebral **artery dissection** (neck pain or headache, sometimes a Horner syndrome, often after minor neck trauma), vasculitis, thrombophilia, patent foramen ovale with paradoxical embolus, and cerebral venous sinus thrombosis.
+
+## Recognition and the mimics
+
+The public message is **FAST**: Face, Arm, Speech, Time to call 999. In hospital the **ROSIER** score (Recognition of Stroke in the Emergency Room) is used to separate stroke from its mimics.
+
+Always exclude the mimics before committing to the diagnosis:
+
+- **Hypoglycaemia** — check a capillary glucose in every suspected stroke, without exception.
+- **Seizure with a Todd's paresis**, which resolves over hours.
+- **Migraine with aura**, where symptoms spread and evolve over minutes rather than starting at maximum.
+- A **space-occupying lesion**, **sepsis unmasking an old deficit**, or a functional disorder.
+- **Bell's palsy**, in which the forehead is involved (a lower motor neurone pattern); a stroke spares the forehead.
+
+## Immediate assessment
+
+- **Non-contrast CT of the head immediately** if the person is a candidate for thrombolysis or thrombectomy, is on an anticoagulant, has a reduced conscious level, a severe headache, neck stiffness, papilloedema or a bleeding tendency; otherwise as soon as possible and within 24 hours.
+- Capillary glucose, full blood count, urea and electrolytes, clotting screen, and an **electrocardiogram** looking for atrial fibrillation.
+- A **swallow screen before anything is given by mouth**, including medication, because aspiration pneumonia is a major preventable cause of death.
+
+## Acute treatment of ischaemic stroke
+
+**Reperfusion is the priority, and it is time-critical.**
+
+- **Thrombolysis** with alteplase or tenecteplase within **4.5 hours** of a known onset time, once intracranial haemorrhage has been excluded, given in a stroke centre by a trained team. Blood pressure must be brought to **185/110 mmHg or lower** before treatment. Tenecteplase, given as a single bolus, was recommended by the National Institute for Health and Care Excellence (NICE) in 2024 as an alternative to an alteplase infusion.
+- **Thrombectomy** (mechanical clot retrieval) as soon as possible and **within 6 hours** for a proximal anterior circulation occlusion confirmed on CT or magnetic resonance angiography, together with thrombolysis if that is not contraindicated. It is also offered **between 6 and 24 hours** from when the person was last known to be well, and for **basilar or posterior cerebral artery occlusion up to 24 hours**, provided CT perfusion or diffusion-weighted MRI shows a limited infarct core with salvageable brain tissue. Selection generally requires a pre-stroke modified Rankin score below 3 and a National Institutes of Health Stroke Scale (NIHSS) score above 5.
+- **Aspirin 300 mg** as soon as haemorrhage is excluded and within 24 hours (rectally or by nasogastric tube if the swallow is unsafe), continued daily **for two weeks**, then switched to long-term antithrombotic treatment.
+- **Admission to a stroke unit**, which itself improves survival and independence more than almost any drug.
+- **Do not lower the blood pressure** in the acute phase unless there is a hypertensive emergency (encephalopathy, aortic dissection, pre-eclampsia, cardiac failure) or the person is being thrombolysed. Keep glucose between 4 and 11 mmol/L, treat fever, and use intermittent pneumatic compression rather than heparin for venous thromboembolism prophylaxis.
+- **Do not start a statin immediately**; continue one that is already being taken.
+- **Decompressive hemicraniectomy within 48 hours** for malignant middle cerebral artery syndrome: NIHSS above 15, a reduced conscious level, and infarction of at least half the middle cerebral artery territory (or an infarct volume above 145 cm³).
+- If the stroke is **cardioembolic from atrial fibrillation**, give aspirin 300 mg for the first two weeks before starting anticoagulation.
+
+## Managing a TIA
+
+- **Aspirin 300 mg immediately** unless contraindicated.
+- **Specialist assessment within 24 hours** of symptom onset.
+- **Do not use risk scores such as ABCD2** to decide who is seen urgently — NICE removed them because everyone with a suspected TIA needs assessment within 24 hours.
+- Imaging is by **diffusion-weighted MRI on the same day as specialist assessment**, to determine the territory and mechanism; do not routinely CT unless another diagnosis is suspected.
+- Arrange **carotid imaging urgently**, because endarterectomy is time-critical.
+- Anyone with crescendo TIAs, a TIA while anticoagulated, or a suspected dissection should be discussed for admission.
+
+Secondary prevention is started at the same time and is covered in *Stroke — secondary prevention & rehabilitation*. For localising the lesion see *Stroke syndromes & vascular territories*; for the haemorrhagic types see *Intracerebral haemorrhage* and *Subarachnoid haemorrhage*.`,
+        },
+        {
+          id: "stroke_syndromes_territories",
+          name: "Stroke syndromes & vascular territories",
+          content: `## Why localisation matters
+
+The pattern of deficit tells you which artery is blocked, which predicts the likely mechanism, the prognosis, and whether thrombectomy is possible. Two systems are used side by side: the **Bamford (Oxfordshire) clinical classification**, which needs no imaging, and the **vascular territory** description.
+
+## The Bamford classification
+
+It rests on three findings: (1) higher cortical dysfunction (dysphasia, neglect, visuospatial loss), (2) homonymous hemianopia, and (3) motor or sensory deficit affecting at least two of face, arm and leg.
+
+| Class | Criteria | Typical mechanism | Outcome |
+|---|---|---|---|
+| Total anterior circulation stroke (TACS) | All three present | Proximal middle cerebral or internal carotid occlusion | Worst; high mortality and dependency |
+| Partial anterior circulation stroke (PACS) | Two of three, or higher cortical dysfunction alone | Branch middle cerebral occlusion | Moderate; high early recurrence |
+| Lacunar stroke (LACS) | One of the lacunar syndromes below, with **no** cortical signs | Small-vessel disease | Best early prognosis |
+| Posterior circulation stroke (POCS) | Cranial nerve palsy with contralateral deficit, bilateral deficits, conjugate eye movement disorder, cerebellar signs, or isolated homonymous hemianopia | Vertebrobasilar disease | Variable; basilar occlusion is devastating |
+
+## Anterior cerebral artery
+
+- Contralateral weakness and sensory loss that is **worse in the leg than the arm** (the leg area sits on the medial surface).
+- Behavioural and cognitive change: apathy, abulia, confusion and poor judgement.
+- Urinary incontinence, and a grasp reflex.
+
+## Middle cerebral artery
+
+This is the commonest territory. A proximal occlusion gives:
+
+- Contralateral weakness and sensory loss of the **face and arm more than the leg**.
+- Cortical sensory loss (loss of two-point discrimination, stereognosis).
+- Contralateral homonymous hemianopia or quadrantanopia.
+- **Dominant hemisphere** (usually the left): aphasia. **Non-dominant hemisphere** (usually the right): neglect and anosognosia.
+- **The eyes deviate towards the side of the lesion**, and away from the weak side.
+
+The aphasia itself localises further: **Broca's (expressive)** aphasia from the inferior frontal gyrus gives effortful non-fluent speech with preserved comprehension and retained insight; **Wernicke's (receptive)** aphasia from the superior temporal gyrus gives fluent but meaningless speech with impaired comprehension and no insight; **conduction** aphasia from the arcuate fasciculus gives fluent speech with poor repetition.
+
+## Posterior cerebral artery
+
+- Contralateral homonymous hemianopia, classically with **macular sparing**.
+- **Midbrain** involvement: third and fourth cranial nerve palsies, pupillary changes and hemiparesis.
+- **Thalamic** involvement: contralateral sensory loss, amnesia and a reduced conscious level.
+- **Bilateral** occlusion: cortical blindness (which may be denied — Anton syndrome) and prosopagnosia.
+- Hemiballismus, from involvement of the subthalamic nucleus.
+
+## Lacunar syndromes
+
+These arise in the deep hemispheric white matter, from the deep penetrating branches of the middle cerebral artery, the circle of Willis, and the basilar and vertebral arteries. There is **never** cortical dysfunction, and never a visual field defect.
+
+| Syndrome | Site | Features |
+|---|---|---|
+| Pure motor hemiparesis (commonest) | Posterior limb of the internal capsule | Contralateral face, arm and leg weakness |
+| Pure sensory stroke | Ventral thalamus | Contralateral hemisensory loss |
+| Sensorimotor stroke | Thalamocapsular | Both of the above together |
+| Ataxic hemiparesis | Ventral pons or internal capsule | Ipsilateral ataxia with leg-predominant weakness |
+| Dysarthria-clumsy hand | Ventral pons or genu of internal capsule | Dysarthria, facial weakness, dysphagia and a clumsy weak hand |
+
+## Brainstem and posterior circulation syndromes
+
+- **Lateral medullary (Wallenberg) syndrome**, from posterior inferior cerebellar or vertebral artery occlusion: **ipsilateral** facial pain and temperature loss, Horner syndrome, ataxia, nystagmus, dysphagia and hoarseness (from the ninth and tenth nerves), with **contralateral** pain and temperature loss in the limbs and trunk.
+- **Weber syndrome** (medial midbrain): ipsilateral third nerve palsy with contralateral hemiparesis.
+- **Basilar artery occlusion**: reduced consciousness, quadriparesis, pupillary and eye movement abnormalities, and in its extreme the **locked-in syndrome** — a ventral pontine infarct leaving the person aware but able to move only the eyes vertically.
+- **Cerebellar stroke**: sudden vertigo, vomiting, ataxia and nystagmus, easily mistaken for peripheral vertigo, and dangerous because swelling in the posterior fossa can compress the brainstem.
+
+## Amaurosis fugax
+
+A painless, transient loss of vision in one eye, often described as a curtain descending. It is caused by embolic atheromatous debris travelling from the carotid artery to the **ophthalmic branch of the internal carotid artery**, and it is a retinal TIA: investigate the carotids and treat as urgently as any other TIA.`,
+        },
+        {
+          id: "stroke_secondary_prevention",
+          name: "Stroke — secondary prevention & rehabilitation",
+          content: `## The aim
+
+After an ischaemic stroke or transient ischaemic attack (TIA) the risk of a further event is highest in the first days and weeks, so every element below is started as soon as it is safe rather than at a follow-up clinic.
+
+## Antiplatelet treatment
+
+- After an **ischaemic stroke**: aspirin 300 mg daily for **two weeks**, then long-term **clopidogrel 75 mg** daily. If clopidogrel is unsuitable, use aspirin 75 mg with modified-release dipyridamole 200 mg twice daily; if both are unsuitable, aspirin or dipyridamole alone.
+- After a **TIA**: clopidogrel 75 mg daily long-term.
+- For **minor ischaemic stroke or high-risk TIA presenting within 24 hours** in someone at low bleeding risk, the 2023 National Clinical Guideline for Stroke advises a short course of **dual antiplatelet therapy**: clopidogrel 300 mg then 75 mg daily plus aspirin 300 mg then 75 mg daily **for 21 days**, followed by clopidogrel alone. Ticagrelor 180 mg then 90 mg twice daily plus aspirin for 30 days is an alternative. The benefit is early and the bleeding risk rises with duration, which is why the dual phase is deliberately short.
+- **Antiplatelets are not used if the stroke was haemorrhagic.**
+
+## Cholesterol
+
+A **high-intensity statin** such as atorvastatin 20 to 80 mg at night, started **after the acute phase** (around 48 hours) rather than immediately; a statin already being taken should simply be continued. Ezetimibe, and then a PCSK9 inhibitor, are added if the cholesterol target is not met.
+
+## Blood pressure
+
+Treated after the acute phase, aiming for a **clinic blood pressure below 130/80 mmHg** in most people. Choice of agent follows the usual hypertension pathway, and the size of the long-term benefit is greater than that of any antiplatelet.
+
+## Atrial fibrillation
+
+- A **direct oral anticoagulant** (apixaban, rivaroxaban, edoxaban or dabigatran) is preferred to warfarin, except in mechanical valves or moderate-to-severe mitral stenosis where warfarin is still required.
+- **Timing balances rebleeding against recurrent embolism.** NICE advises aspirin 300 mg for the first two weeks, then anticoagulation. In practice many units follow a size-based rule, sometimes called the "1-3-6-12" rule: start after 1 day for a TIA, 3 days for a small stroke, 6 to 7 days for a moderate stroke and 12 to 14 days for a large stroke.
+- If atrial fibrillation is not found on the admission electrocardiogram but a cardioembolic source is suspected, arrange **prolonged cardiac monitoring** — paroxysmal atrial fibrillation is easily missed.
+
+## Carotid disease
+
+- Offer urgent assessment for **carotid endarterectomy** when there are stable neurological symptoms from a non-disabling stroke or TIA **in the carotid territory** and the stenosis is **50 to 99% by NASCET criteria** (equivalent to 70 to 99% by ECST criteria).
+- Refer **within one week** of symptom onset, with surgery ideally **within two weeks** — the benefit falls away sharply with delay.
+- **Do not operate** on stenosis below 50% by NASCET (below 70% by ECST); give best medical treatment instead.
+
+## Lifestyle and the rest
+
+Stopping smoking, reducing alcohol, a Mediterranean-style diet, salt reduction, weight loss and regular exercise all apply, alongside tight glycaemic control in diabetes.
+
+## Driving
+
+- **Car or motorcycle**: no driving for **one month** after a stroke or TIA. The Driver and Vehicle Licensing Agency (DVLA) does not need to be told if recovery is satisfactory at one month, unless there is residual neurological deficit such as visual field loss, or a history of multiple TIAs, which requires **three months free of attacks**.
+- **Bus, coach or lorry** (group 2): the licence is refused for **one year**, and the DVLA must be notified.
+
+## Rehabilitation and complications
+
+Recovery is delivered by a multidisciplinary team and begins on the stroke unit. Anticipate and screen for:
+
+- **Dysphagia and aspiration** — swallow screening before oral intake, with a speech and language therapy assessment.
+- **Spasticity and contractures**, treated with positioning, physiotherapy and botulinum toxin.
+- **Post-stroke depression**, which affects roughly a third of patients and is easily missed.
+- **Hemiplegic shoulder pain and subluxation**, pressure ulcers, constipation and incontinence.
+- **Post-stroke seizures**, cognitive impairment and vascular dementia.
+- **Communication needs** — aphasia does not mean reduced intellect, and materials should be adapted rather than the person excluded from decisions.`,
+        },
+        {
+          id: "intracerebral_haemorrhage",
+          name: "Intracerebral haemorrhage",
+          content: `## What it is
+
+Bleeding into the brain parenchyma, accounting for about 10 to 15% of strokes but a disproportionate share of early deaths. The onset is abrupt, and the haematoma both destroys tissue directly and raises intracranial pressure.
+
+## Causes
+
+| Cause | Typical pattern |
+|---|---|
+| **Hypertensive small-vessel disease** (about half of cases) | **Deep** bleeds — basal ganglia (the commonest site), thalamus, pons, cerebellum. Chronic hypertension produces **Charcot-Bouchard microaneurysms** on the deep penetrating arteries, and it is their rupture that causes the bleed |
+| **Cerebral amyloid angiopathy** | **Lobar** bleeds in older people, often recurrent, with cortical microbleeds on gradient-echo MRI; amyloid deposition in the cortical vessel walls |
+| **Anticoagulants and antiplatelets** | Any site; larger haematomas, more expansion, worse outcome |
+| **Arteriovenous malformation or cavernoma** | Younger patients, often with preceding seizures or headache |
+| **Ruptured aneurysm** | Usually subarachnoid, but may extend into the parenchyma |
+| **Tumour** | Bleeding into a metastasis (melanoma, renal, choriocarcinoma) or a glioma |
+| **Haemorrhagic transformation** | Days after a large infarct, especially after thrombolysis |
+| **Other** | Vasculitis, cocaine and other sympathomimetics, coagulopathy, venous sinus thrombosis |
+
+## How it presents
+
+A sudden focal deficit, as in any stroke, but headache, vomiting, seizures and a depressed conscious level are all more common than with infarction. **None of these is reliable enough to make the distinction clinically** — the diagnosis is made on imaging.
+
+## Investigation
+
+- **Immediate non-contrast CT of the head**, on which acute blood is hyperdense.
+- **CT angiography** if an underlying vascular lesion is suspected: a young patient, a lobar bleed, no history of hypertension, or an unusual site. A "spot sign" of contrast extravasation predicts haematoma expansion.
+- Full blood count, clotting screen and anticoagulant assays; glucose; electrocardiogram.
+
+## Management
+
+- **Stop all antithrombotic drugs and reverse anticoagulation immediately**, without waiting for a neurosurgical opinion.
+- **Warfarin** is reversed with prothrombin complex concentrate plus intravenous vitamin K 5 mg; **dabigatran** with idarucizumab; and **apixaban, rivaroxaban or edoxaban** with andexanet alfa where available, otherwise prothrombin complex concentrate.
+- **Lower the blood pressure rapidly** in people presenting **within 6 hours** with a systolic pressure of **150 to 220 mmHg**: aim for a systolic of **130 to 140 mmHg within one hour**, and avoid dropping it by more than 60 mmHg in that hour. Beyond 6 hours, or above 220 mmHg, treat case by case.
+- **Neurosurgical referral** for hydrocephalus, for a **cerebellar haemorrhage larger than about 3 cm** or one causing brainstem compression or hydrocephalus (where evacuation is urgent and life-saving), and for selected superficial supratentorial clots. Deep haematomas are usually managed medically.
+- **Supportive care on a stroke unit or neurocritical care**: airway protection if the conscious level is falling, treat fever and hyperglycaemia, use intermittent pneumatic compression for venous thromboembolism prophylaxis, and manage raised intracranial pressure (see *Raised intracranial pressure & brain herniation*).
+- **Do not give aspirin or thrombolysis.**
+
+## Afterwards
+
+Blood pressure control is the single most valuable secondary prevention. Whether and when to restart anticoagulation is a specialist decision balancing the reason for it (a mechanical valve is more compelling than atrial fibrillation) against the bleed's cause — recurrence risk is particularly high in cerebral amyloid angiopathy, where a left atrial appendage occlusion device may be preferred instead.`,
+        },
+        {
+          id: "subarachnoid_haemorrhage",
+          name: "Subarachnoid haemorrhage",
+          content: `## What it is
+
+Bleeding into the subarachnoid space, between the arachnoid and pia mater. Around **85% are caused by a ruptured berry (saccular) aneurysm** on the circle of Willis. About 10% are **perimesencephalic non-aneurysmal** haemorrhages, which have a benign course, and the remainder come from arteriovenous malformations, arterial dissection or, rarely, a bleeding disorder.
+
+Aneurysms arise at arterial branch points. The **anterior communicating artery is the commonest site**, followed by the posterior communicating artery (which classically presents with a painful third nerve palsy) and the middle cerebral artery bifurcation.
+
+## Who gets it
+
+More common in women than men, with a peak between 45 and 70 years. Risk factors are **smoking, hypertension and excess alcohol**, plus a family history (particularly two or more affected first-degree relatives) and the connective tissue and vascular conditions that weaken arterial walls: **autosomal dominant polycystic kidney disease, Ehlers-Danlos syndrome and coarctation of the aorta**.
+
+## How it presents
+
+- A **thunderclap headache** — sudden and maximal within one to five minutes, classically occipital and "the worst headache of my life". It is the **speed of onset, not the severity, that matters most**.
+- Vomiting, neck stiffness and photophobia from meningeal irritation, which take hours to develop.
+- Transient loss of consciousness, seizures, or a focal deficit such as a third nerve palsy.
+- **Subhyaloid haemorrhage** on fundoscopy, and papilloedema if pressure is raised.
+- A **sentinel headache** in the preceding days or weeks in a minority, representing a warning leak.
+
+## Investigation
+
+- **Immediate non-contrast CT of the head.** Its sensitivity approaches 100% within **6 hours** of onset, falls to around 90% at 24 hours, and to roughly 50% by one week. The classic appearance is **hyperattenuating blood filling the basal cisterns around the circle of Willis — a "star sign"**.
+- **If the CT is done within 6 hours of onset and is normal**, subarachnoid haemorrhage is effectively excluded: a lumbar puncture is not routinely needed, and alternative diagnoses should be considered.
+- **If the CT is done more than 6 hours after onset and is normal, consider a lumbar puncture.** It must be delayed until **at least 12 hours after symptom onset**, because that is how long haemoglobin takes to break down into bilirubin. The diagnosis is made by **xanthochromia — elevated bilirubin on spectrophotometry**, not by the naked eye and not by a falling red cell count across bottles.
+- Once the diagnosis is confirmed, **CT angiography of the head without delay** to find the aneurysm, with digital subtraction angiography (or magnetic resonance angiography) if it does not.
+- Grade the severity with the **World Federation of Neurosurgical Societies (WFNS)** or **Hunt and Hess** scale, both based on conscious level and focal deficit; the **Fisher grade** describes the volume of blood on CT and predicts vasospasm.
+
+## Management
+
+- **Immediate discussion with a neurosurgical centre**, with transfer for specialist care.
+- **Secure the aneurysm at the earliest opportunity**, because the risk of rebleeding is highest within the first 24 hours. **Endovascular coiling is first-line**, with neurosurgical **clipping** where the anatomy makes coiling unsuitable.
+- **Nimodipine 60 mg orally every 4 hours for 21 days**, given enterally wherever possible. This calcium channel blocker reduces delayed cerebral ischaemia and improves outcome; the intravenous route is reserved for specialist settings when enteral treatment is not possible.
+- Supportive measures: bed rest, adequate analgesia, laxatives to avoid straining, **maintaining euvolaemia**, and avoiding hypotension.
+
+## Complications
+
+| Complication | Timing | Management |
+|---|---|---|
+| **Rebleeding** | Highest in the first 24 hours; 15 to 20% within two weeks if untreated | Secure the aneurysm early — this is the whole reason for urgency |
+| **Delayed cerebral ischaemia** (from vasospasm) | Days 4 to 14, peaking around days 5 to 14; affects about a third | Nimodipine as prophylaxis; ensure euvolaemia and consider a vasopressor to induce hypertension if symptoms persist |
+| **Hydrocephalus** | Acute (obstructive, from intraventricular blood) or late (communicating, from blocked arachnoid granulations) | External ventricular drain acutely; a ventriculoperitoneal shunt if it persists |
+| **Hyponatraemia** | First two weeks | Distinguish the syndrome of inappropriate antidiuretic hormone secretion from **cerebral salt wasting**, which is hypovolaemic — fluid restriction is harmful in the latter |
+| **Seizures** | Any time | Treat as for any acute symptomatic seizure |
+| **Cardiac** | Early | Neurogenic stunned myocardium with electrocardiogram changes and troponin rise that mimic myocardial infarction |
+
+## Afterwards
+
+Blood pressure control and stopping smoking are essential. **Routine screening of relatives is not offered**, because it has not been shown to save lives; it is considered only where at least two first-degree relatives have had an aneurysmal subarachnoid haemorrhage.`,
+        },
+        {
+          id: "extradural_subdural_haematoma",
+          name: "Extradural & subdural haematoma",
+          content: `## Two collections, two very different tempos
+
+Both are collections of blood inside the skull but outside the brain, and both usually follow trauma. They differ in the vessel that bleeds, and therefore in how fast they present.
+
+| | Extradural haematoma | Acute subdural haematoma | Chronic subdural haematoma |
+|---|---|---|---|
+| Bleeding vessel | **Middle meningeal artery**, usually with a temporal or parietal skull fracture | **Bridging veins** torn by acceleration-deceleration | Bridging veins, bleeding slowly over weeks |
+| Typical patient | Young adult after a blow to the temple | Any age, high-energy trauma | Older person, alcohol excess, brain atrophy, on an anticoagulant |
+| Speed | Rapid arterial bleed over hours | Hours | Weeks, often after trivial or forgotten trauma |
+| Classic history | A **lucid interval** — brief loss of consciousness, apparent recovery, then rapid deterioration | Immediate and persistent impairment, often with underlying brain injury | Gradual headache, **fluctuating consciousness**, confusion, personality change, unsteadiness or focal weakness |
+| CT appearance | Biconvex or lens-shaped — a **"lemon"**. Limited by the cranial sutures but can cross the midline | Crescent-shaped — a **"banana"**. Crosses sutures but not the midline | Crescentic and **hypodense** (dark) as the blood degrades; isodense at one to three weeks and easily missed |
+| Treatment | **Urgent craniotomy and evacuation** | Craniotomy if large or causing midline shift | **Burr-hole drainage** if symptomatic; conservative if small and asymptomatic |
+
+## Why the extradural pattern happens
+
+Arterial blood strips the dura from the inner table of the skull, which takes force and time; the initial concussion recovers, giving the lucid interval, until the expanding clot exhausts compensation. Deterioration is then rapid and follows the pattern of **uncal herniation**: a falling conscious level, an **ipsilateral fixed dilated pupil** from third nerve compression, and contralateral hemiparesis. An extradural haematoma treated before that point has an excellent prognosis, which is what makes early CT worthwhile.
+
+## Chronic subdural haematoma
+
+Cerebral atrophy stretches the bridging veins, so a minor knock — often not remembered — tears one. The presentation is insidious and mimics dementia, delirium or stroke, so **image any older person with unexplained cognitive decline, headache or fluctuating consciousness, particularly if anticoagulated**. Burr-hole drainage produces striking improvement in symptomatic cases. **Corticosteroids are not used**: the DEX-CSDH trial found dexamethasone gave worse outcomes than placebo. Middle meningeal artery embolisation is an emerging option for recurrent collections.
+
+## When to scan a head injury
+
+The National Institute for Health and Care Excellence (NICE) guideline on head injury (NG232, 2023) advises **CT of the head within 1 hour** for anyone aged 16 or over with any of:
+
+- A **Glasgow Coma Scale score below 13** on initial assessment, or below 15 at 2 hours after the injury.
+- Suspected **open or depressed skull fracture**.
+- Any sign of a **basal skull fracture**: haemotympanum, "panda" or raccoon eyes, cerebrospinal fluid leaking from the ear or nose, or **Battle's sign** (bruising over the mastoid process).
+- **Post-traumatic seizure**, a **focal neurological deficit**, or **more than one episode of vomiting**.
+
+For someone on an **anticoagulant or antiplatelet** (other than aspirin alone) with no other risk factor, consider CT **within 8 hours** of the injury, or within 1 hour if they present more than 8 hours afterwards.
+
+## Immediate management of either collection
+
+Secure the airway and avoid hypoxia and hypotension, which worsen secondary brain injury; immobilise the cervical spine where the mechanism warrants it; **reverse any anticoagulation urgently**; discuss with neurosurgery early; and treat raised intracranial pressure while awaiting transfer (see *Raised intracranial pressure & brain herniation*).`,
+        },
+        {
+          id: "traumatic_brain_injury",
+          name: "Traumatic brain injury",
+          content: `## Why it matters
+
+Traumatic brain injury is the single largest cause of death in people under 45. The clinical task is to limit **secondary** injury, because the primary damage is done at the moment of impact and cannot be undone.
+
+- **Primary injury**: contusion, laceration, diffuse axonal injury and haematoma, all occurring at impact.
+- **Secondary injury**: hypoxia, hypotension, raised intracranial pressure, hypercapnia, seizures, fever, hypoglycaemia and infection — every one of which is preventable or treatable, and each of which independently worsens outcome.
+
+## Assessing severity
+
+The **Glasgow Coma Scale (GCS)** scores eye opening out of 4, verbal response out of 5 and best motor response out of 6, giving a total from 3 to 15. Record the three components separately, because the motor score carries most of the prognostic weight.
+
+| Severity | GCS |
+|---|---|
+| Mild | 13 to 15 |
+| Moderate | 9 to 12 |
+| Severe | 8 or less — **intubate and ventilate** |
+
+## The patterns of injury
+
+- **Concussion**: a transient disturbance of consciousness and neurological function with a structurally normal scan, recovering over hours to days. Persistent headache, dizziness, poor concentration and irritability make up the post-concussion syndrome.
+- **Contusions**: bruising where the brain strikes the inner skull. A **coup** contusion lies at the site of impact and a **contrecoup** contusion directly opposite it, and the latter is often the larger.
+- **Diffuse axonal injury**: shearing and tensile forces at the moment of impact tear axons, particularly in the **corpus callosum, rostral brainstem and septum pellucidum**. It is the commonest cause of persistent coma and of the vegetative state after trauma. The initial CT may look near-normal — MRI is far more sensitive.
+- **Traumatic subarachnoid haemorrhage**: occurs in around 35% of traumatic brain injuries, and carries a better prognosis than aneurysmal subarachnoid haemorrhage.
+- **Skull fractures**: linear, depressed or basal. A basal fracture is suggested by **straw-coloured fluid** from the nose or ear (cerebrospinal fluid, which forms a "halo" or double ring on tissue paper), haemotympanum, panda eyes and Battle's sign.
+- **Extradural and subdural haematomas** are covered in their own topic.
+
+## Management
+
+- **Airway with cervical spine control, breathing and circulation first.** A single episode of hypoxia or hypotension measurably worsens outcome, so treat both aggressively.
+- **CT of the head** according to the criteria in *Extradural & subdural haematoma*, and **reverse anticoagulation** where present.
+- Early **neurosurgical discussion** for any significant abnormality on imaging, a persistently low GCS, or deterioration.
+- **Prevent and treat raised intracranial pressure** (see *Raised intracranial pressure & brain herniation*). Note that **corticosteroids must not be given in traumatic brain injury** — the CRASH trial showed they increase mortality.
+- Nurse head-up at 30 degrees with the neck neutral, maintain normocapnia and normothermia, and treat seizures promptly.
+
+## Consequences
+
+- **Post-traumatic epilepsy**, more likely after penetrating injury, depressed fracture or intracranial haematoma.
+- **Post-traumatic amnesia**, whose duration is a useful marker of severity.
+- **Endocrine changes** from hypothalamic-pituitary injury, which are commonly missed — check pituitary function in anyone with persistent fatigue or poor recovery.
+- **Neuropsychiatric and cognitive sequelae**, including personality change, depression and post-traumatic dementia.
+- **Second impact syndrome** after returning to sport too soon, which is why a graduated return-to-play protocol exists; repeated head injury is also linked to chronic traumatic encephalopathy.`,
+        },
+        {
+          id: "raised_icp",
+          name: "Raised intracranial pressure & brain herniation",
+          content: `## The physiology that drives everything
+
+Normal intracranial pressure (ICP) in a supine adult is about **5 to 15 mmHg**. The **Monro-Kellie doctrine** states that the skull is a rigid box containing brain, blood and cerebrospinal fluid (CSF) in fixed total volume: if one component grows, another must be displaced. CSF is pushed into the spinal canal and venous blood is squeezed out, so pressure stays near-normal for a time — and then, once that compensation is exhausted, **rises exponentially for a small further increase in volume**. This is why deterioration is often abrupt rather than gradual.
+
+The reason raised pressure harms the brain is perfusion:
+
+**Cerebral perfusion pressure (CPP) = mean arterial pressure (MAP) − ICP**, with a target of **60 to 70 mmHg**.
+
+A rising ICP or a falling blood pressure will each strangle perfusion, which is why hypotension is so dangerous in a head-injured patient.
+
+## Causes
+
+Any space-occupying lesion (tumour, haematoma, abscess), cerebral oedema, hydrocephalus, cerebral venous sinus thrombosis, status epilepticus, hepatic encephalopathy, and idiopathic intracranial hypertension.
+
+**Cerebral oedema** comes in three forms, and the distinction determines treatment:
+
+- **Vasogenic** — breakdown of blood-brain barrier permeability, letting plasma into the extracellular space. Seen around tumours and abscesses. **This is the form that responds to corticosteroids.**
+- **Cytotoxic** — cellular injury with failure of the sodium-potassium pump, causing intracellular swelling. Seen in ischaemia and hypoxia. **Corticosteroids do not help.**
+- **Interstitial** — CSF forced across the ependyma in obstructive hydrocephalus.
+
+## How it presents
+
+- **Headache** that is worse on waking, on lying flat, and on coughing, sneezing or straining.
+- **Vomiting**, classically without nausea, and a **reduced or fluctuating conscious level**.
+- **Papilloedema**, with transient visual obscurations and an enlarging blind spot.
+- A **sixth cranial nerve palsy**, which is a **false localising sign** — the long intracranial course of the abducens nerve makes it vulnerable to stretch wherever the pressure comes from.
+- **Cushing's triad — hypertension with a widening pulse pressure, bradycardia and irregular breathing.** This is a **late, pre-terminal** sign of impending herniation, not an early warning.
+
+## Herniation syndromes
+
+| Type | What moves | Consequence |
+|---|---|---|
+| **Subfalcine (cingulate)** | Cingulate gyrus under the falx cerebri | Compression of the anterior cerebral artery, causing leg-predominant weakness |
+| **Transtentorial (uncal)** | Medial temporal lobe (uncus) through the tentorial notch | **Ipsilateral third nerve palsy with a fixed dilated pupil**, contralateral hemiparesis, then coma. Posterior cerebral artery compression can infarct the occipital lobe. Pressure on the opposite cerebral peduncle gives an **ipsilateral** hemiparesis — Kernohan's notch, another false localising sign |
+| **Central** | Diencephalon downwards through the notch | Progressive loss of consciousness, small reactive then mid-position pupils |
+| **Tonsillar ("coning")** | Cerebellar tonsils through the foramen magnum | Brainstem compression, cardiorespiratory arrest and death |
+
+> **A lumbar puncture must not be performed where a mass lesion or obstructive hydrocephalus is suspected** — removing CSF from below creates a pressure gradient that precipitates tonsillar herniation.
+
+## Investigation
+
+Urgent CT of the head; MRI where a tumour or venous thrombosis is suspected. **Invasive ICP monitoring** is used in severe traumatic brain injury, typically for a GCS of 8 or less with an abnormal CT. Fundoscopy for papilloedema is useful when positive, but its absence never excludes acutely raised pressure.
+
+## Management, in escalating order
+
+- **First, treat the cause** — evacuate the haematoma, drain the hydrocephalus, resect or debulk the tumour, treat the abscess.
+- **Simple measures**: nurse **head-up at 30 degrees with the neck neutral** (a rotated or flexed neck obstructs jugular venous drainage), treat pain, agitation, fever and seizures, and avoid hypotonic fluids.
+- **Optimise physiology**: maintain oxygenation and normocapnia, keep the blood pressure adequate for cerebral perfusion pressure, and control glucose.
+- **Sedation**, with neuromuscular blockade if needed, to reduce cerebral metabolic demand.
+- **Osmotherapy**: **hypertonic saline is now generally preferred to mannitol** in traumatic brain injury and intracranial haemorrhage. Mannitol is dosed at 0.25 to 1 g/kg, avoiding a systolic blood pressure below 90 mmHg and watching for the rebound rise as it crosses a damaged barrier.
+- **Dexamethasone for vasogenic oedema around a tumour or abscess only.** It **must not** be used in traumatic brain injury, where the CRASH trial showed it increases mortality, and it has no place in ischaemic stroke.
+- **Hyperventilation to a PaCO2 of 4.0 to 4.5 kPa** is a **temporising bridge only**: the vasoconstriction that lowers pressure also reduces cerebral blood flow, and the effect wears off within hours.
+- **CSF diversion** with an external ventricular drain, and **decompressive craniectomy** as the final surgical option, when the measures above fail.`,
+        },
+        {
+          id: "hydrocephalus",
+          name: "Hydrocephalus",
+          content: `## What it is
+
+An excess of cerebrospinal fluid (CSF) within the skull, with enlargement of the ventricular system. It is a disorder of CSF **circulation or absorption** far more often than of production.
+
+## Normal CSF physiology
+
+About 500 mL is produced each day by the **choroid plexus**, against a total volume of roughly 150 mL, so the whole volume is turned over three or four times a day. The pathway is worth knowing precisely, because obstruction at each point produces a recognisable pattern:
+
+**Lateral ventricles → interventricular foramina (of Monro) → third ventricle → cerebral aqueduct (of Sylvius) → fourth ventricle → foramina of Luschka and Magendie → subarachnoid space around the brain and spinal cord → reabsorbed through the arachnoid granulations into the superior sagittal sinus.**
+
+## The two types
+
+The division is by whether CSF can still reach the subarachnoid space, and it decides what is safe to do.
+
+| | **Non-communicating (obstructive)** | **Communicating** |
+|---|---|---|
+| Mechanism | Obstruction **within the ventricular system**, so CSF cannot escape into the subarachnoid space | CSF leaves the ventricles freely but is **not absorbed** (or, rarely, is overproduced) |
+| Typical causes | Aqueduct stenosis, posterior fossa or intraventricular tumour, colloid cyst of the third ventricle, intraventricular haemorrhage, Chiari malformation | After subarachnoid haemorrhage or meningitis, where the arachnoid granulations become fibrosed and scarred; choroid plexus papilloma (overproduction) |
+| Lumbar puncture | **Absolutely contraindicated** — it precipitates coning | Safe, and in normal pressure hydrocephalus it is the diagnostic test |
+
+A third label, **hydrocephalus ex vacuo**, describes ventricles that look large only because the brain around them has atrophied. It is not true hydrocephalus and needs no treatment.
+
+## How it presents
+
+The presentation depends almost entirely on age and speed of onset.
+
+- **Infants**, whose sutures have not fused: **head circumference crossing centiles**, a **bulging tense fontanelle**, splayed sutures, dilated scalp veins, irritability, poor feeding, vomiting, and **"sunsetting" eyes** (a failure of upgaze from pressure on the dorsal midbrain).
+- **Older children and adults, acutely**: the features of raised intracranial pressure — headache worse on waking and on straining, vomiting, papilloedema, diplopia and a falling conscious level. Acute obstructive hydrocephalus is a **neurosurgical emergency**.
+- **Older adults, insidiously — normal pressure hydrocephalus**: **Hakim's triad** of gait apraxia, urinary incontinence and cognitive impairment, remembered as "wet, wacky and wobbly". The **gait comes first and is the most reversible**; a magnetic, shuffling, broad-based gait in someone whose "dementia" is progressing oddly quickly should prompt imaging. It is commonest over 65.
+
+## Investigation
+
+- **CT or MRI**: ventriculomegaly with an **Evans index above 0.3** (the ratio of the widest frontal horn span to the widest inner skull diameter), dilated temporal horns, and periventricular **transependymal oedema** in acute obstructive hydrocephalus. MRI also shows the level of any obstruction.
+- In suspected normal pressure hydrocephalus, the ventricles must be **disproportionate to the degree of cortical atrophy** — large ventricles in a globally shrunken brain are atrophy, not hydrocephalus.
+- A **large-volume lumbar puncture ("tap test")** with **objective gait assessment before and after** helps predict who will benefit from shunting; extended lumbar drainage is used where the result is equivocal.
+
+## Management
+
+- **Acute obstructive hydrocephalus**: urgent CSF diversion with an **external ventricular drain**, alongside treatment of the cause.
+- **Definitive treatment** is a **ventriculoperitoneal shunt**, usually with a programmable valve.
+- **Endoscopic third ventriculostomy** is the hardware-free alternative in obstructive hydrocephalus, particularly aqueduct stenosis: a channel is made in the floor of the third ventricle so CSF bypasses the block.
+- **Normal pressure hydrocephalus** is treated with a shunt, which helps around **75% of appropriately selected patients**; gait improves most and earliest, cognition least.
+
+## Shunt complications
+
+- **Infection**, usually with coagulase-negative staphylococci such as *Staphylococcus epidermidis*, and commonest in the first months after insertion.
+- **Blockage or mechanical failure**, presenting as a return of raised-pressure symptoms.
+- **Over-drainage**, causing low-pressure (postural) headache and, because the brain pulls away from the dura, **subdural haematoma**.
+- Abdominal complications such as a CSF pseudocyst, and seizures.`,
         },
         {
           id: "cns_tumours",
