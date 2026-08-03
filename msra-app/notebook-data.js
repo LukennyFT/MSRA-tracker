@@ -1610,28 +1610,376 @@ The individual disorders are rare and there are hundreds of them, so the practic
       topics: [
         {
           id: "headache_red_flags",
-          name: "Headache red flags",
-          content: `## Approach to headache
+          name: "Headache: red flags & approach",
+          content: `## The task
 
-Most headaches are benign (tension-type or migraine), but a small number signal serious disease. The skill is sorting one from the other.
+Most headache is primary — migraine, tension-type or a trigeminal autonomic cephalalgia — and needs no imaging. A small proportion is secondary to something dangerous. The whole skill is sorting one from the other on the history, because examination is usually normal in both.
 
-## Red flags that warrant urgent action
+Three questions do most of the work: **how fast did it come on**, **is this different from the patient's usual headache**, and **is there anything abnormal on examination**.
 
-- **Thunderclap onset** (maximal within seconds to minutes): consider subarachnoid haemorrhage.
-- **New headache over 50 with scalp tenderness or jaw claudication**: consider giant cell arteritis and start steroids before the biopsy.
-- **Fever, neck stiffness and photophobia**: consider meningitis.
-- **Features of raised intracranial pressure**: worse in the morning or on coughing, with vomiting or visual disturbance.
-- **Focal neurological signs, reduced consciousness or new seizures.**
+## Red flags — SNOOP
 
-## Common primary headaches
+- **S**ystemic features — fever, weight loss, night sweats, cancer, immunosuppression, pregnancy or the puerperium.
+- **N**eurological signs or symptoms — focal deficit, seizure, papilloedema, reduced consciousness, personality change.
+- **O**nset that is sudden — **thunderclap**, reaching maximum within one to five minutes.
+- **O**lder — new headache over 50.
+- **P**attern change, **P**ositional headache, or headache precipitated by **P**hysical exertion, coughing, straining or sexual activity.
+
+## The dangerous causes and what gives them away
+
+| Cause | The clue |
+|---|---|
+| **Subarachnoid haemorrhage** | Thunderclap onset — speed matters more than severity. CT within 6 hours effectively excludes it; later, lumbar puncture at 12 hours for xanthochromia |
+| **Giant cell arteritis** | New headache over 50 with scalp tenderness, jaw claudication or visual symptoms. Raised ESR and CRP. **Start high-dose steroids before the biopsy** — sight loss is irreversible |
+| **Meningitis or encephalitis** | Fever with neck stiffness and photophobia; altered behaviour or consciousness points to encephalitis. Do not delay antibiotics or aciclovir for investigations |
+| **Raised intracranial pressure or tumour** | Worse on waking, on lying flat, on coughing or straining; vomiting; papilloedema; progressive focal deficit or new seizure |
+| **Idiopathic intracranial hypertension** | Young woman with obesity, papilloedema, pulsatile tinnitus and transient visual obscurations |
+| **Cerebral venous sinus thrombosis** | Progressive headache with seizures or focal signs; pregnancy, puerperium, dehydration, thrombophilia or combined hormonal contraception. Needs MR or CT **venography** |
+| **Carotid or vertebral artery dissection** | Neck or face pain after minor trauma, with a painful Horner syndrome or stroke symptoms |
+| **Acute angle-closure glaucoma** | Painful red eye, haloes around lights, fixed mid-dilated pupil, nausea and vomiting |
+| **Pituitary apoplexy** | Thunderclap headache with visual field loss, ophthalmoplegia and hypopituitarism |
+| **Pre-eclampsia** | Headache after 20 weeks of pregnancy with hypertension, proteinuria, visual disturbance and epigastric pain |
+| **Carbon monoxide poisoning** | Headache affecting a whole household, worse indoors and improving away from home |
+| **Medication-overuse headache** | Daily or near-daily headache in someone taking acute treatment on 10 or more days a month |
+
+## When to image
+
+Image urgently for thunderclap onset, papilloedema, a focal deficit, a new seizure, reduced consciousness, a progressive headache over weeks, or new headache in someone immunosuppressed or with cancer. A stable pattern of typical migraine or tension-type headache with a normal examination does not need a scan, and saying so clearly is part of the treatment.
+
+## The primary headaches at a glance
 
 | Type | Pattern | Key treatment |
 |---|---|---|
-| Migraine | Unilateral, throbbing, nausea, photophobia | Triptan plus NSAID; prophylaxis if frequent |
-| Tension-type | Bilateral, tight band, no nausea | Simple analgesia, reassurance |
-| Cluster | Severe unilateral periorbital, autonomic | High-flow oxygen, subcutaneous triptan |
+| **Migraine** | Unilateral, throbbing, 4 to 72 hours, nausea and photophobia, sometimes aura | Triptan plus NSAID; prophylaxis if frequent |
+| **Tension-type** | Bilateral, tight band, no nausea, not worsened by activity | Simple analgesia, address triggers |
+| **Cluster** | Severe unilateral periorbital, 15 to 180 minutes, autonomic features, restless | High-flow oxygen and subcutaneous sumatriptan; verapamil to prevent |
+| **Trigeminal neuralgia** | Seconds-long electric shocks triggered by touch | Carbamazepine |
 
-> Beware medication-overuse headache in anyone using acute painkillers on more than about ten to fifteen days a month.`,
+> **Always ask how many days a month acute painkillers are taken.** Medication-overuse headache is the commonest cause of chronic daily headache and the commonest reason effective treatment stops working — and patients volunteer their headache frequency but not their tablet frequency.`,
+        },
+        {
+          id: "migraine",
+          name: "Migraine",
+          content: `## Migraine
+
+A recurrent primary headache disorder with attacks of moderate to severe, often unilateral throbbing pain lasting 4 to 72 hours, with nausea and photophobia. About a third have aura. It affects roughly 15% of adults, three times more women than men, and is the commonest disabling neurological condition in primary care.
+
+## The phases
+
+- **Prodrome** — yawning, mood change, food craving, up to 48 hours before.
+- **Aura** (about a third) — fully reversible focal symptoms developing over 5 to 60 minutes: visual (fortification spectra, scintillating scotoma) most often, then sensory, then dysphasic. Cortical spreading depression travels at about 3 mm per minute, which is why aura **evolves and marches** rather than starting complete. Sudden-onset, maximal-at-onset symptoms are not aura and should raise transient ischaemic attack instead.
+- **Headache** — unilateral, pulsating, worsened by routine activity, with nausea, vomiting, photophobia and phonophobia.
+- **Postdrome** — a hungover, washed-out day.
+
+**Chronic migraine** means headache on 15 or more days a month for more than 3 months, migrainous on at least 8.
+
+## Diagnosis
+
+Clinical, supported by a **headache diary kept for at least 8 weeks** recording frequency, triggers and — critically — the number of **acute treatment days per month**, which is what detects medication overuse. Imaging only for red flags.
+
+## Acute treatment
+
+- An **oral triptan with an NSAID or paracetamol**, taken early. Combining beats either alone; if one triptan fails, try a different one before abandoning the class.
+- An **antiemetic** (metoclopramide or prochlorperazine) even without vomiting, because gastric stasis limits absorption.
+- **Rimegepant** where triptans fail or are contraindicated.
+- **Avoid opioids and ergots** — less effective, worsen nausea, and the drugs most likely to cause medication-overuse headache.
+- Keep acute treatment to **fewer than 10 days a month** (15 for simple analgesics).
+
+## Prevention
+
+Offered when attacks are frequent or disabling. Allow **8 to 12 weeks at an adequate dose** before calling a drug a failure.
+
+| Line | Options |
+|---|---|
+| First | **Propranolol** (avoid in asthma), **amitriptyline**, or **candesartan** (unlicensed but well evidenced) |
+| Also | **Topiramate** — effective, but see the warning below |
+| Non-drug | Up to 10 sessions of acupuncture over 5 to 8 weeks; riboflavin 400 mg daily |
+| After 3 failures | A **CGRP monoclonal antibody** (erenumab, fremanezumab, galcanezumab, eptinezumab), **atogepant**, or **botulinum toxin A** in chronic migraine |
+
+> **Topiramate is now subject to the MHRA Pregnancy Prevention Programme.** It must not be used in pregnancy, or in anyone of childbearing potential without highly effective contraception, with pregnancy excluded before starting and annual review. Exposure causes congenital malformation, low birth weight, and raised rates of intellectual disability, autism and ADHD. It also reduces the efficacy of combined hormonal contraception at higher doses.
+
+## Two rules worth memorising
+
+- **Menstrual migraine:** frovatriptan or zolmitriptan for a few days around menstruation.
+- **Migraine WITH AURA is an absolute contraindication to combined hormonal contraception** — aura roughly doubles ischaemic stroke risk and the pill multiplies it. Offer a progestogen-only or non-hormonal method.
+
+In pregnancy, paracetamol is first-line; NSAIDs may be used in the second trimester; most preventives are avoided, though propranolol and amitriptyline are used where necessary.`,
+        },
+        {
+          id: "tension_and_medication_overuse_headache",
+          name: "Tension-type & medication-overuse headache",
+          content: `## Tension-type headache
+
+The commonest primary headache, with a lifetime prevalence of around 70%.
+
+- **Bilateral**, pressing or tightening, mild to moderate, lasting 30 minutes to 7 days.
+- **NOT** worsened by walking or climbing stairs, no vomiting, and at most one of photophobia or phonophobia.
+- Pericranial muscle tenderness supports it.
+
+Unilateral throbbing pain, prominent nausea, aura or aggravation by activity all point to **migraine** instead — which matters, because tension-type headache is frequently the label given to undertreated migraine.
+
+**Treatment:** paracetamol, aspirin or an NSAID, limited to fewer than 15 days a month, and **avoid codeine-containing compound analgesics entirely**. Non-drug measures do most of the work — regular sleep and meals, hydration, exercise, posture and workstation review, and stress management or cognitive behavioural therapy. For frequent or chronic headache, NICE supports up to 10 acupuncture sessions over 5 to 8 weeks; low-dose amitriptyline at night is used off-label as prophylaxis. Treat coexisting depression or anxiety, and arrange an eye test where headache relates to close work.
+
+## Medication-overuse headache
+
+The commonest cause of chronic daily headache, and the commonest reason a previously effective treatment stops working. **Always ask how many days a month acute medication is taken** — patients volunteer their headache frequency but not their tablet frequency.
+
+| Drug class | Overuse threshold |
+|---|---|
+| Triptans, opioids, ergots, combination analgesics | **10 or more days a month** |
+| Simple analgesics — paracetamol, aspirin, NSAIDs | **15 or more days a month** |
+
+Either, for more than 3 months, in someone with a pre-existing headache disorder, defines it. **Codeine-containing compound analgesics are the classic culprit**, and they are available over the counter.
+
+## Withdrawal is the treatment
+
+NICE advises stopping the overused drug **abruptly and all at once**, rather than tapering, for **at least one month**.
+
+- Warn explicitly that the **headache will worsen for one to two weeks before it improves**, often with nausea, poor sleep and irritability. Patients who are not warned restart the drug and conclude that withdrawal does not work.
+- Start or optimise a **preventive at the same time**, which makes withdrawal tolerable and treats the underlying disorder.
+- Offer support and a planned review; consider a short course of a bridging treatment, and specialist referral for those on opioids, with significant comorbidity, or who have failed withdrawal before.
+
+> **The trap is escalating analgesia.** A patient with worsening daily headache who is prescribed stronger painkillers gets worse, not better. Recognising this pattern and reversing it is one of the highest-yield interventions in headache medicine.`,
+        },
+        {
+          id: "cluster_headache_tacs",
+          name: "Cluster headache & the trigeminal autonomic cephalalgias",
+          content: `## The family
+
+The trigeminal autonomic cephalalgias are strictly **unilateral** headaches with **ipsilateral cranial autonomic features** — lacrimation, conjunctival injection, rhinorrhoea, nasal congestion, eyelid oedema, ptosis and miosis. They are separated almost entirely by **attack duration and frequency**, and one of them is defined by its response to a drug.
+
+| | Attack length | Attacks per day | Treatment that defines it |
+|---|---|---|---|
+| **Cluster headache** | 15 to 180 minutes | 1 every other day to 8 | High-flow oxygen and subcutaneous sumatriptan |
+| **Paroxysmal hemicrania** | 2 to 30 minutes | More than 5 | **Absolute response to indometacin** |
+| **SUNCT / SUNA** | 1 to 600 seconds | Many, up to hundreds | Lamotrigine; notoriously refractory |
+
+**Always trial indometacin** in a short-lasting unilateral headache with autonomic features — missing an indometacin-responsive headache condemns someone to years of untreated pain.
+
+## Cluster headache
+
+The most severe of the primary headaches, sometimes called suicide headache. Affects about 1 in 1000, three times more men, onset typically 20 to 40, strongly associated with smoking.
+
+**Presentation:** rapid-onset, strictly unilateral, boring periorbital or temporal pain peaking within minutes, lasting 15 to 180 minutes, characteristically **waking the patient one to two hours after falling asleep** and recurring at the same time each night. Ipsilateral autonomic features, and a **partial Horner syndrome** with ptosis and miosis. Unlike migraine, the patient is **agitated and paces** rather than lying still.
+
+**Pattern:** episodic disease comes in bouts of weeks to months with remissions of 3 months or more; chronic disease has no meaningful remission. Alcohol reliably provokes an attack **during a bout** and has no effect in remission — a pattern that is almost diagnostic.
+
+**Investigation:** MRI of the brain with **pituitary views** at least once, because pituitary and posterior fossa lesions reproduce the syndrome exactly.
+
+## Treatment of cluster headache
+
+- **Acute:** high-flow **100% oxygen at 12 to 15 litres per minute through a non-rebreathe mask** for 15 to 20 minutes — this aborts about 70% of attacks and needs home cylinders arranged in advance — **plus subcutaneous sumatriptan 6 mg** or nasal zolmitriptan. Oral triptans are too slow and simple analgesia is useless.
+- **Prevention during a bout:** **verapamil**, titrated upwards with an **ECG before starting and before every dose increase**, because it causes dose-dependent heart block.
+- **Bridging** while verapamil takes effect (one to two weeks): a tapering course of oral prednisolone, or a greater occipital nerve block.
+- **Refractory or chronic disease:** lithium, topiramate, CGRP monoclonal antibodies, occipital nerve stimulation.
+
+> Ask directly about **suicidal thoughts**. The pain is severe enough that the risk is real and under-recognised, and it is one of the few headache disorders where this question belongs in every consultation.
+
+NICE advises specialist referral at first presentation, and urgent referral if the diagnosis is uncertain.`,
+        },
+        {
+          id: "trigeminal_neuralgia",
+          name: "Trigeminal neuralgia",
+          content: `## Trigeminal neuralgia
+
+Paroxysms of severe, **electric-shock-like** unilateral facial pain in the trigeminal territory, lasting seconds to two minutes, **triggered by innocuous stimuli** — light touch, shaving, brushing teeth, chewing, talking or cold air — with complete freedom between attacks.
+
+Incidence is 4 to 13 per 100,000 per year, commoner in women, typically over 50.
+
+## Why the attacks behave as they do
+
+**Neurovascular compression** of the trigeminal root entry zone, usually by the superior cerebellar artery, demyelinates the nerve. This allows ectopic impulse generation and **ephaptic cross-talk** between light-touch fibres and pain fibres, so an innocuous stimulus triggers a burst of pain — followed by a refractory period, which is why the attacks are brief, stereotyped and separated by pain-free intervals.
+
+## Recognising a secondary cause
+
+Examination is **normal** in classical disease. Any of the following should prompt a hard look for a secondary cause:
+
+- **Onset under 40.**
+- **Bilateral** pain.
+- **Sensory loss** in the trigeminal territory, or a reduced corneal reflex.
+- Poor response to carbamazepine.
+
+The causes to find are a **pontine multiple sclerosis plaque** (2 to 4% of cases, and more often bilateral), a cerebellopontine angle tumour, or a skull base lesion. **MRI with dedicated trigeminal sequences and angiography is now recommended in everyone**, both to demonstrate compression — which predicts response to surgery — and to exclude these.
+
+## Treatment
+
+**Carbamazepine is first-line**, started at 100 mg once or twice daily and titrated to response, typically to 600 to 800 mg daily. The response is often dramatic and, in a typical history, supports the diagnosis; absence of response should prompt a rethink rather than simply a higher dose.
+
+Monitor for its problems: **hyponatraemia**, rash including **Stevens-Johnson syndrome** (test for the HLA-B 15:02 allele in people of Han Chinese or Thai descent), marrow suppression, ataxia in older patients, and its many **enzyme-inducing interactions** — including loss of efficacy of combined hormonal contraception and direct oral anticoagulants.
+
+Alternatives or add-ons: oxcarbazepine, lamotrigine, gabapentin, pregabalin, baclofen. **Simple analgesia and opioids do not work** — worth stating plainly, because patients often arrive on co-codamol.
+
+**Refractory pain** (inadequate control on two adequately dosed drugs, or intolerable side effects) warrants surgical referral rather than years of dose juggling:
+
+- **Microvascular decompression** treats the cause and has the best durability, with around 70% pain-free at 10 years, at the cost of a posterior fossa craniotomy.
+- **Stereotactic radiosurgery** — less invasive, benefit delayed by weeks.
+- **Percutaneous balloon compression or radiofrequency ablation** — suits frailer patients but works by injuring the nerve, so numbness is expected and **anaesthesia dolorosa**, persistent pain in a numb area, is the feared complication.
+
+Trigeminal neuralgia characteristically **remits for months or years**, so attempt a slow dose reduction during pain-free periods rather than continuing treatment indefinitely.`,
+        },
+        {
+          id: "idiopathic_intracranial_hypertension",
+          name: "Idiopathic intracranial hypertension",
+          content: `## Idiopathic intracranial hypertension
+
+Raised intracranial pressure with **normal brain imaging and normal cerebrospinal fluid constituents**. It occurs overwhelmingly in young women with obesity — around 20 per 100,000 in obese women aged 20 to 44, against 1 to 2 per 100,000 overall — and the incidence is rising.
+
+> **The headache brings them, but VISION is what is at stake.** Central acuity is preserved until very late, so a patient can be losing sight while still reading the bottom of the Snellen chart. **Visual fields, not acuity, track the disease.**
+
+## Causes
+
+Idiopathic, strongly associated with obesity and recent weight gain. The **reversible drug causes** matter most in practice:
+
+- **Tetracyclines** — doxycycline, minocycline.
+- **Vitamin A and retinoids** — including isotretinoin for acne.
+- **Lithium, nitrofurantoin, growth hormone**, and **corticosteroid withdrawal**.
+
+Also associated with polycystic ovary syndrome, obstructive sleep apnoea, anaemia and chronic kidney disease. **Cerebral venous sinus thrombosis must always be excluded** before the label is applied.
+
+## How it presents
+
+- Daily headache, worse **on waking, lying flat and straining**, often with neck and back pain.
+- **Pulsatile tinnitus** — a whooshing synchronous with the pulse. Characteristic, and rarely volunteered, so ask.
+- **Transient visual obscurations** lasting seconds on standing or bending.
+- Horizontal diplopia from a **sixth nerve palsy** — a false localising sign.
+- Progressive peripheral field loss with an enlarged blind spot, and bilateral papilloedema.
+
+## Investigation, in order
+
+- **Urgent MRI head WITH venography** — to exclude a mass and venous sinus thrombosis. Supportive signs: empty sella, flattened posterior globe, distended perioptic sheaths, transverse sinus stenosis (usually a consequence of the raised pressure rather than its cause).
+- **Lumbar puncture in the lateral decubitus position** — opening pressure above **25 cmH2O** with **normal constituents**. Any cells, raised protein or low glucose means a different diagnosis.
+- **Formal perimetry and optical coherence tomography** at diagnosis and serially.
+
+## Treatment
+
+- **Weight loss is disease-modifying**, not general advice. A sustained 10 to 15% reduction can induce remission, and trial evidence favours **bariatric surgery over community weight management** where the BMI is above 35 — so discuss referral early rather than after years of failed dieting.
+- **Stop the causative drug.**
+- **Acetazolamide**, titrated as tolerated; limiting effects are paraesthesiae, taste disturbance (notably of fizzy drinks), fatigue and renal stones. **Topiramate** is an alternative that also aids weight loss.
+- Treat the headache while avoiding medication-overuse headache.
+
+**If vision deteriorates despite treatment, this is sight-threatening and needs same-day ophthalmology.** Fulminant disease can blind within weeks. Surgery is chosen by which problem dominates: **optic nerve sheath fenestration** for visual failure, **CSF diversion** (ventriculoperitoneal or lumboperitoneal shunt) where headache dominates, and **venous sinus stenting** in selected patients with a significant pressure gradient. Repeat lumbar puncture is a temporising measure only.`,
+        },
+        {
+          id: "epilepsy_classification",
+          name: "Seizures: classification & the first seizure",
+          content: `## Getting the classification right matters
+
+Drug choice follows seizure type, and getting it wrong can make seizures **worse** rather than merely fail to help. Classification is made on the history and a witness account, supported by EEG and MRI.
+
+## Focal versus generalised
+
+**Focal seizures** begin in one hemispheric network:
+
+- **Focal aware** (previously simple partial) — consciousness retained. The aura localises: epigastric rising, deja vu, fear or an olfactory hallucination in temporal lobe onset; a Jacksonian march or contralateral head turning in frontal onset.
+- **Focal with impaired awareness** (previously complex partial) — automatisms such as lip-smacking, fumbling or picking, followed by post-ictal confusion.
+- **Focal to bilateral tonic-clonic** — evolution to a convulsion, previously called secondary generalisation.
+
+**Generalised seizures** engage bilateral networks from the outset:
+
+- **Tonic-clonic** — sudden loss of consciousness, stiffening then jerking, **lateral tongue-biting**, incontinence, cyanosis, then prolonged post-ictal confusion, muscle pain and sometimes a **Todd's paresis**.
+- **Absence** — brief blank spells with abrupt onset and offset and immediate recovery, often provoked by hyperventilation; a childhood syndrome.
+- **Myoclonic** — brief shock-like jerks, characteristically soon after waking.
+- **Tonic and atonic** — stiffening or sudden loss of tone with drop attacks.
+
+## Syndromes worth recognising
+
+- **Juvenile myoclonic epilepsy** — teenage onset, early-morning myoclonic jerks (spilling the cereal), generalised tonic-clonic seizures, provoked by sleep deprivation and alcohol. Usually lifelong treatment.
+- **Childhood absence epilepsy** — 4 to 10 years, many brief absences daily, 3 Hz spike-and-wave on EEG, good prognosis.
+- **Temporal lobe epilepsy** — aura, automatisms, post-ictal confusion, often with hippocampal sclerosis and a good response to surgery.
+
+## Seizure or not? The main mimics
+
+| | Seizure | Syncope | Dissociative (non-epileptic) attack |
+|---|---|---|---|
+| Onset | Sudden, may have aura | Prodromal light-headedness, nausea, greying vision | Often gradual, situational |
+| Duration | 1 to 3 minutes | Seconds | Often prolonged, minutes to an hour |
+| Movements | Rhythmic, synchronous, decreasing frequency | Brief irregular jerks (convulsive syncope) | Asynchronous, waxing and waning, pelvic thrusting, side-to-side head movement |
+| Eyes | **Open** | Open | Often **forcefully closed** and resist opening |
+| Tongue | **Lateral** bite | Rare, tip if any | Rare |
+| Recovery | Prolonged confusion | Rapid | Variable, often tearful |
+
+Convulsive syncope is regularly misdiagnosed as epilepsy, which is why a **12-lead ECG is mandatory in everyone** presenting with a first seizure — long QT syndrome and other arrhythmias kill and are treatable.
+
+## The first seizure
+
+- **ECG, capillary glucose, sodium, calcium, magnesium**, and toxicology where relevant. Serum prolactin is unreliable and is not used.
+- **Refer to a first seizure clinic to be seen within 2 weeks.**
+- **EEG** supports classification but does not diagnose: a normal EEG never excludes epilepsy, and epileptiform activity in someone without seizures does not make it.
+- **MRI brain** in everyone except clear idiopathic generalised epilepsy.
+- Distinguish an **acute symptomatic (provoked)** seizure — from alcohol withdrawal, hypoglycaemia, hyponatraemia, drugs or eclampsia — which is treated by correcting the cause and is **not** epilepsy.
+- **Driving:** after a first unprovoked seizure the DVLA requires **6 months off driving**, extended to **12 months** where investigations or clinical factors suggest a higher recurrence risk.`,
+        },
+        {
+          id: "epilepsy_management",
+          name: "Epilepsy: drug treatment & living with it",
+          content: `## When to start
+
+Treatment usually begins after a **second** unprovoked seizure, or after the first where recurrence risk is high — a structural lesion on MRI, epileptiform EEG, or a neurological deficit. The decision is a specialist one and weighs seizure risk against drug burden and the effect on driving and work.
+
+## Choosing by seizure type
+
+| Seizure type | First-line | Notes |
+|---|---|---|
+| **Focal** | **Lamotrigine** or **levetiracetam** | Carbamazepine, oxcarbazepine or zonisamide second-line |
+| **Generalised tonic-clonic** | **Sodium valproate** where the valproate rules allow, otherwise **lamotrigine** or **levetiracetam** | Lamotrigine can worsen myoclonus |
+| **Absence** | **Ethosuximide** | Valproate second-line, then lamotrigine or levetiracetam |
+| **Myoclonic** | **Sodium valproate**, or **levetiracetam** where valproate is not permitted | |
+| **Tonic or atonic** | **Sodium valproate**, with lamotrigine as add-on | |
+
+> **AVOID carbamazepine, oxcarbazepine, phenytoin, gabapentin and pregabalin in absence and myoclonic epilepsy** — these sodium channel blockers and gabapentinoids **exacerbate** them, sometimes dramatically. A favourite exam point and a real-world error.
+
+## The valproate restriction
+
+Since **January 2024**, sodium valproate must **not be started in anyone under 55 — male or female — unless two specialists independently agree and document that there is no other effective and tolerated treatment**. The risks driving this are roughly a **10% rate of major congenital malformation** and a **30 to 40% rate of neurodevelopmental disorder** after exposure in pregnancy, with possible effects on male fertility. Existing treatment is reviewed rather than stopped abruptly, since abrupt withdrawal risks status epilepticus.
+
+## Principles of use
+
+- **Monotherapy at the lowest effective dose**, titrated slowly. Lamotrigine in particular must be increased slowly because of rash and Stevens-Johnson risk; levetiracetam titrates faster but causes irritability and mood change in a significant minority.
+- Give each drug a fair trial at an adequate dose before calling it a failure — **under-dosing and poor adherence are the commonest reasons for apparent resistance**. Ask about adherence directly and without judgement.
+- **Drug-resistant epilepsy** — failure of two appropriately chosen, adequately dosed drugs — affects about a third and should trigger specialist referral rather than a third and fourth drug in primary care. Options then are **epilepsy surgery** (potentially curative, particularly in hippocampal sclerosis, and markedly under-used), **vagus nerve stimulation**, the **ketogenic diet**, and newer agents such as **cenobamate**, recommended by NICE as a second-line add-on in drug-resistant focal epilepsy.
+- **Withdrawal** may be considered after **2 or more seizure-free years**, by slow taper under specialist guidance, weighing recurrence risk against treatment burden and the effect on driving.
+
+## Living with epilepsy — the conversations that get forgotten
+
+- **Driving (DVLA):** a car licence requires **12 months seizure-free**; after 5 seizure-free years a licence to age 70 is usually issued. Group 2 (bus or lorry) requires 10 years seizure-free off medication. Seizures **only in sleep** have their own rules.
+- **Safety:** showers rather than baths, caution with heights, cooking and swimming, and supervision advice tailored to seizure type.
+- **SUDEP** — sudden unexpected death in epilepsy — should be discussed openly. The risk falls with better seizure control and with nocturnal supervision, and patients report being angry when it is withheld.
+- **Contraception and pregnancy:** enzyme-inducing drugs (carbamazepine, phenytoin, topiramate at higher doses) reduce contraceptive efficacy, and lamotrigine levels fall with oestrogen. Anyone who might become pregnant should take **folic acid 5 mg daily**, and pregnancy should be planned with the epilepsy team — seizures themselves also carry risk, so drugs are not simply stopped.
+- **Bone health, mood and memory** — screen for depression, and remember that enzyme inducers reduce bone density with long-term use.`,
+        },
+        {
+          id: "status_epilepticus",
+          name: "Status epilepticus",
+          content: `## Definition and why the clock matters
+
+A single seizure lasting **5 minutes or more**, or repeated seizures without recovery of consciousness in between. The old 30-minute definition was abandoned because seizures lasting beyond 5 minutes rarely stop on their own.
+
+**The pharmacology explains the urgency.** As status continues, GABA-A receptors are internalised while excitatory NMDA receptors move to the membrane, so the seizure becomes **progressively less responsive to benzodiazepines**. Late treatment is less effective treatment, and continuing activity causes excitotoxic neuronal injury, hyperthermia, rhabdomyolysis and cardiorespiratory compromise. Mortality is around 20%, driven mainly by the underlying cause.
+
+## Causes
+
+In known epilepsy: **non-adherence or abrupt withdrawal** of medication, intercurrent infection, alcohol. In those without epilepsy: stroke, CNS infection, traumatic brain injury, hypoglycaemia and other metabolic derangement, drug toxicity or withdrawal, autoimmune encephalitis and **eclampsia**.
+
+## The stepwise pathway
+
+- **Immediately:** airway, high-flow oxygen, intravenous access, and **check the glucose** — hypoglycaemic seizures will not respond to benzodiazepines.
+- **First-line:** **IV lorazepam 4 mg**. In the community, **buccal midazolam** or rectal diazepam, which trained family members can give.
+- **Repeat once after 5 to 10 minutes** if the seizure continues — and **no more than two doses of benzodiazepine in total**. Further doses add respiratory depression and hypotension without improving control, and delay the drug that is actually needed.
+- **Second-line at about 20 minutes:** **IV levetiracetam, phenytoin or sodium valproate**. The ESETT trial found all three **equally effective**, terminating status in about half of patients. Levetiracetam is often preferred because it is quick to give with fewer cardiovascular effects; phenytoin needs cardiac monitoring and a large cannula, because extravasation causes severe tissue injury.
+- **Give parenteral thiamine** before glucose in anyone who may be alcohol-dependent or malnourished.
+- **Refractory status at 30 to 45 minutes:** **rapid-sequence induction and general anaesthesia** with propofol, midazolam or thiopental, transfer to intensive care, and **continuous EEG monitoring** — because paralysis abolishes the motor signs while the seizure may continue.
+
+**Treat the cause throughout.** In a pregnant or recently pregnant woman consider **eclampsia**, which is treated with **magnesium sulfate** rather than conventional antiseizure drugs.
+
+## Two traps
+
+> **Electromechanical dissociation.** As status continues, the motor signs become subtle — small twitches of the face or eyes in a deeply unconscious patient. This is not improvement.
+
+> **Non-convulsive status.** If the patient does not begin to wake within 20 to 30 minutes of the convulsions stopping, assume non-convulsive status until an EEG says otherwise. It also presents de novo as prolonged confusion or fluctuating consciousness.
+
+## Afterwards
+
+Investigate the precipitant: bloods including calcium and magnesium, antiseizure drug levels, toxicology, blood gas, CT head, and lumbar puncture if infection is suspected and it is safe. Monitor creatine kinase, potassium and renal function for **rhabdomyolysis**, and watch for aspiration. Before discharge, review adherence, the regimen and the rescue medication plan, and make sure the family knows how and when to use buccal midazolam.`,
         },
         {
           id: "stroke_tia",
@@ -2249,6 +2597,746 @@ A growing group of encephalitides are driven by **antibodies against neuronal an
 - **Treatment:** **remove the tumour** (resect the teratoma) together with **immunotherapy** — corticosteroids, intravenous immunoglobulin (IVIG) or plasma exchange first-line, then rituximab or cyclophosphamide if needed. Recovery is often good, though it can be slow.
 
 > High-yield: for infective encephalitis think **herpes simplex virus (temporal lobes)** and start **IV aciclovir before confirmation**. Think **anti-NMDA receptor encephalitis** in a **young woman with new psychiatric symptoms, seizures and dyskinesias** — and hunt for an **ovarian teratoma**.`,
+        },
+        {
+          id: "brain_abscess",
+          name: "Brain abscess",
+          content: `## Brain abscess
+
+A focal collection of pus within the brain parenchyma, walled off by a capsule. It is uncommon — roughly 0.3 to 1.3 per 100,000 per year — and the presentation is deceptive.
+
+> **The classic triad of headache, fever and focal deficit occurs in fewer than a quarter of patients, and fever is ABSENT in about half.** Waiting for it is how the diagnosis is missed.
+
+## How infection reaches the brain
+
+- **Contiguous spread (about half)** — otitis media and mastoiditis give **temporal lobe and cerebellar** abscesses; sinusitis gives **frontal lobe** abscesses; dental infection also spreads directly.
+- **Haematogenous spread** — infective endocarditis, bronchiectasis, lung abscess, or a **right-to-left shunt** (cyanotic congenital heart disease, or a pulmonary arteriovenous malformation in hereditary haemorrhagic telangiectasia). These are often multiple and sit at the grey-white matter junction.
+- **Direct inoculation** — penetrating trauma or neurosurgery.
+
+**Organisms:** streptococci, especially the **Streptococcus anginosus (milleri) group**, with anaerobes; **Staphylococcus aureus** after trauma or surgery; Gram-negatives in neonates. In immunosuppression consider **Toxoplasma, Nocardia, tuberculosis** and fungi such as Aspergillus.
+
+## Pathology
+
+Infection begins as a localised **cerebritis** over the first days; the centre then necroses and a collagen capsule forms over one to two weeks. The capsule is **thinner on its ventricular side**, which is why rupture occurs into the ventricle — a catastrophic event with very high mortality.
+
+## Presentation and investigation
+
+Localised, progressive headache over days to a couple of weeks, with focal deficit in around two-thirds, seizures in about a quarter, and features of raised intracranial pressure. Neck stiffness suggests meningeal involvement or ventricular rupture. Always examine the ears, sinuses, teeth and heart.
+
+- **Urgent MRI with diffusion-weighted, ADC and post-contrast sequences.** A ring-enhancing lesion with a smooth thin wall, surrounding oedema and **RESTRICTED diffusion with a low ADC** — pus is viscous and cellular, whereas the necrotic centre of a tumour facilitates diffusion. This is the discrimination that makes the diagnosis.
+- **Do NOT perform a lumbar puncture** — the yield is low and it risks herniation.
+- Blood cultures before antibiotics; then aspirate for Gram stain, aerobic, anaerobic, mycobacterial and fungal culture and 16S PCR.
+- Hunt for the source: CT of the temporal bones and sinuses, dental review, echocardiography, chest imaging, and an HIV test.
+
+## Treatment
+
+Joint neurosurgical and infectious diseases care.
+
+- **Stereotactic aspiration or excision** for lesions of about **2.5 cm** or more, for those causing mass effect, and wherever the organism is unknown. The 2024 ESCMID guideline suggests **withholding antimicrobials until aspiration** where the patient is stable enough to wait, because prior antibiotics substantially reduce culture yield.
+- **Empirical antibiotics** after sampling: a third-generation cephalosporin such as ceftriaxone **plus metronidazole**, adding vancomycin or flucloxacillin where staphylococci are likely, then narrowed on culture. Treatment is prolonged — conventionally about 6 weeks intravenously, often 6 to 8 weeks in total, with oral step-down in selected patients after adequate drainage.
+- **Dexamethasone only for significant oedema or impending herniation**, stopped as soon as possible, because it reduces antibiotic penetration and delays capsule formation.
+- **Treat the source** — mastoidectomy, sinus drainage, dental extraction, endocarditis — or the abscess will recur.
+- Antiseizure medication for anyone who has seized, and serial imaging to confirm resolution. Around a third of survivors develop epilepsy.`,
+        },
+        {
+          id: "dementia_assessment",
+          name: "Dementia: assessment & reversible causes",
+          content: `## What dementia is
+
+Dementia is a global impairment of cognitive function and personality **without impairment of consciousness**, going beyond what normal ageing would explain. It requires memory impairment together with at least one of:
+
+- **Aphasia** — a language disorder, which may be expressive or receptive.
+- **Apraxia** — loss of the ability to carry out learned, purposeful tasks despite intact power and coordination.
+- **Agnosia** — loss of the ability to recognise objects, faces or people.
+- **Executive dysfunction** — impaired planning, sequencing, abstraction and judgement.
+
+The preserved conscious level is what separates it from delirium, and it is the single most useful distinction at the bedside.
+
+## Relative frequency
+
+Alzheimer's disease is commonest, then vascular dementia, then dementia with Lewy bodies, then frontotemporal dementia. Mixed Alzheimer's and vascular pathology is very common in the very old and is probably under-diagnosed.
+
+## The three that get confused
+
+| | Dementia | Delirium | Depression |
+|---|---|---|---|
+| Onset | Months to years | Hours to days | Weeks to months |
+| Course | Progressive, stable day to day | Fluctuating, worse at night | Persistently low |
+| Consciousness | Preserved until late | Impaired and fluctuating | Preserved |
+| Attention | Relatively preserved early | Markedly impaired — the core deficit | Variable, effort-dependent |
+| Answers to questions | Confabulates, near-misses | Inattentive, muddled | "I don't know" |
+| Insight | Often lost early | Variable | Usually preserved and distressing |
+
+Delirium and dementia coexist constantly: delirium in an older person is often the first presentation of an undiagnosed dementia, and dementia is the single biggest risk factor for delirium.
+
+## Assessment
+
+- **A collateral history is the most important investigation.** Ask about function rather than memory alone: money, cooking, medication, driving, and finding the way home.
+- **Cognitive testing** with a validated instrument — the 10-point cognitive screener, the 6-item cognitive impairment test, the Montreal Cognitive Assessment or the Addenbrooke's Cognitive Examination III. Bedside tests such as the Mini-Mental State Examination can be near-normal in frontotemporal dementia and are misleading there.
+- **Examination** for focal neurological signs, parkinsonism, gait, vision and hearing.
+
+## Look for the reversible contributors
+
+This step is what prevents a wrong and permanent label:
+
+- **Bloods:** full blood count, urea and electrolytes, calcium, glucose or HbA1c, liver and thyroid function, vitamin B12 and folate.
+- **Depression** — sometimes called pseudodementia, with prominent complaints of poor memory, rapid onset and "don't know" answers.
+- **Drugs** — anticholinergic burden, benzodiazepines, opioids and alcohol.
+- **Untreated hearing and visual impairment**, obstructive sleep apnoea, normal pressure hydrocephalus, chronic subdural haematoma and hypothyroidism.
+
+**Structural imaging**, preferably MRI, is used to exclude other pathology and to support the subtype through the pattern of atrophy — not to make the diagnosis. Specialist tests (FDG-PET, DaTscan, CSF amyloid and tau) are reserved for genuine diagnostic uncertainty.
+
+## Management principles
+
+Treatment is symptomatic and social as much as pharmacological. Offer **cognitive stimulation therapy**, exercise and structured carer support; treat behavioural symptoms by looking for pain, infection, constipation and unmet needs before reaching for drugs. Do the practical work early, while capacity is retained: **lasting power of attorney**, advance care planning, benefits, and **advising that the DVLA must be informed**. Around 40 to 45% of dementia is attributable to modifiable risk factors, so treating hypertension, hearing loss, smoking, inactivity, diabetes, excess alcohol, depression and social isolation is genuine prevention.`,
+        },
+        {
+          id: "alzheimers_disease",
+          name: "Alzheimer's disease",
+          content: `## Alzheimer's disease
+
+The commonest cause of dementia, accounting for roughly 60% of cases. Onset is usually after 65, and it presents as an insidious **amnestic** syndrome — recent memory fails before remote memory.
+
+## Pathophysiology — two proteins
+
+- **Extracellular beta-amyloid** accumulates as **senile (neuritic) plaques**, derived from abnormal cleavage of amyloid precursor protein, interfering with synaptic communication.
+- **Tau is hyperphosphorylated**, dissociates from neuronal microtubules and aggregates into **intracellular neurofibrillary tangles**, causing cytoskeletal collapse and cell death.
+
+The result is synaptic loss and a **cholinergic deficit** from degeneration of the nucleus basalis of Meynert — which is the rationale for cholinesterase inhibitors. **Cerebral amyloid angiopathy**, from the same amyloid deposited in cortical vessel walls, frequently coexists and causes lobar haemorrhage.
+
+## Radiology and histology
+
+**Imaging** shows generalised atrophy with widened sulci, narrowed gyri and enlarged ventricles, most marked in the **medial temporal lobes and hippocampi** early, then the temporoparietal cortex. **Histology** shows senile plaques of beta-amyloid, neurofibrillary tangles of tau, and cerebral amyloid angiopathy.
+
+## Risk factors
+
+Age dominates. The **APOE e4** allele raises risk substantially. Rare autosomal dominant mutations in **APP, PSEN1 and PSEN2** cause early-onset familial disease, and people with **Down syndrome** develop it early because the APP gene sits on chromosome 21. Modifiable factors are those listed in *Dementia: assessment & reversible causes*.
+
+## How it presents
+
+- **Early:** episodic memory loss with repetitive questioning, misplaced objects, missed appointments, disorientation to time before place. Social skills are often preserved, which masks the severity.
+- **Middle:** word-finding difficulty, apraxia, visuospatial failure with getting lost on familiar routes, and behavioural and psychological symptoms — agitation, delusions of theft, sleep reversal.
+- **Late:** loss of all activities of daily living, incontinence, dysphagia, immobility.
+
+Atypical presentations exist, including **posterior cortical atrophy** with early visual and spatial failure and relatively preserved memory.
+
+## Treatment
+
+| Stage | Drug |
+|---|---|
+| Mild to moderate | A **cholinesterase inhibitor** — donepezil, galantamine or rivastigmine |
+| Moderate to severe | **Memantine**, an NMDA receptor antagonist, alone or added to a cholinesterase inhibitor |
+| Intolerant of a cholinesterase inhibitor | Memantine |
+
+Check the pulse and consider an electrocardiogram before a cholinesterase inhibitor, because bradycardia and heart block are contraindications; gastrointestinal upset is the commonest reason for stopping.
+
+**Antipsychotics increase stroke and mortality in dementia** and are reserved for severe distress or risk, at the lowest dose for the shortest time.
+
+> **The anti-amyloid antibodies are licensed but not available on the NHS.** Lecanemab and donanemab slow cognitive decline by roughly a quarter to a third over 18 months and have been licensed by the MHRA, but NICE concluded in final guidance in 2025 — for the third time — that the benefit is too small to justify the cost, so they are not funded. They also require regular infusions and repeated MRI monitoring for amyloid-related imaging abnormalities.`,
+        },
+        {
+          id: "dementia_subtypes",
+          name: "Vascular, Lewy body & frontotemporal dementia",
+          content: `## Telling the non-Alzheimer's dementias apart
+
+| | Vascular dementia | Dementia with Lewy bodies | Frontotemporal dementia |
+|---|---|---|---|
+| Share of cases | About 20%, second commonest | 10 to 15% | Commonest dementia **under 65** alongside Alzheimer's |
+| Onset | Any age with vascular disease | Usually over 65 | 45 to 65 |
+| Hallmark | **Stepwise** decline with focal signs | **Fluctuating** cognition, **visual hallucinations**, parkinsonism, REM sleep behaviour disorder | **Behaviour** or **language** change with preserved memory |
+| Pathology | Infarcts, lacunes, white matter disease | Alpha-synuclein in cortical Lewy bodies | Tau or TDP-43; **Pick bodies** in a minority |
+| Early features | Gait disturbance, urinary incontinence, slowed processing | Falls, syncope, delusions, autonomic failure | Disinhibition, apathy, loss of empathy, hyperorality |
+| Specific treatment | Vascular risk control — **not** cholinesterase inhibitors | Rivastigmine or donepezil, which often work well | **No** cholinesterase inhibitor; SSRIs for behaviour |
+
+## Vascular dementia
+
+Caused by accumulated vascular injury — strategically placed single infarcts, multiple cortical infarcts, or, most often, **subcortical small-vessel disease** with lacunes and confluent white matter change that disconnect frontal-subcortical circuits. That disconnection explains the slowed processing, executive dysfunction, gait apraxia and early incontinence, and it means the deficits are patchy rather than global, so insight is often preserved and the patient distressed by it.
+
+Risk factors are those of cerebrovascular disease. Management is aggressive **vascular risk reduction**, above all blood pressure control. NICE advises against cholinesterase inhibitors and memantine in pure vascular dementia; they are used only where Alzheimer's or Lewy body disease is thought to coexist.
+
+## Dementia with Lewy bodies
+
+Four core features: **fluctuating cognition** with marked variation in attention and alertness, **recurrent well-formed visual hallucinations** (classically of people or animals), **REM sleep behaviour disorder** which may precede the dementia by years, and **spontaneous parkinsonism**.
+
+It is an alpha-synucleinopathy and shares its pathology with Parkinson's disease; the arbitrary **one-year rule** separates them — dementia beginning within a year of parkinsonism is dementia with Lewy bodies, whereas dementia arising years after established Parkinson's disease is Parkinson's disease dementia.
+
+> **Severe antipsychotic sensitivity is the point that must never be forgotten.** Up to half of patients have a severe reaction — sudden worsening of parkinsonism, impaired consciousness and features resembling neuroleptic malignant syndrome — with increased mortality. If an antipsychotic is unavoidable, use quetiapine or clozapine at low dose with specialist advice, and **never** conventional agents such as haloperidol.
+
+A DaTscan showing reduced striatal dopamine transporter uptake is the most useful supportive investigation.
+
+## Frontotemporal dementia
+
+Focal degeneration of the frontal and anterior temporal lobes, with asymmetrical "knife-edge" atrophy. Two broad presentations:
+
+- **Behavioural variant:** early disinhibition and socially inappropriate acts, apathy mistaken for depression, loss of empathy, compulsive and ritualistic behaviour, and hyperorality with a craving for sweet food. **Insight is lost early**, so the family brings the problem.
+- **Primary progressive aphasia:** either effortful, non-fluent speech with agrammatism, or fluent speech with loss of word meaning (the semantic variant).
+
+Around a third are genetic. The commonest cause is a **C9orf72** hexanucleotide repeat expansion, which also causes motor neurone disease and explains the overlap; **MAPT** (tau) and **progranulin (GRN)** account for most of the rest.
+
+**Pick's disease is not a synonym for frontotemporal dementia** — it is one histological subtype, defined by tau-positive **Pick bodies**, and accounts for only a minority of cases.
+
+Cholinesterase inhibitors are not recommended and may worsen behaviour; SSRIs help disinhibition, compulsive behaviour and overeating. Because patients are younger, the practical consequences — employment, driving, dependent children, finances — are heavy, and carer strain is greater than in any other dementia.`,
+        },
+        {
+          id: "neurodegeneration_proteins",
+          name: "Neurodegeneration: the misfolded protein framework",
+          content: `## One mechanism, many diseases
+
+The neurodegenerative diseases are progressive and irreversible, and they share a common pathogenic mechanism: **accumulation of a misfolded protein**, intracellular or extracellular, which aggregates, spreads between cells and kills neurones. Knowing which protein goes with which disease organises an otherwise unmemorable list, and it explains why clinical syndromes overlap — the same protein can produce different diseases depending on where it deposits.
+
+## The protein table
+
+| Protein | Diseases |
+|---|---|
+| **Tau** (a tauopathy) | Alzheimer's disease (with amyloid), progressive supranuclear palsy, corticobasal degeneration, Pick's disease, frontotemporal dementia linked to chromosome 17, chronic traumatic encephalopathy |
+| **Beta-amyloid** | Alzheimer's disease, cerebral amyloid angiopathy, Down syndrome |
+| **Alpha-synuclein** (a synucleinopathy) | Parkinson's disease, dementia with Lewy bodies, multiple system atrophy |
+| **TDP-43** | Motor neurone disease, and the commonest pathology in behavioural-variant frontotemporal dementia |
+| **Polyglutamine** from a CAG repeat | Huntington's disease, several spinocerebellar ataxias |
+| **Prion protein (PrP)** | Creutzfeldt-Jakob disease and the other transmissible spongiform encephalopathies |
+
+**Ubiquitin** is found in the inclusions of many of these because it tags misfolded protein for degradation that then fails.
+
+## Why the overlaps happen
+
+- **Parkinson's disease and dementia with Lewy bodies** are both synucleinopathies and are pathologically near-identical; only the timing of dementia relative to parkinsonism separates them clinically.
+- **Multiple system atrophy** is also a synucleinopathy, but the inclusions sit in **glia** rather than neurones, which is why the clinical picture is so different.
+- **Motor neurone disease and frontotemporal dementia** share TDP-43 pathology and the C9orf72 expansion, which is why up to 15% of people with motor neurone disease develop frontotemporal dementia and why some families contain both.
+- **Progressive supranuclear palsy and corticobasal degeneration** are both tauopathies, and both can present as a frontotemporal dementia syndrome rather than a movement disorder.
+
+## Where it becomes clinically useful
+
+- A patient with parkinsonism plus early dementia and hallucinations is a synucleinopathy — expect **antipsychotic sensitivity**.
+- A patient with parkinsonism plus early falls and a vertical gaze palsy is a tauopathy — expect a **poor levodopa response**.
+- A young patient with progressive weakness and behavioural change should prompt thought about **TDP-43 disease** and a family history of either motor neurone disease or dementia.
+- Rapidly progressive dementia over weeks to months, with myoclonus, should raise **prion disease** — a category apart, because the protein is transmissible.`,
+        },
+        {
+          id: "parkinsons_disease",
+          name: "Parkinson's disease",
+          content: `## Parkinson's disease
+
+Progressive depletion of dopaminergic neurones in the **nigrostriatal pathway**, running from the substantia nigra in the basal ganglia to the striatum. Motor signs appear only once **50 to 70%** of those neurones are lost, so the disease is well established by the time it is diagnosed.
+
+## Pathology
+
+**Alpha-synuclein** aggregates into **Lewy bodies** within surviving neurones. Deposits also occur in peripheral autonomic ganglia and the olfactory bulb, which explains constipation and the early loss of smell. Mutations in the alpha-synuclein gene cause only rare familial disease — the great majority of Parkinson's disease is **sporadic**, arising from age, genetic susceptibility and environment together. Around 5 to 10% is monogenic, most often **LRRK2** or **GBA** variants, or parkin mutations in young-onset disease.
+
+## The cardinal signs — TRAP
+
+- **T**remor — 4 to 6 Hz, pill-rolling, present at **rest** and improving with voluntary movement.
+- **R**igidity — increased tone throughout the range, with cogwheeling when tremor is superimposed.
+- **A**kinesia or bradykinesia — the obligatory feature, meaning slow movement with **decrementing** amplitude on repetitive tasks such as finger tapping.
+- **P**ostural instability — a late feature; early falls suggest a Parkinson-plus syndrome instead.
+
+Signs begin and remain **asymmetrical**, which is one of the strongest pointers away from the mimics. Other features are hypomimia, micrographia, hypophonia, reduced arm swing and a shuffling, festinant gait.
+
+## Non-motor features
+
+Often more disabling than the motor ones, and frequently preceding them by years: hyposmia, **REM sleep behaviour disorder**, constipation, depression and anxiety, orthostatic hypotension, urinary urgency, and later cognitive impairment, hallucinations and Parkinson's disease dementia.
+
+## Diagnosis
+
+Clinical, made by a specialist. **Refer people with suspected Parkinson's disease untreated** rather than starting a therapeutic trial, because a response to levodopa is not specific and blurs the picture. A **DaTscan** is used only to separate degenerative parkinsonism from essential tremor or drug-induced parkinsonism; it cannot distinguish Parkinson's disease from progressive supranuclear palsy or multiple system atrophy. Always review the drug chart first.
+
+## Treatment
+
+- **Levodopa** with a peripheral decarboxylase inhibitor is **first-line where motor symptoms affect quality of life**. Where they do not, a dopamine agonist or a MAO-B inhibitor may be used instead — accepting that agonists cause more hallucinations, sleepiness and impulse control disorders while levodopa causes more dyskinesia.
+- **Motor fluctuations** (wearing off, delayed on, unpredictable off) and **dyskinesia** develop in most patients after several years. Add a COMT inhibitor such as entacapone or a MAO-B inhibitor for wearing off, and amantadine for dyskinesia.
+- **Advanced therapy** when oral treatment is exhausted: apomorphine infusion, deep brain stimulation of the subthalamic nucleus, levodopa-carbidopa intestinal gel, or foslevodopa-foscarbidopa as a 24-hour subcutaneous infusion.
+- **Multidisciplinary care** — Parkinson's nurse specialist, physiotherapy with cueing strategies, occupational therapy, speech and language therapy.
+- **Non-motor treatment:** melatonin or clonazepam for REM sleep behaviour disorder, rivastigmine for dementia, midodrine or fludrocortisone for orthostatic hypotension, and **quetiapine or clozapine — never haloperidol — for psychosis**.
+
+> Two safety rules. **Never stop dopaminergic medication abruptly**, which risks parkinsonism-hyperpyrexia syndrome, a neuroleptic malignant-like emergency. And **never omit or delay doses in hospital** — Parkinson's medication is a time-critical medicine, and missed doses cause rapid, sometimes irrecoverable, deterioration.`,
+        },
+        {
+          id: "parkinsonism_and_tremor",
+          name: "Parkinsonism & tremor: the differential",
+          content: `## Parkinsonism is a syndrome, not a diagnosis
+
+Parkinsonism means bradykinesia with rigidity, tremor or postural instability. Idiopathic Parkinson's disease is the commonest cause, but roughly a quarter of patients have something else — and the alternatives differ in treatment, prognosis and, in one case, reversibility.
+
+## The red flags that argue against Parkinson's disease
+
+- **Symmetry** at onset.
+- **Early falls**, within the first year.
+- **Early autonomic failure** — syncope, erectile dysfunction, urinary retention.
+- **Early dementia or hallucinations**.
+- A **vertical gaze palsy**.
+- A **poor or short-lived levodopa response**.
+- **Rapid progression**, or a stepwise course.
+
+## The Parkinson-plus syndromes
+
+| | Progressive supranuclear palsy | Multiple system atrophy | Corticobasal degeneration |
+|---|---|---|---|
+| Protein | **Tau** | **Alpha-synuclein** (glial cytoplasmic inclusions) | **Tau** |
+| Signature | **Early falls, backwards**, and a vertical gaze palsy affecting **downgaze** first | **Early autonomic failure** with parkinsonism (MSA-P) or cerebellar ataxia (MSA-C) | **Markedly asymmetrical** limb rigidity with **apraxia** and the **alien limb** phenomenon |
+| Other features | Axial rigidity, staring expression with reduced blink, early dysarthria and dysphagia, frontal behavioural change | Inspiratory stridor, antecollis, erectile dysfunction, REM sleep behaviour disorder | Dystonia, myoclonus, cortical sensory loss; may present as progressive non-fluent aphasia |
+| Imaging | Midbrain atrophy — the **hummingbird sign** on sagittal MRI | Putaminal atrophy with a hyperintense rim, the **hot cross bun sign** in the pons | Asymmetrical frontoparietal atrophy |
+| Levodopa | Poor, brief | Partial in a minority, and it worsens postural hypotension | Poor |
+
+## The two causes you must not miss
+
+- **Drug-induced parkinsonism** is common, entirely reversible and regularly missed. It develops over weeks to months after starting a dopamine-blocking drug — antipsychotics, **metoclopramide**, **prochlorperazine** — and is typically more symmetrical with less rest tremor. Always review the drug chart before anything else, and expect recovery to take weeks to months after withdrawal.
+- **Vascular parkinsonism** presents as **lower-body parkinsonism**: a shuffling, magnetic gait with relatively normal arm movement, in someone with vascular risk factors and white matter disease on imaging. Tremor is unusual and levodopa helps little.
+
+Also consider normal pressure hydrocephalus (gait apraxia, incontinence, cognitive impairment), Wilson's disease in anyone under 50, and repeated head injury.
+
+## Tremor: separating the three common causes
+
+| | Parkinsonian tremor | Essential tremor | Physiological or drug-induced |
+|---|---|---|---|
+| When it occurs | At **rest**, improves on movement | On **posture and action**, absent at rest | On posture, fine and fast |
+| Frequency | 4 to 6 Hz | 6 to 12 Hz | 8 to 12 Hz |
+| Symmetry | Asymmetrical | Usually **bilateral**, often head and voice too | Bilateral |
+| Alcohol | No effect | Characteristically **improves** | No effect |
+| Family history | Uncommon | Common — autosomal dominant in many | No |
+| Treatment | Dopaminergic therapy | **Propranolol** first-line, then primidone | Treat the cause — thyrotoxicosis, salbutamol, caffeine, lithium, valproate, anxiety, alcohol withdrawal |
+
+A DaTscan is the investigation that settles a genuinely uncertain case, because it is normal in essential tremor and drug-induced parkinsonism and abnormal in all the degenerative causes.`,
+        },
+        {
+          id: "huntingtons_disease",
+          name: "Huntington's disease",
+          content: `## Huntington's disease
+
+An autosomal dominant neurodegenerative disease causing the triad of a **movement disorder**, **cognitive decline** and **psychiatric illness**. It is relentlessly progressive, with death typically 15 to 20 years after onset, and it raises predictive-testing and reproductive questions for a whole family rather than one patient.
+
+## Genetics
+
+- Caused by an expanded **CAG trinucleotide repeat** in the **HTT gene on chromosome 4**, producing a **polyglutamine** tract in the huntingtin protein.
+- **Repeat length determines risk:** fewer than 27 repeats is normal; 27 to 35 is an intermediate allele that does not cause disease but may expand in the next generation; 36 to 39 shows reduced penetrance; **40 or more is fully penetrant**.
+- **Anticipation** — the repeat expands between generations, so onset is earlier and disease more severe in successive generations. Expansion is much greater in **paternal** transmission, so juvenile-onset disease is usually inherited from the father.
+- Longer repeats predict earlier onset but predict it too imprecisely to be used for individual counselling.
+
+## Pathophysiology
+
+The mutant protein causes selective loss of **GABAergic medium spiny neurones in the striatum**, particularly the **caudate nucleus**, disinhibiting the indirect pathway of the basal ganglia and producing excess movement. Caudate atrophy gives the characteristic **boxcar ventricles** — loss of the normal convex indentation of the lateral ventricles on imaging.
+
+## How it presents
+
+Onset is usually between 30 and 50.
+
+- **Movement:** **chorea** — brief, irregular, non-repetitive involuntary movements that flow from one body part to another and are often incorporated into apparently purposeful actions. Later, dystonia, bradykinesia and rigidity supervene, and **juvenile-onset disease (the Westphal variant) is akinetic-rigid from the start**, often with seizures.
+- **Cognitive:** a subcortical dementia with slowed processing, impaired executive function and poor insight, with memory relatively preserved early.
+- **Psychiatric:** depression, irritability, apathy, obsessive-compulsive features and psychosis. **Suicide risk is markedly increased**, particularly around the time of diagnosis and at loss of independence.
+- **Other:** dysphagia, weight loss despite adequate intake, and disturbed sleep.
+
+## Diagnosis and testing
+
+Genetic testing confirms the diagnosis in a symptomatic patient. **Predictive testing in an asymptomatic person is a formal process** with pre- and post-test genetic counselling, because a positive result carries no treatment and has consequences for insurance, employment, relationships and reproductive choices. **Testing asymptomatic children is not performed**, since it removes their future autonomy and cannot benefit them medically. Prenatal testing and preimplantation genetic diagnosis are available.
+
+## Management
+
+There is no disease-modifying treatment; care is multidisciplinary and lifelong.
+
+- **Chorea** that is disabling: **tetrabenazine**, a vesicular monoamine transporter inhibitor, which reduces chorea but can cause depression, parkinsonism and sedation — a significant problem in a population already at risk of suicide. Sulpiride, olanzapine or risperidone are alternatives, and are preferred where psychosis or agitation coexists.
+- **Depression and psychosis** treated actively, with explicit and repeated risk assessment.
+- **Speech and language therapy** for dysarthria and dysphagia, and **dietetic input** for the high calorie requirement and weight loss.
+- **Physiotherapy and occupational therapy**, falls prevention, and advance care planning while capacity is retained.
+- **Genetic counselling for the family**, which is a core part of management and not an afterthought.`,
+        },
+        {
+          id: "motor_neurone_disease",
+          name: "Motor neurone disease",
+          content: `## Motor neurone disease
+
+A progressive degeneration of upper and lower motor neurones. The defining clinical sign is a **mixed upper and lower motor neurone picture in the same region**, with **no sensory loss** and with **eye movements and continence preserved**. Amyotrophic lateral sclerosis is the commonest form.
+
+Median survival is 2 to 4 years from symptom onset. Bulbar-onset disease is shorter; the primary lateral sclerosis and progressive muscular atrophy variants are longer.
+
+## Pathology
+
+**TDP-43** mislocalises from the nucleus to the cytoplasm and aggregates, with glutamate excitotoxicity and oxidative stress contributing. Anterior horn cell loss gives the lower motor neurone signs and corticospinal degeneration gives the upper motor neurone signs. The **oculomotor neurones and the Onuf nucleus** controlling the sphincters are characteristically spared — which is why eye movements and continence survive, and why their loss should make you doubt the diagnosis.
+
+About 10% is familial, most often a **C9orf72** repeat expansion, which also causes frontotemporal dementia; SOD1, TARDBP and FUS account for most of the remainder.
+
+## How it presents
+
+- Progressive **painless** weakness, usually focal and asymmetrical at onset — a weak grip, foot drop, or slurred speech.
+- **Wasting, fasciculation and hyporeflexia** coexisting with **spasticity, brisk reflexes and extensor plantars** in the same limb.
+- **Bulbar onset:** dysarthria, dysphagia, tongue wasting and fasciculation, and **pseudobulbar affect** with involuntary laughing or crying.
+- **Respiratory involvement:** orthopnoea, disturbed sleep and morning headache — not exertional breathlessness, because the patient cannot exert themselves.
+- Cognitive or behavioural change in up to half, and frank frontotemporal dementia in about 15%.
+
+## Investigation
+
+The diagnosis is clinical, made by a neurologist, and the tests exist mainly to exclude the treatable mimics.
+
+- **Electromyography** shows widespread denervation and fasciculation beyond the clinically affected region, with **normal sensory conduction**.
+- **Nerve conduction studies** exclude **multifocal motor neuropathy with conduction block**, which responds to immunoglobulin.
+- **MRI brain and whole spine** excludes cervical myeloradiculopathy, which can reproduce a mixed picture exactly.
+- Bloods including creatine kinase, thyroid function and B12; genetic testing where there is a family history or coexisting dementia.
+- **Serial forced vital capacity** or sniff nasal inspiratory pressure at every visit.
+
+## Management
+
+Multidisciplinary specialist care itself prolongs survival.
+
+| Intervention | Detail |
+|---|---|
+| **Riluzole** | The only widely available disease-modifying drug; extends survival by around three months; monitor liver function |
+| **Tofersen** | An intrathecal antisense oligonucleotide for the rare **SOD1** form, MHRA-approved in 2025, with NHS access determined separately |
+| **Non-invasive ventilation** | The intervention with the **greatest** effect on survival and quality of life; discuss early, guided by respiratory function |
+| **Gastrostomy** | Placed **before** vital capacity falls below about 50% predicted, when the procedure is still safe |
+| **Symptom control** | Baclofen for spasticity, quinine for cramps, glycopyrronium or hyoscine for drooling, cough assist for secretions, amitriptyline for pseudobulbar affect, opioids and benzodiazepines for breathlessness |
+
+**Advance care planning starts early** and is revisited: communication technology, feeding, ventilation and the circumstances in which the patient would want it withdrawn, preferred place of care and resuscitation. Palliative care is involved from diagnosis rather than at the end.`,
+        },
+        {
+          id: "inherited_ataxias",
+          name: "Friedreich's ataxia & the inherited ataxias",
+          content: `## Approach to a progressive ataxia
+
+Ataxia may be **cerebellar** (nystagmus, dysarthria, intention tremor, past-pointing, dysdiadochokinesis, a wide-based gait, and a Romberg test that is negative because the problem is not proprioceptive) or **sensory** (loss of vibration and joint position sense, a stamping gait, and a **positive Romberg**). Before reaching for genetics, exclude the acquired causes: alcohol, vitamin B12 and vitamin E deficiency, hypothyroidism, phenytoin toxicity, multiple sclerosis, posterior fossa tumour or stroke, coeliac disease and paraneoplastic degeneration.
+
+## Friedreich's ataxia
+
+The commonest inherited ataxia, affecting about 1 in 50,000. It is **autosomal recessive**, caused in most cases by a homozygous **GAA trinucleotide repeat expansion in intron 1 of the FXN gene** on chromosome 9, which silences transcription of **frataxin**. Unlike most repeat disorders it does **not** show anticipation.
+
+Reduced frataxin impairs mitochondrial iron handling and iron-sulfur cluster assembly, causing oxidative damage in tissues with high energy demand — the dorsal root ganglia, dorsal columns, corticospinal and spinocerebellar tracts, the dentate nucleus, cardiac muscle and pancreatic beta cells.
+
+**Presentation** is between 10 and 15 years with progressive gait then limb ataxia and dysarthria. The signature examination finding is **absent reflexes with extensor plantars** — lower motor neurone loss from dorsal root ganglion degeneration alongside corticospinal involvement. There is loss of vibration and joint position sense with a positive Romberg, and often optic atrophy and sensorineural deafness. Skeletal features are **pes cavus, hammer toes and progressive kyphoscoliosis**.
+
+> **The heart determines the prognosis, not the neurology.** About two-thirds develop a **hypertrophic cardiomyopathy**, and heart failure and arrhythmia cause most deaths. Around 10 to 30% develop diabetes mellitus. Everyone needs an ECG and echocardiogram at diagnosis and annually, and screening for diabetes.
+
+Management is multidisciplinary: cardiology surveillance and conventional treatment of heart failure and arrhythmia; physiotherapy and occupational therapy; orthopaedic assessment for scoliosis, which often needs surgery; treatment of diabetes; baclofen for spasticity; and genetic counselling with carrier testing for relatives. Omaveloxolone has been approved in some countries as the first disease-modifying therapy, and access in the UK is evolving.
+
+## The other inherited ataxias worth recognising
+
+| Disorder | Inheritance | Distinguishing features |
+|---|---|---|
+| **Spinocerebellar ataxias** | Autosomal **dominant**, many are CAG (polyglutamine) repeat disorders | Adult onset, shows **anticipation**; over 40 subtypes, some with retinopathy, parkinsonism or neuropathy |
+| **Ataxia telangiectasia** | Autosomal recessive, ATM gene | Childhood onset with **oculocutaneous telangiectasia**, immunodeficiency with recurrent sinopulmonary infection, raised alpha-fetoprotein, and a high risk of **lymphoid malignancy** |
+| **Ataxia with vitamin E deficiency** | Autosomal recessive | Mimics Friedreich's ataxia closely and is **treatable with vitamin E** — which is why the level is always checked |
+| **Wilson's disease** | Autosomal recessive | Ataxia with tremor, dystonia, psychiatric change and liver disease; Kayser-Fleischer rings; treatable, so exclude it in any young person with a movement disorder |`,
+        },
+        {
+          id: "prion_disease",
+          name: "Prion disease",
+          content: `## What a prion is
+
+A **protein-only infectious agent** — transmission occurs without any nucleic acid. The prion protein **PrP** is encoded on chromosome 20 and expressed predominantly in the central nervous system. Its normal **alpha-helical** structure can misfold into a **beta-sheet** configuration (PrPSc) that is resistant to proteases, radiation and conventional sterilisation. A seed of PrPSc then acts as a template, driving irreversible conversion of normal PrP — which is why the process is self-propagating and why prion disease is transmissible.
+
+The result is a rare **transmissible spongiform encephalopathy**: rapid neurodegeneration and death within months. All prion diseases share **spongiform vacuolation** of the brain with prion protein deposits.
+
+## Genetics that matter
+
+- A **polymorphism at codon 129** of the PRNP gene (methionine or valine, giving MM, MV or VV) strongly influences susceptibility. **All confirmed variant CJD cases have been codon 129 MM**, and most sporadic and iatrogenic cases are homozygous.
+- **Inherited prion disease** is caused by specific PRNP mutations, all **autosomal dominant**.
+
+## The types
+
+| Type | Share | Cause | Onset and survival | Clinical picture |
+|---|---|---|---|---|
+| **Sporadic CJD** | About 80% | Spontaneous conversion of PrP, or a somatic PRNP mutation | Mean onset 45 to 75 years; **death within about 6 months** | **Rapidly progressive dementia with myoclonus**, cortical blindness, cerebellar signs, akinetic mutism |
+| **Variant CJD** | Under 5% (acquired) | Exposure to **bovine spongiform encephalopathy** | Younger — typically around 30; mean survival about 14 months | **Psychiatric symptoms first** (anxiety, paranoia, hallucinations), then sensory symptoms, ataxia and myoclonus, then chorea and dementia |
+| **Iatrogenic CJD** | Acquired | Contaminated neurosurgical instruments, dura mater or corneal grafts, human growth hormone, blood transfusion | Variable | Often ataxia-predominant at onset |
+| **Kuru** | Acquired, historical | Ritual **cannibalism** in Papua New Guinea | — | Cerebellar ataxia and tremor |
+| **Inherited** | About 15% | Autosomal dominant PRNP mutations — **Gerstmann-Straussler-Scheinker syndrome**, **fatal familial insomnia**, familial CJD | Earlier, often with codon 129 homozygosity | Varies: ataxia in GSS, untreatable insomnia with autonomic failure and dementia in fatal familial insomnia |
+
+## Investigation
+
+| Test | Sporadic CJD | Variant CJD |
+|---|---|---|
+| **EEG** | Periodic **triphasic** complexes on serial recording | Non-specific slow waves |
+| **MRI** | Cortical ribboning and basal ganglia high signal on diffusion-weighted imaging | **Pulvinar sign** — high signal in the posterior thalamus on T2 |
+| **CSF** | **RT-QuIC**, plus 14-3-3 and S100 | 14-3-3 may be normal |
+| **Tissue** | Post-mortem western blot types 1 to 3, spongiform change and PrP amyloid plaques | **Tonsillar biopsy** detects type 4t with high sensitivity and specificity; **florid plaques** on histology |
+
+> **Real-time quaking-induced conversion (RT-QuIC)** has transformed diagnosis and is the key CSF test. It amplifies misfolded prion protein in the sample, with a sensitivity above 90% and specificity approaching 100%, and it has been part of the diagnostic criteria for sporadic CJD since 2017. The older markers, 14-3-3 and S100, are far less specific — they simply reflect rapid neuronal destruction.
+
+## Management
+
+There is **no treatment**. Care is symptomatic and palliative: **clonazepam** for myoclonus (valproate or levetiracetam are alternatives), management of agitation and pain, nutritional support, and early involvement of palliative care and the family. Agents once hoped to delay prion conversion — quinacrine, pentosan polysulfate, tetracycline — have not shown benefit.
+
+**Infection control matters and is examinable.** Prions resist standard autoclaving and disinfection, so suspected cases require specific handling of surgical instruments and laboratory samples, and the case must be notified to the national CJD surveillance unit. Anyone with a rapidly progressive dementia over weeks to months — particularly with myoclonus, ataxia or visual failure — should prompt the question, alongside the treatable rapid dementias: autoimmune encephalitis, CNS infection, vasculitis, and thyroid, B12 or hepatic causes.`,
+        },
+        {
+          id: "multiple_sclerosis",
+          name: "Multiple sclerosis",
+          content: `## Multiple sclerosis
+
+An immune-mediated demyelinating disease of the central nervous system and the commonest cause of non-traumatic neurological disability in young adults. Diagnosis requires lesions **disseminated in time and space**. Around 85% begin with a relapsing-remitting course.
+
+The UK is a high-prevalence country at roughly 150 to 200 per 100,000, women are affected about three times as often as men, and onset is usually between 20 and 40.
+
+## Causes
+
+Genetic susceptibility centres on **HLA-DRB1 15:01**. **Epstein-Barr virus infection is now regarded as a necessary though not sufficient trigger** — a large prospective military cohort showed a 32-fold rise in risk after seroconversion. Other established factors are low vitamin D, smoking and adolescent obesity.
+
+## Pathophysiology
+
+Autoreactive T and B lymphocytes cross the blood-brain barrier and attack myelin, forming plaques in characteristic sites: **periventricular (Dawson's fingers), juxtacortical, infratentorial, spinal cord and optic nerve**. Early on, remyelination and redistribution of sodium channels allow recovery between relapses; with time, axonal loss accumulates and produces progressive, irreversible disability. Conduction in partially demyelinated fibres is heat-sensitive, which explains **Uhthoff's phenomenon**.
+
+## How it presents
+
+A relapse evolves over days, plateaus, and recovers over weeks. Common presentations:
+
+- **Optic neuritis** — painful monocular visual loss with colour desaturation and a relative afferent pupillary defect.
+- **Partial transverse myelitis** — a sensory level with bladder involvement.
+- **Brainstem syndromes** — internuclear ophthalmoplegia, vertigo, diplopia.
+- **Lhermitte's phenomenon** — an electric shock down the spine on neck flexion.
+- **Uhthoff's phenomenon** — transient worsening with heat or exercise.
+
+Later: spasticity, ataxia, **fatigue** (often the most disabling symptom), bladder dysfunction, neuropathic pain, cognitive slowing and depression. Courses are relapsing-remitting, secondary progressive, or primary progressive from the outset in 10 to 15%.
+
+## Investigation
+
+- **MRI brain and whole spine with gadolinium** — enhancing lesions indicate activity within about six weeks and can establish dissemination in time on a single scan.
+- **CSF unmatched oligoclonal bands**, which can substitute for dissemination in time.
+- **Visual evoked potentials** — delayed latency with preserved amplitude.
+- Exclude the mimics: **aquaporin-4 and MOG antibodies** for neuromyelitis optica spectrum disorder (which some MS drugs make markedly worse), plus B12, ANA, ACE, HIV, syphilis and Lyme serology.
+
+The **2024 revision of the McDonald criteria** adds the optic nerve as a fifth topography and allows supportive biomarkers — the central vein sign, paramagnetic rim lesions and CSF kappa free light chains — permitting diagnosis at first presentation in some patients.
+
+## Treatment
+
+- **Relapse:** exclude infection first, because urinary infection and fever cause **pseudo-relapses**. Then methylprednisolone 500 mg orally daily for 5 days, or 1 g intravenously for 3 to 5 days. Steroids shorten the relapse but do not change long-term outcome, and mild sensory relapses need none.
+- **Disease-modifying therapy** works on inflammatory activity, not on progression without it. Moderate-efficacy options include interferon beta, glatiramer, teriflunomide and dimethyl fumarate; high-efficacy options include natalizumab, ocrelizumab, alemtuzumab and cladribine, and practice has shifted towards **early high-efficacy treatment**. Each has a signature risk — **progressive multifocal leukoencephalopathy with natalizumab** (hence JC virus antibody monitoring), secondary autoimmunity after alemtuzumab, infection with the anti-CD20 agents.
+- **Symptom control is where most quality of life is gained:** amantadine and exercise for fatigue; baclofen, gabapentin or nabiximols for spasticity; bladder management guided by a **post-void residual volume** (giving an anticholinergic to someone who is not emptying causes retention); amitriptyline or gabapentin for neuropathic pain; and treatment of depression.
+- Vitamin D, smoking cessation and exercise are genuine treatment: smoking accelerates disability. Relapse risk falls in pregnancy and rises in the three months post-partum, so plan pregnancies with the team.`,
+        },
+        {
+          id: "myasthenia_gravis",
+          name: "Myasthenia gravis & myasthenic crisis",
+          content: `## Myasthenia gravis
+
+An autoimmune disease of the neuromuscular junction causing **fatigable weakness** that worsens with use and through the day. It affects the ocular, bulbar, proximal limb and neck muscles, and it **never involves the pupil** — which separates it from a third nerve palsy.
+
+Incidence is bimodal: **women in their 20s and 30s**, often with thymic hyperplasia, and **men in their 60s and 70s**, more often with thymoma.
+
+## Pathophysiology
+
+Antibodies against the postsynaptic **acetylcholine receptor** (about 85%), or against **MuSK** (5 to 8%) or LRP4, block and destroy receptors and flatten the postsynaptic folds. This lowers the **safety factor** of neuromuscular transmission, so the normal decline in acetylcholine release with repetitive stimulation — harmless in health — now causes visible fatigue. Around 10 to 15% have a thymoma.
+
+## Presentation
+
+- **Ocular** in about half at onset — asymmetrical ptosis and diplopia; about 15% remain purely ocular, and about half of the rest generalise within two years.
+- **Bulbar** — dysarthria that deteriorates as the patient talks, nasal speech, dysphagia, difficulty chewing.
+- **Limb and neck** — proximal weakness and head drop.
+- Reflexes, sensation and pupils are normal.
+
+Demonstrate fatigability: ptosis worsening on sustained upgaze, speech becoming nasal while counting to 50, arms dropping after repeated elevation. An **ice pack** on a ptotic lid for two minutes improves myasthenic ptosis and is a simple bedside test.
+
+## Investigation
+
+Acetylcholine receptor antibodies first, then MuSK if negative. **Single-fibre electromyography** is the most sensitive test; repetitive nerve stimulation shows a decremental response. **CT or MRI of the thymus in everyone.** Check thyroid function and screen for other autoimmune disease. The edrophonium (Tensilon) test is obsolete.
+
+## Treatment
+
+**Pyridostigmine** gives symptomatic benefit, limited by cholinergic effects and less effective in MuSK disease. Immunosuppression modifies the disease: **prednisolone introduced gradually**, because starting high transiently worsens weakness in about half during the first one to two weeks, with a steroid-sparing agent (azathioprine after checking thiopurine methyltransferase, or mycophenolate). **Rituximab** is particularly effective in MuSK disease. **Thymectomy** for thymoma at any age, and for acetylcholine receptor-positive generalised disease under about 50, where the MGTX trial showed improved outcomes. Newer agents for refractory disease include the neonatal Fc receptor blocker **efgartigimod** and complement inhibitors such as eculizumab and ravulizumab.
+
+## Myasthenic crisis
+
+Weakness of the respiratory or bulbar muscles severe enough to need ventilatory support. It affects 15 to 20% at some point, usually in the first two to three years.
+
+> **Oxygen saturation and blood gases stay normal until the patient is close to arrest**, because this is pump failure, not a gas exchange problem. **Monitor the FORCED VITAL CAPACITY**, at least 4-hourly. Intubation is anticipated below about 15 to 20 mL/kg (roughly 1 litre), or with a negative inspiratory force less negative than -20 to -30 cmH2O. A single-breath count under 20 is a useful bedside marker.
+
+**Triggers:** infection (commonest), aspiration, surgery, pregnancy, tapering immunosuppression — and **drugs**: aminoglycosides, macrolides, **fluoroquinolones**, beta-blockers including eye drops, **intravenous magnesium**, procainamide, phenytoin, chloroquine, botulinum toxin, iodinated contrast and checkpoint inhibitors.
+
+**Treatment:** intensive care; intubate on the vital capacity trend rather than saturations, and avoid non-invasive ventilation where there is bulbar weakness. Give **plasma exchange or IVIG 0.4 g/kg daily for 5 days** — equally recommended, effective in 60 to 70% within days. Withhold pyridostigmine while ventilated (it increases secretions, and stopping it excludes a cholinergic crisis). Treat the trigger and stop the culprit drug. Start or escalate steroids under the cover of plasma exchange or IVIG.`,
+        },
+        {
+          id: "guillain_barre_syndrome",
+          name: "Guillain-Barré syndrome",
+          content: `## Guillain-Barré syndrome
+
+An acute immune-mediated polyradiculoneuropathy causing **ascending flaccid weakness with areflexia**, reaching its worst within 4 weeks. It is the commonest cause of acute flaccid paralysis in the UK. Incidence is 1 to 2 per 100,000 per year; 20 to 30% need ventilation, and mortality is about 5%.
+
+## Cause and mechanism
+
+About two-thirds follow an infection one to three weeks earlier. **Campylobacter jejuni** is the commonest and is associated with the axonal forms and a worse outcome; others are cytomegalovirus, Epstein-Barr virus, Mycoplasma, hepatitis E, HIV and Zika.
+
+**Molecular mimicry** between microbial lipo-oligosaccharide and peripheral nerve gangliosides generates cross-reactive antibodies. In the demyelinating form, macrophages strip myelin from nerve roots; in the axonal forms, anti-GM1 antibodies attack the axolemma directly, with slower and less complete recovery. Inflammation at the roots leaks protein into the CSF, producing **albuminocytological dissociation** — raised protein with a normal cell count.
+
+## Presentation
+
+Distal paraesthesiae, then progressive **symmetrical ascending** flaccid weakness with early loss of reflexes, over days. **Severe back and limb pain is common and often missed** as a presenting feature. Cranial nerve involvement gives bilateral facial weakness and bulbar symptoms. **Autonomic instability** produces arrhythmias, labile blood pressure, ileus and urinary retention.
+
+The **Miller Fisher variant** is the triad of ophthalmoplegia, ataxia and areflexia, associated with **anti-GQ1b** antibodies.
+
+> **A clear sensory level, or early bladder and bowel involvement, points to spinal cord compression instead — image the spine urgently.** Missing cord compression while treating for Guillain-Barré syndrome is a serious and irreversible error.
+
+## Investigation
+
+- **Serial forced vital capacity** is the most important measurement, at least 4-hourly during progression — never oxygen saturation.
+- **Nerve conduction studies** show demyelinating features, but may be normal in the first week.
+- **Lumbar puncture** typically shows raised protein with normal cells, though it too can be normal early. The diagnosis is clinical, and treatment should not wait for confirmation in a deteriorating patient.
+- Anti-ganglioside antibodies, stool culture and serology for triggers, and **continuous ECG monitoring** for autonomic instability.
+
+## Treatment
+
+- **IVIG 0.4 g/kg daily for 5 days OR plasma exchange** — equally effective, and there is no benefit in combining them. Treatment works best within two weeks of onset, and the usual threshold is inability to walk unaided, rapid progression, or bulbar or respiratory involvement. Check IgA before immunoglobulin because of anaphylaxis risk in IgA deficiency.
+- **CORTICOSTEROIDS ARE NOT EFFECTIVE and should not be used** — the opposite of chronic inflammatory demyelinating polyradiculoneuropathy, the chronic disorder that is diagnosed when progression continues beyond 8 weeks. This contrast is a favourite exam point.
+- Intensive care support for respiratory failure, with elective rather than emergency intubation, avoiding suxamethonium because of hyperkalaemia in denervated muscle.
+- Venous thromboembolism prophylaxis, pressure area care, and **gabapentin or carbamazepine for the pain**, which is often severe and opioid-resistant.
+- Early physiotherapy and rehabilitation. About **80% walk independently at 6 months**, though recovery is slow, roughly 20% have lasting disability, and persistent fatigue is very common.`,
+        },
+        {
+          id: "peripheral_neuropathy",
+          name: "Peripheral neuropathy",
+          content: `## Framing the problem
+
+Three questions organise any neuropathy: **what is the pattern**, **is it axonal or demyelinating**, and **is there a treatable cause**.
+
+| Pattern | Meaning | Typical causes |
+|---|---|---|
+| **Distal symmetrical (glove and stocking)** | Length-dependent, longest nerves first | Diabetes, alcohol, B12 deficiency, chronic kidney disease, drugs, hypothyroidism, paraproteinaemia |
+| **Mononeuropathy** | One nerve | Compression or entrapment, trauma |
+| **Mononeuritis multiplex** | Several individual nerves, asymmetrically and sequentially | **Vasculitis**, diabetes, rheumatoid arthritis, sarcoidosis, amyloidosis, HIV, leprosy |
+| **Polyradiculopathy** | Nerve roots | Guillain-Barré syndrome, CIDP, malignant infiltration |
+| **Small fibre** | Pain and autonomic symptoms with normal reflexes and normal conduction studies | Diabetes and impaired glucose tolerance, amyloid, Sjogren's |
+
+**Mononeuritis multiplex is the pattern that must not be missed** — it means vasculitis until proved otherwise and needs urgent investigation, because untreated systemic vasculitis damages kidneys and lungs.
+
+## Axonal versus demyelinating
+
+- **Axonal** (the great majority): reduced amplitudes with preserved conduction velocity. Think metabolic, toxic and nutritional causes — diabetes, alcohol, drugs, B12.
+- **Demyelinating**: markedly slowed conduction velocity with conduction block. A much shorter list — Guillain-Barré syndrome, **CIDP**, Charcot-Marie-Tooth disease, paraprotein-associated neuropathy — and it matters because several are **treatable with immunotherapy**.
+
+## Causes worth having a system for
+
+Diabetes is the commonest cause in the UK. A workable list is **ABCDE**: **A**lcohol, **B**12 (and folate, thiamine, vitamin E), **C**hronic kidney disease and **C**onnective tissue disease or vasculitis, **D**iabetes and **D**rugs, **E**very other cause — hypothyroidism, paraproteinaemia, amyloid, HIV, Lyme, leprosy (the commonest cause worldwide), hereditary, and paraneoplastic.
+
+**Drugs to ask about specifically:** isoniazid, metronidazole, nitrofurantoin, amiodarone, phenytoin, vincristine, cisplatin and other chemotherapy.
+
+## Assessment and investigation
+
+Establish the pattern, the tempo (acute suggests Guillain-Barré, vasculitis or toxic; chronic suggests metabolic or hereditary), and whether motor, sensory or autonomic fibres dominate. Look for a **family history**, and examine the feet — pes cavus and hammer toes suggest a long-standing hereditary neuropathy such as **Charcot-Marie-Tooth disease**.
+
+First-line tests: HbA1c or an oral glucose tolerance test, B12 and folate, urea and electrolytes, liver and thyroid function, full blood count, ESR, **serum protein electrophoresis and immunofixation**, and ANCA and ANA where vasculitis is possible. **Nerve conduction studies** separate axonal from demyelinating. Nerve biopsy is reserved for suspected vasculitis or amyloid.
+
+## Management
+
+Treat the cause: glycaemic control, alcohol cessation, B12 replacement, stopping the offending drug, immunosuppression for vasculitis, and immunotherapy for CIDP (which, unlike Guillain-Barré syndrome, **does respond to steroids**).
+
+**Neuropathic pain** is treated per NICE with amitriptyline, duloxetine, gabapentin or pregabalin — try an alternative if the first fails rather than adding, and use tramadol only for rescue. Capsaicin cream for localised pain.
+
+**Foot care is what prevents amputation** in a patient with sensory loss: daily inspection, well-fitting footwear, podiatry, and prompt attention to any ulcer. Add falls assessment, physiotherapy and orthotics for foot drop.`,
+        },
+        {
+          id: "cranial_nerve_lesions",
+          name: "Cranial nerve lesions & the facial palsy",
+          content: `## Facial weakness: the first question
+
+**Is the forehead involved?**
+
+- **Forehead spared** — the frontalis has bilateral cortical innervation, so this is an **upper motor neurone** lesion. Treat as a **stroke** and go to the stroke pathway.
+- **Whole hemiface weak** — a **lower motor neurone** lesion, of which Bell's palsy is the commonest cause.
+
+Getting this wrong means either missing a stroke or putting someone on a hyperacute pathway unnecessarily.
+
+## Bell's palsy
+
+An acute idiopathic lower motor neurone facial palsy, probably from herpes simplex reactivation causing swelling of the nerve within its bony canal. Incidence is 20 to 30 per 100,000 per year, and it is commoner in pregnancy and diabetes.
+
+Onset is over hours to days, with a drooping brow and mouth, inability to close the eye and **Bell's phenomenon** (the eye rolling up on attempted closure), often with postauricular pain, hyperacusis and altered taste. Sensation is normal.
+
+**Treatment: prednisolone 50 mg daily for 10 days, started within 72 hours of onset.** Antivirals are not routinely recommended. **Eye care prevents the lasting harm** — lubricating drops by day, ointment and taping the lid closed at night, and same-day ophthalmology for any pain, redness or visual change. About 70% recover fully without treatment, and more with steroids. Refer if there is no improvement by three weeks, if the palsy is progressive or recurrent, or if other cranial nerves are involved.
+
+**Look for what is not Bell's palsy:**
+
+- **Ramsay Hunt syndrome** — vesicles in the ear canal, on the pinna or palate, with more pain, vertigo and hearing loss. Give **aciclovir with prednisolone** and refer to ENT.
+- **Bilateral facial palsy** — never assume Bell's. Consider Lyme disease, sarcoidosis, Guillain-Barré syndrome, HIV seroconversion and leukaemic infiltration.
+- A **gradual** palsy over weeks suggests a parotid or cerebellopontine angle tumour and needs imaging.
+
+## Third nerve palsy
+
+A **down-and-out** eye from unopposed lateral rectus and superior oblique, with **complete** ptosis.
+
+The **pupil decides the urgency**. Parasympathetic fibres run on the outside of the nerve, fed by pial vessels, so **compression involves the pupil early** (a dilated, unreactive pupil — "surgical"), while microvascular ischaemia infarcts the core and **spares** it ("medical", typically diabetes or hypertension). A painful, pupil-involving third nerve palsy is a **posterior communicating artery aneurysm** until proved otherwise and needs immediate CT or MR angiography. Pain occurs in both types and does not separate them. Myasthenia is the great mimic — fatigable, variable, and never involving the pupil.
+
+## Sixth nerve palsy
+
+Failure of abduction with horizontal diplopia worse on looking to that side. Its long intracranial course makes it vulnerable to any rise in pressure, so it is the classic **false localising sign** of raised intracranial pressure. Other causes are microvascular ischaemia, and cavernous sinus or petrous apex pathology.
+
+## Horner syndrome
+
+**Partial ptosis, miosis and anhidrosis** from interruption of the three-neurone sympathetic pathway. The anisocoria is **greater in dim light**, because the affected pupil dilates poorly.
+
+Localise it, because the causes differ sharply:
+
+- **First-order (central)** — brainstem stroke, especially lateral medullary syndrome, multiple sclerosis, syringomyelia, cord tumour.
+- **Second-order (preganglionic)** — **Pancoast tumour** at the lung apex, cervical rib, thyroid or mediastinal mass, neck surgery or trauma.
+- **Third-order (postganglionic)** — **carotid artery dissection**, cavernous sinus pathology, cluster headache.
+
+> **A PAINFUL Horner syndrome is carotid dissection until proved otherwise** and needs urgent angiography, because the early stroke risk is high. In a child, an acquired Horner syndrome requires urine catecholamines and imaging to exclude neuroblastoma.`,
+        },
+        {
+          id: "entrapment_neuropathies",
+          name: "Entrapment neuropathies",
+          content: `## The common entrapments
+
+| Nerve | Site | Motor loss | Sensory loss | Clues |
+|---|---|---|---|---|
+| **Median** | Carpal tunnel, under the flexor retinaculum | Thumb abduction (abductor pollicis brevis), thenar wasting | Thumb, index, middle, radial half of ring finger — **sparing the thenar eminence** | Nocturnal tingling relieved by shaking the hand |
+| **Ulnar** | Cubital tunnel at the elbow | Interossei, adductor pollicis — **claw hand**, Froment's sign | Little finger and ulnar half of ring finger, including the dorsum | Worse with elbow flexion; leaning on the elbow |
+| **Radial** | Spiral groove of the humerus | **Wrist drop**, finger extension | Small patch over the first dorsal web space | "Saturday night palsy" after sleeping with the arm over a chair; humeral fracture |
+| **Common peroneal** | Neck of the fibula | **Foot drop**, eversion weakness | Dorsum of the foot and lateral shin | Plaster casts, prolonged squatting, weight loss, crossed legs |
+| **Lateral cutaneous of thigh** | Inguinal ligament | None | Burning over the anterolateral thigh (**meralgia paraesthetica**) | Obesity, pregnancy, tight belts |
+
+**Two discriminations worth knowing.** Sensation over the **thenar eminence is preserved** in carpal tunnel syndrome, because the palmar cutaneous branch leaves proximal to the tunnel — so its loss suggests a more proximal median lesion or a C6 radiculopathy. And a **foot drop with preserved inversion and a normal ankle jerk** is a peroneal palsy, whereas weak inversion or a lost ankle jerk points to an L5 radiculopathy or sciatic lesion.
+
+## Carpal tunnel syndrome in detail
+
+The commonest entrapment neuropathy, affecting 3 to 5% of adults, three times more women, peaking between 40 and 60 and bilateral in about half.
+
+**Look for the treatable associations:** pregnancy (usually resolves after delivery), hypothyroidism, diabetes, rheumatoid arthritis, acromegaly, obesity, amyloidosis and dialysis. Repetitive forceful wrist work and vibrating tools contribute.
+
+**Presentation:** numbness, tingling and burning in the median distribution, **classically waking the patient at night** and relieved by shaking or hanging the hand out of bed, sometimes with forearm pain. Later, weak grip and pinch, clumsiness with buttons and keys, and **thenar wasting**.
+
+**Diagnosis is clinical.** Phalen's test (wrist flexion for 60 seconds) and Tinel's sign are supportive but neither is sensitive or specific. Nerve conduction studies are used where the diagnosis is uncertain, where radiculopathy or polyneuropathy is possible, and before surgery in many units. Check thyroid function and HbA1c.
+
+**Treatment** follows severity:
+
+- Mild to moderate: a **neutral wrist splint worn at night** for at least four to six weeks, activity modification, and treatment of any underlying cause.
+- Next: a **corticosteroid injection** into the carpal tunnel, which gives good short-term relief.
+- **Surgical decompression** — division of the flexor retinaculum — where there is **thenar wasting or persistent sensory loss**, severe symptoms, or failure of conservative treatment. It is the most effective long-term option.
+
+Oral corticosteroids give only transient benefit, and diuretics, pyridoxine and NSAIDs do not work.
+
+> **Do not let severe compression drift.** Once axonal loss and thenar wasting are established, recovery after surgery is incomplete — the sensory symptoms improve but the wasting and weakness often do not.`,
+        },
+        {
+          id: "spinal_cord_syndromes",
+          name: "Spinal cord syndromes & cord injury",
+          content: `## The two emergencies
+
+**Spinal cord compression** and **cauda equina syndrome** are diagnoses made on the clock. In both, the interval to decompression determines what function is kept.
+
+| | Spinal cord compression | Cauda equina syndrome |
+|---|---|---|
+| Level | Above the conus, ending about L1 to L2 | Below the conus — the lumbosacral roots |
+| Motor signs | **Upper** motor neurone below the lesion — spasticity, brisk reflexes, extensor plantars | **Lower** motor neurone — flaccid weakness, reduced reflexes |
+| Sensory | A **sensory level** | **Saddle** anaesthesia |
+| Bladder | Late retention, then a spastic bladder | Early loss of the **urge to void**, then painless retention with overflow |
+| Commonest cause | **Metastatic disease** — breast, lung, prostate, kidney, thyroid, myeloma | Large central lumbar disc prolapse |
+
+**Metastatic spinal cord compression:** thoracic pain, pain worse on lying flat, coughing or straining, or night pain in someone with cancer. Give **dexamethasone 16 mg with a proton pump inhibitor as soon as it is suspected** (discuss first if lymphoma is possible, since steroids obscure the biopsy), arrange **whole-spine MRI within 24 hours**, and refer to surgery and oncology together. NICE has moved away from routine flat bed rest — keep the person mobile where the spine is stable. Definitive treatment is surgical decompression, or **radiotherapy within 24 hours** where surgery is not appropriate.
+
+**Cauda equina syndrome:** ask directly about loss of the urge to pass urine, perineal sensation and sexual function, examine perianal sensation and anal tone, and **scan the bladder for a post-void residual** — painless retention with overflow is the sign most often missed. **Emergency whole-spine MRI, out of hours if necessary**, then immediate referral. Outcomes are far better when decompression happens before retention develops.
+
+> **Function at the time of treatment predicts function afterwards.** Most patients walking when treated continue to walk; most who are paraplegic do not recover. That single sentence explains the urgency of both conditions.
+
+## The anatomical cord syndromes
+
+| Syndrome | Lesion | Picture |
+|---|---|---|
+| **Brown-Sequard** | Hemisection | **Ipsilateral** motor and dorsal column loss, **contralateral** pain and temperature loss (a few levels below) |
+| **Anterior cord** | Anterior spinal artery territory | Motor and spinothalamic loss with **preserved** vibration and proprioception |
+| **Central cord** | Central, often hyperextension in a stenotic spine | Weakness **worse in the arms than the legs**, with a cape-like sensory loss |
+| **Posterior cord** | Dorsal columns | Loss of vibration and proprioception, sensory ataxia, positive Romberg |
+| **Syringomyelia** | Central cavity, usually cervical | **Cape-like** loss of pain and temperature with preserved light touch (dissociated sensory loss), wasting of the small hand muscles |
+
+**Subacute combined degeneration** from B12 deficiency affects the dorsal columns and corticospinal tracts together, giving the striking combination of **absent ankle reflexes with extensor plantars**. Treat with intramuscular hydroxocobalamin and **never replace folate before B12**.
+
+## After acute spinal cord injury
+
+- **Spinal shock** — transient flaccidity and areflexia below the lesion, resolving over days to weeks into spasticity.
+- **Neurogenic shock** — loss of sympathetic outflow in lesions **at or above T6**, causing hypotension with **bradycardia and warm peripheries**. It is the opposite of haemorrhagic shock, which must be excluded first; treat with cautious fluids and a vasopressor, maintaining a mean arterial pressure of 85 to 90 mmHg to protect the cord.
+- **Autonomic dysreflexia** — in lesions at or above T6, a noxious stimulus below the lesion (a **blocked catheter** most often, or constipation, a pressure ulcer or an ingrown toenail) triggers unopposed sympathetic outflow: severe headache, dangerous hypertension, flushing and sweating above the lesion, pallor below, and reflex bradycardia. **Sit the patient up, loosen clothing, and find and remove the trigger** — starting with the catheter — before reaching for a short-acting antihypertensive. Untreated it causes intracerebral haemorrhage, seizures and death, and it is easily missed because the patient's baseline blood pressure is often around 90 systolic.`,
         },
       ],
     },
@@ -4875,6 +5963,60 @@ TB can involve almost any system, and these forms are commoner in the immunocomp
 - **Public health:** TB is **notifiable**; isolate suspected pulmonary cases in a **negative-pressure room**; trace and screen contacts; and use **directly observed therapy** where adherence is uncertain. Multi-drug-resistant TB needs second-line agents (quinolones, linezolid, amikacin). The **BCG vaccine** protects at-risk groups.
 
 > High-yield: latent TB hides in a Ghon focus and reactivates when immunity falls; **caseating granulomas** are the hallmark. After BCG, use the **IGRA, not the tuberculin test**, to diagnose latent TB. Treatment is **RIPE for 2 months then rifampicin and isoniazid for 4** — isoniazid causes neuropathy (give B6), ethambutol optic neuritis, pyrazinamide hepatotoxicity, rifampicin orange secretions. Do not forget the extrapulmonary forms: **Pott's** (spine), **scrofula** (nodes), **miliary** (disseminated), and TB as a cause of **Addison's disease**.`,
+        },
+        {
+          id: "bacterial_meningitis",
+          name: "Bacterial meningitis",
+          content: `## Bacterial meningitis
+
+Inflammation of the meninges, and a time-critical emergency: mortality is around 10% even with treatment, and delay in the first antibiotic dose is the modifiable factor that matters most.
+
+> **Do not delay antibiotics for a lumbar puncture, a CT scan, or a senior review.** NICE requires intravenous antibiotics **within 1 hour** of arrival in suspected bacterial meningitis.
+
+## Organisms by age
+
+| Group | Organisms |
+|---|---|
+| **Neonates** | Group B Streptococcus, **Listeria monocytogenes**, Escherichia coli |
+| **Children and young adults** | **Neisseria meningitidis**, Streptococcus pneumoniae, Haemophilus influenzae type b (now rare with vaccination) |
+| **Adults** | **Streptococcus pneumoniae** and Neisseria meningitidis |
+| **Over 60 or immunocompromised** | As for adults, **plus Listeria monocytogenes** — which is why amoxicillin is added |
+
+**Viruses cause most meningitis overall** — enteroviruses (coxsackie, echovirus), then mumps and herpes simplex type 2 — and viral meningitis is usually self-limiting. **Tuberculous and cryptococcal meningitis** are chronic, present over weeks, and occur in immunosuppression.
+
+**Risk factors:** overcrowded living, the extremes of age, **hyposplenism and complement deficiency** (both give susceptibility to encapsulated organisms), hypogammaglobulinaemia, alcohol excess, and a previous head injury with a CSF leak for pneumococcus.
+
+## Recognition
+
+Fever, headache, neck stiffness, photophobia and altered consciousness — though the classic triad is present in fewer than half of adults. A **non-blanching rash** means meningococcal disease. In babies, look for a bulging fontanelle, poor feeding, irritability and hypotonia. Kernig's and Brudzinski's signs are insensitive and their absence means nothing.
+
+**Altered behaviour or reduced consciousness disproportionate to the meningism suggests encephalitis** — add intravenous aciclovir.
+
+## Investigation, without delaying treatment
+
+- **Blood cultures, meningococcal and pneumococcal PCR, full blood count, clotting, glucose, lactate and a blood gas**, plus a bacterial throat swab.
+- **Lumbar puncture as soon as it is safe** — and it is safe in most patients.
+- **CT head first only if** there is reduced or fluctuating consciousness, focal neurology, seizures, papilloedema or significant immunocompromise. A normal CT does not guarantee it is safe to proceed if there are clinical signs of raised pressure.
+- Send CSF for cell count and differential, protein, glucose (with a paired plasma glucose), Gram stain, culture and meningococcal and pneumococcal PCR.
+
+| CSF | Appearance | Cells | Protein | Glucose | Opening pressure |
+|---|---|---|---|---|---|
+| **Bacterial** | Turbid | **Neutrophils** | High | **Low** (under half the plasma level) | High |
+| **Viral** | Clear | **Lymphocytes** | Normal or mildly high | **Normal** | Normal or high |
+| **Tuberculous** | Clear or fibrin web | **Lymphocytes** | **Very high** | **Low** | High |
+| **Cryptococcal** | Clear | Lymphocytes | High | Low | **Often very high** — India ink and cryptococcal antigen |
+
+## Treatment
+
+- **IV ceftriaxone** (or cefotaxime) immediately. **Add amoxicillin** if over 60, immunocompromised or a neonate, to cover **Listeria**, which cephalosporins do not treat. Add vancomycin if there has been recent travel to an area with penicillin-resistant pneumococcus.
+- **Dexamethasone 0.15 mg/kg (maximum 10 mg) every 6 hours for 4 days**, given **with or just before** the first antibiotic dose in suspected bacterial meningitis — it reduces hearing loss and mortality, particularly in pneumococcal disease. **Do not give it in meningococcal septicaemia**, and if it has been delayed more than 12 hours after antibiotics, seek specialist advice rather than starting it.
+- **In the community**, give **intramuscular or intravenous benzylpenicillin** before transfer if there is a non-blanching rash, provided it does not delay getting the patient to hospital.
+- Manage sepsis and shock alongside: fluids, early critical care involvement, and treatment of raised intracranial pressure.
+- **Notify public health the same day.** Close household and kissing contacts of meningococcal disease need chemoprophylaxis — **a single dose of ciprofloxacin** (or rifampicin), arranged by public health, not by the admitting team alone.
+
+## Complications and follow-up
+
+Sensorineural **hearing loss** is the commonest sequela, so **audiological assessment is arranged within 4 weeks**. Others are hydrocephalus, seizures and epilepsy, focal deficits, cognitive and behavioural problems, subdural empyema and cerebral abscess, and in meningococcal septicaemia disseminated intravascular coagulation, adrenal haemorrhage (**Waterhouse-Friderichsen syndrome**) and limb loss. Survivors need structured follow-up rather than simple discharge.`,
         },
       ],
     },
