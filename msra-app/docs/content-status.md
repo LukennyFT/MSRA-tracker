@@ -2,7 +2,15 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
-_Last updated: **BATCH 23 DONE — and with it the NEUROLOGY THREAD (Batches 20 to 23) IS COMPLETE.** Nine new notebook topics: eight into `neurology` and **`bacterial_meningitis` into `infectious`**, which had no meningitis topic at all. Notebook `neurology` **31 → 39 topics**, `infectious` **8 → 9**, **total 238 → 247**. Source: Path Guide **p56–57** (CNS infections, meningitis, encephalitis, brain abscess) plus **NICE NG220** (multiple sclerosis) and **NG240** (meningitis), web-verified. Ids added: `multiple_sclerosis`, `myasthenia_gravis`, `guillain_barre_syndrome`, `peripheral_neuropathy`, `cranial_nerve_lesions`, `entrapment_neuropathies`, `spinal_cord_syndromes`, `brain_abscess`, `bacterial_meningitis`. No existing topic changed.
+_Last updated: **Added `neuro_extradural` Extradural (epidural) haematoma to `neurology`'s *Cerebrovascular disease* cluster**, inserted directly after `neuro_subdural` so the two traumatic collections sit together. Neurology **43 → 44** conditions, **total 553 → 554**, flowcharts **176 → 177**. No id changed, nothing moved, no new cluster. The cluster was specified by the user, so no cluster question was needed.
+
+**Duplicate check clean this time** — the only prior hits for "extradural" or "epidural" were inside `neuro_cord_compression`, `neuro_cauda_equina` and `neuro_neurogenic_shock`, where spinal epidural abscess and haematoma appear as causes of cord compression. That is a different entity and correctly stays where it is. (Five of the last six addition requests turned out to be duplicates or near-duplicates, so the check is now routine.)
+
+**15-node flowchart, `source: "NICE NG232"`.** Built around the two things that decide outcome. **The CT shape is the diagnosis** — biconvex "lemon", limited by the cranial sutures because the dura is bound there, but able to cross the midline, which is the exact inverse of the crescentic subdural that crosses sutures but is stopped by the falx. And **the lucid interval is a window, not reassurance**: arterial blood has to strip the adherent dura from the inner table, which takes force and time, so the initial concussion appears to recover while the clot enlarges. The entry states plainly that outcome is excellent when the clot is evacuated **before the pupil dilates** and poor once herniation has begun, because the underlying brain is often uninjured — which is what makes this the intracranial haematoma with the best prognosis and the one where delay is least forgivable.
+
+Other content carried: the **NG232 CT-within-1-hour criteria** and the separate anticoagulant rule (CT within 8 hours, or within 1 hour if presenting more than 8 hours after injury); middle meningeal artery in about three-quarters, with venous extradural haematomas at the vertex and posterior fossa behaving more slowly; the **swirl sign** of active bleeding; rarity under 2 and over 60 because the dura is adherent at those ages; the herniation sequence with **ipsilateral fixed dilated pupil and contralateral hemiparesis**, plus **Kernohan's notch** as the false localising exception; conservative management only in a neurosurgical unit with hourly observations and planned repeat CT; and **no corticosteroids, per CRASH**.
+
+Verified: `node --check` passes; balance **0/0/0**; **554 conditions, 554 unique**, no id changed or lost; **all 177 flowcharts re-rendered through the app's own Mermaid engine with 0 failures**; the new chart renders **15 nodes with 0 blank tips and 0 orphan tips** and all six edge labels read back from the SVG; every fork labelled and no `;` or `&`; the duplicate-key audit across all 554 condition objects is clean. **The React card-level check completed** — the card renders all nine sections in order with its 15-node flowchart drawn, and the cluster header now reads *Cerebrovascular disease 0/5*. **Re-upload `data.js`** (only app file changed). Earlier: **BATCH 23 DONE — and with it the NEUROLOGY THREAD (Batches 20 to 23) IS COMPLETE.** Nine new notebook topics: eight into `neurology` and **`bacterial_meningitis` into `infectious`**, which had no meningitis topic at all. Notebook `neurology` **31 → 39 topics**, `infectious` **8 → 9**, **total 238 → 247**. Source: Path Guide **p56–57** (CNS infections, meningitis, encephalitis, brain abscess) plus **NICE NG220** (multiple sclerosis) and **NG240** (meningitis), web-verified. Ids added: `multiple_sclerosis`, `myasthenia_gravis`, `guillain_barre_syndrome`, `peripheral_neuropathy`, `cranial_nerve_lesions`, `entrapment_neuropathies`, `spinal_cord_syndromes`, `brain_abscess`, `bacterial_meningitis`. No existing topic changed.
 
 **Placement.** Seven appended as a contiguous block at the end of the `neurology` section; **`brain_abscess` was placed immediately after `encephalitis`** instead, mirroring the Tracker's new *CNS infections* cluster and keeping the two CNS infection topics together. It also **closes the gap flagged when `neuro_brain_abscess` was added to the Tracker** — the notebook had no brain abscess coverage.
 
@@ -630,7 +638,7 @@ Earlier: **Added Acute bronchitis to the Respiratory Tracker.** `resp_acute_bron
 
 ## Tracker (`data.js`) — complete
 
-All 19 specialties populated, **553 conditions** total. **500** genuine conditions carry the seven-field layout (Key facts → Epidemiology → Aetiology → Pathophysiology → Presentation → Investigations → Treatment); the other 48 are topic-style entries with their own field structure. Each condition has `presentation` / `investigations` / `treatment` (Pharmacology uses relabelled fields; `pharm_paracetamol_od` uses a 3-section `fields` array).
+All 19 specialties populated, **554 conditions** total. **500** genuine conditions carry the seven-field layout (Key facts → Epidemiology → Aetiology → Pathophysiology → Presentation → Investigations → Treatment); the other 48 are topic-style entries with their own field structure. Each condition has `presentation` / `investigations` / `treatment` (Pharmacology uses relabelled fields; `pharm_paracetamol_od` uses a 3-section `fields` array).
 
 | Specialty | id | Conditions |
 | --- | --- | ---: |
@@ -639,7 +647,7 @@ All 19 specialties populated, **553 conditions** total. **500** genuine conditio
 | Gastroenterology & Nutrition | `gastro` | 53 |
 | Endocrinology & Metabolic | `endocrinology` | 42 |
 | Renal & Urology | `renal` | 27 |
-| Neurology | `neurology` | 43 |
+| Neurology | `neurology` | 44 |
 | Psychiatry & Mental Health | `psychiatry` | 16 |
 | MSK & Rheumatology | `rheumatology` | 28 |
 | Dermatology | `dermatology` | 37 |
