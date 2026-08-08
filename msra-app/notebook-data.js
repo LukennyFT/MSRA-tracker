@@ -11142,6 +11142,1010 @@ An inherited defect in one or more parts of the immune system. Individually rare
 > High-yield: think **SPUR** infections plus failure to thrive. **Co-trimoxazole for PCP** in T-cell and neutrophil defects, **immunoglobulin replacement** for antibody deficiency, and **stem cell transplant for SCID and chronic granulomatous disease**. **Vaccinate the family around the child, and avoid live vaccines in the child.**`,
         },
         {
+          id: "paediatric_eczema",
+          name: "Atopic eczema in children",
+          content: `## Atopic eczema
+
+An itchy, chronic relapsing inflammatory skin disease affecting about one in five children, usually starting in the first year of life. It sits with asthma and hay fever in the atopic march, and most children improve substantially by adolescence — which is worth saying to parents early.
+
+Distribution changes with age: **face and extensor surfaces in infants**, **flexures** (antecubital and popliteal fossae, wrists, ankles, neck) in older children. Scratching produces excoriation, crusting, secondary infection and eventually **lichenification**.
+
+## Grading severity, which drives everything
+
+| Severity | Skin | Impact | Treatment |
+|---|---|---|---|
+| **Clear** | Normal skin | None | Emollients only |
+| **Mild** | Dry skin, infrequent itching | Little impact | Emollient plus a **mild** steroid — hydrocortisone 1% |
+| **Moderate** | Frequent itching, redness, excoriation, localised thickening | Disturbed sleep, moderate impact | Emollient plus a **moderate** steroid — betamethasone valerate 0.025% or clobetasone butyrate 0.05% |
+| **Severe** | Widespread dryness, incessant itch, bleeding, oozing, cracking, pigment change | Nightly sleep loss, severe limitation | Emollient plus a **potent** steroid — betamethasone valerate 0.1% or mometasone |
+
+Assess the **psychosocial impact separately from the skin**, because the two often diverge, and it is the impact that determines how aggressively to treat.
+
+## Emollients — the foundation
+
+- Use them **frequently, liberally and over the whole body, even when the skin is clear**, and as a **soap substitute** instead of soap, bubble bath and perfumed shampoo.
+- Quantity matters far more than brand — a child with moderate eczema needs 250 to 500 g a week.
+- Get the technique right: smooth downwards in the direction of hair growth, do not rub, and use a spatula rather than fingers to avoid contaminating the tub.
+
+## Topical corticosteroids
+
+- Apply **only to areas of active eczema**, once or twice daily, and continue until **48 hours after the flare has settled**.
+- **Do not use potent steroids in children under 12 months without specialist advice**, and use the mildest effective potency on the face and flexures.
+- If a steroid seems ineffective, **try a different preparation of the same potency before escalating** — many apparent failures are under-use driven by steroid phobia.
+- For skin that flares repeatedly, a **maintenance regimen** of steroid on two consecutive days a week prevents relapse; review after 3 to 6 months.
+- **Topical calcineurin inhibitors** (tacrolimus, or pimecrolimus) are second-line for moderate to severe eczema in children **over 2 years** not controlled by steroids. Apply only to active eczema and not under occlusive bandages.
+- **Bandages** — occlusive or dry wraps, sometimes with zinc or tar paste, and wet stockinette wraps with diluted steroid — help lichenified or acutely flared skin and stop scratching, used for 7 to 14 days.
+- Antihistamines do not treat eczema, but a **1-month trial of a non-sedating antihistamine** helps severe itch, and a **7 to 14 day course of a sedating antihistamine** such as chlorphenamine helps when itch destroys sleep.
+
+## Infected eczema
+
+- Swab, then **flucloxacillin** (topical if localised, oral if extensive) for **no longer than 2 weeks**; erythromycin or clarithromycin in penicillin allergy. For recurrent infection, an antiseptic such as chlorhexidine reduces bacterial load short-term.
+
+> **ECZEMA HERPETICUM is the emergency.** Herpes simplex infection of eczematous skin presents as **rapidly worsening, painful eczema with clustered blisters and punched-out erosions**, often with fever and malaise. Start **aciclovir immediately** and arrange same-day dermatology review; if it is near the eyes, same-day ophthalmology as well. Teach every family to recognise it.
+
+## Referral and what parents need to hear
+
+Immediate referral for eczema herpeticum. Urgent (2-week) referral if severe eczema has not responded to optimum treatment in a week, or if treatment of infected eczema has failed. Routine referral for diagnostic uncertainty, facial eczema not responding, suspected contact allergy, significant psychosocial problems or recurrent infection.
+
+Explain that it is common and usually outgrown; that steroids are **topical, not systemic**, and a short course is far better than months of untreated disease; that emollients come first and go on everything; to keep nails short and use anti-scratch mittens in infants; and what infection looks like. Consider food allergy only where there are clear temporal triggers or the eczema is severe and unresponsive — routine exclusion diets do harm.`,
+        },
+        {
+          id: "paediatric_acne",
+          name: "Acne vulgaris",
+          content: `## Acne vulgaris
+
+Obstruction of sebum flow in the sebaceous follicle, with *Cutibacterium acnes* colonisation and inflammation. It can begin **1 to 2 years before puberty proper** and affects the face, neck, back and shoulders, producing open and closed comedones, papules, pustules, nodules and cysts — and it scars.
+
+## What to tell every patient
+
+- Wash twice daily with a gentle soap; **over-cleaning causes dryness and irritation** and does not help.
+- Use non-comedogenic, non-oil-based make-up, emollients and cleansers.
+- **Do not pick or squeeze** — this is what causes scarring.
+- Treatments **take up to 8 weeks to work** and often irritate the skin at first. Most people stop too early.
+- There is no good evidence for specific diets; advise a balanced one.
+
+## Treatment by severity
+
+**Mild to moderate** — a single topical treatment for a **12-week course**, chosen from: adapalene with benzoyl peroxide; clindamycin 1% with tretinoin; clindamycin 1% with benzoyl peroxide; or benzoyl peroxide alone. Apply a thin layer to clean skin at night, building up frequency from once weekly if irritation is a problem. Creams and lotions suit dry skin.
+
+**Moderate acne not responding to topicals** — add an **oral antibiotic** (lymecycline or doxycycline) to the topical, or use topical azelaic acid, for a maximum of 3 months.
+
+> **Always co-prescribe a topical retinoid or benzoyl peroxide with an oral antibiotic**, to reduce antimicrobial resistance — and never use an oral and a topical antibiotic together. Tetracyclines are only licensed **over 12 years** and are avoided in pregnancy.
+
+Change antibiotic after 3 months if there is no improvement. In girls, the **combined oral contraceptive pill** with topical treatment is a reasonable alternative to systemic antibiotics, and **co-cyprindiol** or spironolactone can be added where there are signs of hyperandrogenism. Note that **progestogen-only methods and implants with androgenic activity may worsen acne**.
+
+**Severe acne** — refer to dermatology for **oral isotretinoin**. High-dose oral antibiotics for 6 months or longer are an alternative. If acne flares when isotretinoin is started, a course of oral corticosteroids may be added.
+
+## When to refer
+
+- A severe variant — **acne conglobata or acne fulminans** (the latter with fever and systemic upset, a dermatological emergency).
+- Scarring, or a risk of scarring, and persistent pigmentary change.
+- Failure of two courses of oral antibiotics.
+- **Significant psychological distress** — which is a referral criterion in its own right, and should be asked about directly.
+- Diagnostic uncertainty.
+
+## Follow-up and isotretinoin
+
+Review each step at **8 to 12 weeks**. With an adequate response, continue for at least 12 weeks, then consider maintenance with topical adapalene and benzoyl peroxide. With no response, check adherence and adverse effects before escalating.
+
+Isotretinoin is highly effective but **teratogenic**, so anyone able to become pregnant must be in the **Pregnancy Prevention Programme** with monthly pregnancy testing and two forms of contraception. Other effects are dryness of skin, lips and eyes, photosensitivity, myalgia and deranged lipids and liver enzymes. Mood change and suicidal ideation are the subject of MHRA advice: counsel the patient and family, and review mental health at each visit.`,
+        },
+        {
+          id: "paediatric_nappy_and_cradle_cap",
+          name: "Nappy rash & infantile seborrhoeic dermatitis",
+          content: `## Nappy rash
+
+An irritant contact dermatitis from prolonged contact with urine and faeces, aggravated by friction and by the alkaline pH that results when urea is broken down. It classically **spares the skin folds**, because the flexures are protected from contact — and that single observation separates it from candida.
+
+## Distinguishing the causes
+
+| | Irritant nappy rash | Candida | Bacterial | Seborrhoeic |
+|---|---|---|---|---|
+| Flexures | **Spared** | **Involved** | Variable | Involved |
+| Features | Erythema on convex surfaces, sparing creases | Beefy red, **satellite pustules**, may involve oral thrush | Pustules, crusting, weeping, systemic upset | Salmon-pink, greasy scale, also on scalp |
+| Treatment | Barrier preparation | Topical imidazole | Oral flucloxacillin | Emollient plus imidazole |
+
+## Management
+
+- **Self-care first:** a highly absorbent, well-fitting nappy; nappy off as much as possible; change every 3 to 4 hours or as soon as soiled; clean with water or fragrance-free, alcohol-free wipes and dry gently; bath daily but not more than twice; no soap, bubble bath, lotions or talcum powder.
+- **Mild erythema with a comfortable baby** — a thin layer of **barrier preparation** at each change: zinc and castor oil ointment, Metanium, soft white paraffin or a proprietary barrier cream.
+- **Inflamed and uncomfortable, over 1 month old** — **hydrocortisone 1% once daily for a maximum of 7 days** alongside the barrier cream. Apply the hydrocortisone first and wait a few minutes before the barrier preparation, or the barrier will block it.
+- **Persistent, or candida suspected or confirmed on swab** — **topical imidazole** (clotrimazole, econazole or miconazole), and **stop the barrier preparation** until the candida has settled.
+- **Bacterial infection suspected or confirmed** — **oral flucloxacillin for 7 days**, or clarithromycin in penicillin allergy.
+- Always arrange review. Consider other diagnoses if it fails to settle: psoriasis, seborrhoeic dermatitis, scabies, zinc deficiency (acrodermatitis enteropathica) and, rarely, Langerhans cell histiocytosis.
+
+## Infantile seborrhoeic dermatitis (cradle cap)
+
+An erythematous, **greasy, scaly** eruption of the first two months of life that progresses to a thick, yellow, adherent layer. It starts on the **scalp** and spreads to the face, flexures and nappy area.
+
+> **The discriminator is that it is NOT itchy and the baby is not bothered by it** — unlike atopic eczema, where the child scratches and sleeps badly. It is harmless, non-contagious and self-limiting, usually resolving within a month.
+
+**Scalp:** massage in an emollient to loosen scales, brush gently with a soft brush and wash out with baby shampoo; thick scale can be soaked overnight. If that fails, a **topical imidazole** (clotrimazole 1% or miconazole 2%) for up to 4 weeks, and a short course of **hydrocortisone 1%** for up to 2 weeks if there is significant inflammation. In older children, use ketoconazole or selenium sulphide shampoo, or a keratolytic (salicylic acid, sulphur, coal tar).
+
+**Non-scalp areas:** daily bathing with an emollient as a soap substitute, topical imidazole for up to 4 weeks, and a short low-potency steroid course if it persists.
+
+Refer if it lasts beyond 4 weeks despite treatment, is widespread, or the diagnosis is uncertain.`,
+        },
+        {
+          id: "paediatric_skin_infection",
+          name: "Cellulitis, periorbital cellulitis & necrotising fasciitis",
+          content: `## Cellulitis
+
+Acute bacterial infection of the deep dermis and subcutaneous tissue, usually **Streptococcus pyogenes** or **Staphylococcus aureus**, entering through a break in the skin — a bite, a graze, chickenpox lesions or eczema. **Erysipelas** is the more superficial variant, with a **clearly demarcated, raised** border, and is treated with penicillin V.
+
+## Who needs admission
+
+- **Class III or IV cellulitis** (significant systemic upset or unstable comorbidity), or severe or rapidly deteriorating disease.
+- **Age under 1 year.**
+- Immunocompromise, or significant lymphoedema.
+- **Facial cellulitis** unless very mild, and any suspected **periorbital or orbital cellulitis**.
+- Class II cellulitis where community intravenous facilities are not available.
+
+## Antibiotics
+
+Treat for **7 days**, or 10 if there are significant risk factors, and review at 2 to 3 days.
+
+| Situation | First choice | Penicillin allergy |
+|---|---|---|
+| Non-severe | Oral **flucloxacillin** | Clarithromycin (or doxycycline) |
+| Severe | IV **flucloxacillin** | Clarithromycin |
+| Near the eyes or nose | **Co-amoxiclav**, oral or IV | Clarithromycin with metronidazole |
+
+Mark the edge of the erythema to track progress, elevate the limb, and give paracetamol or ibuprofen. Surgery may be needed for abscess drainage or debridement.
+
+## Periorbital and orbital cellulitis
+
+**Periorbital (preseptal)** cellulitis is infection anterior to the orbital septum: a swollen, red, tender eyelid **with normal eye movements, normal vision and no proptosis**. It usually follows sinusitis, a local skin break or an insect bite.
+
+> **The whole assessment is aimed at excluding ORBITAL cellulitis**, which lies behind the septum and is sight- and life-threatening. The features that separate them are **PAINFUL OR RESTRICTED EYE MOVEMENTS, PROPTOSIS, REDUCED VISUAL ACUITY, COLOUR DESATURATION and a RELATIVE AFFERENT PUPILLARY DEFECT**. If you cannot examine the eye properly, assume the worst.
+
+Periorbital cellulitis in a child is treated promptly with **intravenous antibiotics** (for example cefotaxime, or clindamycin; vancomycin if MRSA is suspected) precisely to prevent posterior spread. Orbital cellulitis needs urgent **contrast CT of the orbits and sinuses**, admission under ophthalmology and ENT, IV antibiotics, and surgical drainage of any subperiosteal abscess. Complications include cavernous sinus thrombosis, meningitis, intracranial abscess and permanent visual loss.
+
+## Necrotising fasciitis
+
+A **surgical emergency** — rapidly spreading infection of the deep fascia with tissue necrosis.
+
+Suspect it when there is **pain out of all proportion to the visible signs**, rapid progression over hours, systemic toxicity, skin anaesthesia, crepitus, dusky or blistering skin, or failure to improve on appropriate antibiotics. In children it may follow **varicella** or a minor injury.
+
+Management is **immediate surgical debridement**, extending beyond the visible necrosis and often repeated, together with aggressive fluid resuscitation, broad-spectrum intravenous antibiotics in combination (typically covering Gram-positives, Gram-negatives and anaerobes, with **clindamycin** included for its antitoxin effect), intensive care support, and consideration of intravenous immunoglobulin. Do not let imaging delay surgery.
+
+For **impetigo, staphylococcal scalded skin syndrome and toxic shock syndrome**, see the separate topic.`,
+        },
+        {
+          id: "paediatric_infestations",
+          name: "Scabies, head lice & ringworm",
+          content: `## Scabies
+
+Infestation with the mite *Sarcoptes scabiei*, burrowing into the stratum corneum. The rash is a **delayed hypersensitivity reaction**, which is why it takes 4 to 6 weeks to appear after a first infestation and why itch persists after successful treatment.
+
+**Presentation:** intense itch, **worse at night and in warmth**, with burrows and papules **between the fingers and toes, at the wrists, axillae, and around the umbilicus and genitals**. In infants and young children the **palms, soles, face and scalp** are involved as well, which they are not in adults. Ask about the household — itchy contacts make the diagnosis.
+
+**Treatment:**
+
+- **Permethrin 5% cream** applied to **cool, dry skin over the whole body from the chin and ears downwards**, paying attention to the finger webs and under the nails, left on for **8 to 12 hours**, then washed off. **In babies, include the face and scalp**, avoiding the eyes.
+- **A second application is required 10 to 14 days later**, to kill mites hatching from eggs that survived the first.
+- **Treat the whole household and all close contacts at the same time**, whether or not they itch.
+- Decontaminate bedding, clothing and towels by hot washing and hot drying.
+- **Warn that itch persists for 2 to 4 weeks after successful treatment** — this is the commonest reason for unnecessary re-treatment. Use crotamiton 10% or hydrocortisone for post-scabetic itch, and a sedating antihistamine at night.
+- Second-line is oral ivermectin. Seek specialist advice for **crusted (Norwegian) scabies**, which is highly contagious, and for infants under 2 months.
+
+## Head lice (pediculosis capitis)
+
+Diagnosis requires **finding a living louse**, usually by detection combing; nits alone do not confirm active infestation.
+
+- **Wet combing** with a fine-tooth comb, in four sessions over two weeks (days 1, 5, 9 and 13), is effective and safe.
+- **Dimeticone 4%** is a physical insecticide, rubbed into hair and scalp and left overnight. Malathion 0.5% is the only licensed traditional insecticide, and resistance is reported.
+- Apply insecticides **twice, at least 7 days apart**, to kill lice hatching after the first application, then confirm cure by detection combing.
+- Treat only those with live lice; **no school exclusion** is required.
+
+## Ringworm (dermatophyte infection)
+
+Annular lesions with a raised, scaly, **crusted advancing edge and central clearing**. Ask about pets — cats, dogs and guinea pigs are common sources and need treating too.
+
+| Site | Treatment |
+|---|---|
+| **Tinea corporis / cruris**, mild | **Topical** antifungal — terbinafine or clotrimazole cream. Add hydrocortisone 1% briefly if markedly inflamed |
+| Tinea corporis, severe or extensive | **Oral terbinafine**; itraconazole second-line |
+| **Tinea capitis** | **Systemic antifungal always** — griseofulvin or terbinafine, because topicals do not penetrate the hair follicle. Add an antifungal shampoo (selenium sulfide or ketoconazole) to reduce transmission |
+
+**Tinea capitis is the one to remember**, because treating it topically fails. It presents with scaly patches of hair loss and broken hairs, and a **kerion** is the severe boggy, pustular inflammatory form, which is often mistaken for a bacterial abscess and must not be incised. Take scrapings or hair samples for mycology before starting systemic treatment where possible.
+
+Advise loose cotton clothing, daily washing and thorough drying, not sharing towels, and frequent laundering. **No school exclusion is needed** for any of the three conditions on this page.`,
+        },
+        {
+          id: "paediatric_viral_skin",
+          name: "Molluscum, viral warts & hand, foot and mouth disease",
+          content: `## Molluscum contagiosum
+
+Caused by a **poxvirus**, spread by direct contact and by shared towels and baths. The lesions are **pearly, dome-shaped papules with central umbilication**, through which the infectious core is shed. They are commonest in young children and in flexural sites, and are more extensive in atopic eczema and immunocompromise.
+
+- **No treatment is needed in an immunocompetent child** — it is self-limiting, with spontaneous resolution usually within **18 months**, though it may take longer.
+- Advise **against squeezing** lesions, which spreads the virus and risks secondary infection, and against sharing towels, clothing and bathwater.
+- Treat surrounding eczema with emollients and steroids, and secondary bacterial infection with antibiotics.
+- **No school exclusion**, and no need to avoid swimming — cover lesions with a waterproof dressing.
+- Refer if the child is immunocompromised, lesions are extensive and painful, or the diagnosis is uncertain. Inflamed lesions usually signal imminent resolution rather than infection.
+- **Anogenital lesions in a child** need thought about the mode of acquisition — usually innocent autoinoculation, but consider safeguarding. Podophyllotoxin or imiquimod may be used, with a sexual health screen where appropriate.
+
+## Viral warts
+
+Caused by human papillomavirus, spread by direct contact and by wet floors. Verrucae are simply warts on the sole, flattened by weight-bearing.
+
+- **Watchful waiting is the usual approach in children**: most resolve without treatment within 2 years, and treatment is uncomfortable.
+- If treatment is wanted: **debridement of the surface plus topical salicylic acid** daily for up to 12 weeks, after soaking and paring the wart.
+- **Cryotherapy** with liquid nitrogen is effective but painful, and should be reserved for older children.
+- No school exclusion; cover verrucae with a waterproof plaster for swimming.
+
+## Hand, foot and mouth disease
+
+A **coxsackievirus A16** (or enterovirus 71) infection of young children, spread by droplet, faecal-oral and vesicle-fluid contact.
+
+**Presentation:** a prodrome of fever, sore throat and malaise, then **painful oral ulcers** and a **vesicular rash on the palms, soles and buttocks**. The vesicles are oval and greyish, on an erythematous base. It usually resolves within **7 to 10 days**, and nail shedding (onychomadesis) a few weeks later is a recognised, harmless sequel.
+
+**Management is symptomatic:**
+
+- Paracetamol or ibuprofen for pain and fever, and attention to **hydration** — the main risk is that painful ulcers stop the child drinking.
+- A soft diet, avoiding hot, spicy, salty and acidic foods.
+- Hygiene measures to limit spread: hand washing and drying, covering coughs and sneezes, washing soiled clothing separately at high temperature, and not sharing utensils.
+- Keep blisters clean and cover erosions with a non-adherent dressing.
+
+> **No school exclusion is required**, which parents and schools often get wrong. Reassure explicitly that it has **nothing to do with foot and mouth disease in cattle** — a question that comes up every time.
+
+Admit urgently if there are signs of CNS involvement — persistent or severe headache, myoclonus with disturbed sleep, confusion, weakness, lethargy, drowsiness or seizures — since enterovirus 71 can cause encephalitis. Dehydration from refusing fluids is the other reason for admission.`,
+        },
+        {
+          id: "paediatric_birthmarks",
+          name: "Birthmarks & benign neonatal skin lesions",
+          content: `## Infantile haemangioma
+
+A benign proliferation of endothelial cells, usually **absent or barely visible at birth**, growing rapidly over the first few months, then involuting slowly over years. Most need nothing but explanation and time.
+
+**Treat when there is functional impairment or a risk of disfigurement:**
+
+- **Periocular** lesions, which cause amblyopia by obstructing the visual axis.
+- **Airway** lesions — suspect a subglottic haemangioma in an infant with a beard-distribution facial haemangioma and stridor.
+- **Nasal tip, lip and ear** lesions, where scarring is disfiguring.
+- **Ulcerated** lesions, which are painful and bleed.
+
+**Oral propranolol** is first-line and has transformed treatment, with topical timolol for small superficial lesions; corticosteroids are now second-line. Treatment continues until involution or about 12 months of age. Pulsed dye laser and surgical excision are reserved for residual lesions or ulceration.
+
+Multiple cutaneous haemangiomas warrant abdominal ultrasound for hepatic lesions, and a large segmental facial haemangioma raises the possibility of **PHACES syndrome**.
+
+## Port-wine stain (capillary malformation)
+
+Unlike a haemangioma, a port-wine stain is **present at birth, grows only with the child, and never involutes** — it darkens and thickens with age. Pulsed dye laser gives the best results when started early.
+
+A port-wine stain in the **trigeminal (ophthalmic) distribution** raises **Sturge-Weber syndrome** — leptomeningeal angioma with seizures, hemiparesis, learning difficulty and glaucoma — and needs ophthalmology assessment and neuroimaging.
+
+## Congenital dermal melanocytosis
+
+Blue-grey macular patches, most often over the **lumbosacral region and buttocks**, caused by melanocytes retained in the dermis. They are commonest in babies with darker skin, are entirely harmless, need no treatment, and usually fade by about 4 years of age.
+
+> **They are frequently mistaken for BRUISES, and therefore for non-accidental injury.** Record their site, size and appearance in the baby's notes at birth so that later clinicians are not misled. The distinguishing features are that they are present from birth, do not change colour through the bruise sequence, and are not tender.
+
+## Milia
+
+Tiny (1 to 2 mm) white or yellow keratin-filled cysts, seen on the nose, cheeks and chin of about half of all newborns. They are harmless and **clear spontaneously within a few weeks** in infants, needing nothing more than reassurance. Persistent lesions in older children can be removed with a fine needle, cryotherapy or laser if they trouble the child cosmetically.
+
+## Other common newborn skin findings worth recognising
+
+- **Erythema toxicum neonatorum** — blotchy erythematous macules with a central pustule, appearing in the first few days, migrating from site to site, and resolving spontaneously. Benign and very common.
+- **Milaria (heat rash)** — obstructed sweat ducts producing tiny clear vesicles or itchy red papules in hot conditions; treat by cooling.
+- **Salmon patch (stork mark)** — a pink macular patch on the eyelids, glabella or nape, fading over the first year (though nape lesions may persist).
+
+The task with all of these is confident recognition, so that a benign finding is not investigated and a significant one is not dismissed.`,
+        },
+        {
+          id: "paediatric_rash_approach",
+          name: "The approach to a rash in a child",
+          content: `## Describing a rash
+
+A systematic description narrows the differential faster than pattern recognition alone:
+
+- **Type of lesion** — macule (flat), papule (raised, under 5 mm), maculopapular, plaque, vesicle, pustule, nodule, patch, comedone, weal.
+- **Size, shape and symmetry**; **colour and pigmentation**; **surface** (smooth, rough, scaly, crusted).
+- **Distribution** — flexor or extensor, central or peripheral, sun-exposed, nappy area.
+- **Epidermal change** — lichenification, scaling, excoriation.
+- **Nail and mucosal involvement**, which points to specific diagnoses.
+- **Blanching or non-blanching** — the single most important question in an unwell child.
+
+## The rashes that must not be missed
+
+> **A NON-BLANCHING rash in a febrile or unwell child is meningococcal septicaemia until proved otherwise.** The lesions are purpuric, irregular in size and outline, with necrotic centres, and are called **purpura fulminans** when widespread. The early presentation is non-specific — fever, vomiting, poor feeding, irritability, lethargy, cold hands and feet — and the rash may appear late. Give **immediate parenteral antibiotics** and resuscitate; see the meningitis topic.
+
+Also urgent: **eczema herpeticum** (rapidly worsening painful eczema with clustered blisters and punched-out erosions), **necrotising fasciitis** (pain out of proportion, rapid progression), **staphylococcal scalded skin syndrome**, **Stevens-Johnson syndrome and toxic epidermal necrolysis** (mucosal involvement, skin pain, Nikolsky sign, usually drug-triggered), and the rash of **Kawasaki disease** in a child febrile for five days or more.
+
+## Common childhood rashes at a glance
+
+| Rash | Recognition |
+|---|---|
+| **Atopic eczema** | Itchy; face and extensors in infants, flexures later; excoriation and lichenification |
+| **Infantile seborrhoeic dermatitis** | Greasy yellow adherent scale on the scalp, **not itchy**, first 2 months |
+| **Candida** | Beefy red, **involves the flexures**, satellite pustules |
+| **Molluscum contagiosum** | Pearly papules with central umbilication |
+| **Scabies** | Intense itch worse at night; finger webs, wrists, axillae; palms and soles in infants |
+| **Ringworm** | Annular, scaly, raised advancing edge with central clearing |
+| **Guttate psoriasis** | Small "raindrop" scaly plaques on trunk and upper limbs, **1 to 2 weeks after a streptococcal throat infection** |
+| **Urticaria** | Transient itchy weals, each lasting under 24 hours |
+| **Erythema multiforme** | **Target lesions**, triggered by herpes simplex or *Mycoplasma*; resolves over weeks |
+| **Erythema nodosum** | Tender red nodules on the **shins**; streptococcus, tuberculosis, inflammatory bowel disease, drugs |
+| **Slapped cheek (parvovirus B19)** | Bright red cheeks, then a lace-like rash on the trunk and limbs |
+| **Henoch-Schonlein purpura (IgA vasculitis)** | **Palpable purpura on buttocks and extensor surfaces, sparing the trunk**, with arthralgia, abdominal pain and nephritis |
+
+## Guttate psoriasis
+
+Reassure that it is self-limiting, usually resolving within 3 to 4 months, and is **not infectious**. Offer an **emollient** to reduce scale and itch, and a **potent topical corticosteroid with a vitamin D preparation** for localised disease; salicylic acid helps stubborn scale. **Narrowband UVB phototherapy** two to three times a week is first-line where disease is widespread or topical treatment fails. Refer if extensive, severe, unresponsive or uncertain.
+
+## Henoch-Schonlein purpura
+
+Commonest in boys aged 3 to 10, often after a streptococcal upper respiratory infection. Most resolve spontaneously within 4 weeks; treat joint pain with paracetamol or ibuprofen. Oral prednisolone is used for severe abdominal pain, severe oedema or scrotal involvement, and intravenous corticosteroids where there is nephrotic-range proteinuria or declining renal function.
+
+> **The kidney determines the prognosis.** Every child needs **blood pressure and urinalysis monitoring for at least 6 months** after the rash has gone, because nephritis can appear late and silently. See the vasculitides topic for the wider picture.
+
+## Insect bites and stings
+
+Remove a visible stinger by **scraping sideways**, clean with soap and water. For a localised reaction: analgesia, an ice pack in 15-minute cycles, an oral antihistamine or hydrocortisone 1%. Oral steroids for 3 to 5 days help moderate to severe reactions. Treat secondary infection as cellulitis, and consider tetanus and rabies risk and **co-amoxiclav for 7 days** after animal and human bites. Anaphylaxis is covered separately.`,
+        },
+        {
+          id: "paediatric_uti",
+          name: "Urinary tract infection in children",
+          content: `## Why it matters more in children
+
+A urinary tract infection in a child is both harder to recognise and more consequential than in an adult: the presentation is non-specific in infants, and recurrent upper tract infection can scar the developing kidney, leading to hypertension and chronic kidney disease decades later.
+
+**Think of it in any unexplained fever.** Infants present with fever, vomiting, poor feeding, irritability, lethargy, prolonged jaundice or faltering growth — not with dysuria. Older children give the classical story of dysuria, frequency, urgency, loin or abdominal pain, and new daytime wetting or bedwetting in a previously dry child.
+
+## Diagnosis
+
+- **Collect urine before starting antibiotics** wherever possible — a clean catch is preferred; use a pad or catheter sample if necessary, and avoid bag samples, which are frequently contaminated.
+- **Dipstick interpretation depends on age.** In children over 3 years it guides treatment (nitrite is more specific, leucocyte esterase more sensitive). **In infants under 3 months, dipstick is unreliable — send urgent microscopy and culture and treat.**
+- Send urine for culture in all children under 3 years, in suspected upper tract infection, in recurrent infection and where the dipstick is equivocal.
+
+## Management by age and severity
+
+| Group | Management |
+|---|---|
+| **Under 3 months** | **Admit** for a full septic screen including urine culture, and give **parenteral antibiotics** (for example IV ampicillin with gentamicin, or cefotaxime). Step down orally once improving and cultures are negative |
+| **3 months to 15 years, lower UTI** | Oral antibiotics for 3 days — **trimethoprim** or **nitrofurantoin** (the latter needs eGFR of 45 or above) — guided by local resistance |
+| **3 months to 15 years, upper UTI or pyelonephritis** | Oral **cephalexin**, or co-amoxiclav only if the organism is known to be susceptible, for 7 to 10 days. Consider paediatric referral, and refer urgently if at high risk of serious illness |
+| **Recurrent UTI** | Refer to a paediatric specialist for investigation |
+
+Ensure adequate fluids, treat constipation (a very common contributor), and address dysfunctional voiding.
+
+## Imaging — the part that changed
+
+NICE **NG224 (2022)** simplified the older, complex imaging tables:
+
+- **Do not routinely image to localise the infection.** Where it is clinically important to confirm upper tract involvement, use power Doppler ultrasound, or a DMSA scan if that is unavailable.
+- **Ultrasound** is used to look for structural abnormality — during the acute illness in infants under 3 months and in atypical or seriously ill children, otherwise within weeks.
+- **DMSA scintigraphy 4 to 6 months after the acute infection** detects renal parenchymal scarring.
+- **Micturating cystourethrography** is reserved for selected infants, principally to demonstrate vesicoureteric reflux where there is a strong suspicion.
+
+> **Atypical features are what drive investigation:** a seriously ill child, poor urine flow, an abdominal or bladder mass, raised creatinine, septicaemia, failure to respond to appropriate antibiotics within 48 hours, or infection with a non-*E. coli* organism.
+
+## Vesicoureteric reflux
+
+Retrograde flow of urine from bladder to ureter, graded I to V. It predisposes to recurrent upper tract infection and scarring, and often resolves spontaneously with growth. Management is prompt treatment of infections, treatment of constipation and voiding dysfunction, antibiotic prophylaxis in selected children, and surgery only for high-grade reflux with breakthrough infections or progressive scarring. Siblings and offspring have a higher incidence.`,
+        },
+        {
+          id: "paediatric_nephrotic_hus",
+          name: "Nephrotic syndrome & haemolytic uraemic syndrome",
+          content: `## Nephrotic syndrome in children
+
+The triad of **heavy proteinuria, hypoalbuminaemia and oedema**, usually with hyperlipidaemia. Presentation is typically periorbital oedema on waking, mistaken for allergy, progressing to generalised oedema, ascites and scrotal or vulval swelling.
+
+> **In children, over 80% is MINIMAL CHANGE DISEASE, which is steroid-responsive — so a biopsy is not needed before starting treatment.** That is the reverse of adult practice, and it is the single most important paediatric point.
+
+**Treatment:** oral **prednisolone 60 mg/m² daily for 4 weeks**, then 40 mg/m² on alternate days for 4 weeks, then weaned. Add a **low-salt diet and fluid restriction**; intravenous albumin with furosemide is reserved for severe symptomatic oedema, because albumin can precipitate pulmonary oedema.
+
+**Failure to respond after 4 to 6 weeks of steroids, or atypical features** — age under 1 or over 12, hypertension, haematuria, impaired renal function, or low complement — means a different diagnosis (focal segmental glomerulosclerosis, membranous nephropathy) and warrants **renal biopsy** and specialist immunosuppression with ciclosporin or tacrolimus.
+
+**Complications to anticipate:**
+
+- **Infection** — loss of immunoglobulin and complement in the urine gives susceptibility to encapsulated organisms; **spontaneous bacterial peritonitis with *Streptococcus pneumoniae*** is the classic. Ensure pneumococcal and varicella immunisation.
+- **Thrombosis** — urinary loss of antithrombin III with haemoconcentration.
+- **Hypovolaemia** despite visible oedema, and hyperlipidaemia.
+- Relapse is common; most children relapse at least once, often with intercurrent infection.
+
+## Haemolytic uraemic syndrome
+
+The triad of **microangiopathic haemolytic anaemia, thrombocytopenia and acute kidney injury**. In children it is usually **typical (D+) HUS**, following a diarrhoeal illness — classically bloody — caused by **Shiga toxin-producing *E. coli* O157:H7**, occasionally *Shigella*.
+
+The toxin damages endothelium, triggering platelet activation and fibrin deposition in small vessels; red cells are sheared as they pass through, giving **schistocytes** on the blood film, and the glomeruli bear the brunt.
+
+**Presentation:** a bloody diarrhoeal prodrome, then pallor, lethargy, reduced urine output, oedema and hypertension, typically 5 to 10 days later. Bloods show anaemia with schistocytes, thrombocytopenia, raised urea and creatinine, and a **negative Coombs test**.
+
+**Management is supportive and specialist:**
+
+- Admit and involve **nephrology and haematology**. Half will need dialysis in the acute phase.
+- Careful fluid balance with isotonic crystalloid, avoiding overload; monitor urine output.
+- **Treat hypertension with a calcium channel blocker** — ACE inhibitors reduce renal perfusion in the acute phase.
+- Red cell transfusion for symptomatic anaemia; platelets are generally avoided unless there is bleeding.
+
+> **AVOID ANTIBIOTICS, ANTIMOTILITY AGENTS, OPIOIDS AND NSAIDS in diarrhoea-associated HUS.** Antibiotics increase toxin release and can worsen the disease — a counter-intuitive point that is regularly tested.
+
+**Atypical HUS** has no diarrhoeal prodrome, is often familial (complement dysregulation), relapses frequently, and carries a high risk of hypertension, progressive chronic kidney disease and death; eculizumab is used. **Thrombotic thrombocytopenic purpura**, with fever and neurological signs, needs plasma exchange.
+
+Long-term follow-up is essential after any episode, because persistent proteinuria, hypertension and progressive chronic kidney disease can develop years later.`,
+        },
+        {
+          id: "paediatric_aki_ckd",
+          name: "Acute kidney injury & chronic kidney disease in children",
+          content: `## Acute kidney injury
+
+Use the **STOP AKI** framework:
+
+- **S**epsis — perform a septic screen and treat.
+- **T**oxins — identify and stop nephrotoxic drugs: NSAIDs, aminoglycosides, ACE inhibitors, and iodinated contrast.
+- **O**ptimise volume status and blood pressure — fluid bolus if hypovolaemic, withhold diuretics.
+- **P**revent harm — treat reversible causes such as obstruction, and treat the life-threatening complications, above all **hyperkalaemia** and acidosis.
+
+**Causes divide by site:**
+
+| | Examples | Action |
+|---|---|---|
+| **Pre-renal** (commonest in children) | Gastroenteritis with dehydration, sepsis, haemorrhage, burns | Urgent fluid replacement and circulatory support; major haemorrhage or sepsis protocols as appropriate |
+| **Intrinsic** | Acute tubular necrosis, glomerulonephritis, haemolytic uraemic syndrome, interstitial nephritis | Stop the causative drug (gentamicin is a classic), treat the specific disease |
+| **Post-renal** | Posterior urethral valves, stones, tumour, neuropathic bladder | Relieve the obstruction with catheterisation or nephrostomy, and refer urgently to urology |
+
+**Refer to urology immediately** where there is pyelonephritis with obstruction, an obstructed solitary kidney, bilateral upper tract obstruction, or complications caused by obstruction.
+
+**Indications for dialysis** are the same as in adults: severe metabolic acidosis, hyperkalaemia refractory to medical treatment, refractory intoxication (aspirin, lithium), fluid overload with pulmonary oedema or severe hypertension, and uraemic encephalopathy.
+
+Acute kidney injury in childhood generally has a **good prognosis** unless it complicates something more serious such as severe sepsis or cardiac surgery.
+
+## Chronic kidney disease in children
+
+The aims are to treat reversible dysfunction, slow progression and manage the complications. Antihypertensive and lipid management broadly follow the adult pattern — an ACE inhibitor or angiotensin receptor blocker first, with a calcium channel blocker and statin added — with education about renal replacement therapy from stage 3 to 4, and dialysis or transplantation at stage 5.
+
+**What is different in children, and what the questions are about:**
+
+- **GROWTH.** Children with chronic kidney disease develop **growth hormone resistance** — a high growth hormone level with poor growth. **Recombinant human growth hormone** improves height for up to 5 years of use. Puberty is often delayed with a blunted growth spurt.
+- **NUTRITION.** Anorexia and vomiting are common, and calorie supplements or nasogastric or gastrostomy feeding are frequently needed to sustain growth. Protein intake must be enough for growth without accumulating toxic metabolites.
+- **RENAL OSTEODYSTROPHY.** Reduced activation of vitamin D causes phosphate retention and hypocalcaemia, driving **secondary hyperparathyroidism** and eventually osteitis fibrosa cystica and osteomalacia. Treat with dietary phosphate restriction (reducing milk), **calcium carbonate as a phosphate binder**, and activated vitamin D.
+- **SALT AND WATER LOSS.** Many children have obligatory salt and water loss and need generous salt and fluid supplementation — the opposite of adult restriction — plus **bicarbonate supplements** to prevent acidosis.
+- **ANAEMIA.** Treat with an erythropoiesis-stimulating agent together with iron.
+
+The overriding theme is that in children the kidney disease is managed alongside growth and development, and a child who is medically stable but failing to grow is not adequately treated.`,
+        },
+        {
+          id: "paediatric_enuresis",
+          name: "Enuresis & bedwetting",
+          content: `## What is normal
+
+Most children are **dry by day by about 4 years and dry by night by about 5**. Bedwetting below 5 is common and usually resolves without intervention, so the age of the child determines whether this is a problem at all.
+
+**Primary** bedwetting means the child has never been reliably dry at night. **Secondary** bedwetting means wetting that begins after the child has been dry for at least 6 months, and it always prompts a search for a cause.
+
+The mechanism in primary nocturnal enuresis is a mismatch: the volume of urine produced overnight exceeds bladder capacity, and the sensation of a full bladder does not wake the child. It is **not the child's fault, and not laziness** — saying this explicitly, in front of the child, is part of the treatment.
+
+## Primary bedwetting without daytime symptoms
+
+**Under 5 years** — reassure, and give general advice:
+
+- Adequate daily fluid intake, avoiding caffeine-containing drinks, especially in the evening.
+- Emptying the bladder regularly during the day and again before sleep — four to seven times in total.
+- Easy access to a toilet or potty at night, waterproof mattress and duvet protection, and bed pads.
+- **Lifting or waking the child at night does not promote long-term dryness**, though a child who wakes should be taken to the toilet.
+- Consider a positive reward system for agreed behaviours (drinking well, using the toilet before bed) rather than for dry nights themselves.
+
+**Over 5 years** — the same advice, and if wetting is infrequent (fewer than 2 wet nights a week) a watch-and-see approach is reasonable. Never punish or shame the child. If longer-term treatment is needed:
+
+- **First line: an enuresis alarm** with a positive reward system. It is the most effective treatment and the most likely to give lasting dryness, but it needs commitment from the whole family and takes weeks.
+- **Second line: desmopressin**, which is also the right choice when **rapid or short-term control** is needed — a school trip or a sleepover. **Restrict fluids from 1 hour before the dose until 8 hours after**, because of the risk of hyponatraemia.
+- An anticholinergic may be added where there is an overactive bladder at night.
+- If wetting recurs after treatment, restart what worked, and consider combining desmopressin with an alarm.
+
+**Refer** to secondary care, an enuresis clinic or a community paediatrician if bedwetting has not responded to two courses of treatment.
+
+## When to refer or investigate instead
+
+- **Primary bedwetting WITH daytime symptoms** — urgency, frequency, daytime wetting, straining or a poor stream — should be referred, since it suggests bladder pathology or dysfunction.
+- **Secondary bedwetting** always needs a cause sought. **Urinary tract infection and constipation can be managed in primary care.** Refer if there is **diabetes** (ask about polyuria, polydipsia and weight loss), recurrent urinary infection, psychological or family problems, developmental or learning difficulties, or known or suspected physical or neurological disease.
+
+> **Constipation is the single most commonly missed cause** of both daytime and night-time wetting. A loaded rectum reduces functional bladder capacity, and treating it alone resolves a substantial proportion of cases — always ask about stool frequency and consistency before starting an alarm.
+
+Remember the memory aid **BED**: **B**ehavioural measures and reward systems, **E**nuresis alarm, **D**esmopressin.`,
+        },
+        {
+          id: "paediatric_scrotum_genitalia",
+          name: "The acute scrotum & genital conditions in boys",
+          content: `## The acute scrotum
+
+> **Any boy with acute scrotal pain has TESTICULAR TORSION until proved otherwise, and the diagnosis is made surgically, not radiologically.** Do not delay exploration for an ultrasound. Salvage rates are high when surgery happens within **4 to 6 hours** of onset and fall steeply thereafter.
+
+| | Testicular torsion | Torsion of the appendix testis | Epididymo-orchitis |
+|---|---|---|---|
+| Onset | **Sudden**, severe, often waking from sleep | Gradual over days | Gradual over days |
+| Peak age | Neonates and **12 to 18 years** | 7 to 12 years | Post-pubertal |
+| Signs | High-riding, transverse testis; **absent cremasteric reflex**; nausea and vomiting | Localised tenderness at the upper pole, **blue dot sign** | Tender epididymis, **pain relieved by elevation** (Prehn's sign), fever, dysuria |
+| Action | **Immediate surgical exploration** | Analgesia, usually conservative | Antibiotics, and consider urinary tract abnormality in a prepubertal boy |
+
+**Management of torsion:** admit immediately under urology or paediatric surgery, keep nil by mouth, give intravenous fluids, analgesia (morphine) and an antiemetic. At operation the decision between **orchidopexy and orchidectomy** depends on viability, and **the contralateral testis is always fixed**, because the underlying bell-clapper anatomy is bilateral. Manual de-torsion may be attempted only if surgery cannot happen within 6 hours. A history of recurrent self-resolving pain and swelling suggests intermittent torsion and needs urological referral.
+
+**Epididymo-orchitis** in a post-pubertal boy is usually sexually transmitted: treat empirically with **ceftriaxone 1 g intramuscularly plus doxycycline for 14 days** if gonorrhoea is possible, or doxycycline alone for chlamydia, with a sexual health referral. In younger boys and where enteric organisms are likely, use a quinolone and investigate for a urinary tract abnormality. Mumps orchitis is supportive only. Admit if systemically unwell, diabetic or immunocompromised.
+
+## Hydrocoele
+
+A collection of fluid in the tunica vaginalis, transilluminating and with the examining fingers able to get above it (unlike a hernia).
+
+- **Under 2 years:** congenital, from a patent processus vaginalis. Most resolve spontaneously, so **observe** — unless bowel is palpable in the groin, which means a hernia and needs repair.
+- **Persisting beyond 2 years:** surgical repair.
+- **Adolescents:** usually non-communicating; observe unless large or uncomfortable. A new hydrocoele in this age group should prompt examination of the testis for an underlying tumour.
+
+## Undescended testes (cryptorchidism)
+
+- **Bilateral undescended testes at birth, or any undescended testis with hypospadias or ambiguous genitalia**, needs **urgent senior paediatric review within 24 hours** — this may be a disorder of sex development or congenital adrenal hyperplasia.
+- Unilateral at birth: re-examine at 6 to 8 weeks, then at 4 to 5 months.
+- **Still undescended at 4 to 5 months: refer to paediatric surgery to be seen before 6 months**, with **orchidopexy ideally performed before 1 year** (and by 18 months at the latest).
+- **Retractile** testes need annual review through childhood, because they can ascend.
+
+Orchidopexy is done for fertility (particularly if bilateral), to reduce the risk of trauma and torsion, for cosmetic reasons, and because an undescended testis carries an increased risk of malignancy — a risk that surgery reduces but does not abolish, so **teach self-examination at puberty**.
+
+## Two more to recognise
+
+**Hypospadias** — the urethral meatus opens on the ventral surface, with a hooded prepuce and often chordee. Surgery is not mandatory and is performed after 3 months for functional or cosmetic reasons. **The child must NOT be circumcised before repair**, because the foreskin is needed for reconstruction.
+
+**Paraphimosis** — the retracted foreskin cannot be reduced, causing a constricting ring, oedema and eventually ischaemia. It is a **urological emergency**: reduce manually with topical analgesia, ice, compression or an osmotic agent such as 50% dextrose; if that fails, refer urgently for puncture technique or surgical reduction, followed by circumcision. Ischaemia or necrosis means emergency surgery.`,
+        },
+        {
+          id: "paediatric_oncology",
+          name: "Childhood cancer: recognition & the common tumours",
+          content: `## Why recognition is hard
+
+Childhood cancer is rare — about 1 in 500 children — and its symptoms are those of common benign illness. The task is to notice the pattern that does not fit: symptoms that **persist, progress or recur**, especially with systemic features.
+
+**Red flags warranting urgent referral or investigation:**
+
+- **Unexplained persistent bone pain**, particularly waking the child at night, or a persistent limp.
+- **Unexplained lymphadenopathy** that is non-tender, over 2 cm, progressive or supraclavicular.
+- **Pallor, bruising, petechiae or recurrent infection** — request an **urgent full blood count and film**, and refer for specialist assessment within 48 hours if abnormal.
+- **An abdominal mass**, or unexplained hepatosplenomegaly.
+- **New neurological signs, morning headache with vomiting, or a change in behaviour or vision** — a very urgent MRI within 2 weeks.
+- **Leukocoria (a white pupillary reflex) or a new squint** — same-day ophthalmology, for retinoblastoma.
+- Unexplained weight loss, persistent fever or night sweats.
+
+## Acute lymphoblastic leukaemia
+
+The commonest childhood cancer, peaking at 2 to 5 years. It presents with the consequences of marrow failure — **pallor and lethargy, bruising and petechiae, infection** — plus bone pain, lymphadenopathy and hepatosplenomegaly.
+
+**Prognosis is stratified** by age (worse under 1 or over 10), white cell count over 50 × 10⁹/L, cytogenetics (t(9;22) and MLL rearrangement are adverse), speed of response, and **minimal residual disease**, which is now the dominant factor and determines treatment intensity.
+
+**Treatment** runs in phases — induction (prednisolone, vincristine, an anthracycline and asparaginase), consolidation, and **maintenance for up to 3 years**, with **intrathecal methotrexate throughout**, because systemic chemotherapy penetrates the central nervous system poorly. Imatinib is added in Philadelphia-positive disease. Remission rates with induction are around 95%, and overall survival now exceeds 85%.
+
+**Supportive care is where the acute risk lies:** hydration and **allopurinol or rasburicase to prevent tumour lysis syndrome**, blood and platelet support, antimicrobial prophylaxis, and treatment of **neutropenic sepsis as an emergency** — see the haematology topics for the adult detail on leukaemia classification.
+
+## The solid tumours to know
+
+| Tumour | Typical presentation | Management outline |
+|---|---|---|
+| **Brain tumours** (second commonest childhood cancer, mostly infratentorial) | Morning headache and vomiting, ataxia, cranial nerve palsies, squint, behaviour change; hydrocephalus | Surgery for tissue diagnosis, maximal safe resection and relief of hydrocephalus, then radiotherapy and chemotherapy by type |
+| **Neuroblastoma** (from sympathetic neural crest, under 5) | Abdominal mass crossing the midline, bone pain, **periorbital bruising and proptosis**, raised urinary catecholamines | Risk-stratified: observation in low risk (some infants regress spontaneously), chemotherapy and surgery in intermediate, and multimodal treatment with autologous transplant, dinutuximab and isotretinoin in high risk |
+| **Wilms tumour (nephroblastoma)** (under 5) | **Painless abdominal mass that does NOT cross the midline**, haematuria, hypertension | Nephrectomy with chemotherapy, radiotherapy in advanced disease; over 80% cured. Bilateral in 5% |
+| **Retinoblastoma** (median 18 months) | **Leukocoria**, squint, red painful eye; RB1 gene, bilateral in hereditary cases | Aim is to save life, then eye, then vision: systemic chemotherapy with focal laser or cryotherapy; enucleation for advanced disease. About 90% cured, but many are visually impaired |
+| **Hodgkin lymphoma** (adolescents) | Painless cervical lymphadenopathy, B symptoms, mediastinal mass | ABVD chemotherapy with or without radiotherapy, response assessed by PET; around 80% cured |
+
+> **The two abdominal masses are distinguished by the midline.** A neuroblastoma arises from the sympathetic chain and **crosses** the midline, is often calcified and irregular, and the child is usually unwell. A Wilms tumour arises from the kidney, is smooth, and **does not cross** the midline, and the child is often otherwise well.
+
+## Survivorship
+
+Cure rates above 80% mean late effects now matter as much as treatment: growth and endocrine failure, cardiotoxicity from anthracyclines, infertility, neurocognitive effects of cranial irradiation, and **second malignancies** — a particular risk in hereditary retinoblastoma. Long-term follow-up is lifelong.`,
+        },
+        {
+          id: "paediatric_haemoglobinopathy",
+          name: "Sickle cell disease & thalassaemia in children",
+          content: `## Sickle cell disease
+
+An autosomal recessive haemoglobinopathy in which a single amino acid substitution produces HbS, which polymerises when deoxygenated, deforming red cells. The consequences are **vaso-occlusion** and **chronic haemolysis**. It is identified in the UK through the **newborn blood spot screening programme**, so most children are diagnosed before symptoms.
+
+Symptoms begin after about **6 months**, as fetal haemoglobin falls.
+
+## Routine care — what prevents the complications
+
+- **Daily oral penicillin V** from diagnosis, because functional hyposplenism from early autosplenectomy leaves the child vulnerable to **encapsulated organisms**.
+- **Full immunisation including pneumococcal, meningococcal, Haemophilus influenzae type b and annual influenza.**
+- **Daily folic acid**, for the demands of chronic haemolysis.
+- Avoid the triggers of crisis: cold, dehydration, hypoxia, excessive exertion and stress.
+- **Transcranial Doppler screening from age 2** to identify children at high stroke risk, who then need a regular transfusion programme.
+
+## The acute crises
+
+| Crisis | Features | Management |
+|---|---|---|
+| **Vaso-occlusive (painful) crisis** | Severe bone or abdominal pain, often with fever | Prompt analgesia, warmth, hydration, oxygen if hypoxic, and treat infection |
+| **Acute chest syndrome** | Chest pain, fever, hypoxia, new infiltrate — the leading cause of death | Oxygen, antibiotics, analgesia and **urgent exchange transfusion** |
+| **Splenic sequestration** | Sudden splenic enlargement with profound anaemia and shock, in young children | Urgent transfusion and fluid resuscitation; recurrence may need splenectomy |
+| **Aplastic crisis** | **Parvovirus B19**; sudden fall in haemoglobin with low reticulocytes | Transfusion; self-limiting |
+| **Stroke and priapism** | Focal deficit; sustained painful erection | **Exchange transfusion** |
+
+> **Analgesia — and a correction worth knowing.** Severe crisis pain is treated with **strong opioids, and morphine is the standard choice in children**. What is contraindicated under 12 is **CODEINE**, because of unpredictable conversion to morphine by rapid metabolisers, with a particular warning after tonsillectomy or adenoidectomy in children with obstructive sleep apnoea. Give analgesia within 30 minutes of arrival — delay is the commonest complaint families make.
+
+## Long-term management
+
+**Hydroxycarbamide** is offered to children with recurrent crises or acute chest syndrome (broadly more than three admissions in a year). It raises fetal haemoglobin and substantially reduces crises; monitor the full blood count for marrow suppression. Regular transfusion programmes are used for stroke prevention, with iron chelation to follow. **Haematopoietic stem cell transplantation** is curative and considered in severe disease with a matched sibling donor, and gene therapies are now emerging.
+
+## Beta thalassaemia major
+
+Absent beta globin chain production, presenting at **6 to 12 months** as fetal haemoglobin declines, with severe anaemia, failure to thrive, hepatosplenomegaly from extramedullary haematopoiesis, and the **frontal bossing and maxillary overgrowth** of marrow expansion.
+
+**It is fatal without regular transfusion.** Transfusions aim to keep haemoglobin above **100 g/L**, which prevents growth failure and bone deformity — but they cause **iron overload**, leading to cardiac failure (the usual cause of death), cirrhosis, diabetes, hypogonadism and growth failure.
+
+**Iron chelation is therefore not optional**: subcutaneous desferrioxamine or oral deferasirox, monitored with ferritin and cardiac and hepatic MRI. Good adherence to transfusion and chelation is associated with survival beyond 40 years. **Bone marrow transplantation is the only cure**, reserved for children with an HLA-identical sibling. Splenectomy is sometimes needed for rising transfusion requirements.
+
+**Beta thalassaemia trait** is asymptomatic with a microcytosis disproportionate to the haemoglobin, and matters chiefly for **genetic counselling** — including prenatal diagnosis by chorionic villus sampling — and to avoid inappropriate iron treatment.`,
+        },
+        {
+          id: "paediatric_bruising_bleeding",
+          name: "Bruising & bleeding disorders in children",
+          content: `## The child who bruises
+
+Bruising is universal in mobile children. The clinical task is to separate normal injury from a bleeding disorder and from **non-accidental injury**, and it is not safe to consider only one of those.
+
+> **Bruising in a child who is NOT yet independently mobile — not crawling, cruising or walking — is a major safeguarding red flag.** Babies who do not move do not bruise themselves.
+
+**Other features that should raise concern:** bruises that are unusually large, multiple, clustered, or of similar shape and size; **patterned** bruising in the shape of a hand, ligature, implement, tooth or grip; bruises in **non-bony sites** — eyes, ears, cheeks, neck, back, abdomen, buttocks, inner arms or genitalia; an explanation that is implausible, inadequate or inconsistent, or that changes; and delayed presentation. Where there is concern, examine fully, arrange a **skeletal survey** and clotting studies, involve the safeguarding team and follow local child protection procedures. Document with care.
+
+**Medical causes to consider in parallel:**
+
+- **Leukaemia** — unexplained petechiae, pallor, hepatosplenomegaly or an abnormal full blood count. Request an urgent film.
+- **Neuroblastoma** — **periorbital bruising** with a palpable abdominal mass warrants urgent referral.
+- A coagulation or platelet disorder, meningococcal sepsis, vasculitis (including Henoch-Schonlein purpura), or connective tissue disease.
+
+Admit any child with active bleeding.
+
+## Platelet versus coagulation factor problems
+
+| | Platelet disorder | Coagulation factor disorder |
+|---|---|---|
+| Site of bleeding | Skin and mucous membranes — epistaxis, gums, gastrointestinal, menorrhagia | Soft tissues, joints and muscles |
+| **Petechiae** | **Yes** | No |
+| Bruises | Small and superficial | **Large and deep** |
+| Haemarthrosis | No | **Yes** |
+| Bleeding after cuts | Immediate and prolonged | Little |
+| Bleeding after surgery | **Immediate** | **Delayed by 1 to 2 days** |
+
+## Immune thrombocytopenic purpura
+
+The commonest cause of a low platelet count in an otherwise well child, typically 2 to 6 years, often 1 to 2 weeks after a viral illness. The child looks well, with petechiae, purpura and epistaxis, and — importantly — **no hepatosplenomegaly, lymphadenopathy or anaemia**, whose presence should prompt investigation for leukaemia.
+
+**In about 80% of children the disease is acute, benign and self-limiting**, resolving within 6 to 8 weeks, and most are managed at home with observation, advice to avoid contact sport, and no treatment. Treat only for **major bleeding** or persistent minor bleeding that affects daily life: corticosteroids, IVIG or anti-D immunoglobulin, with platelet transfusion reserved for life-threatening haemorrhage alongside IVIG and steroids. **Chronic disease** beyond 12 months may need mycophenolate, rituximab, eltrombopag or, rarely, splenectomy.
+
+## Haemophilia A and B
+
+X-linked recessive deficiency of **factor VIII** (A) or **factor IX** (B), presenting with **haemarthroses and deep muscle bleeds**, sometimes at crawling age or with prolonged bleeding after circumcision.
+
+Treatment is **recombinant factor concentrate**, given promptly by intravenous infusion for any bleed, with **prophylactic factor VIII for all children with severe haemophilia A** to prevent chronic arthropathy. Replacement is given **at home** to avoid delay. Tranexamic acid helps mucosal bleeding, and **desmopressin** raises endogenous factor VIII and von Willebrand factor in mild haemophilia A. About 10 to 15% develop **inhibitory antibodies** to factor VIII, which is the major treatment complication.
+
+> **In haemophilia, AVOID intramuscular injections, aspirin and NSAIDs.** Vaccinations are given subcutaneously.
+
+**Von Willebrand disease** is the commonest inherited bleeding disorder, usually autosomal dominant, causing a platelet-type pattern of mucosal bleeding and menorrhagia. Type 1 responds to **desmopressin** with tranexamic acid; types 2 and 3 need von Willebrand factor-containing concentrate.
+
+## Two more causes of abnormal bleeding
+
+**Disseminated intravascular coagulation** — usually secondary to sepsis. There is a fall in platelets and fibrinogen with prolonged prothrombin and activated partial thromboplastin times and raised fibrin degradation products. **Treat the underlying cause**, and support with platelets, fresh frozen plasma and cryoprecipitate as needed; protein C concentrate has a role in purpura fulminans from meningococcal sepsis.
+
+**Glucose-6-phosphate dehydrogenase deficiency** — X-linked, causing episodic haemolysis (jaundice, pallor, dark urine) triggered by infection, fava beans and drugs such as primaquine, nitrofurantoin, sulfonamides and ciprofloxacin. Give families a written list of what to avoid. Acute episodes need supportive care and folic acid, with transfusion if severe. Neonates may need phototherapy or exchange transfusion for prolonged jaundice. **Hereditary spherocytosis** is the autosomal dominant membrane defect causing anaemia, jaundice and splenomegaly, treated with folic acid, transfusion when needed, and splenectomy with prior vaccination and penicillin prophylaxis in severe cases; **parvovirus B19 causes aplastic crisis** in both.`,
+        },
+        {
+          id: "paediatric_jia",
+          name: "Juvenile idiopathic arthritis",
+          content: `## Juvenile idiopathic arthritis
+
+Arthritis persisting for **at least 6 weeks in a child under 16**, with no other identified cause. It is a diagnosis of exclusion, and the first job is always to rule out septic arthritis, malignancy (leukaemia presents with bone and joint pain) and reactive arthritis.
+
+## The subtypes, which behave quite differently
+
+| Subtype | Features |
+|---|---|
+| **Oligoarticular** (commonest, about 50%) | Four or fewer joints in the first 6 months, typically knee or ankle in a young girl. **ANA-positive, and the highest risk of chronic anterior UVEITIS** |
+| **Polyarticular** | Five or more joints, symmetrical, small and large. Rheumatoid factor-negative in most; RF-positive disease behaves like adult rheumatoid arthritis |
+| **Systemic (Still's disease)** | **Daily spiking fever, a salmon-pink evanescent rash, lymphadenopathy, hepatosplenomegaly and serositis**, often before the arthritis. Markedly raised inflammatory markers and ferritin |
+| **Enthesitis-related** | Older boys, HLA-B27, enthesitis and sacroiliitis; acute symptomatic uveitis |
+| **Psoriatic** | Arthritis with psoriasis, dactylitis or nail pitting |
+
+> **Chronic anterior uveitis is asymptomatic and can blind.** It is commonest in young ANA-positive girls with oligoarticular disease. **Every child with JIA needs regular slit-lamp screening by ophthalmology**, on a schedule set by subtype, ANA status and age — not just when the eye looks red.
+
+**Systemic JIA carries its own emergency: macrophage activation syndrome**, in which the child deteriorates with high fever, cytopenias, a *falling* ESR with rising ferritin, deranged liver function and coagulopathy. It is life-threatening and needs immediate specialist treatment.
+
+## Management
+
+Care is led by a **specialist paediatric rheumatology multidisciplinary team**, with physiotherapy and occupational therapy central — inactivity causes deconditioning, disability and reduced bone mass, so children are encouraged into swimming and cycling rather than rested.
+
+- **NSAIDs** for pain and stiffness, with paracetamol as simple analgesia. **Codeine is contraindicated under 12 years**, so it should not be used as the weak opioid step in children.
+- **Intra-articular corticosteroid injection** is highly effective in oligoarticular disease and is often first-line for a single troublesome joint. Systemic steroids are used as a bridge while second-line agents take effect, but are minimised because of **growth suppression and osteoporosis**.
+- **Methotrexate** (oral or subcutaneous, weekly, with folic acid) is the first-line disease-modifying drug; sulfasalazine is an alternative, particularly in enthesitis-related disease.
+- **Biologics** where methotrexate fails: TNF-alpha inhibitors such as etanercept and adalimumab, and the interleukin-1 or interleukin-6 blockers anakinra and tocilizumab, which are particularly useful in systemic disease.
+
+**Prognosis** is good for most, with disease control and normal quality of life. Poorly controlled disease causes joint damage, uveitis with visual loss, osteoporosis, **growth failure** — both generalised and local, such as leg-length discrepancy or micrognathia from temporomandibular involvement — and psychosocial harm.
+
+## Reactive arthritis
+
+A sterile arthritis following infection, usually gastrointestinal (*Salmonella*, *Shigella*, *Campylobacter*, *Yersinia*) or genitourinary (*Chlamydia*) in older children, and often a simple viral illness in younger ones. It is typically self-limiting over weeks to months.
+
+Treatment is symptomatic — NSAIDs, with a short course of corticosteroid for severe disease and disease-modifying drugs only if it becomes chronic. Always exclude septic arthritis first, and remember that in a child with a hot joint after a viral illness the far commoner diagnosis is transient synovitis (see *Paediatric hip conditions*).`,
+        },
+        {
+          id: "paediatric_bone_joint_infection",
+          name: "Osteomyelitis in children",
+          content: `## Osteomyelitis
+
+Infection of bone, in children usually **haematogenous** and affecting the **metaphysis of a long bone** — most often the femur or tibia — because the sluggish blood flow in metaphyseal sinusoids favours seeding. *Staphylococcus aureus* is by far the commonest organism; consider *Kingella kingae* in under-4s, group A streptococcus, *Salmonella* in sickle cell disease, and group B streptococcus or Gram-negatives in neonates.
+
+## How it presents
+
+Fever with **localised bone pain and a reluctance or refusal to use the limb**. In an infant the only sign may be pseudoparalysis of a limb, irritability and poor feeding. There may be local tenderness, warmth, swelling and a sympathetic effusion in the neighbouring joint.
+
+> **In young children the metaphysis of the proximal femur lies INSIDE the hip joint capsule, so proximal femoral osteomyelitis and septic arthritis of the hip frequently coexist.** A child with a painful hip needs both considered.
+
+## Investigation
+
+- **Blood cultures before antibiotics** — this is the point most often missed, and it is frequently the only way the organism is identified.
+- Full blood count, CRP and ESR. CRP is the most useful for tracking response.
+- **Plain radiographs are normal for the first 7 to 10 days** and cannot exclude the diagnosis; they later show periosteal reaction and lytic change.
+- **MRI is the imaging investigation of choice**, showing marrow oedema within days and defining any abscess.
+- Bone aspiration or biopsy for culture where the diagnosis or organism is uncertain, and joint aspiration if septic arthritis is possible.
+
+## Treatment
+
+- **High-dose intravenous empirical antibiotics after cultures**, directed at *Staphylococcus aureus* — typically flucloxacillin, with clindamycin in penicillin allergy, adjusted once sensitivities are known.
+- **Early oral switch** is now standard in children who respond well, often after 3 days to a week once the fever has settled and CRP is falling, completing a **total course of around 6 weeks** (shorter courses of 3 to 4 weeks are used in uncomplicated disease in some units).
+- **Immobilise and elevate the limb**, give adequate analgesia, and monitor CRP for response.
+- **Surgical drainage or debridement** for a subperiosteal or intraosseous abscess, sequestrum, or failure to improve on appropriate antibiotics.
+
+**Chronic osteomyelitis** — with a sequestrum, involucrum or discharging sinus — needs staging, surgical debridement, prolonged antibiotics and functional rehabilitation, and is far harder to eradicate.
+
+## Complications
+
+Growth arrest or deformity from **physeal damage** (the growth plate sits next to the metaphysis), chronic osteomyelitis, pathological fracture, septic arthritis of the adjacent joint, and metastatic infection or sepsis.
+
+For **septic arthritis**, including the Kocher criteria that separate it from transient synovitis, see *Paediatric hip conditions*. The essential contrast is that septic arthritis destroys cartilage within days and is a **surgical emergency requiring joint washout**, whereas osteomyelitis is usually treated medically with surgery reserved for collections — and the two often occur together.`,
+        },
+        {
+          id: "paediatric_knee_and_bone",
+          name: "Knee pain, bone pain & rickets in children",
+          content: `## The painful knee in an adolescent
+
+| Condition | Typical picture | Management |
+|---|---|---|
+| **Osgood-Schlatter disease** | Sporty teenager (10 to 15), pain and a tender **swelling over the tibial tuberosity**, worse with running, jumping and kneeling | Reassure; analgesia and ice; reduce rather than stop sport; quadriceps stretching and low-impact exercise; resolves with skeletal maturity |
+| **Osteochondritis dissecans** | Adolescent with vague activity-related knee pain, locking, catching or giving way; a fragment of subchondral bone separates, usually from the medial femoral condyle | Rest and quadriceps exercises; arthroscopic surgery if a loose body forms or the fragment is unstable |
+| **Patellofemoral pain** | Anterior knee pain worse going downstairs and on prolonged sitting | Physiotherapy targeting quadriceps and hip abductors |
+| **Referred hip pathology** | Knee pain with a normal knee — **always examine the hip** | See *Paediatric hip conditions*; SUFE classically presents as knee pain |
+
+> **A child who presents with knee pain may have a hip problem.** Slipped capital femoral epiphysis is repeatedly missed because the pain is referred to the knee and the knee examines normally. Examine and, if in doubt, image the hip.
+
+**Osgood-Schlatter disease** is a traction apophysitis of the tibial tuberosity from repeated quadriceps pull during a growth spurt. Reassure that it settles with skeletal maturity, that stopping all sport is not necessary, and that proper stretching before and after exercise helps. Refer only if symptoms fail to improve, worsen, or persist into adulthood.
+
+## Bone pain that should worry you
+
+- **Night pain that wakes the child**, unremitting pain, or pain with systemic features — fever, weight loss, pallor or bruising — suggests **malignancy** (leukaemia, osteosarcoma, Ewing sarcoma) and needs urgent investigation with a full blood count, film and radiograph.
+- **Growing pains** are, by contrast, bilateral, in the muscles rather than the joints, occur in the evening or at night, respond to massage, and never cause limp, swelling or systemic upset. Anything that does not fit that description is not growing pains.
+
+## Rickets
+
+Failure of mineralisation of growing bone, almost always from **vitamin D deficiency**. Risk is highest in children with darker skin, limited sun exposure or concealing clothing, exclusive breastfeeding without supplementation, prematurity, malabsorption and chronic kidney or liver disease.
+
+**Presentation:** bone pain and tenderness, **bowing of the legs** once walking, **frontal bossing**, **craniotabes**, a **rachitic rosary** at the costochondral junctions, Harrison's sulcus, wrist and ankle swelling from metaphyseal flaring, delayed fontanelle closure and dentition, delayed walking, and hypotonia. Hypocalcaemia may cause seizures, tetany or, in infants, dilated cardiomyopathy.
+
+**Investigation:** low or normal calcium, **low phosphate, RAISED alkaline phosphatase**, low 25-hydroxyvitamin D and **raised parathyroid hormone**. Radiographs show cupping, splaying and fraying of the metaphyses, most easily seen at the wrist.
+
+**Treatment:** **colecalciferol (vitamin D3) or ergocalciferol with adequate dietary calcium**, at treatment doses adjusted for age, followed by maintenance supplementation. Advise on diet (oily fish, egg yolk, fortified foods) and safe sun exposure, and treat the family, who are usually deficient too. Two variants need different drugs: **pseudo-vitamin D deficiency rickets**, a defect of 1-alpha hydroxylase, requires **calcitriol or alfacalcidol**, and **X-linked hypophosphataemic rickets** requires phosphate salts with active vitamin D, or burosumab.
+
+All infants who are breastfed, and all children under 4 in the UK, should receive routine vitamin D supplementation.`,
+        },
+        {
+          id: "paediatric_fractures",
+          name: "Fractures in children & non-accidental injury",
+          content: `## Why children's fractures are different
+
+Children's bone is more porous and elastic, with a thick periosteum and an open **physis (growth plate)**. The result is fracture patterns not seen in adults, faster healing, greater remodelling potential — and the possibility of **growth disturbance** when the physis is injured.
+
+| Pattern | Description |
+|---|---|
+| **Greenstick** | Incomplete fracture with cortical breach on one side only |
+| **Buckle (torus)** | Compression of one cortex, common at the distal radius after a fall on the outstretched hand; stable and treated in a splint |
+| **Plastic deformation** | Bone bends without an obvious fracture line |
+| **Physeal (growth plate)** | Classified by **Salter-Harris**, and the reason follow-up matters |
+
+**Salter-Harris classification** — remember **SALTR**: **S**lipped through the physis (I), **A**bove into the metaphysis (II, the commonest), **L**ower into the epiphysis (III), **T**hrough both metaphysis and epiphysis (IV), and **R**ammed or crushed physis (V). Types III to V carry the greatest risk of growth arrest, deformity and limb-length discrepancy, and type V is easily missed on the initial radiograph.
+
+## Assessment and management
+
+- Analgesia first — oral ibuprofen or paracetamol for mild to moderate pain, intranasal or intravenous opioid for severe pain — then imaging.
+- **Immobilise, assess neurovascular status, and document it** before and after any manipulation.
+- **Distal radius fractures:** manipulation with a below-elbow cast; K-wire fixation if completely displaced.
+- **Femoral shaft fractures:** all children are admitted, with treatment by age and weight — a padded splint or Pavlik harness in the youngest, Gallows traction in infants, straight-leg traction or a hip spica in toddlers, and elastic intramedullary nails in older children.
+- Always consider **compartment syndrome** — pain out of proportion, pain on passive stretch, and a tense compartment — which in children may present only as escalating analgesia requirements.
+
+## Non-accidental injury
+
+> **Any fracture in a child who is not yet independently mobile should be treated as non-accidental until proved otherwise.**
+
+**Features that raise concern:**
+
+- A **history that is absent, implausible, inconsistent between tellings or between carers, or that does not fit the injury** or the child's developmental stage.
+- **Delay in presentation** without good reason.
+- **Multiple fractures, or fractures of differing ages.**
+- **Specific patterns:** metaphyseal corner or "bucket-handle" fractures, **posterior rib fractures** (from squeezing), scapular, sternal and spinous process fractures, and complex or bilateral skull fractures.
+- Associated **bruising in non-mobile children**, patterned bruising, torn frenulum, retinal haemorrhage or burns.
+- The child's demeanour, and previous safeguarding involvement.
+
+**Action:** ensure the child is safe, examine fully, arrange a **skeletal survey** and clotting studies (and CT head and ophthalmology where abusive head trauma is possible), discuss with a senior clinician immediately, involve the **safeguarding team and social care the same day**, and document contemporaneously and factually. Consider the siblings.
+
+**The differential must also be excluded honestly**, because a wrong accusation is itself a serious harm: osteogenesis imperfecta (blue sclerae, family history, Wormian bones), rickets, copper deficiency, and osteopenia of prematurity.`,
+        },
+        {
+          id: "cerebral_palsy",
+          name: "Cerebral palsy",
+          content: `## Cerebral palsy
+
+A permanent disorder of **movement and posture** caused by a **non-progressive** lesion of the developing brain. It is the commonest physical disability of childhood, affecting about 2 to 3 per 1000 live births.
+
+> **The brain lesion does not progress, but its manifestations change as the child grows** — and the associated problems, particularly **pain**, epilepsy and feeding difficulty, cause more day-to-day trouble than the motor disorder itself.
+
+## Causes
+
+- **Antenatal (about 80%):** prematurity and low birth weight (the single biggest risk factors), intrauterine growth restriction, chorioamnionitis, maternal respiratory or genitourinary infection, congenital infection, multiple pregnancy, placental insufficiency.
+- **Perinatal (about 10%):** hypoxic-ischaemic encephalopathy, birth trauma, neonatal sepsis — a much smaller share than is commonly assumed.
+- **Postnatal:** meningitis, encephalitis, head injury (accidental or abusive) before about 3 years, kernicterus, hypoglycaemia.
+
+## Types
+
+- **Spastic (about 80%)** — upper motor neurone: hypertonia, brisk reflexes, clonus. Subdivided into **hemiplegia**, **diplegia** (legs affected more than arms, classically after periventricular leukomalacia in a preterm infant) and **quadriplegia** (all four limbs, most severe, often with seizures and learning disability).
+- **Dyskinetic** — fluctuating tone with dystonia and choreoathetosis, classically after acute severe hypoxia at term or kernicterus. Intellect is often relatively preserved.
+- **Ataxic** — hypotonia, poor balance and intention tremor.
+- **Mixed.**
+
+Function is graded by the **Gross Motor Function Classification System (GMFCS) I to V**, which predicts prognosis and service needs far better than the anatomical label.
+
+## Recognising it
+
+Early motor features are unusual fidgety movements, asymmetry or paucity of movement, **abnormal tone** (hypotonia, spasticity or dystonia), abnormal motor development, and feeding difficulties. Delayed milestones — **not sitting by 8 months, not walking by 18 months** (corrected for gestation) — and **hand preference before 1 year** are red flags. **Refer any child with persistent toe walking.**
+
+MRI helps identify the pattern of injury in most children, though it cannot date the injury and usually needs sedation or anaesthesia.
+
+> **Red flags suggesting a PROGRESSIVE disorder rather than cerebral palsy:** no risk factors, a family history of progressive neurological disease, **loss of previously acquired skills**, unexpected new focal signs, or MRI findings that do not fit. Any of these means reconsidering the diagnosis.
+
+## Management
+
+There is no cure; care is lifelong, multidisciplinary and organised around the child and family — paediatrician, physiotherapist, occupational therapist, speech and language therapist, dietitian and psychologist, with orthopaedics, orthotics, ophthalmology and audiology as needed.
+
+- **Spasticity:** physiotherapy and orthoses first; oral baclofen or diazepam; **botulinum toxin** for focal spasticity; **intrathecal baclofen** for severe generalised spasticity; and **selective dorsal rhizotomy** in carefully chosen children with spastic diplegia.
+- **Eating, drinking and swallowing:** speech and language therapy assessment for dysphagia, videofluoroscopy where needed, an individualised plan, and gastrostomy where oral feeding is unsafe or growth fails.
+- **Communication:** intelligibility work, and augmentative systems including symbol boards and speech-generating devices. **Communication difficulty does not equate to learning disability** — a point that must be made explicitly to families and schools.
+- **Saliva control:** anticholinergics such as glycopyrronium or transdermal hyoscine, with botulinum toxin to the salivary glands in specialist hands.
+- **The associated problems, actively sought at every review:** epilepsy (1 in 3), visual impairment (1 in 2), hearing impairment (1 in 10), learning disability, gastro-oesophageal reflux, **chronic constipation (3 in 5)**, sleep disturbance (trial melatonin), low bone mineral density with fragility fractures in non-ambulant children, and mental health problems.
+
+> **ASK ABOUT PAIN AT EVERY REVIEW.** It is present in most children and adults with cerebral palsy, is the commonest cause of distressed behaviour, and is the most consistently under-recognised problem. Use a stepped approach to analgesia and refer to a specialist pain team if simple measures fail.
+
+**Hip surveillance** with scheduled radiographs by GMFCS level is mandatory, because silent hip displacement is common and much easier to treat early. Plan the transition to adult services in good time.`,
+        },
+        {
+          id: "paediatric_neurodevelopment",
+          name: "ADHD, autism & developmental delay",
+          content: `## Attention deficit hyperactivity disorder
+
+A persistent pattern of **inattention, hyperactivity and impulsivity** that is developmentally inappropriate. Diagnosis requires symptoms causing **at least moderate impairment**, present in **two or more settings** (home, school, social), made by a specialist psychiatrist, paediatrician or other appropriately trained professional against DSM-5 or ICD criteria.
+
+**Initial approach in primary care:** a period of **watchful waiting for up to 10 weeks**, with advice and referral to a group-based ADHD-focused parent-training programme. Refer to specialist services if problems are severe or persist.
+
+**Management:**
+
+- **Under 5:** an **ADHD-focused group parent-training programme first**. Medication only under specialist ADHD services.
+- **Over 5:** parent-training programme, plus school liaison with consent. **Medication if symptoms persist with significant impairment despite environmental modification.**
+- **The drug ladder:** **methylphenidate** first-line as a 6-week trial; **lisdexamfetamine** if that fails; **dexamfetamine** if lisdexamfetamine works but is not tolerated; and **atomoxetine or guanfacine** if both stimulants fail or are not tolerated.
+- Consider CBT for social skills, problem-solving and self-control.
+
+**Monitoring is examinable:** record baseline **height, weight, pulse and blood pressure**, and obtain an **ECG before starting if there is a personal or family history of cardiac disease, sudden death, or an abnormal cardiovascular examination**. Then measure **height every 6 months and weight every 3 months**, with pulse and blood pressure every 6 months. Consider a planned treatment break over school holidays if growth is affected, and watch for tics, sleep disturbance, appetite loss and mood change.
+
+## Autism spectrum disorder
+
+Persistent difficulties in **social communication and interaction** together with **restricted, repetitive patterns of behaviour, interests or activities**, present from early development and causing impairment. Presentation varies enormously, and girls are frequently diagnosed late because difficulties are masked.
+
+Diagnosis is by specialist multidisciplinary assessment. Management is **not pharmacological for the core features**:
+
+- **Psychosocial interventions** aimed at increasing attention, engagement and reciprocal communication, adjusted to the child's developmental level, using therapist modelling and video-interaction feedback, and working with parents and teachers to understand the child's patterns of communication.
+- **Speech and language therapy** and social skills work.
+- **Education:** assess for learning disability and discuss an **Education, Health and Care plan** where extra support is needed.
+- **Support for the family:** carer's needs assessment, practical and emotional support, respite, and planning for transition to adult services.
+
+> **Do NOT use antipsychotics, antidepressants, anticonvulsants or exclusion diets to treat the core features of autism.** Antipsychotics are considered only where challenging behaviour makes psychosocial intervention ineffective, reviewed at 3 to 4 weeks and stopped by 6 weeks if there is no benefit. Treat coexisting conditions — ADHD, anxiety, epilepsy, sleep disorder and constipation — on their own merits, since these are often what is actually causing distress.
+
+## Developmental delay
+
+**Global developmental delay** means significant delay in two or more developmental domains. The essential distinction is between **delay** (slower acquisition) and **regression** (loss of skills already attained) — **regression always warrants urgent investigation** for a neurodegenerative or metabolic disorder.
+
+Assessment covers the four domains — gross motor, fine motor and vision, speech and hearing, and social — against the milestones and their limit ages. Always check **hearing and vision** first, since undetected sensory impairment is a common and treatable cause of apparent delay, and consider chronic illness, neglect and understimulation.
+
+Management is multidisciplinary — physiotherapy, occupational therapy, speech and language therapy, portage and educational support — alongside investigation for a cause where indicated (genetic testing including microarray, thyroid function, creatine kinase in boys, and neuroimaging where there are focal signs), treatment of associated conditions, and support for the family.`,
+        },
+        {
+          id: "paediatric_seizure_disorders",
+          name: "Febrile convulsions & the funny turns",
+          content: `## Febrile convulsion
+
+A seizure occurring with a fever in a child aged **6 months to 5 years**, without central nervous system infection or another identified cause. They affect about **3% of children**, and are the commonest seizure type in childhood.
+
+| | Simple | Complex |
+|---|---|---|
+| Duration | **Under 15 minutes** | 15 minutes or longer |
+| Type | **Generalised tonic-clonic** | Focal features |
+| Recurrence in the same illness | None | Repeated within 24 hours |
+| Recovery | Complete within an hour | Incomplete, or postictal focal deficit |
+
+**Assessment** is aimed at the cause of the fever and at excluding meningitis or encephalitis. Have a much lower threshold for lumbar puncture in infants under 18 months, in those who are drowsy or unwell after the seizure, in complex seizures, and in children already on antibiotics, whose signs may be masked.
+
+**Management:** treat the underlying infection; antipyretics make the child more comfortable but **do not prevent recurrence**. No antiseizure medication is needed for simple febrile convulsions. Admit if the child is under 18 months, the seizure was complex, there is diagnostic uncertainty, the child remains drowsy, or there is no clear focus of infection.
+
+**What parents need to know:**
+
+- **Recurrence occurs in about a third**, particularly with a first seizure under 18 months, a lower temperature at onset, a short fever-to-seizure interval, or a family history.
+- The risk of later **epilepsy is about 1 to 2% after a simple febrile convulsion** — only slightly above the background population risk — rising to perhaps 4 to 12% after complex seizures or with other risk factors. Say this explicitly, because parents almost always fear epilepsy and brain damage.
+- **Simple febrile convulsions do not cause brain damage or affect development.**
+- Teach first aid: put the child on their side, protect them from injury, do not restrain them or put anything in the mouth, time the seizure, and **call an ambulance if it lasts more than 5 minutes**. Families of children with prolonged seizures may be given buccal midazolam with a written plan.
+
+## Breath-holding attacks
+
+Two types, both benign, both in toddlers, and both frightening to watch.
+
+- **Blue (cyanotic) breath-holding spells:** provoked by anger, frustration or pain. The child cries, then holds their breath in expiration, becomes cyanosed, and may briefly lose consciousness and stiffen.
+- **Reflex anoxic seizures (pallid spells):** provoked by pain, fright or a minor bump, mediated by **vagal-induced cardiac asystole**. The child goes suddenly **pale and limp**, loses consciousness, and may have a brief tonic stiffening or jerking.
+
+Both resolve spontaneously, and **children grow out of them by about 4 to 5 years**. Management is reassurance, explanation, behaviour modification with distraction, and avoidance of reinforcing the behaviour. **Check for iron deficiency anaemia**, which is associated with breath-holding attacks and whose treatment reduces their frequency. Consider an ECG if the history suggests an arrhythmia.
+
+## Distinguishing the funny turns
+
+The **history from a witness is everything**, since the child is almost always well by the time they are seen. Ask about the trigger, any warning, colour change, duration, movements, tongue-biting or incontinence, and how long recovery took.
+
+- **Epileptic seizure** — no consistent trigger, stereotyped, may have an aura, prolonged postictal drowsiness. See *Seizures: classification & the first seizure*.
+- **Syncope** — provoked by standing, heat or pain; preceded by nausea, greying vision and warmth; rapid recovery. Brief jerking during syncope is common and is not epilepsy.
+- **Reflex anoxic seizure or breath-holding** — always a clear precipitant, in a toddler.
+- **Cardiac cause** — syncope during exercise, on emotion, or with palpitations, or a family history of sudden death. **Always do an ECG**; this is the presentation not to miss.
+- **Non-epileptic attack disorder, tics, day-dreaming and self-gratification behaviour** also appear in this differential.`,
+        },
+        {
+          id: "muscular_dystrophies",
+          name: "Muscular dystrophies in children",
+          content: `## Duchenne muscular dystrophy
+
+An **X-linked recessive** disorder in which frameshift or nonsense mutations in the **dystrophin** gene abolish the protein, so muscle fibres are damaged by contraction and progressively replaced by fat and fibrous tissue. It affects about 1 in 3500 male births, and around a third of cases are new mutations.
+
+**Presentation** is usually between 1 and 3 years:
+
+- Delayed walking, clumsiness, frequent falls, difficulty with stairs and running.
+- **Gower's sign** — the child turns prone and walks their hands up their legs to stand, because of proximal weakness.
+- A **waddling gait**, toe-walking, and **calf pseudohypertrophy** from fatty replacement.
+- Delayed speech and learning difficulties in a substantial minority — dystrophin is also expressed in brain.
+
+**Investigation:** a **markedly raised creatine kinase**, typically 10 to 100 times normal, is the screening test, with the diagnosis confirmed by **genetic testing**; muscle biopsy is now rarely needed. Test any boy with unexplained delayed walking or global delay.
+
+**Natural history:** progressive proximal weakness, loss of independent walking typically around **8 to 12 years**, then scoliosis, respiratory muscle weakness and **dilated cardiomyopathy**, which together determine survival. With modern multidisciplinary care many patients now live well into their thirties.
+
+**Management:**
+
+- **Corticosteroids** (prednisolone or deflazacort) prolong ambulation and slow scoliosis — the single most effective intervention — at the cost of weight gain, growth suppression, osteoporosis and cataract, so bone protection and monitoring are needed.
+- **Physiotherapy** to prevent contractures, with orthoses; tendo-Achilles lengthening and **scoliosis surgery** where required.
+- **Respiratory surveillance** — weakness of the intercostals causes **nocturnal hypoventilation**, presenting with morning headache, irritability and poor appetite rather than breathlessness; treat with non-invasive ventilation overnight, and provide cough assist.
+- **Cardiac surveillance** with regular echocardiography, and cardioprotective drugs such as ACE inhibitors and beta-blockers when ventricular function declines.
+- Dietetic input, vitamin D and calcium, and psychological support.
+- **Disease-modifying therapy is emerging:** ataluren for nonsense mutations, and exon-skipping and gene therapies in trials or with restricted access.
+
+## Becker muscular dystrophy
+
+The same gene, but in-frame mutations produce a **reduced or abnormal dystrophin rather than none**, so the disease is milder and later. Onset is usually after 7 years, ambulation is often preserved into the twenties or beyond, and life expectancy reaches middle or old age. **Cardiomyopathy can be disproportionately severe relative to the skeletal weakness**, so cardiac surveillance matters just as much. Management otherwise mirrors Duchenne.
+
+## Myotonic dystrophy
+
+An **autosomal dominant** trinucleotide (CTG) repeat disorder showing **anticipation**, so it worsens through generations — and the **congenital form is almost always maternally inherited**.
+
+**Features** distinguish it clearly from the dystrophinopathies: **myotonia** (delayed muscle relaxation — the classic inability to release a handshake or open the hand after gripping), **distal rather than proximal weakness**, ptosis and a long, thin, expressionless face with frontal balding, and a multisystem picture including **cataracts, cardiac conduction defects, insulin resistance, testicular atrophy and daytime somnolence**.
+
+The **congenital form** presents with severe hypotonia, feeding and respiratory difficulty, talipes and a characteristic tented upper lip, and carries high neonatal mortality.
+
+Management is supportive: **annual ECG and cardiology surveillance**, because conduction block causes sudden death and may require pacing; respiratory and swallow assessment; cataract surgery; mexiletine for troublesome myotonia; and careful **anaesthetic planning**, since these patients are exquisitely sensitive to sedatives and neuromuscular blockers. Genetic counselling should be offered to the whole family.
+
+> **Spinal muscular atrophy** is the other neuromuscular diagnosis to have in mind in a floppy infant: an autosomal recessive anterior horn cell disorder with weakness, absent reflexes, tongue fasciculation and preserved alertness. It is now screened for and treated with nusinersen, risdiplam or gene therapy, which have transformed its outlook.`,
+        },
+        {
           id: "paediatric_hip_conditions",
           name: "Paediatric hip conditions",
           content: `## Paediatric hip conditions
