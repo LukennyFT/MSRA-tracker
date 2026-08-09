@@ -15,6 +15,12 @@ Five globals set across the `*-data.js` files. The `id` fields marked ⚠ must n
   conditions: [
     {
       id: "cvs_af",          // ⚠ NEVER CHANGE — keys statuses/notes/timestamps
+      depth: "standard",     // REQUIRED — which register the fields below are written at:
+                             //   "brief" | "standard" | "detailed". See the Reading density note.
+      // OPTIONAL shorter registers, authored. Omit and the engine derives them.
+      // standard: { keyFacts, epidemiology, aetiology, pathophysiology,
+      //             presentation, investigations, treatment, complications },
+      // brief:    { keyFacts, presentation, investigations, treatment },
       cluster: "Arrhythmias & conduction disease", // clinical group; see note below
       name: "Atrial fibrillation",
       // OPTIONAL extended fields — present on genuine CONDITIONS, omitted on
@@ -39,6 +45,15 @@ Five globals set across the `*-data.js` files. The `id` fields marked ⚠ must n
 ```
 
 **`cluster` (required on every condition).** A plain-string clinical-group label. `TrackerView`'s list mode groups the specialty's conditions into collapsible **accordion** sections by this field, in array order (conditions are kept contiguous per cluster, so first-appearance order = clinical order). Cluster membership is display-only and does **not** affect ids or statuses. When adding a condition, set `cluster` to one of the specialty's existing cluster labels (or introduce a new one and place the condition adjacent to its cluster-mates). If a condition ever lacks `cluster` it falls into a trailing "Other" group; if *no* condition in a specialty has one, the list falls back to the old flat view. All 487 conditions currently carry a cluster (see `content-status.md`).
+
+**Reading density — `depth`, `standard`, `brief` (added 2026-08-09).** The Tracker toolbar carries a **Brief · Standard · Detailed** control (synced; per-card pins in `msra_density_pins`). Every condition's seven or eight base fields are written at ONE register, named by the required `depth` key. Shorter registers may be authored as `standard` / `brief` objects alongside. `resolveDensity(cond, level)` in `index.html` applies these rules in order:
+
+1. an **authored** object for the requested level wins;
+2. the requested level **is** the base register → the base fields as written;
+3. requested level is **shorter** than the base → **derived** by taking whole sentences up to a character budget (Brief 100, Standard 210), Brief keeping only the four core fields. The card labels this "shortened automatically";
+4. requested level is **fuller** than anything written → the base fields, labelled "no fuller version written yet".
+
+Rule 4 is what lets the control ship across all 558 entries before the fuller text exists. Target registers: **brief ≈ 110 chars/field** (core four), **standard ≈ HFpEF, ~190–230 chars/field** across all eight, **detailed ≈ neurology, ~480 chars/field**. An authored object may omit fields — Brief hides them (it is meant to be short), any other level falls back to a clamped version of the base so a half-written entry degrades quietly. Entries with a bespoke `fields` array are excluded from density entirely. ⚠️ Highlight spans are namespaced `"<level>:<fieldKey>"` for this reason — see `architecture.md`.
 
 **`management` (optional).** A stepwise **NICE management flowchart** shown at the bottom of the expanded card, only on conditions with a genuine stepwise pathway. Shape: `{ def: "<mermaid body>", tips: { NodeId: "explanation", ... } }`.
 - `def` is a **Mermaid flowchart body WITHOUT the `flowchart TD` header** and without `classDef` lines — the `ManagementFlow` component (in `index.html`) prepends `flowchart TD` + a shared class palette. Style nodes with the inline classes `:::start` (presenting problem, pink), `:::process` (blue stage), `:::decision` (blue diamond — use `{"..."}`), `:::good` (green drug/action/endpoint), `:::warn` (amber caution/escalate), `:::danger` (red emergency/urgent). Node ids are single letters/short tokens, reused freely across conditions (each diagram renders independently). Keep node **labels short** (detail goes in the tip). Avoid `;`, `&`, and unescaped `"` inside labels.
