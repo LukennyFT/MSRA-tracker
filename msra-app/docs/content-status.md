@@ -2,7 +2,33 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
-_Last updated: **READING DENSITY SHIPPED (2026-08-09) — Brief · Standard · Detailed toggle in the Tracker, plus the full Neurology content.** Engine in `index.html`, data shape and all content in `data.js`.
+_Last updated: **TOGGLE PROJECT — STANDARD REGISTER TIGHTENED ACROSS ALL 103 WRITTEN CONDITIONS (2026-08-09).** The Standard register had drifted set by set (neurology 229, endocrinology 239, cardiology 298 chars/field, against a target of 192). All 103 have been hand-tightened to **mean 217, range 183–230, with ZERO outside the band**. HFpEF's own Standard, which had reached 266 when its original 192 defined the target, is now 230. Brief (107) and Detailed (457) were on spec throughout and were not touched.
+
+**The advisory band in both scripts is now 150–230**, measured over the 7 base fields excluding complications so it compares directly with the HFpEF reference. The old bands (120–300 and 140–300) were wide enough to let 298 pass unremarked.
+
+**⚠️ A mechanical trim was tried and REJECTED — recorded in `docs/toggle-project.md` so it is not repeated.** Auto-dropping trailing sentences produced 264 candidates, but **124 removed critical content**: the *"correct by NO MORE than 10 mmol/L in 24 hours"* rule from SIADH, *"ANTITHYROID DRUGS ARE NOT INDICATED"* from De Quervain's thyroiditis, *"do NOT biopsy"* from phaeochromocytoma, and the familial hypocalciuric hypercalcaemia *"must not be operated on"* warning. These fields end on their punchline, which is precisely what a tail-trim discards. A new `patch_standard.py` does the surgical field replacement and **refuses any replacement that is not shorter**, which repeatedly caught fields pasted back unchanged.
+
+Verified after tightening: balance **0/0/0**; `node --check`; **558 conditions, 558 unique ids, 0 duplicate top-level keys**; **181 flowcharts intact**; **0 field defects** across the 103. Live check in the app confirms HFpEF still renders 8 rows at Standard. **Re-upload `data.js`.**
+
+Earlier: **TOGGLE PROJECT — SET 2 (CARDIOVASCULAR) STARTED, 16 of 63 done (2026-08-09).** Three clusters complete: **Blood pressure** (2), **Coronary artery disease** (4) and **Heart failure & cardiomyopathies** (10). All 24 cardiology flowcharts preserved. 13 of the 16 needed detailed text written from scratch. Remaining clusters in order: Arrhythmias & conduction disease (16), Valvular (9), Endocardial/myocardial/pericardial (5), Congenital (5), Aortic & peripheral arterial (8), Venous & thromboembolic (4).
+
+**⚠️ A REAL DEFECT SURFACED AND IS RECORDED IN `docs/toggle-project.md`: the Standard register is drifting upward set by set** — neurology 229, endocrinology 239, cardiology 298 chars/field, against a specified target of **192** (HFpEF's own original text). Most tellingly, **HFpEF's authored Standard is now 266 chars/field when its original 192 defined the target.** Brief and Detailed are both on spec; only Standard has drifted. A decision is needed before the remaining 47 cardiology entries are written, since continuing at 298 makes any correction larger.
+
+Verified: balance **0/0/0**; `node --check`; **558 conditions, 558 unique ids, 0 duplicate top-level keys**; **0 field defects** across the 16. **Live check**: Hypertrophic cardiomyopathy renders 4 rows at Brief, 8 at Standard and 8 at Detailed, all authored. **Re-upload `data.js`.**
+
+Earlier: **TOGGLE PROJECT — SET 1 (ENDOCRINOLOGY) COMPLETE (2026-08-09).** All **42** endocrine conditions now have a detailed base, an authored `standard`, an authored `brief` and a `complications` row. A roadmap for the whole project now lives in **`docs/toggle-project.md`** — 17 sets, one per specialty, ordered Endocrinology → Cardiovascular → Gastroenterology (the user's choice) then by exam weight and size. Work units are called **sets**, deliberately not "batches", to keep them distinct from the Notebook project.
+
+**The scale of Set 1 was larger than the condition count suggests: 26 of the 42 were at BRIEF register, so their detailed text had to be written from scratch**, 5 were expanded from standard, and only 11 already had detailed text needing just the shorter registers. Complications went from 6 to 42. All 20 existing endocrine flowcharts survived the rewrite untouched.
+
+Registers achieved: **brief 103 chars/field**, **standard 239 over seven fields**, **detailed 436**. Standard sits above the HFpEF reference of 192 partly because every entry now carries a Complications row that HFpEF does not.
+
+A second script joined the toolkit: **`upgrade_condition.py`**, which rewrites base fields to detailed register, flips `depth`, and inserts standard/brief/complications while leaving `management`, `cluster`, `name` and `id` untouched. It carries an existing `complications` through when a set omits it, so previously written text is never silently overwritten — which is what preserved the DKA, Hashimoto's, toxic MNG, thyroid storm, Kallmann and hypercalcaemia complications.
+
+Verified: balance **0/0/0**; `node --check`; **558 conditions, 558 unique ids, 0 duplicate top-level keys** across all 558 objects; **0 field defects** across all 42 endocrine entries (every `standard` complete at 8 fields, every `brief` at 4, every base at 7). **Live check in the app**: Addison's disease renders 8 rows at Detailed (381-char keyFacts), 8 at Standard (218) and 4 at Brief (100), all authored with no "shortened automatically" or "no fuller version" markers. **Re-upload `data.js`** (only app file changed this set).
+
+**⏭️ Remaining across the app: 406 of 509 genuine conditions still lack complications** — 103 are done (Neurology's 45, Endocrinology's 42, plus 16 written earlier elsewhere). Set 2 is **Cardiovascular** — 63 conditions, 62 needing complications, 48 at brief base, making it the largest set in the project.
+
+Earlier: **READING DENSITY SHIPPED (2026-08-09) — Brief · Standard · Detailed toggle in the Tracker, plus the full Neurology content.** Engine in `index.html`, data shape and all content in `data.js`.
 
 **What landed.** (1) A three-stop density control in the Tracker toolbar, synced across devices, with a **per-card pin** so one condition can sit at a different register to the rest. (2) A required **`depth`** key on all **558** entries recording which register the existing text is written at — the audit. (3) Authored **`standard` and `brief`** objects for all **45 Neurology conditions**, whose existing text becomes Detailed.
 
