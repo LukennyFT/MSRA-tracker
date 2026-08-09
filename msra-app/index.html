@@ -2245,16 +2245,104 @@
     const HL_BY_ID = HL_COLORS.reduce((m, c) => { m[c.id] = c; return m; }, {});
     const hlColor = id => HL_BY_ID[id] || HL_COLORS[0];
 
+    // ---------------------------------------------------------------------
+    // Reading density — Brief / Standard / Detailed
+    //
+    // A condition's SEVEN/EIGHT base fields are written at one register, named by
+    // its `depth`. Shorter registers may be authored as `brief` / `standard`
+    // objects. Resolution rules, in order:
+    //   1. an authored object for the requested level wins;
+    //   2. the requested level IS the base register → the base fields;
+    //   3. requested level is SHORTER than the base → derive by sentence budget;
+    //   4. requested level is FULLER than anything written → the base fields,
+    //      flagged `capped` so the card can say so rather than pretending.
+    // Rule 4 is what lets the control ship across every condition before the
+    // fuller text has been written.
+    // ---------------------------------------------------------------------
+    const DENSITY_LEVELS = ["brief", "standard", "detailed"];
+    const DENSITY_META = {
+      brief:    { label: "Brief",    hint: "Core fields, one line each" },
+      standard: { label: "Standard", hint: "A working pass, every field" },
+      detailed: { label: "Detailed", hint: "Full guideline-level depth" },
+    };
+    const densityRank = d => { const i = DENSITY_LEVELS.indexOf(d); return i < 0 ? 1 : i; };
+    // Fields kept when deriving a Brief view; the rest fold into the stubs.
+    const DENSITY_CORE = ["keyFacts", "presentation", "investigations", "treatment"];
+    const DENSITY_ALL = ["keyFacts", "epidemiology", "aetiology", "pathophysiology",
+                         "presentation", "investigations", "treatment", "complications"];
+    const DENSITY_BUDGET = { brief: 100, standard: 210 };
+
+    // Take whole sentences (or whole lines, for the newline-delimited fields)
+    // until the budget is passed, so derived text never ends mid-clause.
+    function densityClamp(text, budget) {
+      if (!text) return text;
+      if (text.indexOf("\n") > -1) {
+        const lines = text.split("\n"); const out = []; let n = 0;
+        for (const l of lines) { if (out.length && n + l.length > budget) break; out.push(l); n += l.length; }
+        return out.join("\n");
+      }
+      const parts = text.match(/[^.!?]+[.!?]+(\s|$)/g);
+      if (!parts) return text;
+      let out = "", i = 0;
+      while (i < parts.length && (!out.length || out.length + parts[i].length <= budget)) { out += parts[i]; i++; }
+      return out.trim() || text;
+    }
+
+    // → { fields, level, capped, derived }. `fields` is always a plain object of
+    // field-name → string, so callers never care where the text came from.
+    function resolveDensity(cond, level) {
+      if (!cond) return { fields: {}, level, capped: false, derived: false };
+      const base = cond.depth || "standard";
+      const authored = (level !== base) && cond[level];
+      if (authored && typeof authored === "object") {
+        // Authored text wins for every field it defines. For a field it omits:
+        // Brief deliberately shows fewer rows, so omission means hide it;
+        // any other level falls back to a clamped version of the base text, so a
+        // half-written entry degrades quietly instead of losing a row.
+        const budget = DENSITY_BUDGET[level] || 210;
+        const keep = level === "brief" ? DENSITY_CORE : DENSITY_ALL;
+        const fields = {};
+        keep.forEach(k => {
+          if (authored[k]) fields[k] = authored[k];
+          else if (level !== "brief" && cond[k]) fields[k] = densityClamp(cond[k], budget);
+        });
+        return { fields, level, capped: false, derived: false, authored: true };
+      }
+      const baseFields = {};
+      DENSITY_ALL.forEach(k => { if (cond[k]) baseFields[k] = cond[k]; });
+      if (level === base) return { fields: baseFields, level, capped: false, derived: false };
+      if (densityRank(level) > densityRank(base)) {
+        // Nothing fuller has been written yet.
+        return { fields: baseFields, level, capped: true, derived: false };
+      }
+      // Shorter than the base → derive.
+      const budget = DENSITY_BUDGET[level] || 210;
+      const keep = level === "brief" ? DENSITY_CORE : DENSITY_ALL;
+      const fields = {};
+      keep.forEach(k => { if (cond[k]) fields[k] = densityClamp(cond[k], budget); });
+      return { fields, level, capped: false, derived: true };
+    }
+
     // Field keys are PROPERTY names, never the display label — `fieldLabels` can
     // override labels per condition or per specialty, so labels are not stable.
     // Conditions using a custom `fields` array key by index (f0, f1, …).
+    // Highlight keys are namespaced "<level>:<field>" so spans recorded against
+    // one register never land on another register's different text. A bare key
+    // is a legacy span and belongs to the condition's base register.
     function hlFieldText(cond, key) {
       if (!cond || !key) return null;
-      if (/^f\d+$/.test(key)) {
-        const f = cond.fields && cond.fields[parseInt(key.slice(1), 10)];
+      let level = null, k = key;
+      const sep = key.indexOf(":");
+      if (sep > -1) { level = key.slice(0, sep); k = key.slice(sep + 1); }
+      if (/^f\d+$/.test(k)) {
+        const f = cond.fields && cond.fields[parseInt(k.slice(1), 10)];
         return f ? f.value : null;
       }
-      return cond[key] || null;
+      if (level) {
+        const r = resolveDensity(cond, level);
+        return r.fields[k] || cond[k] || null;
+      }
+      return cond[k] || null;
     }
 
     // Character offset of a DOM (node, offset) position within `root`'s text.
@@ -2423,7 +2511,7 @@
       );
     }
 
-    function TrackerView({ statuses, setStatus, statusChangedAt, activeSpecialty, setActiveSpecialty, notes, setNote, textNotes, setTextNote, highlights, setHighlight, clearHighlights }) {
+    function TrackerView({ statuses, setStatus, statusChangedAt, activeSpecialty, setActiveSpecialty, notes, setNote, textNotes, setTextNote, highlights, setHighlight, clearHighlights, density, setDensity, densityPins, setDensityPin }) {
       const [search, setSearch] = useState("");
       const [filterStatus, setFilterStatus] = useState("all");
       const [expandedId, setExpandedId] = useState(null);
@@ -2436,6 +2524,9 @@
         setViewModeState(m);
         try { localStorage.setItem("msra_tracker_mode", m); } catch (e) {}
       };
+
+      // Reading density comes from App (it is synced); pins override per card.
+      const densityFor = condId => densityPins[condId] || density;
 
       // ---- highlighter: pending selection / tapped span, drives the floating toolbar ----
       const [hlAt, setHlAt] = useState(null);
@@ -2702,6 +2793,21 @@
                 </div>
                 {viewMode === "list" && (
                   <React.Fragment>
+                    {/* Reading density — how much of each condition to show */}
+                    <div style={{
+                      display: "inline-flex", background: "#141a2b", borderRadius: 6,
+                      padding: 3, border: "1px solid #2a4a8a",
+                    }}>
+                      {DENSITY_LEVELS.map(d => (
+                        <button key={d} onClick={() => setDensity(d)} title={DENSITY_META[d].hint} style={{
+                          padding: "0.32rem 0.7rem", borderRadius: 4, cursor: "pointer",
+                          fontSize: "0.72rem", fontFamily: "monospace", fontWeight: 600,
+                          background: density === d ? "#2dd4bf" : "transparent",
+                          color: density === d ? "#08201d" : "#9ab5cc",
+                          border: "none",
+                        }}>{DENSITY_META[d].label}</button>
+                      ))}
+                    </div>
                     <div style={{
                       display: "flex", alignItems: "center", gap: 6,
                       background: "#fff", border: "1px solid #d0d0c0", borderRadius: 6,
@@ -2767,8 +2873,24 @@
                   const isExpanded = expandedId === condition.id;
                   // Field labels: per-condition override → per-specialty override → default
                   const condFieldLabels = condition.fieldLabels || currentSpecialty.fieldLabels;
+                  // Reading density. Entries with a bespoke `fields` array have no
+                  // standard field names to resolve, so they render as authored.
+                  const condLevel = densityFor(condition.id);
+                  const dens = condition.fields
+                    ? { fields: {}, level: condLevel, capped: false, derived: false }
+                    : resolveDensity(condition, condLevel);
+                  const isBaseLevel = condLevel === (condition.depth || "standard");
                   const condHl = highlights[condition.id] || {};
-                  const condHlN = hlCount(condHl);
+                  // Spans are namespaced "<level>:<field>". A bare key predates the
+                  // density feature and belongs to the base register, so it surfaces
+                  // only while that register is on screen.
+                  const hlKey = k => condLevel + ":" + k;
+                  const hlFor = k => condHl[hlKey(k)] || (isBaseLevel ? condHl[k] : undefined);
+                  const condHlN = Object.keys(condHl).reduce((n, k) => {
+                    const sep = k.indexOf(":");
+                    const owns = sep > -1 ? k.slice(0, sep) === condLevel : isBaseLevel;
+                    return n + (owns && condHl[k] ? condHl[k].length : 0);
+                  }, 0);
                   return (
                     <div key={condition.id} style={{
                       background: status === "none" ? "#fff" : sc.bg,
@@ -2843,24 +2965,24 @@
                             </div>
                           )}
                           {[
-                            { key: "keyFacts",        label: "💡 Key facts",       value: condition.keyFacts },
-                            { key: "epidemiology",    label: "📊 Epidemiology",    value: condition.epidemiology },
-                            { key: "aetiology",       label: "🧬 Aetiology",       value: condition.aetiology },
-                            { key: "pathophysiology", label: "⚙️ Pathophysiology", value: condition.pathophysiology },
+                            { key: "keyFacts",        label: "💡 Key facts",       value: dens.fields.keyFacts },
+                            { key: "epidemiology",    label: "📊 Epidemiology",    value: dens.fields.epidemiology },
+                            { key: "aetiology",       label: "🧬 Aetiology",       value: dens.fields.aetiology },
+                            { key: "pathophysiology", label: "⚙️ Pathophysiology", value: dens.fields.pathophysiology },
                             ...(condition.fields
                               ? condition.fields.map((f, i) => ({ key: "f" + i, label: f.label, value: f.value }))
                               : condFieldLabels
                               ? [
-                                  { key: "presentation",   label: condFieldLabels[0], value: condition.presentation },
-                                  { key: "investigations", label: condFieldLabels[1], value: condition.investigations },
-                                  { key: "treatment",      label: condFieldLabels[2], value: condition.treatment },
+                                  { key: "presentation",   label: condFieldLabels[0], value: dens.fields.presentation },
+                                  { key: "investigations", label: condFieldLabels[1], value: dens.fields.investigations },
+                                  { key: "treatment",      label: condFieldLabels[2], value: dens.fields.treatment },
                                 ]
                               : [
-                                  { key: "presentation",   label: "🩺 Presentation",   value: condition.presentation },
-                                  { key: "investigations", label: "🔬 Investigations", value: condition.investigations },
-                                  { key: "treatment",      label: "💊 Treatment",       value: condition.treatment },
+                                  { key: "presentation",   label: "🩺 Presentation",   value: dens.fields.presentation },
+                                  { key: "investigations", label: "🔬 Investigations", value: dens.fields.investigations },
+                                  { key: "treatment",      label: "💊 Treatment",       value: dens.fields.treatment },
                                 ]),
-                            { key: "complications",   label: "⚠️ Complications",   value: condition.complications },
+                            { key: "complications",   label: "⚠️ Complications",   value: dens.fields.complications },
                           ].map(row => row.value && (
                             <div key={row.key} style={{ marginBottom: "0.65rem" }}>
                               <div style={{
@@ -2869,13 +2991,42 @@
                                 fontFamily: "monospace", marginBottom: 4,
                               }}>{row.label}</div>
                               <HighlightableText
-                                text={row.value} condId={condition.id} fieldKey={row.key}
-                                spans={condHl[row.key]} onTapSpan={setHlAt}
+                                text={row.value} condId={condition.id} fieldKey={hlKey(row.key)}
+                                spans={hlFor(row.key)} onTapSpan={setHlAt}
                                 style={{ fontSize: "0.86rem", color: "#2a2a2a",
                                          lineHeight: 1.65, whiteSpace: "pre-line" }}
                               />
                             </div>
                           ))}
+                          {/* Density controls: which register this card is showing,
+                              whether it is derived or capped, and a per-card pin. */}
+                          {!condition.fields && (
+                            <div style={{
+                              display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
+                              marginBottom: "0.55rem", paddingTop: "0.15rem",
+                            }}>
+                              <span style={{ fontSize: "0.66rem", color: "#9a968c", fontFamily: "monospace" }}>
+                                {DENSITY_META[condLevel].label}
+                                {dens.derived && " · shortened automatically"}
+                                {dens.capped && " · no fuller version written yet"}
+                                {densityPins[condition.id] && " · pinned"}
+                              </span>
+                              <div style={{ display: "flex", gap: 3, marginLeft: "auto" }}>
+                                {DENSITY_LEVELS.map(d => (
+                                  <button key={d}
+                                    onClick={() => setDensityPin(condition.id, densityPins[condition.id] === d ? null : d)}
+                                    title={densityPins[condition.id] === d ? "Unpin this card" : "Pin this card to " + DENSITY_META[d].label}
+                                    style={{
+                                      padding: "0.16rem 0.44rem", borderRadius: 4, cursor: "pointer",
+                                      fontFamily: "monospace", fontSize: "0.63rem",
+                                      background: densityPins[condition.id] === d ? "#2a4a8a" : "transparent",
+                                      color: densityPins[condition.id] === d ? "#fff" : "#9a968c",
+                                      border: "1px solid " + (densityPins[condition.id] === d ? "#2a4a8a" : "#d0cdc3"),
+                                    }}>{DENSITY_META[d].label[0]}</button>
+                                ))}
+                              </div>
+                            </div>
+                          )}
                           {/* Highlighter affordance — the feature is invisible until you know it exists */}
                           <div style={{
                             display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
@@ -2886,7 +3037,7 @@
                             </span>
                             {condHlN > 0 && (
                               <button
-                                onClick={() => { if (confirm("Clear all " + condHlN + " highlight" + (condHlN === 1 ? "" : "s") + " for this condition?")) clearHighlights(condition.id); }}
+                                onClick={() => { if (confirm("Clear all " + condHlN + " highlight" + (condHlN === 1 ? "" : "s") + " on the " + DENSITY_META[condLevel].label + " text for this condition?")) clearHighlights(condition.id, condLevel, isBaseLevel); }}
                                 style={{
                                   background: "transparent", color: "#888", border: "1px solid #d0cdc3",
                                   padding: "0.2rem 0.5rem", borderRadius: 5,
@@ -4527,6 +4678,26 @@
       const [dilemmasProgress, setDilemmasProgress] = useState(() => {
         try { return JSON.parse(localStorage.getItem("msra_dilemmas_progress") || "{}"); } catch { return {}; }
       });
+      // Tracker reading density. Synced, unlike the purely visual view-mode and
+      // cluster-collapse prefs, because which register you read a condition at is
+      // a study decision you want to keep when you move between devices.
+      const [density, setDensity] = useState(() => {
+        try {
+          const d = localStorage.getItem("msra_tracker_density");
+          return ["brief", "standard", "detailed"].indexOf(d) > -1 ? d : "standard";
+        } catch { return "standard"; }
+      });
+      const [densityPins, setDensityPins] = useState(() => {
+        try { return JSON.parse(localStorage.getItem("msra_density_pins") || "{}"); } catch { return {}; }
+      });
+      const setDensityPin = useCallback((condId, level) => {
+        setDensityPins(prev => {
+          const next = { ...prev };
+          if (level) next[condId] = level; else delete next[condId];
+          return next;
+        });
+      }, []);
+
       const [dayOverrides, setDayOverrides] = useState(() => {
         try { return JSON.parse(localStorage.getItem("msra_day_overrides") || "{}"); } catch { return {}; }
       });
@@ -4582,6 +4753,8 @@
       useEffect(() => { localStorage.setItem("msra_qbank_progress", JSON.stringify(qbankProgress)); }, [qbankProgress]);
       useEffect(() => { localStorage.setItem("msra_dilemmas_progress", JSON.stringify(dilemmasProgress)); }, [dilemmasProgress]);
       useEffect(() => { localStorage.setItem("msra_day_overrides", JSON.stringify(dayOverrides)); }, [dayOverrides]);
+      useEffect(() => { localStorage.setItem("msra_tracker_density", density); }, [density]);
+      useEffect(() => { localStorage.setItem("msra_density_pins", JSON.stringify(densityPins)); }, [densityPins]);
       const setDayType = useCallback((key, type) => {
         setDayOverrides(prev => {
           const next = { ...prev };
@@ -4672,7 +4845,7 @@
           } else {
             // First time using this code: upload current local state as the seed
             docRef.set({
-              hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides,
+              hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides, density, densityPins,
               updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
             }, { merge: true }).catch(err => console.warn("seed write failed:", err));
           }
@@ -4747,6 +4920,13 @@
                   return data.dayOverrides;
                 });
               }
+              if (["brief", "standard", "detailed"].indexOf(data.density) > -1) setDensity(data.density);
+              if (data.densityPins) {
+                setDensityPins(prev => {
+                  if (JSON.stringify(prev) === JSON.stringify(data.densityPins)) return prev;
+                  return data.densityPins;
+                });
+              }
               setLastSyncAt(Date.now());
               // unset on next tick
               setTimeout(() => { applyingRemote.current = false; }, 0);
@@ -4804,14 +4984,14 @@
           // deletions in statuses / bookmarks / progress maps propagate. (Notes live in a
           // subcollection and are unaffected by this document write.)
           FIRESTORE.collection("sync").doc(syncCode).set({
-            hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides,
+            hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides, density, densityPins,
             updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
           })
             .then(() => setLastSyncAt(Date.now()))
             .catch(err => { console.warn("write failed:", err); setSyncStatus("error"); });
         }, 700);
         return () => clearTimeout(writeTimer.current);
-      }, [hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides, syncCode]);
+      }, [hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides, density, densityPins, syncCode]);
 
       const setNote = useCallback((id, dataUrl) => {
         setNotes(prev => {
@@ -4867,11 +5047,23 @@
         });
       }, []);
 
-      const clearHighlights = useCallback(condId => {
+      // `level` scopes the clear to one reading density (keys are "<level>:<field>",
+      // bare keys being legacy spans on the base register). Omit it to clear the lot.
+      const clearHighlights = useCallback((condId, level, isBaseLevel) => {
         setHighlights(prev => {
           if (!prev[condId]) return prev;
           const updated = { ...prev };
-          delete updated[condId];
+          if (!level) {
+            delete updated[condId];
+          } else {
+            const kept = {};
+            Object.keys(prev[condId]).forEach(k => {
+              const sep = k.indexOf(":");
+              const owns = sep > -1 ? k.slice(0, sep) === level : !!isBaseLevel;
+              if (!owns) kept[k] = prev[condId][k];
+            });
+            if (Object.keys(kept).length) updated[condId] = kept; else delete updated[condId];
+          }
           try { localStorage.setItem("msra_highlights", JSON.stringify(updated)); } catch (err) {}
           return updated;
         });
@@ -4920,7 +5112,9 @@
                                               setActiveSpecialty={setActiveSpecialty}
                                               notes={notes} setNote={setNote}
                                               textNotes={textNotes} setTextNote={setTextNote}
-                                              highlights={highlights} setHighlight={setHighlight} clearHighlights={clearHighlights} />}
+                                              highlights={highlights} setHighlight={setHighlight} clearHighlights={clearHighlights}
+                                              density={density} setDensity={setDensity}
+                                              densityPins={densityPins} setDensityPin={setDensityPin} />}
           {view === "notebook" && <NotebookView
                                               activeNotebookSectionId={activeNotebookSectionId}
                                               setActiveNotebookSectionId={setActiveNotebookSectionId}
