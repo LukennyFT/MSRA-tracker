@@ -43,8 +43,8 @@ Sets 1–3 were chosen by the user. The rest are ordered by exam weight first, t
 | ---: | --- | ---: | ---: | ---: | --- |
 | 0 | Neurology | 45 | 0 | 0 | ✅ done 2026-08-09 |
 | 1 | Endocrinology & Metabolic | 42 | 36 | 26 | ✅ done 2026-08-09 |
-| **2** | **Cardiovascular** | **63** | **62** | **48** | **in progress — 46/63** |
-| 3 | Gastroenterology & Nutrition | 53 | 44 | 36 | pending |
+| 2 | Cardiovascular | 63 | 62 | 48 | ✅ done 2026-08-10 |
+| **3** | **Gastroenterology & Nutrition** | **53** | **44** | **36** | **next** |
 | 4 | Respiratory | 27 | 27 | 16 | pending |
 | 5 | Renal & Urology | 27 | 26 | 24 | pending |
 | 6 | Infectious Diseases | 37 | 36 | 35 | pending |
@@ -82,7 +82,8 @@ Why this order after the user's first three: **Respiratory and Renal** are high-
 - For pure reorders, assert the id multiset **and** total byte length are unchanged.
 - Assert the **direction**: a script whose job is to expand must refuse a payload shorter than what it replaces (and vice versa for a shortening script). This applies to the trim files too — when an over-long batch has to be tightened by hand, run the trims through a merge script that asserts every replaced field is shorter, then re-checks the band.
 - **Enforce both ends of the detailed band.** `depth: "detailed"` is a label, not evidence: cardiac tamponade carried it at 297 chars/field. The 330 floor caught it.
-- **⚠️ Four lines of `data.js` hold TWO condition objects each**, so whole-line replacement would silently delete the sibling. `apply_registers.py` now refuses any line containing more than one `id: "`. The affected pairs are **`cvs_arterial_ulcer` + `cvs_ali`** (in Set 2's remaining *Aortic & peripheral arterial* cluster — split that line before running the script on it), `neuro_trigeminal` + `neuro_iih`, `neuro_status_epilepticus` + `neuro_parkinsons`, and `derm_ichthyosis` + `derm_neuropathic_ulcer`.
+- **⚠️ Some lines of `data.js` hold TWO condition objects each**, so whole-line replacement would silently delete the sibling. `apply_registers.py` refuses any line containing more than one `id: "`, and `scratchpad/split_line.py` splits one safely. Three pairs remain, all in future sets: `neuro_trigeminal` + `neuro_iih`, `neuro_status_epilepticus` + `neuro_parkinsons`, and `derm_ichthyosis` + `derm_neuropathic_ulcer`. (`cvs_arterial_ulcer` + `cvs_ali` was split on 2026-08-10.)
+- **⚠️ Do not assume `management` sits between `depth` and `cluster`** — five entries store it LAST, after `treatment`: `cvs_ruptured_aaa` (done), and `gi_ugib`, `gi_cholecystitis`, `gi_cholangitis` and `repro_afe`, which are still to come. Locate its value by brace-matching from the key, never by position relative to `cluster`. Re-emitting the object normalises it back to the canonical order, which is fine — but a script that slices by position will mangle it.
 
 ---
 
@@ -107,6 +108,12 @@ The clearest symptom was that **HFpEF's own authored Standard had reached 266 ch
 
 ## Progress log
 
+- **2026-08-10 — ✅ SET 2 (CARDIOVASCULAR) COMPLETE, 63 of 63.** The last three clusters landed in four passes: **Congenital heart disease** (5), **Aortic** (3), **Peripheral arterial** (5) and **Venous & thromboembolic** (4). All 17 needed detailed text written from scratch, including `cvs_pe`, which was flagged `detailed` at only 305 chars/field — the second entry this set whose `depth` label overstated its register.
+  - Registers for these 17: brief **100**, standard **195** (range 189–201, 0 outside band), detailed **584**. **The finished specialty reads brief 104 / standard 201 / detailed 548 across all 63, with 0 outside the band.** App-wide, 150 conditions are now complete at brief 105 / standard 210 / detailed 489.
+  - **Two structural problems were cleared before the content could go in**, both caught by assertions rather than discovered afterwards:
+    1. **The `cvs_arterial_ulcer` + `cvs_ali` shared line was split** with `scratchpad/split_line.py`, which asserts the id multiset is unchanged and that the file grows by *exactly* `len(indent)` — proving only the line break moved. Its first run **aborted on a byte-count mismatch of one character**, which turned out to be my own arithmetic (the `, ` separator loses a space); the file was untouched, the formula was fixed, and it then ran clean.
+    2. **`cvs_ruptured_aaa` stores `management` LAST, after `treatment`**, not between `depth` and `cluster`. The injector assumed the usual order and aborted. It now finds the management value by **brace-matching from wherever the key appears**, so key order no longer matters. **Four more entries file-wide share this quirk and sit in future sets: `gi_ugib`, `gi_cholecystitis`, `gi_cholangitis` (Set 3) and `repro_afe` (Set 10).**
+  - Verified: balance 0/0/0, `node --check`, 558 unique ids with the id set unchanged, **0 duplicate top-level keys across all 1,286 objects**, **all 181 flowcharts identical in content AND all 181 re-rendered through the Mermaid engine with 0 failures**, **0 conditions changed outside the 17**, 0 field defects. Live check: Tetralogy of Fallot renders 8 authored rows at Detailed (5,218 chars), 8 at Standard (2,004) and 4 at Brief (712), no fallback markers.
 - **2026-08-10 — Set 2 (Cardiovascular) continued, now 46 of 63.** Two more clusters complete: **Valvular heart disease** (9) and **Endocardial, myocardial & pericardial disease** (5). Worked in four passes — aortic valve (stenosis, sclerosis, regurgitation), mitral valve (stenosis, regurgitation, prolapse), right-sided valves plus rheumatic heart disease, then the endocardial/myocardial/pericardial group.
   - **All 14 needed their detailed text written from scratch.** Thirteen sat at brief register; the fourteenth, cardiac tamponade, was already flagged `depth: "detailed"` but measured only **297 chars/field** — below the 330 floor — so the enforced band caught it and its base was expanded to 570 as part of the pass. Worth remembering: a `depth` label is not evidence the register is right.
   - Registers for these 14: brief **103**, standard **196** (range 189–202, **0 outside band**), detailed **575** chars/field. Cardiovascular as a whole now reads brief 106 / standard 203 / detailed 534; all 133 finished conditions app-wide read brief 106 / standard 212 / detailed 477, still **0 outside band**.

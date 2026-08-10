@@ -2,7 +2,17 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
-_Last updated: **TOGGLE PROJECT — SET 2 (CARDIOVASCULAR): VALVULAR + ENDOCARDIAL/MYOCARDIAL/PERICARDIAL COMPLETE, 46 of 63 (2026-08-10).** Two more clusters done: **Valvular heart disease** (9 — aortic stenosis, aortic sclerosis, aortic regurgitation, mitral stenosis, mitral regurgitation, mitral valve prolapse, tricuspid regurgitation, pulmonary stenosis, rheumatic heart disease) and **Endocardial, myocardial & pericardial disease** (5 — infective endocarditis, myocarditis, pericarditis, pericardial effusion, cardiac tamponade). **All 14 needed their detailed text written from scratch.**_
+_Last updated: **TOGGLE PROJECT — ✅ SET 2 (CARDIOVASCULAR) COMPLETE, 63 of 63 (2026-08-10).** All 63 cardiovascular conditions now carry a detailed base, an authored `standard`, an authored `brief` and a `complications` row. The final 17 — **Congenital heart disease** (5), **Aortic & peripheral arterial** (8) and **Venous & thromboembolic** (4) — all needed their detailed text written from scratch._
+
+**Registers for the finished specialty: brief 104 / standard 201 / detailed 548 chars/field across all 63, with 0 outside the 150–230 band.** App-wide, 150 of 558 conditions are complete, at brief 105 / standard 210 / detailed 489.
+
+**Two structural problems were cleared first, both caught by assertions rather than found afterwards.** (1) The **`cvs_arterial_ulcer` + `cvs_ali` shared line was split** by a new `scratchpad/split_line.py`, which asserts the id multiset is unchanged and the file grows by *exactly* `len(indent)`; its first run aborted on a one-character mismatch that was my own arithmetic error, leaving the file untouched. (2) **`cvs_ruptured_aaa` stores `management` LAST, after `treatment`** — the injector assumed the usual position and aborted. It now brace-matches from the key instead. ⚠️ **Four more entries share this quirk and sit in future sets: `gi_ugib`, `gi_cholecystitis`, `gi_cholangitis` (Set 3) and `repro_afe` (Set 10).**
+
+Verified: balance **0/0/0**; `node --check`; **558 conditions, 558 unique ids** with the id set unchanged; **0 duplicate top-level keys across all 1,286 objects**; **all 181 flowcharts identical in content and all 181 re-rendered through the Mermaid engine with 0 failures**; **0 conditions changed outside the 17**; 0 field defects. **Live check**: Tetralogy of Fallot renders 8 authored rows at Detailed (5,218 chars), 8 at Standard (2,004) and 4 at Brief (712), no fallback markers. **Re-upload `data.js`.**
+
+**Next set: 3 — Gastroenterology & Nutrition (53 conditions, 44 needing complications, 36 at brief base).**
+
+Earlier: **TOGGLE PROJECT — SET 2 (CARDIOVASCULAR): VALVULAR + ENDOCARDIAL/MYOCARDIAL/PERICARDIAL COMPLETE, 46 of 63 (2026-08-10).** Two more clusters done: **Valvular heart disease** (9 — aortic stenosis, aortic sclerosis, aortic regurgitation, mitral stenosis, mitral regurgitation, mitral valve prolapse, tricuspid regurgitation, pulmonary stenosis, rheumatic heart disease) and **Endocardial, myocardial & pericardial disease** (5 — infective endocarditis, myocarditis, pericarditis, pericardial effusion, cardiac tamponade). **All 14 needed their detailed text written from scratch.**_
 
 Registers for these 14: brief **103**, standard **196** (range 189–202, **0 outside band**), detailed **575** chars/field. All 133 finished conditions app-wide now read brief 106 / standard 212 / detailed 477, still **0 outside band**.
 
