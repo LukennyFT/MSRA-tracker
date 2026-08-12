@@ -2,6 +2,35 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
+_Last updated: **EIGHT CONDITIONS ADDED BY REQUEST (2026-08-12)** — app-wide totals are now **566 conditions, 275 complete**._
+
+## 2026-08-12 — Eight conditions added, one flowchart corrected, one cluster relabelled
+
+All eight were written straight to the full target state (detailed base + `standard` + `brief` + `complications`), so their sets do not need to revisit them.
+
+| New condition | Specialty | Cluster |
+| --- | --- | --- |
+| Neuroleptic malignant syndrome | Psychiatry & Mental Health | **Psychiatric emergencies & drug reactions** (new) |
+| Serotonin syndrome | Psychiatry & Mental Health | **Psychiatric emergencies & drug reactions** (new) |
+| Superficial thrombophlebitis | Cardiovascular | Venous & thromboembolic disease |
+| Necrotising fasciitis | Dermatology | Dermatological emergencies |
+| Spinal epidural abscess | Infectious Diseases | **CNS & spinal infection** (relabelled) |
+| Chickenpox (varicella) | Infectious Diseases | Viral exanthems & herpesviruses |
+| Cholera | Infectious Diseases | Tropical, zoonotic & other infection |
+| Genital herpes | Infectious Diseases | Sexually transmitted infection |
+
+Specialty totals affected: **Cardiovascular 64, Dermatology 38, Psychiatry 18, Infectious Diseases 43.**
+
+- A **new Psychiatry cluster, "Psychiatric emergencies & drug reactions"**, was created for NMS and serotonin syndrome rather than folding them into "Risk & emergency": they are each other's principal differential, and the cluster has obvious room to grow (lithium toxicity, acute dystonia, akathisia).
+- The Infectious Diseases cluster **"CNS infection" was relabelled "CNS & spinal infection"** to take the epidural abscess. Neurology's separate **"CNS infections"** (plural) was NOT touched.
+- **`id_chickenpox` sits deliberately before `derm_shingles`** so the cluster reads primary infection then reactivation.
+- **`cvs_angina`'s flowchart** said only "Add complementary agent". The node now names it — **"Add beta-blocker + dihydropyridine CCB"** — and its tooltip carries the rule that verapamil and diltiazem must never be added to a beta-blocker.
+- **Scope note:** `derm_hsv` remains the umbrella herpes simplex entry (orolabial, whitlow, eczema herpeticum); the new **Genital herpes** entry is the STI-focused subset covering typing, suppressive therapy, transmission and neonatal risk.
+
+Registers for the eight: brief **104**, standard **213**, detailed **623**, 0 outside band. Verified: balance **0/0/0**; `node --check`; **566 unique ids, 0 duplicates**; **0 duplicate top-level keys across all 566 object literals**; **all 181 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and all 1,906 nodes carrying a tip**; **0 pre-existing conditions altered** (hash-verified). **Live check**: Tracker header reads 566 conditions; the new Psychiatry cluster renders with both entries; NMS renders all 8 authored rows with no fallback markers; the angina flowchart renders in the card with the corrected label. **Re-upload `data.js`.**
+
+**Pre-existing defect, NOT fixed:** `pharm_dopamine_agonists` and `pharm_salicylate_od` are labelled `depth: "detailed"` but only ever had `presentation`, `investigations` and `treatment`. Both are topic-style Pharmacology entries, so this belongs with the Set 17 decision.
+
 _Last updated: **TOGGLE PROJECT — ✅ SET 5 (INFECTIOUS DISEASES) COMPLETE, 37 of 37 (2026-08-11).** All eight clusters done in nine passes: **Sepsis & bacteraemia** (4), **CNS infection** (4), **Respiratory infection** (5), **Gastrointestinal infection** (6), **Sexually transmitted infection** (3), **Viral exanthems & herpesviruses** (7, split into childhood exanthems and herpesviruses), and **Tropical, zoonotic & other infection** (8, split in two)._
 
 **All 37 needed their detailed text written from scratch** — every one sat below the 330 floor, including the only two above brief register, `id_sbp` (186 c/f, labelled `standard`) and `derm_shingles` (185). Only `id_sbp` already carried a complications row, which was carried through verbatim with `resolve_existing.py` rather than retyped. Registers for the 37: brief **103** (95–116), standard **207** (189–220), detailed **612** (556–639), **0 outside any band**. App-wide, **267 of 558** conditions are complete, at brief 103 / standard 211 / detailed 538.

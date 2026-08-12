@@ -56,7 +56,7 @@ Sets 1–3 were chosen by the user. The rest are ordered by exam weight first, t
 | 12 | Ophthalmology | 25 | 24 | 24 | pending |
 | 13 | ENT | 18 | 18 | 18 | pending |
 | 14 | Genetics | 19 | 16 | 16 | pending |
-| 15 | Psychiatry & Mental Health | 15 | 15 | 15 | pending |
+| 15 | Psychiatry & Mental Health | 17 genuine, 2 done → 15 to do | 15 | 15 | pending |
 | 16 | Immunology & Allergy | 9 | 9 | 8 | pending |
 | 17 | Pharmacology + Public Health | 0 | 0 | — | registers only, no complications — decide later whether worth doing |
 
@@ -65,6 +65,12 @@ Sets 0–4 ran in the order above. **On 2026-08-11 the user re-ordered what foll
 **⚠️ Dermatology moving to Set 6 brings a shared line forward: `derm_ichthyosis` + `derm_neuropathic_ulcer` must be split with `scratchpad/split_line.py` before the injector runs on that cluster.** See the script-safety rules below.
 
 **Counts re-verified against `data.js` on 2026-08-11**, since the next two sets are planned against them. Infectious Diseases and Renal were correct as listed. **Dermatology was wrong — it is 36 conditions, not 37** (all 36 genuine, all needing complications, all at brief base): the original figure predates conditions moving in and out of that specialty, with `derm_shingles` going to Infectious and `derm_leg_ulcer` to Cardiovascular while `cvs_gangrene` came the other way. Treat the other pending rows as approximate for the same reason and re-count at the start of each set, as step 1 already requires.
+
+**Counts re-verified against `data.js` on 2026-08-12**, after eight conditions were added by request. The live totals are now: Renal 27, MSK 28, **Dermatology 38 (1 done)**, ENT 18, Ophthalmology 25, **Psychiatry 18 (2 done, 1 topic-style)**, Haematology 20, Immunology 11, Genetics 21, Reproductive 26, Paediatrics 27 — where the last five include the topic-style entries excluded from Complications (1, 2, 2, 4 and 4 respectively), which is why they read higher than the "genuine conditions" column. **App-wide: 275 of 566 conditions complete.**
+
+**⚠️ Two conditions were added mid-project and are ALREADY COMPLETE, so their sets must not re-count them:** `derm_nec_fasc` (Set 6) and `psych_nms` + `psych_serotonin_syndrome` (Set 15). Set 6 is 37 to do, not 38.
+
+**Infectious Diseases is finished apart from its two topic-style entries** (`id_notifiable`, `id_abx_choice`, both still at 33 c/f base), which belong with the Set 17 pharmacology/public-health decision rather than with Set 5.
 
 ---
 
@@ -115,6 +121,17 @@ The clearest symptom was that **HFpEF's own authored Standard had reached 266 ch
 `patch_standard.py` was written for this job: it replaces individual fields inside a `standard` object, leaves the base text, `brief`, `management` and everything else untouched, and **refuses any replacement that is not shorter than what it replaces** — which repeatedly caught fields pasted back unchanged.
 
 ## Progress log
+
+- **2026-08-12 — Eight conditions added by request, plus a flowchart fix and a cluster relabel.** All eight were authored straight to the full target state (detailed base + `standard` + `brief` + `complications`), so they need no further work in their sets.
+  - **New:** `psych_nms` and `psych_serotonin_syndrome` in a **new Psychiatry cluster, "Psychiatric emergencies & drug reactions"** (chosen over folding them into "Risk & emergency", since they are each other's main differential and the cluster has room for lithium toxicity and acute dystonia); `cvs_superficial_thrombophlebitis` (Venous & thromboembolic disease); `derm_nec_fasc` (Dermatological emergencies, joining Erythroderma and SJS/TEN); `id_spinal_epidural_abscess`, `id_chickenpox`, `id_cholera` and `id_genital_herpes`.
+  - **`id_chickenpox` was deliberately inserted BEFORE `derm_shingles`** so the cluster reads primary infection then reactivation.
+  - **The Infectious Diseases cluster "CNS infection" was relabelled "CNS & spinal infection"** to accommodate the epidural abscess. Neurology's separate **"CNS infections"** (plural, 2 conditions) is a different label and was NOT touched — the rename script asserts the exact occurrence count for this reason.
+  - **`cvs_angina`'s flowchart node J was vague**: "Add complementary agent" never said which agent. It now reads **"Add beta-blocker + dihydropyridine CCB"**, and its tooltip gained the safety rule that verapamil and diltiazem must never be added to a beta-blocker.
+  - **Scope note on `id_genital_herpes`:** `derm_hsv` (Dermatology → Infections & infestations) already mentions genital herpes in its presentation. `derm_hsv` remains the umbrella HSV entry (orolabial, whitlow, eczema herpeticum); the new entry is the STI-focused subset, covering typing, suppression, transmission and neonatal risk.
+  - **Two new scripts, both in the repo:** `add_condition.py` inserts new conditions at an explicit `after:` anchor, enforcing the same register bands as `apply_registers.py` and proving afterwards that every pre-existing condition hashes unchanged; `patch_flowchart.py` replaces exact substrings inside one condition's `management` blob, asserting each target appears exactly once and that the node and edge counts survive. `rename_cluster.py` handles label renames with an exact-count assertion.
+  - Registers for the eight: brief 104, standard 213, detailed 623, 0 outside band. **The detailed ceiling fired on all eight first drafts** (648–679) — consistent with the pattern that dense multi-mechanism topics overshoot.
+  - Verified: balance 0/0/0, `node --check`, **566 unique ids with 0 duplicates**, 0 duplicate top-level keys across all 566 object literals, **all 181 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tips, 0 orphan tips and all 1,906 nodes carrying a tooltip**, and **0 pre-existing conditions altered** (hash-verified by `add_condition.py`). Live check: the Tracker header reads 566 conditions; Psychiatry 18, Cardiovascular 64, Dermatology 38; the new Psychiatry cluster renders with both conditions; NMS renders all 8 authored rows with no fallback markers; and the angina flowchart renders in the card with the corrected node label.
+  - **Pre-existing defect found, NOT fixed:** `pharm_dopamine_agonists` and `pharm_salicylate_od` carry `depth: "detailed"` but only ever had `presentation`, `investigations` and `treatment` — no `keyFacts`, `epidemiology`, `aetiology` or `pathophysiology`. They are topic-style Pharmacology entries, so this belongs with the Set 17 decision.
 
 - **2026-08-11 — ✅ SET 5 (INFECTIOUS DISEASES) COMPLETE, 37 of 37, in a single session.** All eight clusters done in nine passes: **Sepsis & bacteraemia** (4), **CNS infection** (4), **Respiratory infection** (5), **Gastrointestinal infection** (6), **Sexually transmitted infection** (3), **Viral exanthems & herpesviruses** (7, split into a childhood-exanthem pass and a herpesvirus pass) and **Tropical, zoonotic & other infection** (8, split in two).
   - **All 37 needed their detailed text written from scratch** — every one sat below the 330 floor. Only two were above brief register to begin with: `id_sbp` at 186 c/f (labelled `standard`) and `derm_shingles` at 185. `id_sbp` was also the only entry with an existing `complications` row, carried through verbatim with `resolve_existing.py` rather than retyped.
