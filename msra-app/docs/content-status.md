@@ -2,6 +2,22 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
+_Last updated: **TOGGLE PROJECT — ✅ SET 6 (DERMATOLOGY) COMPLETE, 37 of 37 (2026-08-13).** Dermatology now reads 38 of 38, and app-wide **312 of 566** conditions are complete._
+
+## 2026-08-13 — Set 6 (Dermatology) complete
+
+Seven passes by cluster: **Eczema & papulosquamous** (5), **Acne/rosacea + Urticaria & reactive erythema** (4), **Dermatological emergencies + Autoimmune blistering** (5), **Infections & infestations** (6), **Premalignant, benign & skin cancers** (5), **Pigment, hair & structural + Other** (6) and **Wounds & ulcers** (6).
+
+**All 37 needed their detailed text written from scratch** — every one sat at brief register (71 to 129 chars/field) and none had a complications row, making this only the second set, after Respiratory, in which nothing kept its base. Registers for the 37: brief **99** (90–108), standard **211** (198–223), detailed **599** (554–630), **0 outside any band**.
+
+- **The `derm_ichthyosis` + `derm_neuropathic_ulcer` shared line was split first**, as planned since 2026-08-11. `split_line.py` grew the file by exactly 6 bytes — one newline plus the indent — proving only the line break moved. Two shared lines remain, both already-complete Set 0 Neurology pairs.
+- **The detailed ceiling fired only once**, on `derm_alopecia` (675), which spans androgenetic, areata, telogen effluvium and the scarring alopecias. Six of the seven passes cleared every band on first draft, the best rate of the project so far.
+- **Standard finished at 211 against a ~200 budget** — within band and better than Respiratory's 223, but pass A still needed a hand trim, so the upward pressure persists.
+- **The umbrella/subset rule was applied twice.** `cvs_gangrene` keeps the overview, the dry/wet/gas classification and gas gangrene, while `derm_dry_gangrene` and `derm_wet_gangrene` own their specifics, since the contrast between them is the teaching point. `derm_hsv` remains the umbrella herpes entry, with genital disease owned by `id_genital_herpes`.
+- **⚠️ `cvs_gangrene` sits in Dermatology's Wounds & ulcers cluster under a cardiovascular id** — the id-prefix trap in practice. Listing by `cluster:` found it; an `id: "derm_` scan would have reported 37 conditions instead of 38.
+
+Verified: balance **0/0/0**; `node --check`; **566 conditions, 0 duplicate ids, 0 duplicate top-level keys across all 566 object literals**; **exactly 37 conditions changed, 0 added or removed** (hash-verified against a pre-set snapshot); 0 field defects; **all 189 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and an unchanged 2,014 nodes**, confirming the six dermatology charts survived their rewrites. **Live check**: Psoriasis renders 8 authored rows with its flowchart drawn in the card (7 nodes) and no fallback markers. **Re-upload `data.js`.**
+
 _Last updated: **EIGHT CONDITIONS ADDED BY REQUEST (2026-08-12)** — app-wide totals are now **566 conditions, 275 complete**._
 
 ## 2026-08-12 — Eight conditions added, one flowchart corrected, one cluster relabelled
@@ -26,6 +42,8 @@ Specialty totals affected: **Cardiovascular 64, Dermatology 38, Psychiatry 18, I
 - **`id_chickenpox` sits deliberately before `derm_shingles`** so the cluster reads primary infection then reactivation.
 - **`cvs_angina`'s flowchart** said only "Add complementary agent". The node now names it — **"Add beta-blocker + dihydropyridine CCB"** — and its tooltip carries the rule that verapamil and diltiazem must never be added to a beta-blocker.
 - **Scope note:** `derm_hsv` remains the umbrella herpes simplex entry (orolabial, whitlow, eczema herpeticum); the new **Genital herpes** entry is the STI-focused subset covering typing, suppressive therapy, transmission and neonatal risk.
+
+**Flowcharts were added to all eight (2026-08-12), bringing the app to 189.** The standing instruction from when the engine was built is stepwise-management charts on **"all conditions it is appropriate for"**, and all eight have genuine decision-driven pathways. Sources: `psych_nms` Maudsley, `psych_serotonin_syndrome` Hunter criteria, `cvs_superficial_thrombophlebitis` NICE CKS, `derm_nec_fasc` UK surgical emergency practice, `id_spinal_epidural_abscess` UK spinal infection practice, `id_chickenpox` NICE CKS / UKHSA, `id_cholera` WHO, `id_genital_herpes` BASHH. A new script, `scratchpad/add_flowchart.py`, attaches a chart to a condition that has none and **statically asserts the fork rule** (every edge from a branching node must be labelled), that every node has a tooltip, and that no tooltip names a missing node.
 
 Registers for the eight: brief **104**, standard **213**, detailed **623**, 0 outside band. Verified: balance **0/0/0**; `node --check`; **566 unique ids, 0 duplicates**; **0 duplicate top-level keys across all 566 object literals**; **all 181 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and all 1,906 nodes carrying a tip**; **0 pre-existing conditions altered** (hash-verified). **Live check**: Tracker header reads 566 conditions; the new Psychiatry cluster renders with both entries; NMS renders all 8 authored rows with no fallback markers; the angina flowchart renders in the card with the corrected label. **Re-upload `data.js`.**
 
