@@ -4729,6 +4729,16 @@
       const applyingRemote = useRef(false);
       const initialUploadDone = useRef(false);
       const writeTimer = useRef(null);
+      // `dirty` = there are local edits that have NOT yet been written to Firestore.
+      // While it is true the snapshot listener must NOT apply remote state, or it will
+      // overwrite work the user has just done (a click that hasn't saved yet, or the
+      // characters typed since the last write). `lastRemoteDocJson` holds the synced
+      // fields exactly as last seen on the server, so the writer can recognise a pure
+      // echo by VALUE rather than by timing.
+      const dirty = useRef(false);
+      const lastRemoteDocJson = useRef(null);
+      const SYNC_FIELDS = ["hoursPerWeek","statuses","statusChangedAt","notebookBookmarks","qbankProgress","dilemmasProgress","examDate","planStart","textNotes","highlights","dayOverrides","density","densityPins"];
+      const syncJson = obj => JSON.stringify(SYNC_FIELDS.reduce((a, k) => { a[k] = obj[k]; return a; }, {}));
 
       const setSyncCode = useCallback(code => {
         if (code) {
@@ -4877,8 +4887,18 @@
             // Subscribe AFTER initial reconciliation
             mainUnsub = docRef.onSnapshot(s => {
               if (!s.exists) return;
-              applyingRemote.current = true;
               const data = s.data() || {};
+              // Remember what the server currently holds, so the writer below can tell a
+              // pure echo from a genuine local change without depending on timing.
+              lastRemoteDocJson.current = syncJson(data);
+              // ⚠️ DO NOT apply remote state while local edits are still unsaved. Doing so
+              // is what silently discarded a just-clicked RAG status and deleted characters
+              // from a note while it was being typed: the stale server copy overwrote them,
+              // and the pending write that would have saved them had already been cancelled.
+              // Our own debounced write is in flight and will carry the local state up; the
+              // echo of that write is the next snapshot we accept.
+              if (dirty.current) { setLastSyncAt(Date.now()); return; }
+              applyingRemote.current = true;
               if (typeof data.hoursPerWeek === "number") {
                 setHoursPerWeek(prev => prev !== data.hoursPerWeek ? data.hoursPerWeek : prev);
               }
@@ -4972,7 +4992,13 @@
       // ---- Debounced write of state changes to Firestore ----
       useEffect(() => {
         if (!FIRESTORE || !syncCode || !initialUploadDone.current) return;
-        if (applyingRemote.current) return;
+        // ⚠️ There must be NO `if (applyingRemote.current) return;` here. React runs this
+        // effect's CLEANUP before re-running the body, so bailing out early cancelled the
+        // pending write and never rescheduled it — the local change was then lost for good.
+        // Echoes are now filtered by VALUE instead, which has no timing dependency.
+        const payload = syncJson({ hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides, density, densityPins });
+        if (payload === lastRemoteDocJson.current) return;   // identical to the server: nothing to do
+        dirty.current = true;                                 // hold off remote snapshots until saved
         clearTimeout(writeTimer.current);
         writeTimer.current = setTimeout(() => {
           // NB: this is a FULL-DOCUMENT write (no { merge: true }) — and it must stay that way.
@@ -4987,10 +5013,34 @@
             hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides, density, densityPins,
             updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
           })
-            .then(() => setLastSyncAt(Date.now()))
-            .catch(err => { console.warn("write failed:", err); setSyncStatus("error"); });
+            .then(() => {
+              // Only now is it safe to accept remote snapshots again: the server holds
+              // this exact state, so the echo of this write is a no-op.
+              lastRemoteDocJson.current = payload;
+              dirty.current = false;
+              setLastSyncAt(Date.now());
+            })
+            .catch(err => {
+              // Leave `dirty` set on failure, so a stale snapshot still cannot overwrite
+              // the unsaved change; the next local edit reschedules the write.
+              console.warn("write failed:", err); setSyncStatus("error");
+            });
         }, 700);
-        return () => clearTimeout(writeTimer.current);
+
+        // The initial load takes the server copy wholesale, so anything still sitting in
+        // the 700 ms debounce when the app is closed would be lost on next open — easy to
+        // do on a phone by tapping a status and immediately switching away. Flush it as
+        // soon as the page is hidden.
+        const flush = () => {
+          if (!dirty.current || document.visibilityState !== "hidden") return;
+          clearTimeout(writeTimer.current);
+          FIRESTORE.collection("sync").doc(syncCode).set({
+            hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides, density, densityPins,
+            updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+          }).then(() => { lastRemoteDocJson.current = payload; dirty.current = false; }).catch(() => {});
+        };
+        document.addEventListener("visibilitychange", flush);
+        return () => { clearTimeout(writeTimer.current); document.removeEventListener("visibilitychange", flush); };
       }, [hoursPerWeek, statuses, statusChangedAt, notebookBookmarks, qbankProgress, dilemmasProgress, examDate, planStart, textNotes, highlights, dayOverrides, density, densityPins, syncCode]);
 
       const setNote = useCallback((id, dataUrl) => {
