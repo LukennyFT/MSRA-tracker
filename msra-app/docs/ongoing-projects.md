@@ -6,7 +6,7 @@
 
 **Keep it current.** Whenever a batch, set or fix lands, update the status line here as well as the detailed doc.
 
-_Last verified against the data files: **2026-08-13**. Every number below was counted from `data.js` / `notebook-data.js` on that date, not carried forward from an earlier note._
+_Last verified against the data files: **2026-08-15**. Every number below was counted from `data.js` / `notebook-data.js` on that date, not carried forward from an earlier note._
 
 ---
 
@@ -15,8 +15,8 @@ _Last verified against the data files: **2026-08-13**. Every number below was co
 | # | Workstream | Where we are | What's next |
 | --- | --- | --- | --- |
 | 1 | **Notebook roadmap** | 271 topics, all written, **0 placeholders** | **Batch 16i** — Paediatrics: Endocrine, Emergencies, Ophthalmology, Other |
-| 2 | **Toggle Project** (3 reading registers + Complications) | **312 of 566** conditions complete; Sets 0–6 done | **Set 7 — Renal & Urology**, 27 to do |
-| 3 | **Flowchart fixer** (unlabelled forks) | 189 charts; **56 carry the defect** | Decide scope, then fix specialty by specialty |
+| 2 | **Toggle Project** (3 reading registers + Complications) | **315 of 569** conditions complete; Sets 0–6 done | **Set 7 — Renal & Urology**, 27 to do |
+| 3 | **Flowchart fixer** (unlabelled forks) | 192 charts; **56 carry the defect** | Decide scope, then fix specialty by specialty |
 
 Plus a short list of **smaller open defects** at the end — each is small, real, and currently parked.
 
@@ -52,7 +52,7 @@ After 16i, the paediatrics thread (16a–16i) is finished. Batches 17 and 18 are
 
 Bringing every Tracker condition to **three reading registers** — Brief, Standard, Detailed — plus a **Complications** row. Work units are **sets**, one per specialty.
 
-**Status: 312 of 566 conditions complete.** Sets 0–6 are done: Neurology (45), Endocrinology (42), Cardiovascular (64), Gastroenterology (53), Respiratory (27), Infectious Diseases (41 of 43) and Dermatology (38).
+**Status: 315 of 569 conditions complete.** Sets 0–6 are done: Neurology (45), Endocrinology (42), Cardiovascular (64), Gastroenterology (53), Respiratory (27), Infectious Diseases (42 of 44) and Dermatology (38).
 
 ### Remaining sets, in order
 
@@ -70,7 +70,7 @@ Bringing every Tracker condition to **three reading registers** — Brief, Stand
 | 16 | Immunology & Allergy | 9 | 11 total, 2 topic-style |
 | 17 | Pharmacology + Public Health | 0 genuine | Registers only, no Complications — **undecided whether worth doing** |
 
-**Infectious Diseases is finished** apart from `id_notifiable` and `id_abx_choice`, its two topic-style entries (both still at 33 chars/field). They belong with the Set 17 decision, not with Set 5.
+**Infectious Diseases is finished** apart from `id_notifiable` and `id_abx_choice`, its two topic-style entries (both still at 33 chars/field). They belong with the Set 17 decision, not with Set 5. `id_gas_gangrene` was added on 2026-08-14 and written complete, taking the specialty to 44.
 
 ### The rules that matter (full detail in `docs/toggle-project.md`)
 
@@ -91,7 +91,7 @@ Bringing every Tracker condition to **three reading registers** — Brief, Stand
 
 **The rule:** a node with more than one outgoing edge must have **every** one of those edges labelled. An unlabelled branch reads as an unresolvable decision — the reader cannot tell why they would take one arm rather than the other. The user found this themselves in `endo_dka`, where the chart forked after fluid resuscitation into two unlabelled branches; it was never a decision at all, the second arm was concurrent supportive care, and the fix was to label it `-- "in parallel" -->`.
 
-**Status: 189 charts in the app. 56 of them carry at least one unlabelled fork (59 defect instances — three charts have two each).** Tooltip coverage, by contrast, is perfect: 0 nodes without a tip and 0 orphan tips across all 189.
+**Status: 192 charts in the app. 56 of them carry at least one unlabelled fork (59 defect instances — three charts have two each).** Tooltip coverage, by contrast, is perfect: 0 nodes without a tip and 0 orphan tips across all 192. The affected 56 are all pre-2026-08-12 charts; everything added since is written through `add_flowchart.py`, which enforces the rule.
 
 The commonest pattern is a **start node that drops an unlabelled edge into the main pathway alongside a labelled edge to a red-flag branch** — e.g. `derm_cellulitis` has `A --> B` sitting beside `A -- "rapidly spreading, severe pain, crepitus" --> G`. The fix is usually to name the ordinary path (`-- "usual course" -->`, `-- "then" -->`, `-- "in parallel" -->`), not to restructure the chart.
 
@@ -114,7 +114,7 @@ The commonest pattern is a **start node that drops an unlabelled edge into the m
 
 **Not started — this needs a scoping decision**, because each label is a clinical judgement about what the branch actually means, not a mechanical edit. Suggested approach: work specialty by specialty, use `patch_flowchart.py` (exact-substring replacement inside one chart's blob, asserting node and edge counts survive), then re-render all charts through the Mermaid engine.
 
-The **eight charts added on 2026-08-12 all comply** — `add_flowchart.py` asserts the fork rule statically at write time, so nothing new can introduce the defect.
+The **nine charts added since 2026-08-12 all comply** — `add_flowchart.py` asserts the fork rule statically at write time, so nothing new can introduce the defect.
 
 ---
 

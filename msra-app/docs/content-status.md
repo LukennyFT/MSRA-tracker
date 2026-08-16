@@ -2,6 +2,37 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
+_Last updated: **Sync write-race fixed, plus HUS and erysipelas added (2026-08-15)** — **569 conditions, 315 complete, 192 flowcharts**._
+
+## 2026-08-15 — Sync write-race fixed (index.html), and two conditions added
+
+**Engine fix.** Three reported bugs turned out to be one defect in the debounced Firestore writer: text vanishing while typing, RAG colours needing several taps, and conditions reverting on reopening. Full mechanism and the three-part fix are in `docs/architecture.md` — read that before touching sync. **`index.html` must be re-uploaded for this.**
+
+**New conditions**, both written to full spec with a flowchart in the same pass:
+
+| Condition | Specialty | Cluster | Chart |
+| --- | --- | --- | --- |
+| Haemolytic uraemic syndrome (HUS) | Renal & Urology | Tubulointerstitial & vascular | 16 nodes, NICE CKS / UK paediatric nephrology |
+| Erysipelas | Dermatology | Infections & infestations | 14 nodes, NICE CKS |
+
+- **HUS** went to the vascular renal cluster because it is a thrombotic microangiopathy of the glomerular microvasculature, keeping it beside acute kidney injury. The absolute rule carried on the card and the chart is that **antibiotics and antimotility drugs are avoided in suspected STEC**, since both increase toxin release and the risk of HUS. Also carried: normal clotting is what separates it from DIC, and the direct antiglobulin test is negative.
+- **Erysipelas** sits directly after cellulitis, since the whole teaching point is the contrast — upper dermis and superficial lymphatics with a sharply demarcated, palpable, raised border, versus deeper cellulitis with a diffuse edge. Toe-web tinea as the portal of entry and the reason for recurrence is on both the card and the chart.
+- ⚠️ **Both were added mid-project and are already complete**, so **Set 7 (Renal) must not re-count HUS**, and Dermatology stays finished at 39.
+
+Verified: balance **0/0/0**; `node --check`; the JSX block compiles under the vendored Babel; 569 conditions with **0 duplicate top-level keys across all 569 object literals**; **0 pre-existing conditions changed** (hash-verified); **all 192 flowcharts re-rendered with 0 failures, 0 blank tooltips, 0 orphan tooltips and 2,059 nodes**, exactly 30 more than before. **Live check**: both cards render 8 authored rows with their charts drawn (16 and 14 nodes) and correct source labels; header reads 569; no console errors. **Re-upload `data.js` AND `index.html`.**
+
+_Last updated: **Gas gangrene added to Infectious Diseases (2026-08-14)** — app-wide **313 of 567** conditions complete, 190 flowcharts._
+
+## 2026-08-14 — Gas gangrene added to Infectious Diseases
+
+`id_gas_gangrene` (**Gas gangrene, clostridial myonecrosis**) added to **Infectious Diseases → Sepsis & bacteraemia**, taking that cluster from 4 to 5 and the specialty to 44. Written straight to full spec — detailed base + `standard` + `brief` + `complications` — plus a **15-node flowchart** in the same pass, sourced to UK surgical emergency practice. Registers: detailed 608, standard 207, brief 101.
+
+- **Cluster choice.** Sepsis & bacteraemia was chosen over Tropical/zoonotic/other (which holds its clostridial sibling tetanus) because gas gangrene's clinical identity is fulminant toxin-mediated invasive infection with systemic toxicity, and it sits directly beside Group A Streptococcus, whose necrotising fasciitis is its closest mimic and main differential.
+- **Scoping against the existing gangrene entries.** `cvs_gangrene` (Dermatology → Wounds & ulcers) **keeps** the dry/wet/gas classification and its short account of gas gangrene, so the three-way contrast that makes that card teach well stays intact; the new entry owns clostridial myonecrosis in depth. Same umbrella/subset pattern as `derm_hsv` and `id_genital_herpes`. The overlap is deliberate, not drift.
+- **High-yield content the umbrella does not carry**: spontaneous, non-traumatic disease is characteristically *Clostridium septicum* and mandates a search for **occult colorectal carcinoma**; germination needs spores *plus* devitalised low-oxygen tissue; Gram stain shows large Gram-positive rods with a **striking paucity of neutrophils**; clindamycin is added for its antitoxin ribosomal action; hyperbaric oxygen is an adjunct that must never delay surgery.
+
+Verified: balance **0/0/0**; `node --check`; 567 conditions with **0 duplicate top-level keys across all 567 object literals**; **0 pre-existing conditions changed** (hash-verified); **all 190 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and 2,029 nodes**, exactly 15 more than before. **Live check**: the card renders all 8 authored rows with its flowchart drawn (15 nodes) and the correct source label; header reads 567 conditions. **Re-upload `data.js`.**
+
 _Last updated: **TOGGLE PROJECT — ✅ SET 6 (DERMATOLOGY) COMPLETE, 37 of 37 (2026-08-13).** Dermatology now reads 38 of 38, and app-wide **312 of 566** conditions are complete._
 
 ## 2026-08-13 — Set 6 (Dermatology) complete

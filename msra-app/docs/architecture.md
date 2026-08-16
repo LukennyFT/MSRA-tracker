@@ -108,3 +108,19 @@ Marker-pen highlighting of the text inside an expanded Tracker condition card. S
 When a real Firebase config is supplied (see `docs/deployment-and-sync.md`), `App` opens `db.collection("sync").doc(syncCode)` with an `onSnapshot` reader and a debounced writer, guarded by `applyingRemote` to avoid echo loops. Notes live in a `notes` sub-collection. Without a config, `FIRESTORE` is `null`, the Sync button shows a neutral state, and everything still works locally.
 
 > ⚠️ **The debounced writer MUST be a full-document `set(payload)` — never `set(payload, { merge: true })`.** Firestore's `merge: true` DEEP-merges nested map fields, so a key **removed** from a map (clearing a condition's RAG status so `statuses` no longer has that id, un-bookmarking a topic, etc.) is **not** deleted server-side. The `onSnapshot` listener then echoes the stale key back and the change silently reverts ~1s later (this was a real bug: clearing a RAG colour "un-cleared" itself after a moment — fixed 2026-07-26). The debounced write already contains the **complete** app state, so a full-document replace is correct and lets deletions propagate; notes are a sub-collection and are unaffected. This is verifiable against the live SDK: seed `{statuses:{a,b}}`, then `set({statuses:{a}}, {merge:true})` leaves `b` on the server, whereas `set({statuses:{a}})` removes it. The initial `get` + `onSnapshot` reconcile remote → local *before* the writer is armed (`initialUploadDone`), so full-replace does not clobber another device's concurrent edits in normal use.
+
+## Sync: the write race fixed on 2026-08-15 (read before touching sync)
+
+Three user-reported bugs — words disappearing while typing a note, a RAG colour needing several taps to stick, and conditions reverting to unclicked on reopening the app — were **one defect** in the debounced Firestore writer.
+
+The writer effect began `if (applyingRemote.current) return;`. React runs an effect's **cleanup before re-running the body**, so when a remote snapshot landed inside the 700 ms debounce window the cleanup fired `clearTimeout` and killed the pending write, and then the body returned early without rescheduling it. The local change was never sent. Local React state still showed it, so it looked saved until the next snapshot or reload delivered the older server document and overwrote it. `textNotes` rides in the same document, so the same snapshot also replaced in-progress text with the last-written server copy — the disappearing words.
+
+The fix has three parts:
+
+1. **`dirty` ref** — set when local state differs from the server, cleared only when a write succeeds. **The snapshot listener returns early while `dirty` is true**, so remote state can never overwrite unsaved local work. On write failure `dirty` deliberately stays set.
+2. **No `applyingRemote` early-return in the writer.** Echoes are now detected by **value**: `lastRemoteDocJson` holds the synced fields as last seen on the server, and the writer skips only when the payload is byte-identical. This removes the timing dependency entirely.
+3. **Flush on `visibilitychange`** — the initial load takes the server copy wholesale, so a change still inside the debounce when the app was closed would be lost. It is now written immediately when the page is hidden.
+
+⚠️ **Do not reintroduce an `applyingRemote` guard in the writer**, and do not let the snapshot listener apply state while `dirty` is set. Both re-open the same data-loss path.
+
+**Known limitation, unchanged:** initial load still takes the server document wholesale rather than merging per key by `statusChangedAt`. With the above in place the exposure is small (an edit made offline and never uploaded, then opened elsewhere), but a genuine multi-device merge remains unimplemented.
