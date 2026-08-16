@@ -6,7 +6,7 @@
 
 **Keep it current.** Whenever a batch, set or fix lands, update the status line here as well as the detailed doc.
 
-_Last verified against the data files: **2026-08-15**. Every number below was counted from `data.js` / `notebook-data.js` on that date, not carried forward from an earlier note._
+_Last verified against the data files: **2026-08-16** (after Set 7). Every number below was counted from `data.js` / `notebook-data.js` on that date, not carried forward from an earlier note._
 
 ---
 
@@ -15,7 +15,7 @@ _Last verified against the data files: **2026-08-15**. Every number below was co
 | # | Workstream | Where we are | What's next |
 | --- | --- | --- | --- |
 | 1 | **Notebook roadmap** | 271 topics, all written, **0 placeholders** | **Batch 16i** — Paediatrics: Endocrine, Emergencies, Ophthalmology, Other |
-| 2 | **Toggle Project** (3 reading registers + Complications) | **315 of 569** conditions complete; Sets 0–6 done | **Set 7 — Renal & Urology**, 27 to do |
+| 2 | **Toggle Project** (3 reading registers + Complications) | **334 of 569** conditions complete; Sets 0–7 done | **Set 8 — Renal & Urology**, 27 to do |
 | 3 | **Flowchart fixer** (unlabelled forks) | 192 charts; **56 carry the defect** | Decide scope, then fix specialty by specialty |
 
 Plus a short list of **smaller open defects** at the end — each is small, real, and currently parked.
@@ -52,21 +52,20 @@ After 16i, the paediatrics thread (16a–16i) is finished. Batches 17 and 18 are
 
 Bringing every Tracker condition to **three reading registers** — Brief, Standard, Detailed — plus a **Complications** row. Work units are **sets**, one per specialty.
 
-**Status: 315 of 569 conditions complete.** Sets 0–6 are done: Neurology (45), Endocrinology (42), Cardiovascular (64), Gastroenterology (53), Respiratory (27), Infectious Diseases (42 of 44) and Dermatology (38).
+**Status: 334 of 569 conditions complete.** Sets 0–7 are done: Neurology (45), Endocrinology (42), Cardiovascular (64), Gastroenterology (53), Respiratory (27), Infectious Diseases (42 of 44), Dermatology (39) and Haematology (19 of 20).
 
 ### Remaining sets, in order
 
 | Set | Specialty | To do | Note |
 | --- | --- | --- | --- |
-| **7** | **Renal & Urology** | **27** | **NEXT** |
-| 8 | MSK & Rheumatology | 28 | |
-| 9 | Paediatrics & Child Health | 23 | 27 total, 4 topic-style |
-| 10 | Reproductive & Sexual Health | 22 | 26 total, 4 topic-style. ⚠️ `repro_afe` stores `management` LAST. |
-| 11 | Haematology | 19 | 20 total, 1 topic-style |
+| **8** | **Renal & Urology** | **27** | 28 total; `renal_hus` (added 2026-08-15) is already complete — do not re-count it. |
+| 9 | MSK & Rheumatology | 28 | |
+| 10 | Paediatrics & Child Health | 23 | 27 total, 4 topic-style |
+| 11 | Reproductive & Sexual Health | 22 | 26 total, 4 topic-style. ⚠️ `repro_afe` stores `management` LAST. |
 | 12 | Ophthalmology | 25 | |
 | 13 | ENT | 18 | |
-| 14 | Genetics | 19 | 21 total, 2 topic-style |
-| 15 | Psychiatry & Mental Health | 15 | 18 total; `psych_nms` and `psych_serotonin_syndrome` already complete, 1 topic-style |
+| 14 | Genetics | 19 | 21 total, 2 topic-style. `genetics_nf1` is also still at the old thin standard. |
+| 15 | Psychiatry & Mental Health | 15 | 18 total, 1 topic-style; `psych_nms` and `psych_serotonin_syndrome` are already complete. |
 | 16 | Immunology & Allergy | 9 | 11 total, 2 topic-style |
 | 17 | Pharmacology + Public Health | 0 genuine | Registers only, no Complications — **undecided whether worth doing** |
 

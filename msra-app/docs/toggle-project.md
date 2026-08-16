@@ -47,17 +47,17 @@ Sets 1–3 were chosen by the user. The rest are ordered by exam weight first, t
 | 3 | Gastroenterology & Nutrition | 53 | 44 | 36 | ✅ done 2026-08-11 |
 | 4 | Respiratory | 27 | 27 | 16 | ✅ done 2026-08-11 |
 | 5 | Infectious Diseases | 37 | 36 | 35 | ✅ done 2026-08-11 |
-| **6** | **Dermatology** | **36** | **36** | **36** | **next** |
-| **7** | **Renal & Urology** | **27** | 26 | 24 | **next** |
-| 8 | MSK & Rheumatology | 28 | 28 | 27 | pending |
-| 9 | Paediatrics & Child Health | 23 | 23 | 20 | pending |
-| 10 | Reproductive & Sexual Health | 22 | 22 | 21 | pending |
-| 11 | Haematology | 19 | 19 | 19 | pending |
+| 6 | Dermatology | 38 | 38 | 37 | ✅ done 2026-08-15 |
+| 7 | Haematology | 19 (20 total, 1 topic-style) | 19 | 19 | ✅ done 2026-08-16 |
+| **8** | **Renal & Urology** | **27** (28 total, `renal_hus` already complete) | 26 | 24 | **next** |
+| 9 | MSK & Rheumatology | 28 | 28 | 27 | pending |
+| 10 | Paediatrics & Child Health | 23 (27 total, 4 topic-style) | 23 | 20 | pending |
+| 11 | Reproductive & Sexual Health | 22 (26 total, 4 topic-style) | 22 | 21 | pending |
 | 12 | Ophthalmology | 25 | 24 | 24 | pending |
 | 13 | ENT | 18 | 18 | 18 | pending |
-| 14 | Genetics | 19 | 16 | 16 | pending |
-| 15 | Psychiatry & Mental Health | 17 genuine, 2 done → 15 to do | 15 | 15 | pending |
-| 16 | Immunology & Allergy | 9 | 9 | 8 | pending |
+| 14 | Genetics | 19 (21 total, 2 topic-style) | 16 | 16 | pending |
+| 15 | Psychiatry & Mental Health | 15 (18 total, 1 topic-style, 2 already complete) | 15 | 15 | pending |
+| 16 | Immunology & Allergy | 9 (11 total, 2 topic-style) | 9 | 8 | pending |
 | 17 | Pharmacology + Public Health | 0 | 0 | — | registers only, no complications — decide later whether worth doing |
 
 Sets 0–4 ran in the order above. **On 2026-08-11 the user re-ordered what follows: Infectious Diseases next, then Dermatology, with everything else keeping its previous relative order.** That brings the two largest remaining sets forward — 37 conditions each, and both almost entirely at brief base (35/37 and 37/37), so they are the heaviest writing left in the project. Doing them now trades the quick conversions for getting the bulk out of the way while momentum is high; Renal and Rheumatology, which are mid-sized and partly written already, move back behind them. The small specialist sets stay last, as quick wins that can absorb whatever time remains.
@@ -65,6 +65,10 @@ Sets 0–4 ran in the order above. **On 2026-08-11 the user re-ordered what foll
 **⚠️ Dermatology moving to Set 6 brings a shared line forward: `derm_ichthyosis` + `derm_neuropathic_ulcer` must be split with `scratchpad/split_line.py` before the injector runs on that cluster.** See the script-safety rules below.
 
 **Counts re-verified against `data.js` on 2026-08-11**, since the next two sets are planned against them. Infectious Diseases and Renal were correct as listed. **Dermatology was wrong — it is 36 conditions, not 37** (all 36 genuine, all needing complications, all at brief base): the original figure predates conditions moving in and out of that specialty, with `derm_shingles` going to Infectious and `derm_leg_ulcer` to Cardiovascular while `cvs_gangrene` came the other way. Treat the other pending rows as approximate for the same reason and re-count at the start of each set, as step 1 already requires.
+
+**2026-08-16 — the user moved HAEMATOLOGY to Set 7**, ahead of Renal & Urology. Everything else keeps its previous relative order, so Renal becomes 8, MSK 9, Paediatrics 10 and Reproductive 11; Ophthalmology onwards are unchanged. Nothing was renumbered above Set 7.
+
+**Haematology pre-flight, verified against `data.js` on 2026-08-16 — it is a clean set.** 20 conditions, of which `haem_anticoag` is topic-style (excluded from Complications, still at 32 chars/field), leaving **19 genuine conditions to write, none started, all at brief base (66–100 chars/field)**. **No shared lines and no `management`-after-`cluster` entries**, so no `split_line.py` step is needed before the injector — unlike Dermatology. Three existing flowcharts must be preserved byte-identically: `haem_ida`, `haem_sickle` and `haem_anticoag`. Six clusters: Anaemias (5), Haemolytic & bone marrow failure (3), Leukaemias & myeloproliferative disorders (5), Lymphoma & myeloma (3), Bleeding & platelet disorders (2), Thrombosis & anticoagulation (2).
 
 **Counts re-verified against `data.js` on 2026-08-12**, after eight conditions were added by request. The live totals are now: Renal 27, MSK 28, **Dermatology 38 (1 done)**, ENT 18, Ophthalmology 25, **Psychiatry 18 (2 done, 1 topic-style)**, Haematology 20, Immunology 11, Genetics 21, Reproductive 26, Paediatrics 27 — where the last five include the topic-style entries excluded from Complications (1, 2, 2, 4 and 4 respectively), which is why they read higher than the "genuine conditions" column. **App-wide: 275 of 566 conditions complete.**
 
@@ -121,6 +125,15 @@ The clearest symptom was that **HFpEF's own authored Standard had reached 266 ch
 `patch_standard.py` was written for this job: it replaces individual fields inside a `standard` object, leaves the base text, `brief`, `management` and everything else untouched, and **refuses any replacement that is not shorter than what it replaces** — which repeatedly caught fields pasted back unchanged.
 
 ## Progress log
+
+- **2026-08-16 — ✅ SET 7 (HAEMATOLOGY) COMPLETE, 19 of 19, in one session.** All six clusters in four passes: **Anaemias** (5), **Haemolytic & bone marrow failure** (3), **Leukaemias & myeloproliferative disorders** (5), then **Lymphoma & myeloma + Bleeding & platelet + Thrombosis** (6).
+  - **All 19 needed their detailed text written from scratch** — every one sat at brief base (66 to 115 chars/field), none was previously started, and none had a complications row.
+  - Registers: brief **96**, standard **213** (201–224, 0 outside band), detailed **619** (574–639, 0 outside). App-wide, **334 of 569 conditions are now complete**.
+  - **The pre-flight promise held: this was a clean set.** No shared lines and no `management`-after-`cluster` entries, so no `split_line.py` step was needed. The three existing flowcharts (`haem_ida`, `haem_sickle`, `haem_anticoag`) were preserved and still parse and render.
+  - **The detailed ceiling fired 8 times of 19**, on the expected dense multi-mechanism topics: pernicious anaemia, anaemia of chronic disease, sickle cell, ALL, polycythaemia vera, myeloma, haemophilia and antiphospholipid syndrome. All were tightened by hand through `merge_trims.py`; `prune_trims.py` dropped 2 no-op trims across the set.
+  - **Standard again sat high** at a mean of 213 against the ~200 budget, though inside the band throughout. The pattern is now consistent across four sets: summarising dense material pushes Standard up, so it needs deliberate restraint rather than trust.
+  - Also this session, at the user's request, **`haem_anticoag`'s field headings were changed** from the generic Presentation/Investigations/Treatment to **📋 Indication & risk balance / 🔬 Baseline checks & monitoring / 💊 Drug choice & reversal**, using the existing `fieldLabels` convention. It is a therapeutics topic, not a disease, so the disease headings never fitted. A new `scratchpad/set_field_labels.py` makes the change and asserts that the three field TEXTS are byte-identical, so only labels can move.
+  - Verified: balance 0/0/0, `node --check`, 569 conditions with the id set unchanged, **0 duplicate top-level keys across all 569 object literals**, **all 192 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tips, 0 orphan tips and 2,059 nodes**, and **0 conditions changed outside the 19**. The 7 known out-of-band conditions are unchanged — this set added none. Live check: Multiple myeloma renders 8 authored rows with no fallback markers, and the Anticoagulation card now shows its three new headings.
 
 - **2026-08-13 — ✅ SET 6 (DERMATOLOGY) COMPLETE, 37 of 37.** Seven passes by cluster: **Eczema & papulosquamous** (5), **Acne/rosacea + Urticaria & reactive erythema** (4), **Dermatological emergencies + Autoimmune blistering** (5), **Infections & infestations** (6), **Premalignant, benign & skin cancers** (5), **Pigment, hair & structural + Other** (6) and **Wounds & ulcers** (6). Dermatology now reads **38 of 38 complete**, `derm_nec_fasc` having been written on 2026-08-12.
   - **All 37 needed their detailed text written from scratch** — every one sat at brief register, 71 to 129 chars/field, and not one had a `complications` row. This is the second set (after Respiratory) where nothing kept its base.

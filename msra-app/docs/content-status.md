@@ -2,6 +2,20 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
+_Last updated: **TOGGLE PROJECT — ✅ SET 7 (HAEMATOLOGY) COMPLETE, 19 of 19 (2026-08-16)**, plus new field headings on the anticoagulation topic. App-wide **334 of 569** complete._
+
+## 2026-08-16 — Set 7 (Haematology) complete, and the anticoagulation headings fixed
+
+All six clusters in four passes: **Anaemias** (5), **Haemolytic & bone marrow failure** (3), **Leukaemias & myeloproliferative disorders** (5), then **Lymphoma & myeloma + Bleeding & platelet + Thrombosis** (6).
+
+**All 19 needed their detailed text written from scratch** — every one sat at brief base, none previously started, none with a complications row. Registers: brief **96**, standard **213** (201–224), detailed **619** (574–639), **0 outside any band**. The detailed ceiling fired on 8 of 19, all dense multi-mechanism topics, and every one was tightened by hand through `merge_trims.py`.
+
+**The pre-flight promise held.** No shared lines and no `management`-after-`cluster` entries, so no split step was needed, and the three existing flowcharts (`haem_ida`, `haem_sickle`, `haem_anticoag`) were preserved intact.
+
+**Anticoagulation headings changed at the user's request.** `haem_anticoag` is a therapeutics topic, not a disease, so the generic Presentation / Investigations / Treatment headings never fitted. It now uses the existing `fieldLabels` convention: **📋 Indication & risk balance / 🔬 Baseline checks & monitoring / 💊 Drug choice & reversal**. A new `scratchpad/set_field_labels.py` performs the change and asserts the three field TEXTS are byte-identical, so only the labels can move.
+
+Verified: balance **0/0/0**; `node --check`; 569 conditions with the id set unchanged; **0 duplicate top-level keys across all 569 object literals**; **all 192 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and 2,059 nodes**; **0 conditions changed outside the 19**; the 7 known out-of-band conditions unchanged. **Live check**: Multiple myeloma renders 8 authored rows with no fallback markers; the Anticoagulation card shows its three new headings and no trace of the old ones; header reads 569; no console errors. **Re-upload `data.js`.**
+
 _Last updated: **Sync write-race fixed, plus HUS and erysipelas added (2026-08-15)** — **569 conditions, 315 complete, 192 flowcharts**._
 
 ## 2026-08-15 — Sync write-race fixed (index.html), and two conditions added
