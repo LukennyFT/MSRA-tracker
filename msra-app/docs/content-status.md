@@ -2,7 +2,41 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
-_Last updated: **TOGGLE PROJECT — ✅ SET 7 (HAEMATOLOGY) COMPLETE, 19 of 19 (2026-08-16)**, plus new field headings on the anticoagulation topic. App-wide **334 of 569** complete._
+_Last updated: **TOGGLE PROJECT — ✅ SET 9 (MSK & RHEUMATOLOGY) COMPLETE, 28 of 28 (2026-08-17)**. App-wide **389 of 569** complete._
+
+## 2026-08-17 — Set 9 (MSK & Rheumatology) complete
+
+All eight clusters in seven passes: **Degenerative + Inflammatory arthritis** (5 — osteoarthritis, rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, reactive arthritis), **Crystal & infective arthritis** (4 — gout, septic arthritis, gonococcal arthritis, osteomyelitis), **Connective tissue disease part 1** (4 — SLE, Sjogren syndrome, polymyositis, dermatomyositis), **part 2** (3 — Behcet syndrome, giant cell arteritis, polymyalgia rheumatica), **Metabolic bone, tumours & fractures** (4 — osteoporosis, bone tumours, hip fracture, spinal fractures), **Spine & back + Soft-tissue** (5 — mechanical back pain, disc prolapse, bursitis, De Quervain tenosynovitis, lateral epicondylitis) and **Pain & muscle disorders** (3 — fibromyalgia, CRPS, rhabdomyolysis).
+
+**All 28 needed their detailed text written from scratch**, every one at brief base with no `complications` row — the third set where nothing kept its base.
+
+Registers for the 28: brief **92** (86–98), standard **200** (190–211), detailed **624** (586–639), **0 outside any band**.
+
+**Standard landed on the 200 budget for the second set running**, which confirms the Set 8 method rather than a one-off: measure `standard` alongside the base in the same pass and trim it pre-emptively above ~205. **The detailed ceiling, by contrast, fired on 27 of 28** — the worst rate of the project — and the pattern is now unambiguous: **any condition written as a typology overshoots**. Every entry in passes E, F and G breached on first draft, with bone tumours (729), rhabdomyolysis (722) and spinal fractures (721) the worst.
+
+**The pre-flight held for a third consecutive set.** No shared lines, no odd key orders, no split step. **All six MSK flowcharts were diffed byte-for-byte against a pre-set snapshot**, mid-set as well as at the end. ⚠️ **The id-prefix trap was live and the `cluster:` listing caught it**: `neuro_gca` sits in MSK's Connective tissue cluster under its neurology id, so an `id: "rheum_` scan reports 27 conditions when there are 28.
+
+**Scope note:** there is no separate pseudogout entry in `data.js`, so `rheum_gout` carries the calcium pyrophosphate contrast as the umbrella — needle-shaped negatively birefringent urate against rhomboid positively birefringent pyrophosphate.
+
+Verified: balance **0/0/0**; `node --check`; 569 conditions with the id set unchanged; **0 duplicate keys across all 1,797 object literals**; **all 192 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and an unchanged 2,059 nodes**; **exactly 28 conditions changed and 0 outside them** (hash-verified); 0 field defects. **Live check**: header reads 569 conditions across 19 specialties, MSK & Rheumatology 28; Rheumatoid arthritis renders **8 authored rows at Detailed (6,624 chars) with its flowchart drawn in the card (7 nodes)** and **4 rows at Brief (1,764 chars)**, no fallback markers. **Re-upload `data.js`.**
+
+**Next set: 10 — Paediatrics & Child Health, 27 conditions, none started, none with complications.** No shared lines, no odd key orders. **Nine flowcharts to preserve** — the largest chart set of any specialty so far, so snapshot them before starting: `paeds_neonatal_sepsis`, `paeds_cdh`, `paeds_fever`, `paeds_bronchiolitis`, `paeds_croup`, `paeds_pyloric_stenosis`, `paeds_intussusception`, `paeds_uti`, `paeds_kawasaki`. ⚠️ Settle which entries are topic-style before writing (`paeds_milestones`, `paeds_immunisation` and `paeds_nai` are the clear ones), since topic-style entries are excluded from Complications.
+
+## 2026-08-17 — Set 8 (Renal & Urology) complete
+
+All eight clusters in five passes: **Glomerular disease** (5 — nephrotic syndrome, IgA nephropathy, membranous nephropathy, GPA, EGPA), **Acute & chronic kidney disease + Tubulointerstitial & vascular** (6 — AKI, CKD, interstitial nephritis, renal tubular acidosis, analgesic nephropathy, renal artery stenosis), **Cystic + Infection, stones & haematuria** (5 — ADPKD, ARPKD, UTI, stones, haematuria), **Urological cancers** (5 — kidney, upper urinary tract, bladder, prostate, testicular) and **Prostate & lower urinary tract + Scrotal & testicular** (6 — BPH, prostatitis, incontinence, torsion, epididymo-orchitis, hydrocele). Renal & Urology now reads **28 of 28**, `renal_hus` having been written on 2026-08-15.
+
+**26 of the 27 needed their detailed text written from scratch.** Only `renal_rta` kept its base (612 c/f, already in band) and took just the shorter registers, its existing four-line complications carried through verbatim by `resolve_existing.py`. **`renal_gpa` (249 c/f) and `renal_egpa` (241) were both labelled `standard` and were caught by the 330 floor** — the sixth and seventh time a `depth` label has proved not to be evidence.
+
+Registers for the 27: brief **94** (86–100), standard **199** (188–218), detailed **626** (576–640), **0 outside any band**.
+
+**Standard finally landed on budget.** At 199 against the ~200 target, this is the first set not to overshoot. What worked was measuring `standard` alongside the base in every pass and trimming it pre-emptively, rather than waiting for the detailed ceiling to fire. **The detailed ceiling, by contrast, fired on 18 of 27** — the worst rate of the project — with the multi-system topics overshooting hardest (stones 705, RAS 698, EGPA 689, analgesic nephropathy 689). All were tightened by hand through `merge_trims.py`, which **caught a "trim" that had accidentally grown** (`renal_rta.standard.aetiology`, 237 → 239); `prune_trims.py` dropped 7 no-ops.
+
+**The pre-flight promise held again.** No shared lines and no `management`-after-`cluster` entries, so no split step was needed. **All eight renal flowcharts were diffed byte-for-byte against a snapshot taken before the set began** — the direct comparison the Set 5 note asked to restore — and passed at every stage.
+
+Verified: balance **0/0/0**; `node --check`; 569 conditions with the id set unchanged; **0 duplicate keys across all 1,741 object literals**; **all 192 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and an unchanged 2,059 nodes**; **exactly 27 conditions changed and 0 outside them** (hash-verified); 0 field defects; the 7 known out-of-band conditions unchanged. **Live check**: header reads 569 conditions across 19 specialties, Renal & Urology 28; Renal & ureteric stones renders **8 authored rows at Detailed (6,188 chars) with its flowchart drawn in the card (8 nodes)** and **4 rows at Brief (1,409 chars)**, no fallback markers. **Re-upload `data.js`.**
+
+**Next set: 9 — MSK & Rheumatology, 28 conditions, none started, none with complications.** No shared lines, no odd key orders. Six flowcharts to preserve: `rheum_oa`, `rheum_ra`, `rheum_gout`, `rheum_septic`, `neuro_gca`, `rheum_osteoporosis`. ⚠️ **`neuro_gca` sits in MSK's Connective tissue disease & vasculitis cluster carrying its neurology id** — an `id: "rheum_` scan reports 27 conditions when there are 28.
 
 ## 2026-08-16 — Set 7 (Haematology) complete, and the anticoagulation headings fixed
 

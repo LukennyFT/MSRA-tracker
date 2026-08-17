@@ -6,7 +6,7 @@
 
 **Keep it current.** Whenever a batch, set or fix lands, update the status line here as well as the detailed doc.
 
-_Last verified against the data files: **2026-08-16** (after Set 7). Every number below was counted from `data.js` / `notebook-data.js` on that date, not carried forward from an earlier note._
+_Last verified against the data files: **2026-08-17** (after Set 9). Every number below was counted from `data.js` / `notebook-data.js` on that date, not carried forward from an earlier note._
 
 ---
 
@@ -15,7 +15,7 @@ _Last verified against the data files: **2026-08-16** (after Set 7). Every numbe
 | # | Workstream | Where we are | What's next |
 | --- | --- | --- | --- |
 | 1 | **Notebook roadmap** | 271 topics, all written, **0 placeholders** | **Batch 16i** — Paediatrics: Endocrine, Emergencies, Ophthalmology, Other |
-| 2 | **Toggle Project** (3 reading registers + Complications) | **334 of 569** conditions complete; Sets 0–7 done | **Set 8 — Renal & Urology**, 27 to do |
+| 2 | **Toggle Project** (3 reading registers + Complications) | **389 of 569** conditions complete; Sets 0–9 done | **Set 10 — Paediatrics & Child Health**, 27 to do |
 | 3 | **Flowchart fixer** (unlabelled forks) | 192 charts; **56 carry the defect** | Decide scope, then fix specialty by specialty |
 
 Plus a short list of **smaller open defects** at the end — each is small, real, and currently parked.
@@ -52,15 +52,13 @@ After 16i, the paediatrics thread (16a–16i) is finished. Batches 17 and 18 are
 
 Bringing every Tracker condition to **three reading registers** — Brief, Standard, Detailed — plus a **Complications** row. Work units are **sets**, one per specialty.
 
-**Status: 334 of 569 conditions complete.** Sets 0–7 are done: Neurology (45), Endocrinology (42), Cardiovascular (64), Gastroenterology (53), Respiratory (27), Infectious Diseases (42 of 44), Dermatology (39) and Haematology (19 of 20).
+**Status: 389 of 569 conditions complete.** Sets 0–9 are done: Neurology (45), Endocrinology (42), Cardiovascular (64), Gastroenterology (53), Respiratory (27), Infectious Diseases (42 of 44), Dermatology (39), Haematology (19 of 20), Renal & Urology (28) and MSK & Rheumatology (28).
 
 ### Remaining sets, in order
 
 | Set | Specialty | To do | Note |
 | --- | --- | --- | --- |
-| **8** | **Renal & Urology** | **27** | 28 total; `renal_hus` (added 2026-08-15) is already complete — do not re-count it. |
-| 9 | MSK & Rheumatology | 28 | |
-| 10 | Paediatrics & Child Health | 23 | 27 total, 4 topic-style |
+| **10** | **Paediatrics & Child Health** | **27** | Pre-flight done 2026-08-17: none started, no shared lines, **9 flowcharts to preserve** (the largest chart set yet — snapshot them first). ⚠️ Settle which 4 entries are topic-style before writing; `paeds_milestones`, `paeds_immunisation` and `paeds_nai` are the clear ones. |
 | 11 | Reproductive & Sexual Health | 22 | 26 total, 4 topic-style. ⚠️ `repro_afe` stores `management` LAST. |
 | 12 | Ophthalmology | 25 | |
 | 13 | ENT | 18 | |
@@ -73,7 +71,8 @@ Bringing every Tracker condition to **three reading registers** — Brief, Stand
 
 ### The rules that matter (full detail in `docs/toggle-project.md`)
 
-- **Drafting budgets, tested and working: ~500–520 chars/field for Detailed, ~200 for Standard, ~110 for Brief.** Budget Standard at **200, never "just under 230"** — it has drifted upward in almost every set and gets caught by the enforced band.
+- **Drafting budgets, tested and working: ~500–520 chars/field for Detailed, ~200 for Standard, ~110 for Brief.** Budget Standard at **200, never "just under 230"** — it drifted upward in almost every set until Set 8, which landed on 199 by **measuring `standard` in the same pass as the base and trimming it pre-emptively**, rather than only when the detailed ceiling fires. Set 9 repeated that and landed on exactly 200, so the method holds.
+- **⚠️ Budget Detailed at ~480–500, not 520, for any condition written as a TYPOLOGY.** Sets 8 and 9 breached the 640 ceiling on 18 of 27 and 27 of 28 respectively, and the overshoots were consistently the entries enumerating subtypes — stone types, renal tubular acidosis types, psoriatic arthritis patterns, fracture patterns, benign versus malignant bone tumours. The same rule that already applied to multi-mechanism topics applies to multi-subtype ones.
 - Enforced bands: Detailed **330–640**, Standard **150–230**, Brief **85–135**. A `depth: "detailed"` label is **not** evidence the register is right — the floor has caught mislabelled entries five times.
 - **Never auto-trim trailing sentences.** A mechanical trim was tried and rejected: 124 of 264 candidates removed absolute safety rules. Tighten by hand through `merge_trims.py`, which refuses any replacement that is not strictly shorter.
 - **Re-count each specialty from `data.js` at the start of every set** — conditions move between specialties and even this file's numbers go stale.
@@ -122,7 +121,7 @@ The **nine charts added since 2026-08-12 all comply** — `add_flowchart.py` ass
 Each is real, verified on 2026-08-12, and parked rather than forgotten.
 
 1. **Seven conditions labelled `depth: "detailed"` sit outside the 330–640 band** (six of them are otherwise-complete; `eye_rp` is not). `eye_rp` (810) and `neuro_dcm` (718) are above the ceiling; `cvs_hypotension` (320), `endo_de_quervain_thyroiditis` (315), `endo_kallmann` (285), `neuro_neurogenic_shock` (265) and `neuro_autonomic_dysreflexia` (259) are below the floor. All predate the band being enforced, and four of the short ones were consciously kept at Set 0/1 time — so this needs a decision rather than a blind rewrite. **`eye_rp` at 810 was newly spotted on 2026-08-12 and had not been recorded before.**
-2. **Two Pharmacology entries carry `depth: "detailed"` but only ever had three fields** — `pharm_dopamine_agonists` and `pharm_salicylate_od` have `presentation`, `investigations` and `treatment` but no `keyFacts`, `epidemiology`, `aetiology` or `pathophysiology`. They are topic-style entries, so this belongs with the Set 17 decision.
+2. **Two Pharmacology entries carry `depth: "detailed"` but only ever had three fields** — `pharm_dopamine_agonists` and `pharm_salicylate_od` have `presentation`, `investigations` and `treatment` but no `keyFacts`, `epidemiology`, `aetiology` or `pathophysiology`. They are topic-style entries, so this belongs with the Set 17 decision. ⚠️ **Note when scanning:** measured over all seven base fields, `pharm_salicylate_od` comes out at 199 c/f and so a whole-file band scan reports **8** out-of-band `detailed` entries, not the 7 in item 1. That is these two categories overlapping, not new drift — `pharm_dopamine_agonists` measures 458 and stays out of the count.
 3. **Two lines of `data.js` still hold two condition objects each** — `neuro_trigeminal` + `neuro_iih` and `neuro_status_epilepticus` + `neuro_parkinsons`, both already-complete Set 0 conditions written before the guard existed. They matter only if those entries are revisited. (`derm_ichthyosis` + `derm_neuropathic_ulcer` was split on 2026-08-13 before Set 6 ran.)
 4. **`repro_afe` still stores `management` after `cluster`** — the last entry in the file with that key order. Locate the value by brace-matching from the key, never by position.
 5. **`genetics_nf1` is still at the old thin standard** (no complications, no flowchart) while sitting between two full-depth entries in its cluster. Genetics is Set 14.
