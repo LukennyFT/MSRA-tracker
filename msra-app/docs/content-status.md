@@ -2,7 +2,92 @@
 
 The most important file to read at the start of a content session: it records what is written versus scaffolding. **Keep it current** when you add content.
 
-_Last updated: **TOGGLE PROJECT — ✅ SET 9 (MSK & RHEUMATOLOGY) COMPLETE, 28 of 28 (2026-08-17)**. App-wide **389 of 569** complete._
+_Last updated: **SIX MORE HAEMATOLOGY CONDITIONS AND A NEW EMERGENCIES CLUSTER (2026-08-20)** — DIC, myelofibrosis, tumour lysis syndrome, plus von Willebrand disease, TTP and essential thrombocythaemia, all written complete with a flowchart each. **579 conditions, 410 complete, 202 flowcharts**._
+
+## 2026-08-20 — DIC, myelofibrosis and tumour lysis syndrome, plus three companions
+
+The user asked for three conditions and, for each, the most appropriate cluster. All three were **absent from the entire app**, as were four candidate companions. They chose a **new cluster for two of the three** and the existing cluster for the other, then took **all three companions**.
+
+| Condition | Cluster | Why |
+| --- | --- | --- |
+| **Disseminated intravascular coagulation** | **Haematological emergencies** (NEW) | A final common pathway, and simultaneously thrombotic and haemorrhagic, so neither *Bleeding & platelet disorders* nor *Thrombosis & anticoagulation* described it honestly |
+| **Tumour lysis syndrome** | **Haematological emergencies** (NEW) | Sits at the intersection of the leukaemia and lymphoma clusters, and is a metabolic emergency rather than a malignancy |
+| **Myelofibrosis** | Leukaemias & myeloproliferative disorders | The one condition of the three with a clean single home — the label already names MPNs, and it belongs beside polycythaemia vera |
+| **Thrombotic thrombocytopenic purpura** | Haematological emergencies | Companion; pairs with DIC as the other consumptive/microangiopathic emergency |
+| **von Willebrand disease** | Bleeding & platelet disorders | Companion; the commonest inherited bleeding disorder, and a conspicuous gap beside haemophilia |
+| **Essential thrombocythaemia** | Leukaemias & myeloproliferative disorders | Companion; completes the MPN triad with polycythaemia vera and myelofibrosis |
+
+**Haematology goes 23 → 29, in 8 clusters.** The MPN block is ordered **Polycythaemia vera → Essential thrombocythaemia → Myelofibrosis**, the standard teaching order, with myelofibrosis last as the spent phase the other two transform into. ⚠️ The approved option preview showed myelofibrosis *directly* after polycythaemia vera, before essential thrombocythaemia was added in the same decision — flag this if it should be swapped.
+
+**All six written complete** (detailed + standard + brief + complications), since Haematology is a finished set. Registers: brief **108**, standard **203**, detailed **600**, 0 outside band. The pre-emptive-trim method was used on all three passes — first drafts came back at 619–658 detailed and 205–210 standard, and `haem_tls` breached the 640 ceiling outright at **658**, exactly the "dense multi-mechanism" pattern the register notes predict.
+
+**Six flowcharts added, all sourced to BSH** — DIC (ISTH score, then treat-the-cause, with product support gated on *bleeding* not numbers), TTP (clotting screen forking TTP from DIC, then exchange + caplacizumab + immunosuppression, with the never-transfuse-platelets rule), TLS (risk stratification → allopurinol vs rasburicase, with the check-G6PD-first gate), myelofibrosis (DIPSS → transplant vs ruxolitinib), essential thrombocythaemia (thrombotic risk → aspirin ± cytoreduction, with the acquired-vWS branch) and von Willebrand disease (type → desmopressin vs concentrate, with the type 2B contraindication). App-wide **196 → 202**, recounted through the Mermaid engine.
+
+**Guidelines verified on the web rather than from memory**, since two had moved: TTP is **BSH 2023**, where standard of care is now plasma exchange **plus caplacizumab plus immunosuppression**, not exchange alone; myelofibrosis is the **BSH 2024** guideline (DIPSS, ruxolitinib, transplant).
+
+**Known gaps deliberately left**: **neutropenic sepsis** is still absent app-wide (arguably belongs in Infectious Diseases or the new emergencies cluster), as are **hyperviscosity syndrome** and **superior vena cava obstruction**, both currently only mentioned inside other cards.
+
+Verified: balance **0/0/0**; `node --check`; 579 conditions; **0 duplicate keys across 1,869 object literals**; **all 202 flowcharts rendered with 0 failures and no tipless nodes**; `add_condition.py` hash-proved every pre-existing condition unchanged on each of the three passes. **Live check**: header reads 579 conditions, Haematology 29 across 8 clusters, *Haematological emergencies 0/3*, *Bleeding & platelet disorders 0/3*, and the tumour lysis card draws its 13-node chart. **Re-upload `data.js`.**
+
+## 2026-08-18 — G6PD deficiency added, and the Haemolytic cluster split in two
+
+The user asked where G6PD deficiency should live (Haematology or Genetics). It was **absent from the whole app** — the only mentions were inside other conditions' treatment fields (`derm_dermatitis_herpetiformis`, `id_malaria`). They were offered three options and **chose the new-cluster option over the recommendation**, which is now the fifth time: see the pattern note in the content-editing conventions.
+
+**The cluster split.** `Haemolytic & bone marrow failure` bundled two unrelated things, and a third haemolytic condition would have left aplastic anaemia visibly misfiled. It is now:
+
+| Cluster | Members |
+| --- | --- |
+| **Haemolytic anaemias** (new label) | Sickle cell disease · Hereditary spherocytosis · **G6PD deficiency** · **Autoimmune haemolytic anaemia (AIHA)** |
+| **Bone marrow failure** (renamed remainder) | Aplastic anaemia · **Myelodysplastic syndrome (MDS)** |
+
+**Two companion conditions were added at the same time, at the user's request**, because both were genuinely missing app-wide and each cluster would otherwise have been thin: **AIHA** (the commonest acquired haemolytic anaemia, and the warm-vs-cold / DAT-pattern teaching point the cluster could not otherwise carry) and **MDS** (which stops *Bone marrow failure* starting as a one-member cluster, and is the natural partner to aplastic anaemia). Haematology goes **20 → 23**.
+
+**All three were written complete** — detailed + standard + brief + complications — because Haematology is a finished Toggle Project set (Set 7) and a stub would have broken it. Registers: brief **111**, standard **201**, detailed **579**, 0 outside any band. Both registers were budgeted deliberately (~520 detailed, ~200 standard) and the first draft came back at 624/607 detailed and 214/221 standard, so **the Set 8 pre-emptive-trim method was applied and worked** — nothing needed a second round.
+
+**Three flowcharts were added**, one per condition, all sourced to **BSH**: G6PD (the acute haemolytic episode, turning on the DAT and ending on the falsely-normal-assay trap), AIHA (the DAT pattern forking warm from cold, with the "steroids do not work in cold disease" branch), and MDS (blast percentage, then IPSS-R risk group, then transplant fitness). App-wide flowcharts **193 → 196**, recounted from `data.js`.
+
+**A new script is in the repo: `scratchpad/set_cluster.py`.** `rename_cluster.py` renames a whole label; this is its counterpart for a SPLIT — it re-homes one condition, asserting the id is alone on its line and carries exactly one `cluster` key, then hash-verifying that every other condition is unchanged and that the target differs only by the label bytes. **`scratchpad/flowcheck.html` is also new**: it re-renders every flowchart in the app through the vendored Mermaid engine and reports missing nodes and tipless nodes, which is what turns "the bytes spliced" into "the chart draws".
+
+Verified: balance **0/0/0**; 573 conditions; **0 duplicate keys across 1,839 object literals**; **all 196 flowcharts rendered with 0 failures and no tipless nodes**; `add_condition.py` hash-proved every pre-existing condition unchanged. **Live check**: Haematology reads 23, the Tracker shows *Haemolytic anaemias 0/4* and *Bone marrow failure 0/2*, and the G6PD card carries its 12-node chart. **Re-upload `data.js`.**
+
+## 2026-08-17 — Set 10 (Immunology & Allergy) complete, and topic-style entries brought into the project
+
+Three passes: **Allergy & atopy** (4 — allergy and atopy, allergic rhinitis, food allergy, drug allergy), **Anaphylaxis & angioedema + Immunodeficiency** (5 — anaphylaxis, angioedema, primary immunodeficiency, asplenia, allograft reactions), and **the two topic-style entries** (2). Immunology & Allergy now reads **11 of 11**.
+
+**All 11 needed their detailed text written from scratch.** `immuno_allograft` carried `depth: "standard"` at 198 chars/field, far below the 330 floor — the eighth `depth` label to prove not to be evidence.
+
+Registers for the 11: brief **97** (88–103), standard **209** (198–221), detailed **629** (616–639), **0 outside any band**.
+
+**⚠️ THE TWO TOPIC-STYLE ENTRIES NOW HAVE REGISTERS AND NEW HEADINGS, both at the user's request.** The generic 🩺 Presentation / 🔬 Investigations / 💊 Treatment headings never fitted a classification or a diagnostic process. The user picked:
+
+| Entry | Headings |
+| --- | --- |
+| `immuno_hypersensitivity` | 💡 Key facts · **📋 The four types** · **🩺 Typical examples** · **💊 Testing & management** |
+| `immuno_allergy_testing` | 💡 Key facts · **📋 When to test** · **🔬 The tests** · **💉 Immunotherapy** |
+
+Both were written to detailed + standard + brief across those **four fields only, with no complications**, so the topic rule is intact. Because the renderer only draws a row when its field has a value, the epidemiology, aetiology, pathophysiology and complications rows simply do not appear.
+
+**A new script does this and is in the repo: `scratchpad/apply_topic_registers.py`.** `apply_registers.py` cannot be used on a topic entry — it demands all 7 base fields and a non-empty `complications`. The new script takes 4 fields, sets `fieldLabels`, **refuses outright any entry that already has complications**, enforces the same bands measured over the 4 fields, splices `management` back as the raw substring, and hash-verifies that no other condition moved.
+
+**The detailed ceiling fired on 9 of 11**, and the Set 9 typology rule held exactly: the worst overshoots were `immuno_allograft` (738), `immuno_primary_immunodeficiency` (726) and the two topic entries (709 and 768), all of which are lists of types. Standard finished at 209, a little above the ~200 budget, and the two topic entries sit at 220-221 because four fields carrying a whole classification compress less well than seven.
+
+Verified: balance **0/0/0**; `node --check`; 570 conditions with the id set unchanged; **0 duplicate keys across all 1,824 object literals**; **all 193 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and an unchanged 2,069 nodes**, with `haem_anaphylaxis` byte-identical against a pre-set snapshot; **exactly 11 conditions changed and 0 outside them** (hash-verified); 0 field defects; complications present on exactly the 9 genuine conditions and neither topic entry. **Live check**: header reads 570 across 19 specialties with Immunology & Allergy at 11; **Hypersensitivity reactions renders its four new headings and nothing else**, Allergy testing likewise, and Anaphylaxis renders 8 authored rows at Detailed (6,206 chars) with its flowchart drawn in the card (9 nodes). **Re-upload `data.js`.**
+
+**Next set: 11 — Paediatrics & Child Health, 27 conditions**, none started. No shared lines, no odd key orders, **9 flowcharts to preserve** — the largest chart set of any specialty, so snapshot them first. ⚠️ Settle which entries are topic-style before writing (`paeds_milestones`, `paeds_immunisation` and `paeds_nai` are the clear ones); those now get registers too via `apply_topic_registers.py`, and their heading sets should be chosen with the user as they were here.
+
+## 2026-08-17 — Hypokalaemia added (Endocrinology & Metabolic → Electrolyte disturbance)
+
+**New condition `endo_hypokalaemia`, written straight to the full target state** (detailed base + `standard` + `brief` + `complications`), so it needs no further work in any set. Inserted **immediately after `endo_hyperkalaemia`** so the two potassium disorders sit side by side — the cluster now reads hyperkalaemia, hypokalaemia, hyponatraemia, hypocalcaemia, hypercalcaemia. Endocrinology & Metabolic goes **42 → 43** conditions.
+
+**Duplicate check first, as the conventions require**: a scan of all 19 specialties for potassium-related names and ids returned only `endo_hyperkalaemia`, and the cluster label "Electrolyte disturbance" exists exactly once. This was a genuine gap, not a duplicate.
+
+Registers: detailed **607**, standard **201**, brief **88** chars/field — all in band. `complications` is newline-separated with 8 items, matching the rest of the cluster, and the text uses the cluster's house style of CAPS for the absolute rules.
+
+**The two safety rules are carried explicitly on the card**: **magnesium must be corrected first**, because hypomagnesaemia unblocks renal ROMK channels and makes the hypokalaemia refractory to any amount of replacement; and **intravenous potassium is never given as a bolus**, with a maximum of 10 mmol/hour peripherally at no more than 40 mmol/L. Also carried: hypokalaemia with hypertension points to Conn syndrome, and the ECG shows flat T waves, ST depression and prominent U waves rather than the peaked T waves of hyperkalaemia.
+
+**A flowchart was added in the same job** (the standing rule), taking the app from **192 to 193 charts**: 10 nodes, 11 edges, source "NICE CKS / UK Renal Association". It complies with the fork rule — the magnesium and severity decisions each have every outgoing edge labelled — so it does not add to the flowchart-fixer backlog, which stays at 56 affected charts. Two authoring notes: `add_flowchart.py` **rejects a `;` anywhere in the def**, and `&` is best avoided in node labels since Mermaid treats it as a multi-node separator.
+
+Verified: balance **0/0/0**; `node --check`; **569 → 570 conditions with `endo_hypokalaemia` the only addition and 0 pre-existing conditions changed** (hash-verified); **0 duplicate keys across all 1,802 object literals**; **all 193 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and 2,069 nodes** (exactly 10 more than before). **Live check**: header reads 570 conditions across 19 specialties with Endocrinology & Metabolic at 43; the Hypokalaemia card renders **8 authored rows at Detailed (6,148 chars) with its flowchart drawn in the card (10 nodes)** and **all four fork labels rendering**, no fallback markers. **Re-upload `data.js`.**
 
 ## 2026-08-17 — Set 9 (MSK & Rheumatology) complete
 
@@ -20,7 +105,9 @@ Registers for the 28: brief **92** (86–98), standard **200** (190–211), deta
 
 Verified: balance **0/0/0**; `node --check`; 569 conditions with the id set unchanged; **0 duplicate keys across all 1,797 object literals**; **all 192 flowcharts re-rendered through the Mermaid engine with 0 failures, 0 blank tooltips, 0 orphan tooltips and an unchanged 2,059 nodes**; **exactly 28 conditions changed and 0 outside them** (hash-verified); 0 field defects. **Live check**: header reads 569 conditions across 19 specialties, MSK & Rheumatology 28; Rheumatoid arthritis renders **8 authored rows at Detailed (6,624 chars) with its flowchart drawn in the card (7 nodes)** and **4 rows at Brief (1,764 chars)**, no fallback markers. **Re-upload `data.js`.**
 
-**Next set: 10 — Paediatrics & Child Health, 27 conditions, none started, none with complications.** No shared lines, no odd key orders. **Nine flowcharts to preserve** — the largest chart set of any specialty so far, so snapshot them before starting: `paeds_neonatal_sepsis`, `paeds_cdh`, `paeds_fever`, `paeds_bronchiolitis`, `paeds_croup`, `paeds_pyloric_stenosis`, `paeds_intussusception`, `paeds_uti`, `paeds_kawasaki`. ⚠️ Settle which entries are topic-style before writing (`paeds_milestones`, `paeds_immunisation` and `paeds_nai` are the clear ones), since topic-style entries are excluded from Complications.
+**Next set: 10 — Immunology & Allergy** (moved here by the user on 2026-08-17, from second-from-last; Paediatrics becomes Set 11). **11 conditions, none started, none with complications**, of which 2 are topic-style and excluded from Complications (`immuno_hypersensitivity`, `immuno_allergy_testing`), leaving 9 genuine. No shared lines, no odd key orders, and **one flowchart to preserve: `haem_anaphylaxis`**. ⚠️ **`haem_anaphylaxis` sits in Immunology's Anaphylaxis & angioedema cluster under a haematology id**, so an `id: "immuno_` scan reports 10 conditions when there are 11. Four clusters: Allergy & atopy (4), Anaphylaxis & angioedema (2), Hypersensitivity & allergy testing (2), Immunodeficiency & immune dysfunction (3). `immuno_allograft` is labelled `standard` at 170 chars/field but is far below the 330 floor, so it needs its detailed text written from scratch like the rest.
+
+**Then Set 11 — Paediatrics & Child Health, 27 conditions, none started, none with complications.** No shared lines, no odd key orders. **Nine flowcharts to preserve** — the largest chart set of any specialty so far, so snapshot them before starting: `paeds_neonatal_sepsis`, `paeds_cdh`, `paeds_fever`, `paeds_bronchiolitis`, `paeds_croup`, `paeds_pyloric_stenosis`, `paeds_intussusception`, `paeds_uti`, `paeds_kawasaki`. ⚠️ Settle which entries are topic-style before writing (`paeds_milestones`, `paeds_immunisation` and `paeds_nai` are the clear ones), since topic-style entries are excluded from Complications.
 
 ## 2026-08-17 — Set 8 (Renal & Urology) complete
 
@@ -991,7 +1078,7 @@ All 19 specialties populated, **558 conditions** total. **509** genuine conditio
 | ENT | `ent` | 18 |
 | Ophthalmology | `ophthalmology` | 25 |
 | Infectious Diseases | `infectious` | 39 |
-| Haematology | `haematology` | 20 |
+| Haematology | `haematology` | 29 |
 | Immunology & Allergy | `immunology` | 11 |
 | Genetics | `genetics` | 21 |
 | Reproductive & Sexual Health | `reproductive` | 26 |
