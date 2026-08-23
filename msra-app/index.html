@@ -2323,6 +2323,35 @@
       return { fields, level, capped: false, derived: true };
     }
 
+    // Conditions with a bespoke `fields` array have no standard field names, so
+    // their registers are keyed by ROW INDEX — f0, f1, … — instead. The rules
+    // are otherwise those of resolveDensity: authored text wins, Brief may drop
+    // rows entirely, and any other level falls back to a clamped base row so a
+    // half-written entry degrades quietly. Returns `rows` ready to render, and
+    // an empty `fields` so the fixed-name rows above and below simply omit.
+    function resolveArrayDensity(cond, level) {
+      const base = cond.depth || "standard";
+      const rows = cond.fields.map((f, i) => ({ key: "f" + i, label: f.label, value: f.value }));
+      const budget = DENSITY_BUDGET[level] || 210;
+      const authored = (level !== base) && cond[level];
+      if (authored && typeof authored === "object") {
+        const out = [];
+        rows.forEach(r => {
+          if (authored[r.key]) out.push({ key: r.key, label: r.label, value: authored[r.key] });
+          else if (level !== "brief" && r.value) out.push({ key: r.key, label: r.label, value: densityClamp(r.value, budget) });
+        });
+        return { fields: {}, rows: out, level, capped: false, derived: false, authored: true };
+      }
+      if (level === base) return { fields: {}, rows, level, capped: false, derived: false };
+      if (densityRank(level) > densityRank(base)) {
+        return { fields: {}, rows, level, capped: true, derived: false };
+      }
+      return {
+        fields: {}, level, capped: false, derived: true,
+        rows: rows.map(r => ({ key: r.key, label: r.label, value: densityClamp(r.value, budget) })),
+      };
+    }
+
     // Field keys are PROPERTY names, never the display label — `fieldLabels` can
     // override labels per condition or per specialty, so labels are not stable.
     // Conditions using a custom `fields` array key by index (f0, f1, …).
@@ -2335,7 +2364,12 @@
       const sep = key.indexOf(":");
       if (sep > -1) { level = key.slice(0, sep); k = key.slice(sep + 1); }
       if (/^f\d+$/.test(k)) {
-        const f = cond.fields && cond.fields[parseInt(k.slice(1), 10)];
+        if (!cond.fields) return null;
+        if (level) {
+          const hit = resolveArrayDensity(cond, level).rows.filter(r => r.key === k)[0];
+          return hit ? hit.value : null;
+        }
+        const f = cond.fields[parseInt(k.slice(1), 10)];
         return f ? f.value : null;
       }
       if (level) {
@@ -2873,11 +2907,12 @@
                   const isExpanded = expandedId === condition.id;
                   // Field labels: per-condition override → per-specialty override → default
                   const condFieldLabels = condition.fieldLabels || currentSpecialty.fieldLabels;
-                  // Reading density. Entries with a bespoke `fields` array have no
-                  // standard field names to resolve, so they render as authored.
+                  // Reading density. Entries with a bespoke `fields` array resolve
+                  // by row index rather than by field name, but honour the toggle
+                  // exactly as the others do.
                   const condLevel = densityFor(condition.id);
                   const dens = condition.fields
-                    ? { fields: {}, level: condLevel, capped: false, derived: false }
+                    ? resolveArrayDensity(condition, condLevel)
                     : resolveDensity(condition, condLevel);
                   const isBaseLevel = condLevel === (condition.depth || "standard");
                   const condHl = highlights[condition.id] || {};
@@ -2970,7 +3005,7 @@
                             { key: "aetiology",       label: "🧬 Aetiology",       value: dens.fields.aetiology },
                             { key: "pathophysiology", label: "⚙️ Pathophysiology", value: dens.fields.pathophysiology },
                             ...(condition.fields
-                              ? condition.fields.map((f, i) => ({ key: "f" + i, label: f.label, value: f.value }))
+                              ? dens.rows
                               : condFieldLabels
                               ? [
                                   { key: "presentation",   label: condFieldLabels[0], value: dens.fields.presentation },
@@ -3000,7 +3035,7 @@
                           ))}
                           {/* Density controls: which register this card is showing,
                               whether it is derived or capped, and a per-card pin. */}
-                          {!condition.fields && (
+                          {(
                             <div style={{
                               display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
                               marginBottom: "0.55rem", paddingTop: "0.15rem",
